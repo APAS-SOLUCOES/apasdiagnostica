@@ -11,10 +11,6 @@ import { computeScores, type Answer, type ScoreResult } from "./disc/scoring";
 
 const tokenSchema = z.object({ token: z.string().trim().min(10).max(80) });
 
-type AdminClient = Awaited<
-  ReturnType<typeof import("@/integrations/supabase/client.server")["supabaseAdmin"]["from"]>
->;
-
 async function admin() {
   const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
   return supabaseAdmin;
