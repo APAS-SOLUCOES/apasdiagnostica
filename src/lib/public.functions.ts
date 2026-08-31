@@ -183,4 +183,4 @@ export const getPublicReport = createServerFn({ method: "GET" })
     };
   });
 
-export type { Dimension, AdminClient };
+export type { Dimension };
