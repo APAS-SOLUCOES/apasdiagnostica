@@ -14,16 +14,268 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      assessment_responses: {
+        Row: {
+          answers: Json
+          assessment_id: string
+          created_at: string
+          id: string
+          meta: Json
+        }
+        Insert: {
+          answers?: Json
+          assessment_id: string
+          created_at?: string
+          id?: string
+          meta?: Json
+        }
+        Update: {
+          answers?: Json
+          assessment_id?: string
+          created_at?: string
+          id?: string
+          meta?: Json
+        }
+        Relationships: [
+          {
+            foreignKeyName: "assessment_responses_assessment_id_fkey"
+            columns: ["assessment_id"]
+            isOneToOne: true
+            referencedRelation: "assessments"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      assessment_results: {
+        Row: {
+          assessment_id: string
+          combination: string | null
+          computed_at: string
+          id: string
+          predominant: string | null
+          scores: Json
+          scoring_version: string | null
+        }
+        Insert: {
+          assessment_id: string
+          combination?: string | null
+          computed_at?: string
+          id?: string
+          predominant?: string | null
+          scores?: Json
+          scoring_version?: string | null
+        }
+        Update: {
+          assessment_id?: string
+          combination?: string | null
+          computed_at?: string
+          id?: string
+          predominant?: string | null
+          scores?: Json
+          scoring_version?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "assessment_results_assessment_id_fkey"
+            columns: ["assessment_id"]
+            isOneToOne: true
+            referencedRelation: "assessments"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      assessments: {
+        Row: {
+          candidate_email: string
+          candidate_name: string
+          candidate_whatsapp: string | null
+          coach_id: string
+          consent_accepted_at: string | null
+          context: string | null
+          created_at: string
+          id: string
+          instrument_id: string | null
+          instrument_version: string | null
+          organization_id: string | null
+          started_at: string | null
+          status: string
+          submitted_at: string | null
+          token: string
+        }
+        Insert: {
+          candidate_email: string
+          candidate_name: string
+          candidate_whatsapp?: string | null
+          coach_id: string
+          consent_accepted_at?: string | null
+          context?: string | null
+          created_at?: string
+          id?: string
+          instrument_id?: string | null
+          instrument_version?: string | null
+          organization_id?: string | null
+          started_at?: string | null
+          status?: string
+          submitted_at?: string | null
+          token: string
+        }
+        Update: {
+          candidate_email?: string
+          candidate_name?: string
+          candidate_whatsapp?: string | null
+          coach_id?: string
+          consent_accepted_at?: string | null
+          context?: string | null
+          created_at?: string
+          id?: string
+          instrument_id?: string | null
+          instrument_version?: string | null
+          organization_id?: string | null
+          started_at?: string | null
+          status?: string
+          submitted_at?: string | null
+          token?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "assessments_instrument_id_fkey"
+            columns: ["instrument_id"]
+            isOneToOne: false
+            referencedRelation: "instruments"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "assessments_organization_id_fkey"
+            columns: ["organization_id"]
+            isOneToOne: false
+            referencedRelation: "organizations"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      instruments: {
+        Row: {
+          created_at: string
+          created_by: string | null
+          id: string
+          items: Json
+          name: string
+          scoring: Json
+          status: string
+          updated_at: string
+          version: string
+        }
+        Insert: {
+          created_at?: string
+          created_by?: string | null
+          id?: string
+          items?: Json
+          name: string
+          scoring?: Json
+          status?: string
+          updated_at?: string
+          version?: string
+        }
+        Update: {
+          created_at?: string
+          created_by?: string | null
+          id?: string
+          items?: Json
+          name?: string
+          scoring?: Json
+          status?: string
+          updated_at?: string
+          version?: string
+        }
+        Relationships: []
+      }
+      organizations: {
+        Row: {
+          coach_id: string
+          contact_email: string | null
+          contact_name: string | null
+          created_at: string
+          id: string
+          name: string
+          notes: string | null
+        }
+        Insert: {
+          coach_id: string
+          contact_email?: string | null
+          contact_name?: string | null
+          created_at?: string
+          id?: string
+          name: string
+          notes?: string | null
+        }
+        Update: {
+          coach_id?: string
+          contact_email?: string | null
+          contact_name?: string | null
+          created_at?: string
+          id?: string
+          name?: string
+          notes?: string | null
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string | null
+          id: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          id: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          id?: string
+        }
+        Relationships: []
+      }
+      user_roles: {
+        Row: {
+          created_at: string
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin" | "coach"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +402,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin", "coach"],
+    },
   },
 } as const
