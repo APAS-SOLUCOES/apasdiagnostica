@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
-import { lovable } from "@/integrations/lovable";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -84,14 +83,6 @@ function AuthPage() {
     }
   }
 
-  async function google() {
-    try {
-      await lovable.auth.signInWithOAuth("google", { redirect_uri: window.location.origin });
-    } catch (err) {
-      toast.error(err instanceof Error ? err.message : "Falha no acesso com Google.");
-    }
-  }
-
   return (
     <div className="flex min-h-screen items-center justify-center px-4 py-12">
       <div className="w-full max-w-md">
@@ -130,12 +121,6 @@ function AuthPage() {
               </TabsContent>
             </Tabs>
 
-            <div className="my-5 flex items-center gap-3 text-xs text-muted-foreground">
-              <span className="h-px flex-1 bg-border" /> ou <span className="h-px flex-1 bg-border" />
-            </div>
-            <Button variant="outline" className="w-full" onClick={google}>
-              Continuar com Google
-            </Button>
           </CardContent>
         </Card>
       </div>
