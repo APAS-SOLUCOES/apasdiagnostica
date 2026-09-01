@@ -97,6 +97,7 @@ export type Database = {
           instrument_id: string | null
           instrument_version: string | null
           organization_id: string | null
+          role_title: string | null
           started_at: string | null
           status: string
           submitted_at: string | null
@@ -114,6 +115,7 @@ export type Database = {
           instrument_id?: string | null
           instrument_version?: string | null
           organization_id?: string | null
+          role_title?: string | null
           started_at?: string | null
           status?: string
           submitted_at?: string | null
@@ -131,6 +133,7 @@ export type Database = {
           instrument_id?: string | null
           instrument_version?: string | null
           organization_id?: string | null
+          role_title?: string | null
           started_at?: string | null
           status?: string
           submitted_at?: string | null
