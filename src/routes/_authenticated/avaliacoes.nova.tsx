@@ -28,7 +28,7 @@ export const Route = createFileRoute("/_authenticated/avaliacoes/nova")({
       },
     ],
   }),
-  component: NovaAvaliacao;
+  component: NovaAvaliacao,
 });
 
 const schema = z.object({
