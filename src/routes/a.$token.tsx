@@ -30,7 +30,7 @@ export const Route = createFileRoute("/a/$token")({
       { name: "robots", content: "noindex" },
     ],
   }),
-  component: PublicAssessment;
+  component: PublicAssessment,
 });
 
 type LocalAnswer = { most?: Dimension; least?: Dimension };
