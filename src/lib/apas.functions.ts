@@ -22,7 +22,7 @@ export const listAssessments = createServerFn({ method: "GET" })
     const { data, error } = await context.supabase
       .from("assessments")
       .select(
-        "id, candidate_name, candidate_email, candidate_whatsapp, context, token, status, created_at, submitted_at, organization_id, organizations(name)",
+        "id, candidate_name, candidate_email, candidate_whatsapp, context, role_title, token, status, created_at, submitted_at, organization_id, organizations(name)",
       )
       .order("created_at", { ascending: false });
     if (error) throw new Error(error.message);
@@ -75,6 +75,7 @@ export const createAssessment = createServerFn({ method: "POST" })
         candidate_email: z.string().trim().email().max(200),
         candidate_whatsapp: z.string().trim().max(30).optional().or(z.literal("")),
         context: z.string().trim().max(1000).optional().or(z.literal("")),
+        role_title: z.string().trim().max(120).optional().or(z.literal("")),
         organization_id: z.string().uuid().optional().or(z.literal("")),
       })
       .parse(input),
@@ -96,6 +97,7 @@ export const createAssessment = createServerFn({ method: "POST" })
         candidate_email: data.candidate_email,
         candidate_whatsapp: data.candidate_whatsapp || null,
         context: data.context || null,
+        role_title: data.role_title || null,
         organization_id: data.organization_id || null,
         instrument_id: instrument?.id ?? null,
         instrument_version: instrument?.version ?? DEFAULT_INSTRUMENT.version,
