@@ -29,7 +29,12 @@ export type ScoreResult = {
   levels: Record<Dimension, "alto" | "moderado" | "baixo">;
   adaptationIndex: number;
   adaptationAlert: boolean;
+  /** Saldo bruto por dimensão (MAIS + MENOS), útil para calibração. */
+  net?: DimensionMap;
+  /** Contagens brutas de escolhas, para auditoria da regra. */
+  counts?: { most: DimensionMap; least: DimensionMap };
 };
+
 
 const empty = (): DimensionMap => ({ D: 0, I: 0, S: 0, C: 0 });
 
@@ -79,24 +84,46 @@ export function computeScores(
     leastCount[a.least] += 1;
   }
 
-  const socialRaw = { ...mostCount };
-  const naturalRaw = empty();
   const blocks = valid.length;
+  const mostWeight = config.mostWeight ?? 1;
+  const leastWeight = config.leastWeight ?? -1;
+  const naturalBase = config.naturalBase ?? 1;
+
+  /**
+   * Regra APAS DISC 1.0 (configurável):
+   * - MAIS soma `mostWeight` à dimensão escolhida (base do Perfil Social);
+   * - MENOS soma `leastWeight` à dimensão escolhida (reduz o Perfil Natural);
+   * - afirmações não escolhidas não pontuam.
+   * O Perfil Natural parte de um crédito base por bloco (`naturalBase`) para
+   * manter a escala positiva e comparável entre as dimensões.
+   */
+  const socialRaw = empty();
+  const naturalRaw = empty();
+  const net = empty();
   for (const d of DIMENSIONS) {
-    naturalRaw[d] = Math.max(0, blocks - leastCount[d]);
+    socialRaw[d] = Math.max(0, mostCount[d] * mostWeight);
+    naturalRaw[d] = Math.max(0, blocks * naturalBase + leastCount[d] * leastWeight);
+    net[d] = mostCount[d] * mostWeight + leastCount[d] * leastWeight;
   }
 
   const social = vector(socialRaw);
   const natural = vector(naturalRaw);
 
   const adaptedRaw = empty();
-  for (const d of DIMENSIONS) {
-    adaptedRaw[d] =
-      config.adaptedMode === "social"
-        ? social.percent[d]
-        : (social.percent[d] + natural.percent[d]) / 2;
+  if (config.adaptedMode === "net") {
+    const min = Math.min(...DIMENSIONS.map((d) => net[d]));
+    const shift = min < 0 ? -min : 0;
+    for (const d of DIMENSIONS) adaptedRaw[d] = net[d] + shift;
+  } else {
+    for (const d of DIMENSIONS) {
+      adaptedRaw[d] =
+        config.adaptedMode === "social"
+          ? social.percent[d]
+          : (social.percent[d] + natural.percent[d]) / 2;
+    }
   }
   const adapted = vector(adaptedRaw);
+
 
   const source =
     config.predominantSource === "natural"
@@ -142,5 +169,8 @@ export function computeScores(
     levels,
     adaptationIndex,
     adaptationAlert: adaptationIndex >= config.adaptationAlert,
+    net,
+    counts: { most: mostCount, least: leastCount },
   };
+
 }
