@@ -29,7 +29,12 @@ export type ScoreResult = {
   levels: Record<Dimension, "alto" | "moderado" | "baixo">;
   adaptationIndex: number;
   adaptationAlert: boolean;
+  /** Saldo bruto por dimensão (MAIS + MENOS), útil para calibração. */
+  net?: DimensionMap;
+  /** Contagens brutas de escolhas, para auditoria da regra. */
+  counts?: { most: DimensionMap; least: DimensionMap };
 };
+
 
 const empty = (): DimensionMap => ({ D: 0, I: 0, S: 0, C: 0 });
 
