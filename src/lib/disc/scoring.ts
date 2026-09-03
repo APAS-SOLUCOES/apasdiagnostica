@@ -169,5 +169,8 @@ export function computeScores(
     levels,
     adaptationIndex,
     adaptationAlert: adaptationIndex >= config.adaptationAlert,
+    net,
+    counts: { most: mostCount, least: leastCount },
   };
+
 }
