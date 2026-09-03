@@ -1,10 +1,11 @@
 /**
- * Instrumento APAS DISC 1.0 — versão de validação (calibrável).
+ * Instrumento APAS DISC 1.1 — versão de validação (calibrável).
  *
  * Este arquivo é o INSTRUMENTO PADRÃO. Ele pode ser substituído em tempo de
  * execução por um registro ativo na tabela `instruments` (mesmo formato JSON),
  * permitindo revisão e calibração do questionário e das fórmulas sem
- * reescrever o sistema.
+ * reescrever o sistema. Avaliações já concluídas permanecem vinculadas à
+ * versão utilizada no momento da resposta.
  *
  * Estrutura: 24 blocos x 4 afirmações = 96 afirmações, sendo exatamente
  * 24 de D, 24 de I, 24 de S e 24 de C. Em cada bloco o participante escolhe
@@ -56,8 +57,8 @@ export type Instrument = {
 
 /** Metadados da versão do instrumento padrão. */
 export const INSTRUMENT_META = {
-  code: "APAS DISC 1.0",
-  version: "1.0.0",
+  code: "APAS DISC 1.1",
+  version: "1.1.0",
   releaseDate: "2026-09-03",
   status: "provisório — em validação",
   blocks: 24,
@@ -67,7 +68,7 @@ export const INSTRUMENT_META = {
   ruleDescription:
     "Em cada bloco, a afirmação escolhida como MAIS adiciona +1 à dimensão associada e a escolhida como MENOS subtrai 1 da dimensão associada. Afirmações não escolhidas não pontuam.",
   validationNotice:
-    "Instrumento APAS DISC 1.0 — versão de validação. As afirmações e os pesos devem ser calibrados antes de qualquer uso comercial.",
+    "Instrumento APAS DISC 1.1 — versão de validação. As afirmações e os pesos devem ser calibrados antes de qualquer uso comercial.",
 } as const;
 
 const B = (
@@ -89,176 +90,176 @@ const B = (
 export const DEFAULT_ITEMS: InstrumentItem[] = [
   B(
     "b01",
-    "Decido rápido, mesmo com informação incompleta",
-    "Falo com facilidade sobre a minha ideia para conquistar apoio",
-    "Prefiro decidir depois de ouvir as pessoas envolvidas",
-    "Só decido quando os dados sustentam a escolha",
+    "Costumo definir o rumo quando o assunto ainda está em aberto",
+    "Comento minhas ideias em voz alta até elas ganharem forma",
+    "Prefiro escutar como cada um vê a situação antes de me posicionar",
+    "Reúno os números antes de fechar uma posição",
   ),
   B(
     "b02",
-    "Assumo a condução quando o grupo trava",
-    "Ativo minha rede de contatos para destravar assuntos",
-    "Mantenho o grupo unido enquanto o assunto se resolve",
-    "Retomo o critério combinado para destravar o assunto",
+    "Quando uma conversa se alonga, tendo a propor um encaminhamento",
+    "Procuro alguém da minha rede que possa abrir uma porta",
+    "Mantenho o grupo confortável enquanto o assunto amadurece",
+    "Retomo o que ficou combinado para orientar o próximo passo",
   ),
   B(
     "b03",
-    "Trabalho melhor com metas desafiadoras e prazo curto",
-    "Trabalho melhor quando há troca constante com pessoas",
-    "Trabalho melhor com rotina previsível e ritmo constante",
-    "Trabalho melhor com processo definido e instruções claras",
+    "Rendo mais quando o desafio tem começo e fim bem marcados",
+    "Rendo mais quando o dia tem bastante troca com outras pessoas",
+    "Rendo mais quando os dias seguem um ritmo parecido",
+    "Rendo mais quando sei exatamente como a etapa deve ser feita",
   ),
   B(
     "b04",
-    "Digo o que penso de forma direta",
-    "Uso histórias e exemplos para explicar o que penso",
-    "Escolho o momento certo antes de expor o que penso",
-    "Fundamento o que digo em fatos verificáveis",
+    "Digo o que penso em poucas palavras",
+    "Explico minhas ideias com exemplos e situações vividas",
+    "Escolho o momento antes de trazer um assunto delicado",
+    "Apoio o que digo em algo que possa ser conferido depois",
   ),
   B(
     "b05",
-    "Diante de um obstáculo, avanço e testo na prática",
-    "Diante de um obstáculo, converso com quem pode ajudar",
-    "Diante de um obstáculo, mantenho o ritmo até superá-lo",
-    "Diante de um obstáculo, analiso a causa antes de agir",
+    "Diante de um imprevisto, tendo a experimentar uma saída",
+    "Diante de um imprevisto, chamo alguém para pensar junto",
+    "Diante de um imprevisto, sigo firme no que já estava em curso",
+    "Diante de um imprevisto, procuro entender de onde ele veio",
   ),
   B(
     "b06",
-    "Gosto de negociar condições e prazos",
-    "Gosto de apresentar propostas para grupos",
-    "Gosto de acompanhar pessoas em atividades de longo prazo",
-    "Gosto de revisar documentos e números em detalhe",
+    "Gosto de conduzir conversas em que há algo a combinar",
+    "Gosto de apresentar uma ideia para um grupo",
+    "Gosto de acompanhar alguém ao longo de um trabalho comprido",
+    "Gosto de conferir documentos linha por linha",
   ),
   B(
     "b07",
-    "Prefiro autonomia para conduzir do meu modo",
-    "Prefiro ambientes movimentados e com muita interação",
-    "Prefiro combinados estáveis e mudanças avisadas com antecedência",
-    "Prefiro regras escritas e responsabilidades bem delimitadas",
+    "Prefiro espaço para conduzir do meu jeito",
+    "Prefiro ambientes com movimento e gente por perto",
+    "Prefiro saber com antecedência o que vai mudar",
+    "Prefiro que as responsabilidades estejam escritas",
   ),
   B(
     "b08",
-    "Aponto o problema mesmo quando gera desconforto",
-    "Costumo aliviar a tensão com bom humor",
-    "Costumo absorver a tensão para preservar o clima",
-    "Registro o ocorrido e trato pelo procedimento",
+    "Coloco o incômodo na mesa quando percebo que ele trava o trabalho",
+    "Costumo quebrar o clima pesado com leveza",
+    "Costumo segurar o desconforto para preservar a relação",
+    "Registro o que aconteceu e sigo o caminho previsto",
   ),
   B(
     "b09",
-    "Meu foco principal é entregar resultado",
-    "Meu foco principal é engajar as pessoas",
-    "Meu foco principal é manter a continuidade do trabalho",
-    "Meu foco principal é garantir a exatidão da entrega",
+    "Olho primeiro para o que precisa estar de pé no fim do dia",
+    "Olho primeiro para o ânimo das pessoas envolvidas",
+    "Olho primeiro para o que não pode ser interrompido",
+    "Olho primeiro para o que pode sair diferente do esperado",
   ),
   B(
     "b10",
-    "Fico impaciente quando o processo demora",
-    "Fico desconfortável quando trabalho isolado",
-    "Fico desconfortável quando muda tudo de uma vez",
-    "Fico desconfortável quando falta informação confiável",
+    "Fico inquieto quando um assunto se arrasta",
+    "Fico desconfortável quando passo o dia sem falar com ninguém",
+    "Fico desconfortável quando muita coisa muda ao mesmo tempo",
+    "Fico desconfortável quando as informações não se sustentam",
   ),
   B(
     "b11",
-    "Em um novo grupo, assumo iniciativa logo",
-    "Em um novo grupo, puxo conversa e aproximo as pessoas",
-    "Em um novo grupo, observo e vou entrando aos poucos",
-    "Em um novo grupo, procuro entender como as coisas funcionam",
+    "Em um grupo novo, tomo a frente cedo",
+    "Em um grupo novo, puxo conversa com facilidade",
+    "Em um grupo novo, observo um pouco antes de me abrir",
+    "Em um grupo novo, procuro entender como as coisas funcionam ali",
   ),
   B(
     "b12",
-    "Mudo de plano rapidamente quando o cenário muda",
-    "Adapto meu discurso conforme a reação das pessoas",
-    "Prefiro ajustar o plano gradualmente",
-    "Só mudo o plano depois de revisar os impactos",
+    "Troco o plano com naturalidade quando o cenário vira",
+    "Ajusto meu jeito de falar conforme percebo a reação",
+    "Prefiro mudar aos poucos, um passo por vez",
+    "Reviso o que a mudança afeta antes de aceitá-la",
   ),
   B(
     "b13",
-    "Sou objetivo nas conversas de trabalho",
-    "Sou expressivo e falo com energia",
-    "Sou tranquilo e falo em tom moderado",
-    "Sou reservado e escolho as palavras com cuidado",
+    "Nas conversas de trabalho vou direto ao ponto",
+    "Falo com bastante expressão e movimento",
+    "Falo em tom baixo e sem apressar",
+    "Escolho as palavras com cuidado e falo o necessário",
   ),
   B(
     "b14",
-    "Cobro desempenho de quem trabalha comigo",
-    "Reconheço publicamente o esforço das pessoas",
-    "Ofereço apoio prático a quem está sobrecarregado",
-    "Aponto desvios em relação ao padrão combinado",
+    "Peço mais de quem trabalha comigo quando vejo espaço para isso",
+    "Comento na frente dos outros o que alguém fez bem",
+    "Ofereço ajuda prática a quem está com muita coisa",
+    "Aponto quando algo saiu do que havia sido combinado",
   ),
   B(
     "b15",
-    "Assumo riscos calculados para ganhar tempo",
-    "Aposto na conversa para abrir caminhos",
-    "Prefiro caminhos já testados",
-    "Prefiro reduzir a chance de erro, mesmo levando mais tempo",
+    "Aceito arriscar um pouco para ganhar tempo",
+    "Aposto na conversa para abrir caminho",
+    "Prefiro seguir por onde já passei",
+    "Prefiro levar mais tempo e reduzir a chance de erro",
   ),
   B(
     "b16",
-    "Gosto de ter a palavra final nas decisões",
-    "Gosto de decidir conversando com o grupo",
-    "Gosto de decidir com consenso e sem pressa",
-    "Gosto de decidir com base em critérios definidos",
+    "Gosto de dar a palavra final",
+    "Gosto de decidir conversando com as pessoas",
+    "Gosto que a decisão amadureça sem pressa",
+    "Gosto de decidir a partir de critérios já definidos",
   ),
   B(
     "b17",
-    "Trabalho bem sob pressão de prazo",
-    "Trabalho bem em atividades com muitas pessoas",
-    "Trabalho bem em atividades que exigem persistência",
-    "Trabalho bem em atividades que exigem precisão",
+    "Rendo bem quando o prazo está curto",
+    "Rendo bem em atividades com muita gente envolvida",
+    "Rendo bem em atividades que pedem constância",
+    "Rendo bem em atividades que pedem atenção ao detalhe",
   ),
   B(
     "b18",
-    "Interrompo para acelerar quando a conversa se alonga",
-    "Falo mais do que ouço quando o assunto me interessa",
-    "Ouço até o fim antes de me posicionar",
-    "Pergunto detalhes antes de me posicionar",
+    "Costumo interromper para encurtar a conversa",
+    "Falo mais do que escuto quando o tema me interessa",
+    "Escuto até o fim antes de dizer o que penso",
+    "Faço perguntas de detalhe antes de me posicionar",
   ),
   B(
     "b19",
-    "Organizo o trabalho pelas prioridades do resultado",
-    "Organizo o trabalho pelos contatos e conversas necessárias",
-    "Organizo o trabalho em uma sequência estável",
-    "Organizo o trabalho em listas, etapas e registros",
+    "Organizo o dia pelo que é mais urgente resolver",
+    "Organizo o dia pelas conversas que preciso ter",
+    "Organizo o dia em uma sequência que já funciona",
+    "Organizo o dia em etapas e anotações",
   ),
   B(
     "b20",
-    "Encerro assuntos rapidamente para seguir adiante",
+    "Encerro assuntos logo para seguir adiante",
     "Amplio o assunto trazendo novas possibilidades",
-    "Mantenho o assunto aberto até todos estarem confortáveis",
-    "Fecho o assunto quando todos os pontos foram conferidos",
+    "Deixo o assunto aberto até todos ficarem à vontade",
+    "Fecho o assunto depois de conferir cada ponto",
   ),
   B(
     "b21",
-    "Insisto no meu ponto quando acredito nele",
-    "Convenço pela empolgação e pelo diálogo",
-    "Cedo para manter o relacionamento",
-    "Argumento com dados e comparações",
+    "Sustento meu ponto quando acredito nele",
+    "Convenço pelo entusiasmo e pela conversa",
+    "Cedo com facilidade para manter a boa relação",
+    "Argumento com comparações e evidências",
   ),
   B(
     "b22",
-    "Aceito bem tarefas com alta responsabilidade",
-    "Aceito bem tarefas de representação e apresentação",
-    "Aceito bem tarefas de acompanhamento e suporte",
-    "Aceito bem tarefas de conferência e controle",
+    "Assumo bem tarefas de responsabilidade elevada",
+    "Assumo bem tarefas de representar e apresentar",
+    "Assumo bem tarefas de acompanhar e dar suporte",
+    "Assumo bem tarefas de conferir e organizar",
   ),
   B(
     "b23",
-    "Meu ritmo de trabalho é acelerado",
-    "Meu ritmo de trabalho varia conforme o entusiasmo",
-    "Meu ritmo de trabalho é regular e sustentado",
-    "Meu ritmo de trabalho é cuidadoso e metódico",
+    "Meu ritmo costuma ser acelerado",
+    "Meu ritmo varia conforme o entusiasmo do momento",
+    "Meu ritmo se mantém parecido ao longo do dia",
+    "Meu ritmo é atento e cuidadoso",
   ),
   B(
     "b24",
     "Avalio meu dia pelo que consegui concluir",
-    "Avalio meu dia pelas conexões que criei",
-    "Avalio meu dia pela tranquilidade com que fluiu",
-    "Avalio meu dia pela qualidade do que produzi",
+    "Avalio meu dia pelas conversas que tive",
+    "Avalio meu dia pela tranquilidade com que ele fluiu",
+    "Avalio meu dia pelo cuidado com que fiz as coisas",
   ),
 ];
 
 export const DEFAULT_SCORING: ScoringConfig = {
-  version: "apas-scoring-1.0.0",
+  version: "apas-scoring-1.1.0",
   predominantSource: "adapted",
   adaptedMode: "average",
   mostWeight: 1,
@@ -291,3 +292,20 @@ export const DIMENSION_NAMES: Record<Dimension, string> = {
   S: "Estabilidade",
   C: "Conformidade",
 };
+
+/**
+ * Ordem embaralhada e estável por bloco (mesma ordem em todas as etapas e
+ * recarregamentos), usada apenas na apresentação pública. A associação
+ * interna de dimensão é preservada.
+ */
+export function shuffledOptions(item: InstrumentItem, seed = 0) {
+  let h = seed + 2166136261;
+  for (const ch of item.id) h = (h ^ ch.charCodeAt(0)) * 16777619;
+  const list = [...item.options];
+  for (let i = list.length - 1; i > 0; i--) {
+    h = (h * 1103515245 + 12345) & 0x7fffffff;
+    const j = h % (i + 1);
+    [list[i], list[j]] = [list[j], list[i]];
+  }
+  return list;
+}
