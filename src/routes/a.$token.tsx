@@ -5,6 +5,7 @@ import { useMutation, useQuery } from "@tanstack/react-query";
 import { CheckCircle2, ChevronLeft, ChevronRight, Loader2, ShieldAlert } from "lucide-react";
 import { toast } from "sonner";
 import { acceptConsent, getPublicAssessment, submitAssessment } from "@/lib/public.functions";
+import { shuffledOptions } from "@/lib/disc/instrument";
 import type { Dimension, InstrumentItem } from "@/lib/disc/instrument";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -342,7 +343,7 @@ function PublicAssessment() {
                 <span className="w-12 text-center font-medium">Mais</span>
                 <span className="w-12 text-center font-medium">Menos</span>
               </div>
-              {item.options.map((opt) => (
+              {shuffledOptions(item).map((opt) => (
                 <div
                   key={opt.key}
                   className="grid grid-cols-[1fr_auto_auto] items-center gap-2 border-t border-border/60 py-2"

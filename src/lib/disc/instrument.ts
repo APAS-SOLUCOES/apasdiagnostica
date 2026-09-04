@@ -299,13 +299,20 @@ export const DIMENSION_NAMES: Record<Dimension, string> = {
  * interna de dimensão é preservada.
  */
 export function shuffledOptions(item: InstrumentItem, seed = 0) {
-  let h = seed + 2166136261;
-  for (const ch of item.id) h = (h ^ ch.charCodeAt(0)) * 16777619;
-  const list = [...item.options];
+  let h = (seed + 2166136261) | 0;
+  for (const ch of item.id) h = Math.imul(h ^ ch.charCodeAt(0), 16777619) | 0;
+  const rand = () => {
+    h = Math.imul(h ^ (h >>> 15), 2246822507) | 0;
+    h = Math.imul(h ^ (h >>> 13), 3266489909) | 0;
+    return ((h ^ (h >>> 16)) >>> 0) / 4294967296;
+  };
+  const list: InstrumentItem["options"] = [...item.options];
   for (let i = list.length - 1; i > 0; i--) {
-    h = (h * 1103515245 + 12345) & 0x7fffffff;
-    const j = h % (i + 1);
-    [list[i], list[j]] = [list[j], list[i]];
+    const j = Math.floor(rand() * (i + 1));
+    const a = list[i]!;
+    const b = list[j]!;
+    list[i] = b;
+    list[j] = a;
   }
   return list;
 }
