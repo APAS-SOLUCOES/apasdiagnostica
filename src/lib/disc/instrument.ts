@@ -301,11 +301,14 @@ export const DIMENSION_NAMES: Record<Dimension, string> = {
 export function shuffledOptions(item: InstrumentItem, seed = 0) {
   let h = seed + 2166136261;
   for (const ch of item.id) h = (h ^ ch.charCodeAt(0)) * 16777619;
-  const list = [...item.options];
+  const list: InstrumentItem["options"] = [...item.options];
   for (let i = list.length - 1; i > 0; i--) {
     h = (h * 1103515245 + 12345) & 0x7fffffff;
     const j = h % (i + 1);
-    [list[i], list[j]] = [list[j], list[i]];
+    const a = list[i]!;
+    const b = list[j]!;
+    list[i] = b;
+    list[j] = a;
   }
   return list;
 }
