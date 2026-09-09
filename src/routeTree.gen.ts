@@ -16,6 +16,7 @@ import { Route as AuthenticatedDashboardRouteImport } from './routes/_authentica
 import { Route as AuthenticatedEmpresasRouteImport } from './routes/_authenticated/empresas'
 import { Route as AuthenticatedInstrumentoRouteImport } from './routes/_authenticated/instrumento'
 import { Route as ATokenRouteImport } from './routes/a.$token'
+import { Route as QTokenRouteImport } from './routes/q.$token'
 import { Route as AuthenticatedAvaliacoesIdRouteImport } from './routes/_authenticated/avaliacoes.$id'
 import { Route as AuthenticatedAvaliacoesNovaRouteImport } from './routes/_authenticated/avaliacoes.nova'
 
@@ -54,6 +55,11 @@ const ATokenRoute = ATokenRouteImport.update({
   path: '/a/$token',
   getParentRoute: () => rootRouteImport,
 } as any)
+const QTokenRoute = QTokenRouteImport.update({
+  id: '/q/$token',
+  path: '/q/$token',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AuthenticatedAvaliacoesIdRoute =
   AuthenticatedAvaliacoesIdRouteImport.update({
     id: '/avaliacoes/$id',
@@ -74,6 +80,7 @@ export interface FileRoutesByFullPath {
   '/empresas': typeof AuthenticatedEmpresasRoute
   '/instrumento': typeof AuthenticatedInstrumentoRoute
   '/a/$token': typeof ATokenRoute
+  '/q/$token': typeof QTokenRoute
   '/avaliacoes/$id': typeof AuthenticatedAvaliacoesIdRoute
   '/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
 }
@@ -84,6 +91,7 @@ export interface FileRoutesByTo {
   '/empresas': typeof AuthenticatedEmpresasRoute
   '/instrumento': typeof AuthenticatedInstrumentoRoute
   '/a/$token': typeof ATokenRoute
+  '/q/$token': typeof QTokenRoute
   '/avaliacoes/$id': typeof AuthenticatedAvaliacoesIdRoute
   '/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
 }
@@ -96,6 +104,7 @@ export interface FileRoutesById {
   '/_authenticated/empresas': typeof AuthenticatedEmpresasRoute
   '/_authenticated/instrumento': typeof AuthenticatedInstrumentoRoute
   '/a/$token': typeof ATokenRoute
+  '/q/$token': typeof QTokenRoute
   '/_authenticated/avaliacoes/$id': typeof AuthenticatedAvaliacoesIdRoute
   '/_authenticated/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
 }
@@ -108,6 +117,7 @@ export interface FileRouteTypes {
     | '/empresas'
     | '/instrumento'
     | '/a/$token'
+    | '/q/$token'
     | '/avaliacoes/$id'
     | '/avaliacoes/nova'
   fileRoutesByTo: FileRoutesByTo
@@ -118,6 +128,7 @@ export interface FileRouteTypes {
     | '/empresas'
     | '/instrumento'
     | '/a/$token'
+    | '/q/$token'
     | '/avaliacoes/$id'
     | '/avaliacoes/nova'
   id:
@@ -129,6 +140,7 @@ export interface FileRouteTypes {
     | '/_authenticated/empresas'
     | '/_authenticated/instrumento'
     | '/a/$token'
+    | '/q/$token'
     | '/_authenticated/avaliacoes/$id'
     | '/_authenticated/avaliacoes/nova'
   fileRoutesById: FileRoutesById
@@ -138,6 +150,7 @@ export interface RootRouteChildren {
   AuthenticatedRouteRoute: typeof AuthenticatedRouteRouteWithChildren
   AuthRoute: typeof AuthRoute
   ATokenRoute: typeof ATokenRoute
+  QTokenRoute: typeof QTokenRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -191,6 +204,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ATokenRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/q/$token': {
+      id: '/q/$token'
+      path: '/q/$token'
+      fullPath: '/q/$token'
+      preLoaderRoute: typeof QTokenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/_authenticated/avaliacoes/$id': {
       id: '/_authenticated/avaliacoes/$id'
       path: '/avaliacoes/$id'
@@ -232,6 +252,7 @@ const rootRouteChildren: RootRouteChildren = {
   AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
   AuthRoute: AuthRoute,
   ATokenRoute: ATokenRoute,
+  QTokenRoute: QTokenRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
