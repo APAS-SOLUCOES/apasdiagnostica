@@ -62,7 +62,12 @@ function PublicDiagnostic() {
   const [done, setDone] = useState(false);
 
   const data = query.data;
-  const open = data?.found && data.state === "open" ? data : null;
+  type OpenData = Extract<
+    Awaited<ReturnType<typeof getPublicDiagApplication>>,
+    { state: "open" }
+  >;
+  const open: OpenData | null =
+    data?.found && data.state === "open" ? (data as OpenData) : null;
 
   if (open && !hydrated) {
     const initial: Record<string, LocalAnswer> = {};
