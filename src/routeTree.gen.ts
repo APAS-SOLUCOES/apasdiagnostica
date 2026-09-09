@@ -18,6 +18,7 @@ import { Route as AuthenticatedEmpresasRouteImport } from './routes/_authenticat
 import { Route as AuthenticatedInstrumentoRouteImport } from './routes/_authenticated/instrumento'
 import { Route as ATokenRouteImport } from './routes/a.$token'
 import { Route as QTokenRouteImport } from './routes/q.$token'
+import { Route as AuthenticatedAplicacoesIdRouteImport } from './routes/_authenticated/aplicacoes.$id'
 import { Route as AuthenticatedAvaliacoesIdRouteImport } from './routes/_authenticated/avaliacoes.$id'
 import { Route as AuthenticatedAvaliacoesNovaRouteImport } from './routes/_authenticated/avaliacoes.nova'
 
@@ -66,6 +67,12 @@ const QTokenRoute = QTokenRouteImport.update({
   path: '/q/$token',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AuthenticatedAplicacoesIdRoute =
+  AuthenticatedAplicacoesIdRouteImport.update({
+    id: '/$id',
+    path: '/$id',
+    getParentRoute: () => AuthenticatedAplicacoesRoute,
+  } as any)
 const AuthenticatedAvaliacoesIdRoute =
   AuthenticatedAvaliacoesIdRouteImport.update({
     id: '/avaliacoes/$id',
@@ -82,24 +89,26 @@ const AuthenticatedAvaliacoesNovaRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
-  '/aplicacoes': typeof AuthenticatedAplicacoesRoute
+  '/aplicacoes': typeof AuthenticatedAplicacoesRouteWithChildren
   '/dashboard': typeof AuthenticatedDashboardRoute
   '/empresas': typeof AuthenticatedEmpresasRoute
   '/instrumento': typeof AuthenticatedInstrumentoRoute
   '/a/$token': typeof ATokenRoute
   '/q/$token': typeof QTokenRoute
+  '/aplicacoes/$id': typeof AuthenticatedAplicacoesIdRoute
   '/avaliacoes/$id': typeof AuthenticatedAvaliacoesIdRoute
   '/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
-  '/aplicacoes': typeof AuthenticatedAplicacoesRoute
+  '/aplicacoes': typeof AuthenticatedAplicacoesRouteWithChildren
   '/dashboard': typeof AuthenticatedDashboardRoute
   '/empresas': typeof AuthenticatedEmpresasRoute
   '/instrumento': typeof AuthenticatedInstrumentoRoute
   '/a/$token': typeof ATokenRoute
   '/q/$token': typeof QTokenRoute
+  '/aplicacoes/$id': typeof AuthenticatedAplicacoesIdRoute
   '/avaliacoes/$id': typeof AuthenticatedAvaliacoesIdRoute
   '/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
 }
@@ -108,12 +117,13 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
   '/auth': typeof AuthRoute
-  '/_authenticated/aplicacoes': typeof AuthenticatedAplicacoesRoute
+  '/_authenticated/aplicacoes': typeof AuthenticatedAplicacoesRouteWithChildren
   '/_authenticated/dashboard': typeof AuthenticatedDashboardRoute
   '/_authenticated/empresas': typeof AuthenticatedEmpresasRoute
   '/_authenticated/instrumento': typeof AuthenticatedInstrumentoRoute
   '/a/$token': typeof ATokenRoute
   '/q/$token': typeof QTokenRoute
+  '/_authenticated/aplicacoes/$id': typeof AuthenticatedAplicacoesIdRoute
   '/_authenticated/avaliacoes/$id': typeof AuthenticatedAvaliacoesIdRoute
   '/_authenticated/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
 }
@@ -128,6 +138,7 @@ export interface FileRouteTypes {
     | '/instrumento'
     | '/a/$token'
     | '/q/$token'
+    | '/aplicacoes/$id'
     | '/avaliacoes/$id'
     | '/avaliacoes/nova'
   fileRoutesByTo: FileRoutesByTo
@@ -140,6 +151,7 @@ export interface FileRouteTypes {
     | '/instrumento'
     | '/a/$token'
     | '/q/$token'
+    | '/aplicacoes/$id'
     | '/avaliacoes/$id'
     | '/avaliacoes/nova'
   id:
@@ -153,6 +165,7 @@ export interface FileRouteTypes {
     | '/_authenticated/instrumento'
     | '/a/$token'
     | '/q/$token'
+    | '/_authenticated/aplicacoes/$id'
     | '/_authenticated/avaliacoes/$id'
     | '/_authenticated/avaliacoes/nova'
   fileRoutesById: FileRoutesById
@@ -230,6 +243,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof QTokenRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/_authenticated/aplicacoes/$id': {
+      id: '/_authenticated/aplicacoes/$id'
+      path: '/$id'
+      fullPath: '/aplicacoes/$id'
+      preLoaderRoute: typeof AuthenticatedAplicacoesIdRouteImport
+      parentRoute: typeof AuthenticatedAplicacoesRoute
+    }
     '/_authenticated/avaliacoes/$id': {
       id: '/_authenticated/avaliacoes/$id'
       path: '/avaliacoes/$id'
@@ -247,8 +267,22 @@ declare module '@tanstack/react-router' {
   }
 }
 
+interface AuthenticatedAplicacoesRouteChildren {
+  AuthenticatedAplicacoesIdRoute: typeof AuthenticatedAplicacoesIdRoute
+}
+
+const AuthenticatedAplicacoesRouteChildren: AuthenticatedAplicacoesRouteChildren =
+  {
+    AuthenticatedAplicacoesIdRoute: AuthenticatedAplicacoesIdRoute,
+  }
+
+const AuthenticatedAplicacoesRouteWithChildren =
+  AuthenticatedAplicacoesRoute._addFileChildren(
+    AuthenticatedAplicacoesRouteChildren,
+  )
+
 interface AuthenticatedRouteRouteChildren {
-  AuthenticatedAplicacoesRoute: typeof AuthenticatedAplicacoesRoute
+  AuthenticatedAplicacoesRoute: typeof AuthenticatedAplicacoesRouteWithChildren
   AuthenticatedDashboardRoute: typeof AuthenticatedDashboardRoute
   AuthenticatedEmpresasRoute: typeof AuthenticatedEmpresasRoute
   AuthenticatedInstrumentoRoute: typeof AuthenticatedInstrumentoRoute
@@ -257,7 +291,7 @@ interface AuthenticatedRouteRouteChildren {
 }
 
 const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
-  AuthenticatedAplicacoesRoute: AuthenticatedAplicacoesRoute,
+  AuthenticatedAplicacoesRoute: AuthenticatedAplicacoesRouteWithChildren,
   AuthenticatedDashboardRoute: AuthenticatedDashboardRoute,
   AuthenticatedEmpresasRoute: AuthenticatedEmpresasRoute,
   AuthenticatedInstrumentoRoute: AuthenticatedInstrumentoRoute,
