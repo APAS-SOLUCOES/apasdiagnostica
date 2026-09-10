@@ -21,6 +21,7 @@ import { Route as QTokenRouteImport } from './routes/q.$token'
 import { Route as AuthenticatedAplicacoesIdRouteImport } from './routes/_authenticated/aplicacoes.$id'
 import { Route as AuthenticatedAvaliacoesIdRouteImport } from './routes/_authenticated/avaliacoes.$id'
 import { Route as AuthenticatedAvaliacoesNovaRouteImport } from './routes/_authenticated/avaliacoes.nova'
+import { Route as AuthenticatedRelatoriosIdRouteImport } from './routes/_authenticated/relatorios.$id'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -85,6 +86,12 @@ const AuthenticatedAvaliacoesNovaRoute =
     path: '/avaliacoes/nova',
     getParentRoute: () => AuthenticatedRouteRoute,
   } as any)
+const AuthenticatedRelatoriosIdRoute =
+  AuthenticatedRelatoriosIdRouteImport.update({
+    id: '/relatorios/$id',
+    path: '/relatorios/$id',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -98,6 +105,7 @@ export interface FileRoutesByFullPath {
   '/aplicacoes/$id': typeof AuthenticatedAplicacoesIdRoute
   '/avaliacoes/$id': typeof AuthenticatedAvaliacoesIdRoute
   '/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
+  '/relatorios/$id': typeof AuthenticatedRelatoriosIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -111,6 +119,7 @@ export interface FileRoutesByTo {
   '/aplicacoes/$id': typeof AuthenticatedAplicacoesIdRoute
   '/avaliacoes/$id': typeof AuthenticatedAvaliacoesIdRoute
   '/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
+  '/relatorios/$id': typeof AuthenticatedRelatoriosIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -126,6 +135,7 @@ export interface FileRoutesById {
   '/_authenticated/aplicacoes/$id': typeof AuthenticatedAplicacoesIdRoute
   '/_authenticated/avaliacoes/$id': typeof AuthenticatedAvaliacoesIdRoute
   '/_authenticated/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
+  '/_authenticated/relatorios/$id': typeof AuthenticatedRelatoriosIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -141,6 +151,7 @@ export interface FileRouteTypes {
     | '/aplicacoes/$id'
     | '/avaliacoes/$id'
     | '/avaliacoes/nova'
+    | '/relatorios/$id'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -154,6 +165,7 @@ export interface FileRouteTypes {
     | '/aplicacoes/$id'
     | '/avaliacoes/$id'
     | '/avaliacoes/nova'
+    | '/relatorios/$id'
   id:
     | '__root__'
     | '/'
@@ -168,6 +180,7 @@ export interface FileRouteTypes {
     | '/_authenticated/aplicacoes/$id'
     | '/_authenticated/avaliacoes/$id'
     | '/_authenticated/avaliacoes/nova'
+    | '/_authenticated/relatorios/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -264,6 +277,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedAvaliacoesNovaRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
+    '/_authenticated/relatorios/$id': {
+      id: '/_authenticated/relatorios/$id'
+      path: '/relatorios/$id'
+      fullPath: '/relatorios/$id'
+      preLoaderRoute: typeof AuthenticatedRelatoriosIdRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
   }
 }
 
@@ -288,6 +308,7 @@ interface AuthenticatedRouteRouteChildren {
   AuthenticatedInstrumentoRoute: typeof AuthenticatedInstrumentoRoute
   AuthenticatedAvaliacoesIdRoute: typeof AuthenticatedAvaliacoesIdRoute
   AuthenticatedAvaliacoesNovaRoute: typeof AuthenticatedAvaliacoesNovaRoute
+  AuthenticatedRelatoriosIdRoute: typeof AuthenticatedRelatoriosIdRoute
 }
 
 const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
@@ -297,6 +318,7 @@ const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
   AuthenticatedInstrumentoRoute: AuthenticatedInstrumentoRoute,
   AuthenticatedAvaliacoesIdRoute: AuthenticatedAvaliacoesIdRoute,
   AuthenticatedAvaliacoesNovaRoute: AuthenticatedAvaliacoesNovaRoute,
+  AuthenticatedRelatoriosIdRoute: AuthenticatedRelatoriosIdRoute,
 }
 
 const AuthenticatedRouteRouteWithChildren =
