@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
 import { useState } from "react";
@@ -220,6 +220,11 @@ function AplicacaoDetalhe() {
                     disabled={releaseM.isPending}
                   >
                     Liberar relatório
+                  </Button>
+                  <Button variant="secondary" asChild>
+                    <Link to="/relatorios/$id" params={{ id }}>
+                      Abrir relatório premium
+                    </Link>
                   </Button>
                 </div>
 

@@ -7,9 +7,10 @@ import { cn } from "@/lib/utils";
 
 const NAV = [
   { to: "/dashboard", label: "Dashboard" },
-  { to: "/avaliacoes/nova", label: "Nova avaliação" },
+  { to: "/aplicacoes", label: "Diagnóstico Empresarial" },
+  { to: "/avaliacoes/nova", label: "DISC" },
   { to: "/empresas", label: "Empresas" },
-  { to: "/instrumento", label: "Instrumento" },
+  { to: "/instrumento", label: "Instrumentos" },
 ] as const;
 
 export function AppShell({
@@ -40,7 +41,7 @@ export function AppShell({
               A
             </span>
             <span className="font-display text-sm font-semibold tracking-tight">
-              APAS <span className="text-primary">DISC Profile</span>
+              APAS <span className="text-primary">DIAGNÓSTICA</span>
             </span>
           </Link>
 
@@ -95,7 +96,9 @@ export function AppShell({
       <main className="mx-auto max-w-6xl px-4 py-8">
         <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="eyebrow">APAS Soluções</p>
+            <p className="eyebrow">
+              APAS Diagnóstica · Diagnósticos Empresariais, Comportamentais e de Pessoas
+            </p>
             <h1 className={cn("mt-1 text-2xl font-semibold sm:text-3xl", "rule-red")}>{title}</h1>
             {description && (
               <p className="mt-4 max-w-2xl text-sm text-muted-foreground">{description}</p>

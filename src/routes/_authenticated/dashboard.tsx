@@ -13,16 +13,19 @@ import { listAssessments, deleteAssessment } from "@/lib/apas.functions";
 export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => ({
     meta: [
-      { title: "Dashboard do Coach — APAS DISC Profile" },
+      { title: "Dashboard do analista — APAS DIAGNÓSTICA" },
       {
         name: "description",
-        content: "Acompanhe avaliações comportamentais, status de resposta e relatórios APAS.",
+        content:
+          "Acompanhe diagnósticos empresariais e avaliações comportamentais, status de resposta e relatórios APAS.",
       },
-      { property: "og:title", content: "Dashboard do Coach — APAS DISC Profile" },
+      { property: "og:title", content: "Dashboard do analista — APAS DIAGNÓSTICA" },
       {
         property: "og:description",
-        content: "Painel administrativo das avaliações comportamentais APAS.",
+        content: "Painel administrativo dos diagnósticos e avaliações APAS.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: Dashboard,
@@ -68,13 +71,18 @@ function Dashboard() {
   return (
     <AppShell
       title="Dashboard"
-      description="Visão geral das avaliações comportamentais APAS: envio de links exclusivos, acompanhamento de respostas e acesso aos relatórios."
+      description="Visão geral da APAS Diagnóstica: aplicações do Diagnóstico Empresarial, avaliações comportamentais DISC, links exclusivos e relatórios validados."
       actions={
-        <Button asChild>
-          <Link to="/avaliacoes/nova">
-            <Plus className="size-4" /> Nova avaliação
-          </Link>
-        </Button>
+        <div className="flex flex-wrap gap-2">
+          <Button variant="outline" asChild>
+            <Link to="/aplicacoes">Diagnóstico Empresarial</Link>
+          </Button>
+          <Button asChild>
+            <Link to="/avaliacoes/nova">
+              <Plus className="size-4" /> Nova avaliação DISC
+            </Link>
+          </Button>
+        </div>
       }
     >
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
