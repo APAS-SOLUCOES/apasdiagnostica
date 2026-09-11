@@ -19,7 +19,7 @@ import {
 } from "@/lib/diagnostica.functions";
 import { listOrganizations } from "@/lib/apas.functions";
 
-export const Route = createFileRoute("/_authenticated/aplicacoes")({
+export const Route = createFileRoute("/_authenticated/aplicacoes/")({
   head: () => ({
     meta: [
       { title: "Aplicações — APAS DIAGNÓSTICA" },
