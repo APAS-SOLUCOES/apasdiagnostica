@@ -12,12 +12,12 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
 import { Route as AuthRouteImport } from './routes/auth'
-import { Route as AuthenticatedAplicacoesRouteImport } from './routes/_authenticated/aplicacoes'
 import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated/dashboard'
 import { Route as AuthenticatedEmpresasRouteImport } from './routes/_authenticated/empresas'
 import { Route as AuthenticatedInstrumentoRouteImport } from './routes/_authenticated/instrumento'
 import { Route as ATokenRouteImport } from './routes/a.$token'
 import { Route as QTokenRouteImport } from './routes/q.$token'
+import { Route as AuthenticatedAplicacoesIndexRouteImport } from './routes/_authenticated/aplicacoes.index'
 import { Route as AuthenticatedAplicacoesIdRouteImport } from './routes/_authenticated/aplicacoes.$id'
 import { Route as AuthenticatedAvaliacoesIdRouteImport } from './routes/_authenticated/avaliacoes.$id'
 import { Route as AuthenticatedAvaliacoesNovaRouteImport } from './routes/_authenticated/avaliacoes.nova'
@@ -36,11 +36,6 @@ const AuthRoute = AuthRouteImport.update({
   id: '/auth',
   path: '/auth',
   getParentRoute: () => rootRouteImport,
-} as any)
-const AuthenticatedAplicacoesRoute = AuthenticatedAplicacoesRouteImport.update({
-  id: '/aplicacoes',
-  path: '/aplicacoes',
-  getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
 const AuthenticatedDashboardRoute = AuthenticatedDashboardRouteImport.update({
   id: '/dashboard',
@@ -68,11 +63,17 @@ const QTokenRoute = QTokenRouteImport.update({
   path: '/q/$token',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AuthenticatedAplicacoesIndexRoute =
+  AuthenticatedAplicacoesIndexRouteImport.update({
+    id: '/aplicacoes/',
+    path: '/aplicacoes/',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
 const AuthenticatedAplicacoesIdRoute =
   AuthenticatedAplicacoesIdRouteImport.update({
-    id: '/$id',
-    path: '/$id',
-    getParentRoute: () => AuthenticatedAplicacoesRoute,
+    id: '/aplicacoes/$id',
+    path: '/aplicacoes/$id',
+    getParentRoute: () => AuthenticatedRouteRoute,
   } as any)
 const AuthenticatedAvaliacoesIdRoute =
   AuthenticatedAvaliacoesIdRouteImport.update({
@@ -96,7 +97,6 @@ const AuthenticatedRelatoriosIdRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
-  '/aplicacoes': typeof AuthenticatedAplicacoesRouteWithChildren
   '/dashboard': typeof AuthenticatedDashboardRoute
   '/empresas': typeof AuthenticatedEmpresasRoute
   '/instrumento': typeof AuthenticatedInstrumentoRoute
@@ -106,11 +106,11 @@ export interface FileRoutesByFullPath {
   '/avaliacoes/$id': typeof AuthenticatedAvaliacoesIdRoute
   '/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
   '/relatorios/$id': typeof AuthenticatedRelatoriosIdRoute
+  '/aplicacoes/': typeof AuthenticatedAplicacoesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
-  '/aplicacoes': typeof AuthenticatedAplicacoesRouteWithChildren
   '/dashboard': typeof AuthenticatedDashboardRoute
   '/empresas': typeof AuthenticatedEmpresasRoute
   '/instrumento': typeof AuthenticatedInstrumentoRoute
@@ -120,13 +120,13 @@ export interface FileRoutesByTo {
   '/avaliacoes/$id': typeof AuthenticatedAvaliacoesIdRoute
   '/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
   '/relatorios/$id': typeof AuthenticatedRelatoriosIdRoute
+  '/aplicacoes': typeof AuthenticatedAplicacoesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
   '/auth': typeof AuthRoute
-  '/_authenticated/aplicacoes': typeof AuthenticatedAplicacoesRouteWithChildren
   '/_authenticated/dashboard': typeof AuthenticatedDashboardRoute
   '/_authenticated/empresas': typeof AuthenticatedEmpresasRoute
   '/_authenticated/instrumento': typeof AuthenticatedInstrumentoRoute
@@ -136,13 +136,13 @@ export interface FileRoutesById {
   '/_authenticated/avaliacoes/$id': typeof AuthenticatedAvaliacoesIdRoute
   '/_authenticated/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
   '/_authenticated/relatorios/$id': typeof AuthenticatedRelatoriosIdRoute
+  '/_authenticated/aplicacoes/': typeof AuthenticatedAplicacoesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/auth'
-    | '/aplicacoes'
     | '/dashboard'
     | '/empresas'
     | '/instrumento'
@@ -152,11 +152,11 @@ export interface FileRouteTypes {
     | '/avaliacoes/$id'
     | '/avaliacoes/nova'
     | '/relatorios/$id'
+    | '/aplicacoes/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/auth'
-    | '/aplicacoes'
     | '/dashboard'
     | '/empresas'
     | '/instrumento'
@@ -166,12 +166,12 @@ export interface FileRouteTypes {
     | '/avaliacoes/$id'
     | '/avaliacoes/nova'
     | '/relatorios/$id'
+    | '/aplicacoes'
   id:
     | '__root__'
     | '/'
     | '/_authenticated'
     | '/auth'
-    | '/_authenticated/aplicacoes'
     | '/_authenticated/dashboard'
     | '/_authenticated/empresas'
     | '/_authenticated/instrumento'
@@ -181,6 +181,7 @@ export interface FileRouteTypes {
     | '/_authenticated/avaliacoes/$id'
     | '/_authenticated/avaliacoes/nova'
     | '/_authenticated/relatorios/$id'
+    | '/_authenticated/aplicacoes/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -213,13 +214,6 @@ declare module '@tanstack/react-router' {
       fullPath: '/auth'
       preLoaderRoute: typeof AuthRouteImport
       parentRoute: typeof rootRouteImport
-    }
-    '/_authenticated/aplicacoes': {
-      id: '/_authenticated/aplicacoes'
-      path: '/aplicacoes'
-      fullPath: '/aplicacoes'
-      preLoaderRoute: typeof AuthenticatedAplicacoesRouteImport
-      parentRoute: typeof AuthenticatedRouteRoute
     }
     '/_authenticated/dashboard': {
       id: '/_authenticated/dashboard'
@@ -256,12 +250,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof QTokenRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/_authenticated/aplicacoes/': {
+      id: '/_authenticated/aplicacoes/'
+      path: '/aplicacoes'
+      fullPath: '/aplicacoes/'
+      preLoaderRoute: typeof AuthenticatedAplicacoesIndexRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
     '/_authenticated/aplicacoes/$id': {
       id: '/_authenticated/aplicacoes/$id'
-      path: '/$id'
+      path: '/aplicacoes/$id'
       fullPath: '/aplicacoes/$id'
       preLoaderRoute: typeof AuthenticatedAplicacoesIdRouteImport
-      parentRoute: typeof AuthenticatedAplicacoesRoute
+      parentRoute: typeof AuthenticatedRouteRoute
     }
     '/_authenticated/avaliacoes/$id': {
       id: '/_authenticated/avaliacoes/$id'
@@ -287,38 +288,26 @@ declare module '@tanstack/react-router' {
   }
 }
 
-interface AuthenticatedAplicacoesRouteChildren {
-  AuthenticatedAplicacoesIdRoute: typeof AuthenticatedAplicacoesIdRoute
-}
-
-const AuthenticatedAplicacoesRouteChildren: AuthenticatedAplicacoesRouteChildren =
-  {
-    AuthenticatedAplicacoesIdRoute: AuthenticatedAplicacoesIdRoute,
-  }
-
-const AuthenticatedAplicacoesRouteWithChildren =
-  AuthenticatedAplicacoesRoute._addFileChildren(
-    AuthenticatedAplicacoesRouteChildren,
-  )
-
 interface AuthenticatedRouteRouteChildren {
-  AuthenticatedAplicacoesRoute: typeof AuthenticatedAplicacoesRouteWithChildren
   AuthenticatedDashboardRoute: typeof AuthenticatedDashboardRoute
   AuthenticatedEmpresasRoute: typeof AuthenticatedEmpresasRoute
   AuthenticatedInstrumentoRoute: typeof AuthenticatedInstrumentoRoute
+  AuthenticatedAplicacoesIdRoute: typeof AuthenticatedAplicacoesIdRoute
   AuthenticatedAvaliacoesIdRoute: typeof AuthenticatedAvaliacoesIdRoute
   AuthenticatedAvaliacoesNovaRoute: typeof AuthenticatedAvaliacoesNovaRoute
   AuthenticatedRelatoriosIdRoute: typeof AuthenticatedRelatoriosIdRoute
+  AuthenticatedAplicacoesIndexRoute: typeof AuthenticatedAplicacoesIndexRoute
 }
 
 const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
-  AuthenticatedAplicacoesRoute: AuthenticatedAplicacoesRouteWithChildren,
   AuthenticatedDashboardRoute: AuthenticatedDashboardRoute,
   AuthenticatedEmpresasRoute: AuthenticatedEmpresasRoute,
   AuthenticatedInstrumentoRoute: AuthenticatedInstrumentoRoute,
+  AuthenticatedAplicacoesIdRoute: AuthenticatedAplicacoesIdRoute,
   AuthenticatedAvaliacoesIdRoute: AuthenticatedAvaliacoesIdRoute,
   AuthenticatedAvaliacoesNovaRoute: AuthenticatedAvaliacoesNovaRoute,
   AuthenticatedRelatoriosIdRoute: AuthenticatedRelatoriosIdRoute,
+  AuthenticatedAplicacoesIndexRoute: AuthenticatedAplicacoesIndexRoute,
 }
 
 const AuthenticatedRouteRouteWithChildren =

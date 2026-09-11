@@ -19,7 +19,7 @@ import {
 } from "@/lib/diagnostica.functions";
 import { listOrganizations } from "@/lib/apas.functions";
 
-export const Route = createFileRoute("/_authenticated/aplicacoes")({
+export const Route = createFileRoute("/_authenticated/aplicacoes/")({
   head: () => ({
     meta: [
       { title: "Aplicações — APAS DIAGNÓSTICA" },
@@ -121,21 +121,35 @@ function Aplicacoes() {
           <CardContent className="space-y-4">
             <div className="grid gap-4 sm:grid-cols-2">
               <Field
+                id="full_name"
                 label="Participante *"
                 value={form.full_name}
                 onChange={(v) => set("full_name", v)}
               />
-              <Field label="E-mail" value={form.email} onChange={(v) => set("email", v)} />
-              <Field label="WhatsApp" value={form.whatsapp} onChange={(v) => set("whatsapp", v)} />
               <Field
+                id="email"
+                type="email"
+                label="E-mail"
+                value={form.email}
+                onChange={(v) => set("email", v)}
+              />
+              <Field
+                id="whatsapp"
+                label="WhatsApp"
+                value={form.whatsapp}
+                onChange={(v) => set("whatsapp", v)}
+              />
+              <Field
+                id="role_title"
                 label="Cargo / função"
                 value={form.role_title}
                 onChange={(v) => set("role_title", v)}
               />
             </div>
             <div className="space-y-2">
-              <Label>Empresa (opcional)</Label>
+              <Label htmlFor="organization_id">Empresa (opcional)</Label>
               <select
+                id="organization_id"
                 className="h-10 w-full rounded-md border border-input bg-background px-3 text-sm"
                 value={form.organization_id}
                 onChange={(e) => set("organization_id", e.target.value)}
@@ -149,8 +163,9 @@ function Aplicacoes() {
               </select>
             </div>
             <div className="space-y-2">
-              <Label>Contexto da aplicação</Label>
+              <Label htmlFor="context">Contexto da aplicação</Label>
               <Textarea
+                id="context"
                 rows={3}
                 maxLength={1500}
                 value={form.context}
@@ -250,18 +265,22 @@ function Aplicacoes() {
 }
 
 function Field({
+  id,
   label,
   value,
   onChange,
+  type = "text",
 }: {
+  id: string;
   label: string;
   value: string;
   onChange: (v: string) => void;
+  type?: string;
 }) {
   return (
     <div className="space-y-2">
-      <Label>{label}</Label>
-      <Input value={value} onChange={(e) => onChange(e.target.value)} />
+      <Label htmlFor={id}>{label}</Label>
+      <Input id={id} type={type} value={value} onChange={(e) => onChange(e.target.value)} />
     </div>
   );
 }
