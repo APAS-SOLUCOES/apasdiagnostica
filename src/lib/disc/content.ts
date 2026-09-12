@@ -6,7 +6,7 @@ import type { Dimension } from "./instrument";
  */
 
 export const APAS_DISCLAIMER =
-  "Este relatório descreve preferências comportamentais observáveis em contexto profissional. Não é um diagnóstico clínico, psicológico ou de personalidade, não mede inteligência, caráter ou competência técnica, e deve ser usado como apoio ao desenvolvimento e ao diálogo — nunca como critério isolado de decisão.";
+  "O APAS DISC é uma ferramenta de análise de tendências comportamentais e não constitui diagnóstico psicológico, clínico ou psiquiátrico. Seus resultados devem ser interpretados como indicadores de tendências e utilizados em conjunto com contexto, observação e devolutiva profissional. Não mede inteligência, caráter ou competência técnica e não deve ser usado isoladamente para decisões sobre pessoas.";
 
 export const APAS_INTRO = [
   "Bem-vindo ao Relatório Comportamental APAS. Este documento foi construído para transformar as suas respostas em leitura prática: o que você tende a priorizar, como se comunica, em que ritmo decide e o que sustenta a sua energia no trabalho.",

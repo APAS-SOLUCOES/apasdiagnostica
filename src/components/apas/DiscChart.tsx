@@ -11,7 +11,7 @@ import {
 import { DIMENSIONS, DIMENSION_NAMES, type Dimension } from "@/lib/disc/instrument";
 import type { DimensionMap } from "@/lib/disc/scoring";
 
-const COLORS: Record<Dimension, string> = {
+export const DISC_COLORS: Record<Dimension, string> = {
   D: "var(--chart-1)",
   I: "var(--chart-2)",
   S: "var(--chart-4)",
@@ -43,7 +43,7 @@ export function DiscChart({ percent }: { percent: DimensionMap }) {
           />
           <Bar dataKey="valor" radius={[6, 6, 0, 0]}>
             {data.map((row) => (
-              <Cell key={row.dim} fill={COLORS[row.dim as Dimension]} />
+              <Cell key={row.dim} fill={DISC_COLORS[row.dim as Dimension]} />
             ))}
           </Bar>
         </BarChart>
@@ -66,7 +66,7 @@ export function DiscBars({ percent }: { percent: DimensionMap }) {
           <div className="mt-1 h-2 w-full overflow-hidden rounded-full bg-secondary">
             <div
               className="h-full rounded-full"
-              style={{ width: `${Math.min(100, percent[d])}%`, background: COLORS[d] }}
+              style={{ width: `${Math.min(100, percent[d])}%`, background: DISC_COLORS[d] }}
             />
           </div>
         </div>
