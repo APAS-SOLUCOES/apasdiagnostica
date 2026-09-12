@@ -23,3 +23,8 @@ Evolução do projeto APAS DISC Profile para a plataforma **APAS DIAGNÓSTICA** 
 ## Decisões a validar com o usuário
 - Perguntas seed são texto de trabalho provisório (editáveis em /instrumentos/empresarial), não o V3 oficial.
 - Pesos dos eixos por dimensão e regras de padrões/indicadores são parâmetros V1 calibráveis.
+
+## Evolução premium APAS DISC
+- [ ] Evoluir relatório DISC individual para versão premium impressa
+- [ ] Separar e enriquecer área técnica e guia de devolutiva
+- [ ] Validar acesso, fluxo DISC, diagnóstico empresarial, testes e build
