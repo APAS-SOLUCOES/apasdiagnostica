@@ -25,7 +25,7 @@ Evolução do projeto APAS DISC Profile para a plataforma **APAS DIAGNÓSTICA** 
 - Pesos dos eixos por dimensão e regras de padrões/indicadores são parâmetros V1 calibráveis.
 
 ## Evolução premium APAS DISC
-- [ ] Evoluir relatório DISC individual para versão premium impressa
-- [ ] Separar e enriquecer área técnica e guia de devolutiva
+- [x] Evoluir relatório DISC individual para versão premium impressa
+- [x] Separar e enriquecer área técnica e guia de devolutiva, sem respostas brutas
 - [ ] Validar acesso, fluxo DISC, diagnóstico empresarial, testes e build
 - [x] Plano premium aprovado pelo usuário; implementar sem nova rodada de planejamento
