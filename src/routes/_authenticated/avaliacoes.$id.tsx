@@ -129,7 +129,7 @@ function DetalhePage() {
         <>
           <section className="mt-8 print:hidden" aria-labelledby="technical-title">
             <div className="mb-4"><p className="eyebrow">Uso exclusivo do especialista</p><h2 id="technical-title" className="mt-1 font-display text-xl font-semibold">Relatório técnico e roteiro de devolutiva</h2><p className="mt-2 text-sm text-muted-foreground">Indicadores de apoio à análise profissional. Esta área não integra o PDF individual.</p></div>
-            <DiscTechnicalPanel assessment={assessment} scores={scores} computedAt={result?.computed_at} />
+            <DiscTechnicalPanel assessment={assessment} scores={scores} computedAt={result?.computed_at ?? null} />
           </section>
           <section className="mt-10" aria-labelledby="individual-title">
             <div className="mb-4 print:hidden"><p className="eyebrow">Prévia do avaliado</p><h2 id="individual-title" className="mt-1 font-display text-xl font-semibold">Relatório individual APAS DISC</h2></div>
