@@ -130,10 +130,10 @@ export const getAssessmentDetail = createServerFn({ method: "GET" })
       .single();
     if (error) throw new Error(error.message);
 
-    const [{ data: responses }, { data: result }] = await Promise.all([
+    const [{ data: responseMetadata }, { data: result }] = await Promise.all([
       context.supabase
         .from("assessment_responses")
-        .select("answers, meta, created_at")
+        .select("created_at")
         .eq("assessment_id", data.id)
         .maybeSingle(),
       context.supabase
@@ -143,7 +143,7 @@ export const getAssessmentDetail = createServerFn({ method: "GET" })
         .maybeSingle(),
     ]);
 
-    return { assessment, responses: responses ?? null, result: result ?? null };
+    return { assessment, responseMetadata: responseMetadata ?? null, result: result ?? null };
   });
 
 export const getInstrumentConfig = createServerFn({ method: "GET" })

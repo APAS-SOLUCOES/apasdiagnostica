@@ -1,16 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useQuery } from "@tanstack/react-query";
-import { Copy, Loader2 } from "lucide-react";
+import { Copy, Loader2, Printer } from "lucide-react";
 import { toast } from "sonner";
 import { getAssessmentDetail } from "@/lib/apas.functions";
 import { AppShell } from "@/components/apas/AppShell";
-import { DiscBars, DiscChart } from "@/components/apas/DiscChart";
+import { DiscPremiumReport } from "@/components/apas/DiscPremiumReport";
+import { DiscTechnicalPanel } from "@/components/apas/DiscTechnicalPanel";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { DIMENSION_NAMES, type Dimension } from "@/lib/disc/instrument";
 import type { ScoreResult } from "@/lib/disc/scoring";
-import { APAS_DISCLAIMER, COMBINATION_CONTENT, DIMENSION_CONTENT } from "@/lib/disc/content";
 
 export const Route = createFileRoute("/_authenticated/avaliacoes/$id")({
   head: () => ({
@@ -18,12 +17,12 @@ export const Route = createFileRoute("/_authenticated/avaliacoes/$id")({
       { title: "Detalhe da avaliação — APAS DISC Profile" },
       {
         name: "description",
-        content: "Respostas, pontuações D/I/S/C e relatório da avaliação comportamental.",
+        content: "Relatório individual premium e leitura técnica protegida da avaliação comportamental.",
       },
       { property: "og:title", content: "Detalhe da avaliação — APAS DISC Profile" },
       {
         property: "og:description",
-        content: "Painel do consultor com respostas brutas, cálculos e relatório APAS.",
+        content: "Painel protegido do especialista com indicadores e relatório APAS DISC.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -57,7 +56,7 @@ function DetalhePage() {
     );
   }
 
-  const { assessment, responses, result } = q.data;
+  const { assessment, result } = q.data;
   const scores = (result?.scores as unknown as ScoreResult) ?? null;
   const link =
     typeof window !== "undefined" ? `${window.location.origin}/a/${assessment.token}` : "";
@@ -80,13 +79,13 @@ function DetalhePage() {
             <Copy className="size-4" /> Copiar link
           </Button>
           <Button disabled={!scores} onClick={() => window.print()}>
-            Gerar relatório
+            <Printer className="size-4" /> Gerar PDF
           </Button>
         </div>
       }
     >
-      <div className="grid gap-6 lg:grid-cols-3">
-        <div className="rounded-xl border border-border bg-card p-5 lg:col-span-1">
+      <div className="grid gap-6 print:hidden lg:grid-cols-3">
+        <div className="rounded-lg border border-border bg-card p-5 lg:col-span-1">
           <p className="eyebrow">Situação</p>
           <div className="mt-2 space-y-2 text-sm">
             <p>
@@ -112,27 +111,11 @@ function DetalhePage() {
         </div>
 
         {scores ? (
-          <div className="rounded-xl border border-border bg-card p-5 lg:col-span-2">
-            <p className="eyebrow">Perfil adaptado</p>
-            <p className="mt-1 font-display text-xl font-semibold">
-              {DIMENSION_NAMES[scores.predominant]} predominante · combinação {scores.combination}
-            </p>
-            <DiscChart percent={scores.adapted.percent} />
-            <div className="mt-4 grid gap-6 sm:grid-cols-2">
-              <div>
-                <p className="eyebrow mb-2">Perfil natural</p>
-                <DiscBars percent={scores.natural.percent} />
-              </div>
-              <div>
-                <p className="eyebrow mb-2">Perfil social</p>
-                <DiscBars percent={scores.social.percent} />
-              </div>
-            </div>
-            <p className="mt-4 text-xs text-muted-foreground">
-              Índice de adaptação: {scores.adaptationIndex}
-              {scores.adaptationAlert ? " (adaptação elevada — explorar na devolutiva)" : ""} ·
-              versão de cálculo {scores.scoringVersion}
-            </p>
+          <div className="rounded-lg border border-border bg-card p-5 lg:col-span-2">
+            <p className="eyebrow">Documentos disponíveis</p>
+            <h2 className="mt-1 font-display text-xl font-semibold">Relatório individual premium concluído</h2>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">A prévia completa aparece abaixo. O PDF contém somente as 12 páginas do relatório do avaliado; dados técnicos, navegação e controles são excluídos da impressão.</p>
+            <div className="mt-4 flex flex-wrap gap-2 text-xs text-muted-foreground"><Badge variant="outline">12 páginas</Badge><Badge variant="outline">Sem respostas brutas</Badge><Badge variant="outline">Área técnica protegida</Badge></div>
           </div>
         ) : (
           <div className="rounded-xl border border-dashed border-border p-5 text-sm text-muted-foreground lg:col-span-2">
@@ -143,51 +126,16 @@ function DetalhePage() {
       </div>
 
       {scores && (
-        <div className="mt-6 space-y-6">
-          <section className="rounded-xl border border-border bg-card p-5">
-            <p className="eyebrow">Leitura APAS do estilo predominante</p>
-            <h2 className="mt-1 font-display text-lg font-semibold">
-              {DIMENSION_CONTENT[scores.predominant].title}
-            </h2>
-            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              {DIMENSION_CONTENT[scores.predominant].summary}
-            </p>
-            {COMBINATION_CONTENT[scores.combination] && (
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                <strong className="text-foreground">
-                  {COMBINATION_CONTENT[scores.combination]!.title}:
-                </strong>{" "}
-                {COMBINATION_CONTENT[scores.combination]!.text}
-              </p>
-            )}
-            <div className="mt-4 grid gap-4 sm:grid-cols-2">
-              {(["D", "I", "S", "C"] as Dimension[]).map((d) => (
-                <div key={d} className="rounded-lg border border-border p-3">
-                  <p className="text-sm font-medium">
-                    {DIMENSION_NAMES[d]} — nível {scores.levels[d]}
-                  </p>
-                  <p className="mt-1 text-xs text-muted-foreground">
-                    {scores.adapted.percent[d]}% na distribuição adaptada
-                  </p>
-                </div>
-              ))}
-            </div>
-            <p className="mt-4 text-xs text-muted-foreground">{APAS_DISCLAIMER}</p>
+        <>
+          <section className="mt-8 print:hidden" aria-labelledby="technical-title">
+            <div className="mb-4"><p className="eyebrow">Uso exclusivo do especialista</p><h2 id="technical-title" className="mt-1 font-display text-xl font-semibold">Relatório técnico e roteiro de devolutiva</h2><p className="mt-2 text-sm text-muted-foreground">Indicadores de apoio à análise profissional. Esta área não integra o PDF individual.</p></div>
+            <DiscTechnicalPanel assessment={assessment} scores={scores} computedAt={result?.computed_at ?? null} />
           </section>
-
-          <section className="rounded-xl border border-border bg-card p-5">
-            <p className="eyebrow">Respostas brutas</p>
-            <p className="mt-1 text-xs text-muted-foreground">
-              Registradas em{" "}
-              {responses?.created_at
-                ? new Date(responses.created_at).toLocaleString("pt-BR")
-                : "—"}
-            </p>
-            <pre className="mt-3 max-h-72 overflow-auto rounded-lg bg-secondary p-3 text-xs">
-              {JSON.stringify(responses?.answers ?? [], null, 2)}
-            </pre>
+          <section className="mt-10" aria-labelledby="individual-title">
+            <div className="mb-4 print:hidden"><p className="eyebrow">Prévia do avaliado</p><h2 id="individual-title" className="mt-1 font-display text-xl font-semibold">Relatório individual APAS DISC</h2></div>
+            <DiscPremiumReport assessment={assessment} scores={scores} />
           </section>
-        </div>
+        </>
       )}
     </AppShell>
   );

@@ -9,7 +9,7 @@ Transformar o relatório DISC existente em um documento individual premium, pres
   - área técnica do especialista, visível apenas no sistema autenticado e excluída da impressão.
 - Criar o relatório individual em aproximadamente 12 páginas: capa executiva, fundamentos e limites, resumo, perfis Natural/Adaptado/Social, índice de adaptação, gráfico e tabela com a mesma fonte de dados, leitura dos quatro fatores, combinação, comunicação/liderança/decisão/equipe/pressão/mudanças, desenvolvimento, plano de 30 dias e conclusão.
 - Usar linguagem autoral APAS, probabilística e não diagnóstica, incluindo somente a referência conceitual solicitada a William Moulton Marston e *Emotions of Normal People* (1928).
-- Enriquecer a área técnica com metadados da aplicação, dados de cálculo, alertas de qualidade, respostas brutas e guia de devolutiva para o analista.
+- Enriquecer a área técnica com metadados da aplicação, dados de cálculo, alertas de qualidade, consistência e guia de devolutiva para o analista, sem exibir respostas brutas.
 - Criar estilos específicos de impressão com capa, quebras, cabeçalho/rodapé e numeração; ocultar navegação, botões, links e controles administrativos no PDF.
 - Manter o acesso pelas rotas autenticadas e as políticas existentes; não criar link público para o relatório técnico ou individual.
 
