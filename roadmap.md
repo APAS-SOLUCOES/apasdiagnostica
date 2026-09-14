@@ -29,3 +29,8 @@ Evolução do projeto APAS DISC Profile para a plataforma **APAS DIAGNÓSTICA** 
 - [x] Separar e enriquecer área técnica e guia de devolutiva, sem respostas brutas
 - [ ] Validar acesso, fluxo DISC, diagnóstico empresarial, testes e build
 - [x] Plano premium aprovado pelo usuário; implementar sem nova rodada de planejamento
+- [ ] Revisar e versionar o instrumento APAS DISC 1.2 com 24 blocos claros e balanceados
+- [ ] Versionar o scoring 1.2 para forced-choice, proximidade e combinação ordenada
+- [ ] Separar análise técnica e relatório liberado, com validação e liberação explícitas
+- [ ] Preparar entrega por e-mail sem simular envio enquanto o domínio não estiver configurado
+- [ ] Cobrir motor, acesso, release, privacidade e disponibilidade de e-mail com testes
