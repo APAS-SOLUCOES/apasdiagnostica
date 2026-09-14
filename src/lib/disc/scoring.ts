@@ -33,6 +33,14 @@ export type ScoreResult = {
   net?: DimensionMap;
   /** Contagens brutas de escolhas, para auditoria da regra. */
   counts?: { most: DimensionMap; least: DimensionMap };
+  /** Evidência combinada e normalizada usada no scoring APAS 1.2+. */
+  evidence?: DimensionMap;
+  /** Distância percentual entre o primeiro e o segundo fatores. */
+  primaryGap?: number;
+  /** Indica combinação com fatores próximos, sem inverter sua ordem. */
+  closeCombination?: boolean;
+  /** Rótulo interpretável da ordem dos dois fatores principais. */
+  combinationLabel?: string;
 };
 
 
@@ -49,6 +57,20 @@ function toPercent(raw: DimensionMap): DimensionMap {
 
 function order(percent: DimensionMap): Dimension[] {
   return [...DIMENSIONS].sort((a, b) => percent[b] - percent[a]);
+}
+
+function evidenceOrder(
+  evidence: DimensionMap,
+  most: DimensionMap,
+  least: DimensionMap,
+): Dimension[] {
+  return [...DIMENSIONS].sort(
+    (a, b) =>
+      evidence[b] - evidence[a] ||
+      most[b] - most[a] ||
+      least[a] - least[b] ||
+      DIMENSIONS.indexOf(a) - DIMENSIONS.indexOf(b),
+  );
 }
 
 function vector(raw: DimensionMap): ProfileVector {
@@ -110,7 +132,16 @@ export function computeScores(
   const natural = vector(naturalRaw);
 
   const adaptedRaw = empty();
-  if (config.adaptedMode === "net") {
+  const usesEvidenceModel = config.version.startsWith("apas-scoring-1.2");
+  if (usesEvidenceModel) {
+    const affirmativeWeight = config.primaryMostWeight ?? 2;
+    const acceptanceWeight = config.primaryAcceptanceWeight ?? 1;
+    for (const d of DIMENSIONS) {
+      adaptedRaw[d] =
+        mostCount[d] * affirmativeWeight +
+        (blocks - leastCount[d]) * acceptanceWeight;
+    }
+  } else if (config.adaptedMode === "net") {
     const min = Math.min(...DIMENSIONS.map((d) => net[d]));
     const shift = min < 0 ? -min : 0;
     for (const d of DIMENSIONS) adaptedRaw[d] = net[d] + shift;
@@ -125,12 +156,13 @@ export function computeScores(
   const adapted = vector(adaptedRaw);
 
 
-  const source =
+  const configuredSource =
     config.predominantSource === "natural"
       ? natural
       : config.predominantSource === "social"
         ? social
-        : adapted;
+         : adapted;
+  const source = usesEvidenceModel ? adapted : configuredSource;
 
   const levels = {} as Record<Dimension, "alto" | "moderado" | "baixo">;
   for (const d of DIMENSIONS) {
@@ -153,8 +185,13 @@ export function computeScores(
         10,
     ) / 10;
 
-  const predominant = source.order[0]!;
-  const secondary = source.order[1]!;
+  const ranked = usesEvidenceModel
+    ? evidenceOrder(adapted.percent, mostCount, leastCount)
+    : source.order;
+  const predominant = ranked[0] ?? "D";
+  const secondary = ranked[1] ?? "I";
+  const primaryGap = Math.round((source.percent[predominant] - source.percent[secondary]) * 10) / 10;
+  const closeCombination = primaryGap <= (config.proximityThreshold ?? 3);
 
   return {
     scoringVersion: config.version,
@@ -171,6 +208,10 @@ export function computeScores(
     adaptationAlert: adaptationIndex >= config.adaptationAlert,
     net,
     counts: { most: mostCount, least: leastCount },
+    evidence: usesEvidenceModel ? adapted.percent : undefined,
+    primaryGap,
+    closeCombination,
+    combinationLabel: `${predominant}${secondary} — ${predominant} primário / ${secondary} secundário`,
   };
 
 }
