@@ -41,6 +41,12 @@ export type ScoringConfig = {
   thresholds: { high: number; moderate: number };
   /** Diferença total entre social e natural que sinaliza adaptação elevada. */
   adaptationAlert: number;
+  /** Peso da escolha afirmativa na síntese forced-choice (scoring 1.2+). */
+  primaryMostWeight?: number;
+  /** Peso da não rejeição na síntese forced-choice (scoring 1.2+). */
+  primaryAcceptanceWeight?: number;
+  /** Distância percentual máxima para sinalizar fatores próximos. */
+  proximityThreshold?: number;
   labels: Record<ScoringProfileKey, string>;
   /** Descrição legível da regra vigente (aparece no relatório e na tela). */
   ruleDescription: string;
@@ -57,16 +63,16 @@ export type Instrument = {
 
 /** Metadados da versão do instrumento padrão. */
 export const INSTRUMENT_META = {
-  code: "APAS DISC 1.1",
-  version: "1.1.0",
-  releaseDate: "2026-09-03",
+  code: "APAS DISC 1.2",
+  version: "1.2.0",
+  releaseDate: "2026-09-14",
   status: "provisório — em validação",
   blocks: 24,
   statementsPerBlock: 4,
   totalStatements: 96,
   perDimension: 24,
   ruleDescription:
-    "Em cada bloco, a afirmação escolhida como MAIS adiciona +1 à dimensão associada e a escolhida como MENOS subtrai 1 da dimensão associada. Afirmações não escolhidas não pontuam.",
+    "Em cada bloco, as escolhas MAIS e MENOS formam evidências complementares. A síntese prioriza a escolha afirmativa e considera a rejeição, sem depender de uma média isolada entre perfis.",
   validationNotice:
     "Instrumento APAS DISC 1.1 — versão de validação. As afirmações e os pesos devem ser calibrados antes de qualquer uso comercial.",
 } as const;
@@ -87,7 +93,7 @@ const B = (
   ],
 });
 
-export const DEFAULT_ITEMS: InstrumentItem[] = [
+export const LEGACY_ITEMS_1_1: InstrumentItem[] = [
   B(
     "b01",
     "Costumo definir o rumo quando o assunto ainda está em aberto",
@@ -258,8 +264,40 @@ export const DEFAULT_ITEMS: InstrumentItem[] = [
   ),
 ];
 
+/**
+ * APAS DISC 1.2 — revisão de clareza para aplicação forced-choice.
+ * Cada bloco mantém uma alternativa por fator, com extensão e desejabilidade
+ * semelhantes. Os textos descrevem preferências observáveis, sem juízo de valor.
+ */
+export const DEFAULT_ITEMS: InstrumentItem[] = [
+  B("b01", "Defino a direção para o trabalho avançar", "Envolvo as pessoas para gerar movimento", "Mantenho um ritmo estável até concluir", "Defino critérios antes de começar"),
+  B("b02", "Decido assim que tenho o essencial", "Decido depois de conversar com pessoas", "Decido sem apressar o processo", "Decido depois de conferir as informações"),
+  B("b03", "Falo de forma direta e objetiva", "Falo com entusiasmo e expressão", "Falo com calma e atenção", "Falo com precisão e cuidado"),
+  B("b04", "Trabalho melhor com metas desafiadoras", "Trabalho melhor com interação frequente", "Trabalho melhor com rotina previsível", "Trabalho melhor com padrões definidos"),
+  B("b05", "Inicio a mudança e ajusto no caminho", "Apresento a mudança de modo envolvente", "Adoto a mudança de forma gradual", "Avalio os efeitos antes de mudar"),
+  B("b06", "Enfrento a divergência logo que aparece", "Busco aproximar as pessoas na divergência", "Procuro reduzir a tensão na divergência", "Retomo fatos e critérios na divergência"),
+  B("b07", "Assumo tarefas que exigem decisão", "Assumo tarefas que exigem articulação", "Assumo tarefas que exigem continuidade", "Assumo tarefas que exigem precisão"),
+  B("b08", "Estimulo o time com desafios claros", "Estimulo o time com entusiasmo", "Estimulo o time com apoio constante", "Estimulo o time com orientação detalhada"),
+  B("b09", "Aceito riscos para ganhar velocidade", "Aceito riscos quando há apoio das pessoas", "Prefiro riscos pequenos e graduais", "Reduzo riscos antes de avançar"),
+  B("b10", "Planejo a partir do resultado esperado", "Planejo incluindo conversas e articulações", "Planejo mantendo uma sequência conhecida", "Planejo etapas, prazos e critérios"),
+  B("b11", "Conduzo a reunião para uma decisão", "Conduzo a reunião para ampliar a participação", "Conduzo a reunião para manter o entendimento", "Conduzo a reunião para organizar os pontos"),
+  B("b12", "Em um grupo novo, assumo iniciativa", "Em um grupo novo, inicio conversas", "Em um grupo novo, observo antes de participar", "Em um grupo novo, entendo primeiro as regras"),
+  B("b13", "Sob pressão, acelero as decisões", "Sob pressão, converso para mobilizar", "Sob pressão, preservo a estabilidade", "Sob pressão, confiro os riscos"),
+  B("b14", "Dou retorno com franqueza", "Dou retorno destacando possibilidades", "Dou retorno com cuidado e escuta", "Dou retorno com exemplos específicos"),
+  B("b15", "Prefiro autonomia para decidir", "Prefiro liberdade para interagir", "Prefiro apoio disponível durante o trabalho", "Prefiro orientações e limites claros"),
+  B("b16", "Convenço mostrando o resultado", "Convenço criando conexão com as pessoas", "Convenço construindo confiança aos poucos", "Convenço apresentando fatos e lógica"),
+  B("b17", "Questiono regras que atrasam a entrega", "Torno as regras mais fáceis de comunicar", "Sigo regras que preservam a estabilidade", "Sigo regras para manter o padrão"),
+  B("b18", "Ao notar um erro, corrijo imediatamente", "Ao notar um erro, converso com os envolvidos", "Ao notar um erro, evito interromper todo o fluxo", "Ao notar um erro, verifico a causa"),
+  B("b19", "Priorizo o que traz resultado mais rápido", "Priorizo o que depende de articulação", "Priorizo o que mantém a continuidade", "Priorizo o que exige maior exatidão"),
+  B("b20", "Aprendo melhor testando na prática", "Aprendo melhor trocando ideias", "Aprendo melhor repetindo com constância", "Aprendo melhor estudando o método"),
+  B("b21", "Delego pelo resultado esperado", "Delego mantendo contato frequente", "Delego oferecendo acompanhamento", "Delego definindo critérios de entrega"),
+  B("b22", "Valorizo reconhecimento por conquistas", "Valorizo reconhecimento diante das pessoas", "Valorizo reconhecimento pela constância", "Valorizo reconhecimento pela qualidade"),
+  B("b23", "Concluo rapidamente e sigo adiante", "Mantenho o interesse trazendo novas ideias", "Sustento o trabalho até o fim", "Reviso o trabalho antes de concluir"),
+  B("b24", "Avalio o dia pelo que resolvi", "Avalio o dia pelas conexões que criei", "Avalio o dia pela continuidade que mantive", "Avalio o dia pela qualidade do que entreguei"),
+];
+
 export const DEFAULT_SCORING: ScoringConfig = {
-  version: "apas-scoring-1.1.0",
+  version: "apas-scoring-1.2.0",
   predominantSource: "adapted",
   adaptedMode: "average",
   mostWeight: 1,
@@ -267,6 +305,9 @@ export const DEFAULT_SCORING: ScoringConfig = {
   naturalBase: 1,
   thresholds: { high: 32, moderate: 20 },
   adaptationAlert: 18,
+  primaryMostWeight: 2,
+  primaryAcceptanceWeight: 1,
+  proximityThreshold: 3,
   labels: {
     natural: "Perfil Natural",
     social: "Perfil Social",
