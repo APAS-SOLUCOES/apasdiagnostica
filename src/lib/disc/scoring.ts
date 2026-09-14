@@ -208,7 +208,7 @@ export function computeScores(
     adaptationAlert: adaptationIndex >= config.adaptationAlert,
     net,
     counts: { most: mostCount, least: leastCount },
-    evidence: usesEvidenceModel ? adapted.percent : undefined,
+    ...(usesEvidenceModel ? { evidence: adapted.percent } : {}),
     primaryGap,
     closeCombination,
     combinationLabel: `${predominant}${secondary} — ${predominant} primário / ${secondary} secundário`,
