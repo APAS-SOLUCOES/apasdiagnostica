@@ -10,11 +10,15 @@ const FACTOR_CLASS: Record<Dimension, string> = { D: "disc-factor-d", I: "disc-f
 type ReportAssessment = { id: string; candidate_name: string; role_title?: string | null; instrument_version?: string | null; submitted_at?: string | null; organizations?: { name?: string | null } | null };
 type Signal = "strength" | "observe" | "attention" | "tip";
 
+function ApasBrand({ inverse = false }: { inverse?: boolean }) {
+  return <span className={`disc-brand ${inverse ? "disc-brand-inverse" : ""}`} aria-label="APAS Soluções"><strong>APAS</strong><span>SOLUÇÕES</span></span>;
+}
+
 function Page({ number, title, eyebrow, icon: Icon, children, cover = false }: { number: number; title?: string; eyebrow?: string; icon?: LucideIcon; children: React.ReactNode; cover?: boolean }) {
   return <section className={`disc-page ${cover ? "disc-cover" : ""}`}>
-    {!cover && <div className="disc-page-header"><span>APAS DISC</span><span>Relatório de Perfil Comportamental</span></div>}
+    {!cover && <div className="disc-page-header"><ApasBrand /><span>APAS DISC · Relatório de Perfil Comportamental</span></div>}
     <div className="disc-page-body">{eyebrow && <p className="disc-kicker">{eyebrow}</p>}{title && <div className="disc-title-row">{Icon && <Icon aria-hidden="true" />}<h2 className="disc-page-title">{title}</h2></div>}{children}</div>
-    {!cover && <div className="disc-page-footer"><span>APAS Soluções Empresariais · uso individual</span><span>{String(number).padStart(2, "0")}</span></div>}
+    {!cover && <div className="disc-page-footer"><ApasBrand /><span>Uso individual · {String(number).padStart(2, "0")}</span></div>}
   </section>;
 }
 
@@ -37,7 +41,7 @@ function ProfileTable({ vectors }: { vectors: { label: string; value: ProfileVec
 }
 
 function ProfileBars({ title, subtitle, values }: { title: string; subtitle: string; values: DimensionMap }) {
-  return <div className="disc-profile-panel"><h3>{title}</h3><p>{subtitle}</p>{DIMENSIONS.map((d) => <div className="disc-meter" key={d}><div><span>{d} · {DIMENSION_NAMES[d]}</span><strong>{values[d]}%</strong></div><div className="disc-meter-track"><span className={FACTOR_CLASS[d]} style={{ width: `${values[d]}%` }} /></div></div>)}</div>;
+  return <div className="disc-profile-panel"><h3>{title}</h3><p>{subtitle}</p><div className="disc-intensity-chart" aria-label={`Intensidades do perfil ${title}`}>{DIMENSIONS.map((d) => <div className="disc-intensity-column" key={d}><div className="disc-intensity-scale"><span className={FACTOR_CLASS[d]} style={{ height: `${values[d]}%` }} /></div><strong>{values[d]}%</strong><span>{d}</span><small>{DIMENSION_NAMES[d]}</small></div>)}</div></div>;
 }
 
 function ThemeBlock({ icon: Icon, title, children }: { icon: LucideIcon; title: string; children: React.ReactNode }) {
@@ -47,12 +51,13 @@ function ThemeBlock({ icon: Icon, title, children }: { icon: LucideIcon; title: 
 export function DiscPremiumReport({ assessment, scores }: { assessment: ReportAssessment; scores: ScoreResult }) {
   const primary = DIMENSION_CONTENT[scores.predominant];
   const secondary = DIMENSION_CONTENT[scores.secondary];
-  const narrative = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES.DI;
+  const narrative = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES["DI"];
+  if (!narrative) return null;
   const date = assessment.submitted_at ? new Date(assessment.submitted_at).toLocaleDateString("pt-BR") : new Date().toLocaleDateString("pt-BR");
   const adaptationText = scores.adaptationAlert ? "A distância entre espontaneidade e demanda percebida merece atenção. Ela pode indicar flexibilidade, mas também esforço continuado — uma hipótese para validar no seu contexto." : "A distância entre espontaneidade e demanda percebida está em uma faixa sem alerta automático. Observe, ainda assim, quais contextos ampliam ou reduzem sua energia.";
 
   return <article className="disc-report" aria-label={`Relatório DISC de ${assessment.candidate_name}`}>
-    <Page number={1} cover><img className="disc-cover-art" src={coverArtwork} width={1400} height={1800} alt="Composição geométrica abstrata que representa direção, conexão e equilíbrio" /><div className="disc-cover-overlay" /><div className="disc-cover-brand">APAS <strong>DISC</strong><small>1.2</small></div><div className="disc-cover-copy"><p>Relatório de Perfil Comportamental</p><h1>{assessment.candidate_name}</h1><blockquote>Consciência para reconhecer padrões. Liberdade para escolher como agir.</blockquote></div><div className="disc-cover-factors">{DIMENSIONS.map((d) => <FactorMark key={d} dimension={d} />)}</div><div className="disc-cover-meta"><div><span>Relatório individual</span><span>{assessment.role_title || assessment.organizations?.name || "Autoconhecimento profissional"}</span></div><div><span>APAS Soluções Empresariais</span><span>{date}</span></div></div></Page>
+    <Page number={1} cover><img className="disc-cover-art" src={coverArtwork} width={1400} height={1800} alt="Composição geométrica abstrata que representa direção, conexão e equilíbrio" /><div className="disc-cover-overlay" /><div className="disc-cover-brand"><ApasBrand inverse /><span>DISC</span><small>1.2</small></div><div className="disc-cover-copy"><p>Relatório de Perfil Comportamental</p><h1>{assessment.candidate_name}</h1><blockquote>Consciência para reconhecer padrões. Liberdade para escolher como agir.</blockquote></div><div className="disc-cover-factors">{DIMENSIONS.map((d) => <FactorMark key={d} dimension={d} />)}</div><div className="disc-cover-meta"><div><span>Relatório individual</span><span>{assessment.role_title || assessment.organizations?.name || "Autoconhecimento profissional"}</span></div><div><ApasBrand inverse /><span>{date}</span></div></div></Page>
 
     <Page number={2} eyebrow="Antes de olhar o resultado" title="Você não é um número." icon={Compass}><p className="disc-opening">O resultado deste relatório não pretende colocar você dentro de uma caixa ou definir quem você é. Ele mostra tendências sobre a forma como você costuma agir, decidir, se comunicar e responder às situações do dia a dia.</p><div className="disc-editorial-quote">Toda leitura ganha sentido quando encontra a sua história, o seu contexto e as suas escolhas.</div><div className="disc-two-columns"><SignalList type="strength" title="O que esta leitura oferece" items={["Uma linguagem para reconhecer preferências", "Hipóteses para conversas e desenvolvimento", "Pistas sobre energia, contexto e adaptação"]}/><SignalList type="attention" title="O que ela não define" items={["Sua personalidade completa ou seu caráter", "Sua inteligência ou competência técnica", "Um limite permanente para suas escolhas"]}/></div><p className="disc-foundation">A referência conceitual parte dos estudos de William Moulton Marston em <em>Emotions of Normal People</em> (1928). A aplicação e a linguagem deste relatório são autorais da APAS.</p><p className="disc-note">{APAS_DISCLAIMER}</p></Page>
 
@@ -74,6 +79,6 @@ export function DiscPremiumReport({ assessment, scores }: { assessment: ReportAs
 
     <Page number={11} eyebrow="Prática" title="Seu desenvolvimento em 30 dias" icon={Sprout}><p className="disc-opening">Desenvolvimento não exige negar seu estilo. Exige ampliar opções para responder melhor ao que cada situação pede.</p><div className="disc-plan">{narrative.experiments.map((item, index) => <div key={item}><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{["Escolha", "Pratique", "Observe"][index]}</h3><p>{item}</p></div></div>)}</div><div className="disc-action-box"><h3>Meu experimento de 30 dias</h3><p>Comportamento que quero praticar:</p><div/><p>Situação em que vou experimentar:</p><div/><p>Pessoa que poderá me dar retorno:</p><div/><p>Sinal concreto de progresso:</p><div/></div><p className="disc-note">{DEVELOPMENT_FRAMEWORK.slice(0, 3).join(" ")}</p></Page>
 
-    <Page number={12} eyebrow="Continuidade" title="Seu perfil não é um destino" icon={ArrowUpRight}><p className="disc-closing">Quanto maior sua consciência sobre seus próprios padrões, maior pode ser sua capacidade de escolher como agir.</p><div className="disc-combination"><span>{scores.combination}</span><div><h3>{narrative.title}</h3><p>Use esta combinação como linguagem para investigar experiências, não como caixa, rótulo ou justificativa automática.</p></div></div><div className="disc-two-columns"><SignalCard type="strength" title="Leve com você"><p>Os quatro fatores fazem parte do seu repertório. Seu resultado mostra preferências relativas neste momento.</p></SignalCard><SignalCard type="tip" title="Próximo passo"><p>Valide estas hipóteses em uma devolutiva e escolha uma ação simples, observável e relevante para os próximos 30 dias.</p></SignalCard></div><p className="disc-note">{APAS_DISCLAIMER}</p><div className="disc-signature"><strong>APAS Soluções Empresariais</strong><span>Relatório individual · {assessment.instrument_version || "APAS DISC 1.2"} · {date}</span></div></Page>
+    <Page number={12} eyebrow="Continuidade" title="Seu perfil não é um destino" icon={ArrowUpRight}><p className="disc-closing">Quanto maior sua consciência sobre seus próprios padrões, maior pode ser sua capacidade de escolher como agir.</p><div className="disc-combination"><span>{scores.combination}</span><div><h3>{narrative.title}</h3><p>Use esta combinação como linguagem para investigar experiências, não como caixa, rótulo ou justificativa automática.</p></div></div><div className="disc-two-columns"><SignalCard type="strength" title="Leve com você"><p>Os quatro fatores fazem parte do seu repertório. Seu resultado mostra preferências relativas neste momento.</p></SignalCard><SignalCard type="tip" title="Próximo passo"><p>Valide estas hipóteses em uma devolutiva e escolha uma ação simples, observável e relevante para os próximos 30 dias.</p></SignalCard></div><p className="disc-note">{APAS_DISCLAIMER}</p><div className="disc-signature"><ApasBrand /><span>Relatório individual · {assessment.instrument_version || "APAS DISC 1.2"} · {date}</span></div></Page>
   </article>;
 }
