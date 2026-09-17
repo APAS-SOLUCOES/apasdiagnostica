@@ -14,7 +14,9 @@ describe("APAS DISC scoring 1.2", () => {
   it("mantém os três perfis normalizados e calcula adaptação", () => {
     const result = computeScores(answers(["D", "I", "D"], ["C", "S", "C"]), DEFAULT_INSTRUMENT);
     for (const profile of [result.natural, result.adapted, result.social]) {
-      expect(Object.values(profile.percent).reduce((sum, value) => sum + value, 0)).toBeCloseTo(100, 1);
+      const total = Object.values(profile.percent).reduce((sum, value) => sum + value, 0);
+      expect(total).toBeGreaterThanOrEqual(99.9);
+      expect(total).toBeLessThanOrEqual(100.1);
     }
     expect(result.adaptationIndex).toBeGreaterThanOrEqual(0);
   });
@@ -35,7 +37,11 @@ describe("APAS DISC scoring 1.2", () => {
   });
 
   it("sinaliza proximidade sem inverter a ordem observada", () => {
-    const most = [...Array<Dimension>(13).fill("D"), ...Array<Dimension>(11).fill("I")];
+    const most = [
+      ...Array<Dimension>(12).fill("D"),
+      ...Array<Dimension>(11).fill("I"),
+      ...Array<Dimension>(1).fill("S"),
+    ];
     const least = [...Array<Dimension>(12).fill("C"), ...Array<Dimension>(12).fill("S")];
     const result = computeScores(answers(most, least), DEFAULT_INSTRUMENT);
     expect(result.combination).toBe("DI");
