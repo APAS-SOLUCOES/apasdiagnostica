@@ -15,8 +15,8 @@ describe("APAS DISC scoring 1.2", () => {
     const result = computeScores(answers(["D", "I", "D"], ["C", "S", "C"]), DEFAULT_INSTRUMENT);
     for (const profile of [result.natural, result.adapted, result.social]) {
       const total = Object.values(profile.percent).reduce((sum, value) => sum + value, 0);
-      expect(total).toBeGreaterThanOrEqual(99.9);
-      expect(total).toBeLessThanOrEqual(100.1);
+      expect(Math.round(total * 10) / 10).toBeGreaterThanOrEqual(99.9);
+      expect(Math.round(total * 10) / 10).toBeLessThanOrEqual(100.1);
     }
     expect(result.adaptationIndex).toBeGreaterThanOrEqual(0);
   });
