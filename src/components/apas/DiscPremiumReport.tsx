@@ -15,7 +15,7 @@ function ApasBrand({ inverse = false }: { inverse?: boolean }) {
 }
 
 function Page({ number, title, eyebrow, icon: Icon, children, cover = false }: { number: number; title?: string; eyebrow?: string; icon?: LucideIcon; children: React.ReactNode; cover?: boolean }) {
-  return <section className={`disc-page ${cover ? "disc-cover" : ""}`}>
+  return <section className={`disc-page ${cover ? "disc-cover" : ""}`} data-page={number}>
     {!cover && <div className="disc-page-header"><ApasBrand /><span>APAS DISC · Relatório de Perfil Comportamental</span></div>}
     <div className="disc-page-body">{eyebrow && <p className="disc-kicker">{eyebrow}</p>}{title && <div className="disc-title-row">{Icon && <Icon aria-hidden="true" />}<h2 className="disc-page-title">{title}</h2></div>}{children}</div>
     {!cover && <div className="disc-page-footer"><ApasBrand /><span>Uso individual · {String(number).padStart(2, "0")}</span></div>}

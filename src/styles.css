@@ -185,6 +185,7 @@
   position: relative;
   box-sizing: border-box;
   width: min(100%, 210mm);
+  height: 297mm;
   min-height: 297mm;
   margin-inline: auto;
   overflow: hidden;
@@ -240,11 +241,12 @@
 }
 
 .disc-brand strong {
-  color: var(--disc-red);
+  color: inherit;
   font-size: 10pt;
   font-weight: 800;
 }
 
+.disc-brand > span { color: var(--disc-red); }
 .disc-brand-inverse { color: oklch(0.98 0 0); }
 
 .disc-title-row {
@@ -496,6 +498,41 @@
   font-size: 6pt;
   line-height: 1.1;
   text-align: center;
+}
+
+/* A página de perfis preserva toda a informação em uma folha A4 real. */
+.disc-page[data-page="3"] .disc-page-title {
+  margin-bottom: 6mm;
+}
+
+.disc-page[data-page="3"] .disc-profile-panel {
+  padding: 4mm;
+}
+
+.disc-page[data-page="3"] .disc-profile-panel > p {
+  min-height: 13mm;
+}
+
+.disc-page[data-page="3"] .disc-intensity-chart {
+  height: 49mm;
+  margin-top: 3mm;
+}
+
+.disc-page[data-page="3"] .disc-intensity-scale {
+  height: 27mm;
+}
+
+.disc-page[data-page="3"] .disc-table-wrap {
+  margin-top: 4mm;
+}
+
+.disc-page[data-page="3"] .disc-index {
+  margin-block: 4mm;
+  padding: 4mm;
+}
+
+.disc-page[data-page="3"] .disc-note {
+  margin-top: 4mm;
 }
 
 .disc-meter {
@@ -886,6 +923,7 @@
 
 @media (max-width: 760px) {
   .disc-page {
+    height: auto;
     min-height: 0;
   }
 
