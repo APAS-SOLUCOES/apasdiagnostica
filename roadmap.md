@@ -34,3 +34,7 @@ Evolução do projeto APAS DISC Profile para a plataforma **APAS DIAGNÓSTICA** 
 - [ ] Separar análise técnica e relatório liberado, com validação e liberação explícitas
 - [ ] Preparar entrega por e-mail sem simular envio enquanto o domínio não estiver configurado
 - [ ] Cobrir motor, acesso, release, privacidade e disponibilidade de e-mail com testes
+- [ ] Recuperar a composição editorial ilustrada e alternada do relatório individual de 12 páginas
+- [ ] Criar documento técnico A4 separado, protegido e imprimível, sem dados proprietários ou respostas brutas
+- [ ] Inserir orientação de resposta antes do primeiro bloco DISC sem alterar o instrumento
+- [ ] Validar impressão A4 dos dois documentos, rotas protegidas, testes e build
