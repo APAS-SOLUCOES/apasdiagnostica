@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useQuery } from "@tanstack/react-query";
-import { Copy, Loader2, Printer } from "lucide-react";
+import { Copy, FileText, Loader2, Printer } from "lucide-react";
 import { toast } from "sonner";
 import { getAssessmentDetail } from "@/lib/apas.functions";
 import { AppShell } from "@/components/apas/AppShell";
@@ -81,6 +81,7 @@ function DetalhePage() {
           <Button disabled={!scores} onClick={() => window.print()}>
             <Printer className="size-4" /> Gerar PDF
           </Button>
+          {scores && <Button asChild variant="outline"><Link to="/relatorios-disc/$id/tecnico" params={{ id }}><FileText className="size-4" /> Gerar/Imprimir relatório técnico</Link></Button>}
         </div>
       }
     >

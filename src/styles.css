@@ -193,6 +193,37 @@
   box-shadow: var(--shadow-premium);
 }
 
+.disc-page-dark {
+  --disc-ink: oklch(0.97 0 0);
+  --disc-soft: oklch(0.74 0 0);
+  --disc-line: oklch(1 0 0 / 0.18);
+  background: oklch(0.145 0 0);
+  color: var(--disc-ink);
+}
+
+.disc-page-art {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 76mm;
+  height: 112mm;
+  object-fit: cover;
+  opacity: 0.2;
+  mask-image: linear-gradient(to bottom left, transparent 0%, black 38%);
+}
+
+.disc-page-geometry { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.disc-page-geometry span { position: absolute; display: block; border: 1px solid var(--disc-line); }
+.disc-page-geometry span:first-child { top: 42mm; right: -18mm; width: 52mm; height: 52mm; transform: rotate(24deg); }
+.disc-page-geometry span:nth-child(2) { bottom: 35mm; left: -14mm; width: 35mm; height: 35mm; border-radius: 50%; }
+.disc-page-geometry span:last-child { top: 0; right: 22mm; width: 1px; height: 35mm; border-color: var(--disc-red); }
+.disc-page-dark .disc-factor { background: oklch(1 0 0 / 0.07); }
+.disc-page-dark .disc-factor div,
+.disc-page-dark .disc-highlight,
+.disc-page-dark .disc-closing { color: oklch(0.97 0 0); }
+.disc-page-dark .disc-signal,
+.disc-page-dark .disc-perception > div { background: oklch(1 0 0 / 0.94); }
+
 .disc-page-header,
 .disc-page-footer {
   position: absolute;
@@ -435,6 +466,20 @@
   gap: 4mm;
 }
 
+.disc-profile-visual { display: grid; grid-template-columns: 43mm 1fr; gap: 4mm; align-items: stretch; }
+.disc-overview { position: relative; display: grid; min-height: 77mm; place-items: center; overflow: hidden; background: oklch(0.19 0 0); }
+.disc-overview-core { z-index: 2; display: grid; width: 24mm; height: 24mm; place-items: center; align-content: center; border: 1px solid oklch(1 0 0 / 0.25); border-radius: 50%; background: oklch(0.13 0 0); color: oklch(0.98 0 0); }
+.disc-overview-core span { font-family: var(--font-display); font-size: 11pt; font-weight: 800; }
+.disc-overview-core small { font-size: 5pt; color: oklch(0.72 0 0); }
+.disc-overview-ray { position: absolute; left: 50%; width: 48%; display: flex; align-items: center; gap: 1mm; transform-origin: left center; color: oklch(0.97 0 0); }
+.disc-overview-ray > span { display: block; height: 3mm; background: currentColor; }
+.disc-overview-ray strong { font-size: 7pt; }
+.disc-overview-ray small { font-size: 6pt; }
+.disc-overview-d { top: 21%; transform: rotate(-28deg); }
+.disc-overview-i { top: 40%; transform: rotate(-9deg); }
+.disc-overview-s { top: 60%; transform: rotate(9deg); }
+.disc-overview-c { top: 79%; transform: rotate(28deg); }
+
 .disc-profile-panel {
   padding: 5mm;
   border: 1px solid var(--disc-line);
@@ -508,6 +553,10 @@
 .disc-page[data-page="3"] .disc-profile-panel {
   padding: 4mm;
 }
+.disc-page[data-page="3"] .disc-profile-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.disc-page[data-page="3"] .disc-profile-panel > p { min-height: 14mm; }
+.disc-page[data-page="3"] .disc-intensity-chart { height: 42mm; }
+.disc-page[data-page="3"] .disc-intensity-scale { height: 22mm; }
 
 .disc-page[data-page="3"] .disc-profile-panel > p {
   min-height: 13mm;
@@ -952,6 +1001,9 @@
     grid-template-columns: 1fr;
   }
 
+  .disc-profile-visual { grid-template-columns: 1fr; }
+  .disc-overview { min-height: 16rem; }
+
   .disc-factor-grid,
   .disc-cover-factors {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -961,6 +1013,82 @@
     width: 11rem;
     height: 11rem;
   }
+}
+
+.disc-answer-guide { margin-bottom: 1.5rem; padding: 1rem; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); background: var(--color-card); }
+.disc-answer-guide > p:not(:first-child) { margin-top: 0.5rem; color: var(--color-muted-foreground); font-size: 0.875rem; line-height: 1.55; }
+.disc-answer-guide strong { color: var(--color-foreground); }
+
+/* APAS DISC — documento técnico protegido */
+.disc-technical-report { --tech-paper: oklch(0.985 0.004 80); --tech-ink: oklch(0.18 0 0); --tech-soft: oklch(0.46 0 0); --tech-line: oklch(0.86 0 0); --tech-red: oklch(0.54 0.21 27); display: grid; gap: 2rem; color: var(--tech-ink); }
+.disc-tech-page { position: relative; box-sizing: border-box; width: min(100%, 210mm); height: 297mm; min-height: 297mm; margin-inline: auto; overflow: hidden; background: var(--tech-paper); box-shadow: var(--shadow-premium); }
+.disc-tech-page > header, .disc-tech-page > footer { position: absolute; inset-inline: 17mm; z-index: 2; display: flex; justify-content: space-between; padding-block: 3mm; border-color: var(--tech-line); color: var(--tech-soft); font-size: 7pt; text-transform: uppercase; }
+.disc-tech-page > header { top: 9mm; border-bottom: 1px solid; }
+.disc-tech-page > footer { bottom: 8mm; border-top: 1px solid; }
+.disc-tech-page > main { padding: 29mm 17mm 20mm; }
+.disc-tech-brand { color: var(--tech-red); font-weight: 800; }
+.disc-tech-brand strong { color: var(--tech-ink); }
+.disc-tech-kicker { color: var(--tech-red); font-size: 8pt; font-weight: 800; text-transform: uppercase; }
+.disc-tech-page h1 { margin-block: 3mm 9mm; font-size: 26pt; line-height: 1.08; }
+.disc-tech-page h2, .disc-tech-page h3, .disc-tech-page p, .disc-tech-page li, .disc-tech-page span, .disc-tech-page small { letter-spacing: 0; }
+.disc-tech-page-dark { --tech-ink: oklch(0.97 0 0); --tech-soft: oklch(0.72 0 0); --tech-line: oklch(1 0 0 / 0.18); background: oklch(0.145 0 0); color: var(--tech-ink); }
+.disc-tech-page-dark .disc-tech-brand strong { color: oklch(0.98 0 0); }
+.disc-tech-cover { display: grid; grid-template-columns: 1fr 58mm; gap: 8mm; align-items: end; padding-block: 12mm; border-block: 1px solid var(--tech-line); }
+.disc-tech-cover p { color: var(--tech-soft); font-size: 8pt; }
+.disc-tech-cover h2 { margin-block: 2mm; font-size: 22pt; }
+.disc-tech-cover span { color: var(--tech-soft); font-size: 9pt; }
+.disc-tech-combo { padding: 7mm; border: 1px solid var(--tech-line); }
+.disc-tech-combo strong { display: block; color: var(--tech-red); font-size: 32pt; }
+.disc-tech-combo p { margin-top: 3mm; color: var(--tech-ink); font-size: 11pt; }
+.disc-tech-meta { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4mm; margin-top: 10mm; }
+.disc-tech-meta p { padding: 5mm; border: 1px solid var(--tech-line); color: var(--tech-soft); font-size: 8pt; line-height: 1.6; }
+.disc-tech-meta svg { width: 5mm; height: 5mm; margin-right: 2mm; color: var(--tech-red); vertical-align: middle; }
+.disc-tech-meta strong { color: var(--tech-ink); font-size: 9pt; }
+.disc-tech-confidential { margin-top: 9mm; color: var(--tech-soft); font-size: 8pt; line-height: 1.5; }
+.disc-tech-profiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; }
+.disc-tech-profiles section { padding: 5mm; border: 1px solid var(--tech-line); }
+.disc-tech-profiles h3 { margin-bottom: 5mm; font-size: 12pt; }
+.disc-tech-bar { display: grid; grid-template-columns: 5mm 1fr 10mm; gap: 2mm; align-items: center; margin-top: 3mm; font-size: 7pt; }
+.disc-tech-bar > div { height: 3mm; overflow: hidden; background: var(--tech-line); }
+.disc-tech-bar i { display: block; height: 100%; background: currentColor; }
+.disc-tech-callout { display: grid; grid-template-columns: 9mm 1fr; gap: 4mm; margin-top: 7mm; padding: 6mm; border-left: 4px solid var(--tech-red); background: oklch(0.95 0 0); }
+.disc-tech-callout svg { width: 7mm; color: var(--tech-red); }
+.disc-tech-callout h3 { font-size: 11pt; }
+.disc-tech-callout p { margin-top: 2mm; font-size: 9pt; line-height: 1.55; }
+.disc-tech-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4mm; margin-top: 7mm; }
+.disc-tech-grid > div { padding: 4mm; border-top: 2px solid var(--tech-red); }
+.disc-tech-grid span { display: block; margin-block: 1mm; color: var(--tech-soft); font-size: 7pt; }
+.disc-tech-grid p { font-size: 8pt; line-height: 1.45; }
+.disc-tech-lead { display: grid; grid-template-columns: 34mm 1fr; gap: 7mm; align-items: center; padding: 7mm; border: 1px solid var(--tech-line); }
+.disc-tech-lead > strong { color: var(--tech-red); font-size: 34pt; }
+.disc-tech-lead p { margin-top: 2mm; color: var(--tech-soft); font-size: 9pt; line-height: 1.55; }
+.disc-tech-themes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4mm; margin-top: 6mm; }
+.disc-tech-themes section { padding: 5mm; border: 1px solid var(--tech-line); }
+.disc-tech-themes svg { width: 6mm; color: var(--tech-red); }
+.disc-tech-themes h3 { margin-block: 2mm; font-size: 10pt; }
+.disc-tech-themes p { color: var(--tech-soft); font-size: 8.5pt; line-height: 1.48; }
+.disc-tech-validation { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6mm; }
+.disc-tech-validation section { padding: 6mm; border-top: 3px solid var(--tech-red); background: oklch(0.96 0 0); }
+.disc-tech-validation svg { width: 7mm; color: var(--tech-red); }
+.disc-tech-validation h3 { margin-block: 3mm; font-size: 12pt; }
+.disc-tech-validation ul, .disc-tech-validation ol { display: grid; gap: 2mm; padding-left: 5mm; font-size: 8.5pt; line-height: 1.45; }
+.disc-tech-followup { display: grid; gap: 5mm; }
+.disc-tech-followup section { display: grid; grid-template-columns: 12mm 1fr; gap: 4mm; padding-bottom: 5mm; border-bottom: 1px solid var(--tech-line); }
+.disc-tech-followup section > span { display: grid; height: 10mm; place-items: center; background: var(--tech-red); color: oklch(0.99 0 0); font-weight: 800; }
+.disc-tech-followup h3 { font-size: 11pt; }
+.disc-tech-followup p { margin-block: 1mm; font-size: 9pt; }
+.disc-tech-followup small { color: var(--tech-soft); font-size: 8pt; }
+.disc-tech-plan { display: grid; grid-template-columns: 10mm 1fr; gap: 4mm; margin-top: 7mm; padding: 6mm; border: 1px solid var(--tech-line); }
+.disc-tech-plan svg { width: 8mm; color: var(--tech-red); }
+.disc-tech-plan h3 { margin-bottom: 2mm; }
+.disc-tech-plan p { margin-top: 2mm; font-size: 8.5pt; }
+.disc-tech-checklist { margin-top: 7mm; padding: 5mm; background: oklch(1 0 0 / 0.07); }
+.disc-tech-checklist p { margin-top: 2mm; color: var(--tech-soft); font-size: 8.5pt; }
+
+@media (max-width: 760px) {
+  .disc-tech-page { height: auto; min-height: 0; }
+  .disc-tech-page > main { padding: 5rem 1.25rem; }
+  .disc-tech-profiles, .disc-tech-meta, .disc-tech-grid, .disc-tech-themes, .disc-tech-validation, .disc-tech-cover { grid-template-columns: 1fr; }
 }
 
 @page {
@@ -989,6 +1117,10 @@
     margin: 0 !important;
     padding: 0 !important;
   }
+
+  .disc-technical-report { display: block; width: auto !important; max-width: none !important; margin: 0 !important; padding: 0 !important; }
+  .disc-tech-page { width: 210mm; height: 297mm; min-height: 297mm; max-height: 297mm; break-after: page; page-break-after: always; break-inside: avoid; page-break-inside: avoid; overflow: hidden; box-shadow: none; }
+  .disc-tech-page:last-child { break-after: auto; page-break-after: auto; }
 
   .disc-report {
     display: block;

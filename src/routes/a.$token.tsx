@@ -333,6 +333,15 @@ function PublicAssessment() {
       </div>
 
       <div className="space-y-6">
+        {step === 0 && (
+          <aside className="disc-answer-guide" aria-label="Como responder">
+            <p className="eyebrow">Como responder</p>
+            <p>Em cada bloco, escolha:</p>
+            <p><strong>MAIS PARECE COMIGO</strong> — a alternativa que mais se aproxima da forma como você costuma agir.</p>
+            <p><strong>MENOS PARECE COMIGO</strong> — a alternativa que menos se aproxima da forma como você costuma agir.</p>
+            <p>Não existem respostas certas ou erradas. Responda pensando em como você costuma agir, e não em como gostaria de agir.</p>
+          </aside>
+        )}
         {current.map((item, idx) => {
           const a = answers[item.id] ?? {};
           return (
