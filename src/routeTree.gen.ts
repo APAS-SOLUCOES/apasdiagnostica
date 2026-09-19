@@ -22,6 +22,7 @@ import { Route as AuthenticatedAplicacoesIdRouteImport } from './routes/_authent
 import { Route as AuthenticatedAvaliacoesIdRouteImport } from './routes/_authenticated/avaliacoes.$id'
 import { Route as AuthenticatedAvaliacoesNovaRouteImport } from './routes/_authenticated/avaliacoes.nova'
 import { Route as AuthenticatedRelatoriosIdRouteImport } from './routes/_authenticated/relatorios.$id'
+import { Route as AuthenticatedRelatoriosDiscIdTecnicoRouteImport } from './routes/_authenticated/relatorios-disc.$id.tecnico'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -93,6 +94,12 @@ const AuthenticatedRelatoriosIdRoute =
     path: '/relatorios/$id',
     getParentRoute: () => AuthenticatedRouteRoute,
   } as any)
+const AuthenticatedRelatoriosDiscIdTecnicoRoute =
+  AuthenticatedRelatoriosDiscIdTecnicoRouteImport.update({
+    id: '/relatorios-disc/$id/tecnico',
+    path: '/relatorios-disc/$id/tecnico',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -107,6 +114,7 @@ export interface FileRoutesByFullPath {
   '/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
   '/relatorios/$id': typeof AuthenticatedRelatoriosIdRoute
   '/aplicacoes/': typeof AuthenticatedAplicacoesIndexRoute
+  '/relatorios-disc/$id/tecnico': typeof AuthenticatedRelatoriosDiscIdTecnicoRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -121,6 +129,7 @@ export interface FileRoutesByTo {
   '/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
   '/relatorios/$id': typeof AuthenticatedRelatoriosIdRoute
   '/aplicacoes': typeof AuthenticatedAplicacoesIndexRoute
+  '/relatorios-disc/$id/tecnico': typeof AuthenticatedRelatoriosDiscIdTecnicoRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -137,6 +146,7 @@ export interface FileRoutesById {
   '/_authenticated/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
   '/_authenticated/relatorios/$id': typeof AuthenticatedRelatoriosIdRoute
   '/_authenticated/aplicacoes/': typeof AuthenticatedAplicacoesIndexRoute
+  '/_authenticated/relatorios-disc/$id/tecnico': typeof AuthenticatedRelatoriosDiscIdTecnicoRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -153,6 +163,7 @@ export interface FileRouteTypes {
     | '/avaliacoes/nova'
     | '/relatorios/$id'
     | '/aplicacoes/'
+    | '/relatorios-disc/$id/tecnico'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -167,6 +178,7 @@ export interface FileRouteTypes {
     | '/avaliacoes/nova'
     | '/relatorios/$id'
     | '/aplicacoes'
+    | '/relatorios-disc/$id/tecnico'
   id:
     | '__root__'
     | '/'
@@ -182,6 +194,7 @@ export interface FileRouteTypes {
     | '/_authenticated/avaliacoes/nova'
     | '/_authenticated/relatorios/$id'
     | '/_authenticated/aplicacoes/'
+    | '/_authenticated/relatorios-disc/$id/tecnico'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -285,6 +298,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedRelatoriosIdRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
+    '/_authenticated/relatorios-disc/$id/tecnico': {
+      id: '/_authenticated/relatorios-disc/$id/tecnico'
+      path: '/relatorios-disc/$id/tecnico'
+      fullPath: '/relatorios-disc/$id/tecnico'
+      preLoaderRoute: typeof AuthenticatedRelatoriosDiscIdTecnicoRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
   }
 }
 
@@ -297,6 +317,7 @@ interface AuthenticatedRouteRouteChildren {
   AuthenticatedAvaliacoesNovaRoute: typeof AuthenticatedAvaliacoesNovaRoute
   AuthenticatedRelatoriosIdRoute: typeof AuthenticatedRelatoriosIdRoute
   AuthenticatedAplicacoesIndexRoute: typeof AuthenticatedAplicacoesIndexRoute
+  AuthenticatedRelatoriosDiscIdTecnicoRoute: typeof AuthenticatedRelatoriosDiscIdTecnicoRoute
 }
 
 const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
@@ -308,6 +329,8 @@ const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
   AuthenticatedAvaliacoesNovaRoute: AuthenticatedAvaliacoesNovaRoute,
   AuthenticatedRelatoriosIdRoute: AuthenticatedRelatoriosIdRoute,
   AuthenticatedAplicacoesIndexRoute: AuthenticatedAplicacoesIndexRoute,
+  AuthenticatedRelatoriosDiscIdTecnicoRoute:
+    AuthenticatedRelatoriosDiscIdTecnicoRoute,
 }
 
 const AuthenticatedRouteRouteWithChildren =
