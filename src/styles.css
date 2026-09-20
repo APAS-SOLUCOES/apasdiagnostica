@@ -201,17 +201,6 @@
   color: var(--disc-ink);
 }
 
-.disc-page-art {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 76mm;
-  height: 112mm;
-  object-fit: cover;
-  opacity: 0.2;
-  mask-image: linear-gradient(to bottom left, transparent 0%, black 38%);
-}
-
 .disc-page-geometry { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
 .disc-page-geometry span { position: absolute; display: block; border: 1px solid var(--disc-line); }
 .disc-page-geometry span:first-child { top: 42mm; right: -18mm; width: 52mm; height: 52mm; transform: rotate(24deg); }
@@ -261,7 +250,7 @@
 
 .disc-brand {
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   gap: 1.5mm;
   color: var(--disc-ink);
   font-family: var(--font-display);
@@ -269,6 +258,21 @@
   font-weight: 700;
   letter-spacing: 0.04em;
   white-space: nowrap;
+}
+
+.disc-brand-symbol {
+  display: grid;
+  width: 5.5mm;
+  height: 5.5mm;
+  place-items: center;
+  border-radius: 1mm;
+  background: var(--disc-red);
+  color: oklch(0.98 0 0);
+  font-family: var(--font-display);
+  font-size: 7pt;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1;
 }
 
 .disc-brand strong {
