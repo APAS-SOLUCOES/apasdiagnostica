@@ -1,0 +1,75 @@
+/* APAS DISC premium report: print/PDF corrections kept isolated from the technical report. */
+
+.disc-report {
+  /* C is teal/turquoise in the DISC palette; it must not inherit a blue token. */
+  --disc-teal: oklch(0.58 0.13 190);
+}
+
+.disc-factor-c {
+  color: var(--disc-teal);
+}
+
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    min-width: 210mm;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: var(--disc-paper) !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* Keep the PDF limited to the evaluated person's premium report. */
+  body:has(.disc-report) > div > header,
+  body:has(.disc-report) nav,
+  body:has(.disc-report) button,
+  body:has(.disc-report) .print\\:hidden,
+  body:has(.disc-report) [data-print-hidden="true"] {
+    display: none !important;
+  }
+
+  body:has(.disc-report) main,
+  body:has(.disc-report) .disc-report {
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .disc-report {
+    display: block !important;
+    gap: 0 !important;
+  }
+
+  .disc-page {
+    width: 210mm !important;
+    height: 297mm !important;
+    min-height: 297mm !important;
+    max-height: 297mm !important;
+    margin: 0 !important;
+    break-after: page;
+    page-break-after: always;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    overflow: hidden;
+    box-shadow: none !important;
+  }
+
+  .disc-page:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  .disc-page,
+  .disc-page * {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
