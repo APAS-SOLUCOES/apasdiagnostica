@@ -1,0 +1,572 @@
+{
+  "meta": {
+    "name": "APAS DISC Profile",
+    "package": "@ws-n2ss1umyzyvwdwc7iwjl/ccea2f55-1a6b-412e-a83c-42094122042d",
+    "version": "1.0.0",
+    "framework": "react",
+    "css_framework": "tailwind",
+    "starter_template": "custom_design_system_tailwind",
+    "theme_files": [
+      "src/styles.css"
+    ],
+    "source_type": "local",
+    "source_manifest": {
+      "#enrichment": "e7ed5970e8f1418e6177e0e12e3f94b27f3714d475b1ca20ee2ccfb47248eaf6",
+      ".gitignore": "6d9e901a692b46a83707c245fb03bc91",
+      ".lovable/plan.md": "17251701e2e091f2fa01b60fd1288277",
+      ".lovable/project.json": "683a7777285ec09604e1030ddf427ac5",
+      ".prettierignore": "7279a476f196a2da5f7edd18db568dc6",
+      ".prettierrc": "185ef0234746ab738ac1ab6cec5e2bd9",
+      "AGENTS.md": "3da3c4cd15b686e79a248c25735d6aaf",
+      "README.md": "ef187bedb852c6a0d579b76093c0ca68",
+      "bunfig.toml": "89115995d9de72fdfc894e16b1e75297",
+      "components.json": "30d3d035361ce807021f5c54620962e9",
+      "drizzle.config.ts": "c2b6029fa56b49433380b7263b06e3f7",
+      "drizzle/migrations/0000_apas_disc_core.sql": "24a79d3296cc877b4ead2182dfa33d73",
+      "drizzle/migrations/0001_mvp_assessment_fields.sql": "14de1e0a8fcc23648b870b890288fe7e",
+      "drizzle/migrations/0002_diagnostica_empresarial_core.sql": "9873fec98d1909279ae411d19eb196bc",
+      "drizzle/migrations/0003_app_role_add_client.sql": "c24d769c2989fb58259bfcfb79cbbeed",
+      "drizzle/migrations/meta/0000_snapshot.json": "adae1a3eeac6d62f5304cfbf93570ac7",
+      "drizzle/migrations/meta/0001_snapshot.json": "9235d1deb110b65bfd56d0585869f726",
+      "drizzle/migrations/meta/0002_snapshot.json": "c41af49584ebd87ce0135f75c4911c36",
+      "drizzle/migrations/meta/0003_snapshot.json": "07d4f4d25b1e7bb6599a797dadfe8b7c",
+      "drizzle/migrations/meta/_journal.json": "d184d30ac3c5e3dab5c7dc186bb1e006",
+      "drizzle/schema.ts": "a60267d05d7dd11572f02686241f37c6",
+      "eslint.config.js": "345bdd57e188e0e4525edcd00e5003f5",
+      "package.json": "47925b26065da6d85beb2d0dbd4c98dc",
+      "public/favicon.ico": "9f504444f85a5af2eef9264b02ae40be",
+      "public/robots.txt": "f9dff89adf98833e676de2205921996a",
+      "roadmap.md": "3c78855dfb5893993938c5ce23bc8ed3",
+      "src/assets/disc-editorial-cover.jpg": "59c51108049189cfd5eb51a4b6965c00",
+      "src/assets/disc-editorial-dialogue.jpg": "4307454e4e4f3da6ec93875584b7bee0",
+      "src/assets/disc-editorial-growth.jpg": "3d2f2c8478bc217c2e205d29cc9f296d",
+      "src/assets/disc-editorial-self.jpg": "22851856fdc7f2adff9fda54c0dbc8cd",
+      "src/components/apas/AppShell.tsx": "d8807b9df76fda056d6f1dfe69732c2c",
+      "src/components/apas/DiscChart.tsx": "584e43e7201a225e415f3ff3f5379429",
+      "src/components/apas/DiscPremiumReport.tsx": "078eb53067ad08f602f05563aa686607",
+      "src/components/apas/DiscTechnicalPanel.tsx": "72956a8b859f96021eda934751785547",
+      "src/components/apas/DiscTechnicalReport.tsx": "2f1e17cb092c17fe186156dadcc8e7e5",
+      "src/components/ui/accordion.tsx": "55f9dda62b4e3913c9b23e5015a86aef",
+      "src/components/ui/alert-dialog.tsx": "96350e949e9b7b674545430a410ab89c",
+      "src/components/ui/alert.tsx": "f993d7e96b1e25ce50e68ed97e11d2a8",
+      "src/components/ui/aspect-ratio.tsx": "c5c364545e1b25a94e9e752cd67ad048",
+      "src/components/ui/avatar.tsx": "72989cd32f72c4122802540ef32525a5",
+      "src/components/ui/badge.tsx": "81cade001fc4260f9943e18dcd79449b",
+      "src/components/ui/breadcrumb.tsx": "bb9ac254f12662b20d5d50b84308bf3a",
+      "src/components/ui/button.tsx": "7d07d520f486b12bd47373d694ecd2ee",
+      "src/components/ui/calendar.tsx": "d849cc610e2683271f3f1c47d093cf30",
+      "src/components/ui/card.tsx": "d6c48ea36221b9cdc3576d305d12d5d5",
+      "src/components/ui/carousel.tsx": "e324c68ae00cd5aed49317638abd429a",
+      "src/components/ui/chart.tsx": "6a3baf94f2e89f1f97d4d7a28f3622d2",
+      "src/components/ui/checkbox.tsx": "f78aac270ca482c8c2cb907ef6260462",
+      "src/components/ui/collapsible.tsx": "767631bbc344945c236f185f4078d71d",
+      "src/components/ui/command.tsx": "014782599cc838b021ec68b07ad4ea02",
+      "src/components/ui/context-menu.tsx": "3ba8244ea23df34a1dba92f3a1230dad",
+      "src/components/ui/dialog.tsx": "ef4fe8e7de8675730afe3d633b260e09",
+      "src/components/ui/drawer.tsx": "8be333e8fd8e42576b1b5f72f07f4337",
+      "src/components/ui/dropdown-menu.tsx": "28d6e98d3c7811fc0514bfa69416f087",
+      "src/components/ui/form.tsx": "1b0aa6302b9017ea2a1307c22a1d2983",
+      "src/components/ui/hover-card.tsx": "1442794c5ca2a78d69e4e613b315ed3d",
+      "src/components/ui/input-otp.tsx": "65625f2f1c4d731a760aeed7b54459d1",
+      "src/components/ui/input.tsx": "1d4cc52a4cd8afb3e18e45bda942bb8a",
+      "src/components/ui/label.tsx": "7e35df4ca8edd0835efd97ca7937ef92",
+      "src/components/ui/menubar.tsx": "3c4121a1e78d3f424a7295381a8997d3",
+      "src/components/ui/navigation-menu.tsx": "e85351147a02b29577ff83d188b63c24",
+      "src/components/ui/pagination.tsx": "fac6cdbb4bbf78b273d85cd36d6cbb49",
+      "src/components/ui/popover.tsx": "f18aa1da2144f25ee60795c539c51bcd",
+      "src/components/ui/progress.tsx": "55c462e5c9dd678dcf2c0c510b014ac4",
+      "src/components/ui/radio-group.tsx": "0e1ace237a5da3197e3eb1e6683faba9",
+      "src/components/ui/resizable.tsx": "d9fcb9203c749fcab4e125a99bb12a86",
+      "src/components/ui/scroll-area.tsx": "87b65d3eb26f2b02ff35a7acea585ba5",
+      "src/components/ui/select.tsx": "31ea1bbd6671833b010b2e852c8a55d0",
+      "src/components/ui/separator.tsx": "433d163c4ffa00b59398a0c293198b5e",
+      "src/components/ui/sheet.tsx": "0221fbf97b69611b47fcbc10bb27669a",
+      "src/components/ui/sidebar.tsx": "83c1623eb50ebc370d7b1b84a542e369",
+      "src/components/ui/skeleton.tsx": "41b182e6e2fc3805960d41e767d4a972",
+      "src/components/ui/slider.tsx": "4752f1bfa26426988d325599e01c335b",
+      "src/components/ui/sonner.tsx": "97f59f60be3413196d095fcbf7383216",
+      "src/components/ui/switch.tsx": "82f5d8b0c59bb7ff305caa9f502e79ff",
+      "src/components/ui/table.tsx": "7cc889989d53894b659903c73aded96e",
+      "src/components/ui/tabs.tsx": "56e725558c2ce72c18243bf51717f385",
+      "src/components/ui/textarea.tsx": "c7aad96fb9545210d53135a96c76ed6b",
+      "src/components/ui/toggle-group.tsx": "ac26383acf721d116ca8e3ab5c5355d5",
+      "src/components/ui/toggle.tsx": "ee8c5adac74e7242b85b544db1a8fbad",
+      "src/components/ui/tooltip.tsx": "67d71db5a1ab935695d1def497f5b8a6",
+      "src/hooks/use-mobile.tsx": "c0a0bdd4638c391a1dd06ac82074e60b",
+      "src/integrations/supabase/auth-attacher.ts": "dad043cda134d909e52de0346c16625e",
+      "src/integrations/supabase/auth-middleware.ts": "5d9d831f79177b7c6327cbd794a97367",
+      "src/integrations/supabase/client.server.ts": "23f838ab7633e0a97e695f3c500d91aa",
+      "src/integrations/supabase/client.ts": "b40d27b03f346573ed0f76551e478ffb",
+      "src/integrations/supabase/cron-auth.ts": "6c04781ff98ada5977945fae55d39385",
+      "src/integrations/supabase/previewAuthStorage.ts": "bc45a76c9242c4b85d6d4345625c46e9",
+      "src/integrations/supabase/types.ts": "359879426ad14e3131656e91ce627d24",
+      "src/lib/apas.functions.ts": "5069a3cb770ed9781aa909d6dc85de15",
+      "src/lib/diagnostica-public.functions.ts": "ae3311d2e7a2b073e431ada01791419c",
+      "src/lib/diagnostica.functions.ts": "56798836dcf027e8b6824d21ee35201e",
+      "src/lib/diagnostica/bundle.ts": "7441c86d2b544d4708b97db724f5aad1",
+      "src/lib/diagnostica/engine.test.ts": "7f7bd4ec282012f108fbe75846ad9aaa",
+      "src/lib/diagnostica/engine.ts": "3a5101d57b3976163db490b527f2d34d",
+      "src/lib/diagnostica/report.ts": "5a797a5e519e7ab76475e804bdeb02fb",
+      "src/lib/diagnostica/types.ts": "68e094648b1e686d78443d1787bccd82",
+      "src/lib/diagnostica/v3.ts": "49950f699ab311791511b12807c18c91",
+      "src/lib/disc/content.ts": "6e2f6ec813ba7d70413d6769c15baec0",
+      "src/lib/disc/instrument.ts": "4b172894f5dce0863b5451b942504ab2",
+      "src/lib/disc/report-content.ts": "51e67554b92db0a97ad6629b0af37c7a",
+      "src/lib/disc/scoring.test.ts": "79c704b87bf67f8121716a54524112d3",
+      "src/lib/disc/scoring.ts": "adc819644eb2de0e9ee8d89128655978",
+      "src/lib/error-capture.ts": "f630d9686a9a989170f22eff4de7b30d",
+      "src/lib/error-page.ts": "8da0ddd7569bac2676b9a5c8edff8a36",
+      "src/lib/lovable-error-reporting.ts": "77368331b8ef6e6edcf1a29b24a52d39",
+      "src/lib/public.functions.ts": "aca49ef4f0c337697ed18ac795b55483",
+      "src/lib/utils.ts": "d9837f38cc05303254571985e3164050",
+      "src/routeTree.gen.ts": "b38931ca72973c74dd866aaf876b3a67",
+      "src/router.tsx": "8f905e713b0eba7fa8148b7995a708c9",
+      "src/routes/README.md": "b3a2f259b66fd1a11f54b6d5ac83bf57",
+      "src/routes/__root.tsx": "e78f5ecd1a1204265be02dd47861f106",
+      "src/routes/_authenticated/aplicacoes.$id.tsx": "4b864206cfad9f74f1d34e803cdf7bb7",
+      "src/routes/_authenticated/aplicacoes.index.tsx": "57e33298f7fe5cba98680111bdba42cf",
+      "src/routes/_authenticated/avaliacoes.$id.tsx": "a7bb772393e447828b4ba21bc59cb25e",
+      "src/routes/_authenticated/avaliacoes.nova.tsx": "9addfcdcdae1a0b6ffd38dccfd16be69",
+      "src/routes/_authenticated/dashboard.tsx": "b81f77b5cda15c315b09e53bd722e82c",
+      "src/routes/_authenticated/empresas.tsx": "988958a93f8f3f680139518eb5f5411c",
+      "src/routes/_authenticated/instrumento.tsx": "bc5afc90c7ef742866c2f286c7df76a8",
+      "src/routes/_authenticated/relatorios-disc.$id.tecnico.tsx": "2ba2af54f29a51fd1cd96b7396b2e85f",
+      "src/routes/_authenticated/relatorios.$id.tsx": "3fd671028e4915d20948a9f079941d9d",
+      "src/routes/_authenticated/route.tsx": "cfef1e67d3830b63f600a6d3d70ea3c4",
+      "src/routes/a.$token.tsx": "65f4b42e2ccfea258ebfb2214277e0e4",
+      "src/routes/auth.tsx": "4084c927ad2977aca3813074d0ba0444",
+      "src/routes/index.tsx": "39f725940b356de9849434c73a3d482d",
+      "src/routes/q.$token.tsx": "1d23551af55880dae07eefd30be2d016",
+      "src/server.ts": "c7bbc49bb70e318af618d92775ee0f27",
+      "src/start.ts": "e1aadf61a8c82bcb1e320705e99ffffd",
+      "src/styles.css": "bc94158abcece3a35fd481b3c2654a3c",
+      "supabase/config.toml": "e4ebf5056d0cf8b86759e89bb3221dca",
+      "supabase/seed/diagnostico_empresarial_v3.sql": "11d7a74bfead35723744819d3f9888ba",
+      "tsconfig.json": "e84e5c7fe88e3c5a4d54f55a816d42c1",
+      "vite.config.ts": "d67e8217e5f31b87c276b6357c9aedcf"
+    },
+    "pipeline_version": 8
+  },
+  "tokens": {
+    "color": [
+      {
+        "name": "--background",
+        "raw": "oklch(0.145 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--foreground",
+        "raw": "oklch(0.975 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--ink",
+        "raw": "oklch(0.11 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--graphite",
+        "raw": "oklch(0.24 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--card",
+        "raw": "oklch(0.19 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--card-foreground",
+        "raw": "oklch(0.975 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--popover",
+        "raw": "oklch(0.19 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--popover-foreground",
+        "raw": "oklch(0.975 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--primary",
+        "raw": "oklch(0.56 0.212 26.5)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--primary-foreground",
+        "raw": "oklch(0.99 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--secondary",
+        "raw": "oklch(0.26 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--secondary-foreground",
+        "raw": "oklch(0.96 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--muted",
+        "raw": "oklch(0.24 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--muted-foreground",
+        "raw": "oklch(0.72 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--accent",
+        "raw": "oklch(0.3 0.02 25)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--accent-foreground",
+        "raw": "oklch(0.98 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--destructive",
+        "raw": "oklch(0.6 0.22 25)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--destructive-foreground",
+        "raw": "oklch(0.99 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--border",
+        "raw": "oklch(0.3 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--input",
+        "raw": "oklch(0.32 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--ring",
+        "raw": "oklch(0.56 0.212 26.5)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--surface",
+        "raw": "oklch(0.17 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--surface-foreground",
+        "raw": "oklch(0.96 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--chart-1",
+        "raw": "oklch(0.56 0.212 26.5)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--chart-2",
+        "raw": "oklch(0.72 0.13 60)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--chart-3",
+        "raw": "oklch(0.7 0.1 200)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--chart-4",
+        "raw": "oklch(0.75 0.12 145)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--chart-5",
+        "raw": "oklch(0.65 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--sidebar",
+        "raw": "oklch(0.13 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--sidebar-foreground",
+        "raw": "oklch(0.96 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--sidebar-primary",
+        "raw": "oklch(0.56 0.212 26.5)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--sidebar-primary-foreground",
+        "raw": "oklch(0.99 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--sidebar-accent",
+        "raw": "oklch(0.24 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--sidebar-accent-foreground",
+        "raw": "oklch(0.96 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--sidebar-border",
+        "raw": "oklch(0.28 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--sidebar-ring",
+        "raw": "oklch(0.56 0.212 26.5)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--disc-paper",
+        "raw": "oklch(0.985 0.004 80)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--disc-ink",
+        "raw": "oklch(0.18 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--disc-soft",
+        "raw": "oklch(0.46 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--disc-red",
+        "raw": "oklch(0.54 0.21 27)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--disc-gold",
+        "raw": "oklch(0.72 0.13 60)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--disc-green",
+        "raw": "oklch(0.62 0.12 145)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--disc-blue",
+        "raw": "oklch(0.58 0.11 220)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--tech-paper",
+        "raw": "oklch(0.985 0.004 80)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--tech-ink",
+        "raw": "oklch(0.18 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--tech-soft",
+        "raw": "oklch(0.46 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--tech-red",
+        "raw": "oklch(0.54 0.21 27)",
+        "source": "src/styles.css"
+      }
+    ],
+    "typography": [
+      {
+        "name": "--font-display",
+        "raw": "\"Sora\", ui-sans-serif, system-ui, sans-serif",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--font-sans",
+        "raw": "\"Manrope\", ui-sans-serif, system-ui, sans-serif",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--disc-line",
+        "raw": "oklch(0.88 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--tech-line",
+        "raw": "oklch(0.86 0 0)",
+        "source": "src/styles.css"
+      }
+    ],
+    "radius": [
+      {
+        "name": "--radius-sm",
+        "raw": "calc(var(--radius) - 4px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius-md",
+        "raw": "calc(var(--radius) - 2px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius-xl",
+        "raw": "calc(var(--radius) + 4px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius-2xl",
+        "raw": "calc(var(--radius) + 8px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius-3xl",
+        "raw": "calc(var(--radius) + 12px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius",
+        "raw": "0.5rem",
+        "source": "src/styles.css"
+      }
+    ],
+    "shadow": [
+      {
+        "name": "--shadow-premium",
+        "raw": "0 24px 60px -30px oklch(0 0 0 / 0.85)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--shadow-red",
+        "raw": "0 18px 50px -26px oklch(0.56 0.212 26.5 / 0.6)",
+        "source": "src/styles.css"
+      }
+    ],
+    "other": [
+      {
+        "name": "--gradient-ink",
+        "raw": "linear-gradient(160deg, oklch(0.17 0 0), oklch(0.11 0 0) 60%)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--gradient-red",
+        "raw": "linear-gradient(120deg, oklch(0.56 0.212 26.5), oklch(0.4 0.16 22))",
+        "source": "src/styles.css"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "AppShell",
+      "file": "src/components/apas/AppShell",
+      "import_path": ""
+    },
+    {
+      "name": "DiscChart",
+      "file": "src/components/apas/DiscChart",
+      "import_path": ""
+    },
+    {
+      "name": "DiscBars",
+      "file": "src/components/apas/DiscChart",
+      "import_path": ""
+    },
+    {
+      "name": "DiscPremiumReport",
+      "file": "src/components/apas/DiscPremiumReport",
+      "import_path": ""
+    },
+    {
+      "name": "DiscTechnicalPanel",
+      "file": "src/components/apas/DiscTechnicalPanel",
+      "import_path": ""
+    },
+    {
+      "name": "DiscTechnicalReport",
+      "file": "src/components/apas/DiscTechnicalReport",
+      "import_path": ""
+    },
+    {
+      "name": "Button",
+      "file": "src/components/ui/button",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "default",
+            "destructive",
+            "outline",
+            "secondary",
+            "ghost",
+            "link"
+          ],
+          "default": "default"
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "default",
+            "sm",
+            "lg",
+            "icon"
+          ],
+          "default": "default"
+        },
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "name": "Constants",
+      "file": "src/integrations/supabase/types",
+      "import_path": ""
+    },
+    {
+      "name": "V3",
+      "file": "src/lib/diagnostica/v3",
+      "import_path": ""
+    },
+    {
+      "name": "V1",
+      "file": "src/lib/diagnostica/v3",
+      "import_path": ""
+    }
+  ],
+  "assets": [
+    {
+      "file": "src/assets/disc-editorial-cover.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/disc-editorial-dialogue.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/disc-editorial-growth.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/disc-editorial-self.jpg",
+      "kind": "image",
+      "format": "jpg"
+    }
+  ]
+}

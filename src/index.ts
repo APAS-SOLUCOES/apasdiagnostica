@@ -1,0 +1,8 @@
+export { AppShell } from "./components/apas/AppShell"
+export { DiscChart, DiscBars } from "./components/apas/DiscChart"
+export { DiscPremiumReport } from "./components/apas/DiscPremiumReport"
+export { DiscTechnicalPanel } from "./components/apas/DiscTechnicalPanel"
+export { DiscTechnicalReport } from "./components/apas/DiscTechnicalReport"
+export { Button } from "./components/ui/button"
+export { Constants } from "./integrations/supabase/types"
+export { V3, V1 } from "./lib/diagnostica/v3"
