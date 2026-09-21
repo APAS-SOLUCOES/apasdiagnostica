@@ -193,26 +193,6 @@
   box-shadow: var(--shadow-premium);
 }
 
-.disc-page-dark {
-  --disc-ink: oklch(0.97 0 0);
-  --disc-soft: oklch(0.74 0 0);
-  --disc-line: oklch(1 0 0 / 0.18);
-  background: oklch(0.145 0 0);
-  color: var(--disc-ink);
-}
-
-.disc-page-geometry { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
-.disc-page-geometry span { position: absolute; display: block; border: 1px solid var(--disc-line); }
-.disc-page-geometry span:first-child { top: 42mm; right: -18mm; width: 52mm; height: 52mm; transform: rotate(24deg); }
-.disc-page-geometry span:nth-child(2) { bottom: 35mm; left: -14mm; width: 35mm; height: 35mm; border-radius: 50%; }
-.disc-page-geometry span:last-child { top: 0; right: 22mm; width: 1px; height: 35mm; border-color: var(--disc-red); }
-.disc-page-dark .disc-factor { background: oklch(1 0 0 / 0.07); }
-.disc-page-dark .disc-factor div,
-.disc-page-dark .disc-highlight,
-.disc-page-dark .disc-closing { color: oklch(0.97 0 0); }
-.disc-page-dark .disc-signal,
-.disc-page-dark .disc-perception > div { background: oklch(1 0 0 / 0.94); }
-
 .disc-page-header,
 .disc-page-footer {
   position: absolute;
@@ -470,20 +450,6 @@
   gap: 4mm;
 }
 
-.disc-profile-visual { display: grid; grid-template-columns: 43mm 1fr; gap: 4mm; align-items: stretch; }
-.disc-overview { position: relative; display: grid; min-height: 77mm; place-items: center; overflow: hidden; background: oklch(0.19 0 0); }
-.disc-overview-core { z-index: 2; display: grid; width: 24mm; height: 24mm; place-items: center; align-content: center; border: 1px solid oklch(1 0 0 / 0.25); border-radius: 50%; background: oklch(0.13 0 0); color: oklch(0.98 0 0); }
-.disc-overview-core span { font-family: var(--font-display); font-size: 11pt; font-weight: 800; }
-.disc-overview-core small { font-size: 5pt; color: oklch(0.72 0 0); }
-.disc-overview-ray { position: absolute; left: 50%; width: 48%; display: flex; align-items: center; gap: 1mm; transform-origin: left center; color: oklch(0.97 0 0); }
-.disc-overview-ray > span { display: block; height: 3mm; background: currentColor; }
-.disc-overview-ray strong { font-size: 7pt; }
-.disc-overview-ray small { font-size: 6pt; }
-.disc-overview-d { top: 21%; transform: rotate(-28deg); }
-.disc-overview-i { top: 40%; transform: rotate(-9deg); }
-.disc-overview-s { top: 60%; transform: rotate(9deg); }
-.disc-overview-c { top: 79%; transform: rotate(28deg); }
-
 .disc-profile-panel {
   padding: 5mm;
   border: 1px solid var(--disc-line);
@@ -557,11 +523,6 @@
 .disc-page[data-page="3"] .disc-profile-panel {
   padding: 4mm;
 }
-.disc-page[data-page="3"] .disc-profile-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.disc-page[data-page="3"] .disc-profile-panel > p { min-height: 14mm; }
-.disc-page[data-page="3"] .disc-intensity-chart { height: 42mm; }
-.disc-page[data-page="3"] .disc-intensity-scale { height: 22mm; }
-
 .disc-page[data-page="3"] .disc-profile-panel > p {
   min-height: 13mm;
 }
@@ -1004,9 +965,6 @@
   .disc-perception {
     grid-template-columns: 1fr;
   }
-
-  .disc-profile-visual { grid-template-columns: 1fr; }
-  .disc-overview { min-height: 16rem; }
 
   .disc-factor-grid,
   .disc-cover-factors {
