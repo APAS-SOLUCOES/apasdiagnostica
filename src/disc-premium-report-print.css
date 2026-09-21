@@ -9,31 +9,6 @@
   color: var(--disc-teal);
 }
 
-/* Editorial artwork used by the approved premium composition. */
-.disc-editorial-image {
-  width: min(100%, 76mm);
-  margin: 7mm 0 0;
-  overflow: hidden;
-  border-radius: 4mm;
-  background: var(--disc-line);
-}
-
-.disc-editorial-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-}
-
-.disc-editorial-image-right {
-  margin-left: auto;
-}
-
-.disc-editorial-image-left {
-  margin-right: auto;
-}
-
 @page {
   size: A4 portrait;
   margin: 0;
@@ -96,10 +71,5 @@
   .disc-page * {
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
-  }
-
-  .disc-editorial-image {
-    break-inside: avoid;
-    page-break-inside: avoid;
   }
 }
