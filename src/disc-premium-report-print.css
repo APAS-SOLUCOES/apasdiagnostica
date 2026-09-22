@@ -9,33 +9,6 @@
   color: var(--disc-teal);
 }
 
-.disc-editorial-image {
-  width: 31%;
-  max-height: 74mm;
-  margin-top: 0;
-  margin-bottom: 5mm;
-  overflow: hidden;
-  break-inside: avoid;
-  page-break-inside: avoid;
-}
-
-.disc-editorial-image img {
-  display: block;
-  width: 100%;
-  height: 74mm;
-  object-fit: cover;
-}
-
-.disc-editorial-image-right {
-  float: right;
-  margin-left: 7mm;
-}
-
-.disc-editorial-image-left {
-  float: left;
-  margin-right: 7mm;
-}
-
 @page {
   size: A4 portrait;
   margin: 0;
