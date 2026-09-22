@@ -73,3 +73,34 @@
     -webkit-print-color-adjust: exact;
   }
 }
+
+.disc-editorial-image {
+  display: block;
+  width: 34%;
+  max-width: 72mm;
+  max-height: 70mm;
+  margin-top: 0;
+  margin-bottom: 5mm;
+  overflow: hidden;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.disc-editorial-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: 70mm;
+  height: auto;
+  object-fit: cover;
+}
+
+.disc-editorial-image-right {
+  float: right;
+  margin-left: 6mm;
+}
+
+.disc-editorial-image-left {
+  float: left;
+  margin-right: 6mm;
+}
