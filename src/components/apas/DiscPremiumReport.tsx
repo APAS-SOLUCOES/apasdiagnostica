@@ -8,7 +8,7 @@ import { APAS_DISCLAIMER, DEVELOPMENT_FRAMEWORK, DIMENSION_CONTENT } from "@/lib
 import { COMBINATION_NARRATIVES, FACTOR_SHORT } from "@/lib/disc/report-content";
 
 const FACTOR_CLASS: Record<Dimension, string> = { D: "disc-factor-d", I: "disc-factor-i", S: "disc-factor-s", C: "disc-factor-c" };
-type ReportAssessment = { id: string; candidate_name: string; role_title?: string | null; instrument_version?: string | null; submitted_at?: string | null; organizations?: { name?: string | null }[]; };
+type ReportAssessment = { id: string; candidate_name: string; role_title?: string | null; instrument_version?: string | null; submitted_at?: string | null; organizations?: { name?: string | null } | null; };
 type Signal = "strength" | "observe" | "attention" | "tip";
 
 function ApasBrand({ inverse = false }: { inverse?: boolean }) {
@@ -38,7 +38,7 @@ function FactorMark({ dimension, percent }: { dimension: Dimension; percent?: nu
 }
 
 function ProfileTable({ vectors }: { vectors: { label: string; value: ProfileVector }[] }) {
-  return <div className="disc-table-wrap"><table className="disc-table"><thead><tr><th>Fator</th>{vectors.map((v) => <th key={v.label}>{v.label}</th>)}</tr></thead><tbody>{DIMENSIONS.map((d) => <tr key={d}><th>{DIMENSION_NAMES[d]}</th>{vectors.map((v) => <td key={`${d}-${v.label}`}>{v.value[d]}</td>)}</tr>)}</tbody></table></div>;
+  return <div className="disc-table-wrap"><table className="disc-table"><thead><tr><th>Fator</th>{vectors.map((v) => <th key={v.label}>{v.label}</th>)}</tr></thead><tbody>{DIMENSIONS.map((d) => <tr key={d}><th>{DIMENSION_NAMES[d]}</th>{vectors.map((v) => <td key={`${d}-${v.label}`}>{v.value.percent[d]}</td>)}</tr>)}</tbody></table></div>;
 }
 
 function ProfileBars({ title, subtitle, values }: { title: string; subtitle: string; values: DimensionMap }) {
@@ -62,23 +62,23 @@ export function DiscPremiumReport({ assessment, scores }: { assessment: ReportAs
 
     <Page number={2} eyebrow="Antes de olhar o resultado" title="Você não é um número." icon={Compass}><p className="disc-opening">O que costuma ser lido como uma simples etiqueta de personalidade, na prática é um mapa de padrões e contextos. Este relatório ajuda a traduzir a forma como você tende a agir, decidir e relacionar-se.</p></Page>
 
-    <Page number={3} eyebrow="Seu perfil em números" title="Três perspectivas do mesmo repertório" icon={Gauge}><div className="disc-profile-grid"><ProfileBars title="Natural" subtitle="Como você tende a agir quando está mais confortável" values={scores.natural} /><ProfileBars title="Adaptado" subtitle="Como você se ajusta à exigência do ambiente" values={scores.adapted} /><ProfileBars title="Percebido" subtitle="Como outros tendem a te ver" values={scores.perceived} /></div></Page>
+    <Page number={3} eyebrow="Seu perfil em números" title="Três perspectivas do mesmo repertório" icon={Gauge}><div className="disc-profile-grid"><ProfileBars title="Natural" subtitle="Como você tende a agir quando está mais confortável" values={scores.natural.percent} /><ProfileBars title="Adaptado" subtitle="Como você se ajusta à exigência do ambiente" values={scores.adapted.percent} /><ProfileBars title="Social" subtitle="Como você se apresenta no ambiente" values={scores.social.percent} /></div></Page>
 
-    <Page number={4} eyebrow="Leitura central" title="Seu jeito de agir" icon={Focus}><div className="disc-combination"><span>{scores.combination}</span><div><small>{scores.combinationLabel ?? `${primary.label} + ${secondary.label}`}</small><h3>{narrative.title}</h3></div></div><p className="disc-opening">{narrative.summary}</p></Page>
+    <Page number={4} eyebrow="Leitura central" title="Seu jeito de agir" icon={Focus}><div className="disc-combination"><span>{scores.combination}</span><div><small>{scores.combinationLabel ?? `${primary.title} + ${secondary.title}`}</small><h3>{narrative.title}</h3></div></div><p className="disc-opening">{narrative.essence}</p></Page>
 
-    <Page number={5} eyebrow="Recursos" title="Quando você está no seu melhor" icon={Sprout}><p className="disc-opening">Quando contexto, clareza e energia se alinham, estas são contribuições que costumam aparecer com mais força.</p><div className="disc-signal-grid"><SignalList type="strength" title="Forças" items={primary.strengths} /><SignalList type="observe" title="Observações" items={primary.observations} /></div></Page>
+    <Page number={5} eyebrow="Recursos" title="Quando você está no seu melhor" icon={Sprout}><p className="disc-opening">Quando contexto, clareza e energia se alinham, estas são contribuições que costumam aparecer com mais força.</p><div className="disc-signal-grid"><SignalList type="strength" title="Forças" items={primary.strengths} /><SignalList type="observe" title="Características" items={primary.characteristics} /></div></Page>
 
-    <Page number={6} eyebrow="Consciência" title="O que pode exigir mais atenção" icon={AlertTriangle}><p className="disc-opening">Todo comportamento que representa uma força também pode se transformar em desgaste quando usado sem equilíbrio.</p><div className="disc-signal-grid"><SignalList type="attention" title="Atenção" items={primary.attention} /><SignalList type="tip" title="Sugestões" items={primary.tips} /></div></Page>
+    <Page number={6} eyebrow="Consciência" title="O que pode exigir mais atenção" icon={AlertTriangle}><p className="disc-opening">Todo comportamento que representa uma força também pode se transformar em desgaste quando usado sem equilíbrio.</p><div className="disc-signal-grid"><SignalList type="attention" title="Atenção" items={primary.attention} /><SignalList type="tip" title="Desenvolvimento" items={primary.development} /></div></Page>
 
-    <Page number={7} eyebrow="Intenção e impacto" title="Como você pode ser percebido" icon={Users}><p className="disc-opening">A forma como você expressa sua energia e sua resposta ao ambiente pode ser interpretada por outras pessoas como algo muito distinto do que você entende sobre si.</p></Page>
+    <Page number={7} eyebrow="Intenção e impacto" title="Como você pode ser percebido" icon={Users}><p className="disc-opening">{narrative.perceived}</p></Page>
 
-    <Page number={8} eyebrow="Relações" title="Comunicação que aproxima e move" icon={MessageCircle}><div className="disc-signal-grid"><SignalCard type="strength" title="Quando está no seu melhor" >{primary.relationships}</SignalCard><SignalCard type="observe" title="Quando pode gerar ruído" >{secondary.relationships}</SignalCard></div></Page>
+    <Page number={8} eyebrow="Relações" title="Comunicação que aproxima e move" icon={MessageCircle}><div className="disc-signal-grid"><SignalCard type="strength" title="Quando está no seu melhor">{narrative.communication}</SignalCard><SignalCard type="observe" title="Quando pode gerar ruído">{secondary.communication}</SignalCard></div></Page>
 
     <Page number={9} eyebrow="Atuação com pessoas" title="Decisão, liderança e equipe" icon={Network}><div className="disc-section-stack"><ThemeBlock icon={Focus} title="Decisão">{narrative.decision}</ThemeBlock><ThemeBlock icon={Users} title="Liderança">{narrative.leadership}</ThemeBlock><ThemeBlock icon={MessageCircle} title="Equipe">{narrative.team}</ThemeBlock></div></Page>
 
     <Page number={10} eyebrow="Contextos exigentes" title="Pressão e mudanças" icon={RefreshCw}><div className="disc-context-grid"><ThemeBlock icon={Scale} title="Sob pressão">{narrative.pressure}</ThemeBlock><ThemeBlock icon={ArrowUpRight} title="Mudança">{narrative.change}</ThemeBlock></div><p className="disc-note">{adaptationText}</p></Page>
 
-    <Page number={11} eyebrow="Prática" title="Seu desenvolvimento em 30 dias" icon={Sprout}><p className="disc-opening">O crescimento costuma acontecer quando você identifica padrões, nomeia o contexto e escolhe pequenas ações repetidas.</p></Page>
+    <Page number={11} eyebrow="Prática" title="Seu desenvolvimento em 30 dias" icon={Sprout}><p className="disc-opening">O crescimento costuma acontecer quando você identifica padrões, nomeia o contexto e escolhe pequenas ações repetidas.</p><ul>{narrative.experiments.map((experiment) => <li key={experiment}>{experiment}</li>)}</ul></Page>
 
     <Page number={12} eyebrow="Continuidade" title="Seu perfil não é um destino" icon={ArrowUpRight}><p className="disc-closing">Quanto maior sua consciência sobre seus próprios padrões, maiores as chances de usar suas forças com mais clareza, reduzir ruídos e aumentar a coerência entre intenção e impacto.</p><div className="disc-footer-summary"><div><small>Paciente</small><strong>{assessment.candidate_name}</strong></div><div><small>Data</small><strong>{date}</strong></div><div><small>Versão</small><strong>{assessment.instrument_version ?? "DISC Premium"}</strong></div></div></Page>
   </article>;
