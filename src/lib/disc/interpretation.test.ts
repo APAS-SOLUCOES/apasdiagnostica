@@ -1,8 +1,7 @@
 import { describe, expect, it } from "vitest";
-import type { Dimension } from "./instrument";
+import { DEFAULT_INSTRUMENT, type Dimension } from "./instrument";
 import type { ScoreResult } from "./scoring";
 import { computeScores } from "./scoring";
-import { DEFAULT_INSTRUMENT } from "./instrument";
 import { buildDiscReportContent } from "./interpretation";
 
 const makeScores = (
