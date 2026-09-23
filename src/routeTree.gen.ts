@@ -10,33 +10,199 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
+import { Route as AuthRouteImport } from './routes/auth'
+import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated/dashboard'
+import { Route as AuthenticatedEmpresasRouteImport } from './routes/_authenticated/empresas'
+import { Route as AuthenticatedInstrumentoRouteImport } from './routes/_authenticated/instrumento'
+import { Route as ATokenRouteImport } from './routes/a.$token'
+import { Route as QTokenRouteImport } from './routes/q.$token'
+import { Route as AuthenticatedAplicacoesIndexRouteImport } from './routes/_authenticated/aplicacoes.index'
+import { Route as AuthenticatedAplicacoesIdRouteImport } from './routes/_authenticated/aplicacoes.$id'
+import { Route as AuthenticatedAvaliacoesIdRouteImport } from './routes/_authenticated/avaliacoes.$id'
+import { Route as AuthenticatedAvaliacoesNovaRouteImport } from './routes/_authenticated/avaliacoes.nova'
+import { Route as AuthenticatedRelatoriosIdRouteImport } from './routes/_authenticated/relatorios.$id'
+import { Route as AuthenticatedRelatoriosDiscIdTecnicoRouteImport } from './routes/_authenticated/relatorios-disc.$id.tecnico'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
+  id: '/_authenticated',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthRoute = AuthRouteImport.update({
+  id: '/auth',
+  path: '/auth',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthenticatedDashboardRoute = AuthenticatedDashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
+const AuthenticatedEmpresasRoute = AuthenticatedEmpresasRouteImport.update({
+  id: '/empresas',
+  path: '/empresas',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
+const AuthenticatedInstrumentoRoute =
+  AuthenticatedInstrumentoRouteImport.update({
+    id: '/instrumento',
+    path: '/instrumento',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const ATokenRoute = ATokenRouteImport.update({
+  id: '/a/$token',
+  path: '/a/$token',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QTokenRoute = QTokenRouteImport.update({
+  id: '/q/$token',
+  path: '/q/$token',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthenticatedAplicacoesIndexRoute =
+  AuthenticatedAplicacoesIndexRouteImport.update({
+    id: '/aplicacoes/',
+    path: '/aplicacoes/',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedAplicacoesIdRoute =
+  AuthenticatedAplicacoesIdRouteImport.update({
+    id: '/aplicacoes/$id',
+    path: '/aplicacoes/$id',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedAvaliacoesIdRoute =
+  AuthenticatedAvaliacoesIdRouteImport.update({
+    id: '/avaliacoes/$id',
+    path: '/avaliacoes/$id',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedAvaliacoesNovaRoute =
+  AuthenticatedAvaliacoesNovaRouteImport.update({
+    id: '/avaliacoes/nova',
+    path: '/avaliacoes/nova',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedRelatoriosIdRoute =
+  AuthenticatedRelatoriosIdRouteImport.update({
+    id: '/relatorios/$id',
+    path: '/relatorios/$id',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedRelatoriosDiscIdTecnicoRoute =
+  AuthenticatedRelatoriosDiscIdTecnicoRouteImport.update({
+    id: '/relatorios-disc/$id/tecnico',
+    path: '/relatorios-disc/$id/tecnico',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/auth': typeof AuthRoute
+  '/dashboard': typeof AuthenticatedDashboardRoute
+  '/empresas': typeof AuthenticatedEmpresasRoute
+  '/instrumento': typeof AuthenticatedInstrumentoRoute
+  '/a/$token': typeof ATokenRoute
+  '/q/$token': typeof QTokenRoute
+  '/aplicacoes/$id': typeof AuthenticatedAplicacoesIdRoute
+  '/avaliacoes/$id': typeof AuthenticatedAvaliacoesIdRoute
+  '/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
+  '/relatorios/$id': typeof AuthenticatedRelatoriosIdRoute
+  '/aplicacoes/': typeof AuthenticatedAplicacoesIndexRoute
+  '/relatorios-disc/$id/tecnico': typeof AuthenticatedRelatoriosDiscIdTecnicoRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/auth': typeof AuthRoute
+  '/dashboard': typeof AuthenticatedDashboardRoute
+  '/empresas': typeof AuthenticatedEmpresasRoute
+  '/instrumento': typeof AuthenticatedInstrumentoRoute
+  '/a/$token': typeof ATokenRoute
+  '/q/$token': typeof QTokenRoute
+  '/aplicacoes/$id': typeof AuthenticatedAplicacoesIdRoute
+  '/avaliacoes/$id': typeof AuthenticatedAvaliacoesIdRoute
+  '/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
+  '/relatorios/$id': typeof AuthenticatedRelatoriosIdRoute
+  '/aplicacoes': typeof AuthenticatedAplicacoesIndexRoute
+  '/relatorios-disc/$id/tecnico': typeof AuthenticatedRelatoriosDiscIdTecnicoRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
+  '/auth': typeof AuthRoute
+  '/_authenticated/dashboard': typeof AuthenticatedDashboardRoute
+  '/_authenticated/empresas': typeof AuthenticatedEmpresasRoute
+  '/_authenticated/instrumento': typeof AuthenticatedInstrumentoRoute
+  '/a/$token': typeof ATokenRoute
+  '/q/$token': typeof QTokenRoute
+  '/_authenticated/aplicacoes/$id': typeof AuthenticatedAplicacoesIdRoute
+  '/_authenticated/avaliacoes/$id': typeof AuthenticatedAvaliacoesIdRoute
+  '/_authenticated/avaliacoes/nova': typeof AuthenticatedAvaliacoesNovaRoute
+  '/_authenticated/relatorios/$id': typeof AuthenticatedRelatoriosIdRoute
+  '/_authenticated/aplicacoes/': typeof AuthenticatedAplicacoesIndexRoute
+  '/_authenticated/relatorios-disc/$id/tecnico': typeof AuthenticatedRelatoriosDiscIdTecnicoRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/auth'
+    | '/dashboard'
+    | '/empresas'
+    | '/instrumento'
+    | '/a/$token'
+    | '/q/$token'
+    | '/aplicacoes/$id'
+    | '/avaliacoes/$id'
+    | '/avaliacoes/nova'
+    | '/relatorios/$id'
+    | '/aplicacoes/'
+    | '/relatorios-disc/$id/tecnico'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/auth'
+    | '/dashboard'
+    | '/empresas'
+    | '/instrumento'
+    | '/a/$token'
+    | '/q/$token'
+    | '/aplicacoes/$id'
+    | '/avaliacoes/$id'
+    | '/avaliacoes/nova'
+    | '/relatorios/$id'
+    | '/aplicacoes'
+    | '/relatorios-disc/$id/tecnico'
+  id:
+    | '__root__'
+    | '/'
+    | '/_authenticated'
+    | '/auth'
+    | '/_authenticated/dashboard'
+    | '/_authenticated/empresas'
+    | '/_authenticated/instrumento'
+    | '/a/$token'
+    | '/q/$token'
+    | '/_authenticated/aplicacoes/$id'
+    | '/_authenticated/avaliacoes/$id'
+    | '/_authenticated/avaliacoes/nova'
+    | '/_authenticated/relatorios/$id'
+    | '/_authenticated/aplicacoes/'
+    | '/_authenticated/relatorios-disc/$id/tecnico'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AuthenticatedRouteRoute: typeof AuthenticatedRouteRouteWithChildren
+  AuthRoute: typeof AuthRoute
+  ATokenRoute: typeof ATokenRoute
+  QTokenRoute: typeof QTokenRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +214,134 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/_authenticated': {
+      id: '/_authenticated'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof AuthenticatedRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auth': {
+      id: '/auth'
+      path: '/auth'
+      fullPath: '/auth'
+      preLoaderRoute: typeof AuthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_authenticated/dashboard': {
+      id: '/_authenticated/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof AuthenticatedDashboardRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/empresas': {
+      id: '/_authenticated/empresas'
+      path: '/empresas'
+      fullPath: '/empresas'
+      preLoaderRoute: typeof AuthenticatedEmpresasRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/instrumento': {
+      id: '/_authenticated/instrumento'
+      path: '/instrumento'
+      fullPath: '/instrumento'
+      preLoaderRoute: typeof AuthenticatedInstrumentoRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/a/$token': {
+      id: '/a/$token'
+      path: '/a/$token'
+      fullPath: '/a/$token'
+      preLoaderRoute: typeof ATokenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/q/$token': {
+      id: '/q/$token'
+      path: '/q/$token'
+      fullPath: '/q/$token'
+      preLoaderRoute: typeof QTokenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_authenticated/aplicacoes/': {
+      id: '/_authenticated/aplicacoes/'
+      path: '/aplicacoes'
+      fullPath: '/aplicacoes/'
+      preLoaderRoute: typeof AuthenticatedAplicacoesIndexRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/aplicacoes/$id': {
+      id: '/_authenticated/aplicacoes/$id'
+      path: '/aplicacoes/$id'
+      fullPath: '/aplicacoes/$id'
+      preLoaderRoute: typeof AuthenticatedAplicacoesIdRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/avaliacoes/$id': {
+      id: '/_authenticated/avaliacoes/$id'
+      path: '/avaliacoes/$id'
+      fullPath: '/avaliacoes/$id'
+      preLoaderRoute: typeof AuthenticatedAvaliacoesIdRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/avaliacoes/nova': {
+      id: '/_authenticated/avaliacoes/nova'
+      path: '/avaliacoes/nova'
+      fullPath: '/avaliacoes/nova'
+      preLoaderRoute: typeof AuthenticatedAvaliacoesNovaRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/relatorios/$id': {
+      id: '/_authenticated/relatorios/$id'
+      path: '/relatorios/$id'
+      fullPath: '/relatorios/$id'
+      preLoaderRoute: typeof AuthenticatedRelatoriosIdRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/relatorios-disc/$id/tecnico': {
+      id: '/_authenticated/relatorios-disc/$id/tecnico'
+      path: '/relatorios-disc/$id/tecnico'
+      fullPath: '/relatorios-disc/$id/tecnico'
+      preLoaderRoute: typeof AuthenticatedRelatoriosDiscIdTecnicoRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
   }
 }
 
+interface AuthenticatedRouteRouteChildren {
+  AuthenticatedDashboardRoute: typeof AuthenticatedDashboardRoute
+  AuthenticatedEmpresasRoute: typeof AuthenticatedEmpresasRoute
+  AuthenticatedInstrumentoRoute: typeof AuthenticatedInstrumentoRoute
+  AuthenticatedAplicacoesIdRoute: typeof AuthenticatedAplicacoesIdRoute
+  AuthenticatedAvaliacoesIdRoute: typeof AuthenticatedAvaliacoesIdRoute
+  AuthenticatedAvaliacoesNovaRoute: typeof AuthenticatedAvaliacoesNovaRoute
+  AuthenticatedRelatoriosIdRoute: typeof AuthenticatedRelatoriosIdRoute
+  AuthenticatedAplicacoesIndexRoute: typeof AuthenticatedAplicacoesIndexRoute
+  AuthenticatedRelatoriosDiscIdTecnicoRoute: typeof AuthenticatedRelatoriosDiscIdTecnicoRoute
+}
+
+const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
+  AuthenticatedDashboardRoute: AuthenticatedDashboardRoute,
+  AuthenticatedEmpresasRoute: AuthenticatedEmpresasRoute,
+  AuthenticatedInstrumentoRoute: AuthenticatedInstrumentoRoute,
+  AuthenticatedAplicacoesIdRoute: AuthenticatedAplicacoesIdRoute,
+  AuthenticatedAvaliacoesIdRoute: AuthenticatedAvaliacoesIdRoute,
+  AuthenticatedAvaliacoesNovaRoute: AuthenticatedAvaliacoesNovaRoute,
+  AuthenticatedRelatoriosIdRoute: AuthenticatedRelatoriosIdRoute,
+  AuthenticatedAplicacoesIndexRoute: AuthenticatedAplicacoesIndexRoute,
+  AuthenticatedRelatoriosDiscIdTecnicoRoute:
+    AuthenticatedRelatoriosDiscIdTecnicoRoute,
+}
+
+const AuthenticatedRouteRouteWithChildren =
+  AuthenticatedRouteRoute._addFileChildren(AuthenticatedRouteRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
+  AuthRoute: AuthRoute,
+  ATokenRoute: ATokenRoute,
+  QTokenRoute: QTokenRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
