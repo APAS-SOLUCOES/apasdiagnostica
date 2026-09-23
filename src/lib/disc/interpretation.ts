@@ -224,11 +224,12 @@ function buildDevelopment(scores: ScoreResult) {
 function buildAdaptation(scores: ScoreResult) {
   const dims: Dimension[] = ["D", "I", "S", "C"];
   const max = Math.max(...dims.map((d) => Math.abs(scores.adapted.percent[d] - scores.natural.percent[d])));
+  const index = round(scores.adaptationIndex).toFixed(1).replace(".", ",") + " pontos";
   if (scores.adaptationAlert) {
-    return "Seu índice de adaptação é " + pct(scores.adaptationIndex) +
+    return "Seu índice de adaptação é " + index +
       ". A diferença entre o modo natural e o modo adaptado merece atenção: em determinados contextos, você pode estar ajustando seu comportamento de maneira mais perceptível. Isso não significa certo ou errado; indica apenas uma diferença entre tendências espontâneas e respostas ao contexto. A maior variação observada foi de " + pct(max) + " em um dos fatores.";
   }
-  return "Seu índice de adaptação é " + pct(scores.adaptationIndex) +
+  return "Seu índice de adaptação é " + index +
     ". As diferenças entre o modo natural e o modo adaptado aparecem de forma mais contida no resultado, sugerindo maior proximidade entre suas tendências espontâneas e a forma como você responde ao contexto avaliado.";
 }
 
@@ -264,8 +265,32 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
     secondaryInfluence: buildSecondaryInfluence(scores),
     lowerFactors: buildLowerFactors(scores),
     intensitySummary: buildIntensitySummary(scores),
+    technical: {
+      scoringVersion: scores.scoringVersion,
+      completionPercent: scores.completionPercent,
+      invalidAnswerCount: scores.invalidAnswerCount,
+      primary: p,
+      secondary: s,
+      primaryGap: round(scores.primaryGap ?? 0),
+      closeCombination: Boolean(scores.closeCombination),
+      levels: scores.levels,
+      natural: scores.natural.percent,
+      adapted: scores.adapted.percent,
+      delta,
+      strongestDelta: dims.reduce((best, d) => Math.abs(delta[d]) > Math.abs(delta[best]) ? d : best, "D" as Dimension),
+      highestFactor: orderedDimensions(scores)[0]!,
+      lowestFactor: orderedDimensions(scores)[3]!,
+    },
     conclusion: "Seu resultado não descreve uma identidade fixa. Ele representa tendências comportamentais observadas no instrumento APAS DISC. A combinação " +
       p + s + ", as intensidades e as diferenças entre natural e adaptado devem ser lidas em conjunto e sempre relacionadas ao contexto em que a avaliação foi realizada.",
-    technicalSignals: { intensity: scores.levels, primaryGap: round(scores.primaryGap ?? 0), closeCombination: Boolean(scores.closeCombination), naturalVsAdaptedDelta: delta },
+    technicalSignals: {
+      intensity: scores.levels,
+      primaryGap: round(scores.primaryGap ?? 0),
+      closeCombination: Boolean(scores.closeCombination),
+      naturalVsAdaptedDelta: delta,
+      strongestDelta: dims.reduce((best, d) => Math.abs(delta[d]) > Math.abs(delta[best]) ? d : best, "D" as Dimension),
+      highestFactor: orderedDimensions(scores)[0]!,
+      lowestFactor: orderedDimensions(scores)[3]!,
+    },
   };
 }
