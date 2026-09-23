@@ -34,15 +34,15 @@ export function DiscPremiumReport({ assessment, scores }: { assessment: ReportAs
 
     const pageBody: Record<number, ReactNode> = {
       2: <><h2>Antes de olhar o resultado</h2><p>{content.overview}</p><p>{content.conclusion}</p></>,
-      3: <><h2>{content.profileName}</h2><div className="disc-profile-grid">{(["D","I","S","C"] as const).map(d => <div key={d}><b>{d}</b><span>{pct(scores.adapted.percent[d])}</span></div>)}</div><p>{content.headline}</p></>,
-      4: <><h2>{content.profileName}</h2><p>{content.headline}</p><p>{content.factorReadings[scores.predominant]}</p><p>{content.factorReadings[scores.secondary]}</p></>,
+      3: <><h2>{content.profileName}</h2><div className="disc-profile-grid">{(["D","I","S","C"] as const).map(d => <div key={d}><b>{d}</b><span>{pct(scores.adapted.percent[d])}</span></div>)}</div><p>{content.intensitySummary}</p><p>{content.profileBalance}</p></>,
+      4: <><h2>{content.profileName}</h2><p>{content.headline}</p><p>{content.profileLabel}</p><p>{content.factorReadings[scores.predominant]}</p><p>{content.factorReadings[scores.secondary]}</p></>,
       5: <><h2>Seus pontos fortes</h2><Bullets items={content.strengths} /></>,
       6: <><h2>O que pode exigir mais atenção</h2><Bullets items={content.attention} /></>,
-      7: <><h2>Como você pode ser percebido</h2><p>{content.perception}</p></>,
+      7: <><h2>Como você pode ser percebido</h2><p>{content.perception}</p><p>{content.secondaryInfluence}</p><p>{content.lowerFactors}</p></>,
       8: <><h2>Comunicação</h2><p>{content.communication}</p></>,
       9: <><h2>Decisão</h2><p>{content.decision}</p></>,
       10: <><h2>Relacionamentos e equipe</h2><p>{content.teamwork}</p><p>{content.pressureChange}</p></>,
-      11: <><h2>Seu desenvolvimento</h2><Bullets items={content.development} /></>,
+      11: <><h2>Seu desenvolvimento</h2><Bullets items={content.development} /><p>{content.secondaryInfluence}</p></>,
       12: <><h2>Seu perfil não é um destino</h2><p>{content.adaptation}</p><p>{content.conclusion}</p><small>Instrumento de tendências comportamentais. Não constitui diagnóstico clínico, psicológico ou de personalidade.</small></>,
     };
     return <div className="disc-dynamic-content">{pageBody[n]}</div>;
