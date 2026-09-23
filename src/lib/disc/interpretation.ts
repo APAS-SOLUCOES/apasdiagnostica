@@ -14,7 +14,6 @@ export type DiscTechnicalContent = {
   levels: Record<Dimension, "alto" | "moderado" | "baixo">;
   natural: Record<Dimension, number>;
   social: Record<Dimension, number>;
-  social: Record<Dimension, number>;
   adapted: Record<Dimension, number>;
   delta: Record<Dimension, number>;
   strongestDelta: Dimension;
