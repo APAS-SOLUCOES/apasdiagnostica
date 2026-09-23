@@ -1,6 +1,8 @@
 import { describe, expect, it } from "vitest";
 import type { Dimension } from "./instrument";
 import type { ScoreResult } from "./scoring";
+import { computeScores } from "./scoring";
+import { DEFAULT_INSTRUMENT } from "./instrument";
 import { buildDiscReportContent } from "./interpretation";
 
 const makeScores = (
@@ -79,5 +81,17 @@ describe("APAS DISC dynamic interpretation", () => {
     ));
     expect(stable.adaptation).not.toBe(adapted.adaptation);
     expect(adapted.technicalSignals.strongestDelta).toBe("D");
+  });
+});
+
+describe("APAS DISC scoring validation", () => {
+  it("rejects forced-choice answers that select the same factor as MAIS and MENOS", () => {
+    const result = computeScores(
+      [{ itemId: "b01", most: "D", least: "D" }],
+      DEFAULT_INSTRUMENT,
+    );
+    expect(result.answeredItems).toBe(0);
+    expect(result.completionPercent).toBe(0);
+    expect(result.invalidAnswerCount).toBe(1);
   });
 });
