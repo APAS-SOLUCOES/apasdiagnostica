@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type CSSProperties } from "react";
 import "./disc-report-visual.css";
 import type { ScoreResult } from "@/lib/disc/scoring";
 
@@ -28,31 +28,42 @@ const pageTitles = [
 
 const pct = (v: number) => `${Number(v).toFixed(1).replace(".", ",")}%`;
 
-export function DiscPremiumReport({
-  assessment,
-  scores,
-}: {
-  assessment: ReportAssessment;
-  scores: ScoreResult;
-}) {
+export function DiscPremiumReport({ assessment, scores }: { assessment: ReportAssessment; scores: ScoreResult }) {
   const [page, setPage] = useState(1);
   const submitted = assessment.submitted_at
     ? new Date(assessment.submitted_at).toLocaleDateString("pt-BR")
     : new Date().toLocaleDateString("pt-BR");
 
-  const imageStyle = {
-    "--sprite-x": `${((page - 1) % 4) * 100}%`,
-    "--sprite-y": `${Math.floor((page - 1) / 4) * 100}%`,
-  } as React.CSSProperties;
+  const styleFor = (n: number): CSSProperties => ({
+    "--sprite-x": `${((n - 1) % 4) * 100}%`,
+    "--sprite-y": `${Math.floor((n - 1) / 4) * 100}%`,
+  } as CSSProperties);
+
+  const DynamicOverlays = ({ n }: { n: number }) => (
+    <>
+      {n === 1 && <><div className="disc-dynamic-cover-name">{assessment.candidate_name}</div><div className="disc-dynamic-cover-date">{submitted}</div></>}
+      {n === 3 && (
+        <div className="disc-dynamic-profile" aria-label="Dados dinâmicos do perfil">
+          <strong>{assessment.candidate_name}</strong>
+          <span>{scores.predominant}{scores.secondary}</span>
+          <div>
+            <b>D</b> {pct(scores.adapted.percent.D)}
+            <b>I</b> {pct(scores.adapted.percent.I)}
+            <b>S</b> {pct(scores.adapted.percent.S)}
+            <b>C</b> {pct(scores.adapted.percent.C)}
+          </div>
+        </div>
+      )}
+      {n === 4 && <div className="disc-dynamic-combination"><strong>{scores.combination}</strong></div>}
+    </>
+  );
 
   return (
     <section className="disc-visual-report" aria-label={`Relatório DISC de ${assessment.candidate_name}`}>
       <div className="disc-visual-toolbar print:hidden">
         <button onClick={() => setPage(Math.max(1, page - 1))} disabled={page === 1}>Anterior</button>
         <select value={page} onChange={(e) => setPage(Number(e.target.value))} aria-label="Selecionar página">
-          {pageTitles.map((title, i) => (
-            <option value={i + 1} key={title}>{String(i + 1).padStart(2, "0")} · {title}</option>
-          ))}
+          {pageTitles.map((title, i) => <option value={i + 1} key={title}>{String(i + 1).padStart(2, "0")} · {title}</option>)}
         </select>
         <button onClick={() => setPage(Math.min(12, page + 1))} disabled={page === 12}>Próxima</button>
         <button className="print" onClick={() => window.print()}>Imprimir / PDF</button>
@@ -60,30 +71,8 @@ export function DiscPremiumReport({
 
       <div className="disc-visual-stage">
         <article className="disc-visual-page">
-          <div className="disc-visual-sprite" style={imageStyle} aria-hidden="true" />
-          {page === 1 && (
-            <>
-              <div className="disc-dynamic-cover-name">{assessment.candidate_name}</div>
-              <div className="disc-dynamic-cover-date">{submitted}</div>
-            </>
-          )}
-          {page === 3 && (
-            <div className="disc-dynamic-profile" aria-label="Dados dinâmicos do perfil">
-              <strong>{assessment.candidate_name}</strong>
-              <span>{scores.predominant}{scores.secondary}</span>
-              <div>
-                <b>D</b> {pct(scores.adapted.percent.D)}
-                <b>I</b> {pct(scores.adapted.percent.I)}
-                <b>S</b> {pct(scores.adapted.percent.S)}
-                <b>C</b> {pct(scores.adapted.percent.C)}
-              </div>
-            </div>
-          )}
-          {page === 4 && (
-            <div className="disc-dynamic-combination">
-              <strong>{scores.combination}</strong>
-            </div>
-          )}
+          <div className="disc-visual-sprite" style={styleFor(page)} aria-hidden="true" />
+          <DynamicOverlays n={page} />
         </article>
       </div>
 
@@ -97,30 +86,10 @@ export function DiscPremiumReport({
       </nav>
 
       <div className="disc-print-pages">
-        {Array.from({ length: 12 }, (_, i) => i + 1).map((printPage) => (
-          <article className="disc-visual-page disc-print-page" key={printPage}>
-            <div
-              className="disc-visual-sprite"
-              style={{
-                "--sprite-x": `${((printPage - 1) % 4) * 100}%`,
-                "--sprite-y": `${Math.floor((printPage - 1) / 4) * 100}%`,
-              } as React.CSSProperties}
-            />
-            {printPage === 1 && <div className="disc-dynamic-cover-name">{assessment.candidate_name}</div>}
-            {printPage === 1 && <div className="disc-dynamic-cover-date">{submitted}</div>}
-            {printPage === 3 && (
-              <div className="disc-dynamic-profile">
-                <strong>{assessment.candidate_name}</strong>
-                <span>{scores.predominant}{scores.secondary}</span>
-                <div>
-                  <b>D</b> {pct(scores.adapted.percent.D)}
-                  <b>I</b> {pct(scores.adapted.percent.I)}
-                  <b>S</b> {pct(scores.adapted.percent.S)}
-                  <b>C</b> {pct(scores.adapted.percent.C)}
-                </div>
-              </div>
-            )}
-            {printPage === 4 && <div className="disc-dynamic-combination"><strong>{scores.combination}</strong></div>}
+        {Array.from({ length: 12 }, (_, i) => i + 1).map((n) => (
+          <article className="disc-visual-page disc-print-page" key={n}>
+            <div className="disc-visual-sprite" style={styleFor(n)} aria-hidden="true" />
+            <DynamicOverlays n={n} />
           </article>
         ))}
       </div>
