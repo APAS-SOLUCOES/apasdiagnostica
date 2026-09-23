@@ -34,7 +34,7 @@ export function DiscPremiumReport({ assessment, scores }: { assessment: ReportAs
 
     const pageBody: Record<number, ReactNode> = {
       2: <><h2>Antes de olhar o resultado</h2><p>{content.overview}</p><p>{content.conclusion}</p></>,
-      3: <><h2>{content.profileName}</h2><div className="disc-profile-grid">{(["D","I","S","C"] as const).map(d => <div key={d}><b>{d}</b><span>{pct(scores.adapted.percent[d])}</span></div>)}</div><p>{content.intensitySummary}</p><p>{content.profileBalance}</p></>,
+      3: <><h2>{content.profileName}</h2><div className="disc-profile-grid">{(["D","I","S","C"] as const).map(d => <div key={d}><b>{d}</b><span>{pct(scores.adapted.percent[d])}</span></div>)}</div><p>{content.intensitySummary}</p><p>{content.profileBalance}</p><div className="disc-profile-modes"><small>Natural: {(["D","I","S","C"] as const).map(d => d + " " + pct(scores.natural.percent[d])).join(" · ")}</small><small>Social: {(["D","I","S","C"] as const).map(d => d + " " + pct(scores.social.percent[d])).join(" · ")}</small><small>Adaptado: {(["D","I","S","C"] as const).map(d => d + " " + pct(scores.adapted.percent[d])).join(" · ")}</small></div></>,
       4: <><h2>{content.profileName}</h2><p>{content.headline}</p><p>{content.profileLabel}</p><p>{content.factorReadings[scores.predominant]}</p><p>{content.factorReadings[scores.secondary]}</p></>,
       5: <><h2>Seus pontos fortes</h2><Bullets items={content.strengths} /></>,
       6: <><h2>O que pode exigir mais atenção</h2><Bullets items={content.attention} /></>,
