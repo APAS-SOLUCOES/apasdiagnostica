@@ -193,6 +193,37 @@
   box-shadow: var(--shadow-premium);
 }
 
+.disc-page-dark {
+  --disc-ink: oklch(0.97 0 0);
+  --disc-soft: oklch(0.74 0 0);
+  --disc-line: oklch(1 0 0 / 0.18);
+  background: oklch(0.145 0 0);
+  color: var(--disc-ink);
+}
+
+.disc-page-art {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 76mm;
+  height: 112mm;
+  object-fit: cover;
+  opacity: 0.2;
+  mask-image: linear-gradient(to bottom left, transparent 0%, black 38%);
+}
+
+.disc-page-geometry { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.disc-page-geometry span { position: absolute; display: block; border: 1px solid var(--disc-line); }
+.disc-page-geometry span:first-child { top: 42mm; right: -18mm; width: 52mm; height: 52mm; transform: rotate(24deg); }
+.disc-page-geometry span:nth-child(2) { bottom: 35mm; left: -14mm; width: 35mm; height: 35mm; border-radius: 50%; }
+.disc-page-geometry span:last-child { top: 0; right: 22mm; width: 1px; height: 35mm; border-color: var(--disc-red); }
+.disc-page-dark .disc-factor { background: oklch(1 0 0 / 0.07); }
+.disc-page-dark .disc-factor div,
+.disc-page-dark .disc-highlight,
+.disc-page-dark .disc-closing { color: oklch(0.97 0 0); }
+.disc-page-dark .disc-signal,
+.disc-page-dark .disc-perception > div { background: oklch(1 0 0 / 0.94); }
+
 .disc-page-header,
 .disc-page-footer {
   position: absolute;
@@ -230,7 +261,7 @@
 
 .disc-brand {
   display: inline-flex;
-  align-items: center;
+  align-items: baseline;
   gap: 1.5mm;
   color: var(--disc-ink);
   font-family: var(--font-display);
@@ -238,14 +269,6 @@
   font-weight: 700;
   letter-spacing: 0.04em;
   white-space: nowrap;
-}
-
-.disc-brand-mark {
-  display: block;
-  width: 7mm;
-  height: 7mm;
-  flex: none;
-  color: var(--disc-red);
 }
 
 .disc-brand strong {
@@ -443,6 +466,20 @@
   gap: 4mm;
 }
 
+.disc-profile-visual { display: grid; grid-template-columns: 43mm 1fr; gap: 4mm; align-items: stretch; }
+.disc-overview { position: relative; display: grid; min-height: 77mm; place-items: center; overflow: hidden; background: oklch(0.19 0 0); }
+.disc-overview-core { z-index: 2; display: grid; width: 24mm; height: 24mm; place-items: center; align-content: center; border: 1px solid oklch(1 0 0 / 0.25); border-radius: 50%; background: oklch(0.13 0 0); color: oklch(0.98 0 0); }
+.disc-overview-core span { font-family: var(--font-display); font-size: 11pt; font-weight: 800; }
+.disc-overview-core small { font-size: 5pt; color: oklch(0.72 0 0); }
+.disc-overview-ray { position: absolute; left: 50%; width: 48%; display: flex; align-items: center; gap: 1mm; transform-origin: left center; color: oklch(0.97 0 0); }
+.disc-overview-ray > span { display: block; height: 3mm; background: currentColor; }
+.disc-overview-ray strong { font-size: 7pt; }
+.disc-overview-ray small { font-size: 6pt; }
+.disc-overview-d { top: 21%; transform: rotate(-28deg); }
+.disc-overview-i { top: 40%; transform: rotate(-9deg); }
+.disc-overview-s { top: 60%; transform: rotate(9deg); }
+.disc-overview-c { top: 79%; transform: rotate(28deg); }
+
 .disc-profile-panel {
   padding: 5mm;
   border: 1px solid var(--disc-line);
@@ -455,55 +492,57 @@
   line-height: 1.45;
 }
 
-.disc-profile-intro {
-  margin-bottom: 4mm;
-  padding: 3mm 4mm;
-  border-left: 3px solid var(--disc-red);
-  background: oklch(0.96 0 0);
-  color: var(--disc-soft);
-  font-size: 8pt;
-  line-height: 1.45;
-}
-
-.disc-profile-bars {
+.disc-intensity-chart {
   display: grid;
-  gap: 3.5mm;
+  height: 62mm;
   margin-top: 5mm;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2mm;
+  align-items: end;
 }
 
-.disc-profile-bar-row {
+.disc-intensity-column {
   display: grid;
-  grid-template-columns: 7mm 1fr 12mm;
-  align-items: center;
-  gap: 2.5mm;
+  min-width: 0;
+  justify-items: center;
+  gap: 1mm;
 }
 
-.disc-profile-bar-row > strong {
+.disc-intensity-scale {
+  position: relative;
+  width: 100%;
+  height: 37mm;
+  overflow: hidden;
+  border-bottom: 1px solid var(--disc-line);
+  background: repeating-linear-gradient(to top, transparent 0, transparent calc(25% - 1px), var(--disc-line) 25%);
+}
+
+.disc-intensity-scale > span {
+  position: absolute;
+  inset-inline: 18%;
+  bottom: 0;
+  min-height: 1.5mm;
+  background: currentColor;
+}
+
+.disc-intensity-column > strong {
+  font-size: 8pt;
+}
+
+.disc-intensity-column > span {
+  color: var(--disc-ink);
   font-family: var(--font-display);
   font-size: 10pt;
   font-weight: 800;
 }
 
-.disc-profile-bar-track {
-  height: 4.5mm;
-  overflow: hidden;
-  border-radius: 999px;
-  background: oklch(0.9 0 0);
-}
-
-.disc-profile-bar-track > span {
-  display: block;
-  height: 100%;
-  min-width: 2px;
-  border-radius: inherit;
-  background: currentColor;
-}
-
-.disc-profile-bar-row > small {
+.disc-intensity-column > small {
+  max-width: 100%;
+  overflow-wrap: anywhere;
   color: var(--disc-soft);
-  font-size: 7.5pt;
-  font-weight: 700;
-  text-align: right;
+  font-size: 6pt;
+  line-height: 1.1;
+  text-align: center;
 }
 
 /* A página de perfis preserva toda a informação em uma folha A4 real. */
@@ -514,21 +553,26 @@
 .disc-page[data-page="3"] .disc-profile-panel {
   padding: 4mm;
 }
+.disc-page[data-page="3"] .disc-profile-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.disc-page[data-page="3"] .disc-profile-panel > p { min-height: 14mm; }
+.disc-page[data-page="3"] .disc-intensity-chart { height: 42mm; }
+.disc-page[data-page="3"] .disc-intensity-scale { height: 22mm; }
+
 .disc-page[data-page="3"] .disc-profile-panel > p {
   min-height: 13mm;
 }
 
-.disc-page[data-page="3"] .disc-profile-bars {
-  gap: 3mm;
+.disc-page[data-page="3"] .disc-intensity-chart {
+  height: 49mm;
   margin-top: 3mm;
 }
 
-.disc-page[data-page="3"] .disc-profile-bar-track {
-  height: 4mm;
+.disc-page[data-page="3"] .disc-intensity-scale {
+  height: 27mm;
 }
 
 .disc-page[data-page="3"] .disc-table-wrap {
-  display: none;
+  margin-top: 4mm;
 }
 
 .disc-page[data-page="3"] .disc-index {
@@ -956,6 +1000,9 @@
   .disc-perception {
     grid-template-columns: 1fr;
   }
+
+  .disc-profile-visual { grid-template-columns: 1fr; }
+  .disc-overview { min-height: 16rem; }
 
   .disc-factor-grid,
   .disc-cover-factors {
