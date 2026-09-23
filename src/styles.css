@@ -240,19 +240,12 @@
   white-space: nowrap;
 }
 
-.disc-brand-symbol {
-  display: grid;
-  width: 5.5mm;
-  height: 5.5mm;
-  place-items: center;
-  border-radius: 1mm;
-  background: var(--disc-red);
-  color: oklch(0.98 0 0);
-  font-family: var(--font-display);
-  font-size: 7pt;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 1;
+.disc-brand-mark {
+  display: block;
+  width: 7mm;
+  height: 7mm;
+  flex: none;
+  color: var(--disc-red);
 }
 
 .disc-brand strong {
@@ -462,57 +455,55 @@
   line-height: 1.45;
 }
 
-.disc-intensity-chart {
-  display: grid;
-  height: 62mm;
-  margin-top: 5mm;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 2mm;
-  align-items: end;
-}
-
-.disc-intensity-column {
-  display: grid;
-  min-width: 0;
-  justify-items: center;
-  gap: 1mm;
-}
-
-.disc-intensity-scale {
-  position: relative;
-  width: 100%;
-  height: 37mm;
-  overflow: hidden;
-  border-bottom: 1px solid var(--disc-line);
-  background: repeating-linear-gradient(to top, transparent 0, transparent calc(25% - 1px), var(--disc-line) 25%);
-}
-
-.disc-intensity-scale > span {
-  position: absolute;
-  inset-inline: 18%;
-  bottom: 0;
-  min-height: 1.5mm;
-  background: currentColor;
-}
-
-.disc-intensity-column > strong {
+.disc-profile-intro {
+  margin-bottom: 4mm;
+  padding: 3mm 4mm;
+  border-left: 3px solid var(--disc-red);
+  background: oklch(0.96 0 0);
+  color: var(--disc-soft);
   font-size: 8pt;
+  line-height: 1.45;
 }
 
-.disc-intensity-column > span {
-  color: var(--disc-ink);
+.disc-profile-bars {
+  display: grid;
+  gap: 3.5mm;
+  margin-top: 5mm;
+}
+
+.disc-profile-bar-row {
+  display: grid;
+  grid-template-columns: 7mm 1fr 12mm;
+  align-items: center;
+  gap: 2.5mm;
+}
+
+.disc-profile-bar-row > strong {
   font-family: var(--font-display);
   font-size: 10pt;
   font-weight: 800;
 }
 
-.disc-intensity-column > small {
-  max-width: 100%;
-  overflow-wrap: anywhere;
+.disc-profile-bar-track {
+  height: 4.5mm;
+  overflow: hidden;
+  border-radius: 999px;
+  background: oklch(0.9 0 0);
+}
+
+.disc-profile-bar-track > span {
+  display: block;
+  height: 100%;
+  min-width: 2px;
+  border-radius: inherit;
+  background: currentColor;
+}
+
+.disc-profile-bar-row > small {
   color: var(--disc-soft);
-  font-size: 6pt;
-  line-height: 1.1;
-  text-align: center;
+  font-size: 7.5pt;
+  font-weight: 700;
+  text-align: right;
 }
 
 /* A página de perfis preserva toda a informação em uma folha A4 real. */
@@ -527,17 +518,17 @@
   min-height: 13mm;
 }
 
-.disc-page[data-page="3"] .disc-intensity-chart {
-  height: 49mm;
+.disc-page[data-page="3"] .disc-profile-bars {
+  gap: 3mm;
   margin-top: 3mm;
 }
 
-.disc-page[data-page="3"] .disc-intensity-scale {
-  height: 27mm;
+.disc-page[data-page="3"] .disc-profile-bar-track {
+  height: 4mm;
 }
 
 .disc-page[data-page="3"] .disc-table-wrap {
-  margin-top: 4mm;
+  display: none;
 }
 
 .disc-page[data-page="3"] .disc-index {
