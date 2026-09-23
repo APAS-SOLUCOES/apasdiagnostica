@@ -1,6 +1,23 @@
 import type { Dimension } from "./instrument";
 import type { ScoreResult } from "./scoring";
 
+export type DiscTechnicalContent = {
+  scoringVersion: string;
+  completionPercent: number;
+  invalidAnswerCount: number;
+  primary: Dimension;
+  secondary: Dimension;
+  primaryGap: number;
+  closeCombination: boolean;
+  levels: Record<Dimension, "alto" | "moderado" | "baixo">;
+  natural: Record<Dimension, number>;
+  adapted: Record<Dimension, number>;
+  delta: Record<Dimension, number>;
+  strongestDelta: Dimension;
+  highestFactor: Dimension;
+  lowestFactor: Dimension;
+};
+
 export type DiscReportContent = {
   profileName: string;
   headline: string;
@@ -21,6 +38,7 @@ export type DiscReportContent = {
   secondaryInfluence: string;
   lowerFactors: string;
   intensitySummary: string;
+  technical: DiscTechnicalContent;
   technicalSignals: {
     intensity: Record<Dimension, "alto" | "moderado" | "baixo">;
     primaryGap: number;
