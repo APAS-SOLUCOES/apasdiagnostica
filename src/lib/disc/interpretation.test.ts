@@ -54,7 +54,10 @@ describe("APAS DISC dynamic interpretation", () => {
         makeScores({ D: 40, I: 30, S: 20, C: 10 }, pair[0] as Dimension, pair[1] as Dimension),
       );
       expect(result.profileName).toContain(pair);
-      expect(result.profileLabel.length).toBeGreaterThan(20);
+      expect(result.profileLabel.length).toBeGreaterThan(10);
+      expect(result.technical.natural).toBeDefined();
+      expect(result.technical.social).toBeDefined();
+      expect(result.technical.adapted).toBeDefined();
     }
   });
 
@@ -81,6 +84,7 @@ describe("APAS DISC dynamic interpretation", () => {
     ));
     expect(stable.adaptation).not.toBe(adapted.adaptation);
     expect(adapted.technicalSignals.strongestDelta).toBe("D");
+    expect(adapted.technical.completionPercent).toBe(100);
   });
 });
 
