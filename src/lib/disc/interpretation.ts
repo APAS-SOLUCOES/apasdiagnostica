@@ -13,6 +13,7 @@ export type DiscTechnicalContent = {
   closeCombination: boolean;
   levels: Record<Dimension, "alto" | "moderado" | "baixo">;
   natural: Record<Dimension, number>;
+  social: Record<Dimension, number>;
   adapted: Record<Dimension, number>;
   delta: Record<Dimension, number>;
   strongestDelta: Dimension;
@@ -163,6 +164,7 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
       closeCombination: close,
       levels: scores.levels,
       natural: scores.natural.percent,
+      social: scores.social.percent,
       adapted: scores.adapted.percent,
       delta,
       strongestDelta,
