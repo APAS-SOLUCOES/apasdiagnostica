@@ -16,11 +16,19 @@ export type DiscReportContent = {
   development: string[];
   adaptation: string;
   conclusion: string;
+  profileLabel: string;
+  profileBalance: string;
+  secondaryInfluence: string;
+  lowerFactors: string;
+  intensitySummary: string;
   technicalSignals: {
     intensity: Record<Dimension, "alto" | "moderado" | "baixo">;
     primaryGap: number;
     closeCombination: boolean;
     naturalVsAdaptedDelta: Record<Dimension, number>;
+    strongestDelta: Dimension;
+    highestFactor: Dimension;
+    lowestFactor: Dimension;
   };
 };
 
@@ -36,6 +44,56 @@ const pct = (value: number) => round(value).toFixed(1).replace(".", ",") + "%";
 
 function intensityWord(level: ScoreResult["levels"][Dimension]) {
   return level === "alto" ? "marcante" : level === "moderado" ? "presente" : "menos acentuado";
+}
+
+const COMBINATION_THEMES: Record<string, string> = {
+  DI: "Direção, velocidade e objetividade combinadas com capacidade de mobilizar pessoas e gerar movimento.",
+  ID: "Influência, expressão e conexão combinadas com iniciativa, autonomia e foco em avanço.",
+  DS: "Foco em resultado e decisão combinado com constância, acompanhamento e atenção ao ritmo das pessoas.",
+  SD: "Estabilidade, cooperação e continuidade combinadas com firmeza para decidir e conduzir situações.",
+  DC: "Decisão e orientação para resultado combinadas com atenção a critérios, qualidade e riscos.",
+  CD: "Análise, precisão e critérios combinados com autonomia, firmeza e execução.",
+  IS: "Relacionamento, comunicação e mobilização combinados com escuta, cooperação e continuidade.",
+  SI: "Constância, apoio e estabilidade combinados com interação, comunicação e influência.",
+  IC: "Expressão e conexão combinadas com cuidado com informações, critérios e qualidade.",
+  CI: "Precisão e análise combinadas com comunicação, relacionamento e clareza.",
+  SC: "Estabilidade e cooperação combinadas com organização, critérios e qualidade.",
+  CS: "Precisão e consistência combinadas com paciência, previsibilidade e atenção à equipe.",
+};
+
+function orderedDimensions(scores: ScoreResult): Dimension[] {
+  return [...scores.adapted.order];
+}
+
+function buildProfileBalance(scores: ScoreResult) {
+  const o = orderedDimensions(scores);
+  const spread = round(scores.adapted.percent[o[0]!] - scores.adapted.percent[o[3]!]);
+  return "A distribuição vai de " + pct(scores.adapted.percent[o[0]!]) + " em " + FACTOR_NAMES[o[0]!] +
+    " a " + pct(scores.adapted.percent[o[3]!]) + " em " + FACTOR_NAMES[o[3]!] +
+    ", uma amplitude de " + pct(spread) + ". Os dois primeiros fatores estão separados por " +
+    pct(scores.primaryGap ?? 0) + ", ajudando a diferenciar uma composição mais concentrada de uma mais equilibrada.";
+}
+
+function buildSecondaryInfluence(scores: ScoreResult) {
+  const gap = scores.primaryGap ?? 0;
+  const relation = gap <= 3 ? "atua quase no mesmo nível do fator principal" :
+    gap <= 7 ? "tem presença relevante ao lado do fator principal" : "aparece como influência complementar";
+  return FACTOR_NAMES[scores.secondary] + " " + relation + ". Essa tendência acrescenta uma segunda forma de responder ao contexto avaliado.";
+}
+
+function buildLowerFactors(scores: ScoreResult) {
+  const o = orderedDimensions(scores);
+  const low = o[3]!;
+  const third = o[2]!;
+  return FACTOR_NAMES[low] + " é o fator menos acentuado (" + pct(scores.adapted.percent[low]) +
+    "), enquanto " + FACTOR_NAMES[third] + " ocupa a terceira posição (" + pct(scores.adapted.percent[third]) +
+    "). Isso indica menor expressão relativa, não ausência dessa característica.";
+}
+
+function buildIntensitySummary(scores: ScoreResult) {
+  return orderedDimensions(scores).map((d) =>
+    d + " " + pct(scores.adapted.percent[d]) + " — " + intensityWord(scores.levels[d])
+  ).join(" · ");
 }
 
 function buildHeadline(scores: ScoreResult) {
@@ -165,6 +223,7 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
 
   return {
     profileName: p + s + " — " + FACTOR_NAMES[p] + " + " + FACTOR_NAMES[s],
+    profileLabel: COMBINATION_THEMES[scores.combination] ?? "Combinação " + p + s,
     headline: buildHeadline(scores),
     overview: "O resultado é construído a partir da distribuição das quatro dimensões, da ordem entre os fatores principais e da distância entre eles. Seu perfil atual é " +
       p + s + ", com " + pct(scores.adapted.percent[p]) + " em " + FACTOR_NAMES[p] + " e " +
@@ -183,6 +242,10 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
     pressureChange: buildPressure(scores),
     development: buildDevelopment(scores),
     adaptation: buildAdaptation(scores),
+    profileBalance: buildProfileBalance(scores),
+    secondaryInfluence: buildSecondaryInfluence(scores),
+    lowerFactors: buildLowerFactors(scores),
+    intensitySummary: buildIntensitySummary(scores),
     conclusion: "Seu resultado não descreve uma identidade fixa. Ele representa tendências comportamentais observadas no instrumento APAS DISC. A combinação " +
       p + s + ", as intensidades e as diferenças entre natural e adaptado devem ser lidas em conjunto e sempre relacionadas ao contexto em que a avaliação foi realizada.",
     technicalSignals: { intensity: scores.levels, primaryGap: round(scores.primaryGap ?? 0), closeCombination: Boolean(scores.closeCombination), naturalVsAdaptedDelta: delta },
