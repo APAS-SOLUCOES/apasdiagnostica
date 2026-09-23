@@ -246,7 +246,7 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
     overview: "O resultado é construído a partir da distribuição das quatro dimensões, da ordem entre os fatores principais e da distância entre eles. Seu perfil atual é " +
       p + s + ", com " + pct(scores.adapted.percent[p]) + " em " + FACTOR_NAMES[p] + " e " +
       pct(scores.adapted.percent[s]) + " em " + FACTOR_NAMES[s] + ". A diferença entre os dois fatores principais é de " +
-      pct(scores.primaryGap ?? 0) + ".",
+      pct(scores.primaryGap ?? 0) + " (pontos percentuais).",
     factorReadings: { D: buildFactorReading("D", scores), I: buildFactorReading("I", scores), S: buildFactorReading("S", scores), C: buildFactorReading("C", scores) },
     strengths: buildStrengths(scores),
     attention: buildAttention(scores),
