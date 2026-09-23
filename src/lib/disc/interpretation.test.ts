@@ -38,6 +38,8 @@ const makeScores = (
   },
   adaptationIndex: 0,
   adaptationAlert: false,
+  completionPercent: 100,
+  invalidAnswerCount: 0,
   primaryGap: Math.round((percent[predominant] - percent[secondary]) * 10) / 10,
   closeCombination: percent[predominant] - percent[secondary] <= 3,
 });
