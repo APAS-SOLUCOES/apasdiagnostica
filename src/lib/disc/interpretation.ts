@@ -1,5 +1,6 @@
 import type { Dimension } from "./instrument";
 import type { ScoreResult } from "./scoring";
+import { DIMENSION_CONTENT } from "./content";
 import { COMBINATION_NARRATIVES } from "./report-content";
 
 export type DiscTechnicalContent = {
@@ -51,247 +52,132 @@ export type DiscReportContent = {
   };
 };
 
-const FACTOR_NAMES: Record<Dimension, string> = {
+const DIMS: Dimension[] = ["D", "I", "S", "C"];
+const NAMES: Record<Dimension, string> = {
   D: "Dominância",
   I: "Influência",
   S: "Estabilidade",
   C: "Conformidade",
 };
 
-const round = (value: number) => Math.round(value * 10) / 10;
-const pct = (value: number) => round(value).toFixed(1).replace(".", ",") + "%";
+const round = (n: number) => Math.round(n * 10) / 10;
+const pct = (n: number) => round(n).toFixed(1).replace(".", ",") + "%";
 
-function intensityWord(level: ScoreResult["levels"][Dimension]) {
+function order(scores: ScoreResult): Dimension[] {
+  const candidate = [...scores.adapted.order];
+  return candidate.length === 4 ? candidate : [...DIMS].sort((a, b) => scores.adapted.percent[b] - scores.adapted.percent[a]);
+}
+
+function levelText(level: ScoreResult["levels"][Dimension]) {
   return level === "alto" ? "marcante" : level === "moderado" ? "presente" : "menos acentuado";
 }
 
-const COMBINATION_THEMES: Record<string, string> = {
-  DI: "Direção, velocidade e objetividade combinadas com capacidade de mobilizar pessoas e gerar movimento.",
-  ID: "Influência, expressão e conexão combinadas com iniciativa, autonomia e foco em avanço.",
-  DS: "Foco em resultado e decisão combinado com constância, acompanhamento e atenção ao ritmo das pessoas.",
-  SD: "Estabilidade, cooperação e continuidade combinadas com firmeza para decidir e conduzir situações.",
-  DC: "Decisão e orientação para resultado combinadas com atenção a critérios, qualidade e riscos.",
-  CD: "Análise, precisão e critérios combinados com autonomia, firmeza e execução.",
-  IS: "Relacionamento, comunicação e mobilização combinados com escuta, cooperação e continuidade.",
-  SI: "Constância, apoio e estabilidade combinados com interação, comunicação e influência.",
-  IC: "Expressão e conexão combinadas com cuidado com informações, critérios e qualidade.",
-  CI: "Precisão e análise combinadas com comunicação, relacionamento e clareza.",
-  SC: "Estabilidade e cooperação combinadas com organização, critérios e qualidade.",
-  CS: "Precisão e consistência combinadas com paciência, previsibilidade e atenção à equipe.",
-};
-
-function orderedDimensions(scores: ScoreResult): Dimension[] {
-  return [...scores.adapted.order];
+function factorReading(d: Dimension, scores: ScoreResult) {
+  const c = DIMENSION_CONTENT[d];
+  return c.summary + " No seu resultado, " + NAMES[d] + " aparece em nível " +
+    levelText(scores.levels[d]) + " (" + pct(scores.adapted.percent[d]) + "). " +
+    c.levels[scores.levels[d]];
 }
 
-function buildProfileBalance(scores: ScoreResult) {
-  const o = orderedDimensions(scores);
-  const spread = round(scores.adapted.percent[o[0]!] - scores.adapted.percent[o[3]!]);
-  return "A distribuição vai de " + pct(scores.adapted.percent[o[0]!]) + " em " + FACTOR_NAMES[o[0]!] +
-    " a " + pct(scores.adapted.percent[o[3]!]) + " em " + FACTOR_NAMES[o[3]!] +
-    ", uma amplitude de " + pct(spread) + ". Os dois primeiros fatores estão separados por " +
-    pct(scores.primaryGap ?? 0) + ", ajudando a diferenciar uma composição mais concentrada de uma mais equilibrada.";
-}
-
-function buildSecondaryInfluence(scores: ScoreResult) {
-  const gap = scores.primaryGap ?? 0;
-  const relation = gap <= 3 ? "atua quase no mesmo nível do fator principal" :
-    gap <= 7 ? "tem presença relevante ao lado do fator principal" : "aparece como influência complementar";
-  return FACTOR_NAMES[scores.secondary] + " " + relation + ". Essa tendência acrescenta uma segunda forma de responder ao contexto avaliado.";
-}
-
-function buildLowerFactors(scores: ScoreResult) {
-  const o = orderedDimensions(scores);
-  const low = o[3]!;
-  const third = o[2]!;
-  return FACTOR_NAMES[low] + " é o fator menos acentuado (" + pct(scores.adapted.percent[low]) +
-    "), enquanto " + FACTOR_NAMES[third] + " ocupa a terceira posição (" + pct(scores.adapted.percent[third]) +
-    "). Isso indica menor expressão relativa, não ausência dessa característica.";
-}
-
-function buildIntensitySummary(scores: ScoreResult) {
-  return orderedDimensions(scores).map((d) =>
-    d + " " + pct(scores.adapted.percent[d]) + " — " + intensityWord(scores.levels[d])
-  ).join(" · ");
-}
-
-function buildHeadline(scores: ScoreResult) {
-  const p = scores.predominant;
-  const s = scores.secondary;
-  if (scores.closeCombination) {
-    return "Seu perfil combina " + FACTOR_NAMES[p] + " e " + FACTOR_NAMES[s] +
-      " com proximidade entre os dois fatores principais. Isso indica uma composição mais equilibrada entre essas duas tendências, sem apagar as demais.";
-  }
-  return "Seu resultado apresenta " + FACTOR_NAMES[p] + " como tendência predominante e " + FACTOR_NAMES[s] +
-    " como segunda influência. A leitura conjunta mostra como essas características podem se combinar no seu modo de agir.";
-}
-
-function buildFactorReading(d: Dimension, scores: ScoreResult) {
-  const value = scores.adapted.percent[d];
-  const level = scores.levels[d];
-  const bases: Record<Dimension, string> = {
-    D: "Tende a buscar direção, objetividade, autonomia e avanço. Em situações de decisão, pode preferir transformar rapidamente o problema em ação.",
-    I: "Tende a valorizar interação, expressão, influência e troca. Em situações sociais, pode ganhar energia quando existe espaço para conversar, mobilizar e conectar pessoas.",
-    S: "Tende a valorizar estabilidade, continuidade, cooperação e previsibilidade. Em mudanças, pode preferir compreender o contexto e preservar o que já funciona.",
-    C: "Tende a valorizar critérios, precisão, qualidade e consistência. Antes de concluir, pode buscar informações suficientes para reduzir ambiguidades e erros.",
-  };
-  return bases[d] + " No seu resultado, " + FACTOR_NAMES[d] + " aparece em nível " +
-    intensityWord(level) + " (" + pct(value) + ").";
-}
-
-function buildStrengths(scores: ScoreResult) {
-  const strengths: Record<Dimension, string[]> = {
-    D: ["Transformar prioridades em encaminhamentos objetivos.", "Assumir responsabilidade quando uma decisão precisa avançar.", "Manter foco no resultado e no que precisa ser resolvido."],
-    I: ["Criar conexão e facilitar a circulação de ideias.", "Comunicar entusiasmo e mobilizar participação.", "Ampliar possibilidades por meio da interação."],
-    S: ["Oferecer constância e continuidade ao trabalho.", "Contribuir para relações cooperativas e previsíveis.", "Manter estabilidade durante processos que exigem acompanhamento."],
-    C: ["Organizar informações e observar critérios relevantes.", "Buscar qualidade e consistência antes de concluir.", "Perceber detalhes que podem afetar o resultado."],
-  };
-  return [...new Set([...strengths[scores.predominant].slice(0, 2), ...strengths[scores.secondary].slice(0, 1)])];
-}
-
-function buildAttention(scores: ScoreResult) {
-  const attention: Record<Dimension, string[]> = {
-    D: ["A velocidade para decidir pode fazer com que algumas pessoas precisem de mais tempo para acompanhar.", "Em situações de divergência, vale observar se a objetividade está sendo recebida como clareza ou como pressão."],
-    I: ["A espontaneidade e o entusiasmo podem levar a iniciar muitas possibilidades antes de definir prioridades.", "Vale confirmar se a mensagem foi compreendida da mesma forma por pessoas menos participativas."],
-    S: ["A busca por estabilidade pode tornar mudanças bruscas mais desgastantes ou exigir mais tempo de adaptação.", "Vale explicitar quando é necessário mudar, mesmo que o cenário ainda não esteja totalmente confortável."],
-    C: ["A busca por precisão pode ampliar o tempo necessário para concluir quando a situação pede uma decisão prática.", "Vale distinguir o que é essencial para a qualidade daquilo que pode ser ajustado depois."],
-  };
-  return [attention[scores.predominant][0], attention[scores.secondary][0]];
-}
-
-function buildCommunication(scores: ScoreResult) {
-  const first: Record<Dimension, string> = {
-    D: "Na comunicação, tende a apreciar objetividade, propósito e encaminhamento.",
-    I: "Na comunicação, tende a responder bem à troca, à energia da conversa e à possibilidade de influenciar.",
-    S: "Na comunicação, tende a valorizar escuta, respeito ao ritmo e segurança na relação.",
-    C: "Na comunicação, tende a valorizar clareza, lógica, contexto e informações verificáveis.",
-  };
-  const second: Record<Dimension, string> = {
-    D: "Pode preferir conversas que terminem com uma definição clara.",
-    I: "Pode tornar a conversa mais dinâmica e relacional.",
-    S: "Pode dedicar atenção especial ao impacto da mensagem sobre as pessoas.",
-    C: "Pode fazer perguntas para reduzir ambiguidades antes de concordar.",
-  };
-  return first[scores.predominant] + " " + second[scores.secondary];
-}
-
-function buildDecision(scores: ScoreResult) {
-  const decision: Record<Dimension, string> = {
-    D: "Ao decidir, tende a priorizar avanço, autonomia e resultado.",
-    I: "Ao decidir, tende a considerar a reação das pessoas e as possibilidades que a conversa abre.",
-    S: "Ao decidir, tende a considerar continuidade, segurança e impacto sobre as relações.",
-    C: "Ao decidir, tende a considerar critérios, evidências e consequências para a qualidade da entrega.",
-  };
-  return decision[scores.predominant];
-}
-
-function buildTeamwork(scores: ScoreResult) {
-  const team: Record<Dimension, string> = {
-    D: "Em equipe, tende a contribuir trazendo direção e ritmo para a execução.",
-    I: "Em equipe, tende a contribuir conectando pessoas, ideias e oportunidades de interação.",
-    S: "Em equipe, tende a contribuir sustentando cooperação, continuidade e apoio.",
-    C: "Em equipe, tende a contribuir organizando critérios, informações e qualidade.",
-  };
-  return team[scores.predominant] + " A segunda tendência (" + FACTOR_NAMES[scores.secondary] +
-    ") acrescenta outra forma de participação ao seu estilo.";
-}
-
-function buildPressure(scores: ScoreResult) {
-  const pressure: Record<Dimension, string> = {
-    D: "Sob pressão, pode aumentar a velocidade, assumir o controle e buscar uma saída objetiva.",
-    I: "Sob pressão, pode aumentar a comunicação e procurar apoio ou mobilização das pessoas.",
-    S: "Sob pressão, pode buscar preservar estabilidade e reduzir mudanças desnecessárias.",
-    C: "Sob pressão, pode aumentar a conferência de informações e procurar reduzir riscos.",
-  };
-  return pressure[scores.predominant];
-}
-
-function buildDevelopment(scores: ScoreResult) {
-  const primary: Record<Dimension, string[]> = {
-    D: ["Equilibrar velocidade de decisão com escuta de quem será impactado.", "Separar urgência real de assuntos que podem amadurecer."],
-    I: ["Transformar boas conexões em prioridades, compromissos e acompanhamentos.", "Confirmar fatos e combinados depois de conversas mais abertas."],
-    S: ["Praticar mudanças graduais sem adiar decisões necessárias.", "Comunicar limites e posicionamentos mesmo quando existe risco de desconforto."],
-    C: ["Definir o nível de precisão necessário para cada situação.", "Evitar que a busca por segurança impeça testes e decisões proporcionais ao risco."],
-  };
-  const secondAdd: Record<Dimension, string> = {
-    D: "Usar a objetividade da Dominância para transformar intenção em ação.",
-    I: "Usar a Influência para ampliar adesão e clareza na comunicação.",
-    S: "Usar a Estabilidade para sustentar consistência e relacionamento.",
-    C: "Usar a Conformidade para dar estrutura, critérios e qualidade.",
-  };
-  return [...primary[scores.predominant], secondAdd[scores.secondary]];
-}
-
-function buildAdaptation(scores: ScoreResult) {
-  const dims: Dimension[] = ["D", "I", "S", "C"];
-  const max = Math.max(...dims.map((d) => Math.abs(scores.adapted.percent[d] - scores.natural.percent[d])));
+function adaptationText(scores: ScoreResult, delta: Record<Dimension, number>) {
+  const strongest = DIMS.reduce((best, d) => Math.abs(delta[d]) > Math.abs(delta[best]) ? d : best, "D" as Dimension);
+  const max = Math.abs(delta[strongest]);
   const index = round(scores.adaptationIndex).toFixed(1).replace(".", ",") + " pontos";
   if (scores.adaptationAlert) {
-    return "Seu índice de adaptação é " + index +
-      ". A diferença entre o modo natural e o modo adaptado merece atenção: em determinados contextos, você pode estar ajustando seu comportamento de maneira mais perceptível. Isso não significa certo ou errado; indica apenas uma diferença entre tendências espontâneas e respostas ao contexto. A maior variação observada foi de " + pct(max) + " em um dos fatores.";
+    return "Seu índice de adaptação é " + index + ". Há uma diferença mais perceptível entre tendências naturais e o comportamento adaptado ao contexto. Isso não é positivo nem negativo por si só: indica que vale observar onde o ambiente está exigindo maior ajuste. A maior variação foi de " + pct(max) + " em " + NAMES[strongest] + ".";
   }
-  return "Seu índice de adaptação é " + index +
-    ". As diferenças entre o modo natural e o modo adaptado aparecem de forma mais contida no resultado, sugerindo maior proximidade entre suas tendências espontâneas e a forma como você responde ao contexto avaliado.";
+  return "Seu índice de adaptação é " + index + ". As diferenças entre o modo natural e o adaptado aparecem de forma mais contida, indicando maior proximidade entre as tendências espontâneas e a resposta ao contexto avaliado.";
 }
 
 export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
-  const dims: Dimension[] = ["D", "I", "S", "C"];
-  const delta = {} as Record<Dimension, number>;
-  for (const d of dims) delta[d] = round(scores.adapted.percent[d] - scores.natural.percent[d]);
   const p = scores.predominant;
   const s = scores.secondary;
+  const o = order(scores);
+  const delta = {} as Record<Dimension, number>;
+  DIMS.forEach((d) => { delta[d] = round(scores.adapted.percent[d] - scores.natural.percent[d]); });
+
+  const narrative = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES[p + s];
+  const pContent = DIMENSION_CONTENT[p];
+  const sContent = DIMENSION_CONTENT[s];
+  const gap = round(scores.primaryGap ?? Math.abs(scores.adapted.percent[p] - scores.adapted.percent[s]));
+  const close = Boolean(scores.closeCombination || gap <= 3);
+  const strongestDelta = DIMS.reduce((best, d) => Math.abs(delta[d]) > Math.abs(delta[best]) ? d : best, "D" as Dimension);
+
+  const strengths = [...new Set([
+    ...(narrative?.best ?? []),
+    pContent.strengths[0],
+    sContent.strengths[0],
+  ].filter(Boolean))].slice(0, 4);
+
+  const attention = [...new Set([
+    ...(narrative?.excess ?? []),
+    pContent.attention[0],
+    sContent.attention[0],
+  ].filter(Boolean))].slice(0, 4);
 
   return {
-    profileName: p + s + " — " + FACTOR_NAMES[p] + " + " + FACTOR_NAMES[s],
-    profileLabel: COMBINATION_NARRATIVES[scores.combination]?.title ?? "Combinação " + p + s,
-    headline: buildHeadline(scores),
-    overview: "O resultado é construído a partir da distribuição das quatro dimensões, da ordem entre os fatores principais e da distância entre eles. Seu perfil atual é " +
-      p + s + ", com " + pct(scores.adapted.percent[p]) + " em " + FACTOR_NAMES[p] + " e " +
-      pct(scores.adapted.percent[s]) + " em " + FACTOR_NAMES[s] + ". A diferença entre os dois fatores principais é de " +
-      pct(scores.primaryGap ?? 0) + " (pontos percentuais).",
-    factorReadings: { D: buildFactorReading("D", scores), I: buildFactorReading("I", scores), S: buildFactorReading("S", scores), C: buildFactorReading("C", scores) },
-    strengths: [...new Set([...(COMBINATION_NARRATIVES[scores.combination]?.best ?? []), ...STRENGTHS[p].slice(0, 1), ...STRENGTHS[s].slice(0, 1)])].slice(0, 4),
-    attention: [...new Set([...(COMBINATION_NARRATIVES[scores.combination]?.excess ?? []), ...ATTENTION[p].slice(0, 1), ...ATTENTION[s].slice(0, 1)])].slice(0, 4),
-    perception: "As pessoas podem perceber primeiro a combinação entre " + FACTOR_NAMES[p] + " e " + FACTOR_NAMES[s] +
-      ". Dependendo do contexto, isso pode aparecer como um estilo mais " +
-      (p === "D" ? "direto" : p === "I" ? "expressivo" : p === "S" ? "acolhedor e constante" : "criterioso") +
-      ", combinado com características de " + FACTOR_NAMES[s].toLowerCase() + ".",
-    communication: COMBINATION_NARRATIVES[scores.combination]?.communication ?? buildCommunication(scores),
-    decision: COMBINATION_NARRATIVES[scores.combination]?.decision ?? buildDecision(scores),
-    teamwork: COMBINATION_NARRATIVES[scores.combination]?.team ?? buildTeamwork(scores),
-    pressureChange: (COMBINATION_NARRATIVES[scores.combination]?.pressure ?? buildPressure(scores)) + " " + (COMBINATION_NARRATIVES[scores.combination]?.change ?? ""),
-    development: [...new Set([...(COMBINATION_NARRATIVES[scores.combination]?.experiments ?? []), ...DEVELOPMENT[p].slice(0, 1)])].slice(0, 4),
-    adaptation: buildAdaptation(scores),
-    profileBalance: buildProfileBalance(scores),
-    secondaryInfluence: buildSecondaryInfluence(scores),
-    lowerFactors: buildLowerFactors(scores),
-    intensitySummary: buildIntensitySummary(scores),
+    profileName: p + s + " — " + NAMES[p] + " + " + NAMES[s],
+    profileLabel: narrative?.title ?? (p + s),
+    headline: narrative?.essence ??
+      ("Seu resultado apresenta " + NAMES[p] + " como tendência predominante e " + NAMES[s] + " como segunda influência."),
+    overview: "O resultado considera as quatro dimensões, suas intensidades, a combinação dos fatores principais e a relação entre os perfis Natural e Adaptado. No seu resultado, " +
+      NAMES[p] + " aparece com " + pct(scores.adapted.percent[p]) + " e " + NAMES[s] + " com " +
+      pct(scores.adapted.percent[s]) + ", diferença de " + pct(gap) + " pontos percentuais.",
+    factorReadings: {
+      D: factorReading("D", scores),
+      I: factorReading("I", scores),
+      S: factorReading("S", scores),
+      C: factorReading("C", scores),
+    },
+    strengths,
+    attention,
+    perception: narrative?.perceived ??
+      ("A combinação entre " + NAMES[p] + " e " + NAMES[s] + " pode ser percebida de formas diferentes conforme o contexto e o ritmo das pessoas ao redor."),
+    communication: narrative?.communication ?? pContent.communication,
+    decision: narrative?.decision ?? pContent.headline,
+    teamwork: narrative?.team ?? (pContent.summary + " Em equipe, " + sContent.headline.toLowerCase() + " também pode influenciar sua participação."),
+    pressureChange: (narrative?.pressure ?? "Sob pressão, " + pContent.attention[0].toLowerCase()) + " " +
+      (narrative?.change ?? ""),
+    development: [...new Set([
+      ...(narrative?.experiments ?? []),
+      ...pContent.development.slice(0, 2),
+      ...sContent.development.slice(0, 1),
+    ])].slice(0, 4),
+    adaptation: adaptationText(scores, delta),
+    profileBalance: "A distribuição vai de " + pct(scores.adapted.percent[o[0]]) + " em " + NAMES[o[0]] +
+      " a " + pct(scores.adapted.percent[o[3]]) + " em " + NAMES[o[3]] + ". Os dois primeiros fatores têm " +
+      pct(gap) + " pontos percentuais de diferença, indicando uma composição " + (close ? "mais próxima entre os fatores principais." : "com maior predominância do primeiro fator."),
+    secondaryInfluence: NAMES[s] + (gap <= 3 ? " atua quase no mesmo nível do fator principal." : gap <= 7 ? " tem presença relevante ao lado do fator principal." : " aparece como influência complementar.") +
+      " Ela acrescenta " + (sContent.headline.toLowerCase()) + " à leitura conjunta.",
+    lowerFactors: NAMES[o[3]] + " é o fator menos acentuado (" + pct(scores.adapted.percent[o[3]]) +
+      "), enquanto " + NAMES[o[2]] + " ocupa a terceira posição (" + pct(scores.adapted.percent[o[2]]) +
+      "). Menor expressão relativa não significa ausência da característica.",
+    intensitySummary: o.map((d) => d + " " + pct(scores.adapted.percent[d]) + " — " + levelText(scores.levels[d])).join(" · "),
     technical: {
       scoringVersion: scores.scoringVersion,
       completionPercent: scores.completionPercent,
       invalidAnswerCount: scores.invalidAnswerCount,
       primary: p,
       secondary: s,
-      primaryGap: round(scores.primaryGap ?? 0),
-      closeCombination: Boolean(scores.closeCombination),
+      primaryGap: gap,
+      closeCombination: close,
       levels: scores.levels,
       natural: scores.natural.percent,
       adapted: scores.adapted.percent,
       delta,
-      strongestDelta: dims.reduce((best, d) => Math.abs(delta[d]) > Math.abs(delta[best]) ? d : best, "D" as Dimension),
-      highestFactor: orderedDimensions(scores)[0]!,
-      lowestFactor: orderedDimensions(scores)[3]!,
+      strongestDelta,
+      highestFactor: o[0],
+      lowestFactor: o[3],
     },
-    conclusion: "Seu resultado não descreve uma identidade fixa. Ele representa tendências comportamentais observadas no instrumento APAS DISC. A combinação " +
-      p + s + ", as intensidades e as diferenças entre natural e adaptado devem ser lidas em conjunto e sempre relacionadas ao contexto em que a avaliação foi realizada.",
     technicalSignals: {
       intensity: scores.levels,
-      primaryGap: round(scores.primaryGap ?? 0),
-      closeCombination: Boolean(scores.closeCombination),
+      primaryGap: gap,
+      closeCombination: close,
       naturalVsAdaptedDelta: delta,
-      strongestDelta: dims.reduce((best, d) => Math.abs(delta[d]) > Math.abs(delta[best]) ? d : best, "D" as Dimension),
-      highestFactor: orderedDimensions(scores)[0]!,
-      lowestFactor: orderedDimensions(scores)[3]!,
+      strongestDelta,
+      highestFactor: o[0],
+      lowestFactor: o[3],
     },
+    conclusion: "Seu resultado representa tendências comportamentais observadas neste instrumento e não uma identidade fixa. A leitura deve considerar a combinação, as intensidades, o contexto e as diferenças entre Natural e Adaptado.",
   };
 }
