@@ -1,5 +1,6 @@
 import type { Dimension } from "./instrument";
 import type { ScoreResult } from "./scoring";
+import { COMBINATION_NARRATIVES } from "./report-content";
 
 export type DiscTechnicalContent = {
   scoringVersion: string;
@@ -242,24 +243,24 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
 
   return {
     profileName: p + s + " — " + FACTOR_NAMES[p] + " + " + FACTOR_NAMES[s],
-    profileLabel: COMBINATION_THEMES[scores.combination] ?? "Combinação " + p + s,
+    profileLabel: COMBINATION_NARRATIVES[scores.combination]?.title ?? "Combinação " + p + s,
     headline: buildHeadline(scores),
     overview: "O resultado é construído a partir da distribuição das quatro dimensões, da ordem entre os fatores principais e da distância entre eles. Seu perfil atual é " +
       p + s + ", com " + pct(scores.adapted.percent[p]) + " em " + FACTOR_NAMES[p] + " e " +
       pct(scores.adapted.percent[s]) + " em " + FACTOR_NAMES[s] + ". A diferença entre os dois fatores principais é de " +
       pct(scores.primaryGap ?? 0) + " (pontos percentuais).",
     factorReadings: { D: buildFactorReading("D", scores), I: buildFactorReading("I", scores), S: buildFactorReading("S", scores), C: buildFactorReading("C", scores) },
-    strengths: buildStrengths(scores),
-    attention: buildAttention(scores),
+    strengths: [...new Set([...(COMBINATION_NARRATIVES[scores.combination]?.best ?? []), ...STRENGTHS[p].slice(0, 1), ...STRENGTHS[s].slice(0, 1)])].slice(0, 4),
+    attention: [...new Set([...(COMBINATION_NARRATIVES[scores.combination]?.excess ?? []), ...ATTENTION[p].slice(0, 1), ...ATTENTION[s].slice(0, 1)])].slice(0, 4),
     perception: "As pessoas podem perceber primeiro a combinação entre " + FACTOR_NAMES[p] + " e " + FACTOR_NAMES[s] +
       ". Dependendo do contexto, isso pode aparecer como um estilo mais " +
       (p === "D" ? "direto" : p === "I" ? "expressivo" : p === "S" ? "acolhedor e constante" : "criterioso") +
       ", combinado com características de " + FACTOR_NAMES[s].toLowerCase() + ".",
-    communication: buildCommunication(scores),
-    decision: buildDecision(scores),
-    teamwork: buildTeamwork(scores),
-    pressureChange: buildPressure(scores),
-    development: buildDevelopment(scores),
+    communication: COMBINATION_NARRATIVES[scores.combination]?.communication ?? buildCommunication(scores),
+    decision: COMBINATION_NARRATIVES[scores.combination]?.decision ?? buildDecision(scores),
+    teamwork: COMBINATION_NARRATIVES[scores.combination]?.team ?? buildTeamwork(scores),
+    pressureChange: (COMBINATION_NARRATIVES[scores.combination]?.pressure ?? buildPressure(scores)) + " " + (COMBINATION_NARRATIVES[scores.combination]?.change ?? ""),
+    development: [...new Set([...(COMBINATION_NARRATIVES[scores.combination]?.experiments ?? []), ...DEVELOPMENT[p].slice(0, 1)])].slice(0, 4),
     adaptation: buildAdaptation(scores),
     profileBalance: buildProfileBalance(scores),
     secondaryInfluence: buildSecondaryInfluence(scores),
