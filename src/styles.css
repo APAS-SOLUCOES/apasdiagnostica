@@ -2066,3 +2066,147 @@
     font-size: 16vw !important;
   }
 }
+
+/* APAS DISC — premium profile wheel + percentage-driven meters */
+.disc-page[data-page="3"] .disc-profile-donut-wrap {
+  width: 100%;
+  min-height: 78mm;
+  margin-bottom: 3mm;
+  padding: 0;
+  border: 0;
+}
+
+.disc-page[data-page="3"] .disc-profile-wheel {
+  width: 100%;
+}
+
+.disc-page[data-page="3"] .disc-wheel-stage {
+  position: relative;
+  width: 100%;
+  height: 78mm;
+  display: grid;
+  place-items: center;
+}
+
+.disc-page[data-page="3"] .disc-profile-donut {
+  width: 58mm;
+  height: 58mm;
+  box-shadow:
+    0 0 0 1px oklch(1 0 0 / 0.10),
+    0 5mm 12mm oklch(0 0 0 / 0.28);
+}
+
+.disc-page[data-page="3"] .disc-profile-donut::before {
+  inset: 9mm;
+  background: oklch(0.145 0 0);
+  box-shadow: inset 0 0 0 1px oklch(1 0 0 / 0.08);
+}
+
+.disc-page[data-page="3"] .disc-profile-donut > div {
+  gap: 1.5mm;
+}
+
+.disc-page[data-page="3"] .disc-profile-donut strong {
+  font-size: 19pt;
+  letter-spacing: 0.04em;
+  color: oklch(0.98 0 0);
+}
+
+.disc-page[data-page="3"] .disc-profile-donut small {
+  color: oklch(0.72 0 0);
+  font-size: 6.5pt;
+  line-height: 1.35;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.disc-wheel-ring {
+  position: absolute;
+  width: 64mm;
+  height: 64mm;
+  border: 1px solid oklch(1 0 0 / 0.09);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.disc-wheel-label {
+  position: absolute;
+  z-index: 4;
+  display: grid;
+  min-width: 25mm;
+  padding: 2mm 2.5mm;
+  border: 1px solid oklch(1 0 0 / 0.12);
+  border-radius: 2.5mm;
+  background: oklch(0.12 0 0 / 0.94);
+  box-shadow: 0 2mm 5mm oklch(0 0 0 / 0.20);
+  line-height: 1;
+}
+
+.disc-wheel-label .disc-wheel-factor {
+  font-family: var(--font-display);
+  font-size: 13pt;
+  font-weight: 800;
+}
+
+.disc-wheel-label > strong {
+  margin-top: .8mm;
+  color: oklch(0.98 0 0);
+  font-size: 10pt;
+  font-weight: 800;
+}
+
+.disc-wheel-label > small {
+  margin-top: .7mm;
+  color: oklch(0.68 0 0);
+  font-size: 5.5pt;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.disc-wheel-d { left: 3mm; top: 2mm; }
+.disc-wheel-i { right: 3mm; top: 2mm; text-align: right; }
+.disc-wheel-s { left: 3mm; bottom: 2mm; }
+.disc-wheel-c { right: 3mm; bottom: 2mm; text-align: right; }
+
+.disc-meter-fill {
+  display: block;
+  height: 100%;
+  min-width: 1mm;
+  border-radius: inherit;
+  opacity: .92;
+  box-shadow: 0 0 4px currentColor;
+}
+
+.disc-meter-fill.disc-factor-d { background: var(--disc-red); }
+.disc-meter-fill.disc-factor-i { background: var(--disc-gold); }
+.disc-meter-fill.disc-factor-s { background: var(--disc-green); }
+.disc-meter-fill.disc-factor-c { background: var(--disc-teal); }
+
+.disc-page[data-page="3"] .disc-horizontal-track {
+  height: 3.2mm;
+  background: oklch(1 0 0 / 0.10);
+  box-shadow: inset 0 0 0 1px oklch(1 0 0 / 0.05);
+}
+
+.disc-page[data-page="3"] .disc-horizontal-row > b {
+  color: oklch(0.96 0 0);
+  font-weight: 800;
+}
+
+@media (max-width: 700px) {
+  .disc-page[data-page="3"] .disc-wheel-stage {
+    height: 72mm;
+  }
+  .disc-page[data-page="3"] .disc-profile-donut {
+    width: 53mm;
+    height: 53mm;
+  }
+  .disc-wheel-ring {
+    width: 59mm;
+    height: 59mm;
+  }
+  .disc-wheel-label {
+    min-width: 22mm;
+    padding: 1.7mm 2mm;
+  }
+}
