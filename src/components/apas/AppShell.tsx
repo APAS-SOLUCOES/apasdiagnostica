@@ -41,7 +41,7 @@ export function AppShell({
             <img
               src={apasLogo}
               alt="APAS Soluções"
-              className="h-9 w-auto max-w-12 object-contain"
+              className="h-10 w-10 shrink-0 rounded-sm bg-black object-contain p-0.5"
             />
             <span className="font-display text-sm font-semibold tracking-tight">
               APAS <span className="text-primary">DIAGNÓSTICA</span>
