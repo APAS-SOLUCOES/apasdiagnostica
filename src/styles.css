@@ -290,7 +290,6 @@
   max-width: 18mm;
   object-fit: contain;
   border-radius: 1mm;
-  background: #000;
 }
 
 .disc-title-row {
@@ -1037,15 +1036,16 @@
   display: inline-flex;
   align-items: center;
   width: fit-content;
-  padding: 1mm;
-  background: #000;
-  border-radius: 1mm;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
 }
 
 .disc-cover-wordmark {
   position: absolute !important;
-  left: 18mm;
-  top: 83mm;
+  left: auto;
+  right: 18mm;
+  top: 91mm;
   z-index: 1;
   font-family: var(--font-display);
   font-size: 52pt;
@@ -1823,4 +1823,474 @@
   margin-top: 3mm;
   font-size: 7pt;
   line-height: 1.4;
+}
+
+
+/* APAS DISC — logo placement and page-fit correction */
+.disc-page-header {
+  align-items: center;
+}
+.disc-page-header > span {
+  color: var(--disc-soft);
+}
+.disc-page-dark .disc-page-header > span {
+  color: oklch(0.98 0 0);
+}
+.disc-page-footer {
+  align-items: center;
+  min-height: 14mm;
+}
+.disc-page-footer .disc-brand-logo {
+  width: 12mm;
+  height: 12mm;
+  max-width: 12mm;
+  max-height: 12mm;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+.disc-page-footer .disc-brand {
+  line-height: 1;
+}
+.disc-page-body {
+  padding-bottom: 28mm;
+}
+
+/* Keep dense editorial pages completely inside their A4 frame. */
+.disc-page[data-page="9"] .disc-signal {
+  padding: 3.5mm;
+  min-height: 28mm;
+}
+.disc-page[data-page="9"] .disc-signal h3,
+.disc-page[data-page="9"] .disc-signal p {
+  font-size: 8.5pt;
+  line-height: 1.35;
+}
+.disc-page[data-page="10"] .disc-signal {
+  padding: 3.5mm;
+  min-height: 27mm;
+}
+.disc-page[data-page="10"] .disc-signal h3,
+.disc-page[data-page="10"] .disc-signal p {
+  font-size: 8.5pt;
+  line-height: 1.35;
+}
+.disc-page[data-page="11"] .disc-development-grid {
+  gap: 2.5mm;
+  margin-top: 4mm;
+}
+.disc-page[data-page="11"] .disc-development-grid > div {
+  padding: 2.5mm 0;
+}
+.disc-page[data-page="11"] .disc-development-grid p {
+  font-size: 8.5pt;
+  line-height: 1.38;
+}
+.disc-page[data-page="11"] .disc-action-box {
+  margin-top: 4mm;
+  padding: 4mm 5mm;
+}
+.disc-page[data-page="11"] .disc-note {
+  font-size: 7.5pt;
+  line-height: 1.35;
+  margin-top: 3mm;
+}
+
+@media (max-width: 760px) {
+  .disc-page-footer .disc-brand-logo {
+    width: 11vw;
+    height: 11vw;
+    max-width: 11vw;
+    max-height: 11vw;
+  }
+}
+
+
+/* APAS DISC — final visual/fit correction */
+.disc-brand-logo {
+  width: 16mm;
+  height: 16mm;
+  max-width: 16mm;
+  max-height: 16mm;
+  border-radius: 0;
+  background: transparent;
+}
+.disc-page-footer .disc-brand-logo {
+  width: 11mm;
+  height: 11mm;
+  max-width: 11mm;
+  max-height: 11mm;
+  margin-bottom: -1mm;
+}
+.disc-page-footer .disc-brand {
+  align-items: center;
+}
+.disc-page-dark .disc-page-header > span {
+  color: oklch(0.98 0 0) !important;
+}
+.disc-page-dark .disc-page-header {
+  color: oklch(0.98 0 0);
+}
+
+/* The editorial pages are composed as A4 sheets; scale only dense body content
+   so text never crosses the fixed sheet boundary or gets clipped. */
+.disc-page[data-page="5"] .disc-page-body,
+.disc-page[data-page="6"] .disc-page-body,
+.disc-page[data-page="7"] .disc-page-body,
+.disc-page[data-page="8"] .disc-page-body,
+.disc-page[data-page="9"] .disc-page-body,
+.disc-page[data-page="10"] .disc-page-body,
+.disc-page[data-page="11"] .disc-page-body,
+.disc-page[data-page="12"] .disc-page-body {
+  transform: scale(.90);
+  transform-origin: top left;
+  width: 111.111%;
+}
+.disc-page[data-page="5"] .disc-signal,
+.disc-page[data-page="6"] .disc-signal,
+.disc-page[data-page="7"] .disc-signal,
+.disc-page[data-page="8"] .disc-signal,
+.disc-page[data-page="9"] .disc-signal,
+.disc-page[data-page="10"] .disc-signal {
+  margin-top: 3mm;
+  padding: 3.5mm;
+}
+.disc-page[data-page="5"] .disc-page-title,
+.disc-page[data-page="6"] .disc-page-title,
+.disc-page[data-page="7"] .disc-page-title,
+.disc-page[data-page="8"] .disc-page-title,
+.disc-page[data-page="9"] .disc-page-title,
+.disc-page[data-page="10"] .disc-page-title,
+.disc-page[data-page="11"] .disc-page-title,
+.disc-page[data-page="12"] .disc-page-title {
+  margin-bottom: 6mm;
+}
+.disc-page[data-page="11"] .disc-development-grid {
+  gap: 2.5mm;
+  margin-top: 3mm;
+}
+.disc-page[data-page="11"] .disc-development-grid > div {
+  padding: 2.5mm 0;
+}
+.disc-page[data-page="11"] .disc-action-box {
+  margin-top: 3mm;
+  padding: 3.5mm 4mm;
+}
+@media (max-width: 760px) {
+  .disc-page[data-page="5"] .disc-page-body,
+  .disc-page[data-page="6"] .disc-page-body,
+  .disc-page[data-page="7"] .disc-page-body,
+  .disc-page[data-page="8"] .disc-page-body,
+  .disc-page[data-page="9"] .disc-page-body,
+  .disc-page[data-page="10"] .disc-page-body,
+  .disc-page[data-page="11"] .disc-page-body,
+  .disc-page[data-page="12"] .disc-page-body {
+    transform: scale(.86);
+    width: 116.28%;
+  }
+}
+
+
+/* Cover: give the primary APAS mark more visual presence without crowding the title. */
+.disc-cover-brand .disc-brand-logo {
+  width: 28mm;
+  height: 28mm;
+  max-width: 28mm;
+  max-height: 28mm;
+}
+@media (max-width: 760px) {
+  .disc-cover-brand .disc-brand-logo {
+    width: 25vw;
+    height: 25vw;
+    max-width: 29mm;
+    max-height: 29mm;
+  }
+}
+.disc-signature {
+  margin-top: 12mm;
+}
+
+/* Final page: keep the footer mark clear of the closing signature text. */
+.disc-page[data-page="12"] .disc-signature {
+  margin-bottom: 17mm;
+}
+
+
+/* APAS DISC — approved premium cover/footer refinement */
+.disc-cover-brand .disc-brand-logo {
+  width: 34mm;
+  height: 34mm;
+  max-width: 34mm;
+  max-height: 34mm;
+}
+
+.disc-cover-wordmark {
+  left: 18mm !important;
+  right: auto !important;
+  top: 166mm !important;
+  font-size: 64pt !important;
+  line-height: .86 !important;
+  letter-spacing: -.055em !important;
+  color: oklch(0.98 0 0 / 0.42) !important;
+  text-shadow: 0 3px 14px oklch(0 0 0 / 0.24);
+}
+
+.disc-cover-copy {
+  max-width: 132mm;
+}
+
+.disc-cover-copy blockquote {
+  max-width: 118mm;
+}
+
+.disc-page[data-page="12"] .disc-signature {
+  display: none !important;
+}
+
+.disc-page[data-page="12"] .disc-page-footer {
+  align-items: center;
+}
+
+@media (max-width: 760px) {
+  .disc-cover-brand .disc-brand-logo {
+    width: 30vw;
+    height: 30vw;
+    max-width: 34mm;
+    max-height: 34mm;
+  }
+
+  .disc-cover-wordmark {
+    left: 6vw !important;
+    right: auto !important;
+    top: 57vw !important;
+    font-size: 16vw !important;
+  }
+}
+
+/* APAS DISC — premium profile wheel + percentage-driven meters */
+.disc-page[data-page="3"] .disc-profile-donut-wrap {
+  width: 100%;
+  min-height: 78mm;
+  margin-bottom: 3mm;
+  padding: 0;
+  border: 0;
+}
+
+.disc-page[data-page="3"] .disc-profile-wheel {
+  width: 100%;
+}
+
+.disc-page[data-page="3"] .disc-profile-overview {
+  display: block;
+  margin-bottom: 5mm;
+}
+
+.disc-page[data-page="3"] .disc-profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4mm;
+  margin-top: 5mm;
+}
+
+.disc-page[data-page="3"] .disc-wheel-premium {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 70mm 1fr;
+  grid-template-rows: 1fr 70mm 1fr;
+  min-height: 78mm;
+  align-items: center;
+  gap: 0 5mm;
+  padding: 2mm 0;
+}
+
+.disc-page[data-page="3"] .disc-wheel-stage {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1 / 4;
+  width: 70mm;
+  height: 70mm;
+  display: grid;
+  place-items: center;
+}
+
+.disc-page[data-page="3"] .disc-profile-donut {
+  position: relative;
+  z-index: 3;
+  width: 57mm;
+  height: 57mm;
+  box-shadow:
+    0 0 0 1px oklch(1 0 0 / 0.12),
+    0 0 14mm oklch(0 0 0 / 0.48),
+    0 5mm 12mm oklch(0 0 0 / 0.34);
+}
+
+.disc-page[data-page="3"] .disc-profile-donut::before {
+  inset: 9.5mm;
+  background: oklch(0.08 0 0);
+  box-shadow:
+    inset 0 0 0 1px oklch(1 0 0 / 0.13),
+    inset 0 0 9mm oklch(0 0 0 / 0.48);
+}
+
+.disc-page[data-page="3"] .disc-profile-donut > div {
+  gap: 1mm;
+}
+
+.disc-page[data-page="3"] .disc-profile-donut strong {
+  color: oklch(0.98 0 0);
+  font-size: 20pt;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+}
+
+.disc-page[data-page="3"] .disc-profile-donut small {
+  color: oklch(0.64 0 0);
+  font-size: 5.5pt;
+  font-weight: 750;
+  letter-spacing: 0.16em;
+}
+
+.disc-wheel-halo {
+  position: absolute;
+  z-index: 1;
+  width: 67mm;
+  height: 67mm;
+  border-radius: 50%;
+  background: radial-gradient(circle, oklch(1 0 0 / 0.04), transparent 62%);
+  box-shadow: 0 0 0 1px oklch(1 0 0 / 0.08), 0 0 10mm oklch(1 0 0 / 0.04);
+}
+
+.disc-wheel-ring {
+  position: absolute;
+  z-index: 4;
+  width: 64mm;
+  height: 64mm;
+  border: 1px solid oklch(1 0 0 / 0.15);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.disc-wheel-card {
+  position: relative;
+  z-index: 5;
+  width: 48mm;
+  min-height: 18mm;
+  display: flex;
+  align-items: center;
+  gap: 3mm;
+  padding: 3mm 3.5mm;
+  border: 1px solid oklch(1 0 0 / 0.12);
+  border-radius: 3mm;
+  background: linear-gradient(145deg, oklch(0.12 0 0 / 0.96), oklch(0.075 0 0 / 0.94));
+  box-shadow: 0 3mm 8mm oklch(0 0 0 / 0.26), inset 0 1px 0 oklch(1 0 0 / 0.04);
+}
+
+.disc-wheel-card-letter {
+  flex: 0 0 11mm;
+  width: 11mm;
+  height: 11mm;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-size: 15pt;
+  font-weight: 900;
+  color: oklch(0.98 0 0);
+  background: oklch(0.08 0 0);
+  border: 1px solid currentColor;
+}
+
+.disc-wheel-card-data strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 12pt;
+  line-height: 1;
+  font-weight: 850;
+  color: oklch(0.97 0 0);
+}
+
+.disc-wheel-card-data small {
+  display: block;
+  margin-top: 1.2mm;
+  color: oklch(0.68 0 0);
+  font-size: 5.8pt;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.disc-wheel-card-d { grid-column: 1; grid-row: 1; justify-self: end; align-self: end; }
+.disc-wheel-card-i { grid-column: 3; grid-row: 1; justify-self: start; align-self: end; }
+.disc-wheel-card-s { grid-column: 1; grid-row: 3; justify-self: end; align-self: start; }
+.disc-wheel-card-c { grid-column: 3; grid-row: 3; justify-self: start; align-self: start; }
+
+.disc-wheel-card-d .disc-wheel-card-letter { color: var(--disc-red); }
+.disc-wheel-card-i .disc-wheel-card-letter { color: var(--disc-gold); }
+.disc-wheel-card-s .disc-wheel-card-letter { color: var(--disc-green); }
+.disc-wheel-card-c .disc-wheel-card-letter { color: var(--disc-teal); }
+
+.disc-wheel-card-d { border-top: 2px solid var(--disc-red); }
+.disc-wheel-card-i { border-top: 2px solid var(--disc-gold); }
+.disc-wheel-card-s { border-bottom: 2px solid var(--disc-green); }
+.disc-wheel-card-c { border-bottom: 2px solid var(--disc-teal); }
+
+.disc-wheel-card-d::after,
+.disc-wheel-card-i::after,
+.disc-wheel-card-s::after,
+.disc-wheel-card-c::after {
+  position: absolute;
+  width: 7mm;
+  height: 1px;
+  content: "";
+  opacity: .55;
+}
+
+.disc-wheel-card-d::after { right: -8mm; top: 50%; background: var(--disc-red); }
+.disc-wheel-card-i::after { left: -8mm; top: 50%; background: var(--disc-gold); }
+.disc-wheel-card-s::after { right: -8mm; top: 50%; background: var(--disc-green); }
+.disc-wheel-card-c::after { left: -8mm; top: 50%; background: var(--disc-teal); }
+
+.disc-meter-fill {
+
+
+  display: block;
+  height: 100%;
+  min-width: 1mm;
+  border-radius: inherit;
+  opacity: .92;
+  box-shadow: 0 0 4px currentColor;
+}
+
+.disc-meter-fill.disc-factor-d { background: var(--disc-red); }
+.disc-meter-fill.disc-factor-i { background: var(--disc-gold); }
+.disc-meter-fill.disc-factor-s { background: var(--disc-green); }
+.disc-meter-fill.disc-factor-c { background: var(--disc-teal); }
+
+.disc-page[data-page="3"] .disc-horizontal-track {
+  height: 3.2mm;
+  background: oklch(1 0 0 / 0.10);
+  box-shadow: inset 0 0 0 1px oklch(1 0 0 / 0.05);
+}
+
+.disc-page[data-page="3"] .disc-horizontal-row > b {
+  color: oklch(0.96 0 0);
+  font-weight: 800;
+}
+
+@media (max-width: 700px) {
+  .disc-page[data-page="3"] .disc-wheel-stage {
+    height: 72mm;
+  }
+  .disc-page[data-page="3"] .disc-profile-donut {
+    width: 53mm;
+    height: 53mm;
+  }
+  .disc-wheel-ring {
+    width: 59mm;
+    height: 59mm;
+  }
+  .disc-wheel-label {
+    min-width: 22mm;
+    padding: 1.7mm 2mm;
+  }
 }
