@@ -134,6 +134,81 @@ export function getAdaptiveNarrative(scores: ScoreResult): CombinationNarrative 
   };
 }
 
+
+const IMPACT_IDENTITIES: Record<Dimension, Array<[number, string]>> = {
+  D: [[0,"O Observador de Rotas"],[18,"O Iniciador Prudente"],[25,"O Realizador"],[30,"O Líder de Movimento"],[35,"O Executor Determinado"],[40,"O Líder de Resultados"]],
+  I: [[0,"O Observador Social"],[18,"O Comunicador Emergente"],[25,"O Comunicador"],[30,"O Comunicador Empolgante"],[35,"O Conector de Pessoas"],[40,"O Catalisador Social"]],
+  S: [[0,"O Explorador Flexível"],[18,"O Construtor de Harmonia"],[25,"O Equilibrador"],[30,"O Construtor de Confiança"],[35,"O Guardião das Relações"],[40,"O Pilar de Estabilidade"]],
+  C: [[0,"O Explorador de Possibilidades"],[18,"O Analista em Desenvolvimento"],[25,"O Organizador"],[30,"O Detalhista Estratégico"],[35,"O Especialista Preciso"],[40,"O Guardião da Qualidade"]],
+};
+
+const IMPACT_TEMPLATES: Record<Dimension, string[]> = {
+  D: [
+    "Você percebe o momento de agir e começa a transformar possibilidades em movimento.",
+    "Você tende a avançar quando encontra um desafio que vale a pena enfrentar.",
+    "Sua iniciativa ganha espaço quando existe algo concreto para conquistar.",
+    "Você encontra energia em decisões que pedem atitude, autonomia e direção.",
+    "Você tende a assumir a frente quando percebe que sua ação pode fazer diferença.",
+    "Desafios despertam em você uma vontade natural de sair da intenção e chegar à realização.",
+    "Você gosta de transformar obstáculos em próximos passos e possibilidades em ação.",
+    "Sua força aparece quando é preciso escolher um caminho e colocar as coisas em movimento.",
+    "Você tende a ganhar presença quando o contexto pede coragem para decidir e avançar.",
+    "Você transforma impulso de realização em atitude quando encontra um objetivo que merece ser conquistado.",
+  ],
+  I: [
+    "Você encontra energia quando pode trocar ideias, criar conexão e dar vida às possibilidades.",
+    "Sua presença ganha força quando existe espaço para conversar, envolver e inspirar pessoas.",
+    "Você tende a aproximar pessoas e transformar uma ideia em entusiasmo compartilhado.",
+    "Você usa comunicação e relacionamento como caminhos naturais para gerar movimento.",
+    "Sua espontaneidade ajuda a tornar ideias mais acessíveis, leves e envolventes.",
+    "Você tende a deixar sua marca pela maneira como se conecta, comunica e mobiliza.",
+    "Quando acredita em uma possibilidade, sua energia pode contagiar quem está ao redor.",
+    "Você encontra oportunidades de influência quando pode construir pontes entre pessoas e ideias.",
+    "Sua capacidade de expressão ganha valor quando ajuda outras pessoas a enxergar possibilidades.",
+    "Você tende a transformar interação em energia e energia em movimento coletivo.",
+  ],
+  S: [
+    "Você percebe o valor de construir relações e resultados que possam se sustentar no tempo.",
+    "Sua presença ganha força quando pode oferecer escuta, continuidade e confiança.",
+    "Você tende a criar ambientes em que as pessoas conseguem colaborar com mais tranquilidade.",
+    "Você encontra energia em relações consistentes, acordos claros e evolução gradual.",
+    "Sua capacidade de sustentar o que foi construído pode se tornar uma grande força.",
+    "Você tende a equilibrar o ritmo do ambiente sem perder de vista as pessoas envolvidas.",
+    "Você percebe detalhes humanos que ajudam relações e equipes a permanecerem conectadas.",
+    "Sua constância pode transformar confiança em uma base segura para resultados.",
+    "Você tende a valorizar caminhos que conciliem progresso, cooperação e estabilidade.",
+    "Quando o ambiente precisa de equilíbrio, você pode se tornar uma presença que aproxima e sustenta.",
+  ],
+  C: [
+    "Você percebe detalhes que ajudam a transformar boas ideias em soluções mais consistentes.",
+    "Sua força ganha espaço quando existe algo para analisar, organizar e aperfeiçoar.",
+    "Você tende a buscar critérios que tragam clareza e segurança para suas decisões.",
+    "Sua atenção aos detalhes pode revelar possibilidades que passariam despercebidas.",
+    "Você encontra satisfação quando consegue elevar a qualidade do que está sendo construído.",
+    "Você tende a transformar informação em critério e critério em decisões mais conscientes.",
+    "Sua precisão ganha valor quando ajuda pessoas e processos a funcionarem melhor.",
+    "Você procura entender como as coisas se encaixam antes de confiar plenamente em uma solução.",
+    "Você tende a proteger a qualidade sem perder de vista o resultado que precisa ser entregue.",
+    "Seu olhar analítico pode transformar complexidade em organização, clareza e segurança.",
+  ],
+};
+
+function impactIdentity(d: Dimension, value: number) {
+  const choices = IMPACT_IDENTITIES[d];
+  let identity = choices[0][1];
+  for (const [min, label] of choices) if (value >= min) identity = label;
+  return identity;
+}
+
+export function getAdaptiveFactorImpact(d: Dimension, value: number) {
+  const index = Math.max(0, Math.min(100, Math.round(value)));
+  const template = IMPACT_TEMPLATES[d][index % IMPACT_TEMPLATES[d].length];
+  return {
+    identity: impactIdentity(d, value),
+    phrase: `${template} Seu resultado registra ${pct(value)} em ${DIMENSION_CONTENT[d].title.toLowerCase()}.`,
+  };
+}
+
 export function getAdaptiveFactorReading(d: Dimension, value: number) {
   return intensitySentence(d, value);
 }
