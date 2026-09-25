@@ -143,8 +143,8 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
     intensitySummary: o.map((d) => d + " " + pct(scores.adapted.percent[d]) + " — " + levelText(scores.levels[d])).join(" · "),
     technical: {
       scoringVersion: scores.scoringVersion,
-      completionPercent: scores.completionPercent,
-      invalidAnswerCount: scores.invalidAnswerCount,
+      completionPercent: scores.totalItems > 0 ? round((scores.answeredItems / scores.totalItems) * 100) : 0,
+      invalidAnswerCount: 0,
       primary: p,
       secondary: s,
       primaryGap: gap,

@@ -41,8 +41,6 @@ export type ScoreResult = {
   closeCombination?: boolean;
   /** Rótulo interpretável da ordem dos dois fatores principais. */
   combinationLabel?: string;
-  completionPercent: number;
-  invalidAnswerCount: number;
 };
 
 
@@ -99,14 +97,7 @@ export function computeScores(
 ): ScoreResult {
   const config: ScoringConfig = { ...instrument.scoring, ...configOverride };
   const validIds = new Set(instrument.items.map((i) => i.id));
-  const dimensions = new Set<Dimension>(DIMENSIONS);
-  const valid = answers.filter((a) =>
-    validIds.has(a.itemId) &&
-    dimensions.has(a.most) &&
-    dimensions.has(a.least) &&
-    a.most !== a.least
-  );
-  const invalidAnswerCount = Math.max(0, answers.length - valid.length);
+  const valid = answers.filter((a) => validIds.has(a.itemId) && a.most && a.least);
 
   const mostCount = empty();
   const leastCount = empty();
@@ -206,10 +197,6 @@ export function computeScores(
     scoringVersion: config.version,
     answeredItems: valid.length,
     totalItems: instrument.items.length,
-    completionPercent: instrument.items.length > 0
-      ? Math.round((valid.length / instrument.items.length) * 1000) / 10
-      : 0,
-    invalidAnswerCount,
     natural,
     social,
     adapted,
