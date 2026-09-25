@@ -117,7 +117,7 @@ function buildSituationMap(scores: ScoreResult, base: CombinationNarrative) {
 }
 
 export function getAdaptiveNarrative(scores: ScoreResult): CombinationNarrative {
-  const base = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES[\`${scores.predominant}${scores.secondary}\`] ?? COMBINATION_NARRATIVES.DI;
+  const base = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES[`${scores.predominant}${scores.secondary}`] ?? COMBINATION_NARRATIVES.DI;
   const p = scores.predominant;
   const s = scores.secondary;
   const pv = scores.adapted.percent[p];
@@ -127,7 +127,9 @@ export function getAdaptiveNarrative(scores: ScoreResult): CombinationNarrative 
   const secondaryBand = intensityBand(sv);
   const combinationImpactReading = combinationImpact(scores.combination, pv, gap);
 
-  const intensityPrefix = intensitySentence(p, pv);\n  const profilePortrait = buildProfilePortrait(scores, combinationImpactReading.title, band, gap);\n  const situations = buildSituationMap(scores, base);
+  const intensityPrefix = intensitySentence(p, pv);
+  const profilePortrait = buildProfilePortrait(scores, combinationImpactReading.title, band, gap);
+  const situations = buildSituationMap(scores, base);
   const secondarySentence = intensitySentence(s, sv);
 
   const best = [
@@ -157,7 +159,9 @@ export function getAdaptiveNarrative(scores: ScoreResult): CombinationNarrative 
 
   return {
     ...base,
-    title: `${combinationImpactReading.title} · ${intensityLabel(band)}`,\n    profilePortrait,\n    situations,
+    title: `${combinationImpactReading.title} · ${intensityLabel(band)}`,
+    profilePortrait,
+    situations,
     essence: `${combinationImpactReading.phrase} ${intensityPrefix} ${gapPhrase(gap)} ${secondarySentence}`,
     best,
     excess,
