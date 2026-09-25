@@ -1285,6 +1285,10 @@
 .disc-tech-action-plan p { margin-top:2mm; font-size:8pt; line-height:1.48; }
 .dark-note { background:oklch(1 0 0 / .06); color:var(--tech-soft); }
 
+.disc-tech-source { margin-top:6mm; padding-top:4mm; border-top:1px solid var(--tech-line); color:var(--tech-soft); font-size:7.5pt; line-height:1.5; }
+.disc-tech-source strong { color:var(--tech-ink); }
+.disc-tech-source p + p { margin-top:2mm; }
+
 @media print {
   html,
   body {
