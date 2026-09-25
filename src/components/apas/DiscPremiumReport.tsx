@@ -7,8 +7,8 @@ const decisionCompassArtwork = "https://images.unsplash.com/photo-1495153003981-
 const teamHandsArtwork = "https://images.unsplash.com/photo-1702047109910-43af92894dc1?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=90&w=2400";
 import dialogueArtwork from "@/assets/disc-editorial-dialogue.jpg";
 import selfArtwork from "@/assets/disc-editorial-self.jpg";
-import apasLogoDark from "@/assets/apas-logo.svg";
-import apasLogoLight from "@/assets/apas-logo-dark.svg";
+const apasLogoDark = "/apas-logo.svg";
+const apasLogoLight = "/apas-logo-dark.svg";
 import type { ScoreResult, DimensionMap } from "@/lib/disc/scoring";
 import { DIMENSIONS, DIMENSION_NAMES, type Dimension } from "@/lib/disc/instrument";
 import { APAS_DISCLAIMER, DEVELOPMENT_FRAMEWORK, DIMENSION_CONTENT } from "@/lib/disc/content";
