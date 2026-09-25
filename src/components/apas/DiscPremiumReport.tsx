@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import type { LucideIcon } from "lucide-react";
 import { AlertTriangle, ArrowUpRight, Check, Compass, Focus, Gauge, Lightbulb, MessageCircle, Network, RefreshCw, Scale, Sprout, Users } from "lucide-react";
 import coverArtwork from "@/assets/disc-editorial-cover.jpg";
@@ -7,7 +7,7 @@ import growthArtwork from "@/assets/disc-editorial-growth.jpg";
 import selfArtwork from "@/assets/disc-editorial-self.jpg";
 import apasLogo from "@/assets/apas-logo-official.webp";
 import apasLogoLight from "@/assets/apas-logo-light.webp";
-import type { ScoreResult, DimensionMap, ProfileVector } from "@/lib/disc/scoring";
+import type { ScoreResult, DimensionMap } from "@/lib/disc/scoring";
 import { DIMENSIONS, DIMENSION_NAMES, type Dimension } from "@/lib/disc/instrument";
 import { APAS_DISCLAIMER, DEVELOPMENT_FRAMEWORK, DIMENSION_CONTENT } from "@/lib/disc/content";
 import { COMBINATION_NARRATIVES, FACTOR_SHORT } from "@/lib/disc/report-content";
@@ -46,10 +46,6 @@ function FactorMark({ dimension, percent }: { dimension: Dimension; percent?: nu
   return <div className={`disc-factor ${FACTOR_CLASS[dimension]}`}><span>{dimension}</span><div><strong>{DIMENSION_NAMES[dimension]}</strong>{percent !== undefined && <small>{percent}%</small>}</div></div>;
 }
 
-function ProfileTable({ vectors }: { vectors: { label: string; value: ProfileVector }[] }) {
-  return <div className="disc-table-wrap"><table className="disc-table"><thead><tr><th>Fator</th>{vectors.map((v) => <th key={v.label}>{v.label}</th>)}</tr></thead><tbody>{DIMENSIONS.map((d) => <tr key={d}><td><strong>{d}</strong> · {DIMENSION_NAMES[d]}</td>{vectors.map((v) => <td key={v.label}><span className="disc-table-meter" role="img" aria-label={v.label + ": " + DIMENSION_NAMES[d] + " " + v.value.percent + "%"}><i style={{ width: v.value.percent + "%" }} /></span></td>)}</tr>)}</tbody></table></div>;
-}
-
 function ProfileBars({ title, subtitle, values }: { title: string; subtitle: string; values: DimensionMap }) {
   return <div className="disc-profile-panel"><h3>{title}</h3><p>{subtitle}</p><div className="disc-intensity-chart" aria-label={`Intensidades do perfil ${title}`}>{DIMENSIONS.map((d) => <div className="disc-intensity-column" key={d}><div className="disc-intensity-scale" role="img" aria-label={title + ": " + DIMENSION_NAMES[d] + " " + values[d] + "%"}><span className={FACTOR_CLASS[d]} style={{ height: `${values[d]}%` }} /></div><span>{d}</span><small>{DIMENSION_NAMES[d]}</small></div>)}</div></div>;
 }
@@ -59,7 +55,7 @@ function ProfileDonut({ values, combination }: { values: DimensionMap; combinati
     "--d": `${values.D}%`,
     "--i": `${values.D + values.I}%`,
     "--s": `${values.D + values.I + values.S}%`,
-  } as React.CSSProperties;
+  } as CSSProperties;
 
   return <div className="disc-profile-donut-wrap">
     <div className="disc-profile-donut" style={donutStyle} role="img" aria-label={`Distribuição do perfil adaptado: D ${values.D}%, I ${values.I}%, S ${values.S}%, C ${values.C}%`}>
