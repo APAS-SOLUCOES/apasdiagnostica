@@ -1,7 +1,7 @@
 import type { Dimension } from "./instrument";
 import type { ScoreResult } from "./scoring";
 import { DIMENSION_CONTENT } from "./content";
-import { COMBINATION_NARRATIVES, type CombinationNarrative } from "./report-content";
+import { COMBINATION_NARRATIVES, FACTOR_SHORT, type CombinationNarrative } from "./report-content";
 
 type IntensityBand = "baixo" | "emergente" | "presente" | "marcante" | "muito_marcante" | "dominante";
 
