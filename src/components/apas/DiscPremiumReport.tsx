@@ -5,6 +5,8 @@ import coverArtwork from "@/assets/disc-editorial-cover.jpg";
 import dialogueArtwork from "@/assets/disc-editorial-dialogue.jpg";
 import growthArtwork from "@/assets/disc-editorial-growth.jpg";
 import selfArtwork from "@/assets/disc-editorial-self.jpg";
+import apasLogo from "@/assets/apas-logo-official.webp";
+import apasLogoLight from "@/assets/apas-logo-light.webp";
 import type { ScoreResult, DimensionMap, ProfileVector } from "@/lib/disc/scoring";
 import { DIMENSIONS, DIMENSION_NAMES, type Dimension } from "@/lib/disc/instrument";
 import { APAS_DISCLAIMER, DEVELOPMENT_FRAMEWORK, DIMENSION_CONTENT } from "@/lib/disc/content";
@@ -15,7 +17,7 @@ type ReportAssessment = { id: string; candidate_name: string; role_title?: strin
 type Signal = "strength" | "observe" | "attention" | "tip";
 
 function ApasBrand({ inverse = false }: { inverse?: boolean }) {
-  return <span className={`disc-brand ${inverse ? "disc-brand-inverse" : ""}`} aria-label="APAS Soluções"><svg className="disc-brand-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 13H50V51H12L50 13" /></svg><strong>APAS</strong><span>SOLUÇÕES</span></span>;
+  return <span className={`disc-brand ${inverse ? "disc-brand-inverse" : ""}`} aria-label="APAS Soluções"><img className="disc-brand-logo" src={inverse ? apasLogo : apasLogoLight} alt="" /></span>;
 }
 
 function Page({ number, title, eyebrow, icon: Icon, children, cover = false, dark = [2, 3, 4, 6, 8, 10, 12].includes(number) }: { number: number; title?: string; eyebrow?: string; icon?: LucideIcon; children: ReactNode; cover?: boolean; dark?: boolean }) {

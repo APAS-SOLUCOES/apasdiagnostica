@@ -9,6 +9,12 @@ These files are copied into `src/design-system/{slug}/assets/` in this project �
 Raw files import directly, e.g. `import logo from "@/design-system/{slug}/assets/logos/logo.svg"`.
 The full machine-readable catalog lives in this library's `design-system.json` (`assets` array).
 
+## Official brand
+
+- `@/assets/apas-logo-official.webp` — logo oficial APAS Soluções para fundos escuros.
+- `@/assets/apas-logo-light.webp` — variante legível para fundos claros, derivada da mesma marca oficial.
+Use estes assets para cabeçalhos, rodapés e capas do relatório; não recrie o símbolo em texto ou SVG aproximado.
+
 ## Images
 
 - `@/design-system/{slug}/assets/disc-editorial-cover.jpg` (jpg)
