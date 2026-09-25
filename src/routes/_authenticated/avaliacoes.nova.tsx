@@ -11,7 +11,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { createAssessment, listOrganizations } from "@/lib/apas.functions";
+import { createAssessment, listOrganizations, sendAssessmentEmail } from "@/lib/apas.functions";
 
 export const Route = createFileRoute("/_authenticated/avaliacoes/nova")({
   head: () => ({
@@ -42,7 +42,7 @@ const schema = z.object({
 
 function NovaAvaliacao() {
   const create = useServerFn(createAssessment);
-  const fetchOrgs = useServerFn(listOrganizations);
+  const fetchOrgs = useServerFn(listOrganizations);\n  const sendEmail = useServerFn(sendAssessmentEmail);
   const [form, setForm] = useState({
     candidate_name: "",
     candidate_email: "",
@@ -51,7 +51,7 @@ function NovaAvaliacao() {
     organization_id: "",
     context: "",
   });
-  const [link, setLink] = useState<string | null>(null);
+  const [link, setLink] = useState<string | null>(null);\n  const [emailSent, setEmailSent] = useState(false);\n  const [assessmentId, setAssessmentId] = useState<string | null>(null);
 
   const orgs = useQuery({ queryKey: ["organizations"], queryFn: () => fetchOrgs() });
 
