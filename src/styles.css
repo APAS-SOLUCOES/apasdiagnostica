@@ -1988,3 +1988,23 @@
     width: 116.28%;
   }
 }
+
+
+/* Cover: give the primary APAS mark more visual presence without crowding the title. */
+.disc-cover-brand .disc-brand-logo {
+  width: 24mm;
+  height: 24mm;
+  max-width: 24mm;
+  max-height: 24mm;
+}
+@media (max-width: 760px) {
+  .disc-cover-brand .disc-brand-logo {
+    width: 22vw;
+    height: 22vw;
+    max-width: 25mm;
+    max-height: 25mm;
+  }
+}
+.disc-signature {
+  margin-top: 12mm;
+}
