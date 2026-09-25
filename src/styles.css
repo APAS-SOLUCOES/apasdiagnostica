@@ -222,7 +222,11 @@
 .disc-page-dark .disc-highlight,
 .disc-page-dark .disc-closing { color: oklch(0.97 0 0); }
 .disc-page-dark .disc-signal,
-.disc-page-dark .disc-perception > div { background: oklch(1 0 0 / 0.94); }
+.disc-page-dark .disc-perception > div {
+  --disc-ink: oklch(0.18 0 0);
+  --disc-soft: oklch(0.46 0 0);
+  background: oklch(1 0 0 / 0.94);
+}
 
 .disc-page-header,
 .disc-page-footer {
@@ -1253,7 +1257,3 @@
 
 
 /* APAS DISC — graphical profile meters */
-.disc-table-meter { display:block; width:100%; height:3mm; overflow:hidden; background:var(--disc-line); }
-.disc-table-meter i { display:block; height:100%; background:currentColor; }
-.disc-page[data-page="3"] .disc-table td { vertical-align:middle; }
-.disc-page[data-page="3"] .disc-table-meter { color:var(--disc-ink); }
