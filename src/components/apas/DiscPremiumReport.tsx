@@ -61,33 +61,14 @@ function ProfileDonut({ values, combination }: { values: DimensionMap; combinati
     "--s": (values.D + values.I + values.S) + "%",
   } as CSSProperties;
 
-  const factors = [
-    { dimension: "D", value: values.D, name: "DOMINÂNCIA", className: "d" },
-    { dimension: "I", value: values.I, name: "INFLUÊNCIA", className: "i" },
-    { dimension: "S", value: values.S, name: "ESTABILIDADE", className: "s" },
-    { dimension: "C", value: values.C, name: "CONFORMIDADE", className: "c" },
-  ];
-
-  return <div className="disc-profile-wheel" role="img" aria-label={"Distribuição do perfil adaptado: D " + values.D + "%, I " + values.I + "%, S " + values.S + "%, C " + values.C + "%"}>
-    <div className="disc-wheel-premium">
-      {factors.map(({ dimension, value, name, className }) => (
-        <div key={dimension} className={"disc-wheel-card disc-wheel-card-" + className}>
-          <span className="disc-wheel-card-letter">{dimension}</span>
-          <div className="disc-wheel-card-data">
-            <strong>{value}%</strong>
-            <small>{name}</small>
-          </div>
-        </div>
-      ))}
-      <div className="disc-wheel-stage">
-        <div className="disc-wheel-halo" aria-hidden="true" />
-        <div className="disc-profile-donut" style={donutStyle}>
-          <div>
-            <strong>{combination}</strong>
-            <small>PERFIL</small>
-          </div>
-        </div>
-        <div className="disc-wheel-ring" aria-hidden="true" />
+  return <div className="disc-profile-donut-wrap">
+    <div className="disc-profile-donut-stage">
+      <div className="disc-profile-label disc-profile-label-d"><strong>D</strong><b>{values.D}%</b><small>(Adaptado)</small></div>
+      <div className="disc-profile-label disc-profile-label-i"><strong>I</strong><b>{values.I}%</b><small>(Adaptado)</small></div>
+      <div className="disc-profile-label disc-profile-label-s"><strong>S</strong><b>{values.S}%</b><small>(Adaptado)</small></div>
+      <div className="disc-profile-label disc-profile-label-c"><strong>C</strong><b>{values.C}%</b><small>(Adaptado)</small></div>
+      <div className="disc-profile-donut" style={donutStyle} role="img" aria-label={`Distribuição do perfil adaptado: D ${values.D}%, I ${values.I}%, S ${values.S}%, C ${values.C}%`}>
+        <div><strong>{combination}</strong><small>Seu perfil<br/>primário | secundário</small></div>
       </div>
     </div>
   </div>;
