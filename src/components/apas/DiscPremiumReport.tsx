@@ -51,29 +51,41 @@ function FactorMark({ dimension, percent }: { dimension: Dimension; percent?: nu
 }
 
 function ProfileBars({ title, subtitle, values }: { title: string; subtitle: string; values: DimensionMap }) {
-  return <div className="disc-profile-panel"><h3>{title}</h3><p>{subtitle}</p><div className="disc-horizontal-chart" aria-label={`Intensidades do perfil ${title}`}>{DIMENSIONS.map((d) => <div className="disc-horizontal-row" key={d}><strong className={FACTOR_CLASS[d]}>{d}</strong><div className="disc-horizontal-track"><span className={FACTOR_CLASS[d]} style={{ width: `${values[d]}%` }} /></div><b>{values[d]}%</b></div>)}</div></div>;
+  return <div className="disc-profile-panel"><h3>{title}</h3><p>{subtitle}</p><div className="disc-horizontal-chart" aria-label={`Intensidades do perfil ${title}`}>{DIMENSIONS.map((d) => <div className="disc-horizontal-row" key={d}><strong className={FACTOR_CLASS[d]}>{d}</strong><div className="disc-horizontal-track"><span className={"disc-meter-fill " + FACTOR_CLASS[d]} style={{ width: Math.min(100, Math.max(0, values[d])) + "%" }} /></div><b>{values[d]}%</b></div>)}</div></div>;
 }
 
 function ProfileDonut({ values, combination }: { values: DimensionMap; combination: string }) {
   const donutStyle = {
-    "--d": `${values.D}%`,
-    "--i": `${values.D + values.I}%`,
-    "--s": `${values.D + values.I + values.S}%`,
+    "--d": values.D + "%",
+    "--i": (values.D + values.I) + "%",
+    "--s": (values.D + values.I + values.S) + "%",
   } as CSSProperties;
 
+  const labels = [
+    { dimension: "D" as Dimension, value: values.D, className: "disc-wheel-d", name: DIMENSION_NAMES.D },
+    { dimension: "I" as Dimension, value: values.I, className: "disc-wheel-i", name: DIMENSION_NAMES.I },
+    { dimension: "S" as Dimension, value: values.S, className: "disc-wheel-s", name: DIMENSION_NAMES.S },
+    { dimension: "C" as Dimension, value: values.C, className: "disc-wheel-c", name: DIMENSION_NAMES.C },
+  ];
+
   return <div className="disc-profile-donut-wrap">
-    <div className="disc-profile-donut-stage">
-      <div className="disc-profile-label disc-profile-label-d"><strong>D</strong><b>{values.D}%</b><small>(Adaptado)</small></div>
-      <div className="disc-profile-label disc-profile-label-i"><strong>I</strong><b>{values.I}%</b><small>(Adaptado)</small></div>
-      <div className="disc-profile-label disc-profile-label-s"><strong>S</strong><b>{values.S}%</b><small>(Adaptado)</small></div>
-      <div className="disc-profile-label disc-profile-label-c"><strong>C</strong><b>{values.C}%</b><small>(Adaptado)</small></div>
-      <div className="disc-profile-donut" style={donutStyle} role="img" aria-label={`Distribuição do perfil adaptado: D ${values.D}%, I ${values.I}%, S ${values.S}%, C ${values.C}%`}>
-        <div><strong>{combination}</strong><small>Seu perfil<br/>primário | secundário</small></div>
+    <div className="disc-profile-wheel" role="img" aria-label={"Distribuição do perfil adaptado: D " + values.D + "%, I " + values.I + "%, S " + values.S + "%, C " + values.C + "%"}>
+      <div className="disc-wheel-stage">
+        <div className="disc-profile-donut" style={donutStyle}>
+          <div><strong>{combination}</strong><small>Perfil predominante<br/>e complementar</small></div>
+        </div>
+        <div className="disc-wheel-ring" aria-hidden="true" />
+        {labels.map(({ dimension, value, className, name }) => (
+          <div key={dimension} className={"disc-wheel-label " + className}>
+            <span className={"disc-wheel-factor " + FACTOR_CLASS[dimension]}>{dimension}</span>
+            <strong>{value}%</strong>
+            <small>{name}</small>
+          </div>
+        ))}
       </div>
     </div>
   </div>;
 }
-
 function ThemeBlock({ icon: Icon, title, children }: { icon: LucideIcon; title: string; children: ReactNode }) {
   return <section className="disc-theme-block"><Icon aria-hidden="true" /><div><h3>{title}</h3><p>{children}</p></div></section>;
 }
