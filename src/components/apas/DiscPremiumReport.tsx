@@ -1,6 +1,6 @@
 import type { CSSProperties, ReactNode } from "react";
 import type { LucideIcon } from "lucide-react";
-import { AlertTriangle, ArrowUpRight, BarChart3, Check, Compass, Focus, Gauge, Lightbulb, MessageCircle, Network, Sprout, Users } from "lucide-react";
+import { AlertTriangle, ArrowUpRight, BarChart3, Check, Compass, Focus, Gauge, Leaf, Lightbulb, MessageCircle, Network, Settings2, Sprout, Users, UsersRound } from "lucide-react";
 const coverArtwork = "https://images.unsplash.com/photo-1626220109861-a6bcc8c5b601?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=90&w=2400";
 const attentionLeafArtwork = "https://images.unsplash.com/photo-1552152974-19b9caf99137?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=90&w=2400";
 const decisionCompassArtwork = "https://images.unsplash.com/photo-1495153003981-0945a0a25e46?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=90&w=2400";
@@ -63,9 +63,9 @@ function ProfileDonut({ values, combination }: { values: DimensionMap; combinati
 
   const factors = [
     { dimension: "D", value: values.D, name: "DOMINÂNCIA", description: "Foco em resultados, decisão e movimento para fazer acontecer.", className: "d", icon: BarChart3 },
-    { dimension: "I", value: values.I, name: "INFLUÊNCIA", description: "Comunicação, conexão e capacidade de engajar pessoas.", className: "i", icon: Users },
-    { dimension: "S", value: values.S, name: "ESTABILIDADE", description: "Constância, cooperação e ambiente harmonioso para evoluir.", className: "s", icon: Sprout },
-    { dimension: "C", value: values.C, name: "CONFORMIDADE", description: "Organização, análise e atenção a padrões e qualidade.", className: "c", icon: Gauge },
+    { dimension: "I", value: values.I, name: "INFLUÊNCIA", description: "Comunicação, conexão e capacidade de engajar pessoas.", className: "i", icon: UsersRound },
+    { dimension: "S", value: values.S, name: "ESTABILIDADE", description: "Constância, cooperação e ambiente harmonioso para evoluir.", className: "s", icon: Leaf },
+    { dimension: "C", value: values.C, name: "CONFORMIDADE", description: "Organização, análise e atenção a padrões e qualidade.", className: "c", icon: Settings2 },
   ];
 
   return <div className="disc-profile-wheel" role="img" aria-label={"Distribuição do perfil adaptado: D " + values.D + "%, I " + values.I + "%, S " + values.S + "%, C " + values.C + "%"}>
