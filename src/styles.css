@@ -798,7 +798,7 @@
 .disc-signal-strength { color: var(--disc-green); }
 .disc-signal-observe { color: var(--disc-gold); }
 .disc-signal-attention { color: var(--disc-red); }
-.disc-signal-tip { color: var(--disc-blue); }
+.disc-signal-tip { color: var(--disc-teal); }
 
 .disc-theme-block {
   display: grid;
