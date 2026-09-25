@@ -15,10 +15,10 @@ type ReportAssessment = { id: string; candidate_name: string; role_title?: strin
 type Signal = "strength" | "observe" | "attention" | "tip";
 
 function ApasBrand({ inverse = false }: { inverse?: boolean }) {
-  return <span className={`disc-brand ${inverse ? "disc-brand-inverse" : ""}`} aria-label="APAS Soluções"><i className="disc-brand-symbol" aria-hidden="true">A</i><strong>APAS</strong><span>SOLUÇÕES</span></span>;
+  return <span className={`disc-brand ${inverse ? "disc-brand-inverse" : ""}`} aria-label="APAS Soluções"><svg className="disc-brand-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 13H50V51H12L50 13" /></svg><strong>APAS</strong><span>SOLUÇÕES</span></span>;
 }
 
-function Page({ number, title, eyebrow, icon: Icon, children, cover = false }: { number: number; title?: string; eyebrow?: string; icon?: LucideIcon; children: ReactNode; cover?: boolean }) {
+function Page({ number, title, eyebrow, icon: Icon, children, cover = false, dark = [2, 3, 4, 6, 8, 10, 12].includes(number) }: { number: number; title?: string; eyebrow?: string; icon?: LucideIcon; children: ReactNode; cover?: boolean; dark?: boolean }) {
   return <section className={`disc-page ${cover ? "disc-cover" : ""}`} data-page={number}>
     {!cover && <div className="disc-page-header"><ApasBrand inverse={dark} /><span>APAS DISC · Relatório de Perfil Comportamental</span></div>}
     <div className="disc-page-body">{eyebrow && <p className="disc-kicker">{eyebrow}</p>}{title && <div className="disc-title-row">{Icon && <Icon aria-hidden="true" />}<h2 className="disc-page-title">{title}</h2></div>}{children}</div>
