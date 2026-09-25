@@ -290,6 +290,7 @@
   max-width: 18mm;
   object-fit: contain;
   border-radius: 1mm;
+  background: #000;
 }
 
 .disc-title-row {
@@ -1036,16 +1037,15 @@
   display: inline-flex;
   align-items: center;
   width: fit-content;
-  padding: 0;
-  background: transparent;
-  border-radius: 0;
+  padding: 1mm;
+  background: #000;
+  border-radius: 1mm;
 }
 
 .disc-cover-wordmark {
   position: absolute !important;
-  left: auto;
-  right: 18mm;
-  top: 91mm;
+  left: 18mm;
+  top: 83mm;
   z-index: 1;
   font-family: var(--font-display);
   font-size: 52pt;
@@ -2043,9 +2043,7 @@
   max-width: 118mm;
 }
 
-.disc-page[data-page="12"] .disc-signature {
-  display: none !important;
-}
+
 
 .disc-page[data-page="12"] .disc-page-footer {
   align-items: center;
