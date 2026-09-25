@@ -8,7 +8,6 @@ import teamHandsArtwork from "@/assets/disc-approved-team-hands.jpg";
 import dialogueArtwork from "@/assets/disc-editorial-dialogue.jpg";
 import selfArtwork from "@/assets/disc-editorial-self.jpg";
 import apasLogo from "@/assets/apas-logo-official.webp";
-import apasLogoLight from "@/assets/apas-logo-light.webp";
 import type { ScoreResult, DimensionMap } from "@/lib/disc/scoring";
 import { DIMENSIONS, DIMENSION_NAMES, type Dimension } from "@/lib/disc/instrument";
 import { APAS_DISCLAIMER, DEVELOPMENT_FRAMEWORK, DIMENSION_CONTENT } from "@/lib/disc/content";
@@ -20,7 +19,7 @@ type ReportAssessment = { id: string; candidate_name: string; role_title?: strin
 type Signal = "strength" | "observe" | "attention" | "tip";
 
 function ApasBrand({ inverse = false }: { inverse?: boolean }) {
-  return <span className={`disc-brand ${inverse ? "disc-brand-inverse" : ""}`} aria-label="APAS Soluções"><img className="disc-brand-logo" src={inverse ? apasLogo : apasLogoLight} alt="" /></span>;
+  return <span className={`disc-brand ${inverse ? "disc-brand-inverse" : ""}`} aria-label="APAS Soluções"><img className="disc-brand-logo" src={apasLogo} alt="APAS Soluções" /></span>;
 }
 
 function Page({ number, title, subtitle, eyebrow, icon: Icon, children, cover = false, dark = [3, 6, 8, 10, 12].includes(number) }: { number: number; title?: string; subtitle?: string; eyebrow?: string; icon?: LucideIcon; children: ReactNode; cover?: boolean; dark?: boolean }) {
@@ -87,7 +86,7 @@ export function DiscPremiumReport({ assessment, scores }: { assessment: ReportAs
   const adaptationText = scores.adaptationAlert ? "A distância entre espontaneidade e demanda percebida merece atenção. Ela pode indicar flexibilidade, mas também esforço continuado — uma hipótese para validar no seu contexto." : "A distância entre espontaneidade e demanda percebida está em uma faixa sem alerta automático. Observe, ainda assim, quais contextos ampliam ou reduzem sua energia.";
 
   return <article className="disc-report" aria-label={`Relatório DISC de ${assessment.candidate_name}`}>
-    <Page number={1} cover><img className="disc-cover-art" src={coverArtwork} width={1400} height={1800} alt="Montanha ao amanhecer, referência visual aprovada para a capa do APAS DISC" /><div className="disc-cover-overlay" /><div className="disc-cover-brand"><ApasBrand inverse /><span>DISC</span><small>1.2</small></div><div className="disc-cover-copy"><p>Relatório de Perfil Comportamental</p><h1>{assessment.candidate_name}</h1><blockquote>Mais consciência. Melhores escolhas. Grandes resultados.</blockquote></div><div className="disc-cover-factors">{DIMENSIONS.map((d) => <FactorMark key={d} dimension={d} />)}</div><div className="disc-cover-meta"><div><span>Relatório individual</span><span>{assessment.role_title || assessment.organizations?.name || "Autoconhecimento profissional"}</span></div><div><ApasBrand inverse /><span>{date}</span></div></div></Page>
+    <Page number={1} cover><img className="disc-cover-art" src={coverArtwork} width={1400} height={1800} alt="Montanha ao amanhecer, referência visual aprovada para a capa do APAS DISC" /><div className="disc-cover-overlay" /><div className="disc-cover-brand"><ApasBrand inverse /></div><div className="disc-cover-copy"><p>Relatório de Perfil Comportamental</p><h1>{assessment.candidate_name}</h1><blockquote>Mais consciência. Melhores escolhas. Grandes resultados.</blockquote></div><div className="disc-cover-factors">{DIMENSIONS.map((d) => <FactorMark key={d} dimension={d} />)}</div><div className="disc-cover-meta"><div><span>Relatório individual</span><span>{assessment.role_title || assessment.organizations?.name || "Autoconhecimento profissional"}</span></div><div><ApasBrand inverse /><span>{date}</span></div></div></Page>
 
     <Page number={2} eyebrow="01. Antes de olhar o resultado" title="Você não é um número." icon={Compass}><p className="disc-opening">O resultado deste relatório não pretende colocar você dentro de uma caixa ou definir quem você é. Ele mostra tendências sobre a forma como você costuma agir, decidir, se comunicar e responder às situações do dia a dia.</p><p className="disc-body-copy">Algumas partes podem parecer muito familiares. Outras podem provocar reflexão. O importante é usar este material para ampliar sua percepção sobre como você funciona.</p><div className="disc-editorial-quote">“O autoconhecimento é o primeiro passo para escolhas mais conscientes e resultados mais consistentes.”</div><p className="disc-body-copy">Nas páginas seguintes, você encontrará uma leitura prática do seu resultado: como tende a agir, se comunicar, decidir, se relacionar e se desenvolver.</p><p className="disc-foundation">A referência conceitual parte dos estudos de William Moulton Marston em <em>Emotions of Normal People</em> (1928). A aplicação e a linguagem deste relatório são autorais da APAS.</p></Page>
 
