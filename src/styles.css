@@ -1042,6 +1042,21 @@
   border-radius: 1mm;
 }
 
+.disc-cover-wordmark {
+  position: absolute !important;
+  left: 18mm;
+  top: 83mm;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-size: 52pt;
+  font-weight: 800;
+  line-height: .9;
+  letter-spacing: -.05em;
+  color: oklch(0.98 0 0 / 0.62);
+  text-shadow: 0 2px 10px oklch(0 0 0 / 0.18);
+  pointer-events: none;
+}
+
 .disc-cover-ring {
   position: relative;
   display: grid;
