@@ -865,8 +865,25 @@
 .disc-signature strong { color: var(--disc-red); }
 
 .disc-opening {
-  font-size: 12pt;
-  line-height: 1.65;
+  max-width: 164mm;
+  margin: 0 0 5mm;
+  font-size: 10.5pt;
+  line-height: 1.52;
+}
+
+.disc-opening + .disc-highlight {
+  margin-top: 3mm;
+}
+
+.disc-highlight {
+  max-width: 164mm;
+  margin-block: 4mm;
+  font-size: 10pt;
+  line-height: 1.48;
+}
+
+.disc-impact-intro + .disc-opening {
+  margin-top: 3mm;
 }
 
 .disc-editorial-quote {
