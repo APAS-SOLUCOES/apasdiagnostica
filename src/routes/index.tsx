@@ -20,6 +20,8 @@ export const Route = createFileRoute("/")({
           "Diagnóstico Empresarial APAS e avaliações comportamentais DISC em uma única plataforma, com validação humana antes da entrega.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://apasdiagnostica.online/favicon-apas.svg" },
+      { property: "og:image:alt", content: "APAS DIAGNÓSTICA" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
