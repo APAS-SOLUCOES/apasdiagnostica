@@ -2,7 +2,7 @@ import type { CSSProperties, ReactNode } from "react";
 import type { LucideIcon } from "lucide-react";
 import { AlertTriangle, ArrowUpRight, Check, Compass, Focus, Gauge, Lightbulb, MessageCircle, Network, Sprout, Users } from "lucide-react";
 import coverArtworkAsset from "@/assets/disc-approved-cover-mountain.jpg.asset.json";
-import attentionLeafArtworkAsset from "@/assets/disc-approved-attention-leaf.jpg.asset.json";
+import attentionLeafArtwork from "@/assets/disc-approved-attention-leaf.jpg";
 import decisionCompassArtworkAsset from "@/assets/disc-approved-decision-compass.jpg.asset.json";
 import teamHandsArtworkAsset from "@/assets/disc-approved-team-hands.jpg.asset.json";
 import dialogueArtwork from "@/assets/disc-editorial-dialogue.jpg";
@@ -15,7 +15,6 @@ import { FACTOR_SHORT } from "@/lib/disc/report-content";
 import { getAdaptiveFactorImpact, getAdaptiveNarrative } from "@/lib/disc/adaptive-content";
 
 const coverArtwork = coverArtworkAsset.url;
-const attentionLeafArtwork = attentionLeafArtworkAsset.url;
 const decisionCompassArtwork = decisionCompassArtworkAsset.url;
 const teamHandsArtwork = teamHandsArtworkAsset.url;
 
