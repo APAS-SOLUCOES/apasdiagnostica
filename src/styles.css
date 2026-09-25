@@ -279,8 +279,14 @@
 
 .disc-brand > span { color: var(--disc-red); font-size: 5.2pt; letter-spacing: 0.22em; }
 .disc-brand-inverse { color: oklch(0.98 0 0); }
-.disc-brand-mark { width: 7mm; height: 7mm; flex: none; overflow: visible; }
-.disc-brand-mark path { fill: none; stroke: var(--disc-red); stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; }
+.disc-brand-logo {
+  display: block;
+  width: 11mm;
+  height: 13mm;
+  flex: none;
+  object-fit: contain;
+  border-radius: 0.8mm;
+}
 
 .disc-title-row {
   display: flex;
