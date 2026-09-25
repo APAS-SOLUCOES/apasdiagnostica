@@ -63,6 +63,7 @@
   }
 
   body:has(.disc-report) main,
+  body:has(.disc-report) section:has(> .disc-report),
   body:has(.disc-report) .disc-report {
     width: auto !important;
     max-width: none !important;
@@ -75,33 +76,14 @@
     gap: 0 !important;
   }
 
-  /* Prevent the cover body from fragmenting its metadata onto a 13th sheet. */
+  /* The cover body previously used min-height: 297mm with padding in the default content-box model,
+     which could fragment its bottom metadata onto a 13th sheet during print/PDF generation. */
   .disc-cover .disc-page-body {
-    position: absolute;
-    inset: 0;
     box-sizing: border-box;
     width: 100% !important;
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    overflow: hidden;
-    contain: layout paint;
-  }
-
-  .disc-page.disc-cover {
-    width: 200mm !important;
-    height: 280mm !important;
-    min-height: 280mm !important;
-    max-height: 280mm !important;
-  }
-
-  .disc-cover-meta {
-    position: absolute !important;
-    right: 18mm !important;
-    bottom: 12mm !important;
-    left: 18mm !important;
-    top: auto !important;
-    margin-top: 0 !important;
+    height: 297mm !important;
+    min-height: 297mm !important;
+    max-height: 297mm !important;
   }
 
   .disc-page {

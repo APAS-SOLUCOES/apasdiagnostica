@@ -1,10 +1,10 @@
 import type { CSSProperties, ReactNode } from "react";
 import type { LucideIcon } from "lucide-react";
 import { AlertTriangle, ArrowUpRight, Check, Compass, Focus, Gauge, Lightbulb, MessageCircle, Network, Sprout, Users } from "lucide-react";
-import coverArtworkAsset from "@/assets/disc-approved-cover-mountain.jpg.asset.json";
-import attentionLeafArtwork from "@/assets/disc-approved-attention-leaf.jpg";
-import decisionCompassArtworkAsset from "@/assets/disc-approved-decision-compass.jpg.asset.json";
-import teamHandsArtworkAsset from "@/assets/disc-approved-team-hands.jpg.asset.json";
+const coverArtwork = "https://images.unsplash.com/photo-1626220109861-a6bcc8c5b601?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=90&w=2400";
+const attentionLeafArtwork = "https://images.unsplash.com/photo-1552152974-19b9caf99137?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=90&w=2400";
+const decisionCompassArtwork = "https://images.unsplash.com/photo-1495153003981-0945a0a25e46?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=90&w=2400";
+const teamHandsArtwork = "https://images.unsplash.com/photo-1702047109910-43af92894dc1?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=90&w=2400";
 import dialogueArtwork from "@/assets/disc-editorial-dialogue.jpg";
 import selfArtwork from "@/assets/disc-editorial-self.jpg";
 import apasLogo from "@/assets/apas-logo-official.webp";
@@ -13,10 +13,6 @@ import { DIMENSIONS, DIMENSION_NAMES, type Dimension } from "@/lib/disc/instrume
 import { APAS_DISCLAIMER, DEVELOPMENT_FRAMEWORK, DIMENSION_CONTENT } from "@/lib/disc/content";
 import { FACTOR_SHORT } from "@/lib/disc/report-content";
 import { getAdaptiveFactorImpact, getAdaptiveNarrative } from "@/lib/disc/adaptive-content";
-
-const coverArtwork = coverArtworkAsset.url;
-const decisionCompassArtwork = decisionCompassArtworkAsset.url;
-const teamHandsArtwork = teamHandsArtworkAsset.url;
 
 const FACTOR_CLASS: Record<Dimension, string> = { D: "disc-factor-d", I: "disc-factor-i", S: "disc-factor-s", C: "disc-factor-c" };
 type ReportAssessment = { id: string; candidate_name: string; role_title?: string | null; instrument_version?: string | null; submitted_at?: string | null; organizations?: { name?: string | null } | null };
@@ -112,6 +108,6 @@ export function DiscPremiumReport({ assessment, scores }: { assessment: ReportAs
 
     <Page number={11} eyebrow="10. Seu desenvolvimento" title="Seu desenvolvimento" subtitle="Mais consciência, mais escolha" icon={Sprout}><p className="disc-opening">Desenvolvimento não exige negar seu estilo. Exige ampliar opções para responder melhor ao que cada situação pede.</p><div className="disc-development-grid">{[...narrative.experiments, `Para transformar consciência em resultado, acompanhe por 30 dias um sinal concreto de mudança: quando você acessa deliberadamente o recurso complementar de ${DIMENSION_NAMES[scores.secondary].toLowerCase()} (${scores.adapted.percent[scores.secondary]}%) em situações que normalmente ativam ${DIMENSION_NAMES[scores.predominant].toLowerCase()}.`].slice(0, 4).map((item, index) => <div key={item}><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{["O que já está no seu repertório", "O que pode ser ajustado", "O que pode ser ampliado", "O que pode gerar mais resultado"][index]}</h3><p>{item}</p></div></div>)}</div><div className="disc-action-box"><h3>Meu experimento de 30 dias</h3><p>Comportamento que quero praticar:</p><div/><p>Situação em que vou experimentar:</p><div/><p>Pessoa que poderá me dar retorno:</p><div/><p>Sinal concreto de progresso:</p><div/></div><p className="disc-note">{DEVELOPMENT_FRAMEWORK.slice(0, 3).join(" ")}</p></Page>
 
-    <Page number={12} eyebrow="11. Seu perfil não é um destino" title="Seu perfil não é um destino" icon={ArrowUpRight}><p className="disc-closing">{narrative.profilePortrait} Quanto maior sua consciência sobre seus próprios padrões, maior pode ser sua capacidade de escolher como agir.</p><div className="disc-combination"><span>{scores.combination}</span><div><h3>{narrative.title}</h3><p>Seu resultado de {scores.adapted.percent[scores.predominant]}% em {DIMENSION_NAMES[scores.predominant]} e {scores.adapted.percent[scores.secondary]}% em {DIMENSION_NAMES[scores.secondary]} sugere um repertório com características próprias. Use esta combinação como linguagem para investigar experiências, não como caixa, rótulo ou justificativa automática.</p></div></div><div className="disc-two-columns"><SignalCard type="strength" title="Leve com você"><p>Os quatro fatores fazem parte do seu repertório. Seu resultado mostra preferências relativas neste momento.</p></SignalCard><SignalCard type="tip" title="Próximo passo"><p>Valide estas hipóteses em uma devolutiva e escolha uma ação simples, observável e relevante para os próximos 30 dias.</p></SignalCard></div><p className="disc-note">{APAS_DISCLAIMER}</p><div className="disc-signature"><ApasBrand inverse /><span>Relatório individual · APAS DISC · {date}</span></div></Page>
+    <Page number={12} eyebrow="11. Seu perfil não é um destino" title="Seu perfil não é um destino" icon={ArrowUpRight}><p className="disc-closing">{narrative.profilePortrait} Quanto maior sua consciência sobre seus próprios padrões, maior pode ser sua capacidade de escolher como agir.</p><div className="disc-combination"><span>{scores.combination}</span><div><h3>{narrative.title}</h3><p>Seu resultado de {scores.adapted.percent[scores.predominant]}% em {DIMENSION_NAMES[scores.predominant]} e {scores.adapted.percent[scores.secondary]}% em {DIMENSION_NAMES[scores.secondary]} sugere um repertório com características próprias. Use esta combinação como linguagem para investigar experiências, não como caixa, rótulo ou justificativa automática.</p></div></div><div className="disc-two-columns"><SignalCard type="strength" title="Leve com você"><p>Os quatro fatores fazem parte do seu repertório. Seu resultado mostra preferências relativas neste momento.</p></SignalCard><SignalCard type="tip" title="Próximo passo"><p>Valide estas hipóteses em uma devolutiva e escolha uma ação simples, observável e relevante para os próximos 30 dias.</p></SignalCard></div><p className="disc-note">{APAS_DISCLAIMER}</p><div className="disc-signature"><ApasBrand inverse /><span>Relatório individual · {"APAS DISC"} · {date}</span></div></Page>
   </article>;
 }
