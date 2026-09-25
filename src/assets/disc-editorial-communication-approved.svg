@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 800">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090909"/><stop offset=".55" stop-color="#141414"/><stop offset="1" stop-color="#070707"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="2400" height="800" fill="url(#bg)"/>
+<path d="M0 690 C330 470 480 510 720 660 S1160 820 1430 530 S1890 150 2400 210" fill="none" stroke="#292929" stroke-width="5"/>
+<path d="M120 720 C410 560 590 580 800 690 S1210 760 1480 470 S1940 190 2260 260" fill="none" stroke="#b51e28" stroke-width="3" opacity=".8"/>
+<path d="M220 120 C520 290 670 310 900 210 S1390 30 1700 230 S2070 500 2360 410" fill="none" stroke="#d8a73b" stroke-width="3" opacity=".75"/>
+<path d="M70 420 C420 170 700 180 920 350 S1370 700 1660 520 S2080 250 2380 330" fill="none" stroke="#4b9b64" stroke-width="3" opacity=".7"/>
+<path d="M80 510 C360 390 600 400 850 500 S1260 720 1530 590 S1970 300 2320 500" fill="none" stroke="#16a6ad" stroke-width="3" opacity=".7"/>
+<g opacity=".92">
+  <path d="M420 700 C330 580 345 400 455 315 C545 245 680 255 765 340 C835 410 850 535 790 635 C730 735 535 770 420 700Z" fill="#eee8dc"/>
+  <path d="M1680 690 C1590 570 1605 390 1715 305 C1805 235 1940 245 2025 330 C2095 400 2110 525 2050 625 C1990 725 1795 760 1680 690Z" fill="#eee8dc"/>
+  <path d="M620 335 C700 280 795 295 845 355 C890 410 875 485 825 530 C770 578 675 570 625 520 C570 465 565 375 620 335Z" fill="#111"/>
+  <path d="M1555 335 C1635 280 1730 295 1780 355 C1825 410 1810 485 1760 530 C1705 578 1610 570 1560 520 C1505 465 1500 375 1555 335Z" fill="#111"/>
+</g>
+<g fill="none" stroke-linecap="round">
+  <path d="M690 390 C980 230 1220 230 1510 390" stroke="#d8a73b" stroke-width="8"/>
+  <path d="M690 470 C980 630 1220 630 1510 470" stroke="#b51e28" stroke-width="8"/>
+  <path d="M820 430 C1030 330 1370 330 1580 430" stroke="#4b9b64" stroke-width="5"/>
+  <path d="M820 520 C1040 600 1360 600 1580 520" stroke="#16a6ad" stroke-width="5"/>
+</g>
+<g filter="url(#glow)">
+ <circle cx="690" cy="390" r="24" fill="#d8a73b"/><circle cx="1510" cy="390" r="24" fill="#d8a73b"/>
+ <circle cx="690" cy="470" r="24" fill="#b51e28"/><circle cx="1510" cy="470" r="24" fill="#b51e28"/>
+ <circle cx="820" cy="430" r="17" fill="#4b9b64"/><circle cx="1580" cy="430" r="17" fill="#16a6ad"/>
+</g>
+<text x="1200" y="115" text-anchor="middle" fill="#f5f1e8" font-family="Arial,sans-serif" font-size="38" font-weight="700" letter-spacing="10">COMUNICAÇÃO · CONEXÃO · ESCUTA</text>
+</svg>
