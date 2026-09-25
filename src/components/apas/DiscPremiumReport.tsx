@@ -10,7 +10,8 @@ import apasLogoLight from "@/assets/apas-logo-light.webp";
 import type { ScoreResult, DimensionMap } from "@/lib/disc/scoring";
 import { DIMENSIONS, DIMENSION_NAMES, type Dimension } from "@/lib/disc/instrument";
 import { APAS_DISCLAIMER, DEVELOPMENT_FRAMEWORK, DIMENSION_CONTENT } from "@/lib/disc/content";
-import { COMBINATION_NARRATIVES, FACTOR_SHORT } from "@/lib/disc/report-content";
+import { FACTOR_SHORT } from "@/lib/disc/report-content";
+import { getAdaptiveNarrative } from "@/lib/disc/adaptive-content";
 
 const FACTOR_CLASS: Record<Dimension, string> = { D: "disc-factor-d", I: "disc-factor-i", S: "disc-factor-s", C: "disc-factor-c" };
 type ReportAssessment = { id: string; candidate_name: string; role_title?: string | null; instrument_version?: string | null; submitted_at?: string | null; organizations?: { name?: string | null } | null };
@@ -74,7 +75,7 @@ function ThemeBlock({ icon: Icon, title, children }: { icon: LucideIcon; title: 
 export function DiscPremiumReport({ assessment, scores }: { assessment: ReportAssessment; scores: ScoreResult }) {
   const primary = DIMENSION_CONTENT[scores.predominant];
   const secondary = DIMENSION_CONTENT[scores.secondary];
-  const narrative = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES["DI"];
+  const narrative = getAdaptiveNarrative(scores);
   if (!narrative) return null;
   const date = assessment.submitted_at ? new Date(assessment.submitted_at).toLocaleDateString("pt-BR") : new Date().toLocaleDateString("pt-BR");
   const adaptationText = scores.adaptationAlert ? "A distância entre espontaneidade e demanda percebida merece atenção. Ela pode indicar flexibilidade, mas também esforço continuado — uma hipótese para validar no seu contexto." : "A distância entre espontaneidade e demanda percebida está em uma faixa sem alerta automático. Observe, ainda assim, quais contextos ampliam ou reduzem sua energia.";
