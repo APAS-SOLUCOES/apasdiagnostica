@@ -2440,13 +2440,13 @@
 }
 .disc-wheel-quadrant {
   position: absolute;
-  z-index: 4;
+  z-index: 6;
   display: grid;
   justify-items: center;
   align-content: center;
   gap: 1.5mm;
-  width: 20mm;
-  height: 19mm;
+  width: 18mm;
+  height: 17mm;
   color: white;
   text-align: center;
 }
@@ -2462,10 +2462,10 @@
   opacity: .72;
   stroke-width: 2.5;
 }
-.disc-wheel-quadrant-d { left: 8mm; top: 10mm; }
-.disc-wheel-quadrant-i { right: 8mm; top: 10mm; }
-.disc-wheel-quadrant-s { left: 8mm; bottom: 10mm; }
-.disc-wheel-quadrant-c { right: 8mm; bottom: 10mm; }
+.disc-wheel-quadrant-d { left: 7mm; top: 5mm; }
+.disc-wheel-quadrant-i { right: 7mm; top: 5mm; }
+.disc-wheel-quadrant-s { left: 7mm; bottom: 5mm; }
+.disc-wheel-quadrant-c { right: 7mm; bottom: 5mm; }
 .disc-wheel-quadrant-d svg { color: #ffd0d0; }
 .disc-wheel-quadrant-i svg { color: #fff0bb; }
 .disc-wheel-quadrant-s svg { color: #d7ffd9; }
