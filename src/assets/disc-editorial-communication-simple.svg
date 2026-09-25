@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Comunicação</title>
+  <desc id="desc">Ilustração minimalista de duas pessoas representadas por balões de fala conectados.</desc>
+  <rect width="1200" height="420" rx="28" fill="#0b0b0b"/>
+  <path d="M300 112c-74 0-134 50-134 112 0 31 16 59 43 79l-12 48 52-27c16 8 33 12 51 12 74 0 134-50 134-112S374 112 300 112Z" fill="none" stroke="#b5121b" stroke-width="10"/>
+  <circle cx="264" cy="224" r="8" fill="#b5121b"/><circle cx="300" cy="224" r="8" fill="#b5121b"/><circle cx="336" cy="224" r="8" fill="#b5121b"/>
+  <path d="M900 112c74 0 134 50 134 112 0 31-16 59-43 79l12 48-52-27c-16 8-33 12-51 12-74 0-134-50-134-112s60-112 134-112Z" fill="none" stroke="#d6a62a" stroke-width="10"/>
+  <circle cx="864" cy="224" r="8" fill="#d6a62a"/><circle cx="900" cy="224" r="8" fill="#d6a62a"/><circle cx="936" cy="224" r="8" fill="#d6a62a"/>
+  <path d="M462 205h276" stroke="#f2f2f2" stroke-width="5" stroke-linecap="round" opacity=".55"/>
+  <path d="m708 181 34 24-34 24" fill="none" stroke="#f2f2f2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".75"/>
+  <path d="M738 250H462" stroke="#f2f2f2" stroke-width="5" stroke-linecap="round" opacity=".28"/>
+  <path d="m492 226-34 24 34 24" fill="none" stroke="#f2f2f2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".42"/>
+</svg>
