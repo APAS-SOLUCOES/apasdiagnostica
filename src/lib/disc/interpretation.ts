@@ -1,6 +1,7 @@
 import type { Dimension } from "./instrument";
 import type { ScoreResult } from "./scoring";
 import { DIMENSION_CONTENT } from "./content";
+import { COMBINATION_NARRATIVES } from "./report-content";
 import { getAdaptiveFactorReading, getAdaptiveNarrative } from "./adaptive-content";
 
 export type DiscTechnicalContent = {
@@ -75,7 +76,8 @@ function levelText(level: ScoreResult["levels"][Dimension]) {
 
 function factorReading(d: Dimension, scores: ScoreResult) {
   const c = DIMENSION_CONTENT[d];
-  return getAdaptiveFactorReading(d, scores.adapted.percent[d]) + " " + c.levels[scores.levels[d]];
+  return getAdaptiveFactorReading(d, scores.adapted.percent[d]) + " " +
+    c.levels[scores.levels[d]];
 }
 
 function adaptationText(scores: ScoreResult, delta: Record<Dimension, number>) {
@@ -92,9 +94,6 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
   const p = scores.predominant;
   const s = scores.secondary;
   const o = order(scores);
-  const first = o[0] ?? p;
-  const third = o[2] ?? s;
-  const fourth = o[3] ?? s;
   const delta = {} as Record<Dimension, number>;
   DIMS.forEach((d) => { delta[d] = round(scores.adapted.percent[d] - scores.natural.percent[d]); });
 
@@ -106,22 +105,25 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
   const strongestDelta = DIMS.reduce((best, d) => Math.abs(delta[d]) > Math.abs(delta[best]) ? d : best, "D" as Dimension);
 
   const strengths = [...new Set([
-    ...narrative.best,
+    ...(narrative?.best ?? []),
     pContent.strengths[0],
     sContent.strengths[0],
-  ].filter((item): item is string => Boolean(item)))].slice(0, 4);
+  ].filter(Boolean))].slice(0, 4);
 
   const attention = [...new Set([
-    ...narrative.excess,
+    ...(narrative?.excess ?? []),
     pContent.attention[0],
     sContent.attention[0],
-  ].filter((item): item is string => Boolean(item)))].slice(0, 4);
+  ].filter(Boolean))].slice(0, 4);
 
   return {
     profileName: p + s + " — " + NAMES[p] + " + " + NAMES[s],
-    profileLabel: narrative.title,
-    headline: narrative.essence,
-    overview: "O resultado considera as quatro dimensões, suas intensidades, a combinação dos fatores principais e a relação entre os perfis Natural e Adaptado. No seu resultado, " + NAMES[p] + " aparece com " + pct(scores.adapted.percent[p]) + " e " + NAMES[s] + " com " + pct(scores.adapted.percent[s]) + ", diferença de " + pct(gap) + " pontos percentuais.",
+    profileLabel: narrative?.title ?? (p + s),
+    headline: narrative?.essence ??
+      ("Seu resultado apresenta " + NAMES[p] + " como tendência predominante e " + NAMES[s] + " como segunda influência."),
+    overview: "O resultado considera as quatro dimensões, suas intensidades, a combinação dos fatores principais e a relação entre os perfis Natural e Adaptado. No seu resultado, " +
+      NAMES[p] + " aparece com " + pct(scores.adapted.percent[p]) + " e " + NAMES[s] + " com " +
+      pct(scores.adapted.percent[s]) + ", diferença de " + pct(gap) + " pontos percentuais.",
     factorReadings: {
       D: factorReading("D", scores),
       I: factorReading("I", scores),
@@ -130,21 +132,32 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
     },
     strengths,
     attention,
-    perception: narrative.perceived,
-    communication: narrative.communication,
-    decision: narrative.decision,
-    teamwork: narrative.team,
-    pressureChange: narrative.pressure + " " + narrative.change,
-    development: [...new Set([...narrative.experiments, ...pContent.development.slice(0, 2), ...sContent.development.slice(0, 1)])].slice(0, 4),
+    perception: narrative?.perceived ??
+      ("A combinação entre " + NAMES[p] + " e " + NAMES[s] + " pode ser percebida de formas diferentes conforme o contexto e o ritmo das pessoas ao redor."),
+    communication: narrative?.communication ?? pContent.communication,
+    decision: narrative?.decision ?? pContent.headline,
+    teamwork: narrative?.team ?? (pContent.summary + " Em equipe, " + sContent.headline.toLowerCase() + " também pode influenciar sua participação."),
+    pressureChange: (narrative?.pressure ?? "Sob pressão, " + pContent.attention[0].toLowerCase()) + " " +
+      (narrative?.change ?? ""),
+    development: [...new Set([
+      ...(narrative?.experiments ?? []),
+      ...pContent.development.slice(0, 2),
+      ...sContent.development.slice(0, 1),
+    ])].slice(0, 4),
     adaptation: adaptationText(scores, delta),
-    profileBalance: "A distribuição vai de " + pct(scores.adapted.percent[first]) + " em " + NAMES[first] + " a " + pct(scores.adapted.percent[fourth]) + " em " + NAMES[fourth] + ". Os dois primeiros fatores têm " + pct(gap) + " pontos percentuais de diferença, indicando uma composição " + (close ? "mais próxima entre os fatores principais." : "com maior predominância do primeiro fator."),
-    secondaryInfluence: NAMES[s] + (gap <= 3 ? " atua quase no mesmo nível do fator principal." : gap <= 7 ? " tem presença relevante ao lado do fator principal." : " aparece como influência complementar.") + " Ela acrescenta " + sContent.headline.toLowerCase() + " à leitura conjunta.",
-    lowerFactors: NAMES[fourth] + " é o fator menos acentuado (" + pct(scores.adapted.percent[fourth]) + "), enquanto " + NAMES[third] + " ocupa a terceira posição (" + pct(scores.adapted.percent[third]) + "). Menor expressão relativa não significa ausência da característica.",
+    profileBalance: "A distribuição vai de " + pct(scores.adapted.percent[o[0]]) + " em " + NAMES[o[0]] +
+      " a " + pct(scores.adapted.percent[o[3]]) + " em " + NAMES[o[3]] + ". Os dois primeiros fatores têm " +
+      pct(gap) + " pontos percentuais de diferença, indicando uma composição " + (close ? "mais próxima entre os fatores principais." : "com maior predominância do primeiro fator."),
+    secondaryInfluence: NAMES[s] + (gap <= 3 ? " atua quase no mesmo nível do fator principal." : gap <= 7 ? " tem presença relevante ao lado do fator principal." : " aparece como influência complementar.") +
+      " Ela acrescenta " + (sContent.headline.toLowerCase()) + " à leitura conjunta.",
+    lowerFactors: NAMES[o[3]] + " é o fator menos acentuado (" + pct(scores.adapted.percent[o[3]]) +
+      "), enquanto " + NAMES[o[2]] + " ocupa a terceira posição (" + pct(scores.adapted.percent[o[2]]) +
+      "). Menor expressão relativa não significa ausência da característica.",
     intensitySummary: o.map((d) => d + " " + pct(scores.adapted.percent[d]) + " — " + levelText(scores.levels[d])).join(" · "),
     technical: {
       scoringVersion: scores.scoringVersion,
-      completionPercent: scores.totalItems > 0 ? round((scores.answeredItems / scores.totalItems) * 100) : 0,
-      invalidAnswerCount: 0,
+      completionPercent: scores.completionPercent,
+      invalidAnswerCount: scores.invalidAnswerCount,
       primary: p,
       secondary: s,
       primaryGap: gap,
@@ -155,8 +168,8 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
       adapted: scores.adapted.percent,
       delta,
       strongestDelta,
-      highestFactor: first,
-      lowestFactor: fourth,
+      highestFactor: o[0],
+      lowestFactor: o[3],
     },
     technicalSignals: {
       intensity: scores.levels,
@@ -164,8 +177,8 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
       closeCombination: close,
       naturalVsAdaptedDelta: delta,
       strongestDelta,
-      highestFactor: first,
-      lowestFactor: fourth,
+      highestFactor: o[0],
+      lowestFactor: o[3],
     },
     conclusion: "Seu resultado representa tendências comportamentais observadas neste instrumento e não uma identidade fixa. A leitura deve considerar a combinação, as intensidades, o contexto e as diferenças entre Natural e Adaptado.",
   };
