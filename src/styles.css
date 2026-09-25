@@ -2721,3 +2721,102 @@
 .disc-page[data-page="6"] .disc-page-hero-art + .disc-page-atmosphere-content {
   z-index: 2;
 }
+
+
+/* Page 7 — integrated perception visual, replacing the floating editorial image */
+.disc-page[data-page="7"] {
+  position: relative;
+  overflow: hidden;
+}
+.disc-page[data-page="7"] .disc-page-body {
+  position: relative;
+  z-index: 1;
+}
+.disc-page[data-page="7"] .disc-perception-watermark {
+  position: absolute;
+  z-index: -1;
+  right: 8mm;
+  top: 42mm;
+  width: 82mm;
+  height: 82mm;
+  border-radius: 50%;
+  opacity: .075;
+  pointer-events: none;
+}
+.disc-page[data-page="7"] .disc-perception-watermark::before,
+.disc-page[data-page="7"] .disc-perception-watermark::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--disc-red);
+  border-radius: 50%;
+}
+.disc-page[data-page="7"] .disc-perception-watermark::after {
+  inset: 9mm;
+  border-color: currentColor;
+  color: var(--disc-soft);
+}
+.disc-page[data-page="7"] .disc-perception-watermark i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 64mm;
+  height: 1px;
+  background: currentColor;
+  color: var(--disc-red);
+  transform: translate(-50%, -50%) rotate(-28deg);
+  transform-origin: center;
+  box-shadow: 0 0 8mm currentColor;
+}
+.disc-page[data-page="7"] .disc-perception-watermark span {
+  position: absolute;
+  right: -3mm;
+  bottom: 7mm;
+  color: var(--disc-red);
+  font-family: var(--font-display);
+  font-size: 7pt;
+  font-weight: 800;
+  letter-spacing: .22em;
+  transform: rotate(-28deg);
+}
+.disc-page[data-page="7"] .disc-opening {
+  position: relative;
+  z-index: 2;
+  max-width: 148mm;
+  margin-bottom: 6mm;
+}
+.disc-page[data-page="7"] .disc-perception {
+  position: relative;
+  z-index: 2;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4mm 5mm;
+}
+.disc-page[data-page="7"] .disc-perception > div {
+  min-height: 36mm;
+  padding: 5mm 6mm;
+  border-top: 2px solid var(--disc-red);
+  border-left: 1px solid oklch(.18 0 0 / .16);
+  border-right: 1px solid oklch(.18 0 0 / .16);
+  border-bottom: 1px solid oklch(.18 0 0 / .16);
+  background: oklch(.96 0 0 / .94);
+  box-shadow: 0 2mm 5mm oklch(0 0 0 / .07);
+}
+.disc-page[data-page="7"] .disc-perception > div:nth-child(2) { border-top-color: var(--disc-gold); }
+.disc-page[data-page="7"] .disc-perception > div:nth-child(3) { border-top-color: var(--disc-green); }
+.disc-page[data-page="7"] .disc-perception > div:nth-child(4) { border-top-color: var(--disc-teal); }
+.disc-page[data-page="7"] .disc-perception > div > span {
+  font-size: 8pt;
+}
+.disc-page[data-page="7"] .disc-perception h3 {
+  margin-block: 2.5mm;
+  font-size: 12pt;
+}
+.disc-page[data-page="7"] .disc-perception p {
+  font-size: 8.8pt;
+  line-height: 1.45;
+}
+.disc-page[data-page="7"] .disc-signal {
+  position: relative;
+  z-index: 2;
+  margin-top: 4mm;
+}
