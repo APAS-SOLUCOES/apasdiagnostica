@@ -279,13 +279,6 @@
 
 .disc-brand > span { color: var(--disc-red); font-size: 5.2pt; letter-spacing: 0.22em; }
 .disc-brand-inverse { color: oklch(0.98 0 0); }
-.disc-brand-logo-picture {
-  display: block;
-  width: 11mm;
-  height: 13mm;
-  flex: none;
-}
-
 .disc-brand-logo {
   display: block;
   width: 100%;
