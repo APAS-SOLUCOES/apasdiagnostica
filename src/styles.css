@@ -2297,6 +2297,26 @@
 
 
 
+
+/* Critical layout fix: generic .disc-profile-donut > div rules must not
+   turn the wheel quadrants/center into normal-flow grid children. */
+.disc-page[data-page="3"] .disc-profile-donut > .disc-wheel-quadrant,
+.disc-page[data-page="3"] .disc-profile-donut > .disc-wheel-center {
+  position: absolute !important;
+}
+.disc-page[data-page="3"] .disc-profile-donut > .disc-wheel-quadrant {
+  display: grid !important;
+}
+.disc-page[data-page="3"] .disc-profile-donut > .disc-wheel-center {
+  display: grid !important;
+  inset: 20mm;
+}
+@media (max-width: 760px) {
+  .disc-page[data-page="3"] .disc-profile-donut > .disc-wheel-center {
+    inset: 16mm;
+  }
+}
+
 /* APAS DISC — page 3 exact approved visual composition */
 .disc-page[data-page="3"] .disc-page-header {
   display: flex;
