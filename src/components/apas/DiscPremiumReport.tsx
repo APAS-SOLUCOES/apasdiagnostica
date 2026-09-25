@@ -7,7 +7,8 @@ const decisionCompassArtwork = "https://images.unsplash.com/photo-1495153003981-
 const teamHandsArtwork = "https://images.unsplash.com/photo-1702047109910-43af92894dc1?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=90&w=2400";
 import dialogueArtwork from "@/assets/disc-editorial-dialogue.jpg";
 import selfArtwork from "@/assets/disc-editorial-self.jpg";
-import apasLogo from "@/assets/apas-logo-official.webp";
+const apasLogoDark = "/apas-logo.svg";
+const apasLogoLight = "/apas-logo-dark.svg";
 import type { ScoreResult, DimensionMap } from "@/lib/disc/scoring";
 import { DIMENSIONS, DIMENSION_NAMES, type Dimension } from "@/lib/disc/instrument";
 import { APAS_DISCLAIMER, DEVELOPMENT_FRAMEWORK, DIMENSION_CONTENT } from "@/lib/disc/content";
@@ -19,12 +20,13 @@ type ReportAssessment = { id: string; candidate_name: string; role_title?: strin
 type Signal = "strength" | "observe" | "attention" | "tip";
 
 function ApasBrand({ inverse = false }: { inverse?: boolean }) {
-  return <span className={`disc-brand ${inverse ? "disc-brand-inverse" : ""}`} aria-label="APAS Soluções"><img className="disc-brand-logo" src={apasLogo} alt="APAS Soluções" /></span>;
+  const logo = inverse ? apasLogoDark : apasLogoLight;
+  return <span className={`disc-brand ${inverse ? "disc-brand-inverse" : ""}`} aria-label="APAS Soluções"><img className="disc-brand-logo" src={logo} alt="APAS Soluções" /></span>;
 }
 
 function Page({ number, title, subtitle, eyebrow, icon: Icon, children, cover = false, dark = [3, 6, 8, 10, 12].includes(number) }: { number: number; title?: string; subtitle?: string; eyebrow?: string; icon?: LucideIcon; children: ReactNode; cover?: boolean; dark?: boolean }) {
   return <section className={`disc-page ${dark ? "disc-page-dark" : ""} ${cover ? "disc-cover" : ""}`} data-page={number}>
-    {!cover && <div className="disc-page-header"><ApasBrand inverse={dark} /><span>APAS DISC · Relatório de Perfil Comportamental</span></div>}
+    {!cover && <div className="disc-page-header"><span>APAS DISC · Relatório de Perfil Comportamental</span></div>}
     <div className="disc-page-body">{eyebrow && <p className="disc-kicker">{eyebrow}</p>}{title && <div className="disc-title-row">{Icon && <Icon aria-hidden="true" />}<h2 className="disc-page-title">{title}</h2></div>}{subtitle && <p className="disc-page-subtitle">{subtitle}</p>}{children}</div>
     {!cover && <div className="disc-page-footer"><ApasBrand inverse={dark} /><span>Uso individual · {String(number).padStart(2, "0")}</span></div>}
   </section>;
@@ -49,29 +51,47 @@ function FactorMark({ dimension, percent }: { dimension: Dimension; percent?: nu
 }
 
 function ProfileBars({ title, subtitle, values }: { title: string; subtitle: string; values: DimensionMap }) {
-  return <div className="disc-profile-panel"><h3>{title}</h3><p>{subtitle}</p><div className="disc-horizontal-chart" aria-label={`Intensidades do perfil ${title}`}>{DIMENSIONS.map((d) => <div className="disc-horizontal-row" key={d}><strong className={FACTOR_CLASS[d]}>{d}</strong><div className="disc-horizontal-track"><span className={FACTOR_CLASS[d]} style={{ width: `${values[d]}%` }} /></div><b>{values[d]}%</b></div>)}</div></div>;
+  return <div className="disc-profile-panel"><h3>{title}</h3><p>{subtitle}</p><div className="disc-horizontal-chart" aria-label={`Intensidades do perfil ${title}`}>{DIMENSIONS.map((d) => <div className="disc-horizontal-row" key={d}><strong className={FACTOR_CLASS[d]}>{d}</strong><div className="disc-horizontal-track"><span className={"disc-meter-fill " + FACTOR_CLASS[d]} style={{ width: Math.min(100, Math.max(0, values[d])) + "%" }} /></div><b>{values[d]}%</b></div>)}</div></div>;
 }
 
 function ProfileDonut({ values, combination }: { values: DimensionMap; combination: string }) {
   const donutStyle = {
-    "--d": `${values.D}%`,
-    "--i": `${values.D + values.I}%`,
-    "--s": `${values.D + values.I + values.S}%`,
+    "--d": values.D + "%",
+    "--i": (values.D + values.I) + "%",
+    "--s": (values.D + values.I + values.S) + "%",
   } as CSSProperties;
 
-  return <div className="disc-profile-donut-wrap">
-    <div className="disc-profile-donut-stage">
-      <div className="disc-profile-label disc-profile-label-d"><strong>D</strong><b>{values.D}%</b><small>(Adaptado)</small></div>
-      <div className="disc-profile-label disc-profile-label-i"><strong>I</strong><b>{values.I}%</b><small>(Adaptado)</small></div>
-      <div className="disc-profile-label disc-profile-label-s"><strong>S</strong><b>{values.S}%</b><small>(Adaptado)</small></div>
-      <div className="disc-profile-label disc-profile-label-c"><strong>C</strong><b>{values.C}%</b><small>(Adaptado)</small></div>
-      <div className="disc-profile-donut" style={donutStyle} role="img" aria-label={`Distribuição do perfil adaptado: D ${values.D}%, I ${values.I}%, S ${values.S}%, C ${values.C}%`}>
-        <div><strong>{combination}</strong><small>Seu perfil<br/>primário | secundário</small></div>
+  const factors = [
+    { dimension: "D", value: values.D, name: "DOMINÂNCIA", className: "d" },
+    { dimension: "I", value: values.I, name: "INFLUÊNCIA", className: "i" },
+    { dimension: "S", value: values.S, name: "ESTABILIDADE", className: "s" },
+    { dimension: "C", value: values.C, name: "CONFORMIDADE", className: "c" },
+  ];
+
+  return <div className="disc-profile-wheel" role="img" aria-label={"Distribuição do perfil adaptado: D " + values.D + "%, I " + values.I + "%, S " + values.S + "%, C " + values.C + "%"}>
+    <div className="disc-wheel-premium">
+      {factors.map(({ dimension, value, name, className }) => (
+        <div key={dimension} className={"disc-wheel-card disc-wheel-card-" + className}>
+          <span className="disc-wheel-card-letter">{dimension}</span>
+          <div className="disc-wheel-card-data">
+            <strong>{value}%</strong>
+            <small>{name}</small>
+          </div>
+        </div>
+      ))}
+      <div className="disc-wheel-stage">
+        <div className="disc-wheel-halo" aria-hidden="true" />
+        <div className="disc-profile-donut" style={donutStyle}>
+          <div>
+            <strong>{combination}</strong>
+            <small>PERFIL</small>
+          </div>
+        </div>
+        <div className="disc-wheel-ring" aria-hidden="true" />
       </div>
     </div>
   </div>;
 }
-
 function ThemeBlock({ icon: Icon, title, children }: { icon: LucideIcon; title: string; children: ReactNode }) {
   return <section className="disc-theme-block"><Icon aria-hidden="true" /><div><h3>{title}</h3><p>{children}</p></div></section>;
 }
@@ -108,6 +128,6 @@ export function DiscPremiumReport({ assessment, scores }: { assessment: ReportAs
 
     <Page number={11} eyebrow="10. Seu desenvolvimento" title="Seu desenvolvimento" subtitle="Mais consciência, mais escolha" icon={Sprout}><p className="disc-opening">Desenvolvimento não exige negar seu estilo. Exige ampliar opções para responder melhor ao que cada situação pede.</p><div className="disc-development-grid">{[...narrative.experiments, `Para transformar consciência em resultado, acompanhe por 30 dias um sinal concreto de mudança: quando você acessa deliberadamente o recurso complementar de ${DIMENSION_NAMES[scores.secondary].toLowerCase()} (${scores.adapted.percent[scores.secondary]}%) em situações que normalmente ativam ${DIMENSION_NAMES[scores.predominant].toLowerCase()}.`].slice(0, 4).map((item, index) => <div key={item}><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{["O que já está no seu repertório", "O que pode ser ajustado", "O que pode ser ampliado", "O que pode gerar mais resultado"][index]}</h3><p>{item}</p></div></div>)}</div><div className="disc-action-box"><h3>Meu experimento de 30 dias</h3><p>Comportamento que quero praticar:</p><div/><p>Situação em que vou experimentar:</p><div/><p>Pessoa que poderá me dar retorno:</p><div/><p>Sinal concreto de progresso:</p><div/></div><p className="disc-note">{DEVELOPMENT_FRAMEWORK.slice(0, 3).join(" ")}</p></Page>
 
-    <Page number={12} eyebrow="11. Seu perfil não é um destino" title="Seu perfil não é um destino" icon={ArrowUpRight}><p className="disc-closing">{narrative.profilePortrait} Quanto maior sua consciência sobre seus próprios padrões, maior pode ser sua capacidade de escolher como agir.</p><div className="disc-combination"><span>{scores.combination}</span><div><h3>{narrative.title}</h3><p>Seu resultado de {scores.adapted.percent[scores.predominant]}% em {DIMENSION_NAMES[scores.predominant]} e {scores.adapted.percent[scores.secondary]}% em {DIMENSION_NAMES[scores.secondary]} sugere um repertório com características próprias. Use esta combinação como linguagem para investigar experiências, não como caixa, rótulo ou justificativa automática.</p></div></div><div className="disc-two-columns"><SignalCard type="strength" title="Leve com você"><p>Os quatro fatores fazem parte do seu repertório. Seu resultado mostra preferências relativas neste momento.</p></SignalCard><SignalCard type="tip" title="Próximo passo"><p>Valide estas hipóteses em uma devolutiva e escolha uma ação simples, observável e relevante para os próximos 30 dias.</p></SignalCard></div><p className="disc-note">{APAS_DISCLAIMER}</p><div className="disc-signature"><ApasBrand inverse /><span>Relatório individual · {"APAS DISC"} · {date}</span></div></Page>
+    <Page number={12} eyebrow="11. Seu perfil não é um destino" title="Seu perfil não é um destino" icon={ArrowUpRight}><p className="disc-closing">{narrative.profilePortrait} Quanto maior sua consciência sobre seus próprios padrões, maior pode ser sua capacidade de escolher como agir.</p><div className="disc-combination"><span>{scores.combination}</span><div><h3>{narrative.title}</h3><p>Seu resultado de {scores.adapted.percent[scores.predominant]}% em {DIMENSION_NAMES[scores.predominant]} e {scores.adapted.percent[scores.secondary]}% em {DIMENSION_NAMES[scores.secondary]} sugere um repertório com características próprias. Use esta combinação como linguagem para investigar experiências, não como caixa, rótulo ou justificativa automática.</p></div></div><div className="disc-two-columns"><SignalCard type="strength" title="Leve com você"><p>Os quatro fatores fazem parte do seu repertório. Seu resultado mostra preferências relativas neste momento.</p></SignalCard><SignalCard type="tip" title="Próximo passo"><p>Valide estas hipóteses em uma devolutiva e escolha uma ação simples, observável e relevante para os próximos 30 dias.</p></SignalCard></div><p className="disc-note">{APAS_DISCLAIMER}</p></Page>
   </article>;
 }
