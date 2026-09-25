@@ -50,7 +50,7 @@ Apply with any color utility: `bg-<name>`, `text-<name>`, `border-<name>`, `ring
 | `disc-red` | `--disc-red` |
 | `disc-gold` | `--disc-gold` |
 | `disc-green` | `--disc-green` |
-| `disc-blue` | `--disc-blue` |
+| `disc-teal` | `--disc-teal` |
 | `tech-paper` | `--tech-paper` |
 | `tech-ink` | `--tech-ink` |
 | `tech-soft` | `--tech-soft` |
