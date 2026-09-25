@@ -75,6 +75,16 @@
     gap: 0 !important;
   }
 
+  /* The cover body previously used min-height: 297mm with padding in the default content-box model,
+     which could fragment its bottom metadata onto a 13th sheet during print/PDF generation. */
+  .disc-cover .disc-page-body {
+    box-sizing: border-box;
+    width: 100% !important;
+    height: 297mm !important;
+    min-height: 297mm !important;
+    max-height: 297mm !important;
+  }
+
   .disc-page {
     width: 210mm !important;
     height: 297mm !important;
