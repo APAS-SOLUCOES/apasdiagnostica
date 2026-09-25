@@ -75,6 +75,35 @@
     gap: 0 !important;
   }
 
+  /* Prevent the cover body from fragmenting its metadata onto a 13th sheet. */
+  .disc-cover .disc-page-body {
+    position: absolute;
+    inset: 0;
+    box-sizing: border-box;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: hidden;
+    contain: layout paint;
+  }
+
+  .disc-page.disc-cover {
+    width: 200mm !important;
+    height: 280mm !important;
+    min-height: 280mm !important;
+    max-height: 280mm !important;
+  }
+
+  .disc-cover-meta {
+    position: absolute !important;
+    right: 18mm !important;
+    bottom: 12mm !important;
+    left: 18mm !important;
+    top: auto !important;
+    margin-top: 0 !important;
+  }
+
   .disc-page {
     width: 210mm !important;
     height: 297mm !important;
@@ -98,5 +127,40 @@
   .disc-page * {
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
+  }
+}
+
+/* APAS brand treatment shared by the DISC technical report. */
+.disc-tech-brand-logo {
+  display: block;
+  width: 24mm;
+  height: auto;
+  max-height: 10mm;
+  object-fit: contain;
+}
+
+.disc-tech-cover-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6mm;
+}
+
+.disc-tech-cover-logo img {
+  display: block;
+  width: 38mm;
+  height: auto;
+  max-height: 16mm;
+  object-fit: contain;
+}
+
+@media print {
+  .disc-tech-brand-logo {
+    width: 24mm;
+    max-height: 10mm;
+  }
+
+  .disc-tech-cover-logo img {
+    width: 38mm;
+    max-height: 16mm;
   }
 }
