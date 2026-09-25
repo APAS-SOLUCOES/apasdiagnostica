@@ -1,8 +1,7 @@
 import type { CSSProperties, ReactNode } from "react";
 import type { LucideIcon } from "lucide-react";
-import { AlertTriangle, ArrowUpRight, Check, Compass, Focus, Gauge, Lightbulb, MessageCircle, Network, RefreshCw, Scale, Sprout, Users } from "lucide-react";
+import { AlertTriangle, ArrowUpRight, Check, Compass, Focus, Gauge, Lightbulb, MessageCircle, Network, Sprout, Users } from "lucide-react";
 import coverArtwork from "@/assets/disc-editorial-cover.jpg";
-import dialogueArtwork from "@/assets/disc-editorial-dialogue.jpg";
 import growthArtwork from "@/assets/disc-editorial-growth.jpg";
 import selfArtwork from "@/assets/disc-editorial-self.jpg";
 import apasLogo from "@/assets/apas-logo-official.webp";
