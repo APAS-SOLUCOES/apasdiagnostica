@@ -89,10 +89,10 @@
   }
 
   .disc-page.disc-cover {
-    width: calc(210mm - 1px) !important;
-    height: calc(297mm - 1px) !important;
-    min-height: calc(297mm - 1px) !important;
-    max-height: calc(297mm - 1px) !important;
+    width: 200mm !important;
+    height: 280mm !important;
+    min-height: 280mm !important;
+    max-height: 280mm !important;
   }
 
   .disc-cover-meta {
