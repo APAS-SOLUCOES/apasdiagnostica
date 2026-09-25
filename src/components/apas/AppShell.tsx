@@ -4,7 +4,7 @@ import { LogOut, Menu, X } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-const apasLogo = "/apas-logo.svg";
+import apasLogo from "@/assets/apas-logo-official.webp";
 
 const NAV = [
   { to: "/dashboard", label: "Dashboard" },
