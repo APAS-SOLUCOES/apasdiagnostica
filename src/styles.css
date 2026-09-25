@@ -2698,3 +2698,26 @@
     font-size: 7pt;
   }
 }
+
+
+/* Page 6 — keep the approved title readable above the dark artwork */
+.disc-page[data-page="6"] .disc-title-row,
+.disc-page[data-page="6"] .disc-page-title,
+.disc-page[data-page="6"] .disc-kicker {
+  position: relative;
+  z-index: 4;
+  color: oklch(.98 0 0) !important;
+  text-shadow: 0 1px 5px oklch(0 0 0 / .75);
+}
+.disc-page[data-page="6"] .disc-kicker {
+  color: var(--disc-red) !important;
+}
+.disc-page[data-page="6"] .disc-page-title {
+  opacity: 1 !important;
+}
+.disc-page[data-page="6"] .disc-page-hero-art {
+  z-index: 0;
+}
+.disc-page[data-page="6"] .disc-page-hero-art + .disc-page-atmosphere-content {
+  z-index: 2;
+}
