@@ -85,6 +85,37 @@ function adaptationPhrase(scores: ScoreResult) {
   return `${gapPhrase(gap)} Em ${pct(values[p])} de ${p} e ${pct(values[s])} de ${s}, a leitura combina intensidade do primeiro fator com a influência relativa do segundo.`;
 }
 
+function buildProfilePortrait(scores: ScoreResult, title: string, band: IntensityBand, gap: number) {
+  const p = scores.predominant;
+  const s = scores.secondary;
+  const pv = scores.adapted.percent[p];
+  const sv = scores.adapted.percent[s];
+  const pName = DIMENSION_CONTENT[p].title.toLowerCase();
+  const sName = DIMENSION_CONTENT[s].title.toLowerCase();
+  const intensity = intensityLabel(band);
+  const balance = gap <= 3
+    ? "Os dois fatores aparecem muito próximos, por isso seu repertório tende a ter mais de uma porta de entrada para responder ao ambiente."
+    : gap <= 8
+      ? "Existe uma direção principal, mas o segundo fator continua oferecendo um recurso importante para ajustar sua resposta."
+      : "A direção principal é mais definida; o segundo fator funciona como um recurso complementar que pode ampliar sua flexibilidade.";
+  return `${title} descreve uma forma de funcionar em que ${pName} aparece de maneira ${intensity}, registrada em ${pct(pv)}, enquanto ${sName} aparece em ${pct(sv)}. ${balance} No cotidiano, isso pode se traduzir em escolhas, comunicação e ritmo que parecem muito naturais para você, especialmente quando o contexto confirma aquilo que seu perfil valoriza. A leitura fica mais útil quando você observa não apenas o que faz bem, mas também o que acontece quando essa preferência precisa dividir espaço com uma necessidade diferente. Seu perfil não determina seu comportamento: ele ajuda a tornar visíveis tendências que podem ser ampliadas, equilibradas ou conscientemente ajustadas.`;
+}
+
+function buildSituationMap(scores: ScoreResult, base: CombinationNarrative) {
+  const p = scores.predominant;
+  const s = scores.secondary;
+  const pv = scores.adapted.percent[p];
+  const sv = scores.adapted.percent[s];
+  const pName = DIMENSION_CONTENT[p].title.toLowerCase();
+  const sName = DIMENSION_CONTENT[s].title.toLowerCase();
+  return {
+    work: `No trabalho, sua combinação tende a aparecer na maneira como você organiza energia, prioridade e entrega. Com ${pct(pv)} em ${p}, ${pName} costuma entrar primeiro quando você precisa responder ao que está diante de você. Os ${pct(sv)} de ${s} acrescentam uma segunda linguagem para lidar com pessoas, ritmo, detalhes ou continuidade. Isso significa que seu melhor desempenho pode surgir quando o ambiente permite usar sua força principal sem obrigá-la a resolver tudo sozinha. A contribuição cresce quando você reconhece qual recurso a situação pede e acessa deliberadamente o segundo fator quando necessário. ${base.best[0]} e, ao mesmo tempo, vale observar ${base.excess[0].toLowerCase()}.`,
+    relationships: `Nas relações, a intenção por trás do seu comportamento pode ser diferente do impacto percebido. Sua preferência por ${pName} pode fazer com que você entre na situação buscando ${FACTOR_SHORT[p]}, enquanto ${sName} oferece outro caminho para construir conexão e entendimento. Pessoas com ritmos diferentes podem precisar de mais contexto, mais espaço, mais objetividade ou mais segurança do que você espontaneamente oferece. Quando você percebe essa diferença cedo, consegue preservar autenticidade sem exigir que os outros funcionem no mesmo ritmo. ${base.perceived}`,
+    decisions: `Ao decidir, seu perfil mostra uma tendência a privilegiar ${FACTOR_SHORT[p]} e complementar essa escolha com ${FACTOR_SHORT[s]}. Em decisões simples, isso pode gerar agilidade e confiança. Em decisões complexas, a mesma preferência pode precisar de uma pausa intencional para verificar informações, impactos, alternativas e pessoas envolvidas. A pergunta mais produtiva não é se você deve decidir de outro jeito, mas qual elemento do contexto merece entrar na decisão antes do fechamento. ${base.decision}`,
+    leadership: `Na liderança, sua assinatura comportamental pode aparecer com força porque outras pessoas observam não apenas o que você diz, mas o ritmo, o padrão e o clima que você cria. ${base.leadership} Em situações diferentes, vale alternar conscientemente entre ${FACTOR_SHORT[p]} e ${FACTOR_SHORT[s]}, principalmente quando o comportamento que funciona para iniciar uma tarefa não é o mesmo que sustenta pessoas até a conclusão. ${base.team}`,
+  };
+}
+
 export function getAdaptiveNarrative(scores: ScoreResult): CombinationNarrative {
   const base = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES[\`${scores.predominant}${scores.secondary}\`] ?? COMBINATION_NARRATIVES.DI;
   const p = scores.predominant;
@@ -96,7 +127,7 @@ export function getAdaptiveNarrative(scores: ScoreResult): CombinationNarrative 
   const secondaryBand = intensityBand(sv);
   const combinationImpactReading = combinationImpact(scores.combination, pv, gap);
 
-  const intensityPrefix = intensitySentence(p, pv);
+  const intensityPrefix = intensitySentence(p, pv);\n  const profilePortrait = buildProfilePortrait(scores, combinationImpactReading.title, band, gap);\n  const situations = buildSituationMap(scores, base);
   const secondarySentence = intensitySentence(s, sv);
 
   const best = [
@@ -120,7 +151,7 @@ export function getAdaptiveNarrative(scores: ScoreResult): CombinationNarrative 
 
   return {
     ...base,
-    title: `${combinationImpactReading.title} · ${intensityLabel(band)}`,
+    title: `${combinationImpactReading.title} · ${intensityLabel(band)}`,\n    profilePortrait,\n    situations,
     essence: `${combinationImpactReading.phrase} ${intensityPrefix} ${gapPhrase(gap)} ${secondarySentence}`,
     best,
     excess,
