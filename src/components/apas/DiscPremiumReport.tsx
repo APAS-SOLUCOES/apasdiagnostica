@@ -48,7 +48,7 @@ function FactorMark({ dimension, percent }: { dimension: Dimension; percent?: nu
 }
 
 function ProfileBars({ title, subtitle, values }: { title: string; subtitle: string; values: DimensionMap }) {
-  return <div className="disc-profile-panel"><h3>{title}</h3><p>{subtitle}</p><div className="disc-intensity-chart" aria-label={`Intensidades do perfil ${title}`}>{DIMENSIONS.map((d) => <div className="disc-intensity-column" key={d}><div className="disc-intensity-scale" role="img" aria-label={title + ": " + DIMENSION_NAMES[d] + " " + values[d] + "%"}><span className={FACTOR_CLASS[d]} style={{ height: `${values[d]}%` }} /></div><span>{d}</span><small>{DIMENSION_NAMES[d]}</small></div>)}</div></div>;
+  return <div className="disc-profile-panel"><h3>{title}</h3><p>{subtitle}</p><div className="disc-horizontal-chart" aria-label={`Intensidades do perfil ${title}`}>{DIMENSIONS.map((d) => <div className="disc-horizontal-row" key={d}><strong className={FACTOR_CLASS[d]}>{d}</strong><div className="disc-horizontal-track"><span className={FACTOR_CLASS[d]} style={{ width: `${values[d]}%` }} /></div><b>{values[d]}%</b></div>)}</div></div>;
 }
 
 function ProfileDonut({ values, combination }: { values: DimensionMap; combination: string }) {
@@ -59,11 +59,14 @@ function ProfileDonut({ values, combination }: { values: DimensionMap; combinati
   } as CSSProperties;
 
   return <div className="disc-profile-donut-wrap">
-    <div className="disc-profile-donut" style={donutStyle} role="img" aria-label={`Distribuição do perfil adaptado: D ${values.D}%, I ${values.I}%, S ${values.S}%, C ${values.C}%`}>
-      <div><strong>{combination}</strong><small>perfil central</small></div>
-    </div>
-    <div className="disc-profile-donut-legend" aria-hidden="true">
-      {DIMENSIONS.map((d) => <span key={d}><i className={FACTOR_CLASS[d]} />{d} · {DIMENSION_NAMES[d]}</span>)}
+    <div className="disc-profile-donut-stage">
+      <div className="disc-profile-label disc-profile-label-d"><strong>D</strong><b>{values.D}%</b><small>(Adaptado)</small></div>
+      <div className="disc-profile-label disc-profile-label-i"><strong>I</strong><b>{values.I}%</b><small>(Adaptado)</small></div>
+      <div className="disc-profile-label disc-profile-label-s"><strong>S</strong><b>{values.S}%</b><small>(Adaptado)</small></div>
+      <div className="disc-profile-label disc-profile-label-c"><strong>C</strong><b>{values.C}%</b><small>(Adaptado)</small></div>
+      <div className="disc-profile-donut" style={donutStyle} role="img" aria-label={`Distribuição do perfil adaptado: D ${values.D}%, I ${values.I}%, S ${values.S}%, C ${values.C}%`}>
+        <div><strong>{combination}</strong><small>Seu perfil<br/>primário | secundário</small></div>
+      </div>
     </div>
   </div>;
 }
