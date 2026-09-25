@@ -285,11 +285,12 @@
 .disc-brand-inverse { color: oklch(0.98 0 0); }
 .disc-brand-logo {
   display: block;
-  width: 25mm;
-  height: auto;
-  max-width: 25mm;
+  width: 18mm;
+  height: 18mm;
+  max-width: 18mm;
   object-fit: contain;
-  border-radius: 0.8mm;
+  border-radius: 1mm;
+  background: #000;
 }
 
 .disc-title-row {
@@ -1033,16 +1034,13 @@
 }
 
 .disc-cover-brand {
-  display: flex;
-  align-items: baseline;
-  gap: 3mm;
-  font-family: var(--font-display);
-  font-size: 14pt;
-  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 1mm;
+  background: #000;
+  border-radius: 1mm;
 }
-
-.disc-cover-brand > span { color: var(--disc-red); font-weight: 800; }
-.disc-cover-brand small { color: oklch(0.72 0 0); font-size: 7pt; }
 
 .disc-cover-ring {
   position: relative;
@@ -1159,8 +1157,10 @@
   }
 
   .disc-brand-logo {
-    width: 20vw;
-    max-width: 25mm;
+    width: 16vw;
+    height: 16vw;
+    max-width: 18mm;
+    max-height: 18mm;
   }
 
   .disc-profile-overview {
@@ -1768,4 +1768,25 @@
   .disc-strength-grid { grid-template-columns: 1fr; }
   .disc-page[data-page="9"] .disc-banner-art,
   .disc-page[data-page="10"] .disc-banner-art { height: 28vw; }
+}
+
+
+/* Technical report: dark pages use dark information cards so their content never disappears against white. */
+.disc-tech-page-dark .disc-tech-manager-grid section {
+  background: oklch(0.19 0 0);
+  color: var(--tech-ink);
+}
+.disc-tech-page-dark .disc-tech-manager-grid p {
+  color: var(--tech-soft);
+}
+.disc-tech-page-dark .disc-tech-callout {
+  background: oklch(0.19 0 0);
+  color: var(--tech-ink);
+}
+.disc-tech-page-dark .disc-tech-callout p {
+  color: var(--tech-soft);
+}
+.disc-tech-page-dark .disc-tech-note {
+  background: oklch(1 0 0 / 0.06);
+  color: var(--tech-soft);
 }
