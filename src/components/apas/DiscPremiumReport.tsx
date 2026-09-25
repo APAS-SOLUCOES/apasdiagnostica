@@ -54,6 +54,23 @@ function ProfileBars({ title, subtitle, values }: { title: string; subtitle: str
   return <div className="disc-profile-panel"><h3>{title}</h3><p>{subtitle}</p><div className="disc-intensity-chart" aria-label={`Intensidades do perfil ${title}`}>{DIMENSIONS.map((d) => <div className="disc-intensity-column" key={d}><div className="disc-intensity-scale" role="img" aria-label={title + ": " + DIMENSION_NAMES[d] + " " + values[d] + "%"}><span className={FACTOR_CLASS[d]} style={{ height: `${values[d]}%` }} /></div><span>{d}</span><small>{DIMENSION_NAMES[d]}</small></div>)}</div></div>;
 }
 
+function ProfileDonut({ values, combination }: { values: DimensionMap; combination: string }) {
+  const donutStyle = {
+    "--d": `${values.D}%`,
+    "--i": `${values.D + values.I}%`,
+    "--s": `${values.D + values.I + values.S}%`,
+  } as React.CSSProperties;
+
+  return <div className="disc-profile-donut-wrap">
+    <div className="disc-profile-donut" style={donutStyle} role="img" aria-label={`Distribuição do perfil adaptado: D ${values.D}%, I ${values.I}%, S ${values.S}%, C ${values.C}%`}>
+      <div><strong>{combination}</strong><small>perfil central</small></div>
+    </div>
+    <div className="disc-profile-donut-legend" aria-hidden="true">
+      {DIMENSIONS.map((d) => <span key={d}><i className={FACTOR_CLASS[d]} />{d} · {DIMENSION_NAMES[d]}</span>)}
+    </div>
+  </div>;
+}
+
 function ThemeBlock({ icon: Icon, title, children }: { icon: LucideIcon; title: string; children: ReactNode }) {
   return <section className="disc-theme-block"><Icon aria-hidden="true" /><div><h3>{title}</h3><p>{children}</p></div></section>;
 }
@@ -71,7 +88,7 @@ export function DiscPremiumReport({ assessment, scores }: { assessment: ReportAs
 
     <Page number={2} eyebrow="Antes de olhar o resultado" title="Você não é um número." icon={Compass}><EditorialImage src={dialogueArtwork} alt="Composição editorial sobre conversa, percepção e reflexão" position="right" /><p className="disc-opening">O resultado deste relatório não pretende colocar você dentro de uma caixa ou definir quem você é. Ele mostra tendências sobre a forma como você costuma agir, decidir, se comunicar e responder às situações do dia a dia.</p><div className="disc-editorial-quote">Toda leitura ganha sentido quando encontra a sua história, o seu contexto e as suas escolhas.</div><div className="disc-two-columns"><SignalList type="strength" title="O que esta leitura oferece" items={["Uma linguagem para reconhecer preferências", "Hipóteses para conversas e desenvolvimento", "Pistas sobre energia, contexto e adaptação"]}/><SignalList type="attention" title="O que ela não define" items={["Sua personalidade completa ou seu caráter", "Sua inteligência ou competência técnica", "Um limite permanente para suas escolhas"]}/></div><p className="disc-foundation">A referência conceitual parte dos estudos de William Moulton Marston em <em>Emotions of Normal People</em> (1928). A aplicação e a linguagem deste relatório são autorais da APAS.</p><p className="disc-note">{APAS_DISCLAIMER}</p></Page>
 
-    <Page number={3} eyebrow="Seu perfil em três perspectivas" title="Natural, adaptado e social" icon={Gauge}><div className="disc-profile-grid"><ProfileBars title="Natural" subtitle="Como tende a agir quando está mais à vontade." values={scores.natural.percent}/><ProfileBars title="Adaptado" subtitle="Como ajusta o comportamento às exigências percebidas." values={scores.adapted.percent}/><ProfileBars title="Social" subtitle="Como acredita que precisa se apresentar no ambiente." values={scores.social.percent}/></div><ProfileTable vectors={[{ label: "Natural", value: scores.natural }, { label: "Adaptado", value: scores.adapted }, { label: "Social", value: scores.social }]}/><div className="disc-index"><span>Índice de adaptação</span><strong>{scores.adaptationIndex}</strong><p>{adaptationText}</p></div><p className="disc-note">Nenhuma perspectiva é melhor. Juntas, elas ajudam a compreender repertório e contexto. As barras representam visualmente os mesmos valores calculados para esta aplicação.</p></Page>
+    <Page number={3} eyebrow="Seu perfil em três perspectivas" title="Natural, adaptado e social" icon={Gauge}><div className="disc-profile-overview"><ProfileDonut values={scores.adapted.percent} combination={scores.combination}/><div className="disc-profile-grid"><ProfileBars title="Natural" subtitle="Como tende a agir quando está mais à vontade." values={scores.natural.percent}/><ProfileBars title="Adaptado" subtitle="Como ajusta o comportamento às exigências percebidas." values={scores.adapted.percent}/><ProfileBars title="Social" subtitle="Como acredita que precisa se apresentar no ambiente." values={scores.social.percent}/></div></div><div className="disc-index"><span>Índice de adaptação</span><strong>{scores.adaptationIndex}</strong><p>{adaptationText}</p></div><p className="disc-note">Nenhuma perspectiva é melhor. Juntas, elas ajudam a compreender repertório e contexto. As barras e o gráfico representam visualmente os valores calculados para esta aplicação.</p></Page>
 
     <Page number={4} eyebrow="Leitura central" title="Seu jeito de agir" icon={Focus}><div className="disc-combination"><span>{scores.combination}</span><div><small>{scores.combinationLabel ?? `${scores.predominant} primário · ${scores.secondary} secundário`}</small><h3>{narrative.title}</h3><p>{narrative.essence}</p></div></div><p className="disc-highlight">Sua leitura principal reúne {FACTOR_SHORT[scores.predominant]} com {FACTOR_SHORT[scores.secondary]}. Isso descreve uma preferência observada, não uma identidade fixa.</p><div className="disc-factor-grid">{DIMENSIONS.map((d) => <FactorMark key={d} dimension={d} percent={scores.adapted.percent[d]} />)}</div><SignalCard type="observe" title="Uma hipótese para validar"><p>Em quais situações essa combinação aparece de forma produtiva? E em quais situações você precisa acessar comportamentos diferentes?</p></SignalCard></Page>
 
