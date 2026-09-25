@@ -3,7 +3,6 @@
 Evolução do projeto APAS DISC Profile para a plataforma **APAS DIAGNÓSTICA** (diagnósticos empresariais, comportamentais e de pessoas). O módulo DISC existente é preservado como instrumento da plataforma.
 
 ## Em andamento
-- [ ] Sincronizar cirurgicamente os arquivos DISC com o commit GitHub `1362d67b382446a1421a7b1b4ee2c353fc73c7c0`, preservando assets locais, banco, autenticação, rotas, Diagnóstico Empresarial, domínio raiz e paginação A4 validada; concluir com TypeScript, testes, build, PDFs e auditoria do diff.
 - [x] Inspeção concluída (06/09): código atual = DISC completo (`apas.functions.ts`, `public.functions.ts`, rotas `/dashboard`, `/avaliacoes/*`, `/empresas`, `/instrumento`, `/a/$token`), tabelas `assessments/*`, `instruments`, `organizations`, roles `admin|coach`. **Nada do módulo empresarial existe ainda no código nem no banco.**
 - [ ] **Localizar as 70 perguntas V3** no histórico da conversa (chat_search: "V3", "L01", "Liderança"). Regra confirmada pelo usuário: L01 é inversa; pesos V3 são 2 e 3; N/A fora do cálculo. Se o texto não estiver acessível, criar estrutura + tela de carga e sinalizar pendência — NÃO inventar perguntas.
 - [ ] **Rebrand** para "APAS DIAGNÓSTICA — Plataforma de Diagnósticos Empresariais, Comportamentais e de Pessoas" (AppShell, landing `/`, `/auth`, `__root` lang pt-BR, heads). DISC vira módulo/instrumento.
