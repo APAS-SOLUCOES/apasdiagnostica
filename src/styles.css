@@ -2442,3 +2442,55 @@
   .disc-profile-label-s { bottom: 14mm; }
   .disc-profile-label-c { bottom: 14mm; }
 }
+
+
+/* APAS DISC — mobile presentation: preserve the approved A4 composition without horizontal clipping. */
+@media screen and (max-width: 760px) {
+  .disc-report {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .disc-report .disc-page {
+    width: 210mm;
+    height: 297mm;
+    min-height: 297mm;
+    margin-inline: auto;
+    transform-origin: top center;
+    box-sizing: border-box;
+    zoom: 0.45;
+  }
+  .disc-report .disc-page + .disc-page { margin-top: 0; }
+}
+
+@media screen and (min-width: 381px) and (max-width: 430px) {
+  .disc-report .disc-page { zoom: 0.49; }
+}
+
+@media screen and (min-width: 431px) and (max-width: 760px) {
+  .disc-report .disc-page { zoom: 0.54; }
+}
+
+/* Keep the technical report aligned with the same mobile rule. */
+@media screen and (max-width: 760px) {
+  .disc-technical-report {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .disc-technical-report .disc-tech-page {
+    width: 210mm;
+    height: 297mm;
+    min-height: 297mm;
+    margin-inline: auto;
+    zoom: 0.45;
+  }
+}
+
+@media screen and (min-width: 381px) and (max-width: 430px) {
+  .disc-technical-report .disc-tech-page { zoom: 0.49; }
+}
+
+@media screen and (min-width: 431px) and (max-width: 760px) {
+  .disc-technical-report .disc-tech-page { zoom: 0.54; }
+}
