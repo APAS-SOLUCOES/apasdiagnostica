@@ -94,6 +94,7 @@ export function getAdaptiveNarrative(scores: ScoreResult): CombinationNarrative 
   const gap = round(scores.primaryGap ?? pv - sv);
   const band = intensityBand(pv);
   const secondaryBand = intensityBand(sv);
+  const combinationImpactReading = combinationImpact(scores.combination, pv, gap);
 
   const intensityPrefix = intensitySentence(p, pv);
   const secondarySentence = intensitySentence(s, sv);
@@ -119,8 +120,8 @@ export function getAdaptiveNarrative(scores: ScoreResult): CombinationNarrative 
 
   return {
     ...base,
-    title: `${base.title} · ${intensityLabel(band)}`,
-    essence: `${intensityPrefix} ${gapPhrase(gap)} ${secondarySentence}`,
+    title: `${combinationImpactReading.title} · ${intensityLabel(band)}`,
+    essence: `${combinationImpactReading.phrase} ${intensityPrefix} ${gapPhrase(gap)} ${secondarySentence}`,
     best,
     excess,
     perceived: `${base.perceived} ${adaptationPhrase(scores)}`,
@@ -192,6 +193,81 @@ const IMPACT_TEMPLATES: Record<Dimension, string[]> = {
     "Seu olhar analítico pode transformar complexidade em organização, clareza e segurança.",
   ],
 };
+
+type ImpactCombination = { title: string; phrase: string };
+
+const COMBINATION_IMPACT: Record<string, ImpactCombination[]> = {
+  DI: [
+    { title: "O Visionário Influente", phrase: "Você transforma possibilidades em movimento e encontra maneiras de envolver pessoas naquilo que acredita." },
+    { title: "O Explorador de Oportunidades", phrase: "Você tende a perceber oportunidades, tomar iniciativa e mobilizar pessoas para fazê-las avançar." },
+    { title: "O Catalisador de Resultados", phrase: "Você combina iniciativa e presença para acelerar ideias, decisões e pessoas na direção de um objetivo." },
+  ],
+  ID: [
+    { title: "O Comunicador que Realiza", phrase: "Você conquista pela presença, envolve pelas ideias e encontra caminhos para transformar entusiasmo em movimento." },
+    { title: "O Mobilizador de Possibilidades", phrase: "Você tende a abrir portas por meio da comunicação e aproveitar rapidamente as oportunidades que surgem." },
+    { title: "O Conector de Oportunidades", phrase: "Você aproxima pessoas e possibilidades com uma energia que pode transformar conversa em ação." },
+  ],
+  DS: [
+    { title: "O Líder que Sustenta", phrase: "Você combina firmeza para avançar com capacidade de sustentar pessoas, compromissos e resultados." },
+    { title: "O Realizador Confiável", phrase: "Você tende a transformar decisões em continuidade, mantendo o foco sem abandonar o que precisa ser sustentado." },
+    { title: "O Pilar de Resultados", phrase: "Você une direção e constância para fazer acontecer sem perder de vista a sustentação do caminho." },
+  ],
+  SD: [
+    { title: "O Líder que Sustenta", phrase: "Você oferece estabilidade e, quando necessário, encontra firmeza para colocar decisões em movimento." },
+    { title: "O Construtor de Resultados", phrase: "Você tende a transformar compromisso em execução, avançando com segurança e consistência." },
+    { title: "O Guardião do Ritmo", phrase: "Você combina constância e determinação para manter o caminho firme mesmo quando as demandas aumentam." },
+  ],
+  DC: [
+    { title: "O Estrategista Executivo", phrase: "Você combina direção e critério para transformar decisões em resultados com padrão de qualidade." },
+    { title: "O Arquiteto de Soluções", phrase: "Você tende a enxergar o objetivo, avaliar riscos e construir caminhos objetivos para chegar lá." },
+    { title: "O Executivo de Precisão", phrase: "Você une velocidade de decisão e atenção aos detalhes para proteger resultado e qualidade." },
+  ],
+  CD: [
+    { title: "O Executivo Solitário", phrase: "Você tende a assumir responsabilidade, analisar profundamente e decidir com autonomia quando o desafio exige." },
+    { title: "O Estrategista de Resultados", phrase: "Você combina análise e determinação para encontrar soluções consistentes e colocá-las em prática." },
+    { title: "O Arquiteto Executivo", phrase: "Você transforma critérios em decisões e decisões em caminhos concretos para alcançar resultados." },
+  ],
+  IS: [
+    { title: "O Comunicador Simpático", phrase: "Você cria proximidade, envolve pessoas e ajuda a construir ambientes em que a colaboração acontece com naturalidade." },
+    { title: "O Conector de Pessoas", phrase: "Você tende a aproximar pessoas com comunicação acolhedora e uma presença que favorece confiança." },
+    { title: "O Anfitrião Natural", phrase: "Você combina presença social e cuidado para fazer pessoas se sentirem incluídas e dispostas a colaborar." },
+  ],
+  SI: [
+    { title: "O Conector de Pessoas", phrase: "Você combina acolhimento e comunicação para criar vínculos que aproximam pessoas e fortalecem a cooperação." },
+    { title: "O Anfitrião Natural", phrase: "Você tende a perceber o clima das relações e criar espaços em que as pessoas conseguem participar." },
+    { title: "O Facilitador de Conexões", phrase: "Você transforma escuta, proximidade e comunicação em pontes que ajudam pessoas a trabalharem juntas." },
+  ],
+  IC: [
+    { title: "O Influenciador Estratégico", phrase: "Você comunica possibilidades com energia e procura dar consistência às ideias por meio de preparo e critério." },
+    { title: "O Comunicador Estratégico", phrase: "Você tende a traduzir assuntos complexos de forma envolvente sem perder a qualidade da informação." },
+    { title: "O Tradutor de Possibilidades", phrase: "Você aproxima pessoas de ideias complexas, combinando expressão, conteúdo e clareza." },
+  ],
+  CI: [
+    { title: "O Estrategista Comunicador", phrase: "Você transforma análise em mensagens claras e encontra maneiras de tornar ideias consistentes mais acessíveis." },
+    { title: "O Especialista que Conecta", phrase: "Você tende a unir conhecimento e comunicação para dar credibilidade e alcance ao que apresenta." },
+    { title: "O Arquiteto de Mensagens", phrase: "Você organiza informação, identifica o essencial e constrói formas precisas de comunicar." },
+  ],
+  SC: [
+    { title: "O Construtor de Confiança", phrase: "Você combina constância e critério para criar relações e entregas em que as pessoas podem confiar." },
+    { title: "O Guardião da Qualidade", phrase: "Você tende a proteger o que foi construído, cuidando de pessoas, processos e padrões." },
+    { title: "O Organizador Confiável", phrase: "Você une estabilidade e atenção aos detalhes para transformar cuidado em consistência." },
+  ],
+  CS: [
+    { title: "O Guardião da Qualidade", phrase: "Você combina precisão e constância para preservar padrões, relações e resultados ao longo do tempo." },
+    { title: "O Especialista Confiável", phrase: "Você tende a transformar conhecimento e cuidado em entregas consistentes e seguras." },
+    { title: "O Arquiteto da Consistência", phrase: "Você observa detalhes e sustenta processos para que o resultado permaneça sólido." },
+  ],
+};
+
+function combinationImpact(combination: string, primaryValue: number, gap: number) {
+  const options = COMBINATION_IMPACT[combination] ?? COMBINATION_IMPACT.DI;
+  const index = gap <= 3 ? 0 : gap <= 8 ? 1 : 2;
+  const selected = options[index];
+  return {
+    title: selected.title,
+    phrase: `${selected.phrase} Os dois fatores principais aparecem em ${pct(primaryValue)} e com uma diferença de ${pct(gap)} pontos.`,
+  };
+}
 
 function impactIdentity(d: Dimension, value: number) {
   const choices = IMPACT_IDENTITIES[d];
