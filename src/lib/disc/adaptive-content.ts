@@ -152,10 +152,10 @@ export function getAdaptiveNarrative(scores: ScoreResult): CombinationNarrative 
       ? `Com ${pct(pv)} em ${DIMENSION_CONTENT[p].title}, escolha uma situação por semana para ampliar deliberadamente o recurso de ${DIMENSION_CONTENT[s].title} (${pct(sv)}).`
       : `Com ${pct(pv)} em ${DIMENSION_CONTENT[p].title}, observe quando esse recurso aparece naturalmente e registre uma situação em que você poderia usá-lo com mais intenção.`;
   const experiments = [
-    ...base.experiments,
+    base.experiments[0],
     intensityExperiment,
     `A diferença de ${pct(gap)} pontos entre ${p} e ${s} mostra onde experimentar equilíbrio: pratique um comportamento de ${DIMENSION_CONTENT[s].title.toLowerCase()} em uma situação em que ${DIMENSION_CONTENT[p].title.toLowerCase()} costuma aparecer primeiro.`,
-  ].slice(0, 3);
+  ];
 
   return {
     ...base,
