@@ -13,6 +13,8 @@ export type CombinationNarrative = {
   pressure: string;
   change: string;
   experiments: string[];
+  profilePortrait?: string;
+  situations?: { work: string; relationships: string; decisions: string; leadership: string };
 };
 
 export const FACTOR_SHORT: Record<Dimension, string> = {
