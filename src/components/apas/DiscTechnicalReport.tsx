@@ -6,7 +6,6 @@ import { DIMENSION_CONTENT } from "@/lib/disc/content";
 import { COMBINATION_NARRATIVES } from "@/lib/disc/report-content";
 import { getAdaptiveFactorImpact, getAdaptiveFactorReading, getAdaptiveNarrative } from "@/lib/disc/adaptive-content";
 import apasLogo from "@/assets/apas-logo-official.webp";
-import apasLogoLight from "@/assets/apas-logo-light.webp";
 
 type TechnicalAssessment = { id: string; candidate_name: string; status: string; instrument_version?: string | null; created_at: string; started_at?: string | null; submitted_at?: string | null; consent_accepted_at?: string | null; organizations?: { name?: string | null } | null };
 
@@ -21,7 +20,7 @@ function pct(n: number) {
 }
 
 function TechnicalPage({ number, title, kicker, children, dark = false }: { number: number; title: string; kicker: string; children: ReactNode; dark?: boolean }) {
-  const logo = dark ? apasLogo : apasLogoLight;
+  const logo = apasLogo;
   return <section className={`disc-tech-page ${dark ? "disc-tech-page-dark" : ""}`}><header><span className="disc-tech-brand"><img className="disc-tech-brand-logo" src={logo} alt="APAS Soluções" /></span><span>Relatório técnico · Gestão de pessoas</span></header><main><p className="disc-tech-kicker">{kicker}</p><h1>{title}</h1>{children}</main><footer><span>APAS Soluções · Uso confidencial · Especialista autorizado</span><span>{String(number).padStart(2, "0")}</span></footer></section>;
 }
 
