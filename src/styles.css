@@ -285,11 +285,12 @@
 .disc-brand-inverse { color: oklch(0.98 0 0); }
 .disc-brand-logo {
   display: block;
-  width: 25mm;
-  height: auto;
-  max-width: 25mm;
+  width: 18mm;
+  height: 18mm;
+  max-width: 18mm;
   object-fit: contain;
-  border-radius: 0.8mm;
+  border-radius: 1mm;
+  background: #000;
 }
 
 .disc-title-row {
@@ -1033,16 +1034,28 @@
 }
 
 .disc-cover-brand {
-  display: flex;
-  align-items: baseline;
-  gap: 3mm;
-  font-family: var(--font-display);
-  font-size: 14pt;
-  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 1mm;
+  background: #000;
+  border-radius: 1mm;
 }
 
-.disc-cover-brand > span { color: var(--disc-red); font-weight: 800; }
-.disc-cover-brand small { color: oklch(0.72 0 0); font-size: 7pt; }
+.disc-cover-wordmark {
+  position: absolute !important;
+  left: 18mm;
+  top: 83mm;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-size: 52pt;
+  font-weight: 800;
+  line-height: .9;
+  letter-spacing: -.05em;
+  color: oklch(0.98 0 0 / 0.62);
+  text-shadow: 0 2px 10px oklch(0 0 0 / 0.18);
+  pointer-events: none;
+}
 
 .disc-cover-ring {
   position: relative;
@@ -1159,8 +1172,10 @@
   }
 
   .disc-brand-logo {
-    width: 20vw;
-    max-width: 25mm;
+    width: 16vw;
+    height: 16vw;
+    max-width: 18mm;
+    max-height: 18mm;
   }
 
   .disc-profile-overview {
