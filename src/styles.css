@@ -290,7 +290,6 @@
   max-width: 18mm;
   object-fit: contain;
   border-radius: 1mm;
-  background: #000;
 }
 
 .disc-title-row {
@@ -1037,9 +1036,9 @@
   display: inline-flex;
   align-items: center;
   width: fit-content;
-  padding: 1mm;
-  background: #000;
-  border-radius: 1mm;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
 }
 
 .disc-cover-wordmark {
