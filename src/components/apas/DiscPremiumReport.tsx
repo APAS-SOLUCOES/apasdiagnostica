@@ -62,26 +62,36 @@ function ProfileDonut({ values, combination }: { values: DimensionMap; combinati
   } as CSSProperties;
 
   const labels = [
-    { dimension: "D" as Dimension, value: values.D, className: "disc-wheel-d", name: DIMENSION_NAMES.D },
-    { dimension: "I" as Dimension, value: values.I, className: "disc-wheel-i", name: DIMENSION_NAMES.I },
-    { dimension: "S" as Dimension, value: values.S, className: "disc-wheel-s", name: DIMENSION_NAMES.S },
-    { dimension: "C" as Dimension, value: values.C, className: "disc-wheel-c", name: DIMENSION_NAMES.C },
+    { dimension: "D" as Dimension, value: values.D, className: "disc-wheel-d", name: "DOMINÂNCIA", description: "Foco em resultados, decisão e movimento para fazer acontecer." },
+    { dimension: "I" as Dimension, value: values.I, className: "disc-wheel-i", name: "INFLUÊNCIA", description: "Comunicação, conexão e capacidade de engajar pessoas." },
+    { dimension: "S" as Dimension, value: values.S, className: "disc-wheel-s", name: "ESTABILIDADE", description: "Constância, cooperação e ambiente harmonioso para evoluir." },
+    { dimension: "C" as Dimension, value: values.C, className: "disc-wheel-c", name: "CONFORMIDADE", description: "Organização, análise e atenção a padrões e qualidade." },
   ];
 
-  return <div className="disc-profile-donut-wrap">
-    <div className="disc-profile-wheel" role="img" aria-label={"Distribuição do perfil adaptado: D " + values.D + "%, I " + values.I + "%, S " + values.S + "%, C " + values.C + "%"}>
+  return <div className="disc-profile-wheel" role="img" aria-label={"Distribuição do perfil adaptado: D " + values.D + "%, I " + values.I + "%, S " + values.S + "%, C " + values.C + "%"}>
+    <div className="disc-wheel-premium">
+      <div className="disc-wheel-callout disc-wheel-callout-d">
+        <strong>{values.D}%</strong><span>DOMINÂNCIA</span><p>Foco em resultados, decisão e movimento para fazer acontecer.</p>
+      </div>
+      <div className="disc-wheel-callout disc-wheel-callout-i">
+        <strong>{values.I}%</strong><span>INFLUÊNCIA</span><p>Comunicação, conexão e capacidade de engajar pessoas.</p>
+      </div>
       <div className="disc-wheel-stage">
         <div className="disc-profile-donut" style={donutStyle}>
-          <div><strong>{combination}</strong><small>Perfil predominante<br/>e complementar</small></div>
+          <div><strong>{combination}</strong><small>Seu perfil<br/>primário | secundário</small></div>
         </div>
         <div className="disc-wheel-ring" aria-hidden="true" />
         {labels.map(({ dimension, value, className, name }) => (
-          <div key={dimension} className={"disc-wheel-label " + className}>
-            <span className={"disc-wheel-factor " + FACTOR_CLASS[dimension]}>{dimension}</span>
-            <strong>{value}%</strong>
-            <small>{name}</small>
+          <div key={dimension} className={"disc-wheel-segment disc-wheel-segment-" + dimension.toLowerCase() + " " + className}>
+            <span>{dimension}</span><small>{value}%</small>
           </div>
         ))}
+      </div>
+      <div className="disc-wheel-callout disc-wheel-callout-s">
+        <strong>{values.S}%</strong><span>ESTABILIDADE</span><p>Constância, cooperação e ambiente harmonioso para evoluir.</p>
+      </div>
+      <div className="disc-wheel-callout disc-wheel-callout-c">
+        <strong>{values.C}%</strong><span>CONFORMIDADE</span><p>Organização, análise e atenção a padrões e qualidade.</p>
       </div>
     </div>
   </div>;
