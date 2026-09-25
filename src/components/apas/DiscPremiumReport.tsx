@@ -62,29 +62,35 @@ function ProfileDonut({ values, combination }: { values: DimensionMap; combinati
   } as CSSProperties;
 
   const factors = [
-    { dimension: "D", value: values.D, name: "DOMINÂNCIA", className: "d" },
-    { dimension: "I", value: values.I, name: "INFLUÊNCIA", className: "i" },
-    { dimension: "S", value: values.S, name: "ESTABILIDADE", className: "s" },
-    { dimension: "C", value: values.C, name: "CONFORMIDADE", className: "c" },
+    { dimension: "D", value: values.D, name: "DOMINÂNCIA", description: "Foco em resultados, decisão e movimento para fazer acontecer.", className: "d", icon: ArrowUpRight },
+    { dimension: "I", value: values.I, name: "INFLUÊNCIA", description: "Comunicação, conexão e capacidade de engajar pessoas.", className: "i", icon: Users },
+    { dimension: "S", value: values.S, name: "ESTABILIDADE", description: "Constância, cooperação e ambiente harmonioso para evoluir.", className: "s", icon: Sprout },
+    { dimension: "C", value: values.C, name: "CONFORMIDADE", description: "Organização, análise e atenção a padrões e qualidade.", className: "c", icon: Gauge },
   ];
 
   return <div className="disc-profile-wheel" role="img" aria-label={"Distribuição do perfil adaptado: D " + values.D + "%, I " + values.I + "%, S " + values.S + "%, C " + values.C + "%"}>
-    <div className="disc-wheel-premium">
-      {factors.map(({ dimension, value, name, className }) => (
-        <div key={dimension} className={"disc-wheel-card disc-wheel-card-" + className}>
-          <span className="disc-wheel-card-letter">{dimension}</span>
-          <div className="disc-wheel-card-data">
-            <strong>{value}%</strong>
-            <small>{name}</small>
-          </div>
+    <div className="disc-wheel-premium disc-wheel-approved">
+      {factors.map(({ dimension, value, name, description, className, icon: Icon }) => (
+        <div key={dimension} className={"disc-wheel-callout disc-wheel-callout-" + className}>
+          <strong>{value}%</strong>
+          <b>{name}</b>
+          <p>{description}</p>
+          <span className="disc-wheel-connector" aria-hidden="true"><i /></span>
         </div>
       ))}
+
       <div className="disc-wheel-stage">
         <div className="disc-wheel-halo" aria-hidden="true" />
         <div className="disc-profile-donut" style={donutStyle}>
-          <div>
+          {factors.map(({ dimension, className, icon: Icon }) => (
+            <div key={dimension} className={"disc-wheel-quadrant disc-wheel-quadrant-" + className}>
+              <strong>{dimension}</strong>
+              <Icon aria-hidden="true" />
+            </div>
+          ))}
+          <div className="disc-wheel-center">
             <strong>{combination}</strong>
-            <small>PERFIL</small>
+            <small>Seu perfil<br />primário | secundário</small>
           </div>
         </div>
         <div className="disc-wheel-ring" aria-hidden="true" />
