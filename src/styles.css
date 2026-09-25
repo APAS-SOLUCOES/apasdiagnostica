@@ -2014,3 +2014,55 @@
 .disc-page[data-page="12"] .disc-signature {
   margin-bottom: 17mm;
 }
+
+
+/* APAS DISC — approved premium cover/footer refinement */
+.disc-cover-brand .disc-brand-logo {
+  width: 34mm;
+  height: 34mm;
+  max-width: 34mm;
+  max-height: 34mm;
+}
+
+.disc-cover-wordmark {
+  left: 18mm !important;
+  right: auto !important;
+  top: 166mm !important;
+  font-size: 64pt !important;
+  line-height: .86 !important;
+  letter-spacing: -.055em !important;
+  color: oklch(0.98 0 0 / 0.42) !important;
+  text-shadow: 0 3px 14px oklch(0 0 0 / 0.24);
+}
+
+.disc-cover-copy {
+  max-width: 132mm;
+}
+
+.disc-cover-copy blockquote {
+  max-width: 118mm;
+}
+
+.disc-page[data-page="12"] .disc-signature {
+  display: none !important;
+}
+
+.disc-page[data-page="12"] .disc-page-footer {
+  align-items: center;
+}
+
+@media (max-width: 760px) {
+  .disc-cover-brand .disc-brand-logo {
+    width: 30vw;
+    height: 30vw;
+    max-width: 34mm;
+    max-height: 34mm;
+  }
+
+  .disc-cover-wordmark {
+    left: 6vw !important;
+    right: auto !important;
+    top: 57vw !important;
+    font-size: 16vw !important;
+  }
+}
