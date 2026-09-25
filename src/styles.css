@@ -1805,3 +1805,22 @@
   background: oklch(1 0 0 / 0.06);
   color: var(--tech-soft);
 }
+
+
+/* Technical page 05: keep the six practical themes and the contextual note clear of the footer. */
+.disc-tech-page[data-page="5"] .disc-tech-themes {
+  gap: 2.5mm;
+  margin-top: 4mm;
+}
+.disc-tech-page[data-page="5"] .disc-tech-themes section {
+  padding: 3.5mm;
+}
+.disc-tech-page[data-page="5"] .disc-tech-themes p {
+  font-size: 7.5pt;
+  line-height: 1.4;
+}
+.disc-tech-page[data-page="5"] .disc-tech-note {
+  margin-top: 3mm;
+  font-size: 7pt;
+  line-height: 1.4;
+}
