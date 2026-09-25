@@ -146,7 +146,12 @@ function Dashboard() {
                       size="sm"
                       variant="ghost"
                       disabled={remove.isPending}
-                      onClick={() => remove.mutate(r.id)}
+                      onClick={() => {
+                        const confirmed = window.confirm(
+                          `Você confirma a exclusão desta avaliação?\\n\\nAvaliado: ${r.candidate_name}\\nE-mail: ${r.candidate_email}\\n\\nEssa ação não poderá ser desfeita.`
+                        );
+                        if (confirmed) remove.mutate(r.id);
+                      }}
                       aria-label="Remover avaliação"
                     >
                       <Trash2 className="size-4" />
