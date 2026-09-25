@@ -21,7 +21,7 @@ function pct(n: number) {
 
 function TechnicalPage({ number, title, kicker, children, dark = false }: { number: number; title: string; kicker: string; children: ReactNode; dark?: boolean }) {
   const logo = apasLogo;
-  return <section className={`disc-tech-page ${dark ? "disc-tech-page-dark" : ""}`}><header><span className="disc-tech-brand"><img className="disc-tech-brand-logo" src={logo} alt="APAS Soluções" /></span><span>Relatório técnico · Gestão de pessoas</span></header><main><p className="disc-tech-kicker">{kicker}</p><h1>{title}</h1>{children}</main><footer><span>APAS Soluções · Uso confidencial · Especialista autorizado</span><span>{String(number).padStart(2, "0")}</span></footer></section>;
+  return <section data-page={number} className={`disc-tech-page ${dark ? "disc-tech-page-dark" : ""}`}><header><span className="disc-tech-brand"><img className="disc-tech-brand-logo" src={logo} alt="APAS Soluções" /></span><span>Relatório técnico · Gestão de pessoas</span></header><main><p className="disc-tech-kicker">{kicker}</p><h1>{title}</h1>{children}</main><footer><span>APAS Soluções · Uso confidencial · Especialista autorizado</span><span>{String(number).padStart(2, "0")}</span></footer></section>;
 }
 
 function ProfileMatrix({ scores }: { scores: ScoreResult }) {
