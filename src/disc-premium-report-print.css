@@ -110,3 +110,38 @@
     -webkit-print-color-adjust: exact;
   }
 }
+
+/* APAS brand treatment shared by the DISC technical report. */
+.disc-tech-brand-logo {
+  display: block;
+  width: 24mm;
+  height: auto;
+  max-height: 10mm;
+  object-fit: contain;
+}
+
+.disc-tech-cover-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6mm;
+}
+
+.disc-tech-cover-logo img {
+  display: block;
+  width: 38mm;
+  height: auto;
+  max-height: 16mm;
+  object-fit: contain;
+}
+
+@media print {
+  .disc-tech-brand-logo {
+    width: 24mm;
+    max-height: 10mm;
+  }
+
+  .disc-tech-cover-logo img {
+    width: 38mm;
+    max-height: 16mm;
+  }
+}
