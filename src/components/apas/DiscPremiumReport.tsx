@@ -5,7 +5,7 @@ const coverArtwork = "https://images.unsplash.com/photo-1626220109861-a6bcc8c5b6
 const attentionLeafArtwork = "https://images.unsplash.com/photo-1552152974-19b9caf99137?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=90&w=2400";
 const decisionCompassArtwork = "https://images.unsplash.com/photo-1495153003981-0945a0a25e46?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=90&w=2400";
 const teamHandsArtwork = "https://images.unsplash.com/photo-1702047109910-43af92894dc1?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=90&w=2400";
-import dialogueArtwork from "@/assets/disc-editorial-communication-simple.svg";
+import dialogueArtwork from "@/assets/disc-editorial-dialogue.jpg";
 import selfArtwork from "@/assets/disc-editorial-self.jpg";
 import apasLogoDark from "@/assets/apas-logo.svg";
 import apasLogoLight from "@/assets/apas-logo-dark.svg";
