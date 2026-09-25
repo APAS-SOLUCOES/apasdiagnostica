@@ -4,7 +4,7 @@ import { useServerFn } from "@tanstack/react-start";
 import { useState } from "react";
 import { toast } from "sonner";
 import { z } from "zod";
-import { Copy } from "lucide-react";
+import { Copy, Mail } from "lucide-react";
 import { AppShell } from "@/components/apas/AppShell";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -166,6 +166,18 @@ function NovaAvaliacao() {
                 <p className="break-all rounded-md border border-border bg-background p-3 text-xs">
                   {link}
                 </p>
+                <Button
+                  className="w-full"
+                  onClick={() => {
+                    const subject = encodeURIComponent("Sua avaliação comportamental APAS DIAGNÓSTICA");
+                    const body = encodeURIComponent(
+                      `Olá, ${form.candidate_name}!\n\nSua avaliação comportamental APAS DIAGNÓSTICA foi criada. Para responder, acesse o link abaixo:\n\n${link}\n\nResponda com tranquilidade e atenção.\n\nAPAS Soluções\ncontato@apassolucoes.com.br`
+                    );
+                    window.location.href = `mailto:${form.candidate_email}?subject=${subject}&body=${body}`;
+                  }}
+                >
+                  <Mail className="size-4" /> Enviar por e-mail
+                </Button>
                 <Button
                   variant="outline"
                   className="w-full"
