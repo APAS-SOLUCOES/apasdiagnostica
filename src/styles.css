@@ -1823,3 +1823,83 @@
   font-size: 7pt;
   line-height: 1.4;
 }
+
+
+/* APAS DISC — logo placement and page-fit correction */
+.disc-page-header {
+  align-items: center;
+}
+.disc-page-header > span {
+  color: var(--disc-soft);
+}
+.disc-page-dark .disc-page-header > span {
+  color: oklch(0.98 0 0);
+}
+.disc-page-footer {
+  align-items: center;
+  min-height: 14mm;
+}
+.disc-page-footer .disc-brand-logo {
+  width: 12mm;
+  height: 12mm;
+  max-width: 12mm;
+  max-height: 12mm;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+.disc-page-footer .disc-brand {
+  line-height: 1;
+}
+.disc-page-body {
+  padding-bottom: 28mm;
+}
+
+/* Keep dense editorial pages completely inside their A4 frame. */
+.disc-page[data-page="9"] .disc-signal {
+  padding: 3.5mm;
+  min-height: 28mm;
+}
+.disc-page[data-page="9"] .disc-signal h3,
+.disc-page[data-page="9"] .disc-signal p {
+  font-size: 8.5pt;
+  line-height: 1.35;
+}
+.disc-page[data-page="10"] .disc-signal {
+  padding: 3.5mm;
+  min-height: 27mm;
+}
+.disc-page[data-page="10"] .disc-signal h3,
+.disc-page[data-page="10"] .disc-signal p {
+  font-size: 8.5pt;
+  line-height: 1.35;
+}
+.disc-page[data-page="11"] .disc-development-grid {
+  gap: 2.5mm;
+  margin-top: 4mm;
+}
+.disc-page[data-page="11"] .disc-development-grid > div {
+  padding: 2.5mm 0;
+}
+.disc-page[data-page="11"] .disc-development-grid p {
+  font-size: 8.5pt;
+  line-height: 1.38;
+}
+.disc-page[data-page="11"] .disc-action-box {
+  margin-top: 4mm;
+  padding: 4mm 5mm;
+}
+.disc-page[data-page="11"] .disc-note {
+  font-size: 7.5pt;
+  line-height: 1.35;
+  margin-top: 3mm;
+}
+
+@media (max-width: 760px) {
+  .disc-page-footer .disc-brand-logo {
+    width: 11vw;
+    height: 11vw;
+    max-width: 11vw;
+    max-height: 11vw;
+  }
+}
