@@ -2,6 +2,7 @@ import type { Dimension } from "./instrument";
 import type { ScoreResult } from "./scoring";
 import { DIMENSION_CONTENT } from "./content";
 import { COMBINATION_NARRATIVES } from "./report-content";
+import { getAdaptiveFactorReading, getAdaptiveNarrative } from "./adaptive-content";
 
 export type DiscTechnicalContent = {
   scoringVersion: string;
@@ -75,8 +76,7 @@ function levelText(level: ScoreResult["levels"][Dimension]) {
 
 function factorReading(d: Dimension, scores: ScoreResult) {
   const c = DIMENSION_CONTENT[d];
-  return c.summary + " No seu resultado, " + NAMES[d] + " aparece em nível " +
-    levelText(scores.levels[d]) + " (" + pct(scores.adapted.percent[d]) + "). " +
+  return getAdaptiveFactorReading(d, scores.adapted.percent[d]) + " " +
     c.levels[scores.levels[d]];
 }
 
@@ -97,7 +97,7 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
   const delta = {} as Record<Dimension, number>;
   DIMS.forEach((d) => { delta[d] = round(scores.adapted.percent[d] - scores.natural.percent[d]); });
 
-  const narrative = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES[p + s];
+  const narrative = getAdaptiveNarrative(scores);
   const pContent = DIMENSION_CONTENT[p];
   const sContent = DIMENSION_CONTENT[s];
   const gap = round(scores.primaryGap ?? Math.abs(scores.adapted.percent[p] - scores.adapted.percent[s]));
