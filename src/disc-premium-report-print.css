@@ -63,6 +63,7 @@
   }
 
   body:has(.disc-report) main,
+  body:has(.disc-report) section:has(> .disc-report),
   body:has(.disc-report) .disc-report {
     width: auto !important;
     max-width: none !important;
