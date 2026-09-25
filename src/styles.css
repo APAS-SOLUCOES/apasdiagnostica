@@ -2364,7 +2364,7 @@
   border: 0;
   background:
     conic-gradient(
-      from 0deg,
+      from 270deg,
       var(--disc-red) 0 25%,
       var(--disc-gold) 25% 50%,
       var(--disc-teal) 50% 75%,
