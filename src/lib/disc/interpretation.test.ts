@@ -8,7 +8,15 @@ const makeScores = (
   predominant: Dimension,
   secondary: Dimension,
   natural: Record<Dimension, number> = percent,
-): ScoreResult => ({
+): ScoreResult => {
+  const adaptationIndex = Math.round(
+    (["D", "I", "S", "C"] as Dimension[]).reduce(
+      (total, dimension) => total + Math.abs(percent[dimension] - natural[dimension]),
+      0,
+    ) / 2 * 10,
+  ) / 10;
+
+  return ({
   scoringVersion: "apas-scoring-1.2.0",
   answeredItems: 24,
   totalItems: 24,
@@ -36,11 +44,12 @@ const makeScores = (
     S: percent.S >= 32 ? "alto" : percent.S >= 20 ? "moderado" : "baixo",
     C: percent.C >= 32 ? "alto" : percent.C >= 20 ? "moderado" : "baixo",
   },
-  adaptationIndex: 0,
-  adaptationAlert: false,
+  adaptationIndex,
+  adaptationAlert: adaptationIndex >= 22,
   primaryGap: Math.round((percent[predominant] - percent[secondary]) * 10) / 10,
   closeCombination: percent[predominant] - percent[secondary] <= 3,
-});
+  });
+};
 
 describe("APAS DISC dynamic interpretation", () => {
   it("interprets all 12 ordered primary/secondary combinations", () => {
