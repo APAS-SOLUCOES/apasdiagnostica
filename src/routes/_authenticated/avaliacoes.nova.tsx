@@ -42,7 +42,8 @@ const schema = z.object({
 
 function NovaAvaliacao() {
   const create = useServerFn(createAssessment);
-  const fetchOrgs = useServerFn(listOrganizations);\n  const sendEmail = useServerFn(sendAssessmentEmail);
+  const fetchOrgs = useServerFn(listOrganizations);
+  const sendEmail = useServerFn(sendAssessmentEmail);
   const [form, setForm] = useState({
     candidate_name: "",
     candidate_email: "",
@@ -51,15 +52,33 @@ function NovaAvaliacao() {
     organization_id: "",
     context: "",
   });
-  const [link, setLink] = useState<string | null>(null);\n  const [emailSent, setEmailSent] = useState(false);\n  const [assessmentId, setAssessmentId] = useState<string | null>(null);
+  const [link, setLink] = useState<string | null>(null);
+  const [emailSent, setEmailSent] = useState(false);
+  const [assessmentId, setAssessmentId] = useState<string | null>(null);
 
   const orgs = useQuery({ queryKey: ["organizations"], queryFn: () => fetchOrgs() });
+
+  const emailMutation = useMutation({
+    mutationFn: (id: string) => sendEmail({ data: { assessment_id: id } }),
+    onSuccess: () => {
+      setEmailSent(true);
+      toast.success("E-mail enviado automaticamente.");
+    },
+    onError: (e: unknown) =>
+      toast.error(
+        e instanceof Error
+          ? e.message
+          : "A avaliação foi criada, mas o e-mail não foi enviado.",
+      ),
+  });
 
   const mutation = useMutation({
     mutationFn: (values: z.infer<typeof schema>) => create({ data: values }),
     onSuccess: (row) => {
+      setAssessmentId(row.id);
       setLink(`${window.location.origin}/a/${row.token}`);
-      toast.success("Avaliação criada e link gerado.");
+      setEmailSent(false);
+      emailMutation.mutate(row.id);
     },
     onError: (e: unknown) =>
       toast.error(e instanceof Error ? e.message : "Não foi possível criar a avaliação."),
@@ -168,15 +187,17 @@ function NovaAvaliacao() {
                 </p>
                 <Button
                   className="w-full"
+                  disabled={emailMutation.isPending || !assessmentId}
                   onClick={() => {
-                    const subject = encodeURIComponent("Sua avaliação comportamental APAS DIAGNÓSTICA");
-                    const body = encodeURIComponent(
-                      `Olá, ${form.candidate_name}!\n\nSua avaliação comportamental APAS DIAGNÓSTICA foi criada. Para responder, acesse o link abaixo:\n\n${link}\n\nResponda com tranquilidade e atenção.\n\nAPAS Soluções\ncontato@apassolucoes.com.br`
-                    );
-                    window.location.href = `mailto:${form.candidate_email}?subject=${subject}&body=${body}`;
+                    if (assessmentId) emailMutation.mutate(assessmentId);
                   }}
                 >
-                  <Mail className="size-4" /> Enviar por e-mail
+                  <Mail className="size-4" />{" "}
+                  {emailMutation.isPending
+                    ? "Enviando..."
+                    : emailSent
+                      ? "Reenviar por e-mail"
+                      : "Enviar por e-mail"}
                 </Button>
                 <Button
                   variant="outline"
