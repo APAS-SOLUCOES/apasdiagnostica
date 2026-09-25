@@ -4,7 +4,7 @@ import { LogOut, Menu, X } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import apasLogo from "@/assets/apas-logo-official.webp";
+const apasLogo = "/apas-logo.svg";
 
 const NAV = [
   { to: "/dashboard", label: "Dashboard" },
@@ -41,7 +41,7 @@ export function AppShell({
             <img
               src={apasLogo}
               alt="APAS Soluções"
-              className="h-10 w-10 shrink-0 rounded-sm bg-black object-contain p-0.5"
+              className="h-10 w-10 shrink-0 object-contain p-0.5"
             />
             <span className="font-display text-sm font-semibold tracking-tight">
               APAS <span className="text-primary">DIAGNÓSTICA</span>
