@@ -144,9 +144,15 @@ export function getAdaptiveNarrative(scores: ScoreResult): CombinationNarrative 
       : `Como ${DIMENSION_CONTENT[p].title} e ${DIMENSION_CONTENT[s].title} estão relativamente próximos, vale observar qual deles assume a frente conforme o contexto muda.`,
   ].slice(0, 4);
 
+  const intensityExperiment = band === "dominante" || band === "muito_marcante"
+    ? `Com ${pct(pv)} em ${DIMENSION_CONTENT[p].title}, escolha uma situação por semana para reduzir conscientemente a intensidade desse padrão e testar uma resposta complementar.`
+    : band === "marcante" || band === "presente"
+      ? `Com ${pct(pv)} em ${DIMENSION_CONTENT[p].title}, escolha uma situação por semana para ampliar deliberadamente o recurso de ${DIMENSION_CONTENT[s].title} (${pct(sv)}).`
+      : `Com ${pct(pv)} em ${DIMENSION_CONTENT[p].title}, observe quando esse recurso aparece naturalmente e registre uma situação em que você poderia usá-lo com mais intenção.`;
   const experiments = [
     ...base.experiments,
-    `Praticar conscientemente um comportamento de ${DIMENSION_CONTENT[s].title.toLowerCase()} em uma situação em que ${DIMENSION_CONTENT[p].title.toLowerCase()} costuma aparecer primeiro.`,
+    intensityExperiment,
+    `A diferença de ${pct(gap)} pontos entre ${p} e ${s} mostra onde experimentar equilíbrio: pratique um comportamento de ${DIMENSION_CONTENT[s].title.toLowerCase()} em uma situação em que ${DIMENSION_CONTENT[p].title.toLowerCase()} costuma aparecer primeiro.`,
   ].slice(0, 3);
 
   return {
