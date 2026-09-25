@@ -2294,3 +2294,151 @@
     padding: 1.7mm 2mm;
   }
 }
+
+
+/* APAS DISC — Page 3: approved profile wheel composition + final S/C visibility correction */
+.disc-page[data-page="3"] .disc-profile-overview {
+  display: block;
+  margin-bottom: 4mm;
+}
+
+.disc-page[data-page="3"] .disc-profile-donut-wrap {
+  border: 0;
+  padding: 0;
+  margin-bottom: 4mm;
+}
+
+.disc-page[data-page="3"] .disc-profile-donut-stage {
+  position: relative;
+  min-height: 78mm;
+  display: grid;
+  place-items: center;
+}
+
+.disc-page[data-page="3"] .disc-profile-donut {
+  width: 55mm;
+  height: 55mm;
+}
+
+.disc-page[data-page="3"] .disc-profile-donut::before {
+  inset: 8mm;
+}
+
+.disc-page[data-page="3"] .disc-profile-donut strong {
+  font-size: 18pt;
+}
+
+.disc-page[data-page="3"] .disc-profile-donut small {
+  font-size: 7pt;
+  line-height: 1.25;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.disc-profile-label {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  gap: .4mm;
+  min-width: 22mm;
+}
+
+.disc-profile-label strong {
+  font-family: var(--font-display);
+  font-size: 20pt;
+  line-height: 1;
+}
+
+.disc-profile-label b {
+  font-size: 11pt;
+  color: var(--disc-ink);
+}
+
+.disc-profile-label small {
+  color: var(--disc-soft);
+  font-size: 6pt;
+}
+
+.disc-profile-label-d { left: 12mm; top: 10mm; color: var(--disc-red); }
+.disc-profile-label-i { right: 12mm; top: 10mm; color: var(--disc-gold); text-align: right; }
+
+/* Final correction requested from the approved screenshot:
+   keep S and C fully inside the Page 3 visual area. */
+.disc-profile-label-s { left: 12mm; bottom: 14mm; color: var(--disc-green); }
+.disc-profile-label-c { right: 12mm; bottom: 14mm; color: var(--disc-teal); text-align: right; }
+
+.disc-profile-label b,
+.disc-profile-label small {
+  color: var(--disc-ink);
+}
+
+.disc-page-dark .disc-profile-label b,
+.disc-page-dark .disc-profile-label small {
+  color: oklch(0.97 0 0);
+}
+
+.disc-page[data-page="3"] .disc-profile-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3mm;
+}
+
+.disc-page[data-page="3"] .disc-profile-panel {
+  padding: 4mm;
+  border-color: var(--disc-line);
+  border-radius: 3mm;
+}
+
+.disc-page[data-page="3"] .disc-profile-panel h3 {
+  margin-bottom: 1mm;
+  font-size: 12pt;
+}
+
+.disc-page[data-page="3"] .disc-profile-panel > p {
+  min-height: 9mm;
+  margin-bottom: 2mm;
+  font-size: 7.5pt;
+}
+
+.disc-page[data-page="3"] .disc-horizontal-chart {
+  display: grid;
+  gap: 2.2mm;
+}
+
+.disc-page[data-page="3"] .disc-horizontal-row {
+  display: grid;
+  grid-template-columns: 5mm 1fr 11mm;
+  align-items: center;
+  gap: 1.5mm;
+}
+
+.disc-page[data-page="3"] .disc-horizontal-row > strong {
+  font-family: var(--font-display);
+  font-size: 9pt;
+}
+
+.disc-page[data-page="3"] .disc-horizontal-row > b {
+  font-size: 7.5pt;
+  text-align: right;
+}
+
+.disc-page[data-page="3"] .disc-horizontal-track {
+  height: 3.2mm;
+  overflow: hidden;
+  border-radius: 99px;
+  background: oklch(0.26 0.02 220);
+}
+
+.disc-page[data-page="3"] .disc-horizontal-track span {
+  display: block;
+  height: 100%;
+  min-width: 1mm;
+  border-radius: inherit;
+}
+
+@media (max-width: 760px) {
+  .disc-page[data-page="3"] .disc-profile-donut-stage {
+    min-height: 78mm;
+  }
+  .disc-profile-label-s { bottom: 14mm; }
+  .disc-profile-label-c { bottom: 14mm; }
+}
