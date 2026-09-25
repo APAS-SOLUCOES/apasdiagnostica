@@ -1043,8 +1043,9 @@
 
 .disc-cover-wordmark {
   position: absolute !important;
-  left: 18mm;
-  top: 83mm;
+  left: auto;
+  right: 18mm;
+  top: 91mm;
   z-index: 1;
   font-family: var(--font-display);
   font-size: 52pt;
@@ -1992,19 +1993,24 @@
 
 /* Cover: give the primary APAS mark more visual presence without crowding the title. */
 .disc-cover-brand .disc-brand-logo {
-  width: 24mm;
-  height: 24mm;
-  max-width: 24mm;
-  max-height: 24mm;
+  width: 28mm;
+  height: 28mm;
+  max-width: 28mm;
+  max-height: 28mm;
 }
 @media (max-width: 760px) {
   .disc-cover-brand .disc-brand-logo {
-    width: 22vw;
-    height: 22vw;
-    max-width: 25mm;
-    max-height: 25mm;
+    width: 25vw;
+    height: 25vw;
+    max-width: 29mm;
+    max-height: 29mm;
   }
 }
 .disc-signature {
   margin-top: 12mm;
+}
+
+/* Final page: keep the footer mark clear of the closing signature text. */
+.disc-page[data-page="12"] .disc-signature {
+  margin-bottom: 17mm;
 }
