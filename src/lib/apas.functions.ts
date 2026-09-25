@@ -110,6 +110,89 @@ export const createAssessment = createServerFn({ method: "POST" })
     return row;
   });
 
+
+export const sendAssessmentEmail = createServerFn({ method: "POST" })
+  .middleware([requireSupabaseAuth])
+  .inputValidator((input: unknown) =>
+    z.object({ assessment_id: z.string().uuid() }).parse(input),
+  )
+  .handler(async ({ data, context }) => {
+    const { data: assessment, error } = await context.supabase
+      .from("assessments")
+      .select("id, candidate_name, candidate_email, token, coach_id")
+      .eq("id", data.assessment_id)
+      .single();
+
+    if (error || !assessment) throw new Error(error?.message ?? "Avaliação não encontrada.");
+    if (assessment.coach_id !== context.userId) {
+      throw new Error("Você não tem permissão para enviar esta avaliação.");
+    }
+
+    const apiKey = process.env["RESEND_API_KEY"];
+    if (!apiKey) {
+      throw new Error(
+        "O envio automático de e-mail ainda não está configurado. Adicione RESEND_API_KEY aos segredos do aplicativo.",
+      );
+    }
+
+    const from =
+      process.env["RESEND_FROM_EMAIL"] ||
+      "APAS Soluções <contato@apassolucoes.com.br>";
+    const replyTo =
+      typeof context.claims?.email === "string" &&
+      /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(context.claims.email)
+        ? context.claims.email
+        : undefined;
+    const baseUrl =
+      process.env["PUBLIC_APP_URL"] || "https://apasdiagnostica.online";
+    const link = baseUrl.replace(/\\/$/, "") + "/a/" + assessment.token;
+    const name = assessment.candidate_name
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+
+    const html = [
+      '<div style="font-family:Arial,sans-serif;line-height:1.6;color:#171717;max-width:640px;margin:0 auto">',
+      '<h2 style="margin-bottom:8px">APAS DIAGNÓSTICA</h2>',
+      '<p>Olá, ' + name + '!</p>',
+      '<p>Sua avaliação comportamental foi criada. Para responder, acesse o link abaixo:</p>',
+      '<p style="margin:24px 0"><a href="' + link + '" style="display:inline-block;padding:12px 20px;background:#111;color:#fff;text-decoration:none;border-radius:6px">Acessar minha avaliação</a></p>',
+      '<p style="font-size:13px;color:#666">Se o botão não abrir, copie e cole este endereço no navegador:</p>',
+      '<p style="font-size:13px;word-break:break-all">' + link + '</p>',
+      '<p>Responda com tranquilidade e atenção.</p>',
+      '<p style="margin-top:28px">APAS Soluções</p>',
+      '</div>',
+    ].join("");
+
+    const response = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: "Bearer " + apiKey,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from,
+        ...(replyTo ? { reply_to: replyTo } : {}),
+        to: [assessment.candidate_email],
+        subject: "Sua avaliação comportamental APAS DIAGNÓSTICA",
+        html,
+      }),
+    });
+
+    if (!response.ok) {
+      const details = await response.text();
+      console.error("[Resend] Email send failed:", details);
+      throw new Error(
+        "O Resend recusou o envio do e-mail. Verifique o domínio/remetente configurado.",
+      );
+    }
+
+    const result = (await response.json()) as { id?: string };
+    return { ok: true, id: result.id ?? null, to: assessment.candidate_email };
+  });
+
 export const deleteAssessment = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((input: unknown) => z.object({ id: z.string().uuid() }).parse(input))
