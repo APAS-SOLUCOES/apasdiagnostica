@@ -1903,3 +1903,88 @@
     max-height: 11vw;
   }
 }
+
+
+/* APAS DISC — final visual/fit correction */
+.disc-brand-logo {
+  width: 16mm;
+  height: 16mm;
+  max-width: 16mm;
+  max-height: 16mm;
+  border-radius: 0;
+  background: transparent;
+}
+.disc-page-footer .disc-brand-logo {
+  width: 11mm;
+  height: 11mm;
+  max-width: 11mm;
+  max-height: 11mm;
+  margin-bottom: -1mm;
+}
+.disc-page-footer .disc-brand {
+  align-items: center;
+}
+.disc-page-dark .disc-page-header > span {
+  color: oklch(0.98 0 0) !important;
+}
+.disc-page-dark .disc-page-header {
+  color: oklch(0.98 0 0);
+}
+
+/* The editorial pages are composed as A4 sheets; scale only dense body content
+   so text never crosses the fixed sheet boundary or gets clipped. */
+.disc-page[data-page="5"] .disc-page-body,
+.disc-page[data-page="6"] .disc-page-body,
+.disc-page[data-page="7"] .disc-page-body,
+.disc-page[data-page="8"] .disc-page-body,
+.disc-page[data-page="9"] .disc-page-body,
+.disc-page[data-page="10"] .disc-page-body,
+.disc-page[data-page="11"] .disc-page-body,
+.disc-page[data-page="12"] .disc-page-body {
+  transform: scale(.90);
+  transform-origin: top left;
+  width: 111.111%;
+}
+.disc-page[data-page="5"] .disc-signal,
+.disc-page[data-page="6"] .disc-signal,
+.disc-page[data-page="7"] .disc-signal,
+.disc-page[data-page="8"] .disc-signal,
+.disc-page[data-page="9"] .disc-signal,
+.disc-page[data-page="10"] .disc-signal {
+  margin-top: 3mm;
+  padding: 3.5mm;
+}
+.disc-page[data-page="5"] .disc-page-title,
+.disc-page[data-page="6"] .disc-page-title,
+.disc-page[data-page="7"] .disc-page-title,
+.disc-page[data-page="8"] .disc-page-title,
+.disc-page[data-page="9"] .disc-page-title,
+.disc-page[data-page="10"] .disc-page-title,
+.disc-page[data-page="11"] .disc-page-title,
+.disc-page[data-page="12"] .disc-page-title {
+  margin-bottom: 6mm;
+}
+.disc-page[data-page="11"] .disc-development-grid {
+  gap: 2.5mm;
+  margin-top: 3mm;
+}
+.disc-page[data-page="11"] .disc-development-grid > div {
+  padding: 2.5mm 0;
+}
+.disc-page[data-page="11"] .disc-action-box {
+  margin-top: 3mm;
+  padding: 3.5mm 4mm;
+}
+@media (max-width: 760px) {
+  .disc-page[data-page="5"] .disc-page-body,
+  .disc-page[data-page="6"] .disc-page-body,
+  .disc-page[data-page="7"] .disc-page-body,
+  .disc-page[data-page="8"] .disc-page-body,
+  .disc-page[data-page="9"] .disc-page-body,
+  .disc-page[data-page="10"] .disc-page-body,
+  .disc-page[data-page="11"] .disc-page-body,
+  .disc-page[data-page="12"] .disc-page-body {
+    transform: scale(.86);
+    width: 116.28%;
+  }
+}
