@@ -94,6 +94,7 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
   const p = scores.predominant;
   const s = scores.secondary;
   const o = order(scores);
+  const [first = "D", second = "I", third = "S", fourth = "C"] = o;
   const delta = {} as Record<Dimension, number>;
   DIMS.forEach((d) => { delta[d] = round(scores.adapted.percent[d] - scores.natural.percent[d]); });
 
@@ -108,13 +109,13 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
     ...(narrative?.best ?? []),
     pContent.strengths[0],
     sContent.strengths[0],
-  ].filter(Boolean))].slice(0, 4);
+  ].filter((item): item is string => typeof item === "string" && item.length > 0))].slice(0, 4);
 
   const attention = [...new Set([
     ...(narrative?.excess ?? []),
     pContent.attention[0],
     sContent.attention[0],
-  ].filter(Boolean))].slice(0, 4);
+  ].filter((item): item is string => typeof item === "string" && item.length > 0))].slice(0, 4);
 
   return {
     profileName: p + s + " — " + NAMES[p] + " + " + NAMES[s],
@@ -137,7 +138,7 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
     communication: narrative?.communication ?? pContent.communication,
     decision: narrative?.decision ?? pContent.headline,
     teamwork: narrative?.team ?? (pContent.summary + " Em equipe, " + sContent.headline.toLowerCase() + " também pode influenciar sua participação."),
-    pressureChange: (narrative?.pressure ?? "Sob pressão, " + pContent.attention[0].toLowerCase()) + " " +
+    pressureChange: (narrative?.pressure ?? "Sob pressão, " + (pContent.attention[0] ?? "").toLowerCase()) + " " +
       (narrative?.change ?? ""),
     development: [...new Set([
       ...(narrative?.experiments ?? []),
@@ -145,13 +146,13 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
       ...sContent.development.slice(0, 1),
     ])].slice(0, 4),
     adaptation: adaptationText(scores, delta),
-    profileBalance: "A distribuição vai de " + pct(scores.adapted.percent[o[0]]) + " em " + NAMES[o[0]] +
-      " a " + pct(scores.adapted.percent[o[3]]) + " em " + NAMES[o[3]] + ". Os dois primeiros fatores têm " +
+    profileBalance: "A distribuição vai de " + pct(scores.adapted.percent[first]) + " em " + NAMES[first] +
+      " a " + pct(scores.adapted.percent[fourth]) + " em " + NAMES[fourth] + ". Os dois primeiros fatores têm " +
       pct(gap) + " pontos percentuais de diferença, indicando uma composição " + (close ? "mais próxima entre os fatores principais." : "com maior predominância do primeiro fator."),
     secondaryInfluence: NAMES[s] + (gap <= 3 ? " atua quase no mesmo nível do fator principal." : gap <= 7 ? " tem presença relevante ao lado do fator principal." : " aparece como influência complementar.") +
       " Ela acrescenta " + (sContent.headline.toLowerCase()) + " à leitura conjunta.",
-    lowerFactors: NAMES[o[3]] + " é o fator menos acentuado (" + pct(scores.adapted.percent[o[3]]) +
-      "), enquanto " + NAMES[o[2]] + " ocupa a terceira posição (" + pct(scores.adapted.percent[o[2]]) +
+    lowerFactors: NAMES[fourth] + " é o fator menos acentuado (" + pct(scores.adapted.percent[fourth]) +
+      "), enquanto " + NAMES[third] + " ocupa a terceira posição (" + pct(scores.adapted.percent[third]) +
       "). Menor expressão relativa não significa ausência da característica.",
     intensitySummary: o.map((d) => d + " " + pct(scores.adapted.percent[d]) + " — " + levelText(scores.levels[d])).join(" · "),
     technical: {
@@ -168,8 +169,8 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
       adapted: scores.adapted.percent,
       delta,
       strongestDelta,
-      highestFactor: o[0],
-      lowestFactor: o[3],
+      highestFactor: first,
+      lowestFactor: fourth,
     },
     technicalSignals: {
       intensity: scores.levels,
@@ -177,8 +178,8 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
       closeCombination: close,
       naturalVsAdaptedDelta: delta,
       strongestDelta,
-      highestFactor: o[0],
-      lowestFactor: o[3],
+      highestFactor: first,
+      lowestFactor: fourth,
     },
     conclusion: "Seu resultado representa tendências comportamentais observadas neste instrumento e não uma identidade fixa. A leitura deve considerar a combinação, as intensidades, o contexto e as diferenças entre Natural e Adaptado.",
   };

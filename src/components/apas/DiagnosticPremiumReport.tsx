@@ -116,7 +116,7 @@ export function DiagnosticPremiumReport({ content, released }: DiagnosticPremium
         <h2 style={{ fontSize: 30, margin: "10px 0 22px" }}>{content.stage.predominant ?? "Estágio não determinado"}</h2>
         <p style={{ fontSize: 17, lineHeight: 1.6 }}>{content.stage.inTransition ? `Zona de transição: ${content.stage.transitionLabel ?? "resultados próximos"}.` : "A leitura apresenta uma afinidade predominante entre os estágios configurados."}</p>
         {content.sections.slice(0, 1).map((section) => <Section key={section.title} {...section} />)}
-        <Section title="Fatores que contribuíram para o resultado" bullets={content.sections.find((section) => section.title === "Forças identificadas")?.bullets} />
+        <Section title="Fatores que contribuíram para o resultado" bullets={content.sections.find((section) => section.title === "Forças identificadas")?.bullets ?? []} />
       </section>
 
       <section className="diagnostic-report-page" style={pageStyle}>

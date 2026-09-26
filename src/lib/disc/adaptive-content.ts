@@ -109,7 +109,7 @@ function buildSituationMap(scores: ScoreResult, base: CombinationNarrative) {
   const pName = DIMENSION_CONTENT[p].title.toLowerCase();
   const sName = DIMENSION_CONTENT[s].title.toLowerCase();
   return {
-    work: `No trabalho, sua combinação tende a aparecer na maneira como você organiza energia, prioridade e entrega. Com ${pct(pv)} em ${p}, ${pName} costuma entrar primeiro quando você precisa responder ao que está diante de você. Os ${pct(sv)} de ${s} acrescentam uma segunda linguagem para lidar com pessoas, ritmo, detalhes ou continuidade. Isso significa que seu melhor desempenho pode surgir quando o ambiente permite usar sua força principal sem obrigá-la a resolver tudo sozinha. A contribuição cresce quando você reconhece qual recurso a situação pede e acessa deliberadamente o segundo fator quando necessário. ${base.best[0]} e, ao mesmo tempo, vale observar ${base.excess[0].toLowerCase()}.`,
+    work: `No trabalho, sua combinação tende a aparecer na maneira como você organiza energia, prioridade e entrega. Com ${pct(pv)} em ${p}, ${pName} costuma entrar primeiro quando você precisa responder ao que está diante de você. Os ${pct(sv)} de ${s} acrescentam uma segunda linguagem para lidar com pessoas, ritmo, detalhes ou continuidade. Isso significa que seu melhor desempenho pode surgir quando o ambiente permite usar sua força principal sem obrigá-la a resolver tudo sozinha. A contribuição cresce quando você reconhece qual recurso a situação pede e acessa deliberadamente o segundo fator quando necessário. ${base.best[0]} e, ao mesmo tempo, vale observar ${(base.excess[0] ?? "").toLowerCase()}.`,
     relationships: `Nas relações, a intenção por trás do seu comportamento pode ser diferente do impacto percebido. Sua preferência por ${pName} pode fazer com que você entre na situação buscando ${FACTOR_SHORT[p]}, enquanto ${sName} oferece outro caminho para construir conexão e entendimento. Pessoas com ritmos diferentes podem precisar de mais contexto, mais espaço, mais objetividade ou mais segurança do que você espontaneamente oferece. Quando você percebe essa diferença cedo, consegue preservar autenticidade sem exigir que os outros funcionem no mesmo ritmo. ${base.perceived}`,
     decisions: `Ao decidir, seu perfil mostra uma tendência a privilegiar ${FACTOR_SHORT[p]} e complementar essa escolha com ${FACTOR_SHORT[s]}. Em decisões simples, isso pode gerar agilidade e confiança. Em decisões complexas, a mesma preferência pode precisar de uma pausa intencional para verificar informações, impactos, alternativas e pessoas envolvidas. A pergunta mais produtiva não é se você deve decidir de outro jeito, mas qual elemento do contexto merece entrar na decisão antes do fechamento. ${base.decision}`,
     leadership: `Na liderança, sua assinatura comportamental pode aparecer com força porque outras pessoas observam não apenas o que você diz, mas o ritmo, o padrão e o clima que você cria. ${base.leadership} Em situações diferentes, vale alternar conscientemente entre ${FACTOR_SHORT[p]} e ${FACTOR_SHORT[s]}, principalmente quando o comportamento que funciona para iniciar uma tarefa não é o mesmo que sustenta pessoas até a conclusão. ${base.team}`,
@@ -117,7 +117,8 @@ function buildSituationMap(scores: ScoreResult, base: CombinationNarrative) {
 }
 
 export function getAdaptiveNarrative(scores: ScoreResult): CombinationNarrative {
-  const base = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES[`${scores.predominant}${scores.secondary}`] ?? COMBINATION_NARRATIVES.DI;
+  const base = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES[`${scores.predominant}${scores.secondary}`] ?? COMBINATION_NARRATIVES["DI"];
+  if (!base) throw new Error("Narrativa DISC indisponível.");
   const p = scores.predominant;
   const s = scores.secondary;
   const pv = scores.adapted.percent[p];
@@ -152,7 +153,7 @@ export function getAdaptiveNarrative(scores: ScoreResult): CombinationNarrative 
       ? `Com ${pct(pv)} em ${DIMENSION_CONTENT[p].title}, escolha uma situação por semana para ampliar deliberadamente o recurso de ${DIMENSION_CONTENT[s].title} (${pct(sv)}).`
       : `Com ${pct(pv)} em ${DIMENSION_CONTENT[p].title}, observe quando esse recurso aparece naturalmente e registre uma situação em que você poderia usá-lo com mais intenção.`;
   const experiments = [
-    base.experiments[0],
+    base.experiments[0] ?? intensityExperiment,
     intensityExperiment,
     `A diferença de ${pct(gap)} pontos entre ${p} e ${s} mostra onde experimentar equilíbrio: pratique um comportamento de ${DIMENSION_CONTENT[s].title.toLowerCase()} em uma situação em que ${DIMENSION_CONTENT[p].title.toLowerCase()} costuma aparecer primeiro.`,
   ];
@@ -303,7 +304,8 @@ const COMBINATION_IMPACT: Record<string, ImpactCombination[]> = {
 function combinationImpact(combination: string, primaryValue: number, gap: number) {
   const options = COMBINATION_IMPACT[combination] ?? COMBINATION_IMPACT.DI;
   const index = gap <= 3 ? 0 : gap <= 8 ? 1 : 2;
-  const selected = options[index];
+  const selected = options?.[index] ?? COMBINATION_IMPACT["DI"]?.[0];
+  if (!selected) throw new Error("Combinação DISC indisponível.");
   return {
     title: selected.title,
     phrase: `${selected.phrase} Os dois fatores principais aparecem em ${pct(primaryValue)} e com uma diferença de ${pct(gap)} pontos.`,
@@ -312,7 +314,7 @@ function combinationImpact(combination: string, primaryValue: number, gap: numbe
 
 function impactIdentity(d: Dimension, value: number) {
   const choices = IMPACT_IDENTITIES[d];
-  let identity = choices[0][1];
+  let identity = choices[0]?.[1] ?? "";
   for (const [min, label] of choices) if (value >= min) identity = label;
   return identity;
 }

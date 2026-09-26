@@ -92,7 +92,7 @@ function CommunicationCards({ primary }: { primary: string }) {
     C: [["Comunicação Direta", "Seja claro, objetivo e apoiado em critérios."], ["Influência Positiva", "Mostre como qualidade e precisão ajudam o coletivo."], ["Escuta Ativa", "Pergunte e valide antes de concluir."], ["Lógica e Clareza", "Informações precisas e bem estruturadas favorecem seu melhor desempenho."]],
   };
   const icons = [MessageCircle, Users, Target, BarChart3];
-  return <div className="tech-communication-grid">{data[primary].map(([t, b], i) => { const Icon = icons[i]; return <div key={t}><Icon/><section><strong>{t}</strong><p>{b}</p></section></div>; })}</div>;
+  return <div className="tech-communication-grid">{(data[primary] ?? data.D ?? []).map(([t, b], i) => { const Icon = icons[i] ?? MessageCircle; return <div key={t}><Icon/><section><strong>{t}</strong><p>{b}</p></section></div>; })}</div>;
 }
 
 export function DiscTechnicalReport({ assessment, scores, computedAt }: { assessment: TechnicalAssessment; scores: ScoreResult; computedAt?: string | null }) {
