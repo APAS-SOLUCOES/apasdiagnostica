@@ -302,7 +302,7 @@ const COMBINATION_IMPACT: Record<string, ImpactCombination[]> = {
 };
 
 function combinationImpact(combination: string, primaryValue: number, gap: number) {
-  const options = COMBINATION_IMPACT[combination] ?? COMBINATION_IMPACT.DI;
+  const options = COMBINATION_IMPACT[combination] ?? COMBINATION_IMPACT["DI"];
   const index = gap <= 3 ? 0 : gap <= 8 ? 1 : 2;
   const selected = options?.[index] ?? COMBINATION_IMPACT["DI"]?.[0];
   if (!selected) throw new Error("Combinação DISC indisponível.");
