@@ -145,7 +145,7 @@ export const sendAssessmentEmail = createServerFn({ method: "POST" })
         : undefined;
     const baseUrl =
       process.env["PUBLIC_APP_URL"] || "https://apasdiagnostica.online";
-    const link = baseUrl.replace(/\\/$/, "") + "/a/" + assessment.token;
+    const link = baseUrl.replace(/\/$/, "") + "/a/" + assessment.token;
     const name = assessment.candidate_name
       .replaceAll("&", "&amp;")
       .replaceAll("<", "&lt;")
