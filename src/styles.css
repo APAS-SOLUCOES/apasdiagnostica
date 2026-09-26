@@ -3198,3 +3198,111 @@
   .tech-approved-report { padding:0; }
   .tech-approved-page { width:100%; min-height:100vh; height:auto; margin:0; }
 }
+
+/* APAS DISC — FINAL 12-PAGE CONSOLIDATION */
+/* Consolidated visual pass: preserve approved content and improve hierarchy,
+   spacing, legibility and editorial balance without changing DISC calculations. */
+
+.disc-page:not(.disc-cover) .disc-page-body { padding-top: 31mm; }
+.disc-page:not(.disc-cover) .disc-page-header { top: 8mm; min-height: 17mm; }
+.disc-page:not(.disc-cover) .disc-page-header .disc-brand-logo { width: 14mm; height: 14mm; max-width: 14mm; max-height: 14mm; }
+.disc-page:not(.disc-cover) .disc-kicker { margin-bottom: 4mm; }
+.disc-page:not(.disc-cover) .disc-title-row { align-items: center; gap: 5mm; }
+.disc-page:not(.disc-cover) .disc-title-row > svg { width: 6mm; height: 6mm; }
+.disc-page:not(.disc-cover) .disc-page-title { margin-bottom: 7mm; letter-spacing: -.018em; }
+
+.disc-page[data-page="3"] .disc-page-body { padding-top: 32mm; }
+.disc-page[data-page="3"] .disc-page-title { margin-bottom: 10mm; }
+.disc-page[data-page="3"] .disc-profile-donut-stage { min-height: 79mm; }
+.disc-page[data-page="3"] .disc-profile-donut {
+  width: 62mm; height: 62mm;
+  box-shadow: 0 5mm 12mm rgba(0,0,0,.22), inset 0 0 0 1px rgba(255,255,255,.08);
+}
+.disc-page[data-page="3"] .disc-profile-donut::before { inset: 9.5mm; box-shadow: inset 0 0 0 1px rgba(255,255,255,.06); }
+.disc-page[data-page="3"] .disc-profile-donut strong { font-size: 20pt; letter-spacing: .02em; }
+.disc-page[data-page="3"] .disc-profile-label-d { left: 7mm; top: 12mm; }
+.disc-page[data-page="3"] .disc-profile-label-i { right: 7mm; top: 12mm; }
+.disc-page[data-page="3"] .disc-profile-label-s { left: 7mm; bottom: 10mm; }
+.disc-page[data-page="3"] .disc-profile-label-c { right: 7mm; bottom: 10mm; }
+.disc-page[data-page="3"] .disc-profile-grid { gap: 4mm; }
+.disc-page[data-page="3"] .disc-profile-panel { padding: 4.5mm; border-radius: 3.5mm; box-shadow: 0 2mm 6mm rgba(0,0,0,.06); }
+.disc-page[data-page="3"] .disc-index { margin-block: 5mm; padding: 5mm 6mm; }
+
+.disc-page[data-page="4"] .disc-profile-identity { margin-top: 1mm; margin-bottom: 6mm; }
+.disc-page[data-page="4"] .disc-opening,
+.disc-page[data-page="4"] .disc-body-copy { max-width: 158mm; line-height: 1.62; }
+.disc-page[data-page="4"] .disc-body-copy + .disc-body-copy { margin-top: 5mm; }
+.disc-page[data-page="4"] .disc-impact-intro { margin-top: 7mm; padding: 6mm 7mm; }
+
+.disc-page[data-page="5"] .disc-strength-grid { gap: 4mm; margin-top: 8mm; }
+.disc-page[data-page="5"] .disc-strength-grid > div {
+  min-height: 29mm; padding: 5mm 6mm; border-radius: 2mm; box-shadow: 0 2mm 7mm rgba(0,0,0,.045);
+}
+.disc-page[data-page="5"] .disc-strength-grid > div > svg { margin-bottom: 2mm; }
+
+.disc-page[data-page="6"] .disc-page-title { color: #fff !important; text-shadow: 0 2px 8px rgba(0,0,0,.55); }
+.disc-page[data-page="6"] .disc-page-subtitle { color: rgba(255,255,255,.82); }
+.disc-page[data-page="6"] .disc-kicker { color: var(--disc-red) !important; text-shadow: 0 1px 5px rgba(0,0,0,.65); }
+.disc-page[data-page="6"] .disc-title-row { border-bottom: 1px solid rgba(255,255,255,.18); padding-bottom: 3mm; }
+.disc-page[data-page="6"] .disc-page-atmosphere-content { padding-top: 2mm; }
+
+.disc-page[data-page="7"] .disc-editorial-image {
+  float: none; width: 100%; height: 48mm; margin: 1mm 0 6mm;
+  border-radius: 2mm; overflow: hidden; box-shadow: 0 3mm 10mm rgba(0,0,0,.10);
+}
+.disc-page[data-page="7"] .disc-editorial-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 48%; }
+.disc-page[data-page="7"] .disc-perception { gap: 4mm; }
+.disc-page[data-page="7"] .disc-perception > div { padding: 5.5mm 6mm; }
+
+.disc-page[data-page="8"] .disc-editorial-image {
+  height: 51mm; margin-top: 1mm; margin-bottom: 7mm; border-radius: 2mm;
+  box-shadow: 0 3mm 12mm rgba(0,0,0,.16);
+}
+.disc-page[data-page="8"] .disc-editorial-image img { height: 100%; object-position: center; }
+.disc-page[data-page="8"] .disc-signal-grid { gap: 4mm; }
+
+.disc-page[data-page="9"] .disc-banner-art {
+  height: 54mm; margin-top: 1mm; margin-bottom: 7mm; border-radius: 2mm;
+  box-shadow: 0 3mm 12mm rgba(0,0,0,.12);
+}
+.disc-page[data-page="9"] .disc-banner-art img { object-position: center 50%; transform: scale(1.08); }
+.disc-page[data-page="9"] .disc-signal { min-height: 30mm; padding: 4.5mm 5mm; }
+
+.disc-page[data-page="10"] .disc-banner-art {
+  height: 50mm; margin-top: 1mm; margin-bottom: 7mm; border-radius: 2mm;
+  box-shadow: 0 3mm 12mm rgba(0,0,0,.22);
+}
+.disc-page[data-page="10"] .disc-banner-art img { object-position: center 45%; transform: scale(1.04); }
+.disc-page[data-page="10"] .disc-banner-art-dark > div { background: linear-gradient(90deg, rgba(0,0,0,.52), rgba(0,0,0,.10)); }
+
+.disc-page[data-page="11"] .disc-development-grid { gap: 3.5mm; margin-top: 7mm; }
+.disc-page[data-page="11"] .disc-development-grid > div {
+  grid-template-columns: 12mm 1fr; gap: 4mm; padding: 3.5mm 4mm;
+  border: 1px solid var(--disc-line); border-left: 3px solid var(--disc-red);
+  border-radius: 1.5mm; background: rgba(255,255,255,.58);
+}
+.disc-page[data-page="11"] .disc-development-grid > div > span { width: 9mm; height: 9mm; }
+.disc-page[data-page="11"] .disc-action-box {
+  margin-top: 7mm; padding: 5.5mm 6mm; border-radius: 2mm;
+  background: oklch(.985 0 0); box-shadow: 0 2mm 8mm rgba(0,0,0,.05);
+}
+
+.disc-page[data-page="12"] .disc-page-title { color: #fff !important; text-shadow: 0 2px 8px rgba(0,0,0,.55); }
+.disc-page[data-page="12"] .disc-kicker { color: var(--disc-red) !important; }
+.disc-page[data-page="12"] .disc-closing { max-width: 157mm; margin-top: 3mm; font-size: 11pt; line-height: 1.62; }
+.disc-page[data-page="12"] .disc-combination {
+  margin-top: 8mm; padding: 6mm 7mm; border: 1px solid rgba(255,255,255,.14);
+  border-left: 3px solid var(--disc-red); background: rgba(255,255,255,.055); border-radius: 1.5mm;
+}
+.disc-page[data-page="12"] .disc-combination p,
+.disc-page[data-page="12"] .disc-combination h3 { color: #fff; }
+.disc-page[data-page="12"] .disc-two-columns { gap: 4mm; margin-top: 6mm; }
+
+@media (max-width: 760px) {
+  .disc-page:not(.disc-cover) .disc-page-body { padding-top: 31mm; }
+  .disc-page[data-page="3"] .disc-profile-donut { width: 62mm; height: 62mm; }
+  .disc-page[data-page="7"] .disc-editorial-image,
+  .disc-page[data-page="8"] .disc-editorial-image { height: 48mm; }
+  .disc-page[data-page="9"] .disc-banner-art { height: 54mm; }
+  .disc-page[data-page="10"] .disc-banner-art { height: 50mm; }
+}
