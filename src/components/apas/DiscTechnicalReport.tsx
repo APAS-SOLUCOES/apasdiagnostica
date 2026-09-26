@@ -22,7 +22,7 @@ function pct(n: number) {
 
 function TechnicalPage({ number, title, kicker, children, dark = false }: { number: number; title: string; kicker: string; children: ReactNode; dark?: boolean }) {
   const logo = dark ? apasLogoWhite : apasLogoDark;
-  return <section data-page={number} className={`disc-tech-page ${dark ? "disc-tech-page-dark" : ""}`}><header><span className="disc-tech-brand"><img className="disc-tech-brand-logo" src={logo} alt="APAS Soluções" /></span><span>Relatório técnico · Gestão de pessoas</span></header><main><p className="disc-tech-kicker">{kicker}</p><h1>{title}</h1>{children}</main><footer><span>APAS Soluções · Uso confidencial · Especialista autorizado</span><span>{String(number).padStart(2, "0")}</span></footer></section>;
+  return <section data-page={number} className={`disc-tech-page ${dark ? "disc-tech-page-dark" : ""}`}><header><span className="disc-tech-brand"><img className="disc-tech-brand-logo" src={logo} alt="APAS Soluções" /></span><span>Relatório técnico · Gestão de pessoas</span></header><main><p className="disc-tech-kicker">{kicker}</p><h1>{title}</h1>{children}</main><footer><span>PESSOAS | ESTRATÉGIAS | RESULTADOS</span><span>{String(number).padStart(2, "0")}</span></footer></section>;
 }
 
 function ProfileMatrix({ scores }: { scores: ScoreResult }) {
@@ -64,7 +64,7 @@ export function DiscTechnicalReport({ assessment, scores, computedAt }: { assess
     : "A distância entre os perfis não acionou alerta automático. Ainda assim, valide em quais ambientes a pessoa amplia, reduz ou alterna comportamentos.";
 
   return <article className="disc-technical-report" aria-label={`Relatório técnico de ${assessment.candidate_name}`}>
-    <TechnicalPage number={1} kicker="Síntese para gestão" title="Leitura técnica APAS DISC" dark>
+    <TechnicalPage number={1} kicker="Análise comportamental" title="RELATÓRIO TÉCNICO DISC" dark>
       <div className="disc-tech-cover-logo"><img src={apasLogoWhite} alt="APAS Soluções" /></div>
       <div className="disc-tech-cover"><div><p>Avaliado</p><h2>{assessment.candidate_name}</h2><span>{assessment.organizations?.name || "Aplicação individual"}</span></div><div className="disc-tech-combo"><strong>{scores.combination}</strong><span>{scores.predominant} primário / {scores.secondary} secundário</span><p>{m.n.title}</p></div></div>
       <div className="disc-tech-meta"><p><CalendarDays />Aplicação<br/><strong>{new Date(assessment.created_at).toLocaleString("pt-BR")}</strong></p><p><Gauge />Duração<br/><strong>{duration(assessment.started_at, assessment.submitted_at)}</strong></p><p><CheckCircle2 />Cobertura<br/><strong>{scores.answeredItems} de {scores.totalItems} blocos</strong></p><p><Compass />Instrumento<br/><strong>{"APAS DISC"}</strong></p></div>
