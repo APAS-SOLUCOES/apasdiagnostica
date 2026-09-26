@@ -7,7 +7,6 @@ const decisionCompassArtwork = "https://images.unsplash.com/photo-1495153003981-
 const teamHandsArtwork = "https://images.unsplash.com/photo-1702047109910-43af92894dc1?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=90&w=2400";
 import dialogueArtwork from "@/assets/disc-editorial-dialogue.jpg";
 import selfArtwork from "@/assets/disc-editorial-self.jpg";
-import apasLogo from "@/assets/apas-logo-official.webp";
 import type { ScoreResult, DimensionMap } from "@/lib/disc/scoring";
 import { DIMENSIONS, DIMENSION_NAMES, type Dimension } from "@/lib/disc/instrument";
 import { APAS_DISCLAIMER, DEVELOPMENT_FRAMEWORK, DIMENSION_CONTENT } from "@/lib/disc/content";
@@ -19,7 +18,8 @@ type ReportAssessment = { id: string; candidate_name: string; role_title?: strin
 type Signal = "strength" | "observe" | "attention" | "tip";
 
 function ApasBrand({ inverse = false }: { inverse?: boolean }) {
-  return <span className={`disc-brand ${inverse ? "disc-brand-inverse" : ""}`} aria-label="APAS Soluções"><img className="disc-brand-logo" src={apasLogo} alt="APAS Soluções" /></span>;
+  const logo = inverse ? "/apas-logo.svg?v=final-logo-20260926" : "/apas-logo-dark.svg?v=final-logo-20260926";
+  return <span className={`disc-brand ${inverse ? "disc-brand-inverse" : ""}`} aria-label="APAS Soluções"><img className="disc-brand-logo" src={logo} alt="APAS Soluções" /></span>;
 }
 
 function Page({ number, title, subtitle, eyebrow, icon: Icon, children, cover = false, dark = [3, 6, 8, 10, 12].includes(number) }: { number: number; title?: string; subtitle?: string; eyebrow?: string; icon?: LucideIcon; children: ReactNode; cover?: boolean; dark?: boolean }) {
