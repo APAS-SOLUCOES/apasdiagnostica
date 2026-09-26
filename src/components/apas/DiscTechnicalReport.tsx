@@ -1,14 +1,29 @@
-import { AlertTriangle, CalendarDays, CheckCircle2, Compass, Focus, Gauge, MessageCircle, Network, RefreshCw, Sprout, Target, Users } from "lucide-react";
+import { CalendarDays, CheckCircle2, Target, Users, MessageCircle, Lightbulb, Compass, BarChart3 } from "lucide-react";
 import type { ReactNode } from "react";
 import type { ScoreResult } from "@/lib/disc/scoring";
 import { DIMENSIONS, DIMENSION_NAMES } from "@/lib/disc/instrument";
 import { DIMENSION_CONTENT } from "@/lib/disc/content";
 import { COMBINATION_NARRATIVES } from "@/lib/disc/report-content";
 import { getAdaptiveFactorImpact, getAdaptiveFactorReading, getAdaptiveNarrative } from "@/lib/disc/adaptive-content";
-const apasLogoDark = "/apas-logo-dark.svg?v=technical-20260925";
-const apasLogoWhite = "/apas-logo.svg?v=technical-20260925";
 
-type TechnicalAssessment = { id: string; candidate_name: string; status: string; instrument_version?: string | null; created_at: string; started_at?: string | null; submitted_at?: string | null; consent_accepted_at?: string | null; organizations?: { name?: string | null } | null };
+import coverMountain from "@/assets/disc-approved-cover-mountain.jpg";
+import teamHands from "@/assets/disc-approved-team-hands.jpg";
+import decisionCompass from "@/assets/disc-approved-decision-compass.jpg";
+
+const apasLogoDark = "/apas-logo-dark.svg?v=approved-technical";
+const apasLogoWhite = "/apas-logo.svg?v=approved-technical";
+
+type TechnicalAssessment = {
+  id: string;
+  candidate_name: string;
+  status: string;
+  instrument_version?: string | null;
+  created_at: string;
+  started_at?: string | null;
+  submitted_at?: string | null;
+  consent_accepted_at?: string | null;
+  organizations?: { name?: string | null } | null;
+};
 
 function duration(start?: string | null, end?: string | null) {
   if (!start || !end) return "Não disponível";
@@ -20,121 +35,149 @@ function pct(n: number) {
   return `${n.toFixed(1).replace(".", ",")}%`;
 }
 
-function TechnicalPage({ number, title, kicker, children, dark = false }: { number: number; title: string; kicker: string; children: ReactNode; dark?: boolean }) {
-  const logo = dark ? apasLogoWhite : apasLogoDark;
-  return <section data-page={number} className={`disc-tech-page ${dark ? "disc-tech-page-dark" : ""}`}><header><span className="disc-tech-brand"><img className="disc-tech-brand-logo" src={logo} alt="APAS Soluções" /></span><span>Relatório técnico · Gestão de pessoas</span></header><main><p className="disc-tech-kicker">{kicker}</p><h1>{title}</h1>{children}</main><footer><span>PESSOAS | ESTRATÉGIAS | RESULTADOS</span><span>{String(number).padStart(2, "0")}</span></footer></section>;
+function ApprovedPage({
+  number,
+  title,
+  subtitle,
+  children,
+  dark = false,
+  image,
+}: {
+  number: number;
+  title: string;
+  subtitle?: string;
+  children: ReactNode;
+  dark?: boolean;
+  image?: string;
+}) {
+  return (
+    <section className={`tech-approved-page ${dark ? "tech-approved-dark" : ""}`} data-page={number}>
+      {image && <div className="tech-approved-bg" style={{ backgroundImage: `url(${image})` }} />}
+      <header className="tech-approved-header">
+        <img src={dark ? apasLogoWhite : apasLogoDark} alt="APAS Soluções" />
+        <div><span>Relatório Técnico DISC</span><i /></div>
+      </header>
+      <main>
+        <p className="tech-approved-kicker">{String(number).padStart(2, "0")}</p>
+        <h1>{title}</h1>
+        {subtitle && <h2>{subtitle}</h2>}
+        {children}
+      </main>
+      <footer>
+        <span>PESSOAS <b>|</b> ESTRATÉGIAS <b>|</b> RESULTADOS</span>
+        <strong>{String(number).padStart(2, "0")}</strong>
+      </footer>
+    </section>
+  );
 }
 
-function ProfileMatrix({ scores }: { scores: ScoreResult }) {
-  const profiles = [{ label: "Natural", values: scores.natural.percent }, { label: "Adaptado", values: scores.adapted.percent }, { label: "Social", values: scores.social.percent }];
-  return <div className="disc-tech-profiles">{profiles.map((profile) => <section key={profile.label}><h3>{profile.label}</h3>{DIMENSIONS.map((d) => <div className="disc-tech-bar" key={d}><span>{d}</span><div><i className={`disc-factor-${d.toLowerCase()}`} style={{ width: `${profile.values[d]}%` }} /></div><strong>{pct(profile.values[d])}</strong></div>)}</section>)}</div>;
+function ProfileQuadrant({ scores }: { scores: ScoreResult }) {
+  const colors: Record<string, string> = { D: "#ef2929", I: "#ffbf16", S: "#28a95a", C: "#1971d4" };
+  return (
+    <div className="tech-disc-quadrant">
+      {DIMENSIONS.map((d) => (
+        <div key={d} style={{ background: colors[d] }}>
+          <strong>{d}</strong><span>{DIMENSION_NAMES[d].toUpperCase()}</span>
+        </div>
+      ))}
+    </div>
+  );
 }
 
-function managementCards(scores: ScoreResult) {
-  const n = getAdaptiveNarrative(scores);
-  const p = scores.predominant;
-  const s = scores.secondary;
-  const pv = scores.adapted.percent[p];
-  const sv = scores.adapted.percent[s];
-  const primaryName = DIMENSION_NAMES[p];
-  const secondaryName = DIMENSION_NAMES[s];
-  const primaryReading = getAdaptiveFactorReading(p, pv);
-  const secondaryReading = getAdaptiveFactorReading(s, sv);
-  const primaryImpact = getAdaptiveFactorImpact(p, pv);
-  const secondaryImpact = getAdaptiveFactorImpact(s, sv);
-  return {
-    n, p, s, pv, sv, primaryName, secondaryName, primaryReading, secondaryReading, primaryImpact, secondaryImpact,
-    leadership: `Lidere com clareza de objetivo e ajuste a intensidade ao contexto. Para este perfil, o gestor ganha resultado quando reconhece a força de ${primaryName.toLowerCase()} em ${pct(pv)} e cria espaço para o recurso secundário de ${secondaryName.toLowerCase()} (${pct(sv)}). ${n.leadership}`,
-    communication: `Comece pela forma de informação que o perfil acessa melhor e depois calibre ritmo e profundidade. ${n.communication} Em conversas sensíveis, confirme entendimento em vez de presumir que a intenção foi percebida como desejado.`,
-    delegation: p === "D" ? "Delegue com objetivo, autonomia, limite de decisão e prazo; evite microgerenciamento." : p === "I" ? "Delegue com objetivo, contexto, espaço de interação e checkpoints curtos; conecte a tarefa ao impacto nas pessoas." : p === "S" ? "Delegue com contexto, sequência, apoio e previsibilidade; avise mudanças relevantes com antecedência quando possível." : "Delegue com objetivo, critérios, dados, padrão de qualidade e definição clara do que pode ser decidido sem nova validação.",
-    feedback: p === "D" ? "Seja direto, específico e orientado a resultado: o que aconteceu, impacto, padrão esperado e próximo passo." : p === "I" ? "Comece pela conexão, reconheça contribuição e depois trate o ajuste com exemplos concretos e compromisso de ação." : p === "S" ? "Crie segurança para a conversa, explique o motivo do ajuste e combine uma mudança gradual e observável." : "Apresente fatos, critérios, exemplos e padrão esperado; permita perguntas e tempo para processar a informação.",
-    motivation: p === "D" ? "Metas desafiadoras, autonomia, responsabilidade e percepção de avanço." : p === "I" ? "Interação, reconhecimento, influência, variedade e possibilidade de mobilizar pessoas." : p === "S" ? "Confiança, estabilidade, cooperação, pertencimento e previsibilidade suficiente para produzir bem." : "Qualidade, clareza, competência, critérios, domínio técnico e redução de erros evitáveis.",
-    avoid: p === "D" ? "Excesso de controle, demora sem propósito e instruções que retiram autonomia." : p === "I" ? "Isolamento prolongado, comunicação fria sem contexto e ausência total de reconhecimento." : p === "S" ? "Mudanças bruscas sem contexto, pressão relacional desnecessária e instabilidade contínua." : "Ambiguidade, decisões sem critérios e cobrança de velocidade quando faltam informações essenciais.",
-    pressure: `${n.pressure} O gestor deve observar o comportamento que aparece sob pressão sem rotulá-lo como defeito: ${DIMENSION_CONTENT[p].attention[0] ?? "avalie possíveis excessos da preferência principal"}.`,
-    development: `${primaryImpact.phrase} O desenvolvimento ganha força quando o gestor transforma a tendência em comportamento observável: escolher uma situação, praticar um ajuste, medir efeito e revisar. O recurso secundário (${secondaryName}, ${pct(sv)}) é uma via importante para ampliar repertório.`,
+function CommunicationCards({ primary }: { primary: string }) {
+  const data: Record<string, Array<[string, string]>> = {
+    D: [["Comunicação Direta", "Você tende a ser objetivo(a) e focado(a) no resultado."], ["Influência Positiva", "Você mobiliza pessoas quando conecta direção e impacto."], ["Escuta Ativa", "Amplie a escuta para incorporar sinais do ambiente."], ["Lógica e Clareza", "Use informações precisas para sustentar decisões."]],
+    I: [["Comunicação Direta", "Conecte entusiasmo a objetivos concretos e próximos passos."], ["Influência Positiva", "Você tende a comunicar possibilidades com energia."], ["Escuta Ativa", "Confirme entendimento antes de avançar."], ["Lógica e Clareza", "Estruture ideias-chave para transformar inspiração em execução."]],
+    S: [["Comunicação Direta", "Combine clareza com previsibilidade e contexto."], ["Influência Positiva", "Sua influência cresce quando cria segurança e cooperação."], ["Escuta Ativa", "A escuta é um recurso natural para compreender o outro."], ["Lógica e Clareza", "Organize informações para facilitar mudanças e acordos."]],
+    C: [["Comunicação Direta", "Seja claro, objetivo e apoiado em critérios."], ["Influência Positiva", "Mostre como qualidade e precisão ajudam o coletivo."], ["Escuta Ativa", "Pergunte e valide antes de concluir."], ["Lógica e Clareza", "Informações precisas e bem estruturadas favorecem seu melhor desempenho."]],
   };
+  const icons = [MessageCircle, Users, Target, BarChart3];
+  return <div className="tech-communication-grid">{data[primary].map(([t, b], i) => { const Icon = icons[i]; return <div key={t}><Icon/><section><strong>{t}</strong><p>{b}</p></section></div>; })}</div>;
 }
 
 export function DiscTechnicalReport({ assessment, scores, computedAt }: { assessment: TechnicalAssessment; scores: ScoreResult; computedAt?: string | null }) {
   const narrative = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES[`${scores.predominant}${scores.secondary}`];
   if (!narrative) return null;
-  const m = managementCards(scores);
+
+  const m = getAdaptiveNarrative(scores);
+  const p = scores.predominant;
+  const s = scores.secondary;
+  const pv = scores.adapted.percent[p];
+  const sv = scores.adapted.percent[s];
+  const primaryImpact = getAdaptiveFactorImpact(p, pv);
+  const secondaryImpact = getAdaptiveFactorImpact(s, sv);
   const adaptation = scores.adaptationAlert
-    ? "A distância entre os perfis merece investigação contextual. Pode representar flexibilidade diante das demandas ou esforço de adaptação prolongado; valide com exemplos concretos antes de concluir."
-    : "A distância entre os perfis não acionou alerta automático. Ainda assim, valide em quais ambientes a pessoa amplia, reduz ou alterna comportamentos.";
+    ? "A distância entre os perfis merece investigação contextual. Pode representar flexibilidade diante das demandas ou esforço de adaptação prolongado."
+    : "A distância entre os perfis não acionou alerta automático. Valide em quais ambientes a pessoa amplia, reduz ou alterna comportamentos.";
 
-  return <article className="disc-technical-report" aria-label={`Relatório técnico de ${assessment.candidate_name}`}>
-    <TechnicalPage number={1} kicker="Análise comportamental" title="RELATÓRIO TÉCNICO DISC" dark>
-      <div className="disc-tech-cover-logo"><img src={apasLogoWhite} alt="APAS Soluções" /></div>
-      <div className="disc-tech-cover"><div><p>Avaliado</p><h2>{assessment.candidate_name}</h2><span>{assessment.organizations?.name || "Aplicação individual"}</span></div><div className="disc-tech-combo"><strong>{scores.combination}</strong><span>{scores.predominant} primário / {scores.secondary} secundário</span><p>{m.n.title}</p></div></div>
-      <div className="disc-tech-meta"><p><CalendarDays />Aplicação<br/><strong>{new Date(assessment.created_at).toLocaleString("pt-BR")}</strong></p><p><Gauge />Duração<br/><strong>{duration(assessment.started_at, assessment.submitted_at)}</strong></p><p><CheckCircle2 />Cobertura<br/><strong>{scores.answeredItems} de {scores.totalItems} blocos</strong></p><p><Compass />Instrumento<br/><strong>{"APAS DISC"}</strong></p></div>
-      <div className="disc-tech-manager-banner"><Target/><div><strong>Objetivo deste documento</strong><p>Transformar a leitura comportamental em decisões práticas de gestão: liderar, comunicar, delegar, desenvolver, acompanhar e extrair o melhor potencial sem reduzir a pessoa a um rótulo.</p></div></div>
-      <p className="disc-tech-confidential">Documento de apoio à gestão e à devolutiva. Não contém respostas brutas, perguntas, fórmulas, pesos ou regras proprietárias.</p>
-    </TechnicalPage>
+  const primaryCharacteristics = DIMENSION_CONTENT[p]?.attention ?? [];
+  const date = new Date(assessment.created_at).toLocaleDateString("pt-BR");
 
-    <TechnicalPage number={2} kicker="Mapa comportamental" title="Três perspectivas para interpretar em conjunto">
-      <ProfileMatrix scores={scores}/>
-      <div className="disc-tech-callout"><Gauge/><div><h3>Índice de adaptação · {scores.adaptationIndex}</h3><p>{adaptation}</p></div></div>
-      <div className="disc-tech-grid">{DIMENSIONS.map((d) => <div key={d}><strong>{d} · {DIMENSION_NAMES[d]}</strong><span>Adaptado · {pct(scores.adapted.percent[d])}</span><p>{getAdaptiveFactorReading(d, scores.adapted.percent[d])}</p></div>)}</div>
-      <div className="disc-tech-note"><strong>Leitura gerencial:</strong> Natural mostra uma tendência de resposta mais espontânea; Adaptado mostra como a pessoa está respondendo ao contexto avaliado; Social ajuda a observar a expressão percebida. Use as três perspectivas juntas.</div>
-    </TechnicalPage>
+  return (
+    <article className="disc-technical-report tech-approved-report" aria-label={`Relatório Técnico DISC de ${assessment.candidate_name}`}>
+      <ApprovedPage number={1} title="RELATÓRIO TÉCNICO" subtitle="DISC" dark image={coverMountain}>
+        <div className="tech-cover-label">ANÁLISE COMPORTAMENTAL</div>
+        <div className="tech-cover-person">
+          <span><Users/> Nome do Avaliado</span><strong>{assessment.candidate_name}</strong>
+          <span><CalendarDays/> Data da Avaliação</span><strong>{date}</strong>
+          <span><Target/> Empresa</span><strong>{assessment.organizations?.name || "Aplicação individual"}</strong>
+        </div>
+        <div className="tech-cover-bottom">PESSOAS<br/>ESTRATÉGIAS<br/>RESULTADOS</div>
+      </ApprovedPage>
 
-    <TechnicalPage number={3} kicker="Primário · percentual · potencial" title="O que o fator principal traz para o trabalho" dark>
-      <div className="disc-tech-lead"><strong>{m.p} {pct(m.pv)}</strong><div><h2>{m.primaryImpact.identity}</h2><p>{m.primaryImpact.phrase}</p></div></div>
-      <div className="disc-tech-manager-grid">
-        <section><h3>Leitura específica do percentual</h3><p>{m.primaryReading}</p></section>
-        <section><h3>Recursos para o gestor utilizar</h3><p>{narrative.best.join(" ")}</p></section>
-        <section><h3>Possíveis excessos a observar</h3><p>{narrative.excess.join(" ")}</p></section>
-        <section><h3>Quando tende a entregar mais</h3><p>{narrative.situations?.work || narrative.best[0]}</p></section>
-      </div>
-      <div className="disc-tech-callout"><Users/><div><h3>Como extrair o melhor</h3><p>{m.development}</p></div></div>
-    </TechnicalPage>
+      <ApprovedPage number={2} title="Sumário">
+        <div className="tech-summary">
+          {["Introdução", "O que é o DISC", "Perfil Comportamental", "Análise Detalhada", "Pontos Fortes", "Pontos de Atenção", "Estilo de Comunicação", "Ambiente Ideal", "Liderança e Trabalho em Equipe", "Desenvolvimento e Recomendações", "Conclusão"].map((item, i) => <div key={item}><b>{String(i + 1).padStart(2, "0")}</b><span>{item}</span></div>)}
+        </div>
+      </ApprovedPage>
 
-    <TechnicalPage number={4} kicker="Secundário · percentual · complemento" title="O segundo fator também muda a leitura">
-      <div className="disc-tech-dual"><section><span>PRIMÁRIO</span><strong>{m.p} · {pct(m.pv)}</strong><h3>{m.primaryImpact.identity}</h3><p>{m.primaryReading}</p></section><section><span>SECUNDÁRIO</span><strong>{m.s} · {pct(m.sv)}</strong><h3>{m.secondaryImpact.identity}</h3><p>{m.secondaryReading}</p></section></div>
-      <div className="disc-tech-lead"><strong>{pct(Math.abs(m.pv - m.sv))}</strong><div><h2>Distância entre os fatores</h2><p>{m.n.essence}</p></div></div>
-      <div className="disc-tech-manager-grid"><section><h3>Como os dois recursos se combinam</h3><p>{m.n.profilePortrait}</p></section><section><h3>No trabalho</h3><p>{m.n.situations?.work}</p></section><section><h3>Nas relações</h3><p>{m.n.situations?.relationships}</p></section><section><h3>Nas decisões</h3><p>{m.n.situations?.decisions}</p></section></div>
-    </TechnicalPage>
+      <ApprovedPage number={3} title="Introdução" subtitle="O que este relatório apresenta" image={teamHands}>
+        <div className="tech-intro-copy">
+          <p>Este relatório apresenta os resultados da avaliação DISC e tem como objetivo fornecer uma análise comportamental detalhada, auxiliando no desenvolvimento pessoal e profissional.</p>
+          <p>O modelo DISC é uma ferramenta reconhecida para identificar estilos comportamentais, promovendo maior autoconhecimento, melhores relações interpessoais e maior eficácia na comunicação.</p>
+          <div className="tech-highlight"><Target/><span>Esta leitura deve ser usada como apoio à gestão e combinada com competências, experiência, desempenho e contexto.</span></div>
+        </div>
+      </ApprovedPage>
 
-    <TechnicalPage number={5} kicker={`Combinação ${scores.combination}`} title="Como esta combinação pode funcionar na prática" dark>
-      <div className="disc-tech-combo-reading"><strong>{scores.combination}</strong><div><h2>{m.n.title}</h2><p>{m.n.essence}</p></div></div>
-      <div className="disc-tech-themes"><section><MessageCircle/><h3>Comunicação</h3><p>{m.communication}</p></section><section><Compass/><h3>Liderança</h3><p>{m.leadership}</p></section><section><Focus/><h3>Decisão</h3><p>{m.n.decision}</p></section><section><Users/><h3>Equipe</h3><p>{m.n.team}</p></section><section><Gauge/><h3>Pressão</h3><p>{m.pressure}</p></section><section><RefreshCw/><h3>Mudança</h3><p>{m.n.change}</p></section></div>
-      <div className="disc-tech-note dark-note"><strong>Importante:</strong> a combinação é contextual. A mesma tendência pode aparecer de forma diferente conforme função, ambiente, experiência, cultura, metas e momento profissional.</div>
-    </TechnicalPage>
+      <ApprovedPage number={4} title="Seu Perfil DISC" subtitle="Predominância Comportamental">
+        <ProfileQuadrant scores={scores}/>
+        <div className="tech-profile-callout"><strong>{p} + {s}</strong><p>{primaryImpact.identity}. O fator secundário {s} acrescenta {secondaryImpact.identity.toLowerCase()} à leitura do perfil.</p></div>
+        <div className="tech-score-row">{DIMENSIONS.map(d => <div key={d}><span>{d}</span><strong>{pct(scores.adapted.percent[d])}</strong></div>)}</div>
+      </ApprovedPage>
 
-    <TechnicalPage number={6} kicker="Guia do gestor" title="Como liderar, comunicar e cobrar">
-      <div className="disc-tech-manager-grid">
-        <section><h3>Como liderar</h3><p>{m.leadership}</p></section>
-        <section><h3>Como se comunicar</h3><p>{m.communication}</p></section>
-        <section><h3>Como delegar</h3><p>{m.delegation}</p></section>
-        <section><h3>Como cobrar</h3><p>{m.n.decision} Transforme expectativa em objetivo, prazo e critério observável.</p></section>
-        <section><h3>Como dar feedback</h3><p>{m.feedback}</p></section>
-        <section><h3>Como motivar</h3><p>{m.motivation}</p></section>
-        <section><h3>O que evitar</h3><p>{m.avoid}</p></section>
-        <section><h3>Como reconhecer</h3><p>Reconheça o comportamento que produziu valor, explique o impacto e conecte o reconhecimento ao resultado esperado.</p></section>
-      </div>
-    </TechnicalPage>
+      <ApprovedPage number={5} title="Análise Detalhada" subtitle={`Características do seu perfil`}>
+        <div className="tech-factor-heading"><span>{p}</span><div><h3>{DIMENSION_NAMES[p]}</h3><p>{primaryImpact.identity}</p></div></div>
+        <p className="tech-body">{getAdaptiveFactorReading(p, pv)}</p>
+        <div className="tech-feature-box"><strong>Principais características:</strong>{primaryCharacteristics.slice(0, 5).map((x, i) => <div key={i}><CheckCircle2/>{x}</div>)}</div>
+        <div className="tech-two-columns"><div><h3>Pontos fortes</h3><p>{narrative.best.join(" ")}</p></div><div><h3>Pontos de atenção</h3><p>{narrative.excess.join(" ")}</p></div></div>
+      </ApprovedPage>
 
-    <TechnicalPage number={7} kicker="Desenvolvimento e desempenho" title="Como desenvolver sem tentar mudar quem a pessoa é" dark>
-      <div className="disc-tech-development">
-        <section><span>01</span><div><h3>Potencializar o recurso principal</h3><p>{m.primaryImpact.phrase}</p></div></section>
-        <section><span>02</span><div><h3>Ampliar o recurso secundário</h3><p>{m.secondaryImpact.phrase}</p></div></section>
-        <section><span>03</span><div><h3>Regular excessos</h3><p>{m.pressure}</p></div></section>
-        <section><span>04</span><div><h3>Transformar tendência em competência</h3><p>{m.development}</p></div></section>
-      </div>
-      <div className="disc-tech-manager-grid"><section><h3>O que observar em reuniões</h3><p>{m.n.situations?.relationships}</p></section><section><h3>O que observar em decisões</h3><p>{m.n.situations?.decisions}</p></section><section><h3>O que observar sob pressão</h3><p>{m.pressure}</p></section><section><h3>O que observar em mudanças</h3><p>{m.n.change}</p></section></div>
-    </TechnicalPage>
+      <ApprovedPage number={6} title="Estilo de Comunicação" subtitle="Como você se comunica">
+        <CommunicationCards primary={p}/>
+        <div className="tech-wide-note"><MessageCircle/><p>{m.communication}</p></div>
+      </ApprovedPage>
 
-    <TechnicalPage number={8} kicker="Plano de ação gerencial" title="Transforme a leitura em uma solução prática">
-      <div className="disc-tech-action-plan">
-        <section><strong>Agora</strong><h3>Escolha 1 comportamento</h3><p>{m.n.experiments[0]}</p></section>
-        <section><strong>7 dias</strong><h3>Teste no contexto real</h3><p>{m.n.experiments[1]}</p></section>
-        <section><strong>15 dias</strong><h3>Recolha evidências</h3><p>{m.n.experiments[2]}</p></section>
-        <section><strong>30 dias</strong><h3>Revise e ajuste</h3><p>Compare comportamento observado, resultado e percepção da equipe. Mantenha o que funciona, ajuste o que não funciona e defina o próximo experimento.</p></section>
-      </div>
-      <div className="disc-tech-checklist"><h3>Checklist do gestor</h3><p>□ Alinhei objetivo, contexto e expectativa.</p><p>□ Adaptei minha comunicação ao perfil sem deixar de ser claro.</p><p>□ Dei autonomia compatível com responsabilidade e maturidade.</p><p>□ Dei feedback sobre comportamento observável e impacto.</p><p>□ Combinei indicador e prazo de acompanhamento.</p><p>□ Registrei evidências que confirmam ou contradizem a hipótese comportamental.</p></div>
-      <div className="disc-tech-callout"><CheckCircle2/><div><h3>Princípio de uso</h3><p>DISC não deve decidir sozinho contratação, promoção, desligamento ou distribuição de oportunidades. Ele deve ampliar a qualidade das perguntas, da comunicação e das decisões de gestão, sempre combinado com competências, experiência, desempenho e contexto.</p></div></div>
-      <p className="disc-tech-confidential">Gerado em {computedAt ? new Date(computedAt).toLocaleString("pt-BR") : "data não disponível"} · ID {assessment.id}</p><div className="disc-tech-source"><strong>Referência e autoria</strong><p>Referência conceitual histórica: William Moulton Marston, <em>Emotions of Normal People</em> (1928). Esta publicação é a fonte histórica indicada para os estudos conceituais que fundamentam esta leitura comportamental. A interpretação aplicada neste relatório, a linguagem, os textos, o motor adaptativo, as combinações, as recomendações gerenciais e a apresentação do material foram desenvolvidos pela <strong>APAS Soluções</strong>.</p><p>Este documento não reproduz textos, tabelas, instrumentos proprietários ou layout de terceiros. O resultado deve ser interpretado como apoio à gestão e em conjunto com contexto, competências, experiência e desempenho.</p></div>
-    </TechnicalPage>
-  </article>;
+      <ApprovedPage number={7} title="Desenvolvimento e Recomendações" subtitle="Sugestões para potencializar seu perfil">
+        <div className="tech-recommendations">
+          {[m.best?.[0] ?? "Aproveite seus pontos fortes", "Trabalhe os pontos de atenção", "Busque equilíbrio entre resultados e relacionamentos", "Desenvolva habilidades complementares", "Aplique seu perfil de forma estratégica no ambiente profissional"].map((x, i) => <div key={i}><b>{i + 1}</b><span>{x}</span></div>)}
+        </div>
+        <div className="tech-quote"><Lightbulb/><span>"O autoconhecimento é o primeiro passo para a transformação."</span></div>
+      </ApprovedPage>
+
+      <ApprovedPage number={8} title="Conclusão" subtitle="Seu perfil como diferencial">
+        <div className="tech-conclusion"><p>O conhecimento do seu perfil comportamental é uma ferramenta poderosa para o seu desenvolvimento pessoal e profissional.</p><p>Ao compreender suas características, pontos fortes e áreas de melhoria, você pode tomar decisões mais assertivas, melhorar sua comunicação e construir relacionamentos mais eficazes.</p></div>
+        <div className="tech-conclusion-box"><Target/><span>Pessoas que se conhecem,<br/><strong>conquistam mais resultados.</strong></span></div>
+      </ApprovedPage>
+
+      <ApprovedPage number={9} title="" dark image={decisionCompass}>
+        <div className="tech-final-message">“PESSOAS<br/>TRANSFORMAM<br/>ORGANIZAÇÕES.”</div>
+        <img className="tech-final-logo" src={apasLogoWhite} alt="APAS Soluções"/>
+        <div className="tech-final-tags">PESSOAS <b>|</b> ESTRATÉGIAS <b>|</b> RESULTADOS</div>
+      </ApprovedPage>
+
+      <ApprovedPage number={10} title="">
+        <div className="tech-closing"><img src={apasLogoDark} alt="APAS Soluções"/><p>Este relatório é uma ferramenta de apoio à compreensão comportamental. A interpretação deve considerar contexto, competências, experiência e desempenho.</p><div>{computedAt ? `Gerado em ${new Date(computedAt).toLocaleString("pt-BR")}` : "APAS Soluções"}<br/>Documento técnico · uso profissional</div></div>
+      </ApprovedPage>
+    </article>
+  );
 }
