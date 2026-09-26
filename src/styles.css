@@ -2493,15 +2493,15 @@
   .disc-technical-report .disc-tech-page { zoom: 0.54; }
 }
 
-/* APAS DISC — final override to preserve the approved report branding */
+/* APAS DISC — final logo fix: use the transparent official SVG variants */
 .disc-brand-logo {
-  background: #000;
-  border-radius: 1mm;
+  background: transparent !important;
+  border-radius: 0 !important;
 }
 
 .disc-page-footer .disc-brand-logo {
-  background: #000;
-  border-radius: 1mm;
+  background: transparent !important;
+  border-radius: 0 !important;
 }
 
 .disc-cover-wordmark {
