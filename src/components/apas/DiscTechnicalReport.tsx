@@ -5,8 +5,8 @@ import { DIMENSIONS, DIMENSION_NAMES } from "@/lib/disc/instrument";
 import { DIMENSION_CONTENT } from "@/lib/disc/content";
 import { COMBINATION_NARRATIVES } from "@/lib/disc/report-content";
 import { getAdaptiveFactorImpact, getAdaptiveFactorReading, getAdaptiveNarrative } from "@/lib/disc/adaptive-content";
-const apasLogoDark = "/apas-logo-dark.svg";
-const apasLogoWhite = "/apas-logo.svg";
+const apasLogoDark = "/apas-logo-dark.svg?v=technical-20260925";
+const apasLogoWhite = "/apas-logo.svg?v=technical-20260925";
 
 type TechnicalAssessment = { id: string; candidate_name: string; status: string; instrument_version?: string | null; created_at: string; started_at?: string | null; submitted_at?: string | null; consent_accepted_at?: string | null; organizations?: { name?: string | null } | null };
 
