@@ -133,40 +133,58 @@ export function DiscTechnicalReport({ assessment, scores, computedAt }: { assess
 
       <ApprovedPage number={3} title="Introdução" subtitle="O que este relatório apresenta" image={teamHands}>
         <div className="tech-intro-copy">
-          <p>Este relatório apresenta os resultados da avaliação DISC e tem como objetivo fornecer uma análise comportamental detalhada, auxiliando no desenvolvimento pessoal e profissional.</p>
-          <p>O modelo DISC é uma ferramenta reconhecida para identificar estilos comportamentais, promovendo maior autoconhecimento, melhores relações interpessoais e maior eficácia na comunicação.</p>
-          <div className="tech-highlight"><Target/><span>Esta leitura deve ser usada como apoio à gestão e combinada com competências, experiência, desempenho e contexto.</span></div>
+          <p>Este relatório apresenta os resultados da avaliação DISC com foco em comportamento observável no ambiente profissional. A proposta é transformar a leitura do perfil em apoio prático para autoconhecimento, comunicação, liderança e desenvolvimento de pessoas.</p>
+          <p>O DISC identifica tendências comportamentais e ajuda a compreender como uma pessoa pode reagir diante de metas, mudanças, pressão, decisões, relacionamentos e diferentes formas de comunicação. A leitura ganha valor quando é confrontada com a realidade do trabalho.</p>
+          <p>Para líderes, gestores e empresários, o objetivo não é rotular a pessoa, mas ampliar a qualidade das perguntas: como ela tende a trabalhar, o que pode facilitar sua entrega, que situações podem exigir adaptação e como conduzir conversas de forma mais produtiva.</p>
+          <div className="tech-highlight"><Target/><span>Use este relatório como hipótese de trabalho. Combine a leitura comportamental com competências, experiência, desempenho, contexto e evidências observáveis antes de tomar decisões de gestão.</span></div>
         </div>
       </ApprovedPage>
 
       <ApprovedPage number={4} title="Seu Perfil DISC" subtitle="Predominância Comportamental">
         <ProfileQuadrant scores={scores}/>
-        <div className="tech-profile-callout"><strong>{p} + {s}</strong><p>{primaryImpact.identity}. O fator secundário {s} acrescenta {secondaryImpact.identity.toLowerCase()} à leitura do perfil.</p></div>
+        <div className="tech-profile-callout"><strong>{p} + {s}</strong><p>{primaryImpact.identity}. O fator secundário {s} acrescenta {secondaryImpact.identity.toLowerCase()} à leitura do perfil. A combinação deve ser observada como um repertório: a forma de agir pode variar conforme ambiente, demanda, pressão e experiência.</p></div>
         <div className="tech-score-row">{DIMENSIONS.map(d => <div key={d}><span>{d}</span><strong>{pct(scores.adapted.percent[d])}</strong></div>)}</div>
+        <div className="tech-wide-note"><BarChart3/><p><strong>Base técnica da leitura:</strong> {scores.answeredItems} de {scores.totalItems} itens respondidos, cobertura de {scores.completionPercent.toFixed(0)}%. Predominância {p}, fator secundário {s} e combinação {scores.combination}. Índice de adaptação: {scores.adaptationIndex.toFixed(1).replace(".", ",")}.</p></div>
       </ApprovedPage>
 
       <ApprovedPage number={5} title="Análise Detalhada" subtitle={`Características do seu perfil`}>
         <div className="tech-factor-heading"><span>{p}</span><div><h3>{DIMENSION_NAMES[p]}</h3><p>{primaryImpact.identity}</p></div></div>
         <p className="tech-body">{getAdaptiveFactorReading(p, pv)}</p>
-        <div className="tech-feature-box"><strong>Principais características:</strong>{primaryCharacteristics.slice(0, 5).map((x, i) => <div key={i}><CheckCircle2/>{x}</div>)}</div>
+        <div className="tech-feature-box"><strong>Principais características:</strong>{(DIMENSION_CONTENT[p]?.characteristics ?? primaryCharacteristics).slice(0, 5).map((x, i) => <div key={i}><CheckCircle2/>{x}</div>)}</div>
         <div className="tech-two-columns"><div><h3>Pontos fortes</h3><p>{narrative.best.join(" ")}</p></div><div><h3>Pontos de atenção</h3><p>{narrative.excess.join(" ")}</p></div></div>
+        <div className="tech-wide-note"><Compass/><p><strong>Leitura gerencial:</strong> {narrative.perceived} Observe comportamento concreto e impacto no trabalho; não trate tendência comportamental como defeito ou diagnóstico.</p></div>
       </ApprovedPage>
 
       <ApprovedPage number={6} title="Estilo de Comunicação" subtitle="Como você se comunica">
         <CommunicationCards primary={p}/>
-        <div className="tech-wide-note"><MessageCircle/><p>{m.communication}</p></div>
-      </ApprovedPage>
-
-      <ApprovedPage number={7} title="Desenvolvimento e Recomendações" subtitle="Sugestões para potencializar seu perfil">
-        <div className="tech-recommendations">
-          {[m.best?.[0] ?? "Aproveite seus pontos fortes", "Trabalhe os pontos de atenção", "Busque equilíbrio entre resultados e relacionamentos", "Desenvolva habilidades complementares", "Aplique seu perfil de forma estratégica no ambiente profissional"].map((x, i) => <div key={i}><b>{i + 1}</b><span>{x}</span></div>)}
+        <div className="tech-wide-note"><MessageCircle/><p><strong>Leitura do perfil:</strong> {m.communication}</p></div>
+        <div className="tech-two-columns">
+          <div><h3>O que observar</h3><p>{narrative.perceived}</p></div>
+          <div><h3>Ambiente e interlocutor</h3><p>{narrative.communication} Ajuste objetividade, ritmo, profundidade e espaço de fala ao interlocutor.</p></div>
         </div>
-        <div className="tech-quote"><Lightbulb/><span>"O autoconhecimento é o primeiro passo para a transformação."</span></div>
       </ApprovedPage>
 
-      <ApprovedPage number={8} title="Conclusão" subtitle="Seu perfil como diferencial">
-        <div className="tech-conclusion"><p>O conhecimento do seu perfil comportamental é uma ferramenta poderosa para o seu desenvolvimento pessoal e profissional.</p><p>Ao compreender suas características, pontos fortes e áreas de melhoria, você pode tomar decisões mais assertivas, melhorar sua comunicação e construir relacionamentos mais eficazes.</p></div>
-        <div className="tech-conclusion-box"><Target/><span>Pessoas que se conhecem,<br/><strong>conquistam mais resultados.</strong></span></div>
+      <ApprovedPage number={7} title="Desenvolvimento e Recomendações" subtitle="Liderança, equipe e aplicação prática">
+        <div className="tech-two-columns">
+          <div><h3>Liderança</h3><p>{narrative.leadership}</p></div>
+          <div><h3>Trabalho em equipe</h3><p>{narrative.team}</p></div>
+        </div>
+        <div className="tech-two-columns">
+          <div><h3>Decisão</h3><p>{narrative.decision}</p></div>
+          <div><h3>Sob pressão</h3><p>{narrative.pressure}</p></div>
+        </div>
+        <div className="tech-recommendations">
+          {(m.experiments?.slice(0, 4).length ? m.experiments.slice(0, 4) : narrative.experiments.slice(0, 4)).map((x, i) => <div key={i}><b>{i + 1}</b><span>{x}</span></div>)}
+        </div>
+      </ApprovedPage>
+
+      <ApprovedPage number={8} title="Conclusão" subtitle="Síntese para gestão e desenvolvimento">
+        <div className="tech-conclusion"><p>{m.profilePortrait ?? narrative.essence}</p><p>O valor desta leitura está em transformar autoconhecimento em comportamento observável: reconhecer forças, antecipar pontos de atenção, adaptar a comunicação e criar condições para que a pessoa entregue melhor sem exigir que ela deixe de ser quem é.</p></div>
+        <div className="tech-two-columns">
+          <div><h3>Mudança</h3><p>{narrative.change}</p></div>
+          <div><h3>Próximo passo</h3><p>Escolha um comportamento observável, teste no contexto real, recolha evidências e revise a hipótese com a pessoa e com a equipe.</p></div>
+        </div>
+        <div className="tech-conclusion-box"><Target/><span><strong>Pessoas que se conhecem conquistam mais resultados.</strong><br/>Gestão de pessoas melhora quando comportamento, competência, contexto e desempenho são analisados em conjunto.</span></div>
       </ApprovedPage>
 
       <ApprovedPage number={9} title="" dark image={decisionCompass}>
