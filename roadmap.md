@@ -38,3 +38,5 @@ Evolução do projeto APAS DISC Profile para a plataforma **APAS DIAGNÓSTICA** 
 - [ ] Criar documento técnico A4 separado, protegido e imprimível, sem dados proprietários ou respostas brutas
 - [ ] Inserir orientação de resposta antes do primeiro bloco DISC sem alterar o instrumento
 - [ ] Validar impressão A4 dos dois documentos, rotas protegidas, testes e build
+
+- [ ] Atualizar exclusivamente o relatório técnico DISC de 10 páginas a partir da branch git-status e validar compilação.
