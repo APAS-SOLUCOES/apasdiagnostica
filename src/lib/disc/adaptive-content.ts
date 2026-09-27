@@ -117,7 +117,8 @@ function buildSituationMap(scores: ScoreResult, base: CombinationNarrative) {
 }
 
 export function getAdaptiveNarrative(scores: ScoreResult): CombinationNarrative {
-  const base = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES[`${scores.predominant}${scores.secondary}`] ?? COMBINATION_NARRATIVES["DI"];\n  if (!base) throw new Error("Narrativa DISC indisponível.");
+  const base = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES[`${scores.predominant}${scores.secondary}`] ?? COMBINATION_NARRATIVES["DI"];
+  if (!base) throw new Error("Narrativa DISC indisponível.");
   const p = scores.predominant;
   const s = scores.secondary;
   const pv = scores.adapted.percent[p];
