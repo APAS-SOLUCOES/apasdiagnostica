@@ -63,8 +63,8 @@ function CoverPage({ assessment }: { assessment: TechnicalAssessment }) {
   return (
     <section className="tech-approved-page tech-cover-approved tech-approved-dark" data-page="1">
       <div className="tech-cover-redbar" />
-      <div className="tech-cover-logo"><img src={apasLogoWhite} alt="APAS Soluções" /></div>
-      <main>
+      <main className="tech-cover-main">
+        <div className="tech-cover-logo"><img src={apasLogoWhite} alt="APAS Soluções" /></div>
         <h1>RELATÓRIO<br />TÉCNICO DISC</h1>
         <div className="tech-cover-label">ANÁLISE COMPORTAMENTAL</div>
         <div className="tech-cover-person">
