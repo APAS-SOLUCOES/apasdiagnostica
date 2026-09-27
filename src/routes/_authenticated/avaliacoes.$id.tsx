@@ -9,7 +9,7 @@ import { DiscPremiumReport } from "@/components/apas/DiscPremiumReport";
 import { DiscTechnicalPanel } from "@/components/apas/DiscTechnicalPanel";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import type { ScoreResult } from "@/lib/disc/scoring";
+import { normalizeDiscScores } from "@/lib/disc/normalize-result";
 
 export const Route = createFileRoute("/_authenticated/avaliacoes/$id")({
   head: () => ({
@@ -57,7 +57,7 @@ function DetalhePage() {
   }
 
   const { assessment, result } = q.data;
-  const scores = (result?.scores as unknown as ScoreResult) ?? null;
+  const scores = normalizeDiscScores(result?.scores);
   const link =
     typeof window !== "undefined" ? `${window.location.origin}/a/${assessment.token}` : "";
 
