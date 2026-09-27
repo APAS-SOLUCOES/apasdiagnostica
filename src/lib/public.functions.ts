@@ -8,6 +8,7 @@ import {
   type Dimension,
 } from "./disc/instrument";
 import { computeScores, type Answer, type ScoreResult } from "./disc/scoring";
+import { normalizeDiscScores } from "./disc/normalize-result";
 
 const tokenSchema = z.object({ token: z.string().trim().min(10).max(80) });
 
@@ -179,7 +180,7 @@ export const getPublicReport = createServerFn({ method: "GET" })
       context: row.context,
       submitted_at: row.submitted_at,
       instrumentVersion: row.instrument_version,
-      result: res.scores as unknown as ScoreResult,
+      result: normalizeDiscScores(res.scores) ?? undefined,
     };
   });
 
