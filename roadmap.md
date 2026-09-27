@@ -40,3 +40,7 @@ Evolução do projeto APAS DISC Profile para a plataforma **APAS DIAGNÓSTICA** 
 - [ ] Validar impressão A4 dos dois documentos, rotas protegidas, testes e build
 
 - [ ] Atualizar exclusivamente o relatório técnico DISC de 10 páginas a partir da branch git-status e validar compilação.
+
+## Auditoria final DISC Premium
+- [x] Comparar e restaurar 12 páginas da branch aprovada, mantendo dados dinâmicos e técnico intacto.
+- [ ] Validar PDF A4 real, revisão mobile, testes e erros.
