@@ -26,7 +26,7 @@ export function DiscChart({ percent }: { percent: DimensionMap }) {
   }));
 
   return (
-    <div className="h-56 w-full">
+    <div className="h-56 w-full" translate="no">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={data} margin={{ top: 8, right: 8, bottom: 0, left: -20 }}>
           <CartesianGrid stroke="var(--border)" vertical={false} />
@@ -54,7 +54,7 @@ export function DiscChart({ percent }: { percent: DimensionMap }) {
 
 export function DiscBars({ percent }: { percent: DimensionMap }) {
   return (
-    <div className="space-y-3">
+    <div className="space-y-3" translate="no">
       {DIMENSIONS.map((d) => (
         <div key={d}>
           <div className="flex items-center justify-between text-xs">
