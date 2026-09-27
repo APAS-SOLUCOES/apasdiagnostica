@@ -3628,6 +3628,8 @@
   @page { size:A4 portrait; margin:0; }
   .tech-approved-report { padding:0!important; background:#fff!important; }
   .tech-approved-page { margin:0!important; width:210mm!important; height:297mm!important; min-height:297mm!important; max-height:297mm!important; box-shadow:none!important; break-after:page; page-break-after:always; }
+  .tech-cover-approved { padding-top: 6mm !important; }
+  .tech-cover-approved .tech-cover-main { padding-top: 6mm !important; }
   .tech-approved-page:last-child { break-after:auto; page-break-after:auto; }
 }
 @media screen and (max-width:760px) {
