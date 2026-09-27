@@ -9,3 +9,5 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
+DISC reports normalize persisted legacy factor codes at the report boundary (`normalizeDiscScores`) rather than changing scoring or narrative text, so historical results display official D/I/S/C without altering calculations.
+
