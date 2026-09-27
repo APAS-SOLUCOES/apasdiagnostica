@@ -3631,6 +3631,9 @@
   .tech-cover-approved { padding-top: 6mm !important; }
   .tech-cover-approved .tech-cover-main { padding-top: 6mm !important; }
   .tech-approved-page:last-child { break-after:auto; page-break-after:auto; }
+  .tech-approved-report .tech-approved-page > main { padding: 4mm 12mm 16mm !important; }
+  .tech-approved-report .tech-cover-approved > main.tech-cover-main { padding: 6mm 12mm 16mm 18mm !important; }
+  .tech-approved-report .tech-cover-main > .tech-cover-logo { display: block !important; }
   .tech-cover-main .tech-cover-logo {
     width: 28mm !important;
     height: 28mm !important;
