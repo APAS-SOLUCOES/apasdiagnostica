@@ -3639,3 +3639,12 @@
 @media screen and (min-width:431px) and (max-width:760px) {
   .tech-approved-page { zoom:.54; }
 }
+
+
+/* APAS DISC — cover logo spacing correction */
+.tech-cover-approved .tech-cover-logo {
+  left: 18mm;
+  top: 12mm;
+  width: 32mm;
+  height: 32mm;
+}
