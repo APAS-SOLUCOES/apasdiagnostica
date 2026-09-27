@@ -9,8 +9,7 @@ function factor(value: unknown): Dimension | null {
 
 function dimensionMap(value: DimensionMap): DimensionMap {
   const legacy = value as DimensionMap & { EU?: number };
-  const { EU: _legacyI, ...rest } = legacy;
-  return { ...rest, I: legacy.I ?? legacy.EU };
+  return { D: legacy.D, I: legacy.I ?? legacy.EU, S: legacy.S, C: legacy.C };
 }
 
 function profile(value: ProfileVector): ProfileVector {
@@ -39,7 +38,7 @@ export function normalizeDiscScores(value: unknown): ScoreResult | null {
     predominant,
     secondary,
     combination,
-    combinationLabel: scores.combinationLabel?.replace(/(^|[^A-Za-zÀ-ÿ])EU(?=$|[^A-Za-zÀ-ÿ])/g, "$1I").replace(/^[DISCIEU]{2,4}(?=\s*—)/, combination),
+    ...(scores.combinationLabel !== undefined && { combinationLabel: `${combination} — ${predominant} primário / ${secondary} secundário` }),
     levels: dimensionMap(scores.levels as unknown as DimensionMap) as unknown as ScoreResult["levels"],
     ...(scores.net && { net: dimensionMap(scores.net) }),
     ...(scores.evidence && { evidence: dimensionMap(scores.evidence) }),
