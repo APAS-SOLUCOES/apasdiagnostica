@@ -150,7 +150,7 @@ export function DiscTechnicalReport({
     : "A diferença entre Natural e Adaptado não acionou alerta automático. Observe em quais ambientes a pessoa amplia, reduz ou alterna comportamentos.";
 
   return (
-    <article className="disc-technical-report tech-approved-report" aria-label={`Relatório Técnico DISC de ${assessment.candidate_name}`}>
+    <article className="disc-technical-report tech-approved-report" translate="no" aria-label={`Relatório Técnico DISC de ${assessment.candidate_name}`}>
       <CoverPage assessment={assessment} />
 
       <ApprovedPage number={2} title="Sumário">
