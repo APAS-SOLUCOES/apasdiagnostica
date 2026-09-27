@@ -3639,3 +3639,13 @@
 @media screen and (min-width:431px) and (max-width:760px) {
   .tech-approved-page { zoom:.54; }
 }
+
+/* APAS DISC — correção final da posição da logo da capa técnica */
+.tech-cover-approved .tech-cover-logo {
+  position: absolute;
+  z-index: 4;
+  left: 18mm;
+  top: 12mm;
+  width: 32mm;
+  height: 32mm;
+}
