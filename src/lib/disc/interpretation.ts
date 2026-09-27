@@ -150,7 +150,7 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
       pct(gap) + " pontos percentuais de diferença, indicando uma composição " + (close ? "mais próxima entre os fatores principais." : "com maior predominância do primeiro fator."),
     secondaryInfluence: NAMES[s] + (gap <= 3 ? " atua quase no mesmo nível do fator principal." : gap <= 7 ? " tem presença relevante ao lado do fator principal." : " aparece como influência complementar.") +
       " Ela acrescenta " + (sContent.headline.toLowerCase()) + " à leitura conjunta.",
-    lowerFactors: NAMES[o[3]] + " é o fator menos acentuado (" + pct(scores.adapted.percent[o[3]]) +
+    lowerFactors: NAMES[fourth] + " é o fator menos acentuado (" + pct(scores.adapted.percent[fourth]) +
       "), enquanto " + NAMES[third] + " ocupa a terceira posição (" + pct(scores.adapted.percent[third]) +
       "). Menor expressão relativa não significa ausência da característica.",
     intensitySummary: o.map((d) => d + " " + pct(scores.adapted.percent[d]) + " — " + levelText(scores.levels[d])).join(" · "),
@@ -177,8 +177,8 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
       closeCombination: close,
       naturalVsAdaptedDelta: delta,
       strongestDelta,
-      highestFactor: o[0],
-      lowestFactor: o[3],
+      highestFactor: first,
+      lowestFactor: fourth,
     },
     conclusion: "Seu resultado representa tendências comportamentais observadas neste instrumento e não uma identidade fixa. A leitura deve considerar a combinação, as intensidades, o contexto e as diferenças entre Natural e Adaptado.",
   };
