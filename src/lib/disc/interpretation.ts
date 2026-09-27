@@ -93,7 +93,8 @@ function adaptationText(scores: ScoreResult, delta: Record<Dimension, number>) {
 export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
   const p = scores.predominant;
   const s = scores.secondary;
-  const o = order(scores);\n  const [first = "D", second = "I", third = "S", fourth = "C"] = o;
+  const o = order(scores);
+  const [first = "D", second = "I", third = "S", fourth = "C"] = o;
   const delta = {} as Record<Dimension, number>;
   DIMS.forEach((d) => { delta[d] = round(scores.adapted.percent[d] - scores.natural.percent[d]); });
 
