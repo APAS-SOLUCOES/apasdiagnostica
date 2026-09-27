@@ -1,23 +1,19 @@
-# Rodada visual e técnica do APAS DISC 1.2
+# Auditoria e plano — relatório técnico DISC aprovado
 
-## Objetivo
-Elevar o relatório do avaliado ao padrão editorial premium já aprovado, criar um relatório técnico próprio para o analista e incluir a orientação inicial do questionário, sem alterar motor, perguntas, scoring, resultados, cores DISC ou o Diagnóstico Empresarial V3.
+## Resultado da auditoria (somente leitura)
+- Comparei o projeto atual (`1d1a27f0562d`) com a ponta da branch GitHub `git-status` (`de02d2855834`). São históricos distintos; a divergência abaixo é por conteúdo de arquivo, não uma afirmação de que commits inteiros estejam ausentes.
+- **Relatório técnico:** `src/components/apas/DiscTechnicalReport.tsx` difere do GitHub. Já possui a maquete A4 de **10 seções**, capa com montanha, páginas 3/9 ilustradas, logo SVG e encerramento; não é a versão antiga de 8 páginas. Falta a revisão gerencial de `de02d285`: introdução para líderes, base técnica do resultado na página 4, características e leitura gerencial na 5, observações de comunicação na 6, liderança/equipe/decisão/pressão e recomendações dinâmicas na 7, síntese contextual na 8. Também há uma diferença local de tipagem segura no mapeamento de ícones: **não substituir cegamente** pela linha do GitHub que presume índices sempre presentes.
+- **Outros arquivos divergentes:** `AppShell.tsx` (logo WebP local versus SVG remoto; commit `dd049756`), `DiscPremiumReport.tsx` (logo WebP local versus SVG remoto; `79b17566`), `src/styles.css` (pequenos ajustes de transparência do logo e um bloco adicional de ~275 linhas de consolidação e segurança visual do Premium; commits `44cae200`, `ff3b575e`, `829b111d`). `adaptive-content.ts` e `interpretation.ts` diferem somente nas proteções de tipagem/valores ausentes locais, sem revisão gerencial nova nesses módulos. `disc-premium-report-print.css`, `report-content.ts`, `scoring.ts` e a rota técnica são idênticos por conteúdo ao GitHub. Histórico relevante para a maquete técnica: `aeea4895`, `14579e4f`, `eaaaf0ea`, `90d0b090`; o commit mais recente `de02d285` modifica somente o componente técnico.
+- **Rota e acesso:** `/relatorios-disc/$id/tecnico` está sob `_authenticated` e `getAssessmentDetail` exige sessão. As regras de acesso dos resultados os limitam ao coach responsável ou administrador. A rota retorna indisponível quando não há resultado; não carrega respostas brutas. O endereço isolado não deve conceder acesso. Não foi executado teste interativo de tentativa de acesso de outra conta nesta auditoria.
+- **Dados dinâmicos:** o resultado salvo fornece Natural, Social e Adaptado, predominante/secundário, combinação, níveis, índice e alerta de adaptação. Hoje o documento mostra principalmente o Adaptado, o par de fatores, combinações e narrativa; calcula um texto de alerta de adaptação mas não o apresenta. Natural e Social não aparecem visualmente na versão atual **nem na revisão remota**. A revisão remota acrescenta cobertura, índice e leituras gerenciais dinâmicas, mas não exibe o alerta explicitamente. Não prometer que todos os itens listados já estejam visíveis.
+- **Impressão:** o botão atual chama `window.print()`; há `@page A4 portrait`, página fixa 210 × 297 mm e quebra após cada `.tech-approved-page`, com controles escondidos. Isto sugere 10 folhas A4, porém a contagem física e ausência de folhas em branco/cortes **não foram comprovadas** por PDF desta maquete nesta auditoria. As regras globais de impressão e o comprimento maior da revisão gerencial exigem ensaio real antes de publicar.
+- **Integrações:** a revisão gerencial utiliza dados e imagens já disponíveis; não exige conector, extensão, pacote ou migração novos. Sincronizar todo o GitHub aumentaria risco ao Premium, logos, paginação, questionário e tipagem estrita; não é necessário para esse objetivo.
 
-## Implementação
-- Preservar as 12 páginas e todo o texto aprovado do relatório do avaliado, enriquecendo cada página com composição editorial própria, alternância clara/escura, imagens e ilustrações temáticas, geometria e ícones discretos da identidade APAS.
-- Manter a página de perfis integrada ao mesmo projeto visual, com o gráfico DISC principal e três comparações visuais Natural/Adaptado/Social usando exatamente os percentuais e cores existentes.
-- Padronizar a assinatura APAS em todas as páginas com o padrão tipográfico atual, deixando o ponto de substituição preparado para a logo oficial.
-- Transformar o painel técnico em um documento A4 multipágina separado, imprimível e protegido, com resumo, perfis, intensidade, adaptação, combinação, leituras contextuais, pontos a validar, roteiro de devolutiva, recomendações e plano de acompanhamento — sem respostas, perguntas, fórmulas, pesos ou algoritmo.
-- Adicionar na área autenticada uma ação clara para imprimir o relatório técnico separadamente do relatório do avaliado.
-- Inserir uma única orientação visual no início do questionário público, antes do primeiro bloco, sem alterar as 24 perguntas nem o fluxo MAIS/MENOS.
-- Ajustar estilos de impressão para A4 real, margens seguras, quebras previsíveis e ocultação completa da interface.
+## Sequência mínima proposta para implementação futura (somente após autorização)
+1. Tomar `de02d285` como referência **apenas** para os trechos gerenciais de `DiscTechnicalReport.tsx`; preservar os guards de TypeScript locais, as 10 páginas, marcas e imagens da maquete. Não substituir `AppShell.tsx`, Premium, seus assets ou o CSS global inteiro.
+2. Se o conteúdo adicionado transbordar, ajustar **somente seletores `.tech-approved-*` em `src/styles.css`**; manter `disc-premium-report-print.css` intacto. Se a intenção for exibir também Natural/Social e alerta de adaptação no técnico, acrescentar apresentação desses dados já salvos sem mudar o cálculo, sujeito a comparação com a maquete aprovada.
+3. Validar TypeScript, testes e build; abrir uma avaliação concluída com sessão autorizada, verificar os dados exibidos, e testar bloqueio anônimo/sem permissão. Gerar PDF real via botão e conferir exatamente 10 folhas A4 (210 × 297 mm), legibilidade, logos, ausência de controles, cortes e folhas extras. Confirmar que o Premium continua com 12 folhas A4 e que nenhuma rota, motor, pergunta, autenticação ou dado foi alterado.
+4. Só após essas provas e uma autorização explícita para publicar, levar o resultado ao domínio. **Nenhum deploy foi realizado nesta auditoria.**
 
-## Verificação
-- Validar TypeScript, testes existentes e build.
-- Conferir as rotas autenticadas do relatório do avaliado e do documento técnico, incluindo bloqueio anônimo.
-- Gerar e inspecionar visualmente os PDFs: 12 páginas A4 do avaliado e documento técnico A4 multipágina, sem cortes ou controles.
-- Confirmar que os valores dos gráficos vêm dos resultados salvos e que nenhum arquivo do motor DISC 1.2 ou do Diagnóstico Empresarial foi modificado.
-- Se não houver avaliação real disponível, registrar com precisão quais verificações ficaram limitadas.
-
-## Restrições preservadas
-Nenhuma alteração em perguntas, scoring, pesos, resultados ou cores D/I/S/C do DISC 1.2; nenhuma alteração nas 70 perguntas, pesos, L01 inversa, escala/N/A, fases, eixos, Motor V1, banco, RLS ou fluxo do Diagnóstico Empresarial.
+## Limites desta etapa
+Nenhum arquivo de aplicação, asset, configuração, banco ou dependência foi alterado; somente este plano de auditoria foi escrito. Não houve instalação, geração de PDF, publicação ou correção automática. Alertas de permissões em três tabelas empresariais permanecem fora deste escopo e pedem decisão separada antes de eventual ajuste de acesso.
