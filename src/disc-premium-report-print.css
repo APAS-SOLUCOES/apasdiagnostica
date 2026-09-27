@@ -86,6 +86,11 @@
     height: 12mm;
   }
 
+  /* The approved dense pages scale their bodies; raise only their header line. */
+  .disc-report .disc-page:is([data-page="5"], [data-page="6"], [data-page="7"], [data-page="8"], [data-page="9"], [data-page="10"], [data-page="11"], [data-page="12"]) .disc-page-header {
+    top: 8mm;
+  }
+
   /* The cover wordmark sits below the name and quotation, not through them. */
   .disc-report .disc-cover-wordmark {
     top: 132mm !important;
