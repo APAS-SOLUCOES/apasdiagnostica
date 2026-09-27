@@ -80,6 +80,22 @@
     gap: 0 !important;
   }
 
+  /* Keep the brand clear of the opening label on each printed sheet. */
+  .disc-report .disc-page-header .disc-brand-logo {
+    width: 12mm;
+    height: 12mm;
+  }
+
+  /* The cover wordmark sits below the name and quotation, not through them. */
+  .disc-report .disc-cover-wordmark {
+    top: 132mm !important;
+  }
+
+  /* The four percentages need the full page width around the approved donut. */
+  .disc-report .disc-page[data-page="3"] .disc-profile-donut-stage {
+    width: 100%;
+  }
+
   /* The cover body previously used min-height: 297mm with padding in the default content-box model,
      which could fragment its bottom metadata onto a 13th sheet during print/PDF generation. */
   .disc-cover .disc-page-body {
