@@ -174,13 +174,16 @@ export const getPublicReport = createServerFn({ method: "GET" })
       .maybeSingle();
     if (!res) return { found: false };
 
+    const result = normalizeDiscScores(res.scores);
+    if (!result) return { found: false };
+
     return {
       found: true,
       candidate_name: row.candidate_name,
       context: row.context,
       submitted_at: row.submitted_at,
       instrumentVersion: row.instrument_version,
-      result: normalizeDiscScores(res.scores) ?? undefined,
+      result,
     };
   });
 
