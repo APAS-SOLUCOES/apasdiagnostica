@@ -18,15 +18,15 @@ describe("normalização dos códigos DISC persistidos", () => {
 
   it("converte apenas códigos legados de fator, inclusive em mapas e ordens", () => {
     const legacy = structuredClone(scores) as unknown as Record<string, unknown>;
-    legacy.predominant = "EU";
-    legacy.secondary = "D";
-    legacy.combination = "EUD";
-    legacy.combinationLabel = "EUD — EU primário / D secundário";
+    legacy["predominant"] = "EU";
+    legacy["secondary"] = "D";
+    legacy["combination"] = "EUD";
+    legacy["combinationLabel"] = "EUD — EU primário / D secundário";
     for (const key of ["natural", "social", "adapted"]) {
       const profile = legacy[key] as { percent: Record<string, number>; raw: Record<string, number>; order: string[] };
       for (const map of [profile.percent, profile.raw]) {
-        map.EU = map.I;
-        delete map.I;
+        map["EU"] = map["I"] ?? 0;
+        delete map["I"];
       }
       profile.order = profile.order.map((factor) => factor === "I" ? "EU" : factor);
     }
