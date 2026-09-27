@@ -70,6 +70,11 @@
     padding: 0 !important;
   }
 
+  /* The screen-only gap above the report shifts its A4 cover onto a second sheet. */
+  body:has(.disc-report) section:has(> .disc-report) {
+    margin-top: 0 !important;
+  }
+
   .disc-report {
     display: block !important;
     gap: 0 !important;
