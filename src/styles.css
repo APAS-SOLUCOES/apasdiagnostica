@@ -3473,3 +3473,169 @@
     page-break-after: avoid;
   }
 }
+
+
+/* APAS DISC — approved 10-page technical report implementation */
+.tech-approved-report {
+  --ta-red:#cf3030;
+  --ta-ink:#171717;
+  --ta-muted:#555;
+  background:#fff;
+  padding:0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.tech-approved-report * { box-sizing:border-box; print-color-adjust:exact; -webkit-print-color-adjust:exact; }
+.tech-approved-page {
+  position:relative;
+  width:210mm;
+  height:297mm;
+  min-height:297mm;
+  max-height:297mm;
+  margin:0 auto 8mm;
+  overflow:hidden;
+  background:#fff;
+  color:var(--ta-ink);
+  box-shadow:0 12px 34px rgba(0,0,0,.14);
+}
+.tech-approved-header {
+  position:relative;
+  z-index:3;
+  height:28mm;
+  padding:8mm 12mm 4mm;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+}
+.tech-approved-header img {
+  width:25mm;
+  height:12mm;
+  object-fit:contain;
+  object-position:left center;
+  background:transparent!important;
+}
+.tech-approved-header > div {
+  display:flex;
+  align-items:flex-end;
+  gap:4mm;
+  padding-top:4mm;
+  font-size:6.5pt;
+  color:#444;
+}
+.tech-approved-header i { width:12mm; height:1px; background:var(--ta-red); display:block; }
+.tech-approved-page main { position:relative; z-index:2; padding:4mm 12mm 16mm; }
+.tech-approved-kicker { margin:0 0 2mm; color:var(--ta-red); font-size:7pt; font-weight:800; letter-spacing:.04em; }
+.tech-approved-page h1 { margin:0; max-width:170mm; font-size:25pt; line-height:1.02; font-weight:800; letter-spacing:-.035em; }
+.tech-approved-page h2 { margin:3mm 0 9mm; font-size:10pt; line-height:1.35; font-weight:700; color:#333; }
+.tech-approved-page footer {
+  position:absolute; z-index:4; left:12mm; right:12mm; bottom:7mm;
+  display:flex; justify-content:space-between; align-items:center;
+  padding-top:3mm; border-top:1px solid #ddd; font-size:6.5pt; letter-spacing:.06em; color:#333;
+}
+.tech-approved-page footer b { color:var(--ta-red); padding:0 1.5mm; }
+.tech-approved-page footer strong { font-size:7pt; }
+
+.tech-cover-approved { background:#111; color:#fff; }
+.tech-cover-redbar { position:absolute; inset:0 auto 0 0; width:9mm; background:var(--ta-red); z-index:1; }
+.tech-cover-logo { position:absolute; z-index:4; left:17mm; top:17mm; width:45mm; height:45mm; }
+.tech-cover-logo img { width:100%; height:100%; object-fit:contain; object-position:left center; background:transparent!important; }
+.tech-cover-approved main { padding:48mm 12mm 16mm 18mm; }
+.tech-cover-approved main h1 { color:#fff; font-size:31pt; line-height:1.02; max-width:115mm; letter-spacing:-.025em; }
+.tech-cover-approved .tech-cover-label {
+  margin-top:4mm; color:var(--ta-red); font-size:8pt; font-weight:800; letter-spacing:.04em;
+}
+.tech-cover-person {
+  margin-top:30mm; display:grid; grid-template-columns:42mm 1fr; gap:2.5mm 4mm; max-width:110mm;
+}
+.tech-cover-person span { color:#aaa; font-size:7pt; }
+.tech-cover-person strong { color:#fff; font-size:8.5pt; }
+.tech-cover-bottom {
+  position:absolute; z-index:4; left:18mm; bottom:14mm; color:#fff; font-size:6.5pt; letter-spacing:.10em;
+}
+.tech-cover-bottom b { color:var(--ta-red); padding:0 1.5mm; }
+
+.tech-summary-approved { margin-top:9mm; display:grid; gap:0; max-width:155mm; }
+.tech-summary-approved div { display:grid; grid-template-columns:10mm 1fr; align-items:center; min-height:15mm; border-bottom:1px solid #d7d7d7; font-size:8.5pt; }
+.tech-summary-approved b { color:var(--ta-red); font-size:8pt; }
+.tech-summary-approved span { font-weight:700; }
+
+.tech-factor-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:4mm; margin:2mm 0 8mm; }
+.tech-factor-card {
+  min-height:42mm; padding:4mm; border:1px solid #ddd; border-top:3px solid; border-radius:0 0 3mm 3mm; background:#fff;
+}
+.tech-factor-card > strong { font-size:8pt; }
+.tech-factor-card h3 { margin:2mm 0 2mm; font-size:8pt; }
+.tech-factor-card p { margin:0; font-size:6.8pt; line-height:1.4; color:#444; }
+.tech-info-box {
+  border:1px solid #ddd; border-top:3px solid #333; border-radius:0 0 3mm 3mm; background:#fff; padding:5mm;
+  font-size:7.4pt; line-height:1.45;
+}
+.tech-info-box-red { border-top-color:var(--ta-red); }
+.tech-info-box-gray { border-top-color:#777; }
+.tech-info-box > strong { display:block; margin-bottom:2.5mm; font-size:7.8pt; color:#171717; }
+.tech-info-box > div { color:#444; }
+.tech-approved-page[data-page="3"] .tech-info-box { min-height:30mm; }
+
+.tech-profile-layout { display:grid; grid-template-columns:78mm 1fr; gap:8mm; align-items:start; margin-top:1mm; }
+.tech-profile-left { min-height:205mm; }
+.tech-profile-labels { display:grid; gap:13mm; padding:3mm 0 0 2mm; }
+.tech-profile-labels div { display:grid; gap:3mm; }
+.tech-profile-labels b { font-size:8pt; }
+.tech-profile-labels strong { font-size:9pt; }
+.tech-profile-wheel {
+  position:relative; width:67mm; height:67mm; margin:15mm 0 0 8mm; border-radius:50%; overflow:hidden;
+  display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr;
+}
+.tech-profile-wheel > div:not(.tech-profile-wheel-center) { display:grid; place-items:center; color:#fff; font-size:21pt; font-weight:800; }
+.tech-profile-wheel-center {
+  position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:25mm; height:25mm; border-radius:50%;
+  background:#fff; display:grid; place-items:center; color:#171717; font-size:13pt; font-weight:800; box-shadow:0 0 0 1px rgba(0,0,0,.04);
+}
+.tech-mode-cards { display:grid; gap:6mm; padding-top:1mm; }
+.tech-mode-cards > div { min-height:41mm; border:1px solid #ddd; border-top:4px solid #333; border-radius:0 0 4mm 4mm; padding:5mm; }
+.tech-mode-cards strong { font-size:9pt; }
+.tech-mode-cards p { margin:3mm 0 0; font-size:7.5pt; line-height:1.45; color:#444; }
+
+.tech-analysis-heading { display:flex; align-items:center; gap:5mm; margin:4mm 0 9mm; }
+.tech-analysis-heading > span { width:18mm; height:18mm; border-radius:50%; display:grid; place-items:center; background:var(--ta-red); color:#fff; font-size:19pt; font-weight:900; }
+.tech-analysis-heading h3 { margin:0; font-size:14pt; }
+.tech-analysis-heading p { margin:2mm 0 0; font-size:7.5pt; color:#555; }
+.tech-analysis-grid { display:grid; grid-template-columns:1fr 1fr; gap:5mm; }
+.tech-analysis-grid .tech-info-box { min-height:49mm; }
+.tech-analysis-grid .tech-info-box > div { font-size:7.5pt; }
+
+.tech-communication-approved { display:grid; grid-template-columns:1fr 1fr; gap:5mm; margin-top:4mm; }
+.tech-communication-approved > .tech-info-box { min-height:50mm; }
+.tech-communication-approved > .tech-info-box:last-child { grid-column:1 / -1; min-height:38mm; }
+
+.tech-management-grid { display:grid; grid-template-columns:1fr 1fr; gap:5mm; margin-top:3mm; }
+.tech-management-grid > .tech-info-box { min-height:45mm; }
+.tech-approved-page[data-page="7"] > main > .tech-info-box:last-child { margin-top:5mm; min-height:39mm; }
+
+.tech-team-grid { display:grid; grid-template-columns:1fr 1fr; gap:5mm; margin-top:5mm; }
+.tech-team-grid > .tech-info-box { min-height:51mm; }
+
+.tech-pressure-grid { display:grid; grid-template-columns:1fr 1fr; gap:5mm; margin-top:3mm; }
+.tech-pressure-grid > .tech-info-box { min-height:48mm; }
+.tech-approved-page[data-page="9"] > main > .tech-info-box:last-child { margin-top:6mm; min-height:44mm; }
+
+.tech-conclusion-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:4mm; margin:6mm 0; }
+.tech-conclusion-grid > .tech-info-box { min-height:57mm; }
+.tech-approved-page[data-page="10"] > main > .tech-info-box:last-of-type { min-height:49mm; }
+.tech-final-principle { margin:26mm 0 0; font-size:17pt; font-weight:800; letter-spacing:-.01em; }
+
+@media print {
+  @page { size:A4 portrait; margin:0; }
+  .tech-approved-report { padding:0!important; background:#fff!important; }
+  .tech-approved-page { margin:0!important; width:210mm!important; height:297mm!important; min-height:297mm!important; max-height:297mm!important; box-shadow:none!important; break-after:page; page-break-after:always; }
+  .tech-approved-page:last-child { break-after:auto; page-break-after:auto; }
+}
+@media screen and (max-width:760px) {
+  .tech-approved-report { width:100%; overflow-x:hidden; }
+  .tech-approved-page { width:210mm; height:297mm; min-height:297mm; max-height:297mm; margin:0 auto; zoom:.45; }
+}
+@media screen and (min-width:381px) and (max-width:430px) {
+  .tech-approved-page { zoom:.49; }
+}
+@media screen and (min-width:431px) and (max-width:760px) {
+  .tech-approved-page { zoom:.54; }
+}
