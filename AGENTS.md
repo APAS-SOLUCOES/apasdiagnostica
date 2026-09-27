@@ -9,4 +9,3 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Keep the DISC Premium 12-page presentation sourced from the approved GitHub backup branch; preserve its dynamic score bindings and isolate print fixes from the protected technical report, to prevent regression to an earlier layout.
