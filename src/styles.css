@@ -3538,7 +3538,10 @@
 .tech-cover-redbar { position:absolute; inset:0 auto 0 0; width:9mm; background:var(--ta-red); z-index:1; }
 .tech-cover-logo { position:absolute; z-index:4; left:17mm; top:17mm; width:45mm; height:45mm; }
 .tech-cover-logo img { width:100%; height:100%; object-fit:contain; object-position:left center; background:transparent!important; }
-.tech-cover-approved main { padding:60mm 12mm 16mm 18mm; }
+.tech-cover-approved main.tech-cover-main { padding:12mm 12mm 16mm 18mm; }
+.tech-cover-main .tech-cover-logo { position:static; width:32mm; height:32mm; margin:0 0 7mm 0; }
+.tech-cover-main .tech-cover-logo img { width:100%; height:100%; object-fit:contain; object-position:left top; background:transparent!important; }
+.tech-cover-main h1 { margin:0; }
 .tech-cover-approved main h1 { color:#fff; font-size:31pt; line-height:1.02; max-width:115mm; letter-spacing:-.025em; }
 .tech-cover-approved .tech-cover-label {
   margin-top:4mm; color:var(--ta-red); font-size:8pt; font-weight:800; letter-spacing:.04em;
@@ -3640,11 +3643,3 @@
   .tech-approved-page { zoom:.54; }
 }
 
-
-/* APAS DISC — cover logo spacing correction */
-.tech-cover-approved .tech-cover-logo {
-  left: 18mm;
-  top: 12mm;
-  width: 32mm;
-  height: 32mm;
-}
