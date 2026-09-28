@@ -29,6 +29,13 @@
       "when": 1788727639979,
       "tag": "0003_app_role_add_client",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1790563869880,
+      "tag": "0004_restrict_diagnostic_reference_reads_to_analysts",
+      "breakpoints": true
     }
   ]
 }
