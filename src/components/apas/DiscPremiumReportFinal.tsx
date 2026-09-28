@@ -37,7 +37,7 @@ function ReportFooter({ assessment, date, number, dark }: { assessment: ReportAs
   </div>;
 }
 
-function NumberedCard({ number, accent, icon: Icon, title, children, dark = false }: { number: number; accent: "green" | "orange" | "red" | "teal" | "dark"; icon: LucideIcon; title: string; children: ReactNode; dark?: boolean }) {
+function NumberedCard({ number, accent, icon: Icon, title, children, dark = false }: { number: number; accent: "green" | "orange" | "red" | "teal" | "dark"; icon: LucideIcon; title: ReactNode; children: ReactNode; dark?: boolean }) {
   return <article className={`disc-numbered-card disc-numbered-card-${accent} ${dark ? "is-dark" : ""}`}>
     <div className="disc-numbered-rail"><strong>{String(number).padStart(2, "0")}</strong><span /><Icon aria-hidden="true" /></div>
     <div className="disc-numbered-copy"><h3>{title}</h3><div>{children}</div></div>
@@ -171,13 +171,13 @@ export function DiscPremiumReportFinal({ assessment, scores }: { assessment: Rep
       <div className="disc-reminder"><Info aria-hidden="true" /><div><h3>Lembre-se</h3><p>Esses pontos de atenção não diminuem suas qualidades. Eles ajudam você a ampliar a percepção sobre o seu comportamento, favorecendo escolhas mais conscientes e resultados ainda mais consistentes.</p></div></div>
     </Page>
 
-    <Page number={7} eyebrow="07 · COMO VOCÊ PODE SER PERCEBIDO" title="Como você pode ser percebido" subtitle="A impressão que você provoca nos outros" icon={Users} artwork={<EditorialImage src={selfArtwork} alt="Composição editorial sobre percepção e autoconsciência" position="right" />} assessment={assessment} date={date}>
+    <Page number={7} eyebrow="07 · COMO VOCÊ PODE SER PERCEBIDO" title={<>Como você pode ser <span className="disc-title-accent">percebido</span></>} subtitle="A impressão que você provoca nos outros" icon={Users} artwork={<EditorialImage src={selfArtwork} alt="Composição editorial sobre percepção e autoconsciência" position="right" />} assessment={assessment} date={date}>
       <p className="disc-opening">Uma impressão que você provoca nos outros pode ser diferente da intenção que existe por trás do seu comportamento.</p>
       <div className="disc-numbered-stack perception-stack">
-        <NumberedCard number={1} accent="red" icon={ArrowUpRight} title="Como tende a agir"><p>{FACTOR_SHORT[scores.predominant]} aparece com mais força no seu resultado. {narrative.best[0]}.</p></NumberedCard>
-        <NumberedCard number={2} accent="dark" icon={MessageCircle} title="O que pode transmitir"><p>{primary.characteristics[0]}. Sua presença pode ser percebida a partir desse recurso.</p></NumberedCard>
-        <NumberedCard number={3} accent="red" icon={Network} title="O que pode ampliar"><p>{secondary.characteristics[0]}. Ampliar esse repertório pode favorecer adaptação e colaboração.</p></NumberedCard>
-        <NumberedCard number={4} accent="dark" icon={Target} title="Em momentos de pressão"><p>{narrative.perceived}</p></NumberedCard>
+        <NumberedCard number={1} accent="red" icon={Rocket} title={<>Como tende a <span className="disc-title-accent">agir</span></>}><p>{FACTOR_SHORT[scores.predominant]} aparece com mais força no seu resultado. {narrative.best[0]}.</p></NumberedCard>
+        <NumberedCard number={2} accent="dark" icon={MessageCircle} title={<>O que pode <span className="disc-title-accent">transmitir</span></>}><p>{primary.characteristics[0]}. Sua presença pode ser percebida a partir desse recurso.</p></NumberedCard>
+        <NumberedCard number={3} accent="red" icon={Focus} title={<>O que pode <span className="disc-title-accent">ampliar</span></>}><p>{secondary.characteristics[0]}. Ampliar esse repertório pode favorecer adaptação e colaboração.</p></NumberedCard>
+        <NumberedCard number={4} accent="dark" icon={Target} title={<>Em momentos de <span className="disc-title-accent">pressão</span></>}><p>{narrative.perceived}</p></NumberedCard>
       </div>
     </Page>
 
