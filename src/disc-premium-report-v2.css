@@ -775,3 +775,27 @@
     margin-bottom:8mm !important;
   }
 }
+
+/* The V2 uses light sheets for some pages marked dark by the legacy report.
+   Keep its readable ink and labels independent of those inherited selectors. */
+.disc-report-v2 .disc-page:is([data-page="3"],[data-page="8"],[data-page="10"],[data-page="12"]) {
+  --disc-ink:var(--v2-ink);
+  --disc-soft:var(--v2-muted);
+  --disc-line:var(--v2-line);
+  color:var(--v2-ink);
+}
+.disc-report-v2 .disc-page[data-page="3"] .disc-horizontal-track {
+  background:var(--v2-line);
+}
+.disc-report-v2 .disc-page[data-page="12"] .disc-closing {
+  color:var(--v2-ink);
+}
+.disc-report-v2 .disc-cover .disc-factor div {
+  color:var(--v2-ink);
+}
+.disc-report-v2 .disc-page:is([data-page="6"],[data-page="11"]) .disc-page-header > span {
+  color:var(--v2-paper) !important;
+}
+.disc-report-v2 .disc-page[data-page="6"] .disc-page-title {
+  color:var(--v2-paper);
+}
