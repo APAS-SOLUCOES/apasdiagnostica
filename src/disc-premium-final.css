@@ -787,6 +787,11 @@
 .disc-report-final .disc-page[data-page="3"] .disc-horizontal-track {
   background:var(--v2-line);
 }
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label b,
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label small,
+.disc-report-final .disc-page[data-page="3"] .disc-horizontal-row > b {
+  color:var(--v2-ink);
+}
 .disc-report-final .disc-page[data-page="12"] .disc-closing {
   color:var(--v2-ink);
 }
