@@ -14,7 +14,7 @@ describe("APAS DISC Premium visual contract", () => {
   it("keeps page 12 artwork and approved page labels", () => {
     expect(report).toContain('eyebrow="12 · SEU PERFIL NÃO É UM DESTINO"');
     expect(report).toMatch(/<Page number=\{12\}[\s\S]*?artwork=/);
-    expect(report).toContain('title="Seu perfil não é um destino"');
+    expect(report).toMatch(/title=\{<>Seu perfil não é <span className="disc-title-accent">um destino<\/span><\/>\}/);
   });
 
   it("uses I, never EU, as a DISC factor in the premium renderer", () => {
