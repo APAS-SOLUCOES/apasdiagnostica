@@ -155,7 +155,7 @@ export function DiscPremiumReportFinal({ assessment, scores }: { assessment: Rep
       <div className="disc-highlight"><strong>Em poucas palavras:</strong> {narrative.best[0]}</div>
     </Page>
 
-    <Page number={5} eyebrow="05 · SEUS PONTOS FORTES" title="Seus pontos fortes" subtitle="Recursos que você já leva com você" icon={Sprout} artwork={<EditorialImage src={approvedCoverMountainArtwork} alt="Montanha e horizonte, referência visual dos pontos fortes" position="right" />} assessment={assessment} date={date}>
+    <Page number={5} eyebrow="04 · SEUS PONTOS FORTES" title="Seus pontos fortes" subtitle="Recursos que você já leva com você" icon={Sprout} artwork={<EditorialImage src={approvedCoverMountainArtwork} alt="Montanha e horizonte, referência visual dos pontos fortes" position="right" />} assessment={assessment} date={date}>
       <p className="disc-opening">Recursos que você já leva com você e que podem aparecer com mais naturalidade quando o contexto favorece seu repertório.</p>
       <div className="disc-numbered-stack">{primary.strengths.slice(0, 4).map((item, index) => <NumberedCard key={item} number={index + 1} accent="green" icon={[Handshake, MessageCircle, Users, Network][index]} title={item}><p>{primary.characteristics[index] ?? narrative.best[index] ?? narrative.best[0]}</p></NumberedCard>)}</div>
       <div className="disc-bottom-callout"><strong>No contexto:</strong> {narrative.situations?.work ?? narrative.best[0]}</div>
