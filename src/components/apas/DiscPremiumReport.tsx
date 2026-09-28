@@ -1,4 +1,7 @@
+import type { CSSProperties } from "react";
 import { BarChart3, Leaf, Settings, Users } from "lucide-react";
+import coverArt from "@/assets/disc-editorial-cover.jpg";
+import "@/disc-premium-report.css";
 import type { ScoreResult } from "@/lib/disc/scoring";
 
 type AssessmentLike = {
@@ -37,7 +40,7 @@ export function DiscPremiumReport({ assessment, scores }: Props) {
   return (
     <section className="disc-premium-report" aria-label="Relatório individual APAS DISC">
       <article className="disc-page disc-page-cover" data-page="1">
-        <div className="disc-cover-background" aria-hidden="true" />
+        <div className="disc-cover-background" style={{ "--cover-art": `url("${coverArt}")` } as CSSProperties} aria-hidden="true" />
         <div className="disc-cover-shade" aria-hidden="true" />
         <div className="disc-cover-geometry" aria-hidden="true" />
 
@@ -60,7 +63,7 @@ export function DiscPremiumReport({ assessment, scores }: Props) {
 
         <div className="disc-cover-factors">
           {FACTORS.map(({ key, name, icon: Icon, color }) => (
-            <div key={key} className="disc-factor-card" style={{ "--factor-color": color } as React.CSSProperties}>
+            <div key={key} className="disc-factor-card" style={{ "--factor-color": color } as CSSProperties}>
               <strong>{key}</strong>
               <span />
               <em>{name}</em>
