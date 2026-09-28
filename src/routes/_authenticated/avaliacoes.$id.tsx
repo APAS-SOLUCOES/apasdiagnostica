@@ -9,6 +9,7 @@ import { DiscPremiumReportFinal } from "@/components/apas/DiscPremiumReportFinal
 import { DiscTechnicalPanel } from "@/components/apas/DiscTechnicalPanel";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import type { ScoreResult } from "@/lib/disc/scoring";
 import { normalizeDiscScores } from "@/lib/disc/normalize-result";
 
 export const Route = createFileRoute("/_authenticated/avaliacoes/$id")({
@@ -57,7 +58,7 @@ function DetalhePage() {
   }
 
   const { assessment, result } = q.data;
-  const scores = normalizeDiscScores(result?.scores);
+  const scores = normalizeDiscScores((result?.scores as unknown as ScoreResult) ?? null);
   const link =
     typeof window !== "undefined" ? `${window.location.origin}/a/${assessment.token}` : "";
 
@@ -68,7 +69,7 @@ function DetalhePage() {
         .filter(Boolean)
         .join(" · ")}
       actions={
-        <div className="flex flex-wrap gap-2">
+        <div className="flex gap-2">
           <Button
             variant="outline"
             onClick={() => {
@@ -128,7 +129,7 @@ function DetalhePage() {
 
       {scores && (
         <>
-           <section className="mt-8 min-w-0 overflow-x-auto print:hidden" aria-labelledby="technical-title">
+          <section className="mt-8 print:hidden" aria-labelledby="technical-title">
             <div className="mb-4"><p className="eyebrow">Uso exclusivo do especialista</p><h2 id="technical-title" className="mt-1 font-display text-xl font-semibold">Relatório técnico e roteiro de devolutiva</h2><p className="mt-2 text-sm text-muted-foreground">Indicadores de apoio à análise profissional. Esta área não integra o PDF individual.</p></div>
             <DiscTechnicalPanel assessment={assessment} scores={scores} computedAt={result?.computed_at ?? null} />
           </section>
