@@ -5,7 +5,7 @@ import { Copy, FileText, Loader2, Printer } from "lucide-react";
 import { toast } from "sonner";
 import { getAssessmentDetail } from "@/lib/apas.functions";
 import { AppShell } from "@/components/apas/AppShell";
-import { DiscPremiumReportV2 } from "@/components/apas/DiscPremiumReportV2";
+import { DiscPremiumReportFinal } from "@/components/apas/DiscPremiumReportFinal";
 import { DiscTechnicalPanel } from "@/components/apas/DiscTechnicalPanel";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -134,7 +134,7 @@ function DetalhePage() {
           </section>
           <section className="mt-10" aria-labelledby="individual-title">
             <div className="mb-4 print:hidden"><p className="eyebrow">Prévia do avaliado</p><h2 id="individual-title" className="mt-1 font-display text-xl font-semibold">Relatório individual APAS DISC</h2></div>
-            <DiscPremiumReportV2 assessment={assessment} scores={scores} />
+            <DiscPremiumReportFinal assessment={assessment} scores={scores} />
           </section>
         </>
       )}

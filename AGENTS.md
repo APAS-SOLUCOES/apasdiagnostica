@@ -11,3 +11,5 @@
 
 DISC reports normalize persisted legacy factor codes at the report boundary (`normalizeDiscScores`) rather than changing scoring or narrative text, so historical results display official D/I/S/C without altering calculations.
 
+The individual Premium report uses `DiscPremiumReportFinal` with its own isolated stylesheet; preserve the previous Premium implementations as backup and pass the same normalized assessment result to both Premium and Technical reports so neither presentation recalculates DISC.
+
