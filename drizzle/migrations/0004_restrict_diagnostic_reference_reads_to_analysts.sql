@@ -1,0 +1,3 @@
+ALTER POLICY diag_stages_select_auth ON public.diag_stage_profiles USING (public.has_role(auth.uid(), 'coach'::public.app_role) OR public.has_role(auth.uid(), 'admin'::public.app_role));
+ALTER POLICY diag_patterns_select_auth ON public.diag_patterns USING (public.has_role(auth.uid(), 'coach'::public.app_role) OR public.has_role(auth.uid(), 'admin'::public.app_role));
+ALTER POLICY diag_instruments_select_auth ON public.diag_instruments USING (public.has_role(auth.uid(), 'coach'::public.app_role) OR public.has_role(auth.uid(), 'admin'::public.app_role));
