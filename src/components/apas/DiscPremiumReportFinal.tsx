@@ -12,7 +12,7 @@ import teamHandsAsset from "@/assets/disc-approved-team-full.asset.json";
 const teamHandsArtwork = teamHandsAsset.url;
 import dialogueArtwork from "@/assets/disc-editorial-dialogue.jpg";
 import selfArtwork from "@/assets/disc-editorial-self.jpg";
-import apasLogo from "@/assets/apas-logo-official.webp";
+const apasLogo = "/apas-logo.svg";
 import type { ScoreResult, DimensionMap } from "@/lib/disc/scoring";
 import { DIMENSIONS, DIMENSION_NAMES, type Dimension } from "@/lib/disc/instrument";
 import { APAS_DISCLAIMER, DEVELOPMENT_FRAMEWORK, DIMENSION_CONTENT } from "@/lib/disc/content";
