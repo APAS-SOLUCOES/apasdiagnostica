@@ -6,7 +6,7 @@ import { toast } from "sonner";
 import { getAssessmentDetail } from "@/lib/apas.functions";
 import { AppShell } from "@/components/apas/AppShell";
 import { DiscTechnicalPanel } from "@/components/apas/DiscTechnicalPanel";
-import { DiscPremiumReport } from "@/components/apas/DiscPremiumReport";
+import { DiscPremiumReportFinal } from "@/components/apas/DiscPremiumReportFinal";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import type { ScoreResult } from "@/lib/disc/scoring";
@@ -134,7 +134,7 @@ function DetalhePage() {
             <DiscTechnicalPanel assessment={assessment} scores={scores} computedAt={result?.computed_at ?? null} />
           </section>
           <section className="mt-10">
-            <DiscPremiumReport assessment={assessment} scores={scores} />
+            <DiscPremiumReportFinal assessment={assessment} scores={scores} />
           </section>
         </>
       )}
