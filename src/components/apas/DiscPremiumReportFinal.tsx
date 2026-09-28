@@ -57,7 +57,7 @@ function EditorialImage({ src, alt, position = "right" }: { src: string; alt: st
   return <figure className={`disc-editorial-image disc-editorial-image-${position}`}><img src={src} alt={alt} loading="eager" /></figure>;
 }
 
-function SignalCard({ type, title, children }: { type: Signal; title: string; children: ReactNode }) {
+function SignalCard({ type, title, children }: { type: Signal; title: ReactNode; children: ReactNode }) {
   const icons = { strength: Check, observe: Lightbulb, attention: AlertTriangle, tip: ArrowUpRight };
   const Icon = icons[type];
   return <div className={`disc-signal disc-signal-${type}`}><div className="disc-signal-icon"><Icon aria-hidden="true" /></div><div><h3>{title}</h3><div>{children}</div></div></div>;
@@ -181,9 +181,9 @@ export function DiscPremiumReportFinal({ assessment, scores }: { assessment: Rep
       </div>
     </Page>
 
-    <Page number={8} eyebrow="08 · COMUNICAÇÃO" title="Comunicação" subtitle="Como você tende a se expressar" icon={MessageCircle} dark artwork={<div className="disc-page-hero-art disc-page-hero-art-dialogue"><img src={dialogueArtwork} alt="Pessoas conversando, referência visual aprovada para comunicação" /><div /></div>} assessment={assessment} date={date}>
+    <Page number={8} eyebrow="08 · COMUNICAÇÃO" title={<>Comuni<span className="disc-title-accent">cação</span></>} subtitle="Como você tende a se expressar" icon={MessageCircle} dark artwork={<div className="disc-page-hero-art disc-page-hero-art-dialogue"><img src={dialogueArtwork} alt="Pessoas conversando, referência visual aprovada para comunicação" /><div /></div>} assessment={assessment} date={date}>
       <div className="disc-dark-intro">A forma como você se comunica é uma extensão do seu estilo comportamental. Ela mostra como você compartilha ideias, influencia pessoas e constrói conexões no seu dia a dia.</div>
-      <div className="disc-signal-grid disc-signal-grid-dark"><SignalCard type="strength" title="Quando está no seu melhor"><p>{narrative.communication}</p></SignalCard><SignalCard type="observe" title="Vale observar"><p>Se a mensagem foi compreendida, se houve espaço real para resposta e se os acordos ficaram claros.</p></SignalCard><SignalCard type="attention" title="Ponto de atenção"><p>{primary.attention[0]}.</p></SignalCard><SignalCard type="tip" title="Experimente"><p>{primary.development[0]}. Ao final, confirme quem fará o quê e até quando.</p></SignalCard></div>
+      <div className="disc-signal-grid disc-signal-grid-dark"><SignalCard type="strength" title={<>Quando está no <span className="disc-signal-strength">seu melhor</span></>}><p>{narrative.communication}</p></SignalCard><SignalCard type="observe" title={<>Vale <span className="disc-signal-observe">observar</span></>}><p>Se a mensagem foi compreendida, se houve espaço real para resposta e se os acordos ficaram claros.</p></SignalCard><SignalCard type="attention" title={<>Ponto de <span className="disc-signal-attention">atenção</span></>}><p>{primary.attention[0]}.</p></SignalCard><SignalCard type="tip" title={<span className="disc-signal-tip">Experimente</span>}><p>{primary.development[0]}. Ao final, confirme quem fará o quê e até quando.</p></SignalCard></div>
     </Page>
 
     <Page number={9} eyebrow="09 · DECISÃO" title={<>Deci<span className="disc-title-accent">são</span></>} subtitle="Como você tende a escolher" icon={Network} artwork={<div className="disc-banner-art"><img src={decisionCompassArtwork} alt="Imagem editorial sobre direção e escolhas" /></div>} assessment={assessment} date={date}>
