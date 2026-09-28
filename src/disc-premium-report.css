@@ -1,0 +1,314 @@
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+.disc-premium-report {
+  width: 100%;
+  display: grid;
+  gap: 18px;
+  color: #fff;
+}
+
+.disc-premium-report .disc-page {
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  max-width: 100%;
+  margin-inline: auto;
+  overflow: hidden;
+  background: #070a0e;
+  box-sizing: border-box;
+  isolation: isolate;
+}
+
+.disc-page-cover {
+  font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
+}
+
+.disc-cover-background {
+  position: absolute;
+  inset: 0;
+  z-index: -4;
+  background:
+    linear-gradient(180deg, rgba(4, 7, 11, .16) 0%, rgba(4, 7, 11, .08) 32%, rgba(4, 7, 11, .34) 60%, rgba(4, 7, 11, .96) 100%),
+    url("/src/assets/disc-editorial-cover.jpg") center / cover no-repeat;
+}
+
+.disc-cover-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  background:
+    linear-gradient(90deg, rgba(4, 7, 11, .52) 0%, rgba(4, 7, 11, .06) 58%, rgba(4, 7, 11, .18) 100%),
+    linear-gradient(180deg, rgba(4, 7, 11, .20) 0%, transparent 38%, rgba(4, 7, 11, .42) 74%, rgba(4, 7, 11, .88) 100%);
+}
+
+.disc-cover-geometry {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    linear-gradient(128deg, transparent 0 41%, rgba(255,255,255,.08) 41.2% 44%, transparent 44.2%),
+    linear-gradient(128deg, transparent 0 52%, rgba(255,255,255,.06) 52.2% 55%, transparent 55.2%),
+    linear-gradient(128deg, transparent 0 57%, rgba(255,24,31,.95) 57.15% 57.35%, transparent 57.5%);
+  opacity: .9;
+}
+
+.disc-cover-header {
+  position: absolute;
+  top: 9mm;
+  left: 12mm;
+  right: 12mm;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10mm;
+}
+
+.disc-cover-logo {
+  width: 39mm;
+  height: auto;
+  object-fit: contain;
+}
+
+.disc-cover-header-title {
+  margin-top: 5mm;
+  min-width: 105mm;
+  color: rgba(255,255,255,.94);
+  font-size: 8.2pt;
+  line-height: 1.2;
+  letter-spacing: .025em;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.disc-cover-header-title span {
+  display: block;
+  width: 52mm;
+  height: 1.2mm;
+  margin: 2mm 0 0 auto;
+  background: #ff1b23;
+}
+
+.disc-cover-main {
+  position: absolute;
+  left: 12mm;
+  right: 12mm;
+  top: 61mm;
+}
+
+.disc-cover-eyebrow {
+  margin: 0 0 8mm;
+  color: #ff1720;
+  font-family: "Sora", ui-sans-serif, system-ui, sans-serif;
+  font-size: 9.2pt;
+  font-weight: 800;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+}
+
+.disc-cover-main h1 {
+  max-width: 175mm;
+  margin: 0;
+  color: #fff;
+  font-family: "Sora", ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(25pt, 4.2vw, 30pt);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+
+.disc-cover-subtitle {
+  margin: 5mm 0 0;
+  color: rgba(255,255,255,.92);
+  font-size: 12pt;
+  line-height: 1.35;
+  letter-spacing: .005em;
+}
+
+.disc-cover-wordmark {
+  position: absolute;
+  left: 0;
+  top: 42mm;
+  color: rgba(255,255,255,.27);
+  font-family: "Sora", ui-sans-serif, system-ui, sans-serif;
+  font-size: 78pt;
+  font-weight: 800;
+  line-height: .76;
+  letter-spacing: -.08em;
+  user-select: none;
+}
+
+.disc-cover-factors {
+  position: absolute;
+  left: 12mm;
+  right: 12mm;
+  bottom: 37mm;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5mm;
+}
+
+.disc-factor-card {
+  min-height: 21mm;
+  display: grid;
+  grid-template-columns: 18mm 1px minmax(0, 1fr) 12mm;
+  align-items: center;
+  gap: 4mm;
+  padding: 3mm 4mm;
+  box-sizing: border-box;
+  background: rgba(8, 11, 15, .93);
+  border-top: 1.5mm solid var(--factor-color);
+  box-shadow: 0 1mm 2mm rgba(0,0,0,.26);
+}
+
+.disc-factor-card strong {
+  color: var(--factor-color);
+  font-family: "Sora", ui-sans-serif, system-ui, sans-serif;
+  font-size: 23pt;
+  line-height: 1;
+}
+
+.disc-factor-card span {
+  width: 1px;
+  height: 10mm;
+  background: rgba(255,255,255,.36);
+}
+
+.disc-factor-card em {
+  color: rgba(255,255,255,.96);
+  font-size: 8.6pt;
+  font-style: normal;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.disc-factor-card svg {
+  width: 9mm;
+  height: 9mm;
+  color: var(--factor-color);
+  justify-self: end;
+}
+
+.disc-cover-footer {
+  position: absolute;
+  left: 12mm;
+  right: 12mm;
+  bottom: 9mm;
+  padding-top: 3mm;
+  border-top: 1px solid rgba(255,255,255,.78);
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 8mm;
+  color: #fff;
+}
+
+.disc-cover-footer > div:first-child {
+  display: grid;
+  gap: 1.2mm;
+}
+
+.disc-cover-footer span {
+  font-size: 7.5pt;
+  color: rgba(255,255,255,.82);
+}
+
+.disc-cover-footer strong {
+  font-size: 9.4pt;
+  font-weight: 700;
+}
+
+.disc-cover-footer-right {
+  display: flex;
+  align-items: center;
+  gap: 5mm;
+}
+
+.disc-cover-footer-right img {
+  width: 22mm;
+  height: auto;
+  object-fit: contain;
+}
+
+.disc-cover-footer-right span {
+  font-size: 8pt;
+  white-space: nowrap;
+}
+
+.disc-report-pending-pages {
+  width: 210mm;
+  max-width: 100%;
+  margin-inline: auto;
+  padding: 10px 14px;
+  border: 1px dashed rgba(255,255,255,.18);
+  color: rgba(255,255,255,.62);
+  font-size: 12px;
+}
+
+@media screen and (max-width: 900px) {
+  .disc-premium-report .disc-page {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 210 / 297;
+  }
+
+  .disc-cover-header {
+    top: 4.3%;
+    left: 5.7%;
+    right: 5.7%;
+  }
+
+  .disc-cover-logo {
+    width: 18.6%;
+  }
+
+  .disc-cover-main {
+    left: 5.7%;
+    right: 5.7%;
+    top: 20.5%;
+  }
+
+  .disc-cover-factors {
+    left: 5.7%;
+    right: 5.7%;
+    bottom: 12.5%;
+  }
+
+  .disc-cover-footer {
+    left: 5.7%;
+    right: 5.7%;
+    bottom: 3%;
+  }
+}
+
+@media print {
+  body {
+    background: #fff !important;
+  }
+
+  .disc-premium-report {
+    display: block;
+  }
+
+  .disc-premium-report .disc-page {
+    width: 210mm;
+    height: 297mm;
+    max-width: none;
+    margin: 0;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .disc-premium-report .disc-page:last-of-type {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  .disc-report-pending-pages {
+    display: none !important;
+  }
+}
