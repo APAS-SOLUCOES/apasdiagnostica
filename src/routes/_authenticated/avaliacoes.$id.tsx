@@ -5,7 +5,6 @@ import { Copy, FileText, Loader2, Printer } from "lucide-react";
 import { toast } from "sonner";
 import { getAssessmentDetail } from "@/lib/apas.functions";
 import { AppShell } from "@/components/apas/AppShell";
-import { DiscPremiumReportFinal } from "@/components/apas/DiscPremiumReportFinal";
 import { DiscTechnicalPanel } from "@/components/apas/DiscTechnicalPanel";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -133,9 +132,12 @@ function DetalhePage() {
             <div className="mb-4"><p className="eyebrow">Uso exclusivo do especialista</p><h2 id="technical-title" className="mt-1 font-display text-xl font-semibold">Relatório técnico e roteiro de devolutiva</h2><p className="mt-2 text-sm text-muted-foreground">Indicadores de apoio à análise profissional. Esta área não integra o PDF individual.</p></div>
             <DiscTechnicalPanel assessment={assessment} scores={scores} computedAt={result?.computed_at ?? null} />
           </section>
-          <section className="mt-10" aria-labelledby="individual-title">
-            <div className="mb-4 print:hidden"><p className="eyebrow">Prévia do avaliado</p><h2 id="individual-title" className="mt-1 font-display text-xl font-semibold">Relatório individual APAS DISC</h2></div>
-            <DiscPremiumReportFinal assessment={assessment} scores={scores} />
+          <section className="mt-10 print:hidden" aria-labelledby="individual-title">
+            <div className="rounded-xl border border-dashed border-border p-6">
+              <p className="eyebrow">Relatório individual APAS DISC</p>
+              <h2 id="individual-title" className="mt-1 font-display text-xl font-semibold">As 12 páginas finais serão inseridas aqui</h2>
+              <p className="mt-2 text-sm text-muted-foreground">O relatório anterior foi removido do repositório para receber as páginas finais aprovadas.</p>
+            </div>
           </section>
         </>
       )}
