@@ -1,47 +1,86 @@
-import { DIMENSIONS, type Dimension } from "./instrument";
-import type { ScoreResult, DimensionMap, ProfileVector } from "./scoring";
+import type { Dimension } from "@/lib/disc/instrument";
+import type { DimensionMap, ScoreResult } from "@/lib/disc/scoring";
 
-// Only the historical factor code is remapped; narrative text is never modified.
-function factor(value: unknown): Dimension | null {
-  if (value === "EU") return "I";
-  return DIMENSIONS.find((dimension) => dimension === value) ?? null;
-}
+const DISC_DIMENSIONS: Dimension[] = ["D", "I", "S", "C"];
 
-function dimensionMap(value: DimensionMap): DimensionMap {
-  const legacy = value as DimensionMap & { EU?: number };
-  return { D: legacy.D, I: legacy.I ?? legacy.EU, S: legacy.S, C: legacy.C };
-}
-
-function profile(value: ProfileVector): ProfileVector {
+function normalizeDimensionMap(value: unknown): DimensionMap {
+  const source = (value && typeof value === "object" ? value : {}) as Record<string, unknown>;
   return {
-    ...value,
-    raw: dimensionMap(value.raw),
-    percent: dimensionMap(value.percent),
-    order: value.order.map((item) => factor(item) ?? item),
+    D: Number(source["D"] ?? 0),
+    I: Number(source["I"] ?? source["EU"] ?? 0),
+    S: Number(source["S"] ?? 0),
+    C: Number(source["C"] ?? 0),
   };
 }
 
-/** Normalize persisted historical factor codes at the report boundary, without recalculating scores. */
+function normalizeVector(value: unknown) {
+  const source = (value && typeof value === "object" ? value : {}) as Record<string, unknown>;
+  const percent = normalizeDimensionMap(source["percent"]);
+  const raw = normalizeDimensionMap(source["raw"]);
+  const order = Array.isArray(source["order"])
+    ? source["order"]
+        .map((d) => (d === "EU" ? "I" : d))
+        .filter((d): d is Dimension => DISC_DIMENSIONS.includes(d as Dimension))
+    : [...DISC_DIMENSIONS].sort((a, b) => percent[b] - percent[a]);
+
+  return { ...source, percent, raw, order };
+}
+
+/**
+ * Normaliza resultados DISC persistidos por versões antigas do instrumento.
+ * A migração é apenas de nomenclatura de fator: EU -> I (Influência).
+ * Nenhuma pontuação, resposta ou fórmula de scoring é recalculada.
+ */
 export function normalizeDiscScores(value: unknown): ScoreResult | null {
   if (!value || typeof value !== "object") return null;
-  const scores = value as ScoreResult;
-  if (!scores.natural?.percent || !scores.social?.percent || !scores.adapted?.percent || !scores.predominant || !scores.secondary) return null;
-  const predominant = factor(scores.predominant);
-  const secondary = factor(scores.secondary);
-  if (!predominant || !secondary || predominant === secondary) return null;
-  const combination = `${predominant}${secondary}`;
+
+  const source = value as unknown as Record<string, unknown>;
+  const natural = normalizeVector(source["natural"]);
+  const social = normalizeVector(source["social"]);
+  const adapted = normalizeVector(source["adapted"]);
+
+  const predominant = source["predominant"] === "EU" ? "I" : source["predominant"];
+  const secondary = source["secondary"] === "EU" ? "I" : source["secondary"];
+  const validFactor = (d: unknown): d is Dimension => DISC_DIMENSIONS.includes(d as Dimension);
+
+  if (!validFactor(predominant) || !validFactor(secondary) || predominant === secondary) return null;
+
+  const normalizedPredominant = validFactor(predominant) ? predominant : "D";
+  const normalizedSecondary =
+    validFactor(secondary) && secondary !== normalizedPredominant
+      ? secondary
+      : DISC_DIMENSIONS.find((d) => d !== normalizedPredominant) ?? "I";
+
+  const combination = `${normalizedPredominant}${normalizedSecondary}`;
+  const levelsSource = (source["levels"] && typeof source["levels"] === "object" ? source["levels"] : {}) as Record<string, unknown>;
+  const levels = {
+    D: levelsSource["D"] ?? "moderado",
+    I: levelsSource["I"] ?? levelsSource["EU"] ?? "moderado",
+    S: levelsSource["S"] ?? "moderado",
+    C: levelsSource["C"] ?? "moderado",
+  } as ScoreResult["levels"];
+
+  const countsSource = (source["counts"] && typeof source["counts"] === "object" ? source["counts"] : {}) as Record<string, unknown>;
+  const counts = {
+    most: normalizeDimensionMap(countsSource["most"]),
+    least: normalizeDimensionMap(countsSource["least"]),
+  };
+
+  const evidence = source["evidence"] === undefined ? undefined : normalizeDimensionMap(source["evidence"]);
+  const net = source["net"] === undefined ? undefined : normalizeDimensionMap(source["net"]);
+
   return {
-    ...scores,
-    natural: profile(scores.natural),
-    social: profile(scores.social),
-    adapted: profile(scores.adapted),
-    predominant,
-    secondary,
+    ...(source as ScoreResult),
+    natural,
+    social,
+    adapted,
+    predominant: normalizedPredominant,
+    secondary: normalizedSecondary,
     combination,
-    ...(scores.combinationLabel !== undefined && { combinationLabel: `${combination} — ${predominant} primário / ${secondary} secundário` }),
-    levels: dimensionMap(scores.levels as unknown as DimensionMap) as unknown as ScoreResult["levels"],
-    ...(scores.net && { net: dimensionMap(scores.net) }),
-    ...(scores.evidence && { evidence: dimensionMap(scores.evidence) }),
-    ...(scores.counts && { counts: { most: dimensionMap(scores.counts.most), least: dimensionMap(scores.counts.least) } }),
+    combinationLabel: `${combination} — ${normalizedPredominant} primário / ${normalizedSecondary} secundário`,
+    levels,
+    counts,
+    ...(evidence ? { evidence } : {}),
+    ...(net ? { net } : {}),
   };
 }
