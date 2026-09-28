@@ -126,7 +126,7 @@ export function DiscPremiumReportFinal({ assessment, scores }: { assessment: Rep
       <div className="disc-cover-meta"><div><span>Relatório individual</span><span>{assessment.role_title || "Autoconhecimento profissional"}</span></div><div><ApasBrand inverse /><span>{date}</span></div></div>
     </Page>
 
-    <Page number={2} eyebrow="02 · ANTES DE OLHAR O RESULTADO" title="Você não é um número." icon={Compass} artwork={<EditorialImage src={editorialCoverArtwork} alt="Pessoa contemplando a paisagem, referência visual editorial da abertura" position="right" />} assessment={assessment} date={date}>
+    <Page number={2} eyebrow="01 · ANTES DE OLHAR O RESULTADO" title="Você não é um número." icon={Compass} artwork={<EditorialImage src={editorialCoverArtwork} alt="Pessoa contemplando a paisagem, referência visual editorial da abertura" position="right" />} assessment={assessment} date={date}>
       <p className="disc-opening disc-opening-strong">O resultado deste relatório não pretende colocar você dentro de uma caixa ou definir quem você é.</p>
       <p className="disc-body-copy">Ele mostra tendências sobre a forma como você costuma agir, decidir, se comunicar e responder às situações do dia a dia.</p>
       <p className="disc-body-copy">Algumas partes podem parecer muito familiares. Outras podem provocar reflexão. O importante é usar este material para ampliar sua percepção sobre como você funciona.</p>
