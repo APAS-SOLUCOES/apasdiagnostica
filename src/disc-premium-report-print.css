@@ -137,6 +137,37 @@
   }
 }
 
+/* The approved attention photograph belongs to the sheet, not to its text flow.
+   Keeping it outside the transformed body prevents Chromium from fragmenting
+   or dropping that body's content when printing the sixth A4 sheet. */
+.disc-report .disc-page[data-page="6"] > .disc-page-hero-art {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  pointer-events: none;
+}
+
+.disc-report .disc-page[data-page="6"] > .disc-page-body {
+  position: relative;
+  z-index: 1;
+}
+
+@media print {
+  .disc-report .disc-page[data-page="6"] > .disc-page-body {
+    transform: none;
+    width: 100%;
+  }
+
+  .disc-report .disc-page[data-page="6"] > .disc-page-hero-art {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+}
+
 /* APAS brand treatment shared by the DISC technical report. */
 .disc-tech-brand-logo {
   display: block;
