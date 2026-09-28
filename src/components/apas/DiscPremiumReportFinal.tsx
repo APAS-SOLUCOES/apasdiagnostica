@@ -146,7 +146,7 @@ export function DiscPremiumReportFinal({ assessment, scores }: { assessment: Rep
       <p className="disc-note"><Info aria-hidden="true" />Nenhuma perspectiva é melhor. Juntas, elas ajudam a compreender o repertório e o contexto. As barras e o gráfico representam visualmente os valores calculados para esta aplicação.</p>
     </Page>
 
-    <Page number={4} eyebrow="04 · SEU JEITO DE AGIR" title={<>Seu jeito <span className="disc-title-accent">de agir</span></>} subtitle="Determinação e conexão em equilíbrio" icon={Focus} assessment={assessment} date={date}>
+    <Page number={4} eyebrow="03 · SEU JEITO DE AGIR" title={<>Seu jeito <span className="disc-title-accent">de agir</span></>} subtitle="Determinação e conexão em equilíbrio" icon={Focus} assessment={assessment} date={date}>
       <p className="disc-profile-identity">{narrative.title}</p>
       <p className="disc-opening">Seu resultado indica uma predominância de <strong>{DIMENSION_NAMES[scores.predominant]} — {scores.predominant}</strong>, combinada por características de <strong>{DIMENSION_NAMES[scores.secondary]} — {scores.secondary}</strong>.</p>
       <p className="disc-body-copy">{narrative.profilePortrait}</p>
