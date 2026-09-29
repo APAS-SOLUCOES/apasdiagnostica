@@ -87,6 +87,9 @@ function adaptationText(scores: ScoreResult, delta: Record<Dimension, number>) {
   if (scores.adaptationAlert) {
     return "Seu índice de adaptação é " + index + ". Há uma diferença mais perceptível entre tendências naturais e o comportamento adaptado ao contexto. Isso não é positivo nem negativo por si só: indica que vale observar onde o ambiente está exigindo maior ajuste. A maior variação foi de " + pct(max) + " em " + NAMES[strongest] + ".";
   }
+  if (max > 0) {
+    return "Seu índice de adaptação é " + index + ". As diferenças entre o modo natural e o adaptado aparecem de forma mais contida, mas há uma variação observável em " + NAMES[strongest] + " de " + pct(max) + " pontos percentuais. Isso ajuda a identificar onde o contexto pode estar pedindo um ajuste específico, sem significar algo positivo ou negativo por si só.";
+  }
   return "Seu índice de adaptação é " + index + ". As diferenças entre o modo natural e o adaptado aparecem de forma mais contida, indicando maior proximidade entre as tendências espontâneas e a resposta ao contexto avaliado.";
 }
 
