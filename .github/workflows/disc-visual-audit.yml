@@ -3,6 +3,7 @@ name: DISC Visual Audit
 on:
   push:
     branches: ["visual-audit-*"]
+  workflow_dispatch:
 
 jobs:
   render:
