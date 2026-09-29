@@ -22,7 +22,7 @@ describe("APAS DISC Premium visual contract", () => {
   });
 
   it("preserves the A4 portrait print contract and all page selectors", () => {
-    expect(css).toContain("@page{size:A4 portrait");
+    expect(css).toMatch(/@page\s*\{\s*size:\s*A4 portrait;/);
     for (const page of Array.from({ length: 12 }, (_, i) => i + 1)) {
       expect(css).toContain(`data-page="${page}"`);
     }
