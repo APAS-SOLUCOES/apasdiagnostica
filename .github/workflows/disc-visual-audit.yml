@@ -1,0 +1,41 @@
+name: DISC Visual Audit
+
+on:
+  push:
+    branches: ["visual-audit-*"]
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build application
+        run: npm run build
+
+      - name: Install Chromium
+        run: npx -y playwright@1.56.1 install --with-deps chromium
+
+      - name: Start Vite
+        run: |
+          npm run dev -- --host 127.0.0.1 > /tmp/vite.log 2>&1 &
+          npx -y wait-on@9.0.1 http://127.0.0.1:5173/visual-audit.html
+
+      - name: Capture 12-page report
+        run: |
+          mkdir -p visual-audit-output
+          npx -y playwright@1.56.1 screenshot             --browser=chromium             --viewport-size="1087,1536"             --full-page             http://127.0.0.1:5173/visual-audit.html             visual-audit-output/disc-report-full.png
+
+      - name: Upload visual audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: disc-visual-audit
+          path: visual-audit-output/disc-report-full.png
+          retention-days: 3
