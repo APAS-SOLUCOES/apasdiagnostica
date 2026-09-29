@@ -25,17 +25,26 @@ jobs:
 
       - name: Start Vite
         run: |
-          nohup npm run dev -- --host 127.0.0.1 > /tmp/vite.log 2>&1 &
-          for i in {1..60}; do
-            if curl -fsS http://127.0.0.1:5173/visual-audit.html >/dev/null; then
+          nohup npm run dev -- --host 127.0.0.1 --port 5173 > /tmp/vite.log 2>&1 &
+          PID=$!
+          echo "VITE_PID=$PID" >> "$GITHUB_ENV"
+          for i in {1..90}; do
+            if curl -fsS http://127.0.0.1:5173/visual-audit.html >/dev/null 2>&1; then
               echo "Vite is ready"
-              exit 0
+              break
+            fi
+            if ! kill -0 "$PID" 2>/dev/null; then
+              echo "Vite process exited early"
+              cat /tmp/vite.log
+              exit 1
             fi
             sleep 2
           done
-          echo "Vite did not start"
-          cat /tmp/vite.log
-          exit 1
+          if ! curl -fsS http://127.0.0.1:5173/visual-audit.html >/dev/null 2>&1; then
+            echo "Vite did not become ready"
+            cat /tmp/vite.log
+            exit 1
+          fi
 
       - name: Capture 12-page report
         run: |
