@@ -1724,3 +1724,54 @@
     margin-bottom:22mm !important;
   }
 }
+
+
+/* Visual audit R2 — final geometry repair for Pages 3 and 12. */
+.disc-report-final .disc-page[data-page="3"] .disc-title-row {
+  align-items:flex-start;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-page-title {
+  max-width:92mm;
+  font-size:21pt;
+  line-height:1.12;
+  letter-spacing:-.02em;
+  margin-bottom:4mm;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-page-subtitle {
+  margin-bottom:5mm;
+}
+
+.disc-report-final .disc-page[data-page="12"] .disc-combination {
+  position:relative;
+  left:auto;
+  right:auto;
+  top:auto;
+  height:auto;
+  min-height:34mm;
+  margin-top:4mm;
+  box-sizing:border-box;
+  background:#11171c !important;
+  color:#fff !important;
+  z-index:1;
+}
+.disc-report-final .disc-page[data-page="12"] .closing-stack {
+  position:relative;
+  left:auto;
+  right:auto;
+  top:auto;
+  bottom:auto;
+  margin-top:5mm;
+  gap:2.5mm;
+  z-index:1;
+}
+.disc-report-final .disc-page[data-page="12"] .closing-stack .disc-numbered-card {
+  min-height:24mm;
+}
+.disc-report-final .disc-page[data-page="12"] .disc-disclaimer {
+  position:relative;
+  left:auto;
+  right:auto;
+  bottom:auto;
+  margin-top:4mm;
+  z-index:1;
+}
