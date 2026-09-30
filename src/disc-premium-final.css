@@ -1558,3 +1558,169 @@
     rgba(2,5,8,.90) 100%
   );
 }
+
+
+/* Visual audit corrections — isolated to the final DISC presentation. */
+.disc-report-final .disc-numbered-copy,
+.disc-report-final .disc-numbered-copy p,
+.disc-report-final .disc-numbered-copy li,
+.disc-report-final .disc-bottom-callout,
+.disc-report-final .disc-impact-intro,
+.disc-report-final .disc-highlight {
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
+
+.disc-report-final .disc-page[data-page="2"] .disc-body-copy {
+  max-width:138mm;
+  margin-bottom:4mm;
+}
+.disc-report-final .disc-page[data-page="2"] .disc-foundation {
+  bottom:14mm;
+  max-width:112mm;
+  margin:0;
+}
+
+.disc-report-final .disc-page[data-page="3"] .disc-profile-overview {
+  top:45mm;
+  bottom:27mm;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-intro {
+  top:51mm;
+  width:78mm;
+  font-size:8.8pt;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-donut-wrap {
+  top:0;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-grid {
+  bottom:0;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-index {
+  margin-top:2mm;
+}
+
+.disc-report-final .disc-page[data-page="4"] .disc-profile-identity {
+  margin-top:4mm;
+  margin-bottom:4mm;
+}
+.disc-report-final .disc-page[data-page="4"] .disc-body-copy {
+  max-width:142mm;
+  margin-bottom:3mm;
+}
+.disc-report-final .disc-page[data-page="4"] .disc-impact-intro {
+  bottom:29mm;
+  right:15mm;
+}
+.disc-report-final .disc-page[data-page="4"] .disc-highlight {
+  bottom:9mm;
+  right:15mm;
+}
+
+.disc-report-final .disc-page[data-page="5"] .disc-numbered-stack {
+  margin-right:5mm;
+  margin-top:4mm;
+  margin-bottom:13mm;
+}
+.disc-report-final .disc-page[data-page="5"] .disc-numbered-card {
+  grid-template-columns:27mm 1fr;
+}
+
+.disc-report-final .disc-page[data-page="6"] .disc-numbered-stack {
+  margin-top:2mm;
+  margin-bottom:22mm;
+}
+.disc-report-final .disc-page[data-page="6"] .disc-numbered-card {
+  min-height:24mm;
+}
+.disc-report-final .disc-page[data-page="6"] .disc-reminder {
+  bottom:6mm;
+  min-height:25mm;
+  box-sizing:border-box;
+}
+
+.disc-report-final .disc-page[data-page="7"] .disc-editorial-image {
+  top:43mm;
+  height:51mm;
+}
+.disc-report-final .disc-page[data-page="7"] .disc-editorial-image img {
+  height:51mm;
+}
+.disc-report-final .disc-page[data-page="7"] .disc-opening {
+  top:72mm;
+  max-width:168mm;
+}
+.disc-report-final .disc-page[data-page="7"] .perception-stack {
+  top:94mm;
+  bottom:9mm;
+}
+
+.disc-report-final .disc-page[data-page="8"] .disc-dark-intro {
+  max-width:96mm;
+  margin-top:4mm;
+}
+.disc-report-final .disc-page[data-page="8"] .disc-signal-grid {
+  top:96mm;
+  bottom:10mm;
+}
+.disc-report-final .disc-page[data-page="8"] .disc-signal {
+  min-height:0;
+  padding:4mm;
+}
+.disc-report-final .disc-page[data-page="8"] .disc-signal h3 {
+  font-size:9.5pt;
+}
+.disc-report-final .disc-page[data-page="8"] .disc-signal p {
+  font-size:7.4pt;
+}
+
+.disc-report-final .disc-page[data-page="9"] .disc-opening {
+  top:68mm;
+  width:78mm;
+}
+.disc-report-final .disc-page[data-page="9"] .disc-numbered-stack {
+  top:98mm;
+  bottom:8mm;
+}
+.disc-report-final .disc-page[data-page="9"] .disc-numbered-card {
+  min-height:25mm;
+}
+
+.disc-report-final .disc-page[data-page="10"] .disc-opening {
+  top:72mm;
+  width:78mm;
+}
+.disc-report-final .disc-page[data-page="10"] .disc-numbered-stack {
+  top:101mm;
+  bottom:8mm;
+}
+.disc-report-final .disc-page[data-page="10"] .disc-numbered-card {
+  min-height:25mm;
+}
+
+.disc-report-final .disc-page[data-page="12"] .disc-combination {
+  top:78mm;
+  height:34mm;
+  z-index:3;
+}
+.disc-report-final .disc-page[data-page="12"] .closing-stack {
+  top:116mm;
+  bottom:14mm;
+  z-index:2;
+}
+.disc-report-final .disc-page[data-page="12"] .closing-stack .disc-numbered-card {
+  min-height:25mm;
+}
+.disc-report-final .disc-page[data-page="12"] .disc-disclaimer {
+  bottom:7mm;
+  z-index:4;
+}
+
+@media print {
+  .disc-report-final .disc-page[data-page="2"] .disc-foundation {
+    bottom:14mm !important;
+  }
+  .disc-report-final .disc-page[data-page="6"] .disc-numbered-stack {
+    margin-bottom:22mm !important;
+  }
+}
