@@ -59,3 +59,5 @@ jobs:
           name: disc-visual-audit
           path: visual-audit-output/disc-report-full.png
           retention-days: 3
+
+# Page 3/12 geometry rerender
