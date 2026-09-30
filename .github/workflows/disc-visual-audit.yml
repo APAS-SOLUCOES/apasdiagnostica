@@ -1,4 +1,5 @@
 name: DISC Visual Audit
+# Controlled visual-audit rerender after layout corrections
 
 on:
   push:
