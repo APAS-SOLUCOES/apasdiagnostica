@@ -1775,3 +1775,187 @@
   margin-top:4mm;
   z-index:1;
 }
+
+
+/* Visual audit R3 — repository-local assets and robust text geometry. */
+
+/* Grid children must be allowed to shrink/wrap inside the A4 canvas. */
+.disc-report-final .disc-numbered-card,
+.disc-report-final .disc-numbered-copy,
+.disc-report-final .disc-numbered-copy > div,
+.disc-report-final .disc-signal,
+.disc-report-final .disc-signal > div {
+  min-width:0;
+  box-sizing:border-box;
+}
+.disc-report-final .disc-numbered-copy p,
+.disc-report-final .disc-numbered-copy li,
+.disc-report-final .disc-signal p,
+.disc-report-final .disc-signal li,
+.disc-report-final .disc-signal h3 {
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
+
+/* Page 2 — keep the final explanatory paragraph and conceptual note separated. */
+.disc-report-final .disc-page[data-page="2"] .disc-editorial-quote + .disc-body-copy {
+  position:relative;
+  z-index:2;
+  max-width:112mm;
+  margin:4mm 0 0;
+}
+.disc-report-final .disc-page[data-page="2"] .disc-foundation {
+  position:absolute !important;
+  left:0 !important;
+  bottom:12mm !important;
+  max-width:112mm !important;
+  margin:0 !important;
+  z-index:3;
+  box-sizing:border-box;
+}
+
+/* Page 3 — rebuild the upper profile area as a stable flow block. */
+.disc-report-final .disc-page[data-page="3"] .disc-page-title {
+  max-width:92mm;
+  font-size:21pt;
+  line-height:1.08;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-page-subtitle {
+  margin:1.5mm 0 3mm 11mm;
+  max-width:92mm;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-intro {
+  position:relative !important;
+  left:auto !important;
+  top:auto !important;
+  width:78mm;
+  max-width:78mm;
+  margin:0 0 3mm;
+  font-size:8.8pt;
+  line-height:1.4;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-overview {
+  position:relative !important;
+  left:auto !important;
+  right:auto !important;
+  top:auto !important;
+  bottom:auto !important;
+  height:103mm;
+  margin:1mm 0 0;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-donut-wrap {
+  left:auto !important;
+  right:0 !important;
+  top:0 !important;
+  width:78mm;
+  height:60mm;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-donut {
+  left:15mm;
+  top:4mm;
+  width:48mm;
+  height:48mm;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-grid {
+  left:0;
+  right:0;
+  bottom:0 !important;
+  gap:2.5mm;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-card {
+  min-height:39mm;
+  padding:3mm;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-index {
+  margin-top:3mm;
+}
+
+/* Page 4 — use a real vertical DISC watermark instead of escaped CSS text. */
+.disc-report-final .disc-page[data-page="4"]::after {
+  content:"DISC";
+  writing-mode:vertical-rl;
+  right:2mm;
+  top:39mm;
+  width:auto;
+  height:64mm;
+  border:0;
+  transform:none;
+  color:rgba(0,0,0,.055);
+  font-size:56pt;
+  line-height:.82;
+  letter-spacing:.04em;
+}
+
+/* Page 5 — contain the long contextual callout inside the sheet. */
+.disc-report-final .disc-page[data-page="5"] .disc-bottom-callout {
+  box-sizing:border-box;
+  max-width:100%;
+  padding-right:7mm;
+  font-size:6.8pt;
+  line-height:1.35;
+  overflow-wrap:anywhere;
+}
+
+/* Page 7 — title hierarchy above the hero; image below it for reliable contrast. */
+.disc-report-final .disc-page[data-page="7"] .disc-editorial-image {
+  top:48mm;
+  height:55mm;
+  z-index:0;
+}
+.disc-report-final .disc-page[data-page="7"] .disc-editorial-image img {
+  height:55mm;
+}
+.disc-report-final .disc-page[data-page="7"] .disc-opening {
+  top:107mm;
+  max-width:168mm;
+}
+.disc-report-final .disc-page[data-page="7"] .perception-stack {
+  top:126mm;
+  bottom:8mm;
+}
+
+/* Page 8 — prevent the two-column signal cards from pushing past the A4 edge. */
+.disc-report-final .disc-page[data-page="8"] .disc-signal-grid {
+  min-width:0;
+}
+.disc-report-final .disc-page[data-page="8"] .disc-signal {
+  min-width:0;
+  overflow:hidden;
+}
+
+/* Pages 9/10 — keep long narrative cards inside their grid tracks. */
+.disc-report-final .disc-page[data-page="9"] .disc-numbered-copy,
+.disc-report-final .disc-page[data-page="10"] .disc-numbered-copy {
+  min-width:0;
+  overflow:hidden;
+}
+.disc-report-final .disc-page[data-page="9"] .disc-numbered-copy p,
+.disc-report-final .disc-page[data-page="10"] .disc-numbered-copy p {
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
+
+/* Page 11 — the experiment panel is intentionally light; use dark readable text. */
+.disc-report-final .disc-page[data-page="11"] .disc-action-title,
+.disc-report-final .disc-page[data-page="11"] .disc-action-title h3,
+.disc-report-final .disc-page[data-page="11"] .disc-action-title svg {
+  color:#1b2227 !important;
+}
+.disc-report-final .disc-page[data-page="11"] .disc-action-title h3 .disc-title-accent {
+  color:var(--v2-red) !important;
+}
+
+/* Page 12 — constrain the combination copy and preserve the three closing cards. */
+.disc-report-final .disc-page[data-page="12"] .disc-combination {
+  width:100%;
+  box-sizing:border-box;
+  grid-template-columns:64mm minmax(0,1fr);
+}
+.disc-report-final .disc-page[data-page="12"] .disc-combination > div:last-child {
+  min-width:0;
+}
+.disc-report-final .disc-page[data-page="12"] .disc-combination p,
+.disc-report-final .disc-page[data-page="12"] .disc-combination h3 {
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
