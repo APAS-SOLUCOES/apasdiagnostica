@@ -30,7 +30,7 @@ jobs:
           PID=$!
           echo "VITE_PID=$PID" >> "$GITHUB_ENV"
           for i in {1..90}; do
-            if curl -fsS http://127.0.0.1:5173/visual-audit.html >/dev/null 2>&1; then
+            if curl -fsS http://127.0.0.1:5173/visual-audit >/dev/null 2>&1; then
               echo "Vite is ready"
               break
             fi
@@ -41,7 +41,7 @@ jobs:
             fi
             sleep 2
           done
-          if ! curl -fsS http://127.0.0.1:5173/visual-audit.html >/dev/null 2>&1; then
+          if ! curl -fsS http://127.0.0.1:5173/visual-audit >/dev/null 2>&1; then
             echo "Vite did not become ready"
             cat /tmp/vite.log
             exit 1
@@ -50,7 +50,7 @@ jobs:
       - name: Capture 12-page report
         run: |
           mkdir -p visual-audit-output
-          npx -y playwright@1.56.1 screenshot             --browser=chromium             --viewport-size="1087,1536"             --full-page             http://127.0.0.1:5173/visual-audit.html             visual-audit-output/disc-report-full.png
+          npx -y playwright@1.56.1 screenshot             --browser=chromium             --viewport-size="1087,1536"             --full-page             http://127.0.0.1:5173/visual-audit             visual-audit-output/disc-report-full.png
 
       - name: Upload visual audit
         uses: actions/upload-artifact@v4
