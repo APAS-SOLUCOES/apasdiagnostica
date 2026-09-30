@@ -1959,3 +1959,153 @@
   overflow-wrap:anywhere;
   word-break:normal;
 }
+
+
+/* Visual audit R4 — final containment repairs for Pages 4, 5, 7, 8, 9, 10 and 12. */
+
+/* Page 4 — keep the impact callout in normal flow after the narrative. */
+.disc-report-final .disc-page[data-page="4"] .disc-impact-intro {
+  position:relative !important;
+  left:auto !important;
+  right:auto !important;
+  top:auto !important;
+  bottom:auto !important;
+  width:100%;
+  max-width:142mm;
+  margin:4mm 0 0;
+  box-sizing:border-box;
+}
+.disc-report-final .disc-page[data-page="4"] .disc-highlight {
+  position:relative !important;
+  left:auto !important;
+  right:auto !important;
+  top:auto !important;
+  bottom:auto !important;
+  width:100%;
+  max-width:142mm;
+  margin:3mm 0 0;
+  box-sizing:border-box;
+}
+
+/* Page 5 — make the contextual note a bounded, wrapping block. */
+.disc-report-final .disc-page[data-page="5"] .disc-bottom-callout {
+  position:relative;
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  margin-left:0;
+  margin-right:0;
+  padding:3mm 8mm 3mm 12mm;
+  font-size:6.4pt;
+  line-height:1.35;
+  box-sizing:border-box;
+  overflow:hidden;
+}
+
+/* Page 7 — title must remain above the editorial hero; keep the cards inside the sheet. */
+.disc-report-final .disc-page[data-page="7"] .disc-editorial-image {
+  top:58mm;
+  height:45mm;
+  z-index:0;
+}
+.disc-report-final .disc-page[data-page="7"] .disc-editorial-image img {
+  height:45mm;
+}
+.disc-report-final .disc-page[data-page="7"] .disc-page-title,
+.disc-report-final .disc-page[data-page="7"] .disc-page-subtitle {
+  position:relative;
+  z-index:3;
+}
+.disc-report-final .disc-page[data-page="7"] .disc-opening {
+  top:107mm;
+  width:168mm;
+  max-width:168mm;
+  z-index:3;
+}
+.disc-report-final .disc-page[data-page="7"] .perception-stack {
+  top:126mm;
+  bottom:8mm;
+  width:100%;
+  min-width:0;
+}
+.disc-report-final .disc-page[data-page="7"] .perception-stack .disc-numbered-copy {
+  min-width:0;
+  overflow:hidden;
+}
+
+/* Page 8 — force both columns to stay inside the A4 content width. */
+.disc-report-final .disc-page[data-page="8"] .disc-signal-grid {
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:4mm;
+  box-sizing:border-box;
+}
+.disc-report-final .disc-page[data-page="8"] .disc-signal {
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  overflow:hidden;
+  box-sizing:border-box;
+}
+.disc-report-final .disc-page[data-page="8"] .disc-signal p {
+  max-width:100%;
+}
+
+/* Pages 9 and 10 — constrain each card's text track and allow long copy to wrap. */
+.disc-report-final .disc-page[data-page="9"] .disc-numbered-stack,
+.disc-report-final .disc-page[data-page="10"] .disc-numbered-stack {
+  width:100%;
+  max-width:100%;
+  min-width:0;
+}
+.disc-report-final .disc-page[data-page="9"] .disc-numbered-card,
+.disc-report-final .disc-page[data-page="10"] .disc-numbered-card {
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  grid-template-columns:31mm minmax(0,1fr);
+  box-sizing:border-box;
+}
+.disc-report-final .disc-page[data-page="9"] .disc-numbered-copy,
+.disc-report-final .disc-page[data-page="10"] .disc-numbered-copy {
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  box-sizing:border-box;
+  overflow:hidden;
+}
+.disc-report-final .disc-page[data-page="9"] .disc-numbered-copy p,
+.disc-report-final .disc-page[data-page="10"] .disc-numbered-copy p {
+  max-width:100%;
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
+
+/* Page 12 — keep the combination narrative and disclaimer inside their tracks. */
+.disc-report-final .disc-page[data-page="12"] .disc-combination {
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  grid-template-columns:64mm minmax(0,1fr);
+}
+.disc-report-final .disc-page[data-page="12"] .disc-combination > div,
+.disc-report-final .disc-page[data-page="12"] .disc-combination > div:last-child {
+  min-width:0;
+  max-width:100%;
+  box-sizing:border-box;
+}
+.disc-report-final .disc-page[data-page="12"] .disc-combination p,
+.disc-report-final .disc-page[data-page="12"] .disc-combination h3 {
+  max-width:100%;
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
+.disc-report-final .disc-page[data-page="12"] .disc-disclaimer {
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  box-sizing:border-box;
+  overflow:hidden;
+}
