@@ -2109,3 +2109,74 @@
   box-sizing:border-box;
   overflow:hidden;
 }
+
+
+/* Visual audit R5 — final horizontal containment and Page 7 hierarchy. */
+
+/* Page 7 — give the subtitle clear space above the hero image. */
+.disc-report-final .disc-page[data-page="7"] .disc-editorial-image {
+  top:68mm;
+  height:42mm;
+  z-index:0;
+}
+.disc-report-final .disc-page[data-page="7"] .disc-editorial-image img {
+  height:42mm;
+}
+.disc-report-final .disc-page[data-page="7"] .disc-opening {
+  top:113mm;
+}
+.disc-report-final .disc-page[data-page="7"] .perception-stack {
+  top:131mm;
+  bottom:8mm;
+}
+
+/* Pages 8–10 and 12 — reserve a right-side safety gutter inside the A4 sheet. */
+.disc-report-final .disc-page[data-page="8"] .disc-signal-grid {
+  width:calc(100% - 8mm);
+  max-width:calc(100% - 8mm);
+  margin-right:8mm;
+}
+.disc-report-final .disc-page[data-page="8"] .disc-signal {
+  width:100%;
+  max-width:100%;
+}
+
+.disc-report-final .disc-page[data-page="9"] .disc-numbered-stack,
+.disc-report-final .disc-page[data-page="10"] .disc-numbered-stack {
+  width:calc(100% - 8mm);
+  max-width:calc(100% - 8mm);
+  margin-right:8mm;
+}
+.disc-report-final .disc-page[data-page="9"] .disc-numbered-card,
+.disc-report-final .disc-page[data-page="10"] .disc-numbered-card {
+  width:100%;
+  max-width:100%;
+}
+.disc-report-final .disc-page[data-page="9"] .disc-numbered-copy,
+.disc-report-final .disc-page[data-page="10"] .disc-numbered-copy {
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+
+.disc-report-final .disc-page[data-page="12"] .disc-combination {
+  width:calc(100% - 8mm);
+  max-width:calc(100% - 8mm);
+  margin-right:8mm;
+}
+.disc-report-final .disc-page[data-page="12"] .closing-stack {
+  width:calc(100% - 8mm);
+  max-width:calc(100% - 8mm);
+  margin-right:8mm;
+}
+.disc-report-final .disc-page[data-page="12"] .disc-disclaimer {
+  width:calc(100% - 8mm);
+  max-width:calc(100% - 8mm);
+  margin-right:8mm;
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+
+/* Page 3 — separate the adaptation note from the index panel edge. */
+.disc-report-final .disc-page[data-page="3"] .disc-index {
+  margin-top:5mm;
+}
