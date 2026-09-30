@@ -2180,3 +2180,42 @@
 .disc-report-final .disc-page[data-page="3"] .disc-index {
   margin-top:5mm;
 }
+
+/* Visual audit R6 — final page 7 hierarchy and hard A4 right-edge containment. */
+
+/* Page 7 — move the title block below the fixed decorative corner geometry. */
+.disc-report-final .disc-page[data-page="7"] .disc-kicker {
+  margin-top:8mm;
+  position:relative;
+  z-index:5;
+}
+.disc-report-final .disc-page[data-page="7"] .disc-title-row {
+  position:relative;
+  z-index:5;
+}
+.disc-report-final .disc-page[data-page="7"] .disc-page-subtitle {
+  position:relative;
+  z-index:5;
+}
+
+/* Pages 8–10 — the stacks/grids are absolute and need an explicit right inset,
+   not only a width calculation, to remain inside the printable A4 sheet. */
+.disc-report-final .disc-page[data-page="8"] .disc-signal-grid {
+  left:0 !important;
+  right:8mm !important;
+  width:auto !important;
+  max-width:none !important;
+}
+.disc-report-final .disc-page[data-page="9"] .disc-numbered-stack,
+.disc-report-final .disc-page[data-page="10"] .disc-numbered-stack {
+  left:0 !important;
+  right:8mm !important;
+  width:auto !important;
+  max-width:none !important;
+}
+.disc-report-final .disc-page[data-page="9"] .disc-numbered-card,
+.disc-report-final .disc-page[data-page="10"] .disc-numbered-card {
+  width:100%;
+  max-width:100%;
+  box-sizing:border-box;
+}
