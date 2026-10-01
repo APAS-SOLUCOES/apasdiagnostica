@@ -2406,3 +2406,22 @@
   top: 45mm !important;
   bottom: auto !important;
 }
+
+
+/* Final clean-branch visual validation — P3/P7 containment only. */
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-i,
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-s {
+  right: -6mm !important;
+}
+.disc-report-final .disc-page[data-page="7"] .disc-numbered-copy {
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+.disc-report-final .disc-page[data-page="7"] .disc-numbered-copy > div,
+.disc-report-final .disc-page[data-page="7"] .disc-numbered-copy p {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+}
