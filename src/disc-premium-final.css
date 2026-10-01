@@ -2363,3 +2363,13 @@
   left: auto !important;
   text-align: left !important;
 }
+
+
+/* R9 last label placement — put S in the clear right-side lane. */
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-s {
+  top: 45mm !important;
+  bottom: auto !important;
+  right: 0 !important;
+  left: auto !important;
+  text-align: left !important;
+}
