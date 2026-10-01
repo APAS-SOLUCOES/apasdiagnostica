@@ -306,8 +306,8 @@ function combinationImpact(combination: string, primaryValue: number, gap: numbe
   const index = gap <= 3 ? 0 : gap <= 8 ? 1 : 2;
   const selected = options?.[index] ?? COMBINATION_IMPACT["DI"]?.[0];
   return {
-    title: selected.title,
-    phrase: `${selected.phrase} Os dois fatores principais aparecem em ${pct(primaryValue)} e com uma diferença de ${pct(gap)} pontos.`,
+    title: selected?.title ?? "",
+    phrase: `${selected?.phrase ?? ""} Os dois fatores principais aparecem em ${pct(primaryValue)} e com uma diferença de ${pct(gap)} pontos.`,
   };
 }
 
