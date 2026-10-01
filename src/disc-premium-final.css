@@ -2373,3 +2373,19 @@
   left: auto !important;
   text-align: left !important;
 }
+
+
+/* R9 deterministic label coordinates — keep I/S inside the 90mm graph stage. */
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-i {
+  left: 72mm !important;
+  right: auto !important;
+  top: 0 !important;
+  text-align: left !important;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-s {
+  left: 72mm !important;
+  right: auto !important;
+  top: 45mm !important;
+  bottom: auto !important;
+  text-align: left !important;
+}
