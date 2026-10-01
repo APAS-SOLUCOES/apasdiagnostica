@@ -2434,3 +2434,16 @@
   left: auto !important;
   text-align: left !important;
 }
+
+
+/* Final audit balance — keep I inside page, S clear of donut. */
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-i {
+  right: 2mm !important;
+  left: auto !important;
+  text-align: right !important;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-s {
+  right: -12mm !important;
+  left: auto !important;
+  text-align: left !important;
+}
