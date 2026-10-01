@@ -2350,3 +2350,16 @@
   right: 0 !important;
   text-align: left !important;
 }
+
+
+/* R9 final graph-stage width — preserve donut size and create safe label space. */
+.disc-report-final .disc-page[data-page="3"] .disc-profile-donut-wrap {
+  right: 0 !important;
+  width: 90mm !important;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-i,
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-s {
+  right: 0 !important;
+  left: auto !important;
+  text-align: left !important;
+}
