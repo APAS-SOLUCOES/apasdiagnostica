@@ -2320,3 +2320,25 @@
   line-height: 1.32 !important;
   overflow-wrap: anywhere !important;
 }
+
+
+/* R9 final containment pass — keep page 3 labels inside the graph stage and
+ * give page 7 long-form card text a deliberate right-side safe area. */
+.disc-report-final .disc-page[data-page="3"] .disc-profile-donut-wrap {
+  right: 6mm !important;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-d,
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-i,
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-s,
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-c {
+  left: auto !important;
+  right: 2mm !important;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-d,
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-c {
+  left: 2mm !important;
+  right: auto !important;
+}
+.disc-report-final .disc-page[data-page="7"] .disc-numbered-copy {
+  padding-right: 10mm !important;
+}
