@@ -1,0 +1,52 @@
+name: DISC Visual Audit
+on:
+  push:
+    branches: ["visual-audit-*"]
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: npm install
+      - name: Build application
+        run: npm run build
+      - name: Install Chromium
+        run: npx -y playwright@1.56.1 install --with-deps chromium
+      - name: Start Vite
+        run: |
+          nohup npm run dev -- --host 127.0.0.1 --port 5173 > /tmp/vite.log 2>&1 &
+          PID=$!
+          echo "VITE_PID=$PID" >> "$GITHUB_ENV"
+          for i in {1..90}; do
+            if curl -fsS http://127.0.0.1:5173/visual-audit >/dev/null 2>&1; then
+              echo "Vite is ready"
+              break
+            fi
+            if ! kill -0 "$PID" 2>/dev/null; then
+              echo "Vite process exited early"
+              cat /tmp/vite.log
+              exit 1
+            fi
+            sleep 2
+          done
+          if ! curl -fsS http://127.0.0.1:5173/visual-audit >/dev/null 2>&1; then
+            echo "Vite did not become ready"
+            cat /tmp/vite.log
+            exit 1
+          fi
+      - name: Capture 12-page report
+        run: |
+          mkdir -p visual-audit-output
+          npx -y playwright@1.56.1 screenshot --browser=chromium --viewport-size="1087,1536" --full-page http://127.0.0.1:5173/visual-audit visual-audit-output/disc-report-full.png
+      - name: Upload visual audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: disc-visual-audit-clean-final
+          path: visual-audit-output/disc-report-full.png
+          retention-days: 3
