@@ -2411,7 +2411,7 @@
 /* Final clean-branch visual validation — P3/P7 containment only. */
 .disc-report-final .disc-page[data-page="3"] .disc-profile-label-i,
 .disc-report-final .disc-page[data-page="3"] .disc-profile-label-s {
-  right: -6mm !important;
+  right: -12mm !important;
 }
 .disc-report-final .disc-page[data-page="7"] .disc-numbered-copy {
   min-width: 0 !important;
