@@ -118,7 +118,7 @@ export function buildDiscReportContent(scores: ScoreResult): DiscReportContent {
     ...(narrative?.excess ?? []),
     pContent.attention[0],
     sContent.attention[0],
-  ].filter(Boolean))].slice(0, 4);
+  ].filter((item): item is string => typeof item === "string" && item.length > 0))].slice(0, 4);
 
   return {
     profileName: p + s + " — " + NAMES[p] + " + " + NAMES[s],
