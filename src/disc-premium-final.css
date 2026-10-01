@@ -2285,3 +2285,38 @@
   overflow-wrap:anywhere !important;
   word-break:normal !important;
 }
+
+
+/* Visual audit R9 — targeted containment fixes only.
+ * Scope: pages 2, 3 and 7 on the isolated visual-audit branch.
+ */
+
+/* Page 2 — keep editorial copy clear of the right-side artwork. */
+.disc-report-final .disc-page[data-page="2"] .disc-opening,
+.disc-report-final .disc-page[data-page="2"] .disc-body-copy {
+  max-width: 78mm !important;
+}
+
+/* Page 3 — keep all four profile labels outside the donut perimeter. */
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-i {
+  right: -7mm !important;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-s {
+  right: -7mm !important;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-d {
+  left: -7mm !important;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-c {
+  left: -7mm !important;
+}
+
+/* Page 7 — give the long pressure paragraph enough vertical room to wrap. */
+.disc-report-final .disc-page[data-page="7"] .disc-numbered-card {
+  min-height: 24mm;
+}
+.disc-report-final .disc-page[data-page="7"] .disc-numbered-copy p {
+  font-size: 6.6pt !important;
+  line-height: 1.32 !important;
+  overflow-wrap: anywhere !important;
+}
