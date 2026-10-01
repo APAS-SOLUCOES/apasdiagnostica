@@ -2425,3 +2425,12 @@
   overflow-wrap: anywhere !important;
   word-break: normal !important;
 }
+
+
+/* Final audit override — page 3 right labels outside donut footprint. */
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-i,
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-s {
+  right: -12mm !important;
+  left: auto !important;
+  text-align: left !important;
+}
