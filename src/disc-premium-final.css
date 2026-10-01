@@ -2389,3 +2389,20 @@
   bottom: auto !important;
   text-align: left !important;
 }
+
+
+/* R9 definitive graph-stage lane — extra horizontal room only for I/S labels. */
+.disc-report-final .disc-page[data-page="3"] .disc-profile-donut-wrap {
+  width: 110mm !important;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-i {
+  left: 90mm !important;
+  right: auto !important;
+  top: 0 !important;
+}
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-s {
+  left: 90mm !important;
+  right: auto !important;
+  top: 45mm !important;
+  bottom: auto !important;
+}
