@@ -2342,3 +2342,11 @@
 .disc-report-final .disc-page[data-page="7"] .disc-numbered-copy {
   padding-right: 10mm !important;
 }
+
+
+/* R9 final micro-adjustment — right-side DISC labels stay clear of the donut. */
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-i,
+.disc-report-final .disc-page[data-page="3"] .disc-profile-label-s {
+  right: 0 !important;
+  text-align: left !important;
+}
