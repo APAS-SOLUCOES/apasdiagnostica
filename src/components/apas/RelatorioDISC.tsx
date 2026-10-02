@@ -151,7 +151,7 @@ function Capa({ c }: { c: Ctx }) {
       </div>
       <div style={{ position: "absolute", left: 56, right: 56, bottom: 56, display: "flex", justifyContent: "space-between", alignItems: "flex-end", borderTop: "1px solid #ffffff55", paddingTop: 18 }}>
         <div><div style={{ fontSize: 15 }}>Relatório individual</div><div style={{ fontSize: 15, color: "#9CA3AF" }}>{dados.cargo}</div></div>
-        <div style={{ textAlign: "right" }}><img src={c.I("logo")} alt="" style={{ height: 60, objectFit: "contain" }} /><div style={{ fontSize: 14 }}>{dados.data}</div></div>
+        <div style={{ textAlign: "right" }}><div style={{ fontSize: 14 }}>{dados.data}</div></div>
       </div>
     </section>
   );
@@ -310,7 +310,27 @@ function Geral({ p, n, escuro, banner, c }: { p: PaginaConteudo; n: number; escu
         {p.subtitulo && <div style={{ fontSize: 22, color: escuro ? "#C5CAD1" : "#4B5563" }}>{p.subtitulo}</div>}
         {!banner && intro}
       </div>
-      {banner && <img src={c.I(k)} alt="" style={{ position: "absolute", left: 56, top: 350, width: 812, height: 240, objectFit: "cover", borderRadius: 14 }} />}
+      {banner && (
+          <div
+            aria-hidden="true"
+            style={{
+              position: "absolute",
+              left: 56,
+              top: 350,
+              width: 812,
+              height: 240,
+              borderRadius: 14,
+              overflow: "hidden",
+              background: "linear-gradient(135deg, #11161D 0%, #1B222B 52%, #0E1217 100%)",
+              border: "1px solid #2A313A",
+            }}
+          >
+            <div style={{ position: "absolute", width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(circle, #C8102E55 0%, #C8102E00 70%)", left: 40, top: -95 }} />
+            <div style={{ position: "absolute", width: 260, height: 260, borderRadius: "50%", border: "1px solid #FFFFFF18", right: 85, top: -80 }} />
+            <div style={{ position: "absolute", width: 420, height: 1, background: "linear-gradient(90deg, #C8102E00, #C8102EAA, #C8102E00)", transform: "rotate(-12deg)", right: -35, top: 128 }} />
+            <div style={{ position: "absolute", left: 34, bottom: 28, fontSize: 13, letterSpacing: 3, fontWeight: 700, color: "#AEB5BF", textTransform: "uppercase" }}>Intenção · impacto · percepção</div>
+          </div>
+        )}
       <div style={{ position: "absolute", left: 56, right: 56, top: banner ? 610 : 500, bottom: 108, display: "flex", flexDirection: "column", gap: 14 }}>
         {banner && intro}
         {p.destaque && (
