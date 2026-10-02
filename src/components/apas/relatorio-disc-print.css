@@ -1,5 +1,6 @@
 /* APAS DISC Premium — print-only isolation for the data-driven 12-page report.
-   Screen layout is untouched. This file exists only to control paged-media output. */
+   Screen layout is untouched. This file exists only to control paged-media output.
+   Validation branch: premium-audit-a4-20261002. */
 
 @media print {
   @page {
