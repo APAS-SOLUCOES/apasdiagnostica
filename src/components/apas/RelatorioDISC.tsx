@@ -371,7 +371,7 @@ function Geral({ p, n, escuro, banner, c }: { p: PaginaConteudo; n: number; escu
 }
 
 /* ---------- Dados de exemplo (usados só quando nenhum `dados` é passado) ---------- */
-export export const dadosExemplo: RelatorioDados = {
+export const dadosExemplo: RelatorioDados = {
   nome: "Izabel Mendes da Silva", cargo: "Professor", data: "26/09/2026",
   natural: { D: 29.2, I: 30.6, S: 16.7, C: 23.6 },
   adaptado: { D: 34.2, I: 35.0, S: 11.7, C: 19.2 },
