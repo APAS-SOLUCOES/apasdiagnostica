@@ -496,6 +496,7 @@ export const dadosExemplo: RelatorioDados = {
 };
 
 /* ---------- Impressão: uma página lógica por folha A4 ---------- */
+/* Validação isolada — sem alteração de conteúdo ou layout aprovado. */
 const CSS_IMPRESSAO = \`
 @page { size: A4; margin: 0; }
 @media print {
