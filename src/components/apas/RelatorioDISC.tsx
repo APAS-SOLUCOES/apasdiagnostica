@@ -531,10 +531,10 @@ export default function RelatorioDISC({ dados, imagens = {} }: { dados: Relatori
   ];
 
   return (
-    <div ref={ref} style={{ width: "100%", maxWidth: W, margin: "0 auto" }}>
+    <div ref={ref} className="disc-report-final" style={{ width: "100%", maxWidth: W, margin: "0 auto" }}>
       {paginas.map((pg, i) => (
-        <div key={i} style={{ height: H * s, marginBottom: 16 }}>
-          <div style={{ width: W, height: H, transform: `scale(${s})`, transformOrigin: "top left" }}>{pg}</div>
+        <div key={i} className="disc-print-frame" style={{ height: H * s, marginBottom: 16 }}>
+          <div className="disc-page" style={{ width: W, height: H, transform: `scale(${s})`, transformOrigin: "top left" }}>{pg}</div>
         </div>
       ))}
     </div>
