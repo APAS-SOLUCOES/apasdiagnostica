@@ -1,14 +1,24 @@
-# Diagnóstico da prévia APAS DISC — sem intervenção
+# Integração mínima do novo relatório DISC
 
-## Constatações
-- O checkout está em `5f38f20cc40fb6d231a27112b86fbf01013d69ee`, com árvore Git idêntica à de `79cb3f06af2052902ab88d24140f66580496658a`. O novo commit não muda qualquer página ou arquivo; por si só, não pode introduzir as 12 imagens da auditoria temporária no aplicativo.
-- A prévia local não inicia. O registro mais recente mostra falha de integridade ao instalar `@lovable.dev/vite-tanstack-config`; o servidor então não encontra esse pacote e não fica saudável. Isso é um bloqueio observado à atualização da prévia neste ambiente, mesmo que o endereço de prévia hospedado responda HTTP 200. Não há evidência suficiente para afirmar qual versão visual esse endereço hospedado está servindo nem se a falha local explica integralmente o estado remoto.
-- O registro de compilação também contém erros de TypeScript, inclusive no relatório Premium, além da falha de instalação. O status “Ready” e a publicação não demonstram que uma nova prévia tenha sido gerada com sucesso.
+## Implementação
 
-## Próximo passo seguro
-1. Sem editar código nem publicar, tentar **Shift + Atualizar** no controle da prévia e depois recarregar a aba sem cache. A documentação do Lovable apresenta esse gesto como reinício do ambiente de prévia, não como publicação; porém ele não corrige dependências ou erros de compilação.
-2. Se persistir “Não foi possível atualizar a prévia”, encaminhar ao suporte Lovable o horário da falha, o commit `5f38f20…`, o erro de integridade de `@lovable.dev/vite-tanstack-config` e o servidor que não iniciou; pedir verificação do instalador/cache e do estado do snapshot. Não criar commits vazios nem repetir publicações como teste.
-3. Separadamente, decidir se as 12 páginas de auditoria devem ser implementadas no projeto: o PDF temporário não é parte do commit verificado, e um refresh não consegue transformar automaticamente essas páginas na apresentação dinâmica. Qualquer correção dos erros de TypeScript ou integração visual exige autorização para mudanças futuras, fora desta análise.
+1. Decodificar exatamente o conteúdo `gzip+base64` fornecido e criar `src/components/apas/RelatorioDISC.tsx` sem reescrever o componente.
+2. Alterar somente `src/routes/_authenticated/avaliacoes.$id.tsx` para:
+   - importar e renderizar `RelatorioDISC` no lugar de `DiscPremiumReportFinal`;
+   - manter a busca e a normalização atuais do resultado;
+   - criar localmente a camada `RelatorioDados` usando os dados reais já disponíveis em `assessment` e `scores`;
+   - preencher nome, cargo, data, natural, adaptado, social, índice de adaptação, introdução, números, jeito de agir e páginas sem recalcular o DISC.
+3. Atualizar `src/components/apas/disc-premium-visual-contract.test.ts` somente se o contrato atual impedir a validação do novo componente ativo.
+4. Não criar `public/relatorios/img/`, pois as 14 imagens aprovadas não estão disponíveis. Os caminhos previstos pelo componente serão preservados e reportados como pendentes.
 
-## Limites
-Nenhum código, dado, integração, GitHub ou publicação deve ser alterado nesta etapa. A comparação visual entre prévia hospedada e produção requer acesso à avaliação autenticada ou aos registros de implantação; não inferir versão só de um HTTP 200.
+## Validação
+
+- Confirmar que apenas os arquivos autorizados foram alterados.
+- Executar TypeScript, lint/testes relevantes e build.
+- Corrigir somente erros causados pela integração, sem mudanças visuais ou refatorações.
+- Confirmar que o relatório Técnico, motor DISC, scoring, normalização, interpretação, banco, RLS, autenticação e outras telas permaneceram intactos.
+- Não publicar.
+
+## Observação de segurança
+
+O alerta existente de leitura ampla em `diag_dimensions` permanecerá ativo, porque a solicitação proíbe expressamente alterações em banco e RLS. Ele não será modificado nesta integração.
