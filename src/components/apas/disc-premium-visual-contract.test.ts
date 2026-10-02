@@ -32,6 +32,7 @@ describe("APAS DISC Premium visual contract", () => {
     expect(route).toContain('RelatorioDISC');
     expect(route).toContain('normalizeDiscScores');
     expect(route).toContain('DiscTechnicalPanel');
-    expect(route).toContain('<RelatorioDISC dados={relatorioDados ?? undefined} />');
+    expect(route).toContain('<RelatorioDISC dados={relatorioDados} />');
+    expect(component).toContain('dados: RelatorioDados');
   });
 });
