@@ -126,7 +126,7 @@ export function DiscPremiumReportFinal({ assessment, scores }: { assessment: Rep
       <div className="disc-cover-meta"><div><span>Relatório individual</span><span>{assessment.role_title || "Autoconhecimento profissional"}</span></div><div><ApasBrand inverse /><span>{date}</span></div></div>
     </Page>
 
-    <Page number={2} eyebrow="01 · ANTES DE OLHAR O RESULTADO" title="Você não é um número." icon={Compass} artwork={<EditorialImage src={editorialCoverArtwork} alt="Pessoa contemplando a paisagem, referência visual editorial da abertura" position="right" />} assessment={assessment} date={date}>
+    <Page number={2} eyebrow="02 · ANTES DE OLHAR O RESULTADO" title="Você não é um número." icon={Compass} artwork={<EditorialImage src={editorialCoverArtwork} alt="Pessoa contemplando a paisagem, referência visual editorial da abertura" position="right" />} assessment={assessment} date={date}>
       <p className="disc-opening disc-opening-strong">O resultado deste relatório não pretende colocar você dentro de uma caixa ou definir quem você é.</p>
       <p className="disc-body-copy">Ele mostra tendências sobre a forma como você costuma agir, decidir, se comunicar e responder às situações do dia a dia.</p>
       <p className="disc-body-copy">Algumas partes podem parecer muito familiares. Outras podem provocar reflexão. O importante é usar este material para ampliar sua percepção sobre como você funciona.</p>
@@ -146,7 +146,7 @@ export function DiscPremiumReportFinal({ assessment, scores }: { assessment: Rep
       <p className="disc-note"><Info aria-hidden="true" />Nenhuma perspectiva é melhor. Juntas, elas ajudam a compreender o repertório e o contexto. As barras e o gráfico representam visualmente os valores calculados para esta aplicação.</p>
     </Page>
 
-    <Page number={4} eyebrow="03 · SEU JEITO DE AGIR" title={<>Seu jeito <span className="disc-title-accent">de agir</span></>} subtitle="Determinação e conexão em equilíbrio" icon={Focus} assessment={assessment} date={date}>
+    <Page number={4} eyebrow="04 · SEU JEITO DE AGIR" title={<>Seu jeito <span className="disc-title-accent">de agir</span></>} subtitle="Determinação e conexão em equilíbrio" icon={Focus} assessment={assessment} date={date}>
       <p className="disc-profile-identity">{narrative.title}</p>
       <p className="disc-opening">Seu resultado indica uma predominância de <strong>{DIMENSION_NAMES[scores.predominant]} — {scores.predominant}</strong>, combinada por características de <strong>{DIMENSION_NAMES[scores.secondary]} — {scores.secondary}</strong>.</p>
       <p className="disc-body-copy">{narrative.profilePortrait}</p>
@@ -155,9 +155,9 @@ export function DiscPremiumReportFinal({ assessment, scores }: { assessment: Rep
       <div className="disc-highlight"><strong>Em poucas palavras:</strong> {narrative.best[0]}</div>
     </Page>
 
-    <Page number={5} eyebrow="04 · SEUS PONTOS FORTES" title="Seus pontos fortes" subtitle="Recursos que você já leva com você" icon={Sprout} artwork={<EditorialImage src={approvedCoverMountainArtwork} alt="Montanha e horizonte, referência visual dos pontos fortes" position="right" />} assessment={assessment} date={date}>
+    <Page number={5} eyebrow="05 · SEUS PONTOS FORTES" title="Seus pontos fortes" subtitle="Recursos que você já leva com você" icon={Sprout} artwork={<EditorialImage src={approvedCoverMountainArtwork} alt="Montanha e horizonte, referência visual dos pontos fortes" position="right" />} assessment={assessment} date={date}>
       <p className="disc-opening">Recursos que você já leva com você e que podem aparecer com mais naturalidade quando o contexto favorece seu repertório.</p>
-      <div className="disc-numbered-stack">{primary.strengths.slice(0, 4).map((item, index) => <NumberedCard key={item} number={index + 1} accent="green" icon={[Handshake, MessageCircle, Users, Network][index] ?? Handshake} title={item}><p>{primary.characteristics[index] ?? narrative.best[index] ?? narrative.best[0]}</p></NumberedCard>)}</div>
+      <div className="disc-numbered-stack">{primary.strengths.slice(0, 4).map((item, index) => <NumberedCard key={item} number={index + 1} accent="green" icon={[Handshake, MessageCircle, Users, Network][index]} title={item}><p>{primary.characteristics[index] ?? narrative.best[index] ?? narrative.best[0]}</p></NumberedCard>)}</div>
       <div className="disc-bottom-callout"><strong>No contexto:</strong> {narrative.situations?.work ?? narrative.best[0]}</div>
     </Page>
 
