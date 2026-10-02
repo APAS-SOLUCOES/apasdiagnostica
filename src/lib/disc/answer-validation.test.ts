@@ -38,7 +38,7 @@ describe("validação íntegra das respostas APAS DISC", () => {
       ...DEFAULT_INSTRUMENT,
       items: DEFAULT_INSTRUMENT.items.map((item, index) =>
         index === 0
-          ? { ...item, options: item.options.filter((option) => option.dimension !== "S") }
+          ? { ...item, options: item.options.filter((option) => option.dimension !== "D") }
           : item,
       ),
     };
