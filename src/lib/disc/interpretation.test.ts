@@ -89,12 +89,14 @@ describe("APAS DISC dynamic interpretation", () => {
 
 describe("APAS DISC scoring validation", () => {
   it("rejects forced-choice answers that select the same factor as MAIS and MENOS", () => {
-    const result = computeScores(
-      [{ itemId: "b01", most: "D", least: "D" }],
-      DEFAULT_INSTRUMENT,
+    const answers = DEFAULT_INSTRUMENT.items.map((item) => ({
+      itemId: item.id,
+      most: "D" as Dimension,
+      least: "C" as Dimension,
+    }));
+    answers[0] = { itemId: "b01", most: "D", least: "D" };
+    expect(() => computeScores(answers, DEFAULT_INSTRUMENT)).toThrow(
+      /MAIS e MENOS|diferentes e válidas/i,
     );
-    expect(result.answeredItems).toBe(0);
-    expect(result.completionPercent).toBe(0);
-    expect(result.invalidAnswerCount).toBe(1);
   });
 });
