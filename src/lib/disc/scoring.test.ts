@@ -55,4 +55,24 @@ describe("APAS DISC scoring 1.2", () => {
     expect(result.primaryGap).toBe(0);
     expect(result.closeCombination).toBe(true);
   });
+
+  it("falha fechado quando não há nenhuma resposta válida", () => {
+    expect(() => computeScores([], DEFAULT_INSTRUMENT)).toThrow(/respostas válidas/i);
+  });
+
+  it("não mascara resposta inválida quando o motor é chamado diretamente", () => {
+    const valid = answers(["D", "I"], ["C", "S"]);
+    const invalid = { ...valid[0], most: "D" as Dimension, least: "D" as Dimension };
+    expect(() => computeScores([invalid], DEFAULT_INSTRUMENT)).toThrow(/respostas válidas/i);
+  });
+
+  it("faz merge profundo de thresholds sem perder o restante da configuração", () => {
+    const result = computeScores(
+      answers(["D", "I"], ["C", "S"]),
+      DEFAULT_INSTRUMENT,
+      { thresholds: { high: 40 } },
+    );
+    expect(result.levels).toBeDefined();
+    expect(result.scoringVersion).toBe(DEFAULT_INSTRUMENT.scoring.version);
+  });
 });
