@@ -2431,3 +2431,29 @@
   overflow-wrap: anywhere !important;
   word-break: normal !important;
 }
+
+
+/* R10 — impressão A4: cada página lógica deve iniciar em uma folha física independente. */
+@media print {
+  .disc-report-final .disc-page {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .disc-report-final .disc-page + .disc-page {
+    break-before: page !important;
+    page-break-before: always !important;
+  }
+
+  .disc-report-final .disc-page {
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }
+
+  .disc-report-final .disc-page:last-child {
+    break-before: page !important;
+    page-break-before: always !important;
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }
+}
