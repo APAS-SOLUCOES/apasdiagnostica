@@ -37,13 +37,14 @@ describe("APAS DISC scoring 1.2", () => {
   });
 
   it("sinaliza proximidade sem inverter a ordem observada", () => {
-    const most = [
-      ...Array<Dimension>(12).fill("D"),
-      ...Array<Dimension>(11).fill("I"),
-      ...Array<Dimension>(1).fill("S"),
-    ];
-    const least = [...Array<Dimension>(13).fill("C"), ...Array<Dimension>(11).fill("S")];
-    const result = computeScores(answers(most, least), DEFAULT_INSTRUMENT);
+    const result = computeScores(
+      DEFAULT_INSTRUMENT.items.map((item, index) => ({
+        itemId: item.id,
+        most: index < 13 ? "D" : index < 24 ? "I" : "S",
+        least: index < 12 || index === 23 ? "C" : "S",
+      })),
+      DEFAULT_INSTRUMENT,
+    );
     expect(result.combination).toBe("DI");
     expect(result.primaryGap).toBeGreaterThan(0);
     expect(result.closeCombination).toBe(true);
@@ -63,7 +64,9 @@ describe("APAS DISC scoring 1.2", () => {
   it("não mascara resposta inválida quando o motor é chamado diretamente", () => {
     const valid = answers(["D", "I"], ["C", "S"]);
     const invalid = { ...valid[0], most: "D" as Dimension, least: "D" as Dimension };
-    expect(() => computeScores([invalid], DEFAULT_INSTRUMENT)).toThrow(/respostas válidas/i);
+    expect(() =>
+      computeScores([invalid, ...valid.slice(1)], DEFAULT_INSTRUMENT),
+    ).toThrow(/MAIS e MENOS|diferentes e válidas/i);
   });
 
   it("faz merge profundo de thresholds sem perder o restante da configuração", () => {
