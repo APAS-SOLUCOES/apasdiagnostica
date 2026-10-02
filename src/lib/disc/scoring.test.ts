@@ -41,7 +41,7 @@ describe("APAS DISC scoring 1.2", () => {
       DEFAULT_INSTRUMENT.items.map((item, index) => ({
         itemId: item.id,
         most: index < 12 ? "D" : "I",
-        least: index === 12 ? "I" : index < 24 ? "C" : "S",
+        least: index === 0 ? "I" : index < 12 ? "C" : "S",
       })),
       DEFAULT_INSTRUMENT,
     );
