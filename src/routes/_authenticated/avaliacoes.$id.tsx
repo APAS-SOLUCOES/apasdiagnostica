@@ -208,7 +208,7 @@ function DetalhePage() {
           },
           jeitoDeAgir: {
             titulo: narrative.title.split(" · ")[0],
-            subtitulo: "Combinação " + scores.combination + ": " + (scores.combinationLabel ?? ""),
+            subtitulo: "Combinação: " + (scores.combinationLabel ?? scores.combination),
             arquetipo: narrative.title.split(" · ")[0],
             intensidade: intensity,
             paragrafos: [narrative.essence, narrative.situations?.work ?? narrative.communication],
