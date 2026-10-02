@@ -57,7 +57,7 @@ describe("APAS DISC scoring 1.2", () => {
   });
 
   it("falha fechado quando não há nenhuma resposta válida", () => {
-    expect(() => computeScores([], DEFAULT_INSTRUMENT)).toThrow(/respostas válidas/i);
+    expect(() => computeScores([], DEFAULT_INSTRUMENT)).toThrow(/exatamente 24|respostas válidas/i);
   });
 
   it("não mascara resposta inválida quando o motor é chamado diretamente", () => {
