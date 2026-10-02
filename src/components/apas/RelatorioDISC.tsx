@@ -488,7 +488,10 @@ export default function RelatorioDISC({ dados = dadosExemplo, imagens = {} }: { 
   }, []);
 
   const I = (k: ChaveImagem) =>
-    imagens[k] ?? (k === "logoEscuro" ? imagens.logo ?? "/relatorios/img/logo.png" : `/relatorios/img/${k}.png`);
+    imagens[k] ??
+    (k === "logo" ? "/apas-logo.svg" :
+      k === "logoEscuro" ? "/apas-logo-dark.svg" :
+      `/relatorios/img/${k}.png`);
   const c: Ctx = { dados, I };
   const p = dados.paginas;
 
