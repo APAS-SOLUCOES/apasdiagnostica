@@ -294,7 +294,7 @@ function DetalhePage() {
             <DiscTechnicalPanel assessment={assessment} scores={scores} computedAt={result?.computed_at ?? null} />
           </section>
           <section className="mt-10">
-            <RelatorioDISC dados={relatorioDados ?? undefined} />
+            {relatorioDados ? <RelatorioDISC dados={relatorioDados} /> : null}
           </section>
         </>
       )}
