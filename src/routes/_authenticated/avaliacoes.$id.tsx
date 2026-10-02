@@ -12,6 +12,7 @@ import { Badge } from "@/components/ui/badge";
 import type { ScoreResult } from "@/lib/disc/scoring";
 import { normalizeDiscScores } from "@/lib/disc/normalize-result";
 import { getAdaptiveNarrative } from "@/lib/disc/adaptive-content";
+import { DIMENSION_CONTENT } from "@/lib/disc/content";
 
 export const Route = createFileRoute("/_authenticated/avaliacoes/$id")({
   head: () => ({
@@ -80,7 +81,7 @@ function DetalhePage() {
             titulo: "Seus pontos fortes",
             subtitulo: "Recursos que você já leva com você",
             intro: "Recursos que podem aparecer com mais naturalidade quando o contexto favorece seu repertório.",
-            cards: narrative.best.slice(0, 4).map((texto) => ({ titulo: texto, texto: narrative.essence, cor: "verde" as const })),
+            cards: narrative.best.slice(0, 4).map((texto, index) => ({ titulo: texto, texto: DIMENSION_CONTENT[p].characteristics[index] ?? narrative.essence, cor: "verde" as const })),
             nota: { titulo: "No contexto", texto: narrative.situations?.work ?? narrative.best[0] ?? "Observe quando esse recurso gera valor." },
           },
           atencao: {
