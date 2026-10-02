@@ -46,10 +46,25 @@ const instrumentItemSchema = z.object({
       label: z.string().min(1),
       dimension: dimensionSchema,
     }),
-  ).length(4),
+  ).length(4).refine(
+    (options) => new Set(options.map((option) => option.dimension)).size === 4,
+    "Cada bloco deve conter exatamente um item de cada fator DISC.",
+  ),
 });
 
-const instrumentPayloadSchema = z.object({
+const instrumentSchema = z.object({
+  id: z.string().min(1),
+  name: z.string().min(1),
+  version: z.string().min(1),
+  status: z.enum(["active", "draft"]),
+  items: z.array(instrumentItemSchema).min(1).refine(
+    (items) => new Set(items.map((item) => item.id)).size === items.length,
+    "Os IDs dos blocos do instrumento devem ser únicos.",
+  ),
+  scoring: scoringConfigSchema,
+});
+
+const instrumentPayloadSchema = instrumentSchema.extend({
   id: z.string().min(1),
   name: z.string().min(1),
   version: z.string().min(1),
