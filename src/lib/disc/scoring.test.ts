@@ -42,7 +42,7 @@ describe("APAS DISC scoring 1.2", () => {
       ...Array<Dimension>(11).fill("I"),
       ...Array<Dimension>(1).fill("S"),
     ];
-    const least = [...Array<Dimension>(12).fill("C"), ...Array<Dimension>(12).fill("S")];
+    const least = [...Array<Dimension>(13).fill("C"), ...Array<Dimension>(11).fill("S")];
     const result = computeScores(answers(most, least), DEFAULT_INSTRUMENT);
     expect(result.combination).toBe("DI");
     expect(result.primaryGap).toBeGreaterThan(0);
