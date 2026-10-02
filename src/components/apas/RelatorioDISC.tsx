@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import "./relatorio-disc-print.css";
 
 /* =====================================================================
    RELATÓRIO APAS DISC · 12 páginas A4 (924 x 1307), 100% dirigido por dados.
@@ -531,10 +532,10 @@ export default function RelatorioDISC({ dados, imagens = {} }: { dados: Relatori
   ];
 
   return (
-    <div ref={ref} style={{ width: "100%", maxWidth: W, margin: "0 auto" }}>
+    <div ref={ref} className="apas-disc-print-root" style={{ width: "100%", maxWidth: W, margin: "0 auto" }}>
       {paginas.map((pg, i) => (
-        <div key={i} style={{ height: H * s, marginBottom: 16 }}>
-          <div style={{ width: W, height: H, transform: `scale(${s})`, transformOrigin: "top left" }}>{pg}</div>
+        <div key={i} className="apas-disc-print-shell" style={{ height: H * s, marginBottom: 16 }}>
+          <div className="apas-disc-print-page" style={{ width: W, height: H, transform: `scale(${s})`, transformOrigin: "top left" }}>{pg}</div>
         </div>
       ))}
     </div>
