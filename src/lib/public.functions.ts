@@ -64,14 +64,7 @@ const instrumentSchema = z.object({
   scoring: scoringConfigSchema,
 });
 
-const instrumentPayloadSchema = instrumentSchema.extend({
-  id: z.string().min(1),
-  name: z.string().min(1),
-  version: z.string().min(1),
-  status: z.enum(["active", "draft"]),
-  items: z.array(instrumentItemSchema).min(1),
-  scoring: scoringConfigSchema,
-});
+const instrumentPayloadSchema = instrumentSchema;
 
 function mergeScoringConfig(
   base: ScoringConfig,
