@@ -495,6 +495,75 @@ export const dadosExemplo: RelatorioDados = {
   },
 };
 
+/* ---------- Impressão: uma página lógica por folha A4 ---------- */
+const CSS_IMPRESSAO = \`
+@page { size: A4; margin: 0; }
+@media print {
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .apas-disc-print-root {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 210mm !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .apas-disc-print-root,
+  .apas-disc-print-root * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .apas-disc-print-sheet {
+    width: 210mm !important;
+    height: 296.8mm !important;
+    min-width: 210mm !important;
+    min-height: 296.8mm !important;
+    max-width: 210mm !important;
+    max-height: 296.8mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    break-after: page !important;
+    page-break-after: always !important;
+  }
+
+  .apas-disc-print-sheet:last-child {
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }
+
+  .apas-disc-print-scale {
+    width: 924px !important;
+    height: 1307px !important;
+    min-width: 924px !important;
+    min-height: 1307px !important;
+    max-width: 924px !important;
+    max-height: 1307px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    transform: scale(0.859) !important;
+    transform-origin: top left !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+}
+\`;
+
 /* ---------- Componente principal ---------- */
 export default function RelatorioDISC({ dados, imagens = {} }: { dados: RelatorioDados; imagens?: Imagens }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -531,10 +600,11 @@ export default function RelatorioDISC({ dados, imagens = {} }: { dados: Relatori
   ];
 
   return (
-    <div ref={ref} style={{ width: "100%", maxWidth: W, margin: "0 auto" }}>
+    <div ref={ref} className="apas-disc-print-root" style={{ width: "100%", maxWidth: W, margin: "0 auto" }}>
+      <style>{CSS_IMPRESSAO}</style>
       {paginas.map((pg, i) => (
-        <div key={i} style={{ height: H * s, marginBottom: 16 }}>
-          <div style={{ width: W, height: H, transform: `scale(${s})`, transformOrigin: "top left" }}>{pg}</div>
+        <div key={i} className="apas-disc-print-sheet" style={{ height: H * s, marginBottom: 16 }}>
+          <div className="apas-disc-print-scale" style={{ width: W, height: H, transform: `scale(${s})`, transformOrigin: "top left" }}>{pg}</div>
         </div>
       ))}
     </div>
