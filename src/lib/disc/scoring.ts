@@ -4,6 +4,7 @@ import {
   type Instrument,
   type ScoringConfig,
 } from "./instrument";
+import { validateAssessmentAnswers } from "./answer-validation";
 
 export type Answer = { itemId: string; most: Dimension; least: Dimension };
 
@@ -109,19 +110,11 @@ export function computeScores(
       ...(configOverride?.labels ?? {}),
     },
   };
-  const validIds = new Set(instrument.items.map((i) => i.id));
-  const dimensions = new Set<Dimension>(DIMENSIONS);
-  const valid = answers.filter((a) =>
-    validIds.has(a.itemId) &&
-    dimensions.has(a.most) &&
-    dimensions.has(a.least) &&
-    a.most !== a.least
-  );
-  const invalidAnswerCount = Math.max(0, answers.length - valid.length);
+  const validation = validateAssessmentAnswers(answers, instrument);
+  if (!validation.ok) throw new Error(validation.message);
 
-  if (valid.length === 0) {
-    throw new Error("Não há respostas válidas suficientes para calcular o perfil DISC.");
-  }
+  const valid = answers;
+  const invalidAnswerCount = 0;
 
   const mostCount = empty();
   const leastCount = empty();
