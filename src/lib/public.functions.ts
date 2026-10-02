@@ -8,6 +8,7 @@ import {
   type Dimension,
 } from "./disc/instrument";
 import { computeScores, type Answer, type ScoreResult } from "./disc/scoring";
+import { validateAssessmentAnswers } from "./disc/answer-validation";
 
 const tokenSchema = z.object({ token: z.string().trim().min(10).max(80) });
 
@@ -190,39 +191,14 @@ export const submitAssessment = createServerFn({ method: "POST" })
     if (!row.consent_accepted_at) throw new Error("Consentimento não registrado.");
 
     const instrument = await resolveInstrument(db, row.instrument_id);
-    const expectedIds = instrument.items.map((item) => item.id);
-    const receivedIds = data.answers.map((answer) => answer.itemId);
-    const expectedIdSet = new Set(expectedIds);
-    const receivedIdSet = new Set(receivedIds);
-
-    if (data.answers.length !== instrument.items.length) {
-      throw new Error(`A avaliação precisa conter exatamente ${instrument.items.length} blocos respondidos.`);
-    }
-    if (receivedIdSet.size !== receivedIds.length) {
-      throw new Error("A avaliação contém blocos duplicados.");
-    }
-    if (receivedIdSet.size !== expectedIdSet.size || [...expectedIdSet].some((id) => !receivedIdSet.has(id))) {
-      throw new Error("A avaliação está incompleta ou contém blocos inválidos.");
-    }
-    if (data.answers.some((answer) => answer.most === answer.least)) {
-      throw new Error("Cada bloco precisa ter escolhas MAIS e MENOS diferentes.");
-    }
-
-    const invalidByInstrument = data.answers.some((answer) => {
-      const item = instrument.items.find((candidate) => candidate.id === answer.itemId);
-      if (!item) return true;
-      const allowedDimensions = new Set(item.options.map((option) => option.dimension));
-      return !allowedDimensions.has(answer.most) || !allowedDimensions.has(answer.least);
-    });
-    if (invalidByInstrument) {
-      throw new Error("Uma ou mais respostas não correspondem às alternativas do instrumento.");
-    }
-
     const answers = data.answers as Answer[];
+    const validation = validateAssessmentAnswers(answers, instrument);
+    if (!validation.ok) throw new Error(validation.message);
+
     const result = computeScores(answers, instrument);
 
     if (result.invalidAnswerCount > 0 || result.answeredItems !== instrument.items.length) {
-      throw new Error("Não foi possível validar integralmente as respostas da avaliação."); 
+      throw new Error("Não foi possível validar integralmente as respostas da avaliação.");
     }
 
     await db
