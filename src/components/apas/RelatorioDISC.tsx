@@ -64,7 +64,18 @@ const pct = (v: number) => `${v.toFixed(1).replace(".", ",")} %`;
 type Ctx = { dados: RelatorioDados; I: (k: ChaveImagem) => string };
 
 const eyebrow: CSSProperties = { color: C.vermelho, fontSize: 15, fontWeight: 700, letterSpacing: 3, textTransform: "uppercase" };
-const h2 = (cor: string): CSSProperties => ({ margin: "14px 0 6px", fontSize: 54, lineHeight: 1.02, fontWeight: 800, letterSpacing: -1.5, color: cor });
+const titleSize = (text: string, max = 54, min = 42) =>
+  Math.max(min, Math.min(max, max - Math.max(0, text.length - 24) * 0.22));
+const bodySize = (text: string, max = 15, min = 12.5) =>
+  Math.max(min, Math.min(max, max - Math.max(0, text.length - 150) * 0.018));
+const h2 = (cor: string, text?: string): CSSProperties => ({
+  margin: "14px 0 6px",
+  fontSize: text ? titleSize(text) : 54,
+  lineHeight: 1.04,
+  fontWeight: 800,
+  letterSpacing: -1.5,
+  color: cor,
+});
 
 /* ---------- Moldura comum (cabeçalho, rodapé, foto de fundo) ---------- */
 function Moldura({ n, escuro, foto, modo = "hero", c, children }: {
@@ -93,14 +104,11 @@ function Moldura({ n, escuro, foto, modo = "hero", c, children }: {
       <footer style={{ position: "absolute", left: 56, right: 56, bottom: 0, height: 92, borderTop: `1px solid ${escuro ? "#3A424D" : "#1F2937"}`, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <div>
           <div style={{ fontSize: 13, color: mudo }}>Relatório individual</div>
-          <div style={{ fontSize: 17, fontWeight: 600 }}>{c.dados.nome}</div>
+          <div style={{ fontSize: 17, fontWeight: 600, maxWidth: 600, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{c.dados.nome}</div>
         </div>
-        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <img src={escuro ? c.I("logo") : c.I("logoEscuro")} alt="" style={{ height: 44 }} />
-          <div style={{ borderLeft: `1px solid ${mudo}`, paddingLeft: 16 }}>
-            <div style={{ fontSize: 26, fontWeight: 800, lineHeight: 1 }}>{pad(n)}</div>
-            <div style={{ fontSize: 12, color: mudo }}>{c.dados.data}</div>
-          </div>
+        <div style={{ borderLeft: `1px solid ${mudo}`, paddingLeft: 16, textAlign: "right" }}>
+          <div style={{ fontSize: 26, fontWeight: 800, lineHeight: 1 }}>{pad(n)}</div>
+          <div style={{ fontSize: 12, color: mudo }}>{c.dados.data}</div>
         </div>
       </footer>
     </section>
@@ -120,17 +128,19 @@ function Nota({ titulo, texto, escuro }: { titulo?: string; texto: string; escur
 /* ---------- Capa ---------- */
 function Capa({ c }: { c: Ctx }) {
   const { dados } = c;
+  const nomeSize = dados.nome.length > 34 ? 44 : dados.nome.length > 24 ? 50 : 58;
+  const discTop = dados.nome.length > 34 ? 610 : dados.nome.length > 24 ? 575 : 535;
   return (
     <section style={{ width: W, height: H, position: "relative", overflow: "hidden", background: C.preto, color: "#fff", fontFamily: FONT }}>
       <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${c.I("capa")})`, backgroundSize: "cover", backgroundPosition: "center" }} />
       <div style={{ position: "absolute", inset: 0, background: `linear-gradient(180deg,${C.preto}99 0%,${C.preto}00 35%,${C.preto}00 60%,${C.preto} 92%)` }} />
-      <img src={c.I("logo")} alt="APAS Soluções" style={{ position: "absolute", left: 56, top: 56, height: 150 }} />
-      <div style={{ position: "absolute", left: 56, top: 300, right: 56 }}>
+      <img src={c.I("logo")} alt="APAS Soluções" style={{ position: "absolute", left: 56, top: 56, height: 150, objectFit: "contain" }} />
+      <div style={{ position: "absolute", left: 56, top: 300, right: 56, maxWidth: 790 }}>
         <div style={eyebrow}>Relatório de perfil comportamental</div>
-        <div style={{ fontSize: 58, fontWeight: 800, letterSpacing: -1.5, marginTop: 18 }}>{dados.nome}</div>
+        <div style={{ maxWidth: 760, fontSize: nomeSize, lineHeight: 1.05, fontWeight: 800, letterSpacing: -1.5, marginTop: 18, overflowWrap: "anywhere" }}>{dados.nome}</div>
         <div style={{ fontSize: 30, fontWeight: 300, lineHeight: 1.25, marginTop: 10, color: "#E5E7EB" }}>Mais consciência. Melhores escolhas.<br />Grandes resultados.</div>
       </div>
-      <div style={{ position: "absolute", left: 50, top: 470, fontSize: 330, fontWeight: 900, letterSpacing: -10, color: "#FFFFFF33", lineHeight: 1 }}>DISC</div>
+      <div style={{ position: "absolute", left: 50, top: discTop, fontSize: 330, fontWeight: 900, letterSpacing: -10, color: "#FFFFFF33", lineHeight: 1 }}>DISC</div>
       <div style={{ position: "absolute", left: 56, right: 56, top: 1005, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
         {FATORES.map((f) => (
           <div key={f} style={{ borderTop: `5px solid ${FATOR_COR[f]}`, background: "#0F1318E6", padding: "22px 24px", display: "flex", gap: 18, alignItems: "center" }}>
@@ -141,7 +151,7 @@ function Capa({ c }: { c: Ctx }) {
       </div>
       <div style={{ position: "absolute", left: 56, right: 56, bottom: 56, display: "flex", justifyContent: "space-between", alignItems: "flex-end", borderTop: "1px solid #ffffff55", paddingTop: 18 }}>
         <div><div style={{ fontSize: 15 }}>Relatório individual</div><div style={{ fontSize: 15, color: "#9CA3AF" }}>{dados.cargo}</div></div>
-        <div style={{ textAlign: "right" }}><img src={c.I("logo")} alt="" style={{ height: 60 }} /><div style={{ fontSize: 14 }}>{dados.data}</div></div>
+        <div style={{ textAlign: "right" }}><img src={c.I("logo")} alt="" style={{ height: 60, objectFit: "contain" }} /><div style={{ fontSize: 14 }}>{dados.data}</div></div>
       </div>
     </section>
   );
@@ -152,9 +162,9 @@ function Introducao({ c }: { c: Ctx }) {
   const t = c.dados.introducao;
   return (
     <Moldura n={2} foto={c.I("p02")} modo="fundo" c={c}>
-      <div style={{ position: "absolute", left: 56, top: 165, width: 480 }}>
+      <div style={{ position: "absolute", left: 56, top: 165, width: 480, maxHeight: H - 165 - 118, overflow: "hidden" }}>
         <div style={eyebrow}>01 · Antes de olhar o resultado</div>
-        <h2 style={{ ...h2(C.preto), fontSize: 64 }}>{t.titulo}</h2>
+        <h2 style={{ ...h2(C.preto, t.titulo), fontSize: titleSize(t.titulo, 64, 48) }}>{t.titulo}</h2>
         {t.paragrafos.map((p, i) => (
           <p key={i} style={{ fontSize: i === 0 ? 20 : 18, fontWeight: i === 0 ? 700 : 400, lineHeight: 1.45, margin: "22px 0 0" }}>{p}</p>
         ))}
@@ -210,7 +220,7 @@ function Numeros({ c }: { c: Ctx }) {
     <Moldura n={3} foto={c.I("p03")} modo="suave" c={c}>
       <div style={{ position: "absolute", left: 56, top: 160, width: 420 }}>
         <div style={eyebrow}>02 · Seu perfil em números</div>
-        <h2 style={{ ...h2(C.preto), fontSize: 62 }}>Seu perfil em números</h2>
+        <h2 style={{ ...h2(C.preto, "Seu perfil em números"), fontSize: 56 }}>Seu perfil em números</h2>
         <div style={{ fontSize: 22 }}>O que o seu resultado revela</div>
         <p style={{ fontSize: 17, lineHeight: 1.5, marginTop: 20 }}>{d.numeros.descricao}</p>
       </div>
@@ -241,8 +251,8 @@ function JeitoDeAgir({ c }: { c: Ctx }) {
     <Moldura n={4} foto={c.I("p04")} modo="suave" c={c}>
       <div style={{ position: "absolute", left: 56, right: 56, top: 160 }}>
         <div style={eyebrow}>03 · Seu jeito de agir</div>
-        <h2 style={h2(C.preto)}>{j.titulo}</h2>
-        <div style={{ fontSize: 22 }}>{j.subtitulo}</div>
+        <h2 style={{ ...h2(C.preto, j.titulo), fontSize: titleSize(j.titulo, 54, 46) }}>{j.titulo}</h2>
+        <div style={{ fontSize: bodySize(j.subtitulo, 22, 18), lineHeight: 1.3 }}>{j.subtitulo}</div>
         <div style={{ fontSize: 30, fontWeight: 800, margin: "30px 0 14px" }}>
           <span style={{ color: C.vermelho }}>{j.arquetipo}</span> · {j.intensidade}
         </div>
@@ -265,11 +275,11 @@ function CardLista({ card, i, escuro }: { card: Card; i: number; escuro?: boolea
         <b style={{ fontSize: 26 }}>{pad(i + 1)}</b><i style={{ width: 56, height: 2, background: "#fff", marginTop: 6 }} />
       </div>
       <div style={{ padding: "14px 22px", flex: 1, minWidth: 0, overflow: "hidden" }}>
-        <h3 style={{ margin: "0 0 6px", fontSize: 20, fontWeight: 800, color: escuro ? "#fff" : TOM_COR[tom] }}>{card.titulo}</h3>
-        {card.texto && <p style={{ margin: 0, fontSize: 15, lineHeight: 1.45, color: escuro ? "#D5DAE0" : "#374151" }}>{card.texto}</p>}
+        <h3 style={{ margin: "0 0 6px", fontSize: bodySize(card.titulo, 20, 16), lineHeight: 1.18, fontWeight: 800, color: escuro ? "#fff" : TOM_COR[tom] }}>{card.titulo}</h3>
+        {card.texto && <p style={{ margin: 0, fontSize: bodySize(card.texto), lineHeight: 1.42, color: escuro ? "#D5DAE0" : "#374151" }}>{card.texto}</p>}
         {card.itens && (
           <ul style={{ margin: 0, padding: 0, listStyle: "none" }}>
-            {card.itens.map((t) => (<li key={t} style={{ fontSize: 15, lineHeight: 1.6, color: escuro ? "#D5DAE0" : "#374151" }}>• {t}</li>))}
+            {card.itens.map((t) => (<li key={t} style={{ fontSize: bodySize(t), lineHeight: 1.5, color: escuro ? "#D5DAE0" : "#374151" }}>• {t}</li>))}
           </ul>
         )}
       </div>
@@ -281,8 +291,8 @@ function CardGrade({ card, i, escuro }: { card: Card; i: number; escuro?: boolea
   const cor = tom === "escuro" ? "#9CA3AF" : escuro ? ["#4ADE80", "#FBBF24", "#F87171", "#22D3EE"][TONS.indexOf(tom)] : TOM_COR[tom];
   return (
     <div style={{ flex: "1 1 calc(50% - 7px)", minWidth: 0, borderRadius: 14, borderTop: `5px solid ${cor}`, padding: "20px 22px", background: escuro ? "#12171D" : "#fff", color: escuro ? "#D5DAE0" : "#374151", overflow: "hidden" }}>
-      <h3 style={{ margin: "0 0 10px", fontSize: 22, fontWeight: 800, color: cor }}>{card.titulo}</h3>
-      <p style={{ margin: 0, fontSize: 16, lineHeight: 1.55 }}>{card.texto}</p>
+      <h3 style={{ margin: "0 0 10px", fontSize: bodySize(card.titulo, 22, 17), lineHeight: 1.18, fontWeight: 800, color: cor }}>{card.titulo}</h3>
+      <p style={{ margin: 0, fontSize: bodySize(card.texto ?? "", 16, 12.5), lineHeight: 1.48 }}>{card.texto}</p>
     </div>
   );
 }
@@ -290,13 +300,13 @@ function Geral({ p, n, escuro, banner, c }: { p: PaginaConteudo; n: number; escu
   const fg = escuro ? "#fff" : C.preto;
   const k = `p${pad(n)}` as ChaveImagem;
   const intro = p.intro && (
-    <p style={{ fontSize: 17, lineHeight: 1.5, margin: banner ? "0 0 6px" : "20px 0 0", color: fg, maxWidth: banner ? undefined : 470 }}>{p.intro}</p>
+    <p style={{ fontSize: bodySize(p.intro, 17, 14), lineHeight: 1.48, margin: banner ? "0 0 6px" : "20px 0 0", color: fg, maxWidth: banner ? undefined : 470 }}>{p.intro}</p>
   );
   return (
     <Moldura n={n} escuro={escuro} foto={banner ? undefined : c.I(k)} c={c}>
-      <div style={{ position: "absolute", left: 56, top: 160, width: 540 }}>
+      <div style={{ position: "absolute", left: 56, top: 160, width: 540, maxHeight: 320, overflow: "hidden" }}>
         <div style={eyebrow}>{pad(n - 1)} · {p.secao}</div>
-        <h2 style={h2(fg)}>{p.titulo}</h2>
+        <h2 style={{ ...h2(fg, p.titulo), fontSize: titleSize(p.titulo, 54, 44) }}>{p.titulo}</h2>
         {p.subtitulo && <div style={{ fontSize: 22, color: escuro ? "#C5CAD1" : "#4B5563" }}>{p.subtitulo}</div>}
         {!banner && intro}
       </div>
