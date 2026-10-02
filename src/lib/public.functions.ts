@@ -16,28 +16,102 @@ async function admin() {
   return supabaseAdmin;
 }
 
+const dimensionSchema = z.enum(["D", "I", "S", "C"]);
+
+const scoringConfigSchema = z.object({
+  version: z.string().min(1),
+  predominantSource: z.enum(["natural", "social", "adapted"]),
+  adaptedMode: z.enum(["average", "social", "net"]),
+  mostWeight: z.number().finite(),
+  leastWeight: z.number().finite(),
+  naturalBase: z.number().finite(),
+  thresholds: z.object({
+    high: z.number().finite(),
+    moderate: z.number().finite(),
+  }),
+  adaptationAlert: z.number().finite(),
+  primaryMostWeight: z.number().finite().optional(),
+  primaryAcceptanceWeight: z.number().finite().optional(),
+  proximityThreshold: z.number().finite().optional(),
+  labels: z.record(z.enum(["natural", "social", "adapted"]), z.string()),
+  ruleDescription: z.string().min(1),
+});
+
+const instrumentItemSchema = z.object({
+  id: z.string().min(1).max(60),
+  options: z.array(
+    z.object({
+      key: z.string().min(1),
+      label: z.string().min(1),
+      dimension: dimensionSchema,
+    }),
+  ).length(4),
+});
+
+const instrumentPayloadSchema = z.object({
+  id: z.string().min(1),
+  name: z.string().min(1),
+  version: z.string().min(1),
+  status: z.enum(["active", "draft"]),
+  items: z.array(instrumentItemSchema).min(1),
+  scoring: scoringConfigSchema,
+});
+
+function mergeScoringConfig(
+  base: ScoringConfig,
+  override: unknown,
+): ScoringConfig {
+  const parsed = scoringConfigSchema.parse({
+    ...base,
+    ...(override && typeof override === "object" ? override : {}),
+    thresholds: {
+      ...base.thresholds,
+      ...((override && typeof override === "object" &&
+        "thresholds" in override &&
+        override.thresholds &&
+        typeof override.thresholds === "object")
+        ? override.thresholds
+        : {}),
+    },
+    labels: {
+      ...base.labels,
+      ...((override && typeof override === "object" &&
+        "labels" in override &&
+        override.labels &&
+        typeof override.labels === "object")
+        ? override.labels
+        : {}),
+    },
+  });
+  return parsed;
+}
+
 async function resolveInstrument(
   db: Awaited<ReturnType<typeof admin>>,
   instrumentId: string | null,
 ): Promise<Instrument> {
   if (!instrumentId) return DEFAULT_INSTRUMENT;
+
   const { data } = await db
     .from("instruments")
     .select("id, name, version, status, items, scoring")
     .eq("id", instrumentId)
     .maybeSingle();
-  if (!data) return DEFAULT_INSTRUMENT;
-  return {
+
+  if (!data) {
+    throw new Error("O instrumento desta avaliação não está disponível. A avaliação não pode ser recalculada com outro instrumento.");
+  }
+
+  const parsed = instrumentPayloadSchema.parse({
     id: data.id,
     name: data.name,
     version: data.version,
     status: data.status === "active" ? "active" : "draft",
-    items: (data.items as unknown as InstrumentItem[]) ?? DEFAULT_INSTRUMENT.items,
-    scoring: {
-      ...DEFAULT_INSTRUMENT.scoring,
-      ...((data.scoring as unknown as Partial<ScoringConfig>) ?? {}),
-    },
-  };
+    items: data.items,
+    scoring: mergeScoringConfig(DEFAULT_INSTRUMENT.scoring, data.scoring),
+  });
+
+  return parsed as Instrument;
 }
 
 /** Dados mínimos para abrir o questionário público (o token é o segredo). */
@@ -116,8 +190,40 @@ export const submitAssessment = createServerFn({ method: "POST" })
     if (!row.consent_accepted_at) throw new Error("Consentimento não registrado.");
 
     const instrument = await resolveInstrument(db, row.instrument_id);
-    const answers = data.answers.filter((a) => a.most !== a.least) as Answer[];
+    const expectedIds = instrument.items.map((item) => item.id);
+    const receivedIds = data.answers.map((answer) => answer.itemId);
+    const expectedIdSet = new Set(expectedIds);
+    const receivedIdSet = new Set(receivedIds);
+
+    if (data.answers.length !== instrument.items.length) {
+      throw new Error(`A avaliação precisa conter exatamente ${instrument.items.length} blocos respondidos.`);
+    }
+    if (receivedIdSet.size !== receivedIds.length) {
+      throw new Error("A avaliação contém blocos duplicados.");
+    }
+    if (receivedIdSet.size !== expectedIdSet.size || [...expectedIdSet].some((id) => !receivedIdSet.has(id))) {
+      throw new Error("A avaliação está incompleta ou contém blocos inválidos.");
+    }
+    if (data.answers.some((answer) => answer.most === answer.least)) {
+      throw new Error("Cada bloco precisa ter escolhas MAIS e MENOS diferentes.");
+    }
+
+    const invalidByInstrument = data.answers.some((answer) => {
+      const item = instrument.items.find((candidate) => candidate.id === answer.itemId);
+      if (!item) return true;
+      const allowedDimensions = new Set(item.options.map((option) => option.dimension));
+      return !allowedDimensions.has(answer.most) || !allowedDimensions.has(answer.least);
+    });
+    if (invalidByInstrument) {
+      throw new Error("Uma ou mais respostas não correspondem às alternativas do instrumento.");
+    }
+
+    const answers = data.answers as Answer[];
     const result = computeScores(answers, instrument);
+
+    if (result.invalidAnswerCount > 0 || result.answeredItems !== instrument.items.length) {
+      throw new Error("Não foi possível validar integralmente as respostas da avaliação."); 
+    }
 
     await db
       .from("assessment_responses")
