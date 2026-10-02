@@ -2,9 +2,9 @@ name: APAS Premium Report Checks
 
 on:
   push:
-    branches: ["git-status", "premium-audit-*"]
+    branches: ["main", "git-status", "premium-audit-*"]
   pull_request:
-    branches: ["git-status"]
+    branches: ["main", "git-status"]
 
 jobs:
   build-and-test:
