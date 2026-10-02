@@ -32,10 +32,17 @@ describe("validação íntegra das respostas APAS DISC", () => {
     expect(validateAssessmentAnswers(answers, DEFAULT_INSTRUMENT)).toMatchObject({ ok: false });
   });
 
-  it("rejeita fator que não pertence às alternativas do bloco", () => {
+  it("rejeita fator que não pertence às alternativas do instrumento", () => {
     const answers = makeAnswers();
-    answers[0] = { ...answers[0], most: "S", least: "C" };
-    expect(validateAssessmentAnswers(answers, DEFAULT_INSTRUMENT)).toMatchObject({ ok: false });
+    const malformed = {
+      ...DEFAULT_INSTRUMENT,
+      items: DEFAULT_INSTRUMENT.items.map((item, index) =>
+        index === 0
+          ? { ...item, options: item.options.filter((option) => option.dimension !== "S") }
+          : item,
+      ),
+    };
+    expect(validateAssessmentAnswers(answers, malformed)).toMatchObject({ ok: false });
   });
 
   it("rejeita item desconhecido", () => {
