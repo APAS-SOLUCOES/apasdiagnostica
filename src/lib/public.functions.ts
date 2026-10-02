@@ -3,7 +3,6 @@ import { z } from "zod";
 import {
   DEFAULT_INSTRUMENT,
   type Instrument,
-  type InstrumentItem,
   type ScoringConfig,
   type Dimension,
 } from "./disc/instrument";
