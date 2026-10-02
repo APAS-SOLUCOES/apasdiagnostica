@@ -97,7 +97,18 @@ export function computeScores(
   instrument: Instrument,
   configOverride?: Partial<ScoringConfig>,
 ): ScoreResult {
-  const config: ScoringConfig = { ...instrument.scoring, ...configOverride };
+  const config: ScoringConfig = {
+    ...instrument.scoring,
+    ...configOverride,
+    thresholds: {
+      ...instrument.scoring.thresholds,
+      ...(configOverride?.thresholds ?? {}),
+    },
+    labels: {
+      ...instrument.scoring.labels,
+      ...(configOverride?.labels ?? {}),
+    },
+  };
   const validIds = new Set(instrument.items.map((i) => i.id));
   const dimensions = new Set<Dimension>(DIMENSIONS);
   const valid = answers.filter((a) =>
@@ -107,6 +118,10 @@ export function computeScores(
     a.most !== a.least
   );
   const invalidAnswerCount = Math.max(0, answers.length - valid.length);
+
+  if (valid.length === 0) {
+    throw new Error("Não há respostas válidas suficientes para calcular o perfil DISC.");
+  }
 
   const mostCount = empty();
   const leastCount = empty();
