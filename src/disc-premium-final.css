@@ -2475,3 +2475,46 @@
     transform-origin:top left !important;
   }
 }
+
+
+/* R12 — paginação física A4 do Premium.
+   O relatório é montado em 924x1307px e reduzido por transform para a tela.
+   O fluxo de impressão precisa de um frame físico A4 por página lógica. */
+@media print {
+  .disc-report-final {
+    width: 210mm !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+
+  .disc-report-final .disc-print-frame {
+    width: 210mm !important;
+    height: 297mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    break-after: page !important;
+    page-break-after: always !important;
+  }
+
+  .disc-report-final .disc-print-frame:last-child {
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }
+
+  .disc-report-final .disc-page {
+    width: 924px !important;
+    height: 1307px !important;
+    min-width: 924px !important;
+    min-height: 1307px !important;
+    max-width: 924px !important;
+    max-height: 1307px !important;
+    margin: 0 !important;
+    transform: scale(0.859) !important;
+    transform-origin: top left !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+}
