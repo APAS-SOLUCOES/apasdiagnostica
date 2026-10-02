@@ -129,7 +129,7 @@ export function computeScores(
   const naturalBase = config.naturalBase ?? 1;
 
   /**
-   * Regra APAS DISC 1.0 (configurável):
+   * Regra histórica configurável (mantida para compatibilidade com versões anteriores):
    * - MAIS soma `mostWeight` à dimensão escolhida (base do Perfil Social);
    * - MENOS soma `leastWeight` à dimensão escolhida (reduz o Perfil Natural);
    * - afirmações não escolhidas não pontuam.
