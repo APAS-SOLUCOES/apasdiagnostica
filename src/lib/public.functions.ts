@@ -97,8 +97,14 @@ function mergeScoringConfig(
 async function resolveInstrument(
   db: Awaited<ReturnType<typeof admin>>,
   instrumentId: string | null,
+  expectedVersion?: string | null,
 ): Promise<Instrument> {
-  if (!instrumentId) return DEFAULT_INSTRUMENT;
+  if (!instrumentId) {
+    if (expectedVersion && expectedVersion !== DEFAULT_INSTRUMENT.version) {
+      throw new Error("A versão do instrumento desta avaliação não está disponível. A avaliação não pode ser recalculada com o instrumento padrão.");
+    }
+    return DEFAULT_INSTRUMENT;
+  }
 
   const { data } = await db
     .from("instruments")
@@ -130,13 +136,13 @@ export const getPublicAssessment = createServerFn({ method: "GET" })
     const { data: row } = await db
       .from("assessments")
       .select(
-        "id, candidate_name, context, status, consent_accepted_at, submitted_at, instrument_id",
+        "id, candidate_name, context, status, consent_accepted_at, submitted_at, instrument_id, instrument_version",
       )
       .eq("token", data.token)
       .maybeSingle();
     if (!row) return { found: false as const };
 
-    const instrument = await resolveInstrument(db, row.instrument_id);
+    const instrument = await resolveInstrument(db, row.instrument_id, row.instrument_version);
     return {
       found: true as const,
       assessment: {
@@ -190,14 +196,14 @@ export const submitAssessment = createServerFn({ method: "POST" })
     const db = await admin();
     const { data: row } = await db
       .from("assessments")
-      .select("id, status, instrument_id, consent_accepted_at")
+      .select("id, status, instrument_id, instrument_version, consent_accepted_at")
       .eq("token", data.token)
       .maybeSingle();
     if (!row) throw new Error("Link inválido.");
     if (row.status === "completed") return { ok: true as const, already: true as const };
     if (!row.consent_accepted_at) throw new Error("Consentimento não registrado.");
 
-    const instrument = await resolveInstrument(db, row.instrument_id);
+    const instrument = await resolveInstrument(db, row.instrument_id, row.instrument_version);
     const answers = data.answers as Answer[];
     const validation = validateAssessmentAnswers(answers, instrument);
     if (!validation.ok) throw new Error(validation.message);
