@@ -29,9 +29,9 @@ describe("APAS DISC Premium visual contract", () => {
   });
 
   it("keeps the premium route dynamic and the technical panel protected", () => {
-    expect(route).toContain('DiscPremiumReportFinal');
+    expect(route).toContain('RelatorioDISC');
     expect(route).toContain('normalizeDiscScores');
     expect(route).toContain('DiscTechnicalPanel');
-    expect(route).toContain('<DiscPremiumReportFinal assessment={assessment} scores={scores} />');
+    expect(route).toContain('<RelatorioDISC dados={relatorioDados ?? undefined} />');
   });
 });
