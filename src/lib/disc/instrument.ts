@@ -1,5 +1,5 @@
 /**
- * Instrumento APAS DISC 1.1 — versão de validação (calibrável).
+ * Instrumento APAS DISC 1.2 — versão de validação (calibrável).
  *
  * Este arquivo é o INSTRUMENTO PADRÃO. Ele pode ser substituído em tempo de
  * execução por um registro ativo na tabela `instruments` (mesmo formato JSON),
@@ -74,7 +74,7 @@ export const INSTRUMENT_META = {
   ruleDescription:
     "Em cada bloco, as escolhas MAIS e MENOS formam evidências complementares. A síntese prioriza a escolha afirmativa e considera a rejeição, sem depender de uma média isolada entre perfis.",
   validationNotice:
-    "Instrumento APAS DISC 1.1 — versão de validação. As afirmações e os pesos devem ser calibrados antes de qualquer uso comercial.",
+    "Instrumento APAS DISC 1.2 — versão de validação. As afirmações e os pesos devem ser calibrados antes de qualquer uso comercial.",
 } as const;
 
 const B = (
