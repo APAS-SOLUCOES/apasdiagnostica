@@ -164,7 +164,7 @@ function DetalhePage() {
                 { letra: p, valor: adapted[p], rotulo: factorName(p) },
                 { letra: s, valor: adapted[s], rotulo: factorName(s) },
               ],
-              titulo: narrative.title.split(" · ")[0],
+              titulo: narrative.title.split(" · ")[0] ?? narrative.title,
               texto: narrative.profilePortrait ?? narrative.essence ?? "",
             },
             cards: [
@@ -208,9 +208,9 @@ function DetalhePage() {
             aviso: "Nenhuma perspectiva é melhor. Juntas, elas ajudam a compreender repertório e contexto.",
           },
           jeitoDeAgir: {
-            titulo: narrative.title.split(" · ")[0],
+            titulo: narrative.title.split(" · ")[0] ?? narrative.title,
             subtitulo: "Combinação: " + (scores.combinationLabel ?? scores.combination),
-            arquetipo: narrative.title.split(" · ")[0],
+            arquetipo: narrative.title.split(" · ")[0] ?? narrative.title,
             intensidade: intensity,
             paragrafos: [narrative.essence, narrative.situations?.work ?? narrative.communication],
             destaqueTitulo: "Olhar de pessoas",
