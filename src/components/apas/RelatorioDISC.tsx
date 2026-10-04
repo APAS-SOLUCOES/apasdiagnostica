@@ -11,20 +11,20 @@ export type Fator = "D" | "I" | "S" | "C";
 export type Pct = Record<Fator, number>;
 type Tom = "verde" | "laranja" | "vermelho" | "azul" | "escuro";
 
-export interface Card { titulo: string; texto?: string; itens?: string[]; cor?: Tom }
+export interface Card { titulo: string; texto?: string | undefined; itens?: string[] | undefined; cor?: Tom | undefined }
 export interface PaginaConteudo {
   secao: string;            // sem número: a numeração é automática
   titulo: string;
-  subtitulo?: string;
-  intro?: string;
+  subtitulo?: string | undefined;
+  intro?: string | undefined;
   cards: Card[];
-  colunas?: 1 | 2;          // 2 = grade 2x2 (ex.: Comunicação)
-  destaque?: { fatores: { letra: Fator; valor: number; rotulo: string }[]; titulo: string; texto: string };
-  experimento?: boolean;    // bloco "Meu experimento de 30 dias"
-  nota?: { titulo?: string; texto: string };
+  colunas?: 1 | 2 | undefined;          // 2 = grade 2x2 (ex.: Comunicação)
+  destaque?: { fatores: { letra: Fator; valor: number; rotulo: string }[]; titulo: string; texto: string } | undefined;
+  experimento?: boolean | undefined;    // bloco "Meu experimento de 30 dias"
+  nota?: { titulo?: string | undefined; texto: string } | undefined;
 }
 export interface RelatorioDados {
-  nome: string; cargo?: string; data: string;
+  nome: string; cargo?: string | undefined; data: string;
   natural: Pct; adaptado: Pct; social: Pct; indiceAdaptacao: number;
   introducao: { titulo: string; paragrafos: string[]; citacao: string; referencia: string };
   numeros: { descricao: string; indiceTexto: string; aviso: string };
@@ -79,7 +79,7 @@ const h2 = (cor: string, text?: string): CSSProperties => ({
 
 /* ---------- Moldura comum (cabeçalho, rodapé, foto de fundo) ---------- */
 function Moldura({ n, escuro, foto, modo = "hero", c, children }: {
-  n: number; escuro?: boolean; foto?: string; modo?: "hero" | "fundo" | "suave"; c: Ctx; children: ReactNode;
+  n: number; escuro?: boolean | undefined; foto?: string | undefined; modo?: "hero" | "fundo" | "suave" | undefined; c: Ctx; children: ReactNode;
 }) {
   const bg = escuro ? C.preto : C.papel;
   const fg = escuro ? "#fff" : C.preto;
@@ -116,7 +116,7 @@ function Moldura({ n, escuro, foto, modo = "hero", c, children }: {
 }
 
 /* ---------- Caixa lateral com barra vermelha ---------- */
-function Nota({ titulo, texto, escuro }: { titulo?: string; texto: string; escuro?: boolean }) {
+function Nota({ titulo, texto, escuro }: { titulo?: string | undefined; texto: string; escuro?: boolean | undefined }) {
   return (
     <div style={{ borderLeft: `4px solid ${C.vermelho}`, background: escuro ? "#12161C" : "#ECEEF1", borderRadius: 10, padding: "14px 20px", flex: "none" }}>
       {titulo && <div style={{ fontSize: 13, fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", color: C.vermelho, marginBottom: 4 }}>{titulo}</div>}
@@ -267,8 +267,8 @@ function JeitoDeAgir({ c }: { c: Ctx }) {
 }
 
 /* ---------- Páginas 5 a 12: modelo genérico ---------- */
-function CardLista({ card, i, escuro }: { card: Card; i: number; escuro?: boolean }) {
-  const tom = card.cor ?? TONS[i % 4];
+function CardLista({ card, i, escuro }: { card: Card; i: number; escuro?: boolean | undefined }) {
+  const tom = card.cor ?? TONS[i % 4] ?? "verde";
   return (
     <div style={{ display: "flex", borderRadius: 14, overflow: "hidden", flex: "1 1 0", minHeight: 0, background: escuro ? "#12171D" : "#fff", border: escuro ? "1px solid #262D36" : "none", boxShadow: escuro ? "none" : "0 2px 10px #0000001a" }}>
       <div style={{ width: 110, background: TOM_BG[tom], color: "#fff", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
@@ -286,8 +286,8 @@ function CardLista({ card, i, escuro }: { card: Card; i: number; escuro?: boolea
     </div>
   );
 }
-function CardGrade({ card, i, escuro }: { card: Card; i: number; escuro?: boolean }) {
-  const tom = card.cor ?? TONS[i % 4];
+function CardGrade({ card, i, escuro }: { card: Card; i: number; escuro?: boolean | undefined }) {
+  const tom = card.cor ?? TONS[i % 4] ?? "verde";
   const cor = tom === "escuro" ? "#9CA3AF" : escuro ? ["#4ADE80", "#FBBF24", "#F87171", "#22D3EE"][TONS.indexOf(tom)] : TOM_COR[tom];
   return (
     <div style={{ flex: "1 1 calc(50% - 7px)", minWidth: 0, borderRadius: 14, borderTop: `5px solid ${cor}`, padding: "20px 22px", background: escuro ? "#12171D" : "#fff", color: escuro ? "#D5DAE0" : "#374151", overflow: "hidden" }}>
@@ -296,7 +296,7 @@ function CardGrade({ card, i, escuro }: { card: Card; i: number; escuro?: boolea
     </div>
   );
 }
-function Geral({ p, n, escuro, banner, c }: { p: PaginaConteudo; n: number; escuro?: boolean; banner?: boolean; c: Ctx }) {
+function Geral({ p, n, escuro, banner, c }: { p: PaginaConteudo; n: number; escuro?: boolean | undefined; banner?: boolean | undefined; c: Ctx }) {
   const fg = escuro ? "#fff" : C.preto;
   const k = `p${pad(n)}` as ChaveImagem;
   const intro = p.intro && (
