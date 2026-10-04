@@ -7,7 +7,7 @@ const makeAnswers = (): Answer[] =>
   DEFAULT_INSTRUMENT.items.map((item, index) => {
     const most: Dimension[] = ["D", "I", "S", "C"];
     const least: Dimension[] = ["C", "S", "D", "I"];
-    return { itemId: item.id, most: most[index % 4], least: least[index % 4] };
+    return { itemId: item.id, most: most[index % 4] ?? "D", least: least[index % 4] ?? "C" };
   });
 
 describe("validação íntegra das respostas APAS DISC", () => {
@@ -22,13 +22,13 @@ describe("validação íntegra das respostas APAS DISC", () => {
 
   it("rejeita item duplicado mesmo com a mesma quantidade total", () => {
     const answers = makeAnswers();
-    answers[23] = { ...answers[0], itemId: answers[1].itemId };
+    answers[23] = { ...(answers[0] ?? { itemId: "b01", most: "D", least: "C" }), itemId: answers[1]?.itemId ?? "b02" };
     expect(validateAssessmentAnswers(answers, DEFAULT_INSTRUMENT)).toMatchObject({ ok: false });
   });
 
   it("rejeita MAIS igual a MENOS", () => {
     const answers = makeAnswers();
-    answers[0] = { ...answers[0], most: "D", least: "D" };
+    answers[0] = { ...(answers[0] ?? { itemId: "b01", most: "D", least: "C" }), most: "D", least: "D" };
     expect(validateAssessmentAnswers(answers, DEFAULT_INSTRUMENT)).toMatchObject({ ok: false });
   });
 
@@ -47,7 +47,7 @@ describe("validação íntegra das respostas APAS DISC", () => {
 
   it("rejeita item desconhecido", () => {
     const answers = makeAnswers();
-    answers[0] = { ...answers[0], itemId: "b99" };
+    answers[0] = { ...(answers[0] ?? { itemId: "b01", most: "D", least: "C" }), itemId: "b99" };
     expect(validateAssessmentAnswers(answers, DEFAULT_INSTRUMENT)).toMatchObject({ ok: false });
   });
 });

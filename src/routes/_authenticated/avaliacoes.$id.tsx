@@ -165,7 +165,7 @@ function DetalhePage() {
                 { letra: s, valor: adapted[s], rotulo: factorName(s) },
               ],
               titulo: narrative.title.split(" · ")[0],
-              texto: narrative.profilePortrait ?? narrative.essence,
+              texto: narrative.profilePortrait ?? narrative.essence ?? "",
             },
             cards: [
               { titulo: "O que levar com você", texto: "Os quatro fatores DISC fazem parte do seu repertório.", cor: "verde" as const },

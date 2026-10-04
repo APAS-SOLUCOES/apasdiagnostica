@@ -91,7 +91,7 @@ function mergeScoringConfig(
         : {}),
     },
   });
-  return parsed;
+  return parsed as ScoringConfig;
 }
 
 async function resolveInstrument(

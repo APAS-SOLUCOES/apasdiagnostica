@@ -63,7 +63,7 @@ describe("APAS DISC scoring 1.2", () => {
 
   it("não mascara resposta inválida quando o motor é chamado diretamente", () => {
     const valid = answers(["D", "I"], ["C", "S"]);
-    const invalid = { ...valid[0], most: "D" as Dimension, least: "D" as Dimension };
+    const invalid = { ...(valid[0] ?? { itemId: "b01", most: "D" as Dimension, least: "C" as Dimension }), most: "D" as Dimension, least: "D" as Dimension };
     expect(() =>
       computeScores([invalid, ...valid.slice(1)], DEFAULT_INSTRUMENT),
     ).toThrow(/MAIS e MENOS|diferentes e válidas/i);
@@ -73,7 +73,7 @@ describe("APAS DISC scoring 1.2", () => {
     const result = computeScores(
       answers(["D", "I"], ["C", "S"]),
       DEFAULT_INSTRUMENT,
-      { thresholds: { high: 40 } },
+      { thresholds: { high: 40, moderate: DEFAULT_INSTRUMENT.scoring.thresholds.moderate } },
     );
     expect(result.levels).toBeDefined();
     expect(result.scoringVersion).toBe(DEFAULT_INSTRUMENT.scoring.version);
