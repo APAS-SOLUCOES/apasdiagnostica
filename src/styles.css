@@ -3662,6 +3662,17 @@
     display:block!important;
   }
 
+  /* Restore the internal A4 gutters: an earlier global print rule resets
+     all <main> padding to zero, which otherwise clips the approved layout. */
+  .tech-approved-page > main {
+    box-sizing:border-box!important;
+    padding:4mm 12mm 16mm!important;
+  }
+
+  .tech-cover-approved > main.tech-cover-main {
+    padding:12mm 12mm 16mm 18mm!important;
+  }
+
   .tech-approved-page {
     margin:0!important;
     width:210mm!important;
