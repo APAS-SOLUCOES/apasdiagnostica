@@ -3628,9 +3628,59 @@
 
 @media print {
   @page { size:A4 portrait; margin:0; }
-  .tech-approved-report { padding:0!important; background:#fff!important; }
-  .tech-approved-page { margin:0!important; width:210mm!important; height:297mm!important; min-height:297mm!important; max-height:297mm!important; box-shadow:none!important; break-after:page; page-break-after:always; }
-  .tech-approved-page:last-child { break-after:auto; page-break-after:auto; }
+
+  html,
+  body {
+    width:210mm!important;
+    min-width:210mm!important;
+    margin:0!important;
+    padding:0!important;
+    background:#fff!important;
+    overflow:visible!important;
+  }
+
+  /* Isolate the technical report from the application shell during PDF generation. */
+  body:has(.tech-approved-report) > div > div > header,
+  body:has(.tech-approved-report) > div > div > main > div.mb-8,
+  body:has(.tech-approved-report) > div > div > main > div.mb-5 {
+    display:none!important;
+  }
+
+  body:has(.tech-approved-report) > div > div > main {
+    width:210mm!important;
+    max-width:none!important;
+    margin:0!important;
+    padding:0!important;
+  }
+
+  .tech-approved-report {
+    width:210mm!important;
+    max-width:none!important;
+    margin:0!important;
+    padding:0!important;
+    background:#fff!important;
+    display:block!important;
+  }
+
+  .tech-approved-page {
+    margin:0!important;
+    width:210mm!important;
+    height:296.8mm!important;
+    min-height:296.8mm!important;
+    max-height:296.8mm!important;
+    box-sizing:border-box!important;
+    overflow:hidden!important;
+    box-shadow:none!important;
+    break-inside:avoid!important;
+    page-break-inside:avoid!important;
+    break-after:page!important;
+    page-break-after:always!important;
+  }
+
+  .tech-approved-page:last-child {
+    break-after:auto!important;
+    page-break-after:auto!important;
+  }
 }
 @media screen and (max-width:760px) {
   .tech-approved-report { width:100%; overflow-x:hidden; }
