@@ -3642,3 +3642,19 @@
 @media screen and (min-width:431px) and (max-width:760px) {
   .tech-approved-page { zoom:.54; }
 }
+
+
+/* APAS DISC Premium — restore approved internal A4 gutters for the technical report.
+   This override is intentionally scoped to .tech-approved-* so it does not alter
+   the DISC calculations, content, database, RLS, or on-screen report layout. */
+@media print {
+  .tech-approved-page > main {
+    box-sizing: border-box !important;
+    padding: 4mm 12mm 16mm !important;
+  }
+
+  .tech-cover-approved > main.tech-cover-main {
+    box-sizing: border-box !important;
+    padding: 12mm 12mm 16mm 18mm !important;
+  }
+}
