@@ -181,11 +181,20 @@
   }
 
   body:has(.disc-report-final) main,
+  body:has(.disc-report-final) main > section:has(.disc-report-final),
   body:has(.disc-report-final) .disc-report-final {
     width: 210mm !important;
     max-width: 210mm !important;
     margin: 0 !important;
     padding: 0 !important;
+    gap: 0 !important;
+    min-height: 0 !important;
+  }
+
+  body:has(.disc-report-final) > div,
+  body:has(.disc-report-final) main > section:has(.disc-report-final) {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
 
   .disc-report-final {
