@@ -3,7 +3,7 @@
 Evolução do projeto APAS DISC Profile para a plataforma **APAS DIAGNÓSTICA** (diagnósticos empresariais, comportamentais e de pessoas). O módulo DISC existente é preservado como instrumento da plataforma.
 
 ## Em andamento
-- [ ] Aplicar tamanhos absolutos maiores apenas no PDF Técnico; validar textos curtos/longos, dez folhas e tela intacta; informar exceções.
+- [x] Aplicar tamanhos absolutos maiores apenas no PDF Técnico; tela idêntica, avaliação autenticada e 24 variações curtas/longas com dez folhas A4 sem overflow; nenhuma exceção de fonte.
 - [x] Explicitar em pt a escala compartilhada da impressão do DISC Técnico; tela idêntica, 24 variações sem overflow e 24 PDFs de 10 folhas A4; sem publicação.
 - [x] Ampliar somente a tipografia do DISC Técnico (+18%); validar 24 variações, todas as seções, tela e PDF autenticado de 10 folhas A4; sem publicação.
 - [ ] Corrigir os erros de TypeScript da prévia sem alterar a apresentação DISC, os cálculos ou a publicação; confirmar o estado da instalação.
