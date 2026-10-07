@@ -11,20 +11,20 @@ export type Fator = "D" | "I" | "S" | "C";
 export type Pct = Record<Fator, number>;
 type Tom = "verde" | "laranja" | "vermelho" | "azul" | "escuro";
 
-export interface Card { titulo: string; texto?: string | undefined; itens?: string[] | undefined; cor?: Tom | undefined }
+export interface Card { titulo: string; texto?: string; itens?: string[]; cor?: Tom }
 export interface PaginaConteudo {
   secao: string;            // sem número: a numeração é automática
   titulo: string;
-  subtitulo?: string | undefined;
-  intro?: string | undefined;
+  subtitulo?: string;
+  intro?: string;
   cards: Card[];
-  colunas?: 1 | 2 | undefined;          // 2 = grade 2x2 (ex.: Comunicação)
-  destaque?: { fatores: { letra: Fator; valor: number; rotulo: string }[]; titulo: string; texto: string } | undefined;
-  experimento?: boolean | undefined;    // bloco "Meu experimento de 30 dias"
-  nota?: { titulo?: string | undefined; texto: string } | undefined;
+  colunas?: 1 | 2;          // 2 = grade 2x2 (ex.: Comunicação)
+  destaque?: { fatores: { letra: Fator; valor?: number; rotulo: string }[]; titulo: string; texto: string };
+  experimento?: boolean;    // bloco "Meu experimento de 30 dias"
+  nota?: { titulo?: string; texto: string };
 }
 export interface RelatorioDados {
-  nome: string; cargo?: string | undefined; data: string;
+  nome: string; cargo?: string; data: string;
   natural: Pct; adaptado: Pct; social: Pct; indiceAdaptacao: number;
   introducao: { titulo: string; paragrafos: string[]; citacao: string; referencia: string };
   numeros: { descricao: string; indiceTexto: string; aviso: string };
@@ -79,7 +79,7 @@ const h2 = (cor: string, text?: string): CSSProperties => ({
 
 /* ---------- Moldura comum (cabeçalho, rodapé, foto de fundo) ---------- */
 function Moldura({ n, escuro, foto, modo = "hero", c, children }: {
-  n: number; escuro?: boolean | undefined; foto?: string | undefined; modo?: "hero" | "fundo" | "suave" | undefined; c: Ctx; children: ReactNode;
+  n: number; escuro?: boolean; foto?: string; modo?: "hero" | "fundo" | "suave"; c: Ctx; children: ReactNode;
 }) {
   const bg = escuro ? C.preto : C.papel;
   const fg = escuro ? "#fff" : C.preto;
@@ -116,7 +116,7 @@ function Moldura({ n, escuro, foto, modo = "hero", c, children }: {
 }
 
 /* ---------- Caixa lateral com barra vermelha ---------- */
-function Nota({ titulo, texto, escuro }: { titulo?: string | undefined; texto: string; escuro?: boolean | undefined }) {
+function Nota({ titulo, texto, escuro }: { titulo?: string; texto: string; escuro?: boolean }) {
   return (
     <div style={{ borderLeft: `4px solid ${C.vermelho}`, background: escuro ? "#12161C" : "#ECEEF1", borderRadius: 10, padding: "14px 20px", flex: "none" }}>
       {titulo && <div style={{ fontSize: 13, fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", color: C.vermelho, marginBottom: 4 }}>{titulo}</div>}
@@ -163,7 +163,7 @@ function Introducao({ c }: { c: Ctx }) {
   return (
     <Moldura n={2} foto={c.I("p02")} modo="fundo" c={c}>
       <div style={{ position: "absolute", left: 56, top: 165, width: 480, maxHeight: H - 165 - 118, overflow: "hidden" }}>
-        <div style={eyebrow}>01 · Antes de olhar o resultado</div>
+        <div style={eyebrow}>Antes de olhar o resultado</div>
         <h2 style={{ ...h2(C.preto, t.titulo), fontSize: titleSize(t.titulo, 64, 48) }}>{t.titulo}</h2>
         {t.paragrafos.map((p, i) => (
           <p key={i} style={{ fontSize: i === 0 ? 20 : 18, fontWeight: i === 0 ? 700 : 400, lineHeight: 1.45, margin: "22px 0 0" }}>{p}</p>
@@ -219,7 +219,7 @@ function Numeros({ c }: { c: Ctx }) {
   return (
     <Moldura n={3} foto={c.I("p03")} modo="suave" c={c}>
       <div style={{ position: "absolute", left: 56, top: 160, width: 420 }}>
-        <div style={eyebrow}>02 · Seu perfil em números</div>
+        <div style={eyebrow}>Seu perfil em números</div>
         <h2 style={{ ...h2(C.preto, "Seu perfil em números"), fontSize: 56 }}>Seu perfil em números</h2>
         <div style={{ fontSize: 22 }}>O que o seu resultado revela</div>
         <p style={{ fontSize: 17, lineHeight: 1.5, marginTop: 20 }}>{d.numeros.descricao}</p>
@@ -250,7 +250,7 @@ function JeitoDeAgir({ c }: { c: Ctx }) {
   return (
     <Moldura n={4} foto={c.I("p04")} modo="suave" c={c}>
       <div style={{ position: "absolute", left: 56, right: 56, top: 160 }}>
-        <div style={eyebrow}>03 · Seu jeito de agir</div>
+        <div style={eyebrow}>Seu jeito de agir</div>
         <h2 style={{ ...h2(C.preto, j.titulo), fontSize: titleSize(j.titulo, 54, 46) }}>{j.titulo}</h2>
         <div style={{ fontSize: bodySize(j.subtitulo, 22, 18), lineHeight: 1.3 }}>{j.subtitulo}</div>
         <div style={{ fontSize: 30, fontWeight: 800, margin: "30px 0 14px" }}>
@@ -267,13 +267,11 @@ function JeitoDeAgir({ c }: { c: Ctx }) {
 }
 
 /* ---------- Páginas 5 a 12: modelo genérico ---------- */
-function CardLista({ card, i, escuro }: { card: Card; i: number; escuro?: boolean | undefined }) {
-  const tom = card.cor ?? TONS[i % 4] ?? "verde";
+function CardLista({ card, i, escuro }: { card: Card; i: number; escuro?: boolean }) {
+  const tom = card.cor ?? TONS[i % 4];
   return (
     <div style={{ display: "flex", borderRadius: 14, overflow: "hidden", flex: "1 1 0", minHeight: 0, background: escuro ? "#12171D" : "#fff", border: escuro ? "1px solid #262D36" : "none", boxShadow: escuro ? "none" : "0 2px 10px #0000001a" }}>
-      <div style={{ width: 110, background: TOM_BG[tom], color: "#fff", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-        <b style={{ fontSize: 26 }}>{pad(i + 1)}</b><i style={{ width: 56, height: 2, background: "#fff", marginTop: 6 }} />
-      </div>
+      <div aria-hidden="true" style={{ width: 14, flex: "0 0 14px", background: TOM_BG[tom] }} />
       <div style={{ padding: "14px 22px", flex: 1, minWidth: 0, overflow: "hidden" }}>
         <h3 style={{ margin: "0 0 6px", fontSize: bodySize(card.titulo, 20, 16), lineHeight: 1.18, fontWeight: 800, color: escuro ? "#fff" : TOM_COR[tom] }}>{card.titulo}</h3>
         {card.texto && <p style={{ margin: 0, fontSize: bodySize(card.texto), lineHeight: 1.42, color: escuro ? "#D5DAE0" : "#374151" }}>{card.texto}</p>}
@@ -286,8 +284,8 @@ function CardLista({ card, i, escuro }: { card: Card; i: number; escuro?: boolea
     </div>
   );
 }
-function CardGrade({ card, i, escuro }: { card: Card; i: number; escuro?: boolean | undefined }) {
-  const tom = card.cor ?? TONS[i % 4] ?? "verde";
+function CardGrade({ card, i, escuro }: { card: Card; i: number; escuro?: boolean }) {
+  const tom = card.cor ?? TONS[i % 4];
   const cor = tom === "escuro" ? "#9CA3AF" : escuro ? ["#4ADE80", "#FBBF24", "#F87171", "#22D3EE"][TONS.indexOf(tom)] : TOM_COR[tom];
   return (
     <div style={{ flex: "1 1 calc(50% - 7px)", minWidth: 0, borderRadius: 14, borderTop: `5px solid ${cor}`, padding: "20px 22px", background: escuro ? "#12171D" : "#fff", color: escuro ? "#D5DAE0" : "#374151", overflow: "hidden" }}>
@@ -296,7 +294,7 @@ function CardGrade({ card, i, escuro }: { card: Card; i: number; escuro?: boolea
     </div>
   );
 }
-function Geral({ p, n, escuro, banner, c }: { p: PaginaConteudo; n: number; escuro?: boolean | undefined; banner?: boolean | undefined; c: Ctx }) {
+function Geral({ p, n, escuro, banner, c }: { p: PaginaConteudo; n: number; escuro?: boolean; banner?: boolean; c: Ctx }) {
   const fg = escuro ? "#fff" : C.preto;
   const k = `p${pad(n)}` as ChaveImagem;
   const intro = p.intro && (
@@ -305,7 +303,7 @@ function Geral({ p, n, escuro, banner, c }: { p: PaginaConteudo; n: number; escu
   return (
     <Moldura n={n} escuro={escuro} foto={banner ? undefined : c.I(k)} c={c}>
       <div style={{ position: "absolute", left: 56, top: 160, width: 540, maxHeight: 320, overflow: "hidden" }}>
-        <div style={eyebrow}>{pad(n - 1)} · {p.secao}</div>
+        <div style={eyebrow}>{p.secao}</div>
         <h2 style={{ ...h2(fg, p.titulo), fontSize: titleSize(p.titulo, 54, 44) }}>{p.titulo}</h2>
         {p.subtitulo && <div style={{ fontSize: 22, color: escuro ? "#C5CAD1" : "#4B5563" }}>{p.subtitulo}</div>}
         {!banner && intro}
@@ -339,7 +337,7 @@ function Geral({ p, n, escuro, banner, c }: { p: PaginaConteudo; n: number; escu
               {p.destaque.fatores.map((f) => (
                 <div key={f.letra} style={{ textAlign: "center" }}>
                   <div style={{ width: 68, height: 68, borderRadius: 10, background: FATOR_COR[f.letra], fontSize: 36, fontWeight: 800, display: "grid", placeItems: "center" }}>{f.letra}</div>
-                  <div style={{ fontSize: 16, fontWeight: 800, color: FATOR_COR[f.letra], marginTop: 6 }}>{pct(f.valor)}</div>
+                  {f.valor !== undefined && <div style={{ fontSize: 16, fontWeight: 800, color: FATOR_COR[f.letra], marginTop: 6 }}>{pct(f.valor)}</div>}
                   <div style={{ fontSize: 10, letterSpacing: 1, textTransform: "uppercase" }}>{f.rotulo}</div>
                 </div>
               ))}
@@ -481,7 +479,7 @@ export const dadosExemplo: RelatorioDados = {
       secao: "Seu perfil não é um destino", titulo: "Seu perfil não é um destino", subtitulo: "Seu resultado descreve tendências. Suas escolhas definem como você as utiliza.",
       intro: "O APAS DISC revela como você tende a agir, se comunicar, tomar decisões e se relacionar.",
       destaque: {
-        fatores: [{ letra: "I", valor: 35.0, rotulo: "Influência" }, { letra: "D", valor: 34.2, rotulo: "Dominância" }],
+        fatores: [{ letra: "I", rotulo: "Influência" }, { letra: "D", rotulo: "Dominância" }],
         titulo: "O Comunicador que Realiza",
         texto: "Seu resultado sugere um repertório que combina facilidade para comunicar e influenciar com energia para agir e buscar resultados.",
       },
@@ -531,10 +529,10 @@ export default function RelatorioDISC({ dados, imagens = {} }: { dados: Relatori
   ];
 
   return (
-    <div ref={ref} className="disc-report-final" style={{ width: "100%", maxWidth: W, margin: "0 auto" }}>
+    <div ref={ref} style={{ width: "100%", maxWidth: W, margin: "0 auto" }}>
       {paginas.map((pg, i) => (
-        <div key={i} className="disc-print-frame" style={{ height: H * s, marginBottom: 16 }}>
-          <div className="disc-page-content" style={{ width: W, height: H, transform: `scale(${s})`, transformOrigin: "top left" }}>{pg}</div>
+        <div key={i} style={{ height: H * s, marginBottom: 16 }}>
+          <div style={{ width: W, height: H, transform: `scale(${s})`, transformOrigin: "top left" }}>{pg}</div>
         </div>
       ))}
     </div>
