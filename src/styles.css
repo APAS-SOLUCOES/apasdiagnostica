@@ -3714,3 +3714,25 @@
     background: #111 !important;
   }
 }
+
+/* Technical report: undo generic print resets that reach the pages' own <main> blocks. */
+@media print {
+  .tech-approved-report > .tech-approved-page > main {
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 4mm 12mm 16mm !important;
+  }
+
+  .tech-approved-report > .tech-cover-approved > main.tech-cover-main {
+    padding: 12mm 12mm 16mm 18mm !important;
+  }
+
+  .tech-approved-report > .tech-approved-page > main > div:first-child {
+    display: revert !important;
+  }
+
+  .tech-approved-report > .tech-cover-approved > main > .tech-cover-logo {
+    display: flex !important;
+  }
+}
