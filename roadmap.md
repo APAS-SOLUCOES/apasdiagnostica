@@ -3,8 +3,8 @@
 Evolução do projeto APAS DISC Profile para a plataforma **APAS DIAGNÓSTICA** (diagnósticos empresariais, comportamentais e de pessoas). O módulo DISC existente é preservado como instrumento da plataforma.
 
 ## Em andamento
-- [x] Aplicar apresentação Premium de d7130d55291c259b012d24c0202885d7148bb7d8, com adaptações apenas de tipos; 12 páginas autenticadas, percentuais só na página 3, sem numeração editorial; 15 testes e build OK; sem publicação.
-- [ ] Completar conferência visual com as fotos referenciadas pelo commit aprovado; bloqueio: capa.png e p02–p12.png ausentes no commit e no projeto (p07 não é usado pelo renderizador).
+- [x] Retornar o Premium à apresentação de f125a00 (a mesma que entregou os tamanhos de fonte do PDF Técnico); 12 páginas autenticadas, Técnico com 10 folhas A4 e corpo em 10,5 pt, 25 testes, tipos e build OK; sem publicação.
+- [ ] Reaplicar a apresentação editorial de d7130d55291c259b012d24c0202885d7148bb7d8 quando as fotos existirem; bloqueio: capa.png e p02–p12.png ausentes em public/relatorios/img/.
 - [x] Aplicar tamanhos absolutos maiores apenas no PDF Técnico; tela idêntica, avaliação autenticada e 24 variações curtas/longas com dez folhas A4 sem overflow; nenhuma exceção de fonte.
 - [x] Explicitar em pt a escala compartilhada da impressão do DISC Técnico; tela idêntica, 24 variações sem overflow e 24 PDFs de 10 folhas A4; sem publicação.
 - [x] Ampliar somente a tipografia do DISC Técnico (+18%); validar 24 variações, todas as seções, tela e PDF autenticado de 10 folhas A4; sem publicação.
