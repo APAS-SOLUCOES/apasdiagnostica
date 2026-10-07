@@ -3,6 +3,7 @@
 Evolução do projeto APAS DISC Profile para a plataforma **APAS DIAGNÓSTICA** (diagnósticos empresariais, comportamentais e de pessoas). O módulo DISC existente é preservado como instrumento da plataforma.
 
 ## Em andamento
+- [x] Ampliar somente a tipografia do DISC Técnico (+18%); validar 24 variações, todas as seções, tela e PDF autenticado de 10 folhas A4; sem publicação.
 - [ ] Corrigir os erros de TypeScript da prévia sem alterar a apresentação DISC, os cálculos ou a publicação; confirmar o estado da instalação.
 - [x] Inspeção concluída (06/09): código atual = DISC completo (`apas.functions.ts`, `public.functions.ts`, rotas `/dashboard`, `/avaliacoes/*`, `/empresas`, `/instrumento`, `/a/$token`), tabelas `assessments/*`, `instruments`, `organizations`, roles `admin|coach`. **Nada do módulo empresarial existe ainda no código nem no banco.**
 - [ ] **Localizar as 70 perguntas V3** no histórico da conversa (chat_search: "V3", "L01", "Liderança"). Regra confirmada pelo usuário: L01 é inversa; pesos V3 são 2 e 3; N/A fora do cálculo. Se o texto não estiver acessível, criar estrutura + tela de carga e sinalizar pendência — NÃO inventar perguntas.
