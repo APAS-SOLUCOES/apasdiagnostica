@@ -9,4 +9,4 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Keep technical DISC typography scoped to `.tech-approved-report`, with one shared CSS multiplier and separate screen/print units, to avoid changing other reports.
+- Keep technical DISC typography scoped to `.tech-approved-report`, with one shared CSS multiplier and explicit pt-based print sizes, to isolate other reports and avoid dependence on screen/root units in PDFs.

@@ -3797,7 +3797,40 @@
   .tech-approved-report .tech-approved-header i { flex-shrink:0; }
 }
 @media print {
-  .tech-approved-report { --tech-type-unit:1pt; }
+  /* Resolve the shared multiplier explicitly in print points, independently of rem/root sizing. */
+  .tech-approved-report {
+    --tech-type-unit:1pt;
+    --tech-type-step:calc(1pt * var(--tech-type-scale));
+  }
+  .tech-approved-report .tech-approved-header > div,
+  .tech-approved-report .tech-approved-page footer,
+  .tech-approved-report .tech-cover-bottom { font-size:calc(6.5pt * var(--tech-type-scale)); }
+  .tech-approved-report .tech-approved-kicker,
+  .tech-approved-report .tech-approved-page footer strong,
+  .tech-approved-report .tech-cover-person span { font-size:calc(7pt * var(--tech-type-scale)); }
+  .tech-approved-report .tech-approved-page h1 { font-size:calc(25pt * var(--tech-type-scale)); }
+  .tech-approved-report .tech-approved-page h2 { font-size:calc(10pt * var(--tech-type-scale)); }
+  .tech-approved-report .tech-cover-approved main h1 { font-size:calc(31pt * var(--tech-type-scale)); }
+  .tech-approved-report .tech-cover-label,
+  .tech-approved-report .tech-summary-approved b,
+  .tech-approved-report .tech-factor-card > strong,
+  .tech-approved-report .tech-factor-card h3,
+  .tech-approved-report .tech-profile-labels b { font-size:calc(8pt * var(--tech-type-scale)); }
+  .tech-approved-report .tech-cover-person strong,
+  .tech-approved-report .tech-summary-approved div { font-size:calc(8.5pt * var(--tech-type-scale)); }
+  .tech-approved-report .tech-factor-card p { font-size:calc(6.8pt * var(--tech-type-scale)); }
+  .tech-approved-report .tech-info-box { font-size:calc(7.4pt * var(--tech-type-scale)); }
+  .tech-approved-report .tech-info-box > strong { font-size:calc(7.8pt * var(--tech-type-scale)); }
+  .tech-approved-report .tech-profile-labels strong,
+  .tech-approved-report .tech-mode-cards strong { font-size:calc(9pt * var(--tech-type-scale)); }
+  .tech-approved-report .tech-profile-wheel > div:not(.tech-profile-wheel-center) { font-size:calc(21pt * var(--tech-type-scale)); }
+  .tech-approved-report .tech-profile-wheel-center { font-size:calc(13pt * var(--tech-type-scale)); }
+  .tech-approved-report .tech-mode-cards p,
+  .tech-approved-report .tech-analysis-heading p,
+  .tech-approved-report .tech-analysis-grid .tech-info-box > div { font-size:calc(7.5pt * var(--tech-type-scale)); }
+  .tech-approved-report .tech-analysis-heading > span { font-size:calc(19pt * var(--tech-type-scale)); }
+  .tech-approved-report .tech-analysis-heading h3 { font-size:calc(14pt * var(--tech-type-scale)); }
+  .tech-approved-report .tech-final-principle { font-size:calc(17pt * var(--tech-type-scale)); }
   .tech-approved-report :is(.tech-info-box,.tech-factor-card,.tech-mode-cards > div) {
     break-inside:avoid; page-break-inside:avoid;
     -webkit-print-color-adjust:exact; print-color-adjust:exact;
