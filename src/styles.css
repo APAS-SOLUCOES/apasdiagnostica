@@ -3792,7 +3792,7 @@
   .tech-approved-report .tech-profile-left { min-height:0; }
   .tech-approved-report .tech-cover-person { grid-template-columns:minmax(0,1fr); }
   .tech-approved-report .tech-approved-page h1 { max-width:100%; }
-  .tech-approved-report .tech-profile-wheel { max-width:100%; margin-left:0; }
+  .tech-approved-report .tech-profile-wheel { width:min(67mm,100%); height:auto; aspect-ratio:1; margin-left:0; }
   .tech-approved-report .tech-approved-header > div { min-width:0; }
   .tech-approved-report .tech-approved-header i { flex-shrink:0; }
 }
