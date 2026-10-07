@@ -3663,7 +3663,7 @@
   body:has(.tech-approved-report) button,
   body:has(.tech-approved-report) .print\:hidden,
   body:has(.tech-approved-report) [data-print-hidden="true"],
-  body:has(.tech-approved-report) main:has(.tech-approved-report) > :not(:has(.tech-approved-report)) {
+  body:has(.tech-approved-report) main:has(.tech-approved-report) > :not(.tech-approved-report):not(:has(.tech-approved-report)) {
     display: none !important;
   }
 
