@@ -13,6 +13,7 @@ import type { ScoreResult } from "@/lib/disc/scoring";
 import { normalizeDiscScores } from "@/lib/disc/normalize-result";
 import { getAdaptiveNarrative } from "@/lib/disc/adaptive-content";
 import { DIMENSION_CONTENT } from "@/lib/disc/content";
+import { COMBINATION_NARRATIVES, FACTOR_SHORT } from "@/lib/disc/report-content";
 
 export const Route = createFileRoute("/_authenticated/avaliacoes/$id")({
   head: () => ({
@@ -71,151 +72,145 @@ function DetalhePage() {
         const social = scores.social.percent;
         const narrative = getAdaptiveNarrative(scores);
         const p = scores.predominant;
-        const s = scores.secondary;
+        const sec = scores.secondary;
         const factorName = (f: keyof typeof adapted) =>
           f === "D" ? "Dominância" : f === "I" ? "Influência" : f === "S" ? "Estabilidade" : "Conformidade";
-        const intensity = narrative.title.split(" · ")[1] ?? "presente";
+        const base =
+          COMBINATION_NARRATIVES[scores.combination] ??
+          COMBINATION_NARRATIVES[`${p}${sec}`] ??
+          COMBINATION_NARRATIVES["DI"];
+
+        const primaryName = factorName(p);
+        const secondaryName = factorName(sec);
+        const primaryShort = FACTOR_SHORT[p];
+        const secondaryShort = FACTOR_SHORT[sec];
+
         const paginas: RelatorioDados["paginas"] = {
           pontosFortes: {
             secao: "Seus pontos fortes",
             titulo: "Seus pontos fortes",
             subtitulo: "Recursos que você já leva com você",
             intro: "Recursos que podem aparecer com mais naturalidade quando o contexto favorece seu repertório.",
-            cards: narrative.best.slice(0, 4).map((texto, index) => ({ titulo: texto, texto: DIMENSION_CONTENT[p].characteristics[index] ?? narrative.essence, cor: "verde" as const })),
-            nota: { titulo: "No contexto", texto: narrative.situations?.work ?? narrative.best[0] ?? "Observe quando esse recurso gera valor." },
+            cards: base.best.slice(0, 4).map((texto, index) => ({
+              titulo: texto,
+              texto: DIMENSION_CONTENT[p].characteristics[index] ?? narrative.best[index] ?? base.essence,
+              cor: "verde" as const,
+            })),
+            nota: { titulo: "No contexto", texto: base.leadership },
           },
           atencao: {
             secao: "O que pode exigir mais atenção",
             titulo: "O que pode exigir mais atenção",
             subtitulo: "Equilíbrio também é resultado",
-            intro: "Todo comportamento que representa uma força também pode se tornar um excesso quando utilizado fora do contexto.",
-            cards: narrative.excess.slice(0, 3).map((texto) => ({ titulo: "Vale observar", texto, cor: "vermelho" as const })),
+            intro: "Toda força comportamental pode produzir efeitos diferentes quando é utilizada fora do contexto.",
+            cards: base.excess.slice(0, 3).map((texto) => ({ titulo: "Vale observar", texto, cor: "vermelho" as const })),
             nota: { titulo: "Lembre-se", texto: "Pontos de atenção são hipóteses de ajuste para validar no seu contexto." },
           },
           percebido: {
             secao: "Como você pode ser percebido",
             titulo: "Como você pode ser percebido",
             subtitulo: "A impressão que você provoca nos outros",
-            intro: narrative.perceived,
+            intro: base.perceived,
             cards: [
-              { titulo: "Nas relações", texto: narrative.situations?.relationships, cor: "vermelho" as const },
-              { titulo: "Na comunicação", texto: narrative.communication, cor: "escuro" as const },
-              { titulo: "Sob pressão", texto: narrative.pressure, cor: "laranja" as const },
-              { titulo: "Na mudança", texto: narrative.change, cor: "azul" as const },
+              { titulo: "Nas relações", texto: base.perceived, cor: "vermelho" as const },
+              { titulo: "Na comunicação", texto: base.communication, cor: "escuro" as const },
+              { titulo: "Sob pressão", texto: base.pressure, cor: "laranja" as const },
+              { titulo: "Na mudança", texto: base.change, cor: "azul" as const },
             ],
           },
           comunicacao: {
-            secao: "Comunicação",
-            titulo: "Comunicação",
-            subtitulo: "Como você tende a se expressar",
-            intro: narrative.communication,
-            colunas: 2,
+            secao: "Comunicação", titulo: "Comunicação", subtitulo: "Como você tende a se expressar", intro: base.communication, colunas: 2,
             cards: [
-              { titulo: "Quando está no seu melhor", texto: narrative.best[0], cor: "verde" as const },
-              { titulo: "Vale observar", texto: narrative.perceived, cor: "laranja" as const },
-              { titulo: "Ponto de atenção", texto: narrative.excess[0], cor: "vermelho" as const },
-              { titulo: "Experimente", texto: narrative.experiments[0], cor: "azul" as const },
+              { titulo: "Quando está no seu melhor", texto: base.best[0], cor: "verde" as const },
+              { titulo: "Vale observar", texto: base.perceived, cor: "laranja" as const },
+              { titulo: "Ponto de atenção", texto: base.excess[0], cor: "vermelho" as const },
+              { titulo: "Experimente", texto: base.experiments[0], cor: "azul" as const },
             ],
           },
           decisao: {
-            secao: "Decisão",
-            titulo: "Decisão",
-            subtitulo: "Como você tende a escolher",
-            intro: narrative.decision,
+            secao: "Decisão", titulo: "Decisão", subtitulo: "Como você tende a escolher", intro: base.decision,
             cards: [
-              { titulo: "No seu melhor", texto: narrative.best[1] ?? narrative.best[0], cor: "verde" as const },
-              { titulo: "Vale observar", texto: narrative.decision, cor: "laranja" as const },
-              { titulo: "Ponto de atenção", texto: narrative.excess[1] ?? narrative.excess[0], cor: "vermelho" as const },
-              { titulo: "Dica", texto: narrative.experiments[1] ?? narrative.experiments[0], cor: "azul" as const },
+              { titulo: "No seu melhor", texto: base.best[1] ?? base.best[0], cor: "verde" as const },
+              { titulo: "Vale observar", texto: "Antes de fechar uma escolha, diferencie o que já está confirmado do que ainda precisa ser validado.", cor: "laranja" as const },
+              { titulo: "Ponto de atenção", texto: base.excess[1] ?? base.excess[0], cor: "vermelho" as const },
+              { titulo: "Dica", texto: base.experiments[1] ?? base.experiments[0], cor: "azul" as const },
             ],
           },
           relacionamentos: {
-            secao: "Relacionamentos e equipe",
-            titulo: "Relacionamentos e equipe",
-            subtitulo: "Juntos, os resultados vão mais longe",
-            intro: narrative.team,
+            secao: "Relacionamentos e equipe", titulo: "Relacionamentos e equipe", subtitulo: "Juntos, os resultados vão mais longe", intro: base.team,
             cards: [
-              { titulo: "O que te fortalece", texto: narrative.leadership, cor: "verde" as const },
-              { titulo: "Vale observar", texto: narrative.perceived, cor: "laranja" as const },
-              { titulo: "Ponto de atenção", texto: narrative.excess[2] ?? narrative.excess[0], cor: "vermelho" as const },
-              { titulo: "Experimente", texto: narrative.experiments[2] ?? narrative.experiments[0], cor: "azul" as const },
+              { titulo: "O que te fortalece", texto: base.team, cor: "verde" as const },
+              { titulo: "Vale observar", texto: "Pessoas diferentes podem precisar de ritmos, informações e espaços diferentes para contribuir.", cor: "laranja" as const },
+              { titulo: "Ponto de atenção", texto: base.excess[2] ?? base.excess[0], cor: "vermelho" as const },
+              { titulo: "Experimente", texto: base.experiments[2] ?? base.experiments[0], cor: "azul" as const },
             ],
           },
           desenvolvimento: {
-            secao: "Seu desenvolvimento",
-            titulo: "Seu desenvolvimento",
-            subtitulo: "Mais consciência, mais escolha",
+            secao: "Seu desenvolvimento", titulo: "Seu desenvolvimento", subtitulo: "Mais consciência, mais escolha",
             intro: "O desenvolvimento não exige negar o seu estilo. Exige ampliar opções para responder melhor ao que cada situação pede.",
             cards: [
-              { titulo: "O que já está no seu repertório", texto: narrative.best[0], cor: "vermelho" as const },
-              { titulo: "O que pode ser ajustado", texto: narrative.excess[0], cor: "laranja" as const },
-              { titulo: "O que pode ser ampliado", texto: narrative.experiments[1] ?? narrative.experiments[0], cor: "vermelho" as const },
-              { titulo: "O que pode gerar mais resultado", texto: narrative.experiments[2] ?? narrative.experiments[0], cor: "azul" as const },
+              { titulo: "O que já está no seu repertório", texto: base.best[0], cor: "vermelho" as const },
+              { titulo: "O que pode ser ajustado", texto: base.excess[0], cor: "laranja" as const },
+              { titulo: "O que pode ser ampliado", texto: base.experiments[1] ?? base.experiments[0], cor: "vermelho" as const },
+              { titulo: "O que pode gerar mais resultado", texto: base.experiments[2] ?? base.experiments[0], cor: "azul" as const },
             ],
             experimento: true,
           },
           destino: {
-            secao: "Seu perfil não é um destino",
-            titulo: "Seu perfil não é um destino",
+            secao: "Seu perfil não é um destino", titulo: "Seu perfil não é um destino",
             subtitulo: "Seu resultado descreve tendências. Suas escolhas definem como você as utiliza.",
             intro: "O APAS DISC revela tendências sobre como você tende a agir, se comunicar, tomar decisões e se relacionar.",
             destaque: {
               fatores: [
-                { letra: p, valor: adapted[p], rotulo: factorName(p) },
-                { letra: s, valor: adapted[s], rotulo: factorName(s) },
+                { letra: p, rotulo: primaryName },
+                { letra: sec, rotulo: secondaryName },
               ],
               titulo: narrative.title.split(" · ")[0],
-              texto: narrative.profilePortrait ?? narrative.essence,
+              texto: base.essence,
             },
             cards: [
               { titulo: "O que levar com você", texto: "Os quatro fatores DISC fazem parte do seu repertório.", cor: "verde" as const },
-              { titulo: "O próximo passo", texto: narrative.experiments[0], cor: "laranja" as const },
+              { titulo: "O próximo passo", texto: base.experiments[0], cor: "laranja" as const },
               { titulo: "Uma mensagem final", texto: "O seu perfil não determina o seu comportamento. Ele é um ponto de partida para maior consciência.", cor: "azul" as const },
             ],
             nota: { texto: "O APAS DISC é uma ferramenta de análise de tendências comportamentais e não constitui diagnóstico psicológico, clínico ou psiquiátrico." },
           },
         };
+
         return {
           nome: assessment.candidate_name,
           cargo: assessment.role_title ?? undefined,
           data: assessment.submitted_at
             ? new Date(assessment.submitted_at).toLocaleDateString("pt-BR")
             : new Date(assessment.created_at).toLocaleDateString("pt-BR"),
-          natural,
-          adaptado: adapted,
-          social,
-          indiceAdaptacao: scores.adaptationIndex,
+          natural, adaptado: adapted, social, indiceAdaptacao: scores.adaptationIndex,
           introducao: {
             titulo: "Você não é um número.",
             paragrafos: [
               "O resultado deste relatório não pretende colocar você dentro de uma caixa ou definir quem você é.",
-              narrative.essence,
-              narrative.profilePortrait ?? narrative.essence,
+              base.essence,
+              "A combinação entre " + primaryName.toLowerCase() + " e " + secondaryName.toLowerCase() + " influencia a forma como você pode transformar intenção em comportamento. " + primaryShort + " aparece como referência principal, enquanto " + secondaryShort + " amplia as possibilidades de resposta ao contexto.",
             ],
             citacao: "O autoconhecimento é o primeiro passo para escolhas mais conscientes e resultados mais consistentes.",
             referencia: "Este relatório é baseado em tendências comportamentais DISC. A leitura deve ser validada no contexto do avaliado.",
           },
           numeros: {
-            descricao:
-              "Natural " + natural[p].toFixed(1).replace(".", ",") + "% · Adaptado " +
-              adapted[p].toFixed(1).replace(".", ",") + "% · Social " +
-              social[p].toFixed(1).replace(".", ",") + "%",
-            indiceTexto:
-              "Índice de adaptação: " + scores.adaptationIndex.toFixed(1).replace(".", ",") +
-              ". " + (scores.adaptationAlert
-                ? "A diferença entre perspectivas merece uma conversa de contexto e validação."
-                : "As diferenças entre perspectivas podem ser exploradas como flexibilidade contextual."),
+            descricao: "Natural " + natural[p].toFixed(1).replace(".", ",") + "% · Adaptado " + adapted[p].toFixed(1).replace(".", ",") + "% · Social " + social[p].toFixed(1).replace(".", ",") + "%",
+            indiceTexto: "Índice de adaptação: " + scores.adaptationIndex.toFixed(1).replace(".", ",") + ". " + (scores.adaptationAlert ? "A diferença entre perspectivas merece uma conversa de contexto e validação." : "As diferenças entre perspectivas podem ser exploradas como flexibilidade contextual."),
             aviso: "Nenhuma perspectiva é melhor. Juntas, elas ajudam a compreender repertório e contexto.",
           },
           jeitoDeAgir: {
             titulo: narrative.title.split(" · ")[0],
             subtitulo: "Combinação: " + (scores.combinationLabel ?? scores.combination),
             arquetipo: narrative.title.split(" · ")[0],
-            intensidade: intensity,
-            paragrafos: [narrative.essence, narrative.situations?.work ?? narrative.communication],
+            intensidade: narrative.title.split(" · ")[1] ?? "presente",
+            paragrafos: [
+              base.essence,
+              "No dia a dia, essa combinação pode favorecer " + primaryShort + " sem perder de vista " + secondaryShort + ". O melhor uso do seu repertório acontece quando você percebe o que a situação pede e escolhe conscientemente qual recurso colocar em primeiro plano.",
+            ],
             destaqueTitulo: "Olhar de pessoas",
-            destaqueTexto: narrative.perceived,
-            resumo: narrative.team,
+            destaqueTexto: base.perceived,
+            resumo: "Na prática, você pode ganhar mais consistência quando transforma " + primaryShort + " em ação e utiliza " + secondaryShort + " para ajustar a forma como essa ação chega às pessoas.",
           },
           paginas,
         };
