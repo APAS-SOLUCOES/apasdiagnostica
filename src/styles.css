@@ -3732,3 +3732,78 @@
     display: block !important;
   }
 }
+
+/* Technical DISC only: one type multiplier for screen and A4. */
+.tech-approved-report {
+  --tech-type-scale: 1.18;
+  --tech-type-unit: 0.0833333333rem;
+  --tech-type-step: calc(var(--tech-type-unit) * var(--tech-type-scale));
+}
+.tech-approved-report .tech-approved-header > div,
+.tech-approved-report .tech-approved-page footer,
+.tech-approved-report .tech-cover-bottom { font-size:calc(6.5 * var(--tech-type-step)); }
+.tech-approved-report .tech-approved-kicker,
+.tech-approved-report .tech-approved-page footer strong,
+.tech-approved-report .tech-cover-person span { font-size:calc(7 * var(--tech-type-step)); }
+.tech-approved-report .tech-approved-page h1 { font-size:calc(25 * var(--tech-type-step)); }
+.tech-approved-report .tech-approved-page h2 { font-size:calc(10 * var(--tech-type-step)); }
+.tech-approved-report .tech-cover-approved main h1 { font-size:calc(31 * var(--tech-type-step)); max-width:100%; }
+.tech-approved-report .tech-cover-label,
+.tech-approved-report .tech-summary-approved b,
+.tech-approved-report .tech-factor-card > strong,
+.tech-approved-report .tech-factor-card h3,
+.tech-approved-report .tech-profile-labels b { font-size:calc(8 * var(--tech-type-step)); }
+.tech-approved-report .tech-cover-person strong,
+.tech-approved-report .tech-summary-approved div { font-size:calc(8.5 * var(--tech-type-step)); }
+.tech-approved-report .tech-factor-card p { font-size:calc(6.8 * var(--tech-type-step)); }
+.tech-approved-report .tech-info-box { font-size:calc(7.4 * var(--tech-type-step)); }
+.tech-approved-report .tech-info-box > strong { font-size:calc(7.8 * var(--tech-type-step)); }
+.tech-approved-report .tech-profile-labels strong,
+.tech-approved-report .tech-mode-cards strong { font-size:calc(9 * var(--tech-type-step)); }
+.tech-approved-report .tech-profile-wheel > div:not(.tech-profile-wheel-center) { font-size:calc(21 * var(--tech-type-step)); }
+.tech-approved-report .tech-profile-wheel-center { font-size:calc(13 * var(--tech-type-step)); }
+.tech-approved-report .tech-mode-cards p,
+.tech-approved-report .tech-analysis-heading p,
+.tech-approved-report .tech-analysis-grid .tech-info-box > div { font-size:calc(7.5 * var(--tech-type-step)); }
+.tech-approved-report .tech-analysis-heading > span { font-size:calc(19 * var(--tech-type-step)); flex-shrink:0; }
+.tech-approved-report .tech-analysis-heading h3 { font-size:calc(14 * var(--tech-type-step)); }
+.tech-approved-report .tech-final-principle { font-size:calc(17 * var(--tech-type-step)); }
+.tech-approved-report :is(h1,h2,h3,p,strong,b,span,footer) { overflow-wrap:break-word; letter-spacing:0; }
+.tech-approved-report :is(.tech-info-box,.tech-factor-card,.tech-mode-cards > div) {
+  box-sizing:border-box; height:auto; overflow:visible; min-width:0; line-height:1.45;
+}
+.tech-approved-report :is(.tech-info-box > div,.tech-cover-person > *,.tech-profile-labels > div,.tech-analysis-heading > div) { min-width:0; overflow-wrap:break-word; }
+.tech-approved-report :is(.tech-info-box > strong,.tech-factor-card h3,.tech-mode-cards strong,.tech-cover-person,.tech-summary-approved,.tech-profile-labels) { line-height:1.4; }
+
+@media screen {
+  .tech-approved-report { width:100%; overflow:visible; }
+  .tech-approved-report > .tech-approved-page {
+    width:100%; max-width:210mm; height:auto; min-height:297mm; max-height:none;
+    zoom:1; overflow:visible; padding-bottom:7mm;
+  }
+  .tech-approved-report .tech-approved-page footer { position:relative; left:auto; right:auto; bottom:auto; margin:0 12mm; }
+  .tech-approved-report .tech-cover-bottom { position:relative; left:auto; bottom:auto; margin:0 12mm 7mm 18mm; }
+  .tech-approved-report .tech-cover-approved { display:flex; flex-direction:column; }
+  .tech-approved-report .tech-cover-bottom { margin-top:auto; }
+}
+@media screen and (max-width:760px) {
+  .tech-approved-report :is(.tech-factor-cards,.tech-analysis-grid,.tech-communication-approved,.tech-management-grid,.tech-team-grid,.tech-pressure-grid,.tech-conclusion-grid) { grid-template-columns:minmax(0,1fr); }
+  .tech-approved-report .tech-profile-layout { grid-template-columns:minmax(0,1fr); }
+  .tech-approved-report .tech-profile-left { min-height:0; }
+  .tech-approved-report .tech-cover-person { grid-template-columns:minmax(0,1fr); }
+  .tech-approved-report .tech-approved-page h1 { max-width:100%; }
+  .tech-approved-report .tech-profile-wheel { max-width:100%; margin-left:0; }
+  .tech-approved-report .tech-approved-header > div { min-width:0; }
+  .tech-approved-report .tech-approved-header i { flex-shrink:0; }
+}
+@media print {
+  .tech-approved-report { --tech-type-unit:1pt; }
+  .tech-approved-report :is(.tech-info-box,.tech-factor-card,.tech-mode-cards > div) {
+    break-inside:avoid; page-break-inside:avoid;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  /* Recover vertical room before reducing any type size. */
+  .tech-approved-report .tech-info-box { padding:4mm; }
+  .tech-approved-report .tech-info-box > strong { margin-bottom:2mm; }
+  .tech-approved-report .tech-final-principle { margin-top:10mm; }
+}

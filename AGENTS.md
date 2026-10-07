@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep technical DISC typography scoped to `.tech-approved-report`, with one shared CSS multiplier and separate screen/print units, to avoid changing other reports.
