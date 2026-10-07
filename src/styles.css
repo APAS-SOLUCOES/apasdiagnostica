@@ -3776,9 +3776,9 @@
 .tech-approved-report :is(.tech-info-box > strong,.tech-factor-card h3,.tech-mode-cards strong,.tech-cover-person,.tech-summary-approved,.tech-profile-labels) { line-height:1.4; }
 
 @media screen {
-  .tech-approved-report { width:100%; overflow:visible; }
+  .tech-approved-report { display:block; width:100%; min-width:0; overflow:visible; }
   .tech-approved-report > .tech-approved-page {
-    width:100%; max-width:210mm; height:auto; min-height:297mm; max-height:none;
+    width:100%; min-width:0; max-width:210mm; height:auto; min-height:297mm; max-height:none;
     zoom:1; overflow:visible; padding-bottom:7mm;
   }
   .tech-approved-report .tech-approved-page footer { position:relative; left:auto; right:auto; bottom:auto; margin:0 12mm; }
