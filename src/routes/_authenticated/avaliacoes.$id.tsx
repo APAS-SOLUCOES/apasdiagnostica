@@ -75,10 +75,10 @@ function DetalhePage() {
         const sec = scores.secondary;
         const factorName = (f: keyof typeof adapted) =>
           f === "D" ? "Dominância" : f === "I" ? "Influência" : f === "S" ? "Estabilidade" : "Conformidade";
-        const base =
+        const base = (
           COMBINATION_NARRATIVES[scores.combination] ??
           COMBINATION_NARRATIVES[`${p}${sec}`] ??
-          COMBINATION_NARRATIVES["DI"];
+          COMBINATION_NARRATIVES["DI"]) as NonNullable<(typeof COMBINATION_NARRATIVES)[string]>;
 
         const primaryName = factorName(p);
         const secondaryName = factorName(sec);
@@ -165,7 +165,7 @@ function DetalhePage() {
                 { letra: p, rotulo: primaryName },
                 { letra: sec, rotulo: secondaryName },
               ],
-              titulo: narrative.title.split(" · ")[0],
+              titulo: narrative.title.split(" · ")[0] as string,
               texto: base.essence,
             },
             cards: [
@@ -200,9 +200,9 @@ function DetalhePage() {
             aviso: "Nenhuma perspectiva é melhor. Juntas, elas ajudam a compreender repertório e contexto.",
           },
           jeitoDeAgir: {
-            titulo: narrative.title.split(" · ")[0],
+            titulo: narrative.title.split(" · ")[0] as string,
             subtitulo: "Combinação: " + (scores.combinationLabel ?? scores.combination),
-            arquetipo: narrative.title.split(" · ")[0],
+            arquetipo: narrative.title.split(" · ")[0] as string,
             intensidade: narrative.title.split(" · ")[1] ?? "presente",
             paragrafos: [
               base.essence,
