@@ -3,6 +3,7 @@
 Evolução do projeto APAS DISC Profile para a plataforma **APAS DIAGNÓSTICA** (diagnósticos empresariais, comportamentais e de pessoas). O módulo DISC existente é preservado como instrumento da plataforma.
 
 ## Em andamento
+- [ ] Lote textual DI Premium/Técnico: arquétipo demonstrativo confirmado como O Explorador de Oportunidades nos dois pela regra autorizada; aguarda autorização para substituir a formatação numérica fixa da página 12 exclusivamente no DI, preservando os valores e demais perfis. Reescrita não iniciada; sem publicação.
 - [x] Retornar o Premium à apresentação de f125a00 (a mesma que entregou os tamanhos de fonte do PDF Técnico); 12 páginas autenticadas, Técnico com 10 folhas A4 e corpo em 10,5 pt, 25 testes, tipos e build OK; sem publicação.
 - [ ] Reaplicar a apresentação editorial de d7130d55291c259b012d24c0202885d7148bb7d8 quando as fotos existirem; bloqueio: capa.png e p02–p12.png ausentes em public/relatorios/img/.
 - [x] Aplicar tamanhos absolutos maiores apenas no PDF Técnico; tela idêntica, avaliação autenticada e 24 variações curtas/longas com dez folhas A4 sem overflow; nenhuma exceção de fonte.
