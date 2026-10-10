@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { PREMIUM_FACTOR_HIGHLIGHT } from "@/lib/disc/premium-narrative-text";
 
 /* =====================================================================
    RELATÓRIO APAS DISC · 12 páginas A4 (924 x 1307), 100% dirigido por dados.
@@ -339,7 +340,7 @@ function Geral({ p, n, escuro, banner, c }: { p: PaginaConteudo; n: number; escu
               {p.destaque.fatores.map((f) => (
                 <div key={f.letra} style={{ textAlign: "center" }}>
                   <div style={{ width: 68, height: 68, borderRadius: 10, background: FATOR_COR[f.letra], fontSize: 36, fontWeight: 800, display: "grid", placeItems: "center" }}>{f.letra}</div>
-                  <div style={{ fontSize: 16, fontWeight: 800, color: FATOR_COR[f.letra], marginTop: 6 }}>{pct(f.valor)}</div>
+                  <div style={{ fontSize: 16, fontWeight: 800, color: FATOR_COR[f.letra], marginTop: 6 }}>{PREMIUM_FACTOR_HIGHLIGHT}</div>
                   <div style={{ fontSize: 10, letterSpacing: 1, textTransform: "uppercase" }}>{f.rotulo}</div>
                 </div>
               ))}

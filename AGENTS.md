@@ -12,3 +12,5 @@
 - Keep technical DISC typography scoped to `.tech-approved-report`, with a shared multiplier for existing titles and centralized absolute pt tokens for print reading sizes, so PDF targets remain independent of screen/root units and other reports.
 
 - Keep the active Premium renderer and its route-local editorial data adapter sourced from the same approved revision; this preserves editorial consistency without changing scoring or Technical reports.
+
+- Apply report-local wording replacements only after the existing adaptive narrative selection; separate text-only dictionaries isolate Premium and Technical without changing shared sources, scores, or selection rules.

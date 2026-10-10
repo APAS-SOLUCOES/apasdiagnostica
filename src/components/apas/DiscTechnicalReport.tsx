@@ -4,7 +4,8 @@ import type { ScoreResult } from "@/lib/disc/scoring";
 import { DIMENSIONS, DIMENSION_NAMES } from "@/lib/disc/instrument";
 import { DIMENSION_CONTENT } from "@/lib/disc/content";
 import { COMBINATION_NARRATIVES } from "@/lib/disc/report-content";
-import { getAdaptiveFactorImpact, getAdaptiveFactorReading, getAdaptiveNarrative } from "@/lib/disc/adaptive-content";
+import { getTechnicalReportNarrative } from "@/lib/disc/report-narrative-presentation";
+import { TECHNICAL_PROFILE_CLOSING } from "@/lib/disc/technical-narrative-text";
 
 const apasLogoDark = "/apas-logo-dark.svg?v=approved-technical";
 const apasLogoWhite = "/apas-logo.svg?v=approved-technical";
@@ -20,10 +21,6 @@ type TechnicalAssessment = {
   consent_accepted_at?: string | null;
   organizations?: { name?: string | null } | null;
 };
-
-function pct(n: number) {
-  return `${n.toFixed(1).replace(".", ",")}%`;
-}
 
 function ApprovedPage({
   number,
@@ -138,11 +135,9 @@ export function DiscTechnicalReport({
   const narrative = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES[`${scores.predominant}${scores.secondary}`];
   if (!narrative) return null;
 
-  const adaptive = getAdaptiveNarrative(scores);
+  const adaptive = getTechnicalReportNarrative(scores);
   const p = scores.predominant;
   const s = scores.secondary;
-  const primaryValue = scores.adapted.percent[p];
-  const primaryImpact = getAdaptiveFactorImpact(p, primaryValue);
   const content = DIMENSION_CONTENT[p];
 
   const adaptationText = scores.adaptationAlert
@@ -190,7 +185,7 @@ export function DiscTechnicalReport({
       <ApprovedPage number={5} title="Análise do Perfil">
         <div className="tech-analysis-heading">
           <span>{p}</span>
-          <div><h3>{DIMENSION_NAMES[p]} — {content.headline}</h3><p>{primaryImpact.identity}</p></div>
+          <div><h3>{DIMENSION_NAMES[p]} — {content.headline}</h3><p>{adaptive.title.split(" · ")[0] ?? adaptive.title}</p></div>
         </div>
         <div className="tech-analysis-grid">
           <Box title="PRINCIPAIS CARACTERÍSTICAS" tone="red">{content.characteristics.slice(0, 4).join(" ")}</Box>
@@ -244,7 +239,7 @@ export function DiscTechnicalReport({
 
       <ApprovedPage number={10} title="Conclusão e Aplicação Gerencial">
         <Box title="SÍNTESE DO PERFIL" tone="red">
-          {adaptive.profilePortrait ?? narrative.essence} Predominante {p}, secundário {s}, combinação {scores.combination}, com diferença entre os dois fatores principais de {pct(scores.primaryGap ?? 0)}.
+          {adaptive.profilePortrait ?? narrative.essence} Predominante {p}, secundário {s}, combinação {scores.combination}. {TECHNICAL_PROFILE_CLOSING}
         </Box>
         <div className="tech-conclusion-grid">
           <Box title="RESULTADOS">{narrative.best.slice(0, 2).join(" ")} Como pode contribuir para objetivos e execução.</Box>
