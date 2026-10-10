@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import type { ScoreResult } from "@/lib/disc/scoring";
 import { normalizeDiscScores } from "@/lib/disc/normalize-result";
-import { getAdaptiveNarrative } from "@/lib/disc/adaptive-content";
+import { getPremiumReportNarrative } from "@/lib/disc/report-narrative-presentation";
 import { DIMENSION_CONTENT } from "@/lib/disc/content";
 
 export const Route = createFileRoute("/_authenticated/avaliacoes/$id")({
@@ -69,7 +69,7 @@ function DetalhePage() {
         const natural = scores.natural.percent;
         const adapted = scores.adapted.percent;
         const social = scores.social.percent;
-        const narrative = getAdaptiveNarrative(scores);
+        const narrative = getPremiumReportNarrative(scores);
         const p = scores.predominant;
         const s = scores.secondary;
         const factorName = (f: keyof typeof adapted) =>
