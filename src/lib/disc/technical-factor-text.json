@@ -1,0 +1,198 @@
+{
+  "D": {
+    "title": "Dominância",
+    "headline": "Iniciativa com direção",
+    "summary": "A pessoa tende a intervir em problemas abertos e buscar autonomia para resolver. O líder pode canalizar essa iniciativa oferecendo um desafio com resultado verificável.",
+    "strengths": [
+      "Inicia a resolução de obstáculos.",
+      "Torna as prioridades explícitas.",
+      "Decide em cenários incompletos.",
+      "Mantém atenção aos compromissos de entrega."
+    ],
+    "characteristics": [
+      "A pessoa costuma agir antes de obter consenso.",
+      "Prefere responsabilidade com liberdade de execução.",
+      "Questiona etapas sem utilidade aparente.",
+      "Pode responder bem a problemas exigentes."
+    ],
+    "motivators": [
+      "Defina a alçada de decisão.",
+      "Ofereça uma meta desafiadora e verificável.",
+      "Explique a importância do problema a resolver.",
+      "Relacione o reconhecimento à entrega concreta."
+    ],
+    "demotivators": [
+      "Evite revisar cada passo sem necessidade.",
+      "Explique a função das etapas obrigatórias.",
+      "Delimite quem responde por cada resultado."
+    ],
+    "habits": [
+      "A pessoa tende a organizar a tarefa pelo objetivo.",
+      "Pode pedir conclusões rápidas em reuniões.",
+      "Costuma intervir ao perceber risco na entrega."
+    ],
+    "communication": "A pessoa pode expressar posições de modo direto e rápido. Observe se apresenta sua conclusão antes de conhecer as restrições do interlocutor.",
+    "development": [
+      "Peça que exponha a razão da escolha ao grupo.",
+      "Solicite uma alternativa antes do fechamento.",
+      "Trabalhe a negociação de prazos com as áreas envolvidas."
+    ],
+    "attention": [
+      "Observe se o ritmo limita a participação.",
+      "Cheque quais evidências foram consideradas.",
+      "Identifique responsabilidades que poderiam ser distribuídas."
+    ],
+    "levels": {
+      "alto": "A pessoa tende a tomar a frente e buscar autonomia para resolver.",
+      "moderado": "A pessoa pode assumir direção quando a tarefa pede, sem liderar todas as situações.",
+      "baixo": "A pessoa pode preferir um acordo construído antes de iniciar."
+    }
+  },
+  "I": {
+    "title": "Influência",
+    "headline": "Expressão que aproxima",
+    "summary": "A pessoa tende a gerar participação pela conversa e pela leitura do ambiente social. O líder pode aproveitar essa articulação em tarefas que exijam adesão, com acordos registrados.",
+    "strengths": [
+      "Cria abertura entre interlocutores.",
+      "Apresenta propostas de modo acessível.",
+      "Ajuda a recuperar o ânimo do grupo.",
+      "Aproxima interesses para viabilizar uma entrega."
+    ],
+    "characteristics": [
+      "A pessoa costuma elaborar ideias em interação.",
+      "Valoriza retorno sobre sua participação.",
+      "Adapta exemplos ao público.",
+      "Prefere tarefas com troca e envolvimento."
+    ],
+    "motivators": [
+      "Ofereça interlocução durante o projeto.",
+      "Dê espaço para propor abordagens.",
+      "Reconheça a contribuição sem exposição indesejada.",
+      "Conecte sua atuação a um propósito compartilhado."
+    ],
+    "demotivators": [
+      "Evite isolamento prolongado sem apoio.",
+      "Explique regras sem inibir a participação.",
+      "Trate correções em conversa reservada."
+    ],
+    "habits": [
+      "A pessoa tende a destravar assuntos pelo diálogo.",
+      "Busca aliados para apresentar uma proposta.",
+      "Pode tornar os avanços visíveis ao grupo."
+    ],
+    "communication": "A pessoa costuma comunicar com expressividade e exemplos. Observe se a mensagem central permanece clara quando surgem novas ideias.",
+    "development": [
+      "Solicite o registro do compromisso assumido.",
+      "Peça a fonte dos argumentos relevantes.",
+      "Acompanhe o encerramento das frentes abertas."
+    ],
+    "attention": [
+      "Observe a distribuição da atenção entre projetos.",
+      "Verifique se divergências estão sendo adiadas.",
+      "Confronte promessas com a capacidade disponível."
+    ],
+    "levels": {
+      "alto": "A pessoa tende a criar adesão por presença e diálogo.",
+      "moderado": "A pessoa pode alternar interação e concentração conforme a tarefa.",
+      "baixo": "A pessoa pode contribuir de modo reservado, sem buscar exposição."
+    }
+  },
+  "S": {
+    "title": "Estabilidade",
+    "headline": "Continuidade com cuidado",
+    "summary": "A pessoa tende a preservar continuidade e cooperação. O líder pode aproveitar sua confiabilidade em entregas sustentadas, esclarecendo mudanças e protegendo sua capacidade de trabalho.",
+    "strengths": [
+      "Sustenta rotinas de entrega.",
+      "Escuta questões ainda pouco claras.",
+      "Oferece apoio contínuo ao grupo.",
+      "Ajuda a mediar diferenças de ritmo."
+    ],
+    "characteristics": [
+      "A pessoa prefere compreender a transição antes de executá-la.",
+      "Busca reduzir conflitos desnecessários.",
+      "Mantém o compromisso assumido.",
+      "Constrói confiança por convivência consistente."
+    ],
+    "motivators": [
+      "Esclareça o que será esperado.",
+      "Promova cooperação entre responsáveis.",
+      "Prepare a passagem entre rotinas.",
+      "Reconheça a contribuição continuada."
+    ],
+    "demotivators": [
+      "Explique mudanças antes de exigir adesão.",
+      "Reduza confrontos que não ajudam a tarefa.",
+      "Dê tempo adequado para compreender o pedido."
+    ],
+    "habits": [
+      "A pessoa costuma apoiar colegas na rotina.",
+      "Preserva práticas que dão previsibilidade.",
+      "Observa o cenário antes de se manifestar."
+    ],
+    "communication": "A pessoa tende a escutar antes de se posicionar. Verifique se a ausência de objeção representa acordo ou dificuldade de expressar uma ressalva.",
+    "development": [
+      "Convide a pessoa a apresentar uma discordância cedo.",
+      "Pratique escolhas simples com prazo definido.",
+      "Ajude a distinguir apoio voluntário de obrigação."
+    ],
+    "attention": [
+      "Investigue preocupações que não foram verbalizadas.",
+      "Observe a necessidade de preparação para mudanças.",
+      "Confira se a disponibilidade encobre sobrecarga."
+    ],
+    "levels": {
+      "alto": "A pessoa tende a preservar continuidade e um ritmo conhecido.",
+      "moderado": "A pessoa pode conciliar rotina e ajustes quando entende o propósito.",
+      "baixo": "A pessoa pode acolher variedade sem depender de um caminho familiar."
+    }
+  },
+  "C": {
+    "title": "Conformidade",
+    "headline": "Análise que dá segurança",
+    "summary": "A pessoa tende a fundamentar escolhas em evidências e padrões. O líder pode aproveitar sua análise em problemas com risco técnico, delimitando o nível de precisão necessário.",
+    "strengths": [
+      "Identifica inconsistências relevantes.",
+      "Organiza argumentos verificáveis.",
+      "Estrutura etapas de trabalho.",
+      "Antecipa riscos para a entrega."
+    ],
+    "characteristics": [
+      "A pessoa costuma esclarecer premissas.",
+      "Registra critérios de decisão.",
+      "Busca conhecer o padrão exigido.",
+      "Analisa antes de apresentar uma conclusão."
+    ],
+    "motivators": [
+      "Defina critérios de aceitação.",
+      "Dê acesso às informações necessárias.",
+      "Reconheça a prevenção de retrabalho.",
+      "Organize referências e responsabilidades."
+    ],
+    "demotivators": [
+      "Evite exigir adesão sem fundamento.",
+      "Compatibilize prazo e checagens essenciais.",
+      "Explique alterações dos critérios."
+    ],
+    "habits": [
+      "A pessoa tende a conferir a origem dos dados.",
+      "Mantém registros para consulta.",
+      "Revisa os aspectos críticos da entrega."
+    ],
+    "communication": "A pessoa tende a usar argumentos detalhados e ressalvas. Observe se a conclusão é compreensível para quem não domina o assunto.",
+    "development": [
+      "Combine o ponto em que a análise é suficiente.",
+      "Peça uma conclusão provisória com suas ressalvas.",
+      "Introduza testes pequenos com risco controlado."
+    ],
+    "attention": [
+      "Observe quando a busca de certeza retarda a decisão.",
+      "Cheque o impacto relacional das correções.",
+      "Diferencie revisão útil de aperfeiçoamento sem ganho."
+    ],
+    "levels": {
+      "alto": "A pessoa tende a buscar evidências e um padrão claro antes de concluir.",
+      "moderado": "A pessoa pode equilibrar análise e avanço conforme o risco.",
+      "baixo": "A pessoa pode testar uma possibilidade antes de formalizar todos os detalhes."
+    }
+  }
+}
