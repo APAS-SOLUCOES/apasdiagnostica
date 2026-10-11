@@ -1,0 +1,198 @@
+{
+  "D": {
+    "title": "Dominância",
+    "headline": "Iniciativa com direção",
+    "summary": "Você encontra energia ao enfrentar desafios e dar direção a situações abertas. Sua iniciativa ganha valor quando transforma uma necessidade em uma entrega concreta.",
+    "strengths": [
+      "Você destrava tarefas que pareciam sem saída.",
+      "Você explicita o que precisa ser alcançado.",
+      "Você escolhe um caminho mesmo sem todas as respostas.",
+      "Você acompanha o avanço com atenção ao prazo."
+    ],
+    "characteristics": [
+      "Você costuma iniciar sem depender de unanimidade.",
+      "Você rende melhor com espaço para escolher como executar.",
+      "Você procura simplificar etapas que não ajudam a entrega.",
+      "Você se envolve quando o desafio exige coragem."
+    ],
+    "motivators": [
+      "Liberdade para conduzir a própria entrega.",
+      "Um objetivo exigente que tenha sentido.",
+      "Oportunidades de enfrentar problemas novos.",
+      "Retorno claro sobre a contribuição realizada."
+    ],
+    "demotivators": [
+      "Controle minucioso que não agrega segurança.",
+      "Etapas cujo propósito não foi explicado.",
+      "Responsabilidades divididas de forma ambígua."
+    ],
+    "habits": [
+      "Você identifica primeiro o que precisa mudar.",
+      "Você busca uma conclusão útil nas reuniões.",
+      "Você intervém quando uma entrega importante perde direção."
+    ],
+    "communication": "Você costuma dizer o que pensa sem muitos rodeios. Em conversas delicadas, explique sua intenção antes de apresentar a conclusão.",
+    "development": [
+      "Conte o motivo da sua escolha a quem será afetado.",
+      "Peça uma visão diferente antes de encerrar a conversa.",
+      "Combine um ritmo que permita aos outros contribuir."
+    ],
+    "attention": [
+      "Seu impulso pode reduzir o espaço de ponderação.",
+      "Uma conclusão rápida pode deixar um dado importante de fora.",
+      "Assumir tudo pode limitar a autonomia do grupo."
+    ],
+    "levels": {
+      "alto": "Você tende a tomar a frente e buscar autonomia para resolver.",
+      "moderado": "Você pode assumir direção quando a tarefa pede, sem liderar todas as situações.",
+      "baixo": "Você pode preferir um acordo construído antes de iniciar."
+    }
+  },
+  "I": {
+    "title": "Influência",
+    "headline": "Expressão que aproxima",
+    "summary": "Você se energiza na troca de ideias e na aproximação com as pessoas. Sua expressão ajuda a tornar possibilidades compreensíveis e a convidar o grupo a participar.",
+    "strengths": [
+      "Você cria abertura para novas conversas.",
+      "Você torna uma proposta fácil de entender.",
+      "Você ajuda o grupo a enxergar possibilidades.",
+      "Você conecta contribuições que estavam separadas."
+    ],
+    "characteristics": [
+      "Você elabora ideias enquanto conversa.",
+      "Você aprecia perceber que sua presença faz diferença.",
+      "Você ajusta exemplos à experiência de quem escuta.",
+      "Você prefere construir com participação."
+    ],
+    "motivators": [
+      "Convívio que permita trocas genuínas.",
+      "Espaço para apresentar ideias próprias.",
+      "Reconhecimento que valorize sua contribuição.",
+      "Projetos com interação e variedade."
+    ],
+    "demotivators": [
+      "Longos períodos sem interlocução.",
+      "Regras que abafam perguntas e propostas.",
+      "Exposição desnecessária durante uma correção."
+    ],
+    "habits": [
+      "Você procura uma conversa para destravar impasses.",
+      "Você aproxima interessados em uma proposta.",
+      "Você dá visibilidade aos avanços da equipe."
+    ],
+    "communication": "Você costuma trazer exemplos e entusiasmo à conversa. Deixe a mensagem central nítida e confira o que foi entendido antes de seguir.",
+    "development": [
+      "Anote os compromissos assumidos ao encerrar uma conversa.",
+      "Verifique a informação que sustenta uma ideia atraente.",
+      "Conclua uma frente antes de abrir outra."
+    ],
+    "attention": [
+      "Muitas possibilidades podem disputar sua atenção.",
+      "Preservar a proximidade pode adiar uma discordância necessária.",
+      "O entusiasmo pode esconder o esforço real de uma entrega."
+    ],
+    "levels": {
+      "alto": "Você tende a criar adesão por presença e diálogo.",
+      "moderado": "Você pode alternar interação e concentração conforme a tarefa.",
+      "baixo": "Você pode contribuir de modo reservado, sem buscar exposição."
+    }
+  },
+  "S": {
+    "title": "Estabilidade",
+    "headline": "Continuidade com cuidado",
+    "summary": "Você valoriza relações confiáveis e um ritmo que possa ser sustentado. Sua presença ajuda a dar continuidade ao trabalho sem deixar as pessoas pelo caminho.",
+    "strengths": [
+      "Você mantém a entrega mesmo depois da novidade.",
+      "Você escuta sem apressar a resposta.",
+      "Você oferece apoio atento aos colegas.",
+      "Você ajuda a diminuir tensões do cotidiano."
+    ],
+    "characteristics": [
+      "Você se prepara melhor quando conhece a transição.",
+      "Você busca resolver diferenças sem desgaste desnecessário.",
+      "Você dá continuidade ao compromisso assumido.",
+      "Você investe em vínculos construídos ao longo do tempo."
+    ],
+    "motivators": [
+      "Expectativas explicadas com antecedência.",
+      "Cooperação em vez de disputa constante.",
+      "Tempo para assimilar novas rotinas.",
+      "Retorno sobre o valor da sua constância."
+    ],
+    "demotivators": [
+      "Mudanças impostas sem uma razão compreensível.",
+      "Confrontos frequentes que impedem o trabalho.",
+      "Exigência de resposta antes de compreender o pedido."
+    ],
+    "habits": [
+      "Você percebe quando alguém precisa de apoio.",
+      "Você preserva hábitos que tornam a entrega confiável.",
+      "Você costuma conhecer a situação antes de intervir."
+    ],
+    "communication": "Você tende a escutar com atenção e escolher o momento de falar. Dizer cedo o que precisa ajuda a evitar que seu silêncio seja tomado como concordância.",
+    "development": [
+      "Apresente uma ressalva enquanto ainda há tempo de ajustar.",
+      "Faça escolhas pequenas sem esperar segurança completa.",
+      "Reserve energia para seus compromissos antes de acolher novos pedidos."
+    ],
+    "attention": [
+      "Uma preocupação guardada pode se tornar desgaste.",
+      "A transição rápida pode exigir preparação adicional.",
+      "A disponibilidade pode virar excesso de responsabilidades."
+    ],
+    "levels": {
+      "alto": "Você tende a preservar continuidade e um ritmo conhecido.",
+      "moderado": "Você pode conciliar rotina e ajustes quando entende o propósito.",
+      "baixo": "Você pode acolher variedade sem depender de um caminho familiar."
+    }
+  },
+  "C": {
+    "title": "Conformidade",
+    "headline": "Análise que dá segurança",
+    "summary": "Você busca entender o que sustenta uma boa solução. Seu cuidado com critérios e detalhes relevantes pode evitar erros e tornar a entrega mais confiável.",
+    "strengths": [
+      "Você encontra informações que merecem verificação.",
+      "Você distingue uma suposição de um argumento sólido.",
+      "Você organiza etapas para reduzir retrabalho.",
+      "Você percebe riscos antes de assumir um compromisso."
+    ],
+    "characteristics": [
+      "Você faz perguntas para esclarecer o pedido.",
+      "Você registra o que dá sustentação à decisão.",
+      "Você procura saber qual padrão é esperado.",
+      "Você compara informações antes de se posicionar."
+    ],
+    "motivators": [
+      "Critérios que tornem a qualidade verificável.",
+      "Tempo compatível com a análise necessária.",
+      "Reconhecimento pelo cuidado técnico.",
+      "Informações organizadas e acessíveis."
+    ],
+    "demotivators": [
+      "Escolhas sustentadas apenas por convicção.",
+      "Urgência que impede a checagem essencial.",
+      "Padrões que mudam sem explicação."
+    ],
+    "habits": [
+      "Você verifica a fonte antes de compartilhar um dado.",
+      "Você organiza registros para facilitar a consulta.",
+      "Você revisa pontos que podem afetar o resultado."
+    ],
+    "communication": "Você tende a estruturar argumentos antes de falar. Apresente primeiro a conclusão e ofereça os detalhes que o interlocutor realmente precisa.",
+    "development": [
+      "Escolha o cuidado necessário conforme o risco da tarefa.",
+      "Compartilhe o que já está claro sem esperar uma versão perfeita.",
+      "Teste uma alternativa em escala segura."
+    ],
+    "attention": [
+      "A busca de certeza pode atrasar uma escolha viável.",
+      "A correção precisa pode soar distante sem contexto.",
+      "Revisões adicionais nem sempre melhoram a entrega."
+    ],
+    "levels": {
+      "alto": "Você tende a buscar evidências e um padrão claro antes de concluir.",
+      "moderado": "Você pode equilibrar análise e avanço conforme o risco.",
+      "baixo": "Você pode testar uma possibilidade antes de formalizar todos os detalhes."
+    }
+  }
+}
