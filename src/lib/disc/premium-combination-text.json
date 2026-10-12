@@ -1,0 +1,410 @@
+{
+  "DI": {
+    "essence": "Você carrega um impulso raro: decide rápido e arrasta gente junto. Seu jeito de agir converte ideia em movimento antes que o entusiasmo esfrie, e isso é combustível para qualquer time travado.",
+    "best": [
+      "Você destrava situações paradas com uma decisão simples",
+      "Fala com energia que contagia e reduz resistência",
+      "Reúne pessoas em torno de um objetivo comum rapidamente",
+      "Mantém presença mesmo diante de obstáculos difíceis"
+    ],
+    "excess": [
+      "Você pode correr antes de fechar o acordo todo",
+      "Tende a abraçar mais frentes do que dá tempo de sustentar",
+      "Sua objetividade pode soar como pressa para quem precisa de tempo",
+      "O interesse cai assim que o primeiro impulso passa"
+    ],
+    "perceived": "Você quer gerar avanço e confiança — e geralmente consegue. Mas quem caminha num ritmo mais lento pode ler sua pressa como falta de espaço para pensar.",
+    "communication": "Você fala com clareza e convencimento naturais. Ganhe ainda mais força incluindo contexto antes da conclusão e fechando cada conversa com um acordo nítido.",
+    "decision": "Você decide rápido e testa a reação das pessoas pela conversa. Separe entusiasmo de evidência antes de travar prazo ou risco.",
+    "leadership": "Você dá direção e eleva a energia do grupo com facilidade. Explicite expectativas e limites para que sua liderança não dependa só do seu ânimo do dia.",
+    "team": "Você injeta ritmo no time. Abra espaço deliberado para vozes mais quietas e acompanhe a execução depois do alinhamento inicial.",
+    "pressure": "Sob pressão você acelera e fala mais alto. Pare um instante para checar impacto e prioridade antes de decidir sob o calor do momento.",
+    "change": "Mudança te energiza — você já está começando enquanto outros ainda hesitam. O ponto de atenção é dar estrutura e continuidade ao que começou.",
+    "experiments": [
+      "Feche toda conversa relevante com responsável, prazo e critério de sucesso",
+      "Faça duas perguntas antes de defender sua ideia",
+      "Escolha uma prioridade e acompanhe até o fim, sem abrir outra"
+    ],
+    "profilePortrait": "Você é alguém que transforma intenção em ação quase sem pausa. Sua energia de iniciativa encontra na comunicação um canal natural: você não só decide, você convence. Isso faz de você um ponto de ignição em qualquer grupo — a pessoa que destrava o que estava parado. O amadurecimento dessa força está em aprender a sustentar o que você inicia, dando tempo para que os outros acompanhem seu passo sem se sentirem atropelados.",
+    "situations": {
+      "work": "No trabalho, você tende a assumir a frente assim que enxerga uma oportunidade, convertendo conversa em decisão com velocidade pouco comum. Isso rende ótimos resultados quando o contexto pede ação; pede atenção quando a tarefa exige consolidação antes de seguir adiante.",
+      "relationships": "Nas relações, sua intensidade pode ser lida como entusiasmo genuíno por uns e como pressa por outros. Dar espaço para que as pessoas processem no próprio tempo evita que seu ritmo vire atropelamento.",
+      "decisions": "Ao decidir, você confia na própria leitura e na reação imediata das pessoas ao redor. Reservar um momento para checar fatos antes de fechar reduz o risco de comprometer-se demais, demais rápido.",
+      "leadership": "Como referência para outros, você inspira pela coragem de agir primeiro. Equilibrar isso com escuta ativa e acompanhamento constante transforma impulso em liderança duradoura."
+    }
+  },
+  "ID": {
+    "essence": "Você conecta pessoas com facilidade natural e, a partir dessa conexão, puxa a ação. Seu entusiasmo vira ponto de partida para que ideias saiam do papel.",
+    "best": [
+      "Você gera adesão rápida para propostas novas",
+      "Deixa qualquer ambiente mais dinâmico com sua presença",
+      "Assume a frente assim que enxerga oportunidade",
+      "Liga pessoas a objetivos de forma orgânica"
+    ],
+    "excess": [
+      "Você pode agir pelo entusiasmo antes de medir o risco",
+      "Às vezes disputa espaço na conversa sem perceber",
+      "Abre frentes demais ao mesmo tempo",
+      "Deixa detalhes e follow-ups para depois"
+    ],
+    "perceived": "Sua intenção é inspirar e destravar. Para alguns, essa mesma energia pode parecer improviso ou mudança rápida demais de foco.",
+    "communication": "Você pensa em voz alta e constrói ideias na conversa. Use mensagens curtas e registre os combinados para transformar influência em entrega concreta.",
+    "decision": "Você decide pela oportunidade e pela reação das pessoas ao seu redor. Um critério simples e um teste rápido de realidade protegem a qualidade da escolha.",
+    "leadership": "Você lidera pela presença e pela coragem de começar. Ganhe consistência acompanhando rotinas e dando retorno específico, não só motivacional.",
+    "team": "Você aproxima pessoas e traz movimento ao grupo. Distribua espaço e reconheça quem sustenta o trabalho nos bastidores, longe dos holofotes.",
+    "pressure": "Sob pressão você tende a falar mais e acelerar compromissos. Reduza estímulos e ordene prioridades antes de prometer qualquer coisa nova.",
+    "change": "Você comunica possibilidades com entusiasmo genuíno diante da mudança. O cuidado está em traduzir a visão em etapas com responsáveis definidos.",
+    "experiments": [
+      "Converta cada ideia em três próximos passos visíveis",
+      "Ouça a pessoa mais silenciosa antes de decidir",
+      "Revise suas promessas no fim de cada semana"
+    ],
+    "profilePortrait": "Você é movido pelo encontro: conecta-se, entusiasma-se e a partir daí parte para a ação. Essa combinação faz de você alguém capaz de transformar uma conversa solta em um projeto com vida própria. O que amplia essa força é criar estrutura mínima — passos, prazos, responsáveis — para que o entusiasmo inicial não se perca no caminho.",
+    "situations": {
+      "work": "No ambiente profissional, você costuma abrir portas pela sua facilidade de se relacionar e, logo em seguida, tomar a iniciativa de agir. O risco está em multiplicar frentes sem fechar nenhuma por completo.",
+      "relationships": "Você constrói vínculo com naturalidade e usa esse vínculo como alavanca para mobilizar. Cuide para que a proximidade não vire pressão disfarçada de simpatia.",
+      "decisions": "Suas escolhas nascem do clima da conversa e da sua leitura de oportunidade. Testar um fato concreto antes de confirmar reduz o risco de decisão por impulso.",
+      "leadership": "Você lidera inspirando e abrindo caminho. Acompanhar a execução depois do entusiasmo inicial é o que converte sua liderança em resultado sustentável."
+    }
+  },
+  "DS": {
+    "essence": "Você une firmeza para avançar com disposição genuína para sustentar o que assumiu. Isso te torna alguém em quem dá para confiar nos momentos difíceis.",
+    "best": [
+      "Você transforma decisão em continuidade real",
+      "Protege compromissos mesmo sob desgaste",
+      "Oferece direção quando tudo parece incerto",
+      "Mantém foco sem deixar o grupo para trás"
+    ],
+    "excess": [
+      "Você tende a carregar responsabilidade demais sozinho",
+      "Oscila entre acelerar tudo e segurar tudo",
+      "Guarda incômodo até o ponto de transbordar",
+      "Insiste numa direção mesmo quando ela já mudou de sentido"
+    ],
+    "perceived": "Você quer dar segurança e garantir avanço. Em alguns contextos, isso pode soar como controle ou resistência a rever o caminho.",
+    "communication": "Você é direto sem buscar holofote constante. Explique os motivos por trás da sua firmeza e abra espaço para reação antes de fechar o assunto.",
+    "decision": "Você decide com firmeza e sustenta a escolha até o fim. Defina de antemão que sinais justificariam mudar de rota.",
+    "leadership": "Você combina cobrança com proteção genuína pelo time. Fortaleça isso delegando o que não precisa passar só pelas suas mãos.",
+    "team": "Você é o ponto de estabilidade do grupo. Deixe mais claro o espaço de decisão de cada pessoa para estimular autonomia real.",
+    "pressure": "Sob pressão você pode endurecer posições ou absorver trabalho demais. Divida riscos e peça apoio antes que a sobrecarga vire desgaste.",
+    "change": "Você aceita mudança quando enxerga propósito e viabilidade de execução. Um plano de transição concilia sua velocidade com sua necessidade de sustentação.",
+    "experiments": [
+      "Defina sinais objetivos que justificariam revisar uma decisão sua",
+      "Delegue uma entrega crítica com checkpoints claros",
+      "Nomeie um desconforto antes que ele se acumule"
+    ],
+    "profilePortrait": "Você reúne algo raro: a coragem de decidir e a paciência de sustentar. Isso te torna confiável tanto no início quanto no meio difícil de qualquer jornada. A maturidade dessa combinação aparece quando você aprende a dividir carga em vez de absorver tudo sozinho para proteger o grupo.",
+    "situations": {
+      "work": "No trabalho, você assume o que promete e segura a barra até entregar. O ponto de atenção é perceber quando segurar demais vira sobrecarga silenciosa.",
+      "relationships": "Você protege vínculos com constância, mesmo quando isso custa energia pessoal. Comunicar limites cedo evita que a proteção vire ressentimento acumulado.",
+      "decisions": "Você amadurece a escolha e age com determinação quando se convence do caminho. Um prazo definido evita que a reflexão vire demora.",
+      "leadership": "Como líder, você entrega segurança prática ao grupo. Compartilhar a direção mais cedo convida as pessoas a participar, não só a seguir."
+    }
+  },
+  "DC": {
+    "essence": "Você busca resultado sem abrir mão de fundamento. Sua força está em avançar com firmeza apoiada em análise, não em impulso cego.",
+    "best": [
+      "Você resolve problemas complexos com objetividade",
+      "Eleva o padrão de qualquer entrega que passa por você",
+      "Identifica riscos antes que virem problema",
+      "Transforma análise em ação concreta"
+    ],
+    "excess": [
+      "Você pode elevar a exigência além do necessário",
+      "Corrige sem dar contexto suficiente",
+      "Centraliza decisões que poderiam ser compartilhadas",
+      "Trata divergência como falha de lógica"
+    ],
+    "perceived": "Você quer proteger resultado e qualidade. O mesmo rigor pode soar como dureza para quem está aprendendo ainda.",
+    "communication": "Você valoriza precisão e objetividade na fala. Explicar prioridade e impacto humano torna sua mensagem mais acessível.",
+    "decision": "Você combina velocidade com análise seletiva. Defina o nível de evidência suficiente para não cair em precipitação nem em excesso de controle.",
+    "leadership": "Você lidera com metas e padrões claros. Reconhecer avanços, além de apontar lacunas, fortalece a autonomia de quem está ao seu redor.",
+    "team": "Você traz foco e consistência técnica ao grupo. Diferencie erro de aprendizagem de descuido para fortalecer a cooperação.",
+    "pressure": "Sob pressão sua cobrança e criticidade tendem a subir. Uma pausa para ordenar fatos e consequência evita resposta dura demais.",
+    "change": "Você apoia mudança que traga ganho objetivo e lógica consistente. Pilotos curtos oferecem evidência sem travar o avanço.",
+    "experiments": [
+      "Defina o padrão suficiente antes de começar qualquer entrega",
+      "Reconheça uma contribuição antes de corrigir o que falta",
+      "Teste uma hipótese em pequena escala antes de escalar"
+    ],
+    "profilePortrait": "Você é alguém que decide com base, não por achismo. Sua firmeza nasce de ter checado os fundamentos antes de agir, o que te dá autoridade natural em decisões difíceis. O próximo passo é suavizar a entrega do rigor, para que ele seja recebido como cuidado, não como crítica.",
+    "situations": {
+      "work": "No trabalho, você identifica riscos antes que outros percebam e age com firmeza assim que tem base suficiente. O cuidado é não travar o time esperando certeza total.",
+      "relationships": "Você demonstra cuidado através de padrão alto, mas isso pode ser lido como distância. Explicitar a intenção por trás da exigência aproxima as pessoas.",
+      "decisions": "Você mistura dados e instinto de ação. Separar o que é reversível do que não é ajuda a decidir mais rápido sem perder segurança.",
+      "leadership": "Como líder, você estabelece padrão e direção com clareza. Reconhecer o esforço, não só o resultado final, amplia a confiança do time em você."
+    }
+  },
+  "IS": {
+    "essence": "Você cria ambientes onde as pessoas se sentem incluídas e à vontade para colaborar. Sua proximidade genuína constrói confiança de forma natural.",
+    "best": [
+      "Você constrói confiança quase sem esforço aparente",
+      "Percebe o clima do grupo antes de qualquer sinal explícito",
+      "Mantém pessoas conectadas mesmo à distância",
+      "Comunica mudanças difíceis com acolhimento genuíno"
+    ],
+    "excess": [
+      "Você evita conversas que possam desagradar alguém",
+      "Assume compromissos demais para preservar a harmonia",
+      "Demora a estabelecer limites claros",
+      "Prioriza o clima acima da clareza necessária"
+    ],
+    "perceived": "Você quer incluir e apoiar. Em certas situações, isso pode ser lido como dificuldade de confrontar ou falta de prioridade clara.",
+    "communication": "Você favorece diálogo e escuta genuína. Nomear discordâncias com a mesma franqueza que usa para acolher fortalece sua mensagem.",
+    "decision": "Você pensa primeiro no impacto sobre as pessoas. Prazos e critérios evitam que a busca por consenso adie decisões necessárias.",
+    "leadership": "Você lidera por vínculo e participação genuína. Sua liderança cresce quando o cuidado inclui também cobrança e consequência.",
+    "team": "Você é naturalmente orientado à colaboração. Preservar limites claros evita que sua disponibilidade vire sobrecarga.",
+    "pressure": "Sob pressão você pode buscar aprovação e silenciar desconforto próprio. Conversas diretas e respeitosas reduzem o desgaste acumulado.",
+    "change": "Você apoia mudança quando as pessoas entendem o sentido e se sentem amparadas. Você pode traduzir impacto e construir adesão gradual.",
+    "experiments": [
+      "Faça um pedido claro em vez de oferecer ajuda primeiro",
+      "Registre discordâncias junto com os próximos passos",
+      "Reserve um tempo antes de aceitar uma nova demanda"
+    ],
+    "profilePortrait": "Você tem um talento natural para fazer as pessoas se sentirem vistas. Essa combinação te torna um ponto de estabilidade emocional em qualquer grupo. O crescimento está em aprender que cuidado e limite não são opostos — proteger a relação às vezes exige dizer a verdade incômoda.",
+    "situations": {
+      "work": "No trabalho, você mantém o grupo coeso e colabora com facilidade. O ponto de atenção é evitar que sua disposição vire sobrecarga silenciosa.",
+      "relationships": "Você cria vínculo genuíno com rapidez. Expressar discordância no momento certo, em vez de guardá-la, fortalece a confiança em vez de desgastá-la.",
+      "decisions": "Você busca consenso antes de fechar qualquer escolha. Um prazo definido evita que a busca por concordância vire adiamento.",
+      "leadership": "Como referência, você gera segurança pelo exemplo e pela disponibilidade. Somar isso a cobrança explícita amplia sua autoridade sem perder o vínculo."
+    }
+  },
+  "IC": {
+    "essence": "Você comunica ideias complexas e sustenta o que diz com lógica e preparo. Isso te torna alguém que aproxima pessoas de temas difíceis sem perder qualidade.",
+    "best": [
+      "Você traduz complexidade em clareza acessível",
+      "Apresenta ideias de um jeito envolvente",
+      "Conecta argumento e pessoa na mesma frase",
+      "Adapta a linguagem sem perder o critério técnico"
+    ],
+    "excess": [
+      "Você alonga explicações para garantir aceitação",
+      "Oscila entre espontaneidade e autocorreção excessiva",
+      "Busca validação para ideias que já foram bem analisadas",
+      "Perde o foco em detalhes da apresentação final"
+    ],
+    "perceived": "Você quer tornar a proposta clara e convincente. Dependendo do contexto, isso pode parecer elaboração em excesso.",
+    "communication": "Você combina presença e conteúdo com naturalidade. Comece pela mensagem central e ajuste a profundidade ao público.",
+    "decision": "Você alterna intuição social com verificação técnica. Tornar os critérios explícitos evita reabrir o mesmo tema várias vezes.",
+    "leadership": "Você lidera explicando e envolvendo o time. Delegar sem prescrever cada detalhe favorece a autonomia das pessoas.",
+    "team": "Você conecta diferentes linguagens e perspectivas dentro do grupo. Cuide para que análise e narrativa não substituam a decisão prática.",
+    "pressure": "Sob pressão você pode falar demais ou se aprofundar em detalhes para recuperar segurança. Sintetize fato, escolha e próximo passo.",
+    "change": "Você comunica bem o sentido da mudança e antecipa dúvidas. Pilotos e ciclos de retorno equilibram adesão e precisão.",
+    "experiments": [
+      "Resuma qualquer proposta em uma frase antes dos detalhes",
+      "Defina um prazo para encerrar a análise",
+      "Delegue o resultado e o critério, não o caminho inteiro"
+    ],
+    "profilePortrait": "Você é ponte entre ideia e pessoa: sabe explicar o que é complexo sem simplificar demais. Essa combinação te torna confiável tanto pela clareza quanto pelo conteúdo. O refinamento está em confiar que sua primeira explicação já basta, sem precisar reforçá-la repetidamente.",
+    "situations": {
+      "work": "No trabalho, você destrava entendimento em temas difíceis com facilidade. Encerrar a análise num prazo definido evita loops desnecessários.",
+      "relationships": "Você conecta pessoas por meio de boas explicações e presença genuína. Cuide para que tanta clareza não vire necessidade de controlar a interpretação alheia.",
+      "decisions": "Você mistura leitura social com checagem técnica. Tornar o critério explícito acelera o fechamento da escolha.",
+      "leadership": "Como líder, você guia explicando o porquê de cada direção. Delegar com confiança, sem prescrever o caminho todo, amplia a autonomia do time."
+    }
+  },
+  "SD": {
+    "essence": "Você mantém um ritmo estável que ganha força exatamente quando o contexto exige. Sustenta compromissos e assume direção sem precisar estar sempre em evidência.",
+    "best": [
+      "Você mantém entregas mesmo em situações exigentes",
+      "Age com firmeza quando realmente é necessário",
+      "Protege continuidade e confiança do grupo",
+      "Transforma compromisso em execução concreta"
+    ],
+    "excess": [
+      "Você adia posicionamentos até a urgência bater à porta",
+      "Assume problemas demais sem dividir com ninguém",
+      "Fica inflexível depois que decide algo",
+      "Acumula pressão em silêncio por tempo demais"
+    ],
+    "perceived": "Você quer preservar estabilidade e resolver. Quando limites aparecem tarde, outros podem notar uma mudança brusca de paciência para firmeza.",
+    "communication": "Você observa antes de falar e é claro quando finalmente se posiciona. Antecipar necessidades evita mensagens tardias ou intensas demais.",
+    "decision": "Você amadurece a escolha e age com determinação depois de convencido. Um prazo para decidir protege seu ritmo sem gerar demora desnecessária.",
+    "leadership": "Você oferece segurança e firmeza prática ao grupo. Compartilhar a direção mais cedo ajuda as pessoas a participarem de verdade.",
+    "team": "Você é ponto de apoio e execução confiável para o time. Evite assumir tarefas que pertencem a outras pessoas.",
+    "pressure": "Sob pressão você suporta muito antes de reagir com dureza. Sinalize capacidade e necessidade de ajuda com antecedência para preservar relações.",
+    "change": "Você adere à mudança quando entende impacto e caminho. Pode ser a ponte valiosa entre decisão e implementação sustentável.",
+    "experiments": [
+      "Comunique um limite no primeiro sinal de sobrecarga",
+      "Defina data para decisões que você tem adiado",
+      "Convide o time a construir o plano antes de executá-lo"
+    ],
+    "profilePortrait": "Você é o tipo de presença que sustenta sem precisar aparecer o tempo todo. Sua firmeza nasce da constância, não da urgência. O amadurecimento vem de comunicar seus limites antes que a sobrecarga force um posicionamento mais duro do que você gostaria.",
+    "situations": {
+      "work": "No trabalho, você entrega com consistência e assume firmeza quando a situação pede. O risco é guardar sobrecarga até o limite antes de pedir ajuda.",
+      "relationships": "Você sustenta vínculos com paciência genuína. Comunicar um incômodo cedo evita que ele apareça como ruptura brusca depois.",
+      "decisions": "Você decide com solidez depois de se convencer do caminho. Um prazo definido evita que a maturação vire procrastinação.",
+      "leadership": "Como líder, você transmite segurança pela sua presença estável. Compartilhar a direção desde o início convida o time a colaborar mais cedo."
+    }
+  },
+  "SI": {
+    "essence": "Você cuida das relações com uma comunicação acolhedora que convida à cooperação. Sua presença ajuda o grupo a atravessar o cotidiano com mais conexão.",
+    "best": [
+      "Você escuta e acolhe perspectivas diferentes",
+      "Sustenta um clima cooperativo de forma natural",
+      "Integra pessoas novas ao grupo com facilidade",
+      "Mantém comunicação próxima no dia a dia"
+    ],
+    "excess": [
+      "Você coloca necessidade alheia antes da própria",
+      "Evita rupturas que seriam necessárias",
+      "Demora a cobrar acordos combinados",
+      "Depende demais de harmonia para avançar"
+    ],
+    "perceived": "Você quer apoiar e manter a união do grupo. Em decisões difíceis, isso pode parecer hesitação ou falta de firmeza.",
+    "communication": "Você cria segurança para o diálogo acontecer. Mensagens com pedido, prazo e consequência preservam o vínculo sem perder objetividade.",
+    "decision": "Você ouve amplamente e considera o impacto coletivo. Definir quem precisa ser consultado evita que participação vire adiamento.",
+    "leadership": "Você lidera por confiança e exemplo. Dizer expectativas antes das frustrações faz sua liderança crescer.",
+    "team": "Você contribui de forma agregadora e consistente. Limites claros protegem sua energia e estimulam reciprocidade.",
+    "pressure": "Sob pressão você pode absorver tensão e minimizar o próprio desconforto. Nomear fatos e pedir apoio reduz o desgaste invisível.",
+    "change": "Você facilita transições quando pode preparar as pessoas e os vínculos envolvidos. Pequenas experiências constroem confiança no novo.",
+    "experiments": [
+      "Transforme uma expectativa silenciosa em pedido claro",
+      "Diga não a uma demanda de baixo valor",
+      "Conduza uma conversa difícil enquanto o tema ainda é pequeno"
+    ],
+    "profilePortrait": "Você é alguém que o grupo procura quando precisa de acolhimento e constância ao mesmo tempo. Sua presença estável facilita a cooperação de todos ao redor. O próximo passo é perceber que firmeza também é uma forma de cuidado.",
+    "situations": {
+      "work": "No trabalho, você integra o time e mantém o clima cooperativo. Cobrar acordos no tempo certo evita que a leveza vire falta de resultado.",
+      "relationships": "Você constrói vínculo com acolhimento genuíno. Expressar um limite não quebra a conexão — na verdade, costuma fortalecê-la.",
+      "decisions": "Você ouve todas as partes antes de decidir. Definir quem realmente precisa opinar evita que a escuta vire adiamento.",
+      "leadership": "Como líder, você gera confiança pelo exemplo e pela disponibilidade constante. Dizer expectativas com antecedência evita frustração silenciosa depois."
+    }
+  },
+  "SC": {
+    "essence": "Você cuida da continuidade com método e atenção à qualidade. Cria ambientes confiáveis, organizados e menos sujeitos a improvisos desnecessários.",
+    "best": [
+      "Você sustenta padrões ao longo do tempo",
+      "Percebe riscos antes que cresçam demais",
+      "Organiza rotinas em que as pessoas confiam",
+      "Entrega com cuidado e consistência real"
+    ],
+    "excess": [
+      "Você resiste a mudanças pouco estruturadas",
+      "Mantém processos além da utilidade que já tiveram",
+      "Guarda dúvidas em vez de testá-las logo",
+      "Busca segurança total antes de experimentar"
+    ],
+    "perceived": "Você quer proteger qualidade e estabilidade. Para ritmos mais rápidos, isso pode parecer cautela excessiva ou demora.",
+    "communication": "Você comunica com cuidado e base concreta. Antecipar a conclusão antes dos detalhes facilita a compreensão de públicos diferentes.",
+    "decision": "Você decide depois de organizar informação e impacto. Um critério de suficiência evita a espera por segurança completa.",
+    "leadership": "Você lidera por método e coerência. Abrir espaço para experimentação mantém o padrão sem travar a inovação.",
+    "team": "Você oferece apoio, memória e qualidade operacional ao grupo. Tornar seu raciocínio visível evita que o silêncio seja lido como resistência.",
+    "pressure": "Sob pressão você aumenta conferências e pode se retrair. Distinguir risco real de desconforto com incerteza ajuda a priorizar.",
+    "change": "Você apoia mudanças planejadas, testadas e bem comunicadas. Pode transformar novidade em rotina sustentável para todos.",
+    "experiments": [
+      "Defina o mínimo seguro para começar algo novo",
+      "Compartilhe uma análise ainda em construção",
+      "Elimine uma rotina que não protege mais nenhum risco relevante"
+    ],
+    "profilePortrait": "Você é a base sólida que sustenta qualidade sem depender de pressa. Método e constância caminham juntos no seu jeito de agir. O amadurecimento está em permitir que um pouco de incerteza vire espaço de experimentação, não ameaça.",
+    "situations": {
+      "work": "No trabalho, você organiza rotinas confiáveis e protege a qualidade da entrega. O cuidado é não travar diante de um cenário ainda incompleto.",
+      "relationships": "Você constrói confiança pela constância e pelo cuidado. Compartilhar dúvidas em tempo real evita que o silêncio seja mal interpretado.",
+      "decisions": "Você decide com base em informação organizada. Definir um critério de suficiência evita que a busca por segurança vire adiamento.",
+      "leadership": "Como líder, você transmite previsibilidade e coerência. Abrir espaço para testes rápidos mantém o padrão sem sufocar novas ideias."
+    }
+  },
+  "CD": {
+    "essence": "Você analisa com cuidado e assume direção quando os fundamentos estão claros. Reduz riscos sem perder de vista o resultado final.",
+    "best": [
+      "Você decide com base consistente, não por impulso",
+      "Enfrenta problemas técnicos difíceis de frente",
+      "Protege qualidade e resultado ao mesmo tempo",
+      "Questiona premissas antes de avançar"
+    ],
+    "excess": [
+      "Você eleva o padrão além do que a situação pede",
+      "É direto demais ao apontar falhas dos outros",
+      "Centraliza temas complexos em vez de compartilhar",
+      "Desconsidera o lado relacional da decisão"
+    ],
+    "perceived": "Você quer garantir uma solução sólida. O mesmo foco pode parecer crítica ou pouca abertura para caminhos alternativos.",
+    "communication": "Você prefere argumentos objetivos e bem estruturados. Explicar impacto e intenção aproxima as pessoas da sua análise.",
+    "decision": "Você analisa profundamente e conclui com firmeza. Definir o que é reversível permite decidir mais rápido onde o risco é controlado.",
+    "leadership": "Você lidera por competência e padrão claro. Reconhecer o processo, não só o resultado final, amplia a confiança do time em você.",
+    "team": "Você contribui com rigor e capacidade de resolução. Convide outras pessoas a construir critérios, não só receber sua avaliação pronta.",
+    "pressure": "Sob pressão sua exigência e controle podem aumentar. Priorize riscos críticos e flexibilize o restante para proteger foco e relação.",
+    "change": "Você apoia mudança com fundamento e benefício demonstrável. Experimentos reversíveis reduzem sua necessidade de certeza antecipada.",
+    "experiments": [
+      "Classifique decisões entre reversíveis e irreversíveis",
+      "Pergunte antes de corrigir o trabalho de alguém",
+      "Escolha dois critérios críticos e flexibilize os demais"
+    ],
+    "profilePortrait": "Você une rigor analítico com coragem de decidir. Isso te torna alguém que resolve problemas difíceis sem fugir deles. O próximo passo é suavizar como você comunica correções, para que o rigor seja percebido como cuidado.",
+    "situations": {
+      "work": "No trabalho, você questiona premissas e entrega soluções sólidas. O cuidado é não elevar o padrão além do necessário para o contexto.",
+      "relationships": "Você demonstra cuidado através de precisão, o que pode ser lido como distância. Explicar a intenção por trás da exigência aproxima as pessoas.",
+      "decisions": "Você decide com profundidade analítica e firmeza. Separar o reversível do irreversível acelera o fechamento sem perder segurança.",
+      "leadership": "Como líder, você estabelece padrão técnico elevado. Reconhecer o esforço do caminho, não só o resultado, fortalece a confiança do grupo."
+    }
+  },
+  "CI": {
+    "essence": "Você busca qualidade e, ao mesmo tempo, sabe traduzir e compartilhar ideias complexas. Torna temas difíceis mais compreensíveis e confiáveis para quem ouve.",
+    "best": [
+      "Você transforma informação em entendimento real",
+      "Prepara mensagens consistentes e bem estruturadas",
+      "Conecta conhecimento técnico com o público certo",
+      "Antecipa dúvidas relevantes antes que surjam"
+    ],
+    "excess": [
+      "Você explica além do necessário",
+      "Busca aprovação para validar uma análise já pronta",
+      "Revisa a forma excessivamente antes de entregar",
+      "Oscila entre reserva e exposição intensa"
+    ],
+    "perceived": "Você quer oferecer clareza e segurança. Dependendo do momento, isso pode parecer excesso de detalhe.",
+    "communication": "Você prepara bem o conteúdo e adapta a apresentação ao público. Começar pela conclusão ajuda o ouvinte a localizar os detalhes.",
+    "decision": "Você combina evidência e leitura de audiência. Separar fato, preferência e receio torna a escolha mais nítida.",
+    "leadership": "Você lidera por conhecimento e capacidade de explicar. Aceitar soluções diferentes que atendam aos critérios favorece a autonomia.",
+    "team": "Você é ponte entre técnica e relacionamento no grupo. Equilibre preparação individual com construção conjunta.",
+    "pressure": "Sob pressão você pode revisar demais ou falar para organizar o próprio pensamento. Um roteiro curto protege tempo e clareza.",
+    "change": "Você apoia mudança que faça sentido e possa ser bem explicada. Pode traduzir razões, riscos e critérios para o grupo todo.",
+    "experiments": [
+      "Apresente a conclusão nos primeiros trinta segundos",
+      "Publique uma versão boa antes da perfeita",
+      "Pergunte de quanto detalhe o interlocutor realmente precisa"
+    ],
+    "profilePortrait": "Você combina preparo técnico com talento para explicar. Isso te torna alguém que traz segurança a qualquer discussão complexa. O refinamento é confiar na sua primeira entrega, sem revisar além do que o impacto exige.",
+    "situations": {
+      "work": "No trabalho, você prepara bem o conteúdo e antecipa dúvidas do público. O cuidado é não revisar além do ponto em que a mensagem já está clara.",
+      "relationships": "Você gera confiança explicando com cuidado. Simplificar, às vezes, aproxima mais do que detalhar tudo.",
+      "decisions": "Você mistura evidência com leitura do outro. Separar fato de receio torna a escolha final mais rápida.",
+      "leadership": "Como líder, você guia pelo conhecimento e pela clareza da explicação. Aceitar caminhos diferentes do seu, desde que atendam ao critério, amplia a autonomia do time."
+    }
+  },
+  "CS": {
+    "essence": "Você presta atenção a critérios com paciência e continuidade. Protege a qualidade ao longo do tempo e constrói confiança por meio de entregas consistentes.",
+    "best": [
+      "Você mantém qualidade de forma previsível",
+      "Organiza conhecimento e processo com cuidado",
+      "Escuta antes de concluir qualquer coisa",
+      "Reduz riscos com atenção genuína"
+    ],
+    "excess": [
+      "Você adia decisões esperando mais segurança",
+      "Evita confrontos sobre padrões importantes",
+      "Se apega a métodos já conhecidos demais",
+      "Revisa além do impacto real da tarefa"
+    ],
+    "perceived": "Você quer cuidar da qualidade e evitar riscos. Em cenários velozes, isso pode parecer reserva ou excesso de cautela.",
+    "communication": "Você é ponderado e específico na fala. Tornar a conclusão visível e comunicar dúvidas cedo evita que o silêncio seja mal interpretado.",
+    "decision": "Você compara opções com profundidade e considera consequências. Prazos e critérios de suficiência ajudam a concluir no tempo certo.",
+    "leadership": "Você lidera por coerência, método e cuidado genuíno. Oferecer direção explícita em momentos ambíguos aumenta a segurança do grupo.",
+    "team": "Você contribui com confiabilidade, escuta e memória técnica. Ocupe mais espaço quando sua análise precisa influenciar o rumo.",
+    "pressure": "Sob pressão você pode se retrair ou manter rotinas conhecidas. Explicitar prioridades ajuda a usar energia onde realmente importa.",
+    "change": "Você prefere transições planejadas e fundamentadas. Pode ser essencial para converter uma mudança em processo confiável.",
+    "experiments": [
+      "Compartilhe uma preocupação antes de concluir a análise",
+      "Defina prazo e critério para fechar uma decisão",
+      "Teste uma mudança pequena sem redesenhar todo o processo"
+    ],
+    "profilePortrait": "Você é guardião natural da qualidade, sustentando padrão com paciência rara. Sua constância transforma cuidado em confiança ao longo do tempo. O amadurecimento vem de aprender a fechar decisões antes de ter certeza total.",
+    "situations": {
+      "work": "No trabalho, você sustenta qualidade de forma previsível e organiza o conhecimento do time. O cuidado é não adiar decisões esperando segurança completa.",
+      "relationships": "Você constrói confiança pela constância e pela escuta atenta. Expressar uma preocupação cedo evita desgaste silencioso depois.",
+      "decisions": "Você compara opções com profundidade real. Um prazo definido evita que a análise vire adiamento disfarçado.",
+      "leadership": "Como líder, você oferece coerência e cuidado. Dar direção explícita em momentos ambíguos aumenta a segurança de quem trabalha com você."
+    }
+  }
+}
