@@ -12,7 +12,7 @@ import { Badge } from "@/components/ui/badge";
 import type { ScoreResult } from "@/lib/disc/scoring";
 import { normalizeDiscScores } from "@/lib/disc/normalize-result";
 import { getPremiumReportNarrative } from "@/lib/disc/report-narrative-presentation";
-import { DIMENSION_CONTENT } from "@/lib/disc/content";
+import DIMENSION_CONTENT from "@/lib/disc/premium-factor-text.json";
 
 export const Route = createFileRoute("/_authenticated/avaliacoes/$id")({
   head: () => ({

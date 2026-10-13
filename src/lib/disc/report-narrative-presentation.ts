@@ -3,15 +3,26 @@ import type { CombinationNarrative } from "./report-content";
 import type { ScoreResult } from "./scoring";
 import { PREMIUM_NARRATIVE_REPLACEMENTS } from "./premium-narrative-text";
 import { TECHNICAL_NARRATIVE_REPLACEMENTS } from "./technical-narrative-text";
+import premiumEditorial from "./premium-editorial-replacements.json";
+import technicalEditorial from "./technical-editorial-replacements.json";
+
+/** Literal wording only, applied after the engine has made every adaptive selection. */
+function editorialText(value: string, pairs: string[][]) {
+  return pairs.reduce((text, pair) => {
+    const [before, after] = pair;
+    return before === undefined || after === undefined ? text : text.split(before).join(after);
+  }, value);
+}
 
 /** Only replaces wording in the already-selected narrative; no score or selection is changed. */
 function presentNarrative(
   narrative: CombinationNarrative,
   replacements: ReadonlyArray<readonly [string, string]>,
+  editorial: string[][],
 ): CombinationNarrative {
   const text = (value: string) => replacements.reduce(
     (result, [pattern, replacement]) => result.replace(new RegExp(pattern, "g"), replacement),
-    value,
+    editorialText(value, editorial),
   );
   return {
     ...narrative,
@@ -37,9 +48,9 @@ function presentNarrative(
 }
 
 export function getPremiumReportNarrative(scores: ScoreResult) {
-  return presentNarrative(getAdaptiveNarrative(scores), PREMIUM_NARRATIVE_REPLACEMENTS);
+  return presentNarrative(getAdaptiveNarrative(scores), PREMIUM_NARRATIVE_REPLACEMENTS, premiumEditorial);
 }
 
 export function getTechnicalReportNarrative(scores: ScoreResult) {
-  return presentNarrative(getAdaptiveNarrative(scores), TECHNICAL_NARRATIVE_REPLACEMENTS);
+  return presentNarrative(getAdaptiveNarrative(scores), TECHNICAL_NARRATIVE_REPLACEMENTS, technicalEditorial);
 }

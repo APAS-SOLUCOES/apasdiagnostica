@@ -2,7 +2,7 @@ import { CalendarDays, CheckCircle2, Target, Users, MessageCircle, Compass, BarC
 import type { ReactNode } from "react";
 import type { ScoreResult } from "@/lib/disc/scoring";
 import { DIMENSIONS, DIMENSION_NAMES } from "@/lib/disc/instrument";
-import { DIMENSION_CONTENT } from "@/lib/disc/content";
+import DIMENSION_CONTENT from "@/lib/disc/technical-factor-text.json";
 import { COMBINATION_NARRATIVES } from "@/lib/disc/report-content";
 import { getTechnicalReportNarrative } from "@/lib/disc/report-narrative-presentation";
 import { TECHNICAL_PROFILE_CLOSING } from "@/lib/disc/technical-narrative-text";
@@ -132,10 +132,11 @@ export function DiscTechnicalReport({
   scores: ScoreResult;
   computedAt?: string | null;
 }) {
-  const narrative = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES[`${scores.predominant}${scores.secondary}`];
-  if (!narrative) return null;
+  const selectedNarrative = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES[`${scores.predominant}${scores.secondary}`];
+  if (!selectedNarrative) return null;
 
   const adaptive = getTechnicalReportNarrative(scores);
+  const narrative = adaptive;
   const p = scores.predominant;
   const s = scores.secondary;
   const content = DIMENSION_CONTENT[p];
