@@ -13,6 +13,7 @@ import type { ScoreResult } from "@/lib/disc/scoring";
 import { normalizeDiscScores } from "@/lib/disc/normalize-result";
 import { getPremiumReportNarrative } from "@/lib/disc/report-narrative-presentation";
 import DIMENSION_CONTENT from "@/lib/disc/premium-factor-text.json";
+import sectionText from "@/lib/disc/premium-section-text.json";
 
 export const Route = createFileRoute("/_authenticated/avaliacoes/$id")({
   head: () => ({
@@ -72,6 +73,8 @@ function DetalhePage() {
         const narrative = getPremiumReportNarrative(scores);
         const p = scores.predominant;
         const s = scores.secondary;
+        const sections = sectionText as Record<string, typeof sectionText.DI>;
+        const editorial = sections[scores.combination] ?? sections[`${p}${s}`] ?? sectionText.DI;
         const factorName = (f: keyof typeof adapted) =>
           f === "D" ? "Dominância" : f === "I" ? "Influência" : f === "S" ? "Estabilidade" : "Conformidade";
         const intensity = narrative.title.split(" · ")[1] ?? "presente";
@@ -80,7 +83,7 @@ function DetalhePage() {
             secao: "Seus pontos fortes",
             titulo: "Seus pontos fortes",
             subtitulo: "Recursos que você já leva com você",
-            intro: "Recursos que podem aparecer com mais naturalidade quando o contexto favorece seu repertório.",
+            intro: "Você pode reconhecer essas contribuições em entregas que já realizou. Observe em que situação cada uma faz diferença.",
             cards: narrative.best.slice(0, 4).map((texto, index) => ({ titulo: texto, texto: DIMENSION_CONTENT[p].characteristics[index] ?? narrative.essence, cor: "verde" as const })),
             nota: { titulo: "No contexto", texto: narrative.situations?.work ?? narrative.best[0] ?? "Observe quando esse recurso gera valor." },
           },
@@ -88,9 +91,9 @@ function DetalhePage() {
             secao: "O que pode exigir mais atenção",
             titulo: "O que pode exigir mais atenção",
             subtitulo: "Equilíbrio também é resultado",
-            intro: "Todo comportamento que representa uma força também pode se tornar um excesso quando utilizado fora do contexto.",
+            intro: "Uma força nem sempre atende a toda situação. Perceber seus excessos abre espaço para ajustes, sem diminuir o que você tem de bom.",
             cards: narrative.excess.slice(0, 3).map((texto) => ({ titulo: "Vale observar", texto, cor: "vermelho" as const })),
-            nota: { titulo: "Lembre-se", texto: "Pontos de atenção são hipóteses de ajuste para validar no seu contexto." },
+            nota: { titulo: "Lembre-se", texto: "Leia esses cuidados como possibilidades de ajuste, não como defeitos ou conclusões sobre quem você é." },
           },
           percebido: {
             secao: "Como você pode ser percebido",
@@ -111,10 +114,10 @@ function DetalhePage() {
             intro: narrative.communication,
             colunas: 2,
             cards: [
-              { titulo: "Quando está no seu melhor", texto: narrative.best[0], cor: "verde" as const },
-              { titulo: "Vale observar", texto: narrative.perceived, cor: "laranja" as const },
-              { titulo: "Ponto de atenção", texto: narrative.excess[0], cor: "vermelho" as const },
-              { titulo: "Experimente", texto: narrative.experiments[0], cor: "azul" as const },
+              { titulo: "Quando está no seu melhor", texto: editorial.communicationBest, cor: "verde" as const },
+              { titulo: "Vale observar", texto: editorial.communicationWatch, cor: "laranja" as const },
+              { titulo: "Ponto de atenção", texto: editorial.communicationAttention, cor: "vermelho" as const },
+              { titulo: "Experimente", texto: editorial.communicationPractice, cor: "azul" as const },
             ],
           },
           decisao: {
@@ -123,10 +126,10 @@ function DetalhePage() {
             subtitulo: "Como você tende a escolher",
             intro: narrative.decision,
             cards: [
-              { titulo: "No seu melhor", texto: narrative.best[1] ?? narrative.best[0], cor: "verde" as const },
-              { titulo: "Vale observar", texto: narrative.decision, cor: "laranja" as const },
-              { titulo: "Ponto de atenção", texto: narrative.excess[1] ?? narrative.excess[0], cor: "vermelho" as const },
-              { titulo: "Dica", texto: narrative.experiments[1] ?? narrative.experiments[0], cor: "azul" as const },
+              { titulo: "No seu melhor", texto: editorial.decisionBest, cor: "verde" as const },
+              { titulo: "Vale observar", texto: editorial.decisionWatch, cor: "laranja" as const },
+              { titulo: "Ponto de atenção", texto: editorial.decisionAttention, cor: "vermelho" as const },
+              { titulo: "Dica", texto: editorial.decisionPractice, cor: "azul" as const },
             ],
           },
           relacionamentos: {
@@ -136,9 +139,9 @@ function DetalhePage() {
             intro: narrative.team,
             cards: [
               { titulo: "O que te fortalece", texto: narrative.leadership, cor: "verde" as const },
-              { titulo: "Vale observar", texto: narrative.perceived, cor: "laranja" as const },
-              { titulo: "Ponto de atenção", texto: narrative.excess[2] ?? narrative.excess[0], cor: "vermelho" as const },
-              { titulo: "Experimente", texto: narrative.experiments[2] ?? narrative.experiments[0], cor: "azul" as const },
+              { titulo: "Vale observar", texto: editorial.teamWatch, cor: "laranja" as const },
+              { titulo: "Ponto de atenção", texto: editorial.teamAttention, cor: "vermelho" as const },
+              { titulo: "Experimente", texto: editorial.teamPractice, cor: "azul" as const },
             ],
           },
           desenvolvimento: {
@@ -147,10 +150,10 @@ function DetalhePage() {
             subtitulo: "Mais consciência, mais escolha",
             intro: "O desenvolvimento não exige negar o seu estilo. Exige ampliar opções para responder melhor ao que cada situação pede.",
             cards: [
-              { titulo: "O que já está no seu repertório", texto: narrative.best[0], cor: "vermelho" as const },
-              { titulo: "O que pode ser ajustado", texto: narrative.excess[0], cor: "laranja" as const },
-              { titulo: "O que pode ser ampliado", texto: narrative.experiments[1] ?? narrative.experiments[0], cor: "vermelho" as const },
-              { titulo: "O que pode gerar mais resultado", texto: narrative.experiments[2] ?? narrative.experiments[0], cor: "azul" as const },
+              { titulo: "O que já está no seu repertório", texto: editorial.developmentResource, cor: "vermelho" as const },
+              { titulo: "O que pode ser ajustado", texto: editorial.developmentAdjust, cor: "laranja" as const },
+              { titulo: "O que pode ser ampliado", texto: editorial.developmentExpand, cor: "vermelho" as const },
+              { titulo: "O que pode gerar mais resultado", texto: editorial.developmentResult, cor: "azul" as const },
             ],
             experimento: true,
           },
@@ -169,8 +172,8 @@ function DetalhePage() {
             },
             cards: [
               { titulo: "O que levar com você", texto: "Os quatro fatores DISC fazem parte do seu repertório.", cor: "verde" as const },
-              { titulo: "O próximo passo", texto: narrative.experiments[0], cor: "laranja" as const },
-              { titulo: "Uma mensagem final", texto: "O seu perfil não determina o seu comportamento. Ele é um ponto de partida para maior consciência.", cor: "azul" as const },
+              { titulo: "O próximo passo", texto: editorial.finalStep, cor: "laranja" as const },
+              { titulo: "Uma mensagem final", texto: "Você pode escolher o que repetir, o que ajustar e o que aprender. Seu próximo passo não precisa ser grande para fazer diferença.", cor: "azul" as const },
             ],
             nota: { texto: "O APAS DISC é uma ferramenta de análise de tendências comportamentais e não constitui diagnóstico psicológico, clínico ou psiquiátrico." },
           },
@@ -192,7 +195,7 @@ function DetalhePage() {
               narrative.essence,
               narrative.profilePortrait ?? narrative.essence,
             ],
-            citacao: "O autoconhecimento é o primeiro passo para escolhas mais conscientes e resultados mais consistentes.",
+            citacao: "Conhecer seu jeito de agir abre espaço para escolher o próximo passo.",
             referencia: "Este relatório é baseado em tendências comportamentais DISC. A leitura deve ser validada no contexto do avaliado.",
           },
           numeros: {
