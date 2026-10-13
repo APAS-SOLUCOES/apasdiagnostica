@@ -1,0 +1,66 @@
+[
+  [
+    "(.+?) descreve uma forma de funcionar em que (.+?) aparece de maneira (.+?), enquanto (.+?) oferece um recurso complementar\\. (.*?) No cotidiano,.*$",
+    "Seu repertório combina $2 de maneira $3 e $4 como apoio. $5 Leve essa leitura para uma situação concreta: o que ajudou você a avançar e o que mereceu uma resposta diferente?"
+  ],
+  [
+    "No trabalho, sua combinação tende a aparecer.*? (dominância|influência|estabilidade|conformidade) costuma entrar primeiro.*?O fator ([DISC]) acrescenta.*?\\. Isso significa.*$",
+    "No trabalho, você tende a começar pela $1 e pode recorrer a $2 para complementar a entrega. Um ambiente que reconhece esses recursos abre espaço para experimentar novas maneiras de contribuir."
+  ],
+  [
+    "Nas relações, a intenção por trás do seu comportamento.*?Sua preferência por (.*?) pode fazer.*?enquanto (.*?) oferece outro caminho.*?\\. Pessoas com ritmos.*$",
+    "Nas relações, você pode aproximar a preferência por $1 do recurso de $2. Observe o que seu interlocutor precisa para participar sem ter de acompanhar o mesmo ritmo."
+  ],
+  [
+    "Ao decidir, seu perfil mostra uma tendência a privilegiar (.*?) e complementar essa escolha com (.*?)\\. Em decisões simples,.*$",
+    "Ao decidir, você pode partir de $1 e acrescentar $2. Diferencie uma escolha fácil de rever de um compromisso que exige consulta antes do fechamento."
+  ],
+  [
+    "Na liderança, sua assinatura comportamental.*?Em situações diferentes, vale alternar conscientemente entre (.*?) e (.*?), principalmente.*$",
+    "Quando você orienta outras pessoas, pode alternar $1 e $2. Perceba se o grupo precisa de direção para começar ou de apoio para sustentar o trabalho."
+  ],
+  [
+    " A leitura de ([DISC]) e ([DISC]) combina intensidade do primeiro fator com a influência relativa do segundo\\.",
+    " A relação entre $1 e $2 pode mudar a forma como você responde a uma demanda."
+  ],
+  [
+    "Ao combinar (.*?) e (.*?), ajuste a quantidade de objetividade, interação, ritmo ou detalhe ao interlocutor\\.",
+    "Ao reunir $1 e $2, confira se a mensagem ajudou o interlocutor a agir."
+  ],
+  [
+    "A relação entre os dois fatores principais ajuda a entender quanto a preferência por ([DISC]) tende a aparecer antes de ([DISC])\\.",
+    "Seu recurso $1 pode abrir a escolha, com $2 ajudando a conferir o caminho."
+  ],
+  [
+    "A presença de ([DISC]) no (?:seu )?repertório sugere que este recurso pode aparecer com bastante disponibilidade; o ganho está em calibrá-lo ao contexto\\.",
+    "Use seu recurso $1 sem exigir que o grupo responda da mesma maneira."
+  ],
+  [
+    "A presença de ([DISC]) indica um segundo recurso importante para equilibrar ou complementar ([DISC])\\.",
+    "Seu recurso $1 também pode ajudar quando a contribuição de $2 não basta."
+  ],
+  [
+    "Quando a pressão aumenta, a intensidade de ([DISC]) pode tornar esse padrão ainda mais visível\\.",
+    "Quando a exigência sobe, observe se $1 continua ajudando ou precisa de uma pausa."
+  ],
+  [
+    "O segundo fator, ([DISC]), pode oferecer um repertório complementar durante a transição\\.",
+    "Você pode buscar em $1 um apoio para atravessar a transição."
+  ],
+  [
+    "Com (.*?) no (?:seu )?repertório, escolha uma situação por semana para reduzir conscientemente a intensidade desse padrão e testar uma resposta complementar\\.",
+    "Em uma situação recorrente, use menos $1 e observe o efeito de uma resposta complementar."
+  ],
+  [
+    "Com (.*?) no (?:seu )?repertório, escolha uma situação por semana para ampliar deliberadamente o recurso de (.*?)\\.",
+    "Escolha uma tarefa em que você usa $1 e dê mais espaço a $2."
+  ],
+  [
+    "Com (.*?) no (?:seu )?repertório, observe quando esse recurso aparece naturalmente e registre uma situação em que você poderia usá-lo com mais intenção\\.",
+    "Reconheça quando você recorre a $1 e escolha onde usá-la com mais intenção."
+  ],
+  [
+    "A relação entre ([DISC]) e ([DISC]) indica uma oportunidade de equilíbrio: pratique um comportamento de (.*?) em uma situação em que (.*?) costuma aparecer primeiro\\.",
+    "Na relação entre $1 e $2, experimente $3 onde você costuma começar por $4."
+  ]
+]

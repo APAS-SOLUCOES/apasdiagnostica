@@ -2,7 +2,8 @@ import { CalendarDays, CheckCircle2, Target, Users, MessageCircle, Compass, BarC
 import type { ReactNode } from "react";
 import type { ScoreResult } from "@/lib/disc/scoring";
 import { DIMENSIONS, DIMENSION_NAMES } from "@/lib/disc/instrument";
-import { DIMENSION_CONTENT } from "@/lib/disc/content";
+import DIMENSION_CONTENT from "@/lib/disc/technical-factor-text.json";
+import sectionText from "@/lib/disc/technical-section-text.json";
 import { COMBINATION_NARRATIVES } from "@/lib/disc/report-content";
 import { getTechnicalReportNarrative } from "@/lib/disc/report-narrative-presentation";
 import { TECHNICAL_PROFILE_CLOSING } from "@/lib/disc/technical-narrative-text";
@@ -132,13 +133,16 @@ export function DiscTechnicalReport({
   scores: ScoreResult;
   computedAt?: string | null;
 }) {
-  const narrative = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES[`${scores.predominant}${scores.secondary}`];
-  if (!narrative) return null;
+  const selectedNarrative = COMBINATION_NARRATIVES[scores.combination] ?? COMBINATION_NARRATIVES[`${scores.predominant}${scores.secondary}`];
+  if (!selectedNarrative) return null;
 
   const adaptive = getTechnicalReportNarrative(scores);
+  const narrative = adaptive;
   const p = scores.predominant;
   const s = scores.secondary;
   const content = DIMENSION_CONTENT[p];
+  const sections = sectionText as Record<string, typeof sectionText.DI>;
+  const editorial = sections[scores.combination] ?? sections[`${p}${s}`] ?? sectionText.DI;
 
   const adaptationText = scores.adaptationAlert
     ? "A distância entre Natural e Adaptado merece investigação contextual. Pode representar flexibilidade diante das demandas ou esforço de adaptação prolongado."
@@ -168,7 +172,7 @@ export function DiscTechnicalReport({
       <ApprovedPage number={3} title="Introdução" subtitle="Uma leitura comportamental para ampliar a compreensão sobre pessoas e equipes.">
         <FactorCards />
         <Box title="PARA LÍDERES, GESTORES E EMPRESÁRIOS" tone="red">
-          O valor do DISC está na aplicação: comunicar, delegar, dar feedback, desenvolver e gerir diferenças comportamentais. O perfil é uma referência e não um rótulo definitivo.
+          A leitura oferece hipóteses para conduzir a pessoa no trabalho. Confronte-as com entregas, competências e contexto antes de decidir sobre responsabilidades ou desenvolvimento.
         </Box>
       </ApprovedPage>
 
@@ -191,37 +195,37 @@ export function DiscTechnicalReport({
           <Box title="PRINCIPAIS CARACTERÍSTICAS" tone="red">{content.characteristics.slice(0, 4).join(" ")}</Box>
           <Box title="PONTOS FORTES">{narrative.best.slice(0, 3).join(" ")}</Box>
           <Box title="PONTOS DE ATENÇÃO" tone="gray">{content.attention.slice(0, 3).join(" ")}</Box>
-          <Box title="LEITURA GERENCIAL" tone="red">{narrative.perceived} Observe como reage a pressão, prazos, autonomia, decisões, delegação e divergências.</Box>
+          <Box title="LEITURA GERENCIAL" tone="red">{editorial.managementReading}</Box>
         </div>
       </ApprovedPage>
 
       <ApprovedPage number={6} title="Comunicação">
         <div className="tech-communication-approved">
           <Box title="COMO TENDE A SE COMUNICAR" tone="red">{content.communication}</Box>
-          <Box title="COMO PODE RECEBER INFORMAÇÕES">Ajuste objetividade, ritmo, profundidade e espaço de fala ao interlocutor. {content.communication}</Box>
-          <Box title="PARA O LÍDER" tone="red">{narrative.communication} Seja claro sobre objetivo, expectativa e próximos passos.</Box>
-          <Box title="FEEDBACK">{content.development.slice(0, 2).join(" ")} O foco é orientar e desenvolver.</Box>
-          <Box title="POSSÍVEIS PONTOS DE TENSÃO" tone="gray">{narrative.perceived} Diferenças de ritmo, nível de detalhamento, objetividade ou forma de expressar discordâncias podem gerar interpretações diferentes.</Box>
+          <Box title="COMO PODE RECEBER INFORMAÇÕES">{editorial.receive}</Box>
+          <Box title="PARA O LÍDER" tone="red">{narrative.communication}</Box>
+          <Box title="FEEDBACK">{editorial.feedback}</Box>
+          <Box title="POSSÍVEIS PONTOS DE TENSÃO" tone="gray">{editorial.tension}</Box>
         </div>
       </ApprovedPage>
 
       <ApprovedPage number={7} title="Liderança e Gestão">
         <div className="tech-management-grid">
           <Box title="COMO LIDERAR" tone="red">{narrative.leadership}</Box>
-          <Box title="DELEGAÇÃO">Considere autonomia, clareza de objetivo e critérios de acompanhamento. {content.motivators.slice(0, 2).join(" ")}</Box>
-          <Box title="COBRANÇA E FEEDBACK">Combine expectativa, prazo e resultado observável. {content.development.slice(0, 2).join(" ")}</Box>
-          <Box title="RECONHECIMENTO E DESENVOLVIMENTO">Valorize {content.motivators.slice(0, 2).join(" ").toLowerCase()} e trabalhe os pontos de atenção como comportamentos ajustáveis.</Box>
+          <Box title="DELEGAÇÃO">{editorial.delegation}</Box>
+          <Box title="COBRANÇA E FEEDBACK">{editorial.accountability}</Box>
+          <Box title="RECONHECIMENTO E DESENVOLVIMENTO">{editorial.recognition}</Box>
         </div>
-        <Box title="ATENÇÃO DO GESTOR" tone="red">{content.attention.join(" ")} Equilibre velocidade, qualidade e contexto.</Box>
+        <Box title="ATENÇÃO DO GESTOR" tone="red">{editorial.managerAttention}</Box>
       </ApprovedPage>
 
       <ApprovedPage number={8} title="Trabalho em Equipe">
         <Box title="COMO TENDE A CONTRIBUIR" tone="red">{narrative.team}</Box>
         <div className="tech-team-grid">
           <Box title="RITMO">{content.habits.slice(0, 2).join(" ")}</Box>
-          <Box title="COMUNICAÇÃO">{content.communication}</Box>
+          <Box title="COMUNICAÇÃO">{editorial.teamCommunication}</Box>
           <Box title="DECISÃO">{narrative.decision}</Box>
-          <Box title="INTEGRAÇÃO">Clareza de responsabilidades, conexão entre contribuições e alinhamento de expectativas favorecem a integração.</Box>
+          <Box title="INTEGRAÇÃO">{editorial.integration}</Box>
         </div>
       </ApprovedPage>
 
@@ -230,7 +234,7 @@ export function DiscTechnicalReport({
           <Box title="SOB PRESSÃO" tone="red">{narrative.pressure}</Box>
           <Box title="DIANTE DE MUDANÇAS">{narrative.change}</Box>
           <Box title="ADAPTAÇÃO" tone="red">{adaptationText} Índice de adaptação: {scores.adaptationIndex.toFixed(1).replace(".", ",")}.</Box>
-          <Box title="DESENVOLVIMENTO">{content.development.join(" ")}</Box>
+          <Box title="DESENVOLVIMENTO">{editorial.development}</Box>
         </div>
         <Box title="EXPERIMENTOS DE DESENVOLVIMENTO" tone="red">
           {(adaptive.experiments?.slice(0, 3).length ? adaptive.experiments.slice(0, 3) : narrative.experiments.slice(0, 3)).join(" • ")}
@@ -242,9 +246,9 @@ export function DiscTechnicalReport({
           {adaptive.profilePortrait ?? narrative.essence} Predominante {p}, secundário {s}, combinação {scores.combination}. {TECHNICAL_PROFILE_CLOSING}
         </Box>
         <div className="tech-conclusion-grid">
-          <Box title="RESULTADOS">{narrative.best.slice(0, 2).join(" ")} Como pode contribuir para objetivos e execução.</Box>
-          <Box title="PESSOAS">{narrative.team} Como pode contribuir para relacionamento e dinâmica da equipe.</Box>
-          <Box title="PROCESSOS">{narrative.decision} Como pode contribuir para organização, decisão ou execução.</Box>
+          <Box title="RESULTADOS">{editorial.resultsPlan}</Box>
+          <Box title="PESSOAS">{editorial.peoplePlan}</Box>
+          <Box title="PROCESSOS">{editorial.processPlan}</Box>
         </div>
         <Box title="O QUE O GESTOR DEVE OBSERVAR" tone="red">
           Comunicação • Delegação • Acompanhamento • Feedback • Desenvolvimento. Use a leitura como hipótese de trabalho e valide com comportamento observável, competências, experiência, desempenho e contexto.
