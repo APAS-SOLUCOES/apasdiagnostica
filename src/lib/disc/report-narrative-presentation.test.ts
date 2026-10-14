@@ -29,8 +29,26 @@ describe("report-only DISC numeric presentation", () => {
             expect(result.experiments.length).toBe(original.experiments.length);
             expect(scores).toEqual(before);
           }
+          const premium = getPremiumReportNarrative(scores);
+          const technical = getTechnicalReportNarrative(scores);
+          expect(premium.title.split(" · ")[0]).toBe(technical.title.split(" · ")[0]);
+          expect(premium.title.split(" · ")[1]).toBe(original.title.split(" · ")[1]);
         }
       });
     }
   }
+  it("keeps intensity and distance variations after editorial presentation", () => {
+    const scores = computeScores(DEFAULT_INSTRUMENT.items.map((item, index) => ({
+      itemId: item.id, most: index < 17 ? "D" : "I", least: index % 2 ? "S" : "C",
+    })), DEFAULT_INSTRUMENT);
+    const close = { ...scores, primaryGap: 2 };
+    const distant = { ...scores, primaryGap: 10 };
+    for (const present of [getPremiumReportNarrative, getTechnicalReportNarrative]) {
+      expect(present(close).essence).not.toBe(present(distant).essence);
+      expect(present(close).title).toBe(getAdaptiveNarrative(close).title);
+      expect(present(distant).title).toBe(getAdaptiveNarrative(distant).title);
+      const moderate = { ...scores, adapted: { ...scores.adapted, percent: { ...scores.adapted.percent, D: 28 } } };
+      expect(present(moderate).experiments[1]).not.toBe(present(scores).experiments[1]);
+    }
+  });
 });
