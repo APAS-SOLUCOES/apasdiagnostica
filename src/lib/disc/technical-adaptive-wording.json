@@ -62,5 +62,101 @@
   [
     "A relação entre ([DISC]) e ([DISC]) indica uma oportunidade de equilíbrio: pratique um comportamento de (.*?) em uma situação em que (.*?) costuma aparecer primeiro\\.",
     "Na relação entre $1 e $2, acompanhe a prática de $3 em uma tarefa iniciada por $4."
+  ],
+  [
+    "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ dominância,\\ com\\ I\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
+    "No ambiente de trabalho, a pessoa assume a dianteira diante de oportunidades e converte diálogo em decisão com agilidade. Recomenda-se consolidação de etapas antes de avançar para a próxima."
+  ],
+  [
+    "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ dominância\\ e\\ influência\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
+    "Nas relações profissionais, a intensidade pode ser interpretada como entusiasmo ou como pressa, dependendo do interlocutor. Recomenda-se calibrar ritmo conforme o perfil do público."
+  ],
+  [
+    "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ influência,\\ com\\ D\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
+    "No ambiente profissional, tende a abrir oportunidades pelo relacionamento e converter isso em iniciativa. Recomenda-se foco em fechamento das frentes abertas."
+  ],
+  [
+    "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ influência\\ e\\ dominância\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
+    "Constrói vínculo com facilidade e utiliza essa proximidade para mobilizar. Recomenda-se cuidado para que a proximidade não funcione como pressão implícita."
+  ],
+  [
+    "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ dominância,\\ com\\ S\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
+    "No trabalho, assume compromissos e sustenta a entrega até a conclusão. Recomenda-se atenção para que a sustentação não evolua para sobrecarga silenciosa."
+  ],
+  [
+    "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ dominância\\ e\\ estabilidade\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
+    "Protege vínculos com constância, mesmo a custo de energia pessoal. A comunicação antecipada de limites evita desgaste relacional."
+  ],
+  [
+    "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ dominância,\\ com\\ C\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
+    "No trabalho, identifica riscos com antecedência e age com firmeza quando a base de evidência é suficiente. Recomenda-se evitar paralisia por busca de certeza total."
+  ],
+  [
+    "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ dominância\\ e\\ conformidade\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
+    "Demonstra cuidado por meio de padrão elevado, o que pode ser lido como distanciamento. Explicitar a intenção por trás da exigência aproxima a relação."
+  ],
+  [
+    "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ influência,\\ com\\ S\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
+    "No trabalho, mantém a coesão do grupo e favorece a colaboração. Recomenda-se atenção para que a disponibilidade não evolua para sobrecarga."
+  ],
+  [
+    "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ influência\\ e\\ estabilidade\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
+    "Constrói vínculo com rapidez e naturalidade. Expressar discordância no momento adequado fortalece a confiança na relação."
+  ],
+  [
+    "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ influência,\\ com\\ C\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
+    "No trabalho, destrava entendimento em temas complexos com eficiência. Recomenda-se encerrar a análise em prazo definido."
+  ],
+  [
+    "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ influência\\ e\\ conformidade\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
+    "Conecta pessoas por meio de boas explicações e presença qualificada. Recomenda-se evitar que a clareza vire controle da interpretação alheia."
+  ],
+  [
+    "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ estabilidade,\\ com\\ D\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
+    "No trabalho, entrega com consistência e assume firmeza quando necessário. Recomenda-se evitar acúmulo de sobrecarga antes de solicitar apoio."
+  ],
+  [
+    "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ estabilidade\\ e\\ dominância\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
+    "Sustenta vínculos com paciência. Comunicar incômodos cedo evita ruptura brusca posterior."
+  ],
+  [
+    "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ estabilidade,\\ com\\ I\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
+    "No trabalho, integra a equipe e sustenta clima cooperativo. Recomenda-se cobrar acordos em tempo adequado."
+  ],
+  [
+    "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ estabilidade\\ e\\ influência\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
+    "Constrói vínculo com acolhimento. Expressar limites fortalece, em vez de comprometer, a conexão."
+  ],
+  [
+    "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ estabilidade,\\ com\\ C\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
+    "No trabalho, organiza rotinas confiáveis e protege a qualidade da entrega. Recomenda-se evitar paralisia diante de cenário incompleto."
+  ],
+  [
+    "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ estabilidade\\ e\\ conformidade\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
+    "Constrói confiança pela constância e pelo cuidado. Compartilhar dúvidas em tempo real evita interpretação equivocada do silêncio."
+  ],
+  [
+    "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ conformidade,\\ com\\ D\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
+    "No trabalho, questiona premissas e entrega soluções consistentes. Recomenda-se evitar elevação de padrão além do necessário."
+  ],
+  [
+    "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ conformidade\\ e\\ dominância\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
+    "Demonstra cuidado por meio de precisão, o que pode ser lido como distância. Explicitar intenção aproxima a relação."
+  ],
+  [
+    "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ conformidade,\\ com\\ I\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
+    "No trabalho, prepara bem o conteúdo e antecipa dúvidas do público. Recomenda-se evitar revisão além do ponto de clareza suficiente."
+  ],
+  [
+    "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ conformidade\\ e\\ influência\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
+    "Gera confiança explicando com cuidado. Simplificar, por vezes, aproxima mais do que detalhar extensivamente."
+  ],
+  [
+    "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ conformidade,\\ com\\ S\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
+    "No trabalho, sustenta qualidade de forma previsível e organiza conhecimento. Recomenda-se evitar adiamento de decisões por busca de segurança completa."
+  ],
+  [
+    "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ conformidade\\ e\\ estabilidade\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
+    "Constrói confiança pela constância e escuta atenta. Expressar preocupação cedo evita desgaste silencioso."
   ]
 ]
