@@ -6,7 +6,7 @@
     "communicationAttention": "Antes de responder a uma discordância, confira o pedido. Conte o motivo da sua escolha a quem será afetado.",
     "communicationPractice": "Na próxima conversa importante, peça ao interlocutor que resuma o acordo com as próprias palavras.",
     "decisionBest": "Você escolhe um caminho mesmo sem todas as respostas. Use essa contribuição para tornar as alternativas mais claras.",
-    "decisionWatch": "Ao decidir, você confia na própria leitura e na reação imediata das pessoas ao redor. Reservar um momento para checar fatos antes de fechar reduz o risco de comprometer-se demais, demais rápido.",
+    "decisionWatch": "Ao decidir, você confia na própria leitura e na reação imediata das pessoas ao redor. Reservar um momento para checar fatos antes de fechar reduz o risco de comprometer-se além do que consegue sustentar.",
     "decisionAttention": "Uma opção atraente também tem custos. Uma conclusão rápida pode deixar um dado importante de fora.",
     "decisionPractice": "Escolha o que precisa ser conhecido agora e o que pode ser verificado durante a execução.",
     "teamWatch": "Como referência para outros, você inspira pela coragem de agir primeiro. Equilibrar isso com escuta ativa e acompanhamento constante transforma impulso em liderança duradoura.",
@@ -16,7 +16,10 @@
     "developmentAdjust": "Observe uma situação em que sua preferência ficou automática. Seu impulso pode reduzir o espaço de ponderação.",
     "developmentExpand": "Pratique uma resposta menos habitual: verifique a informação que sustenta uma ideia atraente.",
     "developmentResult": "Peça retorno sobre uma mudança concreta no seu jeito de trabalhar, não sobre o seu perfil.",
-    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo."
+    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
+    "dailyImpact": "Seu jeito direto pode ajudar a destravar uma tarefa; confira se quem participa conhece o motivo da prioridade.",
+    "dailySummary": "Ao iniciar, identifique o que precisa avançar e quem pode contribuir com a próxima etapa.",
+    "perceivedCommunication": "Uma fala curta pode ser recebida como decisão encerrada. Diga quando sua proposta ainda admite contribuição."
   },
   "ID": {
     "introduction": "Ao ler, procure uma situação em que I ajudou você e outra em que D ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -35,7 +38,10 @@
     "developmentAdjust": "Observe uma situação em que sua preferência ficou automática. Muitas possibilidades podem disputar sua atenção.",
     "developmentExpand": "Pratique uma resposta menos habitual: peça uma visão diferente antes de encerrar a conversa.",
     "developmentResult": "Peça retorno sobre uma mudança concreta no seu jeito de trabalhar, não sobre o seu perfil.",
-    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo."
+    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
+    "dailyImpact": "Sua abertura pode convidar à participação; confira se as pessoas também encontram espaço para uma ressalva.",
+    "dailySummary": "Ao reunir pessoas, dê um propósito à conversa e um destino aos compromissos que surgirem.",
+    "perceivedCommunication": "Uma apresentação entusiasmada pode soar como compromisso já assumido. Distinga possibilidade de promessa."
   },
   "DS": {
     "introduction": "Ao ler, procure uma situação em que D ajudou você e outra em que S ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -54,7 +60,10 @@
     "developmentAdjust": "Observe uma situação em que sua preferência ficou automática. Seu impulso pode reduzir o espaço de ponderação.",
     "developmentExpand": "Pratique uma resposta menos habitual: faça escolhas pequenas sem esperar segurança completa.",
     "developmentResult": "Peça retorno sobre uma mudança concreta no seu jeito de trabalhar, não sobre o seu perfil.",
-    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo."
+    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
+    "dailyImpact": "Seu jeito direto pode ajudar a destravar uma tarefa; confira se quem participa conhece o motivo da prioridade.",
+    "dailySummary": "Ao iniciar, identifique o que precisa avançar e quem pode contribuir com a próxima etapa.",
+    "perceivedCommunication": "Uma fala curta pode ser recebida como decisão encerrada. Diga quando sua proposta ainda admite contribuição."
   },
   "DC": {
     "introduction": "Ao ler, procure uma situação em que D ajudou você e outra em que C ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -73,7 +82,10 @@
     "developmentAdjust": "Observe uma situação em que sua preferência ficou automática. Seu impulso pode reduzir o espaço de ponderação.",
     "developmentExpand": "Pratique uma resposta menos habitual: compartilhe o que já está claro sem esperar uma versão perfeita.",
     "developmentResult": "Peça retorno sobre uma mudança concreta no seu jeito de trabalhar, não sobre o seu perfil.",
-    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo."
+    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
+    "dailyImpact": "Seu jeito direto pode ajudar a destravar uma tarefa; confira se quem participa conhece o motivo da prioridade.",
+    "dailySummary": "Ao iniciar, identifique o que precisa avançar e quem pode contribuir com a próxima etapa.",
+    "perceivedCommunication": "Uma fala curta pode ser recebida como decisão encerrada. Diga quando sua proposta ainda admite contribuição."
   },
   "IS": {
     "introduction": "Ao ler, procure uma situação em que I ajudou você e outra em que S ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -92,7 +104,10 @@
     "developmentAdjust": "Observe uma situação em que sua preferência ficou automática. Muitas possibilidades podem disputar sua atenção.",
     "developmentExpand": "Pratique uma resposta menos habitual: faça escolhas pequenas sem esperar segurança completa.",
     "developmentResult": "Peça retorno sobre uma mudança concreta no seu jeito de trabalhar, não sobre o seu perfil.",
-    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo."
+    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
+    "dailyImpact": "Sua abertura pode convidar à participação; confira se as pessoas também encontram espaço para uma ressalva.",
+    "dailySummary": "Ao reunir pessoas, dê um propósito à conversa e um destino aos compromissos que surgirem.",
+    "perceivedCommunication": "Uma apresentação entusiasmada pode soar como compromisso já assumido. Distinga possibilidade de promessa."
   },
   "IC": {
     "introduction": "Ao ler, procure uma situação em que I ajudou você e outra em que C ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -111,7 +126,10 @@
     "developmentAdjust": "Observe uma situação em que sua preferência ficou automática. Muitas possibilidades podem disputar sua atenção.",
     "developmentExpand": "Pratique uma resposta menos habitual: compartilhe o que já está claro sem esperar uma versão perfeita.",
     "developmentResult": "Peça retorno sobre uma mudança concreta no seu jeito de trabalhar, não sobre o seu perfil.",
-    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo."
+    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
+    "dailyImpact": "Sua abertura pode convidar à participação; confira se as pessoas também encontram espaço para uma ressalva.",
+    "dailySummary": "Ao reunir pessoas, dê um propósito à conversa e um destino aos compromissos que surgirem.",
+    "perceivedCommunication": "Uma apresentação entusiasmada pode soar como compromisso já assumido. Distinga possibilidade de promessa."
   },
   "SD": {
     "introduction": "Ao ler, procure uma situação em que S ajudou você e outra em que D ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -130,7 +148,10 @@
     "developmentAdjust": "Observe uma situação em que sua preferência ficou automática. Uma preocupação guardada pode se tornar desgaste.",
     "developmentExpand": "Pratique uma resposta menos habitual: peça uma visão diferente antes de encerrar a conversa.",
     "developmentResult": "Peça retorno sobre uma mudança concreta no seu jeito de trabalhar, não sobre o seu perfil.",
-    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo."
+    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
+    "dailyImpact": "Sua continuidade pode transmitir confiança; torne visível o que precisa mudar para que silêncio não pareça concordância.",
+    "dailySummary": "Ao sustentar a rotina, perceba quais acordos continuam úteis e quais precisam ser renovados.",
+    "perceivedCommunication": "Uma resposta ponderada pode ser entendida como hesitação. Explique o que você precisa conhecer para se posicionar."
   },
   "SI": {
     "introduction": "Ao ler, procure uma situação em que S ajudou você e outra em que I ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -149,7 +170,10 @@
     "developmentAdjust": "Observe uma situação em que sua preferência ficou automática. Uma preocupação guardada pode se tornar desgaste.",
     "developmentExpand": "Pratique uma resposta menos habitual: verifique a informação que sustenta uma ideia atraente.",
     "developmentResult": "Peça retorno sobre uma mudança concreta no seu jeito de trabalhar, não sobre o seu perfil.",
-    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo."
+    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
+    "dailyImpact": "Sua continuidade pode transmitir confiança; torne visível o que precisa mudar para que silêncio não pareça concordância.",
+    "dailySummary": "Ao sustentar a rotina, perceba quais acordos continuam úteis e quais precisam ser renovados.",
+    "perceivedCommunication": "Uma resposta ponderada pode ser entendida como hesitação. Explique o que você precisa conhecer para se posicionar."
   },
   "SC": {
     "introduction": "Ao ler, procure uma situação em que S ajudou você e outra em que C ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -168,7 +192,10 @@
     "developmentAdjust": "Observe uma situação em que sua preferência ficou automática. Uma preocupação guardada pode se tornar desgaste.",
     "developmentExpand": "Pratique uma resposta menos habitual: compartilhe o que já está claro sem esperar uma versão perfeita.",
     "developmentResult": "Peça retorno sobre uma mudança concreta no seu jeito de trabalhar, não sobre o seu perfil.",
-    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo."
+    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
+    "dailyImpact": "Sua continuidade pode transmitir confiança; torne visível o que precisa mudar para que silêncio não pareça concordância.",
+    "dailySummary": "Ao sustentar a rotina, perceba quais acordos continuam úteis e quais precisam ser renovados.",
+    "perceivedCommunication": "Uma resposta ponderada pode ser entendida como hesitação. Explique o que você precisa conhecer para se posicionar."
   },
   "CD": {
     "introduction": "Ao ler, procure uma situação em que C ajudou você e outra em que D ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -187,7 +214,10 @@
     "developmentAdjust": "Observe uma situação em que sua preferência ficou automática. A busca de certeza pode atrasar uma escolha viável.",
     "developmentExpand": "Pratique uma resposta menos habitual: peça uma visão diferente antes de encerrar a conversa.",
     "developmentResult": "Peça retorno sobre uma mudança concreta no seu jeito de trabalhar, não sobre o seu perfil.",
-    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo."
+    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
+    "dailyImpact": "Seu cuidado pode dar segurança à entrega; explique quais detalhes realmente afetam o resultado.",
+    "dailySummary": "Ao organizar o trabalho, diferencie o cuidado essencial da revisão que já não acrescenta valor.",
+    "perceivedCommunication": "Uma ressalva detalhada pode parecer rejeição da proposta. Mostre o que já está viável antes do cuidado restante."
   },
   "CI": {
     "introduction": "Ao ler, procure uma situação em que C ajudou você e outra em que I ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -206,7 +236,10 @@
     "developmentAdjust": "Observe uma situação em que sua preferência ficou automática. A busca de certeza pode atrasar uma escolha viável.",
     "developmentExpand": "Pratique uma resposta menos habitual: verifique a informação que sustenta uma ideia atraente.",
     "developmentResult": "Peça retorno sobre uma mudança concreta no seu jeito de trabalhar, não sobre o seu perfil.",
-    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo."
+    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
+    "dailyImpact": "Seu cuidado pode dar segurança à entrega; explique quais detalhes realmente afetam o resultado.",
+    "dailySummary": "Ao organizar o trabalho, diferencie o cuidado essencial da revisão que já não acrescenta valor.",
+    "perceivedCommunication": "Uma ressalva detalhada pode parecer rejeição da proposta. Mostre o que já está viável antes do cuidado restante."
   },
   "CS": {
     "introduction": "Ao ler, procure uma situação em que C ajudou você e outra em que S ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -225,6 +258,9 @@
     "developmentAdjust": "Observe uma situação em que sua preferência ficou automática. A busca de certeza pode atrasar uma escolha viável.",
     "developmentExpand": "Pratique uma resposta menos habitual: faça escolhas pequenas sem esperar segurança completa.",
     "developmentResult": "Peça retorno sobre uma mudança concreta no seu jeito de trabalhar, não sobre o seu perfil.",
-    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo."
+    "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
+    "dailyImpact": "Seu cuidado pode dar segurança à entrega; explique quais detalhes realmente afetam o resultado.",
+    "dailySummary": "Ao organizar o trabalho, diferencie o cuidado essencial da revisão que já não acrescenta valor.",
+    "perceivedCommunication": "Uma ressalva detalhada pode parecer rejeição da proposta. Mostre o que já está viável antes do cuidado restante."
   }
 }
