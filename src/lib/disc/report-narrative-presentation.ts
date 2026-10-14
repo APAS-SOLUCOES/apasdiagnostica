@@ -10,10 +10,14 @@ import technicalAdaptive from "./technical-adaptive-wording.json";
 
 /** Literal wording only, applied after the engine has made every adaptive selection. */
 function editorialText(value: string, pairs: string[][]) {
-  return pairs.reduce((text, pair) => {
+  const wording = new Map<string, string>();
+  for (const pair of pairs) {
     const [before, after] = pair;
-    return before === undefined || after === undefined ? text : text.split(before).join(after);
-  }, value);
+    if (before !== undefined && after !== undefined) wording.set(before, after);
+  }
+  const pattern = [...wording.keys()].sort((a, b) => b.length - a.length)
+    .map((phrase) => phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
+  return value.replace(new RegExp(pattern, "g"), (phrase) => wording.get(phrase) ?? phrase);
 }
 
 /** Only replaces wording in the already-selected narrative; no score or selection is changed. */
