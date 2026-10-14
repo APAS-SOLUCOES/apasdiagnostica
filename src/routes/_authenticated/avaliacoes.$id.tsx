@@ -102,7 +102,7 @@ function DetalhePage() {
             intro: narrative.perceived,
             cards: [
               { titulo: "Nas relações", texto: narrative.situations?.relationships, cor: "vermelho" as const },
-              { titulo: "Na comunicação", texto: narrative.communication, cor: "escuro" as const },
+              { titulo: "Na comunicação", texto: editorial.perceivedCommunication, cor: "escuro" as const },
               { titulo: "Sob pressão", texto: narrative.pressure, cor: "laranja" as const },
               { titulo: "Na mudança", texto: narrative.change, cor: "azul" as const },
             ],
@@ -191,9 +191,9 @@ function DetalhePage() {
           introducao: {
             titulo: "Você não é um número.",
             paragrafos: [
-              "O resultado deste relatório não pretende colocar você dentro de uma caixa ou definir quem você é.",
-              narrative.essence,
-              narrative.profilePortrait ?? narrative.essence,
+              "Este relatório abre uma conversa sobre seu jeito de trabalhar, não uma definição de quem você é.",
+              "Ao longo da leitura, você encontrará contribuições, cuidados e propostas de prática para levar ao cotidiano.",
+              editorial.introduction,
             ],
             citacao: "Conhecer seu jeito de agir abre espaço para escolher o próximo passo.",
             referencia: "Este relatório é baseado em tendências comportamentais DISC. A leitura deve ser validada no contexto do avaliado.",
@@ -217,8 +217,8 @@ function DetalhePage() {
             intensidade: intensity,
             paragrafos: [narrative.essence, narrative.situations?.work ?? narrative.communication],
             destaqueTitulo: "Olhar de pessoas",
-            destaqueTexto: narrative.perceived,
-            resumo: narrative.team,
+            destaqueTexto: editorial.dailyImpact,
+            resumo: editorial.dailySummary,
           },
           paginas,
         };
