@@ -85,7 +85,7 @@ function DetalhePage() {
             subtitulo: "Recursos que você já leva com você",
             intro: "Você pode reconhecer essas contribuições em entregas que já realizou. Observe em que situação cada uma faz diferença.",
             cards: narrative.best.slice(0, 4).map((texto, index) => ({ titulo: texto, texto: DIMENSION_CONTENT[p].characteristics[index] ?? narrative.essence, cor: "verde" as const })),
-            nota: { titulo: "No contexto", texto: narrative.situations?.work ?? narrative.best[0] ?? "Observe quando esse recurso gera valor." },
+            nota: { titulo: "No contexto", texto: editorial.strengthContext },
           },
           atencao: {
             secao: "O que pode exigir mais atenção",
