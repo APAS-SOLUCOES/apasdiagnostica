@@ -19,7 +19,8 @@
     "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
     "dailyImpact": "Seu jeito direto pode ajudar a destravar uma tarefa; confira se quem participa conhece o motivo da prioridade.",
     "dailySummary": "Ao iniciar, identifique o que precisa avançar e quem pode contribuir com a próxima etapa.",
-    "perceivedCommunication": "Uma fala curta pode ser recebida como decisão encerrada. Diga quando sua proposta ainda admite contribuição."
+    "perceivedCommunication": "Uma fala curta pode ser recebida como decisão encerrada. Diga quando sua proposta ainda admite contribuição.",
+    "strengthContext": "Você pode aproveitar esses recursos ao iniciar uma proposta que precisa reunir decisão e adesão."
   },
   "ID": {
     "introduction": "Ao ler, procure uma situação em que I ajudou você e outra em que D ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -41,7 +42,8 @@
     "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
     "dailyImpact": "Sua abertura pode convidar à participação; confira se as pessoas também encontram espaço para uma ressalva.",
     "dailySummary": "Ao reunir pessoas, dê um propósito à conversa e um destino aos compromissos que surgirem.",
-    "perceivedCommunication": "Uma apresentação entusiasmada pode soar como compromisso já assumido. Distinga possibilidade de promessa."
+    "perceivedCommunication": "Uma apresentação entusiasmada pode soar como compromisso já assumido. Distinga possibilidade de promessa.",
+    "strengthContext": "Essas contribuições podem ajudar quando uma conversa precisa ganhar responsáveis e próximos passos."
   },
   "DS": {
     "introduction": "Ao ler, procure uma situação em que D ajudou você e outra em que S ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -63,7 +65,8 @@
     "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
     "dailyImpact": "Seu jeito direto pode ajudar a destravar uma tarefa; confira se quem participa conhece o motivo da prioridade.",
     "dailySummary": "Ao iniciar, identifique o que precisa avançar e quem pode contribuir com a próxima etapa.",
-    "perceivedCommunication": "Uma fala curta pode ser recebida como decisão encerrada. Diga quando sua proposta ainda admite contribuição."
+    "perceivedCommunication": "Uma fala curta pode ser recebida como decisão encerrada. Diga quando sua proposta ainda admite contribuição.",
+    "strengthContext": "Você pode recorrer a essas forças ao conduzir uma entrega que precisa continuar mesmo após o começo."
   },
   "DC": {
     "introduction": "Ao ler, procure uma situação em que D ajudou você e outra em que C ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -85,7 +88,8 @@
     "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
     "dailyImpact": "Seu jeito direto pode ajudar a destravar uma tarefa; confira se quem participa conhece o motivo da prioridade.",
     "dailySummary": "Ao iniciar, identifique o que precisa avançar e quem pode contribuir com a próxima etapa.",
-    "perceivedCommunication": "Uma fala curta pode ser recebida como decisão encerrada. Diga quando sua proposta ainda admite contribuição."
+    "perceivedCommunication": "Uma fala curta pode ser recebida como decisão encerrada. Diga quando sua proposta ainda admite contribuição.",
+    "strengthContext": "Você pode usar essas contribuições para resolver um problema com prazo e critérios exigentes."
   },
   "IS": {
     "introduction": "Ao ler, procure uma situação em que I ajudou você e outra em que S ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -107,7 +111,8 @@
     "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
     "dailyImpact": "Sua abertura pode convidar à participação; confira se as pessoas também encontram espaço para uma ressalva.",
     "dailySummary": "Ao reunir pessoas, dê um propósito à conversa e um destino aos compromissos que surgirem.",
-    "perceivedCommunication": "Uma apresentação entusiasmada pode soar como compromisso já assumido. Distinga possibilidade de promessa."
+    "perceivedCommunication": "Uma apresentação entusiasmada pode soar como compromisso já assumido. Distinga possibilidade de promessa.",
+    "strengthContext": "Você pode aproveitar essas contribuições ao integrar pessoas em um projeto compartilhado."
   },
   "IC": {
     "introduction": "Ao ler, procure uma situação em que I ajudou você e outra em que C ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -129,7 +134,8 @@
     "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
     "dailyImpact": "Sua abertura pode convidar à participação; confira se as pessoas também encontram espaço para uma ressalva.",
     "dailySummary": "Ao reunir pessoas, dê um propósito à conversa e um destino aos compromissos que surgirem.",
-    "perceivedCommunication": "Uma apresentação entusiasmada pode soar como compromisso já assumido. Distinga possibilidade de promessa."
+    "perceivedCommunication": "Uma apresentação entusiasmada pode soar como compromisso já assumido. Distinga possibilidade de promessa.",
+    "strengthContext": "Você pode recorrer a essas forças ao apresentar um assunto técnico para um público diverso."
   },
   "SD": {
     "introduction": "Ao ler, procure uma situação em que S ajudou você e outra em que D ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -151,7 +157,8 @@
     "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
     "dailyImpact": "Sua continuidade pode transmitir confiança; torne visível o que precisa mudar para que silêncio não pareça concordância.",
     "dailySummary": "Ao sustentar a rotina, perceba quais acordos continuam úteis e quais precisam ser renovados.",
-    "perceivedCommunication": "Uma resposta ponderada pode ser entendida como hesitação. Explique o que você precisa conhecer para se posicionar."
+    "perceivedCommunication": "Uma resposta ponderada pode ser entendida como hesitação. Explique o que você precisa conhecer para se posicionar.",
+    "strengthContext": "Esses recursos podem ajudar quando uma rotina confiável precisa de uma intervenção firme."
   },
   "SI": {
     "introduction": "Ao ler, procure uma situação em que S ajudou você e outra em que I ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -173,7 +180,8 @@
     "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
     "dailyImpact": "Sua continuidade pode transmitir confiança; torne visível o que precisa mudar para que silêncio não pareça concordância.",
     "dailySummary": "Ao sustentar a rotina, perceba quais acordos continuam úteis e quais precisam ser renovados.",
-    "perceivedCommunication": "Uma resposta ponderada pode ser entendida como hesitação. Explique o que você precisa conhecer para se posicionar."
+    "perceivedCommunication": "Uma resposta ponderada pode ser entendida como hesitação. Explique o que você precisa conhecer para se posicionar.",
+    "strengthContext": "Esses recursos podem apoiar a cooperação entre pessoas que precisam conviver e trabalhar juntas."
   },
   "SC": {
     "introduction": "Ao ler, procure uma situação em que S ajudou você e outra em que C ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -195,7 +203,8 @@
     "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
     "dailyImpact": "Sua continuidade pode transmitir confiança; torne visível o que precisa mudar para que silêncio não pareça concordância.",
     "dailySummary": "Ao sustentar a rotina, perceba quais acordos continuam úteis e quais precisam ser renovados.",
-    "perceivedCommunication": "Uma resposta ponderada pode ser entendida como hesitação. Explique o que você precisa conhecer para se posicionar."
+    "perceivedCommunication": "Uma resposta ponderada pode ser entendida como hesitação. Explique o que você precisa conhecer para se posicionar.",
+    "strengthContext": "Você pode usar esses recursos ao organizar uma rotina que precisa de cuidado constante."
   },
   "CD": {
     "introduction": "Ao ler, procure uma situação em que C ajudou você e outra em que D ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -217,7 +226,8 @@
     "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
     "dailyImpact": "Seu cuidado pode dar segurança à entrega; explique quais detalhes realmente afetam o resultado.",
     "dailySummary": "Ao organizar o trabalho, diferencie o cuidado essencial da revisão que já não acrescenta valor.",
-    "perceivedCommunication": "Uma ressalva detalhada pode parecer rejeição da proposta. Mostre o que já está viável antes do cuidado restante."
+    "perceivedCommunication": "Uma ressalva detalhada pode parecer rejeição da proposta. Mostre o que já está viável antes do cuidado restante.",
+    "strengthContext": "Essas forças podem ajudar quando uma análise precisa chegar a uma decisão executável."
   },
   "CI": {
     "introduction": "Ao ler, procure uma situação em que C ajudou você e outra em que I ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -239,7 +249,8 @@
     "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
     "dailyImpact": "Seu cuidado pode dar segurança à entrega; explique quais detalhes realmente afetam o resultado.",
     "dailySummary": "Ao organizar o trabalho, diferencie o cuidado essencial da revisão que já não acrescenta valor.",
-    "perceivedCommunication": "Uma ressalva detalhada pode parecer rejeição da proposta. Mostre o que já está viável antes do cuidado restante."
+    "perceivedCommunication": "Uma ressalva detalhada pode parecer rejeição da proposta. Mostre o que já está viável antes do cuidado restante.",
+    "strengthContext": "Essas contribuições podem ajudar ao explicar uma conclusão sem perder a sustentação do argumento."
   },
   "CS": {
     "introduction": "Ao ler, procure uma situação em que C ajudou você e outra em que S ofereceu um caminho diferente. O relatório ganha sentido quando encontra sua experiência.",
@@ -261,6 +272,7 @@
     "finalStep": "Escolha um compromisso possível de cumprir e conte a alguém como pretende acompanhá-lo.",
     "dailyImpact": "Seu cuidado pode dar segurança à entrega; explique quais detalhes realmente afetam o resultado.",
     "dailySummary": "Ao organizar o trabalho, diferencie o cuidado essencial da revisão que já não acrescenta valor.",
-    "perceivedCommunication": "Uma ressalva detalhada pode parecer rejeição da proposta. Mostre o que já está viável antes do cuidado restante."
+    "perceivedCommunication": "Uma ressalva detalhada pode parecer rejeição da proposta. Mostre o que já está viável antes do cuidado restante.",
+    "strengthContext": "Essas forças podem apoiar a manutenção de um padrão sem depender de supervisão a cada etapa."
   }
 }
