@@ -1,6 +1,6 @@
 {
   "DI": {
-    "managementReading": "A pessoa tende a reconhecer oportunidades e mobilizar apoio para agir. Ofereça um objetivo claro e espaço para propor como alcançá-lo.",
+    "managementReading": "Reconhecer oportunidades e reunir apoio costuma abrir caminho para a ação. Ofereça um objetivo claro e espaço para propor como alcançá-lo.",
     "receive": "Apresente o resultado esperado, as restrições essenciais e a alçada de decisão. Depois, peça à pessoa que proponha o caminho.",
     "feedback": "Retome um fato recente, o resultado e seu impacto. Peça que a pessoa proponha um ajuste sem discutir sua identidade.",
     "tension": "Nas relações profissionais, a intensidade pode ser interpretada como entusiasmo ou como pressa, dependendo do interlocutor. Recomenda-se calibrar ritmo conforme o perfil do público.",
@@ -16,7 +16,7 @@
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Solicite uma alternativa antes do fechamento. Ajuste o próximo acompanhamento."
   },
   "ID": {
-    "managementReading": "A pessoa tende a abrir oportunidades pela interação e, a partir da adesão, tomar iniciativa. Direcione essa articulação para compromissos com responsáveis definidos.",
+    "managementReading": "O contato com os outros costuma abrir oportunidades e dar impulso à iniciativa. Direcione essa articulação para compromissos com responsáveis definidos.",
     "receive": "Abra a conversa com o propósito e o impacto sobre as pessoas. Ao encerrar, peça à pessoa que registre os acordos.",
     "feedback": "Trate o episódio em conversa reservada e reconheça a intenção de contribuir. Verifique o entendimento do ajuste e como será acompanhado.",
     "tension": "Constrói vínculo com facilidade e utiliza essa proximidade para mobilizar. Recomenda-se cuidado para que a proximidade não funcione como pressão implícita.",
@@ -32,7 +32,7 @@
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça a fonte dos argumentos relevantes. Ajuste o próximo acompanhamento."
   },
   "DS": {
-    "managementReading": "A pessoa tende a assumir direção sem abandonar a continuidade da entrega. Combine responsabilidade e apoio, evitando que ela absorva toda a carga para proteger o resultado.",
+    "managementReading": "A direção escolhida tende a vir acompanhada de cuidado com a continuidade da entrega. Distribua responsabilidade e apoio para que a proteção do resultado não recaia toda sobre ela.",
     "receive": "Apresente o resultado esperado, as restrições essenciais e a alçada de decisão. Depois, peça à pessoa que proponha o caminho.",
     "feedback": "Retome um fato recente, o resultado e seu impacto. Peça que a pessoa proponha um ajuste sem discutir sua identidade.",
     "tension": "Protege vínculos com constância, mesmo a custo de energia pessoal. A comunicação antecipada de limites evita desgaste relacional.",
@@ -48,7 +48,7 @@
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Solicite uma alternativa antes do fechamento. Ajuste o próximo acompanhamento."
   },
   "DC": {
-    "managementReading": "A pessoa tende a buscar resultado com critérios de qualidade. Estabeleça prioridades e limites de risco para que exigência e prazo não disputem a mesma entrega.",
+    "managementReading": "Na busca por resultado, os critérios de qualidade costumam orientar o caminho. Estabeleça prioridades e limites de risco para que exigência e prazo não disputem a mesma entrega.",
     "receive": "Apresente o resultado esperado, as restrições essenciais e a alçada de decisão. Depois, peça à pessoa que proponha o caminho.",
     "feedback": "Retome um fato recente, o resultado e seu impacto. Peça que a pessoa proponha um ajuste sem discutir sua identidade.",
     "tension": "Demonstra cuidado por meio de padrão elevado, o que pode ser lido como distanciamento. Explicitar a intenção por trás da exigência aproxima a relação.",
@@ -64,7 +64,7 @@
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Solicite uma alternativa antes do fechamento. Ajuste o próximo acompanhamento."
   },
   "IS": {
-    "managementReading": "A pessoa tende a envolver pelo diálogo e preservar vínculos na execução. Aproveite essa aproximação para construir adesão, sem transferir a ela toda a responsabilidade pelo clima.",
+    "managementReading": "O diálogo costuma gerar envolvimento, com atenção aos vínculos durante a execução. Aproveite essa aproximação para construir adesão, sem transferir a ela toda a responsabilidade pelo clima.",
     "receive": "Abra a conversa com o propósito e o impacto sobre as pessoas. Ao encerrar, peça à pessoa que registre os acordos.",
     "feedback": "Trate o episódio em conversa reservada e reconheça a intenção de contribuir. Verifique o entendimento do ajuste e como será acompanhado.",
     "tension": "Constrói vínculo com rapidez e naturalidade. Expressar discordância no momento adequado fortalece a confiança na relação.",
@@ -80,7 +80,7 @@
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça a fonte dos argumentos relevantes. Ajuste o próximo acompanhamento."
   },
   "IC": {
-    "managementReading": "A pessoa tende a envolver o público e dar sustentação à mensagem com preparo. Defina o propósito da apresentação e o que precisa ser tecnicamente demonstrado.",
+    "managementReading": "O envolvimento do público tende a ganhar sustentação no preparo da mensagem. Defina o propósito da apresentação e o que precisa ser tecnicamente demonstrado.",
     "receive": "Abra a conversa com o propósito e o impacto sobre as pessoas. Ao encerrar, peça à pessoa que registre os acordos.",
     "feedback": "Trate o episódio em conversa reservada e reconheça a intenção de contribuir. Verifique o entendimento do ajuste e como será acompanhado.",
     "tension": "Conecta pessoas por meio de boas explicações e presença qualificada. Recomenda-se evitar que a clareza vire controle da interpretação alheia.",
@@ -96,7 +96,7 @@
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça a fonte dos argumentos relevantes. Ajuste o próximo acompanhamento."
   },
   "SD": {
-    "managementReading": "A pessoa tende a sustentar a rotina e assumir firmeza quando o compromisso está em risco. Convide-a a explicitar posições antes que a urgência decida por ela.",
+    "managementReading": "A constância na rotina pode dar lugar à firmeza quando um compromisso está em risco. Convide-a a explicitar posições antes que a urgência decida por ela.",
     "receive": "Explique o contexto e o que será mantido. Dê tempo para a pessoa formular perguntas antes de assumir o compromisso.",
     "feedback": "Dê exemplos concretos e convide a pessoa a dizer como recebeu o pedido. Evite transformar uma ressalva em confronto.",
     "tension": "Sustenta vínculos com paciência. Comunicar incômodos cedo evita ruptura brusca posterior.",
@@ -112,7 +112,7 @@
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Pratique escolhas simples com prazo definido. Ajuste o próximo acompanhamento."
   },
   "SI": {
-    "managementReading": "A pessoa tende a manter vínculos e facilitar a cooperação cotidiana. Faça pedidos explícitos e verifique se o cuidado com o grupo deixa espaço para suas próprias prioridades.",
+    "managementReading": "A manutenção dos vínculos costuma favorecer a cooperação no cotidiano. Faça pedidos explícitos e verifique se o cuidado com o grupo deixa espaço para suas próprias prioridades.",
     "receive": "Explique o contexto e o que será mantido. Dê tempo para a pessoa formular perguntas antes de assumir o compromisso.",
     "feedback": "Dê exemplos concretos e convide a pessoa a dizer como recebeu o pedido. Evite transformar uma ressalva em confronto.",
     "tension": "Constrói vínculo com acolhimento. Expressar limites fortalece, em vez de comprometer, a conexão.",
@@ -128,7 +128,7 @@
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Pratique escolhas simples com prazo definido. Ajuste o próximo acompanhamento."
   },
   "SC": {
-    "managementReading": "A pessoa tende a sustentar a rotina com método e cuidado. Esclareça o que deve permanecer e o que pode ser testado para que continuidade não impeça revisão.",
+    "managementReading": "Método e cuidado tendem a sustentar a continuidade da rotina. Esclareça o que deve permanecer e o que pode ser testado para que continuidade não impeça revisão.",
     "receive": "Explique o contexto e o que será mantido. Dê tempo para a pessoa formular perguntas antes de assumir o compromisso.",
     "feedback": "Dê exemplos concretos e convide a pessoa a dizer como recebeu o pedido. Evite transformar uma ressalva em confronto.",
     "tension": "Constrói confiança pela constância e pelo cuidado. Compartilhar dúvidas em tempo real evita interpretação equivocada do silêncio.",
@@ -144,7 +144,7 @@
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Pratique escolhas simples com prazo definido. Ajuste o próximo acompanhamento."
   },
   "CD": {
-    "managementReading": "A pessoa tende a aprofundar a análise e assumir direção quando encontra fundamento. Delimite as evidências essenciais e a responsabilidade pela decisão.",
+    "managementReading": "A análise aprofundada costuma anteceder uma posição firme, apoiada em fundamentos. Delimite as evidências essenciais e a responsabilidade pela decisão.",
     "receive": "Forneça critérios de aceitação e informações verificáveis. Diferencie o que é requisito do que ainda pode ser discutido.",
     "feedback": "Apresente a evidência e o critério não atendido. Separe falha relevante de preferência pessoal do avaliador.",
     "tension": "Demonstra cuidado por meio de precisão, o que pode ser lido como distância. Explicitar intenção aproxima a relação.",
@@ -160,7 +160,7 @@
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça uma conclusão provisória com suas ressalvas. Ajuste o próximo acompanhamento."
   },
   "CI": {
-    "managementReading": "A pessoa tende a organizar conhecimento e torná-lo acessível ao interlocutor. Aproveite sua preparação para traduzir critérios, sem exigir o mesmo detalhe em toda conversa.",
+    "managementReading": "O conhecimento organizado tende a ganhar uma forma acessível ao interlocutor. Aproveite sua preparação para traduzir critérios, sem exigir o mesmo detalhe em toda conversa.",
     "receive": "Forneça critérios de aceitação e informações verificáveis. Diferencie o que é requisito do que ainda pode ser discutido.",
     "feedback": "Apresente a evidência e o critério não atendido. Separe falha relevante de preferência pessoal do avaliador.",
     "tension": "Gera confiança explicando com cuidado. Simplificar, por vezes, aproxima mais do que detalhar extensivamente.",
@@ -176,7 +176,7 @@
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça uma conclusão provisória com suas ressalvas. Ajuste o próximo acompanhamento."
   },
   "CS": {
-    "managementReading": "A pessoa tende a preservar padrões por meio de análise e acompanhamento consistente. Defina quando uma revisão termina e como os conhecimentos serão compartilhados.",
+    "managementReading": "Análise e acompanhamento consistente costumam proteger a manutenção dos padrões. Defina quando uma revisão termina e como os conhecimentos serão compartilhados.",
     "receive": "Forneça critérios de aceitação e informações verificáveis. Diferencie o que é requisito do que ainda pode ser discutido.",
     "feedback": "Apresente a evidência e o critério não atendido. Separe falha relevante de preferência pessoal do avaliador.",
     "tension": "Constrói confiança pela constância e escuta atenta. Expressar preocupação cedo evita desgaste silencioso.",
