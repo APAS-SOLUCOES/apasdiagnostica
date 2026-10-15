@@ -1,6 +1,6 @@
 {
   "DI": {
-    "essence": "A pessoa tende a reconhecer oportunidades e mobilizar apoio para agir. Ofereça um objetivo claro e espaço para propor como alcançá-lo.",
+    "essence": "Reconhecer oportunidades e reunir apoio costuma abrir caminho para a ação. Ofereça um objetivo claro e espaço para propor como alcançá-lo.",
     "best": [
       "Abre caminho em cenários travados.",
       "Comunica decisões com energia e convencimento.",
@@ -14,12 +14,12 @@
       "O interesse no acompanhamento cai após o impulso inicial."
     ],
     "perceived": "A intenção é gerar avanço e confiança. Em equipes com ritmo distinto, pode ser percebido como pressa ou falta de espaço para ponderação.",
-    "communication": "A pessoa tende a se comunicar com clareza, energia e poder de persuasão. Ganha efetividade ao incluir contexto e fechar com acordos explícitos.",
-    "decision": "A pessoa tende a decidir com agilidade e usar o diálogo para testar adesão. Separe entusiasmo de evidência antes de assumir compromissos.",
+    "communication": "Na comunicação, clareza e energia tendem a dar força à persuasão. Ganha efetividade ao incluir contexto e fechar com acordos explícitos.",
+    "decision": "A agilidade na escolha costuma se apoiar no diálogo para testar adesão. Separe entusiasmo de evidência antes de assumir compromissos.",
     "leadership": "Define direção e eleva a energia do time. A liderança se fortalece quando expectativas e responsabilidades ficam explícitas por escrito.",
-    "team": "A pessoa tende a contribuir com ritmo e articulação ao grupo. Abra espaço a vozes mais reservadas e sustente o acompanhamento pós-alinhamento.",
+    "team": "Ritmo e articulação podem ser contribuições relevantes ao grupo. Abra espaço a vozes mais reservadas e sustente o acompanhamento pós-alinhamento.",
     "pressure": "Sob pressão, tende a aumentar velocidade e expressividade. Uma pausa para checar impacto e prioridade preserva a qualidade da decisão.",
-    "change": "A pessoa tende a receber mudanças como oportunidade de ação imediata. O desafio reside em estruturar continuidade após o impulso inicial.",
+    "change": "A mudança costuma ser recebida como oportunidade de ação imediata. O desafio reside em estruturar continuidade após o impulso inicial.",
     "experiments": [
       "Encerrar reuniões com responsável, prazo e critério de sucesso definidos.",
       "Formular duas perguntas antes de apresentar a solução.",
@@ -34,7 +34,7 @@
     }
   },
   "ID": {
-    "essence": "A pessoa tende a abrir oportunidades pela interação e, a partir da adesão, tomar iniciativa. Direcione essa articulação para compromissos com responsáveis definidos.",
+    "essence": "O contato com os outros costuma abrir oportunidades e dar impulso à iniciativa. Direcione essa articulação para compromissos com responsáveis definidos.",
     "best": [
       "Gera adesão a propostas novas com agilidade.",
       "Dinamiza o ambiente de trabalho.",
@@ -48,12 +48,12 @@
       "Posterga detalhes e acompanhamentos."
     ],
     "perceived": "A intenção é inspirar e destravar processos. Pode ser percebida, por alguns interlocutores, como improviso ou dispersão de foco.",
-    "communication": "A pessoa tende a construir o raciocínio enquanto fala. Peça objetividade na mensagem e registro formal dos combinados.",
-    "decision": "A pessoa tende a decidir com base em oportunidade e reação do ambiente. Defina um critério objetivo e teste de realidade antes do fechamento.",
+    "communication": "O raciocínio costuma tomar forma durante a conversa. Peça objetividade na mensagem e registro formal dos combinados.",
+    "decision": "A leitura da oportunidade e da reação do ambiente tende a orientar a escolha. Defina um critério objetivo e teste de realidade antes do fechamento.",
     "leadership": "Lidera por presença e disposição para iniciar. A consistência aumenta com acompanhamento de rotina e feedback específico.",
-    "team": "A pessoa tende a aproximar pessoas e imprimir dinamismo à equipe. Reconheça o trabalho de quem sustenta a execução nos bastidores.",
+    "team": "A aproximação entre pessoas costuma trazer dinamismo à equipe. Reconheça o trabalho de quem sustenta a execução nos bastidores.",
     "pressure": "Sob pressão, tende a intensificar comunicação e acelerar compromissos. Promova a redução de estímulos e ordenação de prioridades.",
-    "change": "A pessoa tende a comunicar o potencial da mudança e gerar adesão inicial. Peça a tradução da visão em etapas com responsáveis definidos.",
+    "change": "O potencial da mudança tende a ser comunicado de modo a gerar adesão inicial. Peça a tradução da visão em etapas com responsáveis definidos.",
     "experiments": [
       "Converter ideias em três próximos passos visíveis.",
       "Consultar a opinião da pessoa mais silenciosa antes de decidir.",
@@ -68,7 +68,7 @@
     }
   },
   "DS": {
-    "essence": "A pessoa tende a assumir direção sem abandonar a continuidade da entrega. Combine responsabilidade e apoio, evitando que ela absorva toda a carga para proteger o resultado.",
+    "essence": "A direção escolhida tende a vir acompanhada de cuidado com a continuidade da entrega. Distribua responsabilidade e apoio para que a proteção do resultado não recaia toda sobre ela.",
     "best": [
       "Converte decisão em continuidade de execução.",
       "Protege compromissos sob desgaste.",
@@ -82,12 +82,12 @@
       "Mantém direção mesmo quando o contexto já mudou."
     ],
     "perceived": "A intenção é garantir segurança e avanço. Pode ser percebida, em alguns contextos, como controle ou resistência a revisões.",
-    "communication": "A pessoa tende a se comunicar de forma direta, sem busca de exposição constante. Explicitar motivos antecipadamente reduz interpretações equivocadas.",
-    "decision": "A pessoa tende a decidir com firmeza e sustenta a escolha ao longo do tempo. Combine a definição prévia de sinais que justifiquem revisão.",
+    "communication": "A comunicação costuma ser direta, sem necessidade de exposição constante. Explicitar motivos antecipadamente reduz interpretações equivocadas.",
+    "decision": "Uma vez definida a direção, há tendência a sustentá-la com firmeza. Acorde de antemão os sinais que justificam uma revisão.",
     "leadership": "Combina cobrança e proteção da equipe. A liderança se fortalece com delegação de responsabilidades críticas.",
-    "team": "A pessoa tende a funcionar como ponto de estabilidade e orientação. Assegure clareza sobre o espaço de decisão de cada integrante.",
+    "team": "O grupo pode encontrar nessa atuação estabilidade e orientação. Assegure clareza sobre o espaço de decisão de cada integrante.",
     "pressure": "Sob pressão, tende a endurecer posições ou absorver carga de trabalho. Organize a divisão de risco e solicitação antecipada de apoio.",
-    "change": "A pessoa tende a aceitar mudança quando há propósito e viabilidade de execução claros. Um plano de transição concilia velocidade e sustentação.",
+    "change": "Propósito e viabilidade de execução claros costumam favorecer a aceitação da mudança. Um plano de transição concilia velocidade e sustentação.",
     "experiments": [
       "Definir sinais objetivos para revisão de decisões.",
       "Delegar entrega crítica com pontos de acompanhamento definidos.",
@@ -102,7 +102,7 @@
     }
   },
   "DC": {
-    "essence": "A pessoa tende a buscar resultado com critérios de qualidade. Estabeleça prioridades e limites de risco para que exigência e prazo não disputem a mesma entrega.",
+    "essence": "Na busca por resultado, os critérios de qualidade costumam orientar o caminho. Estabeleça prioridades e limites de risco para que exigência e prazo não disputem a mesma entrega.",
     "best": [
       "Resolve problemas complexos com objetividade.",
       "Eleva o padrão de qualidade das entregas.",
@@ -116,12 +116,12 @@
       "Trata divergências como falhas de raciocínio."
     ],
     "perceived": "A intenção é proteger resultado e qualidade. O mesmo rigor pode ser percebido como dureza ou pouco espaço para aprendizagem.",
-    "communication": "A pessoa tende a valorizar precisão e objetividade na comunicação. Explicitar prioridade e impacto humano torna a mensagem mais acessível.",
-    "decision": "A pessoa tende a combinar velocidade com análise seletiva de dados. Combine a definição prévia do nível de evidência suficiente.",
+    "communication": "Precisão e objetividade tendem a orientar a mensagem. Explicitar prioridade e impacto humano torna a mensagem mais acessível.",
+    "decision": "A decisão tende a reunir velocidade e análise seletiva de dados. Estabeleça previamente o nível de evidência suficiente.",
     "leadership": "Lidera por metas e padrões claramente definidos. Reconhecer avanços, além de apontar lacunas, amplia a autonomia da equipe.",
-    "team": "A pessoa tende a contribuir com foco e consistência técnica ao grupo. Diferencie erro de aprendizagem de descuido operacional.",
+    "team": "Foco e consistência técnica tendem a fortalecer a contribuição ao grupo. Diferencie erro de aprendizagem de descuido operacional.",
     "pressure": "Sob pressão, cobrança e criticidade tendem a aumentar. Uma pausa para ordenar fatos e consequências reduz respostas excessivamente duras.",
-    "change": "A pessoa tende a apoiar mudanças com ganho objetivo e lógica consistente. Pilotos de curta duração oferecem evidência sem paralisar o avanço.",
+    "change": "Ganhos objetivos e lógica consistente tendem a favorecer o apoio à mudança. Pilotos de curta duração oferecem evidência sem paralisar o avanço.",
     "experiments": [
       "Definir padrão suficiente antes do início da entrega.",
       "Reconhecer contribuição antes de indicar correção.",
@@ -136,7 +136,7 @@
     }
   },
   "IS": {
-    "essence": "A pessoa tende a envolver pelo diálogo e preservar vínculos na execução. Aproveite essa aproximação para construir adesão, sem transferir a ela toda a responsabilidade pelo clima.",
+    "essence": "O diálogo costuma gerar envolvimento, com atenção aos vínculos durante a execução. Aproveite essa aproximação para construir adesão, sem transferir a ela toda a responsabilidade pelo clima.",
     "best": [
       "Constrói confiança com naturalidade.",
       "Identifica o clima do grupo rapidamente.",
@@ -150,12 +150,12 @@
       "Prioriza clima acima de clareza."
     ],
     "perceived": "A intenção é incluir e apoiar a equipe. Em certas situações, pode ser percebida como dificuldade de confronto ou falta de prioridade explícita.",
-    "communication": "A pessoa tende a favorecer diálogo, proximidade e escuta ativa. Nomear expectativas e discordâncias com a mesma clareza do acolhimento fortalece a mensagem.",
-    "decision": "A pessoa tende a considerar primeiramente o impacto sobre as pessoas. Prazos e critérios evitam que a busca de concordância adie decisões necessárias.",
+    "communication": "Diálogo, proximidade e escuta ativa costumam marcar as interações. Nomear expectativas e discordâncias com a mesma clareza do acolhimento fortalece a mensagem.",
+    "decision": "O impacto sobre as pessoas costuma ser considerado primeiro. Prazos e critérios evitam que a busca de concordância adie decisões necessárias.",
     "leadership": "Lidera por vínculo, participação e abertura para participar. A liderança se amplia quando o cuidado inclui cobrança e consequência.",
-    "team": "A pessoa tende a colaborar com disponibilidade. Preserve limites de carga para que o apoio não comprometa suas entregas.",
+    "team": "A disponibilidade para colaborar costuma aparecer no trabalho conjunto. Preserve limites de carga para que o apoio não comprometa suas entregas.",
     "pressure": "Sob pressão, tende a buscar aprovação ou silenciar desconfortos. Conversas diretas e respeitosas reduzem o desgaste acumulado.",
-    "change": "A pessoa tende a apoiar mudanças quando a equipe compreende o sentido e recebe suporte adequado. Pode traduzir impacto e construir adesão gradual.",
+    "change": "Compreensão do sentido e suporte à equipe costumam favorecer a adesão à mudança. Pode traduzir impacto e construir adesão gradual.",
     "experiments": [
       "Formular pedido explícito em vez de oferecer ajuda proativamente.",
       "Registrar discordâncias e próximos passos.",
@@ -170,7 +170,7 @@
     }
   },
   "IC": {
-    "essence": "A pessoa tende a envolver o público e dar sustentação à mensagem com preparo. Defina o propósito da apresentação e o que precisa ser tecnicamente demonstrado.",
+    "essence": "O envolvimento do público tende a ganhar sustentação no preparo da mensagem. Defina o propósito da apresentação e o que precisa ser tecnicamente demonstrado.",
     "best": [
       "Traduz complexidade com clareza.",
       "Apresenta propostas de forma envolvente.",
@@ -184,12 +184,12 @@
       "Perde foco em detalhes de apresentação."
     ],
     "perceived": "A intenção é tornar a proposta clara e convincente. Dependendo do contexto, pode ser percebida como excesso de elaboração.",
-    "communication": "A pessoa tende a combinar presença e conteúdo técnico na comunicação. Iniciar pela mensagem central e ajustar profundidade ao público aumenta o impacto.",
-    "decision": "A pessoa tende a alternar intuição social e verificação técnica. Tornar critérios explícitos evita reabertura recorrente do mesmo tema.",
+    "communication": "A presença na conversa tende a se apoiar também no conteúdo técnico. Iniciar pela mensagem central e ajustar profundidade ao público aumenta o impacto.",
+    "decision": "A escolha pode transitar entre intuição social e verificação técnica. Tornar critérios explícitos evita reabertura recorrente do mesmo tema.",
     "leadership": "Lidera explicando, envolvendo e qualificando a equipe. Delegar sem prescrever cada detalhe favorece a autonomia.",
-    "team": "A pessoa tende a conectar diferentes linguagens e perspectivas no grupo. Evite que análise e narrativa substituam decisões práticas.",
+    "team": "Diferentes linguagens e perspectivas tendem a encontrar conexão nessa atuação. Evite que análise e narrativa substituam decisões práticas.",
     "pressure": "Sob pressão, tende a falar mais ou aprofundar detalhes para recuperar segurança. Sintetizar fato, escolha e próximo passo reduz ruído.",
-    "change": "A pessoa tende a comunicar bem o sentido da mudança e antecipa dúvidas da equipe. Pilotos e ciclos de retorno equilibram adesão e precisão.",
+    "change": "A comunicação do sentido da mudança pode vir acompanhada da antecipação de dúvidas. Pilotos e ciclos de retorno equilibram adesão e precisão.",
     "experiments": [
       "Resumir propostas em uma frase antes dos detalhes.",
       "Definir prazo para encerramento da análise.",
@@ -204,7 +204,7 @@
     }
   },
   "SD": {
-    "essence": "A pessoa tende a sustentar a rotina e assumir firmeza quando o compromisso está em risco. Convide-a a explicitar posições antes que a urgência decida por ela.",
+    "essence": "A constância na rotina pode dar lugar à firmeza quando um compromisso está em risco. Convide-a a explicitar posições antes que a urgência decida por ela.",
     "best": [
       "Mantém entregas em cenários exigentes.",
       "Age com firmeza quando necessário.",
@@ -218,12 +218,12 @@
       "Acumula pressão silenciosamente."
     ],
     "perceived": "A intenção é preservar estabilidade e resolver impasses. Quando limites aparecem tarde, pode-se perceber mudança brusca de paciência para firmeza.",
-    "communication": "A pessoa tende a observar antes de se manifestar e ser clara ao se posicionar. Antecipar necessidades evita mensagens tardias ou intensas.",
-    "decision": "A pessoa tende a amadurecer escolhas e agir com determinação após convicção formada. Estabelecer prazo para decidir protege o ritmo sem gerar demora.",
+    "communication": "A observação costuma vir antes da fala; ao se posicionar, tende a buscar clareza. Antecipar necessidades evita mensagens tardias ou intensas.",
+    "decision": "Após amadurecer a escolha, tende a agir com determinação quando forma convicção. Estabelecer prazo para decidir protege o ritmo sem gerar demora.",
     "leadership": "Oferece segurança, consistência e firmeza prática à equipe. Compartilhar a direção antecipadamente amplia a participação do grupo.",
-    "team": "A pessoa tende a funcionar como ponto de apoio e execução confiável. Evite absorção de tarefas que pertencem a outros integrantes.",
+    "team": "A equipe pode contar com apoio e execução confiável. Evite absorção de tarefas que pertencem a outros integrantes.",
     "pressure": "Sob pressão, tende a suportar por longo período antes de reagir com dureza. Sinalizar capacidade e necessidade de apoio preserva relações.",
-    "change": "A pessoa tende a aderir à mudança quando compreende impacto e caminho de execução. Funciona como ponte valiosa entre decisão e implementação sustentável.",
+    "change": "Compreender o impacto e o caminho de execução costuma favorecer a adesão. Funciona como ponte valiosa entre decisão e implementação sustentável.",
     "experiments": [
       "Comunicar limite no primeiro sinal de sobrecarga.",
       "Definir data para decisões adiadas.",
@@ -238,7 +238,7 @@
     }
   },
   "SI": {
-    "essence": "A pessoa tende a manter vínculos e facilitar a cooperação cotidiana. Faça pedidos explícitos e verifique se o cuidado com o grupo deixa espaço para suas próprias prioridades.",
+    "essence": "A manutenção dos vínculos costuma favorecer a cooperação no cotidiano. Faça pedidos explícitos e verifique se o cuidado com o grupo deixa espaço para suas próprias prioridades.",
     "best": [
       "Escuta e acolhe perspectivas diversas.",
       "Sustenta clima cooperativo.",
@@ -252,12 +252,12 @@
       "Depende de harmonia para avançar."
     ],
     "perceived": "A intenção é apoiar e manter a união do grupo. Em decisões difíceis, pode ser percebida como hesitação ou falta de firmeza.",
-    "communication": "A pessoa tende a criar segurança para o diálogo acontecer. Mensagens com pedido, prazo e consequência preservam o vínculo sem perder objetividade.",
-    "decision": "A pessoa tende a considerar amplamente o impacto coletivo antes de decidir. Definir quem precisa ser consultado evita que participação vire adiamento.",
+    "communication": "Um ambiente seguro costuma abrir espaço para o diálogo. Mensagens com pedido, prazo e consequência preservam o vínculo sem perder objetividade.",
+    "decision": "A consideração do impacto coletivo costuma anteceder a decisão. Definir quem precisa ser consultado evita que participação vire adiamento.",
     "leadership": "Lidera por confiança e exemplo pessoal. Comunicar expectativas antecipadamente evita frustração posterior.",
-    "team": "A pessoa tende a contribuir de forma agregadora e consistente ao grupo. Limites claros protegem a energia e estimulam reciprocidade.",
+    "team": "A contribuição ao grupo costuma ser agregadora e consistente. Limites claros protegem a energia e estimulam reciprocidade.",
     "pressure": "Sob pressão, tende a absorver tensão e minimizar o próprio desconforto. Nomear fatos e solicitar apoio reduz desgaste invisível.",
-    "change": "A pessoa tende a facilitar transições quando pode preparar a equipe e os vínculos envolvidos. Experiências pequenas constroem confiança no novo.",
+    "change": "A preparação da equipe e dos vínculos envolvidos tende a facilitar a transição. Experiências pequenas constroem confiança no novo.",
     "experiments": [
       "Transformar expectativa silenciosa em pedido explícito.",
       "Recusar demanda de baixo valor.",
@@ -272,7 +272,7 @@
     }
   },
   "SC": {
-    "essence": "A pessoa tende a sustentar a rotina com método e cuidado. Esclareça o que deve permanecer e o que pode ser testado para que continuidade não impeça revisão.",
+    "essence": "Método e cuidado tendem a sustentar a continuidade da rotina. Esclareça o que deve permanecer e o que pode ser testado para que continuidade não impeça revisão.",
     "best": [
       "Sustenta padrões ao longo do tempo.",
       "Identifica riscos antes de crescerem.",
@@ -286,12 +286,12 @@
       "Busca segurança completa antes de experimentar."
     ],
     "perceived": "A intenção é proteger qualidade e estabilidade. Para ritmos mais rápidos, pode ser percebida como cautela excessiva ou demora.",
-    "communication": "A pessoa tende a comunicar com cuidado e base concreta. Antecipar a conclusão antes dos detalhes facilita a compreensão de públicos diferentes.",
-    "decision": "A pessoa tende a decidir após organizar informação e impactos. Um critério de suficiência evita espera por segurança completa.",
+    "communication": "Cuidado e base concreta tendem a sustentar a comunicação. Antecipar a conclusão antes dos detalhes facilita a compreensão de públicos diferentes.",
+    "decision": "A organização das informações e dos impactos tende a preceder a escolha. Um critério de suficiência evita espera por segurança completa.",
     "leadership": "Lidera por método, previsibilidade e coerência. Abrir espaço para experimentação mantém padrão sem limitar inovação.",
-    "team": "A pessoa tende a oferecer apoio, memória e qualidade operacional ao grupo. Ajude a tornar o raciocínio visível para evitar interpretação de resistência.",
+    "team": "Apoio, memória e qualidade operacional podem beneficiar a equipe. Ajude a tornar o raciocínio visível para evitar interpretação de resistência.",
     "pressure": "Sob pressão, tende a aumentar conferências e retrair-se. Distinguir risco real de desconforto com incerteza ajuda a priorizar.",
-    "change": "A pessoa tende a apoiar mudanças planejadas, testadas e bem comunicadas. Pode converter novidade em rotina sustentável.",
+    "change": "Planejamento, testes e boa comunicação costumam favorecer o apoio à mudança. Pode converter novidade em rotina sustentável.",
     "experiments": [
       "Definir mínimo seguro para iniciar.",
       "Compartilhar análise ainda em construção.",
@@ -306,7 +306,7 @@
     }
   },
   "CD": {
-    "essence": "A pessoa tende a aprofundar a análise e assumir direção quando encontra fundamento. Delimite as evidências essenciais e a responsabilidade pela decisão.",
+    "essence": "A análise aprofundada costuma anteceder uma posição firme, apoiada em fundamentos. Delimite as evidências essenciais e a responsabilidade pela decisão.",
     "best": [
       "Decide com base consistente.",
       "Enfrenta problemas técnicos complexos.",
@@ -320,12 +320,12 @@
       "Desconsidera aspectos relacionais da decisão."
     ],
     "perceived": "A intenção é garantir solução sólida. O mesmo foco pode ser percebido como crítica ou pouca abertura para alternativas.",
-    "communication": "A pessoa tende a preferir argumentos objetivos e bem estruturados. Explicitar impacto e intenção aproxima a equipe da análise.",
-    "decision": "A pessoa tende a analisar profundamente e conclui com firmeza. Definir o que é reversível permite decisões mais rápidas quando o risco é controlado.",
+    "communication": "Argumentos objetivos e bem estruturados costumam ter maior receptividade. Explicitar impacto e intenção aproxima a equipe da análise.",
+    "decision": "O aprofundamento da análise costuma levar a uma conclusão firme. Definir o que é reversível permite decisões mais rápidas quando o risco é controlado.",
     "leadership": "Lidera por competência, padrão e clareza. Reconhecer processo e progresso, não apenas resultado final, amplia a confiança da equipe.",
-    "team": "A pessoa tende a contribuir com rigor e capacidade de resolução. Envolva a equipe na construção de critérios.",
+    "team": "O rigor e a capacidade de resolução tendem a contribuir com o grupo. Envolva a equipe na construção de critérios.",
     "pressure": "Sob pressão, exigência e controle tendem a aumentar. Priorizar riscos críticos e flexibilizar o restante protege foco e relação.",
-    "change": "A pessoa tende a apoiar mudança com fundamento e benefício demonstrável. Experimentos reversíveis reduzem necessidade de certeza antecipada.",
+    "change": "Fundamento e benefício demonstrável tendem a favorecer a adesão à mudança. Experimentos reversíveis reduzem necessidade de certeza antecipada.",
     "experiments": [
       "Classificar decisões entre reversíveis e irreversíveis.",
       "Perguntar antes de corrigir.",
@@ -340,7 +340,7 @@
     }
   },
   "CI": {
-    "essence": "A pessoa tende a organizar conhecimento e torná-lo acessível ao interlocutor. Aproveite sua preparação para traduzir critérios, sem exigir o mesmo detalhe em toda conversa.",
+    "essence": "O conhecimento organizado tende a ganhar uma forma acessível ao interlocutor. Aproveite sua preparação para traduzir critérios, sem exigir o mesmo detalhe em toda conversa.",
     "best": [
       "Transforma informação em entendimento.",
       "Prepara mensagens consistentes.",
@@ -354,12 +354,12 @@
       "Oscila entre reserva e exposição intensa."
     ],
     "perceived": "A intenção é oferecer clareza e segurança. Dependendo do momento, pode ser percebida como excesso de detalhe.",
-    "communication": "A pessoa tende a preparar o conteúdo e adaptar a apresentação ao público. Iniciar pela conclusão facilita a localização de detalhes.",
-    "decision": "A pessoa tende a combinar evidência e leitura de audiência. Separar fato, preferência e receio torna a escolha mais nítida.",
+    "communication": "O preparo do conteúdo costuma preceder a adaptação da mensagem ao público. Iniciar pela conclusão facilita a localização de detalhes.",
+    "decision": "Evidências e leitura de audiência tendem a participar da escolha. Separar fato, preferência e receio torna a escolha mais nítida.",
     "leadership": "Lidera por conhecimento e capacidade de explicação. Aceitar soluções alternativas que atendam critérios favorece autonomia.",
-    "team": "A pessoa tende a funcionar como ponte entre técnica e relacionamento. Equilibre preparação individual com construção conjunta.",
+    "team": "A atuação pode aproximar a técnica do relacionamento na equipe. Equilibre preparação individual com construção conjunta.",
     "pressure": "Sob pressão, tende a revisar demais ou verbalizar para organizar o pensamento. Um roteiro curto protege tempo e clareza.",
-    "change": "A pessoa tende a apoiar mudanças que façam sentido e possam ser bem explicadas. Traduz razões, riscos e critérios para a equipe.",
+    "change": "Razões compreensíveis e bem explicadas costumam favorecer o apoio à mudança. Traduz razões, riscos e critérios para a equipe.",
     "experiments": [
       "Apresentar conclusão nos primeiros trinta segundos.",
       "Publicar versão satisfatória antes da perfeita.",
@@ -374,7 +374,7 @@
     }
   },
   "CS": {
-    "essence": "A pessoa tende a preservar padrões por meio de análise e acompanhamento consistente. Defina quando uma revisão termina e como os conhecimentos serão compartilhados.",
+    "essence": "Análise e acompanhamento consistente costumam proteger a manutenção dos padrões. Defina quando uma revisão termina e como os conhecimentos serão compartilhados.",
     "best": [
       "Mantém qualidade de forma previsível.",
       "Organiza conhecimento e processos.",
@@ -388,12 +388,12 @@
       "Revisa além do impacto real."
     ],
     "perceived": "A intenção é cuidar da qualidade e evitar riscos. Em cenários velozes, pode ser percebida como reserva ou excesso de cautela.",
-    "communication": "A pessoa tende a se expressar com ponderação e precisão. Tornar a conclusão visível e comunicar dúvidas cedo evita interpretação equivocada do silêncio.",
-    "decision": "A pessoa tende a comparar opções com profundidade e considera consequências. Prazos e critérios de suficiência ajudam a concluir.",
+    "communication": "Ponderação e precisão tendem a marcar a forma de se expressar. Tornar a conclusão visível e comunicar dúvidas cedo evita interpretação equivocada do silêncio.",
+    "decision": "A comparação das opções costuma incluir análise profunda das consequências. Prazos e critérios de suficiência ajudam a concluir.",
     "leadership": "Lidera por coerência, método e cuidado. Oferecer direção explícita em momentos ambíguos aumenta a segurança do grupo.",
-    "team": "A pessoa tende a contribuir com confiabilidade, escuta e memória técnica. Incentive a pessoa a ocupar mais espaço quando a análise precisa influenciar o rumo.",
+    "team": "Confiabilidade, escuta e memória técnica podem apoiar o trabalho conjunto. Incentive a pessoa a ocupar mais espaço quando a análise precisa influenciar o rumo.",
     "pressure": "Sob pressão, tende a retrair-se, conferir mais ou manter rotinas conhecidas. Explicitar prioridades direciona energia ao que importa.",
-    "change": "A pessoa tende a preferir transições planejadas e fundamentadas. Pode ser essencial para converter mudança em processo confiável.",
+    "change": "Transições planejadas e fundamentadas costumam ter maior receptividade. Pode ser essencial para converter mudança em processo confiável.",
     "experiments": [
       "Compartilhar preocupação antes de concluir a análise.",
       "Definir prazo e critério para fechar decisão.",
