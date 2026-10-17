@@ -49,19 +49,19 @@
   ],
   [
     "Com (.*?) no (?:seu )?repertório, escolha uma situação por semana para reduzir conscientemente a intensidade desse padrão e testar uma resposta complementar\\.",
-    "Combine uma situação recorrente para a pessoa moderar $1 e avaliar o efeito de outra abordagem."
+    "O líder pode combinar uma situação para a pessoa moderar $1 e avaliar o efeito de outra abordagem."
   ],
   [
     "Com (.*?) no (?:seu )?repertório, escolha uma situação por semana para ampliar deliberadamente o recurso de (.*?)\\.",
-    "Escolha uma tarefa em que a pessoa usa $1 e combine a prática de $2."
+    "O líder pode escolher uma tarefa em que a pessoa usa $1 e combine a prática de $2."
   ],
   [
     "Com (.*?) no (?:seu )?repertório, observe quando esse recurso aparece naturalmente e registre uma situação em que você poderia usá-lo com mais intenção\\.",
-    "Observe quando a pessoa recorre a $1 e combine onde aplicá-la de forma intencional."
+    "O líder pode observar quando a pessoa recorre a $1 e combine onde aplicá-la de forma intencional."
   ],
   [
     "A relação entre ([DISC]) e ([DISC]) indica uma oportunidade de equilíbrio: pratique um comportamento de (.*?) em uma situação em que (.*?) costuma aparecer primeiro\\.",
-    "Na relação entre $1 e $2, acompanhe a prática de $3 em uma tarefa iniciada por $4."
+    "Na relação entre $1 e $2, o líder pode acompanhar a prática de $3 em uma tarefa iniciada por $4."
   ],
   [
     "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ dominância,\\ com\\ I\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
@@ -73,90 +73,90 @@
   ],
   [
     "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ influência,\\ com\\ D\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
-    "No ambiente profissional, tende a abrir oportunidades pelo relacionamento e converter isso em iniciativa. Recomenda-se foco em fechamento das frentes abertas."
+    "No ambiente profissional, a pessoa tende a abrir oportunidades pelo relacionamento e converter isso em iniciativa. Recomenda-se foco em fechamento das frentes abertas."
   ],
   [
     "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ influência\\ e\\ dominância\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
-    "Constrói vínculo com facilidade e utiliza essa proximidade para mobilizar. Recomenda-se cuidado para que a proximidade não funcione como pressão implícita."
+    "A pessoa constrói vínculo com facilidade e utiliza essa proximidade para mobilizar. Recomenda-se cuidado para que a proximidade não funcione como pressão implícita."
   ],
   [
     "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ dominância,\\ com\\ S\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
-    "No trabalho, assume compromissos e sustenta a entrega até a conclusão. Recomenda-se atenção para que a sustentação não evolua para sobrecarga silenciosa."
+    "No trabalho, a pessoa assume compromissos e sustenta a entrega até a conclusão. Recomenda-se atenção para que a sustentação não evolua para sobrecarga silenciosa."
   ],
   [
     "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ dominância\\ e\\ estabilidade\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
-    "Protege vínculos com constância, mesmo a custo de energia pessoal. A comunicação antecipada de limites evita desgaste relacional."
+    "A pessoa protege vínculos com constância, mesmo a custo de energia pessoal. A comunicação antecipada de limites evita desgaste relacional."
   ],
   [
     "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ dominância,\\ com\\ C\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
-    "No trabalho, identifica riscos com antecedência e age com firmeza quando a base de evidência é suficiente. Recomenda-se evitar paralisia por busca de certeza total."
+    "No trabalho, a pessoa identifica riscos com antecedência e age com firmeza quando a base de evidência é suficiente. Recomenda-se evitar paralisia por busca de certeza total."
   ],
   [
     "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ dominância\\ e\\ conformidade\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
-    "Demonstra cuidado por meio de padrão elevado, o que pode ser lido como distanciamento. Explicitar a intenção por trás da exigência aproxima a relação."
+    "A pessoa demonstra cuidado por meio de padrão elevado, o que pode ser lido como distanciamento. Explicitar a intenção por trás da exigência aproxima a relação."
   ],
   [
     "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ influência,\\ com\\ S\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
-    "No trabalho, mantém a coesão do grupo e favorece a colaboração. Recomenda-se atenção para que a disponibilidade não evolua para sobrecarga."
+    "No trabalho, a pessoa mantém a coesão do grupo e favorece a colaboração. Recomenda-se atenção para que a disponibilidade não evolua para sobrecarga."
   ],
   [
     "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ influência\\ e\\ estabilidade\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
-    "Constrói vínculo com rapidez e naturalidade. Expressar discordância no momento adequado fortalece a confiança na relação."
+    "A pessoa constrói vínculo com rapidez e naturalidade. Expressar discordância no momento adequado fortalece a confiança na relação."
   ],
   [
     "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ influência,\\ com\\ C\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
-    "No trabalho, destrava entendimento em temas complexos com eficiência. Recomenda-se encerrar a análise em prazo definido."
+    "No trabalho, a pessoa destrava entendimento em temas complexos com eficiência. Recomenda-se encerrar a análise em prazo definido."
   ],
   [
     "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ influência\\ e\\ conformidade\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
-    "Conecta pessoas por meio de boas explicações e presença qualificada. Recomenda-se evitar que a clareza vire controle da interpretação alheia."
+    "A pessoa conecta pessoas por meio de boas explicações e presença qualificada. Recomenda-se evitar que a clareza vire controle da interpretação alheia."
   ],
   [
     "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ estabilidade,\\ com\\ D\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
-    "No trabalho, entrega com consistência e assume firmeza quando necessário. Recomenda-se evitar acúmulo de sobrecarga antes de solicitar apoio."
+    "No trabalho, a pessoa entrega com consistência e assume firmeza quando necessário. Recomenda-se evitar acúmulo de sobrecarga antes de solicitar apoio."
   ],
   [
     "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ estabilidade\\ e\\ dominância\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
-    "Sustenta vínculos com paciência. Comunicar incômodos cedo evita ruptura brusca posterior."
+    "A pessoa sustenta vínculos com paciência. Comunicar incômodos cedo evita ruptura brusca posterior."
   ],
   [
     "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ estabilidade,\\ com\\ I\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
-    "No trabalho, integra a equipe e sustenta clima cooperativo. Recomenda-se cobrar acordos em tempo adequado."
+    "No trabalho, a pessoa integra a equipe e sustenta clima cooperativo. Recomenda-se cobrar acordos em tempo adequado."
   ],
   [
     "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ estabilidade\\ e\\ influência\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
-    "Constrói vínculo com acolhimento. Expressar limites fortalece, em vez de comprometer, a conexão."
+    "A pessoa constrói vínculo com acolhimento. Expressar limites fortalece, em vez de comprometer, a conexão."
   ],
   [
     "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ estabilidade,\\ com\\ C\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
-    "No trabalho, organiza rotinas confiáveis e protege a qualidade da entrega. Recomenda-se evitar paralisia diante de cenário incompleto."
+    "No trabalho, a pessoa organiza rotinas confiáveis e protege a qualidade da entrega. Recomenda-se evitar paralisia diante de cenário incompleto."
   ],
   [
     "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ estabilidade\\ e\\ conformidade\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
-    "Constrói confiança pela constância e pelo cuidado. Compartilhar dúvidas em tempo real evita interpretação equivocada do silêncio."
+    "A pessoa constrói confiança pela constância e pelo cuidado. Compartilhar dúvidas em tempo real evita interpretação equivocada do silêncio."
   ],
   [
     "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ conformidade,\\ com\\ D\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
-    "No trabalho, questiona premissas e entrega soluções consistentes. Recomenda-se evitar elevação de padrão além do necessário."
+    "No trabalho, a pessoa questiona premissas e entrega soluções consistentes. Recomenda-se evitar elevação de padrão além do necessário."
   ],
   [
     "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ conformidade\\ e\\ dominância\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
-    "Demonstra cuidado por meio de precisão, o que pode ser lido como distância. Explicitar intenção aproxima a relação."
+    "A pessoa demonstra cuidado por meio de precisão, o que pode ser lido como distância. Explicitar intenção aproxima a relação."
   ],
   [
     "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ conformidade,\\ com\\ I\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
-    "No trabalho, prepara bem o conteúdo e antecipa dúvidas do público. Recomenda-se evitar revisão além do ponto de clareza suficiente."
+    "No trabalho, a pessoa prepara bem o conteúdo e antecipa dúvidas do público. Recomenda-se evitar revisão além do ponto de clareza suficiente."
   ],
   [
     "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ conformidade\\ e\\ influência\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
-    "Gera confiança explicando com cuidado. Simplificar, por vezes, aproxima mais do que detalhar extensivamente."
+    "A pessoa gera confiança explicando com cuidado. Simplificar, por vezes, aproxima mais do que detalhar extensivamente."
   ],
   [
     "Na\\ execução,\\ a\\ pessoa\\ tende\\ a\\ iniciar\\ pela\\ conformidade,\\ com\\ S\\ como\\ recurso\\ complementar\\.\\ Identifique\\ a\\ tarefa\\ em\\ que\\ essa\\ combinação\\ contribui\\ e\\ dê\\ retorno\\ sobre\\ a\\ entrega\\ observada\\.",
-    "No trabalho, sustenta qualidade de forma previsível e organiza conhecimento. Recomenda-se evitar adiamento de decisões por busca de segurança completa."
+    "No trabalho, a pessoa sustenta qualidade de forma previsível e organiza conhecimento. Recomenda-se evitar adiamento de decisões por busca de segurança completa."
   ],
   [
     "Na\\ interação,\\ a\\ pessoa\\ pode\\ combinar\\ conformidade\\ e\\ estabilidade\\.\\ Observe\\ como\\ seus\\ pares\\ recebem\\ a\\ abordagem\\ e\\ negocie\\ um\\ modo\\ de\\ colaboração\\ que\\ não\\ imponha\\ um\\ único\\ ritmo\\.",
-    "Constrói confiança pela constância e escuta atenta. Expressar preocupação cedo evita desgaste silencioso."
+    "A pessoa constrói confiança pela constância e escuta atenta. Expressar preocupação cedo evita desgaste silencioso."
   ]
 ]
