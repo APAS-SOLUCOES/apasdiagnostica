@@ -1,6 +1,6 @@
 {
   "DI": {
-    "essence": "Você tende a enxergar uma oportunidade e querer colocá-la em prática. A conversa ajuda você a reunir apoio para sair da intenção e começar.",
+    "essence": "Ao enxergar uma oportunidade, você costuma querer colocá-la em prática. A conversa ajuda você a reunir apoio para sair da intenção e começar.",
     "best": [
       "Você destrava situações paradas com uma decisão simples.",
       "Fala com energia que contagia e reduz resistência.",
@@ -68,7 +68,7 @@
     }
   },
   "DS": {
-    "essence": "Você tende a escolher uma direção e cuidar para que ela se sustente. Seu jeito reúne disposição para resolver e compromisso com aquilo que não pode ficar pelo caminho.",
+    "essence": "Sua disposição é escolher uma direção e cuidar para que ela se sustente. Seu jeito reúne disposição para resolver e compromisso com aquilo que não pode ficar pelo caminho.",
     "best": [
       "Você transforma decisão em continuidade real.",
       "Protege compromissos mesmo sob desgaste.",
@@ -102,7 +102,7 @@
     }
   },
   "DC": {
-    "essence": "Você tende a olhar para o resultado e buscar um caminho que tenha fundamento. Seu impulso de realização ganha segurança quando encontra critérios claros para a entrega.",
+    "essence": "Seu olhar costuma se voltar para o resultado, buscando um caminho que tenha fundamento. Seu impulso de realização ganha segurança quando encontra critérios claros para a entrega.",
     "best": [
       "Você resolve problemas complexos com objetividade.",
       "Eleva o padrão de qualquer entrega que passa por você.",
@@ -136,7 +136,7 @@
     }
   },
   "IS": {
-    "essence": "Você tende a aproximar as pessoas pelo diálogo e a cuidar para que elas se sintam parte da conversa. Sua participação pode tornar o ambiente mais aberto à colaboração.",
+    "essence": "Pelo diálogo, você pode aproximar as pessoas e a cuidar para que elas se sintam parte da conversa. Sua participação pode tornar o ambiente mais aberto à colaboração.",
     "best": [
       "Você constrói confiança quase sem esforço aparente.",
       "Percebe o clima do grupo antes de qualquer sinal explícito.",
@@ -170,7 +170,7 @@
     }
   },
   "IC": {
-    "essence": "Você tende a apresentar ideias de maneira envolvente e a buscar preparo para sustentar o que diz. Essa combinação pode aproximar as pessoas de assuntos que pareciam difíceis.",
+    "essence": "Ao apresentar ideias, você pode envolver as pessoas e buscar preparo para sustentar o que diz. Essa combinação pode aproximar as pessoas de assuntos que pareciam difíceis.",
     "best": [
       "Você traduz complexidade em clareza acessível.",
       "Apresenta ideias de um jeito envolvente.",
@@ -243,7 +243,7 @@
       "Você escuta e acolhe perspectivas diferentes.",
       "Sustenta um clima cooperativo de forma natural.",
       "Integra pessoas novas ao grupo com facilidade.",
-      "Mantém comunicação próxima no dia a dia."
+      "A pessoa mantém comunicação próxima no dia a dia."
     ],
     "excess": [
       "Você coloca necessidade alheia antes da própria.",
@@ -272,7 +272,7 @@
     }
   },
   "SC": {
-    "essence": "Você tende a cuidar da continuidade por meio de rotinas bem pensadas. Método e atenção aos detalhes ajudam você a manter uma entrega em que as pessoas possam confiar.",
+    "essence": "Rotinas bem pensadas ajudam você a cuidar da continuidade. Método e atenção aos detalhes ajudam você a manter uma entrega em que as pessoas possam confiar.",
     "best": [
       "Você sustenta padrões ao longo do tempo.",
       "Percebe riscos antes que cresçam demais.",
@@ -311,7 +311,7 @@
       "Você decide com base consistente, não por impulso.",
       "Enfrenta problemas técnicos difíceis de frente.",
       "Protege qualidade e resultado ao mesmo tempo.",
-      "Questiona premissas antes de avançar."
+      "A pessoa questiona premissas antes de avançar."
     ],
     "excess": [
       "Você eleva o padrão além do que a situação pede.",
@@ -351,7 +351,7 @@
       "Você explica além do necessário.",
       "Busca aprovação para validar uma análise já pronta.",
       "Revisa a forma excessivamente antes de entregar.",
-      "Oscila entre reserva e exposição intensa."
+      "A pessoa oscila entre reserva e exposição intensa."
     ],
     "perceived": "Você quer oferecer clareza e segurança. Dependendo do momento, isso pode parecer excesso de detalhe.",
     "communication": "Você costuma chegar à conversa com o conteúdo preparado. Abrir pela conclusão ajuda quem ouve a encontrar o lugar de cada detalhe na sua explicação.",

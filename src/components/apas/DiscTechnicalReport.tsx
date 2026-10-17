@@ -237,7 +237,11 @@ export function DiscTechnicalReport({
           <Box title="DESENVOLVIMENTO">{editorial.development}</Box>
         </div>
         <Box title="EXPERIMENTOS DE DESENVOLVIMENTO" tone="red">
-          {(adaptive.experiments?.slice(0, 3).length ? adaptive.experiments.slice(0, 3) : narrative.experiments.slice(0, 3)).join(" • ")}
+          <div role="list" aria-label="Experimentos de desenvolvimento">
+            {(adaptive.experiments?.slice(0, 3).length ? adaptive.experiments.slice(0, 3) : narrative.experiments.slice(0, 3)).map((experiment, index) => (
+              <div role="listitem" key={index}>• {experiment}</div>
+            ))}
+          </div>
         </Box>
       </ApprovedPage>
 
