@@ -99,7 +99,7 @@ function DetalhePage() {
             secao: "Como você pode ser percebido",
             titulo: "Como você pode ser percebido",
             subtitulo: "A impressão que você provoca nos outros",
-            intro: narrative.perceived,
+            intro: narrative.perceived.replace("Seu primeiro recurso tende a orientar a resposta; o segundo ajuda a ajustar o percurso.", "A forma como você inicia uma resposta pode marcar a impressão que deixa; abrir espaço à contribuição dos outros ajuda a calibrar esse impacto."),
             cards: [
               { titulo: "Nas relações", texto: narrative.situations?.relationships, cor: "vermelho" as const },
               { titulo: "Na comunicação", texto: editorial.perceivedCommunication, cor: "escuro" as const },
@@ -200,7 +200,7 @@ function DetalhePage() {
           },
           numeros: {
             descricao:
-              "Natural " + natural[p].toFixed(1).replace(".", ",") + "% · Adaptado " +
+              factorName(p) + ": Natural " + natural[p].toFixed(1).replace(".", ",") + "% · Adaptado " +
               adapted[p].toFixed(1).replace(".", ",") + "% · Social " +
               social[p].toFixed(1).replace(".", ",") + "%",
             indiceTexto:
