@@ -58,7 +58,7 @@
     "managerAttention": "Antes de atribuir a dificuldade ao estilo, confira recursos, informação e carga. Observe quando a busca de certeza retarda a decisão.",
     "teamCommunication": "Nas passagens entre áreas, peça que a pessoa explicite o que ficou pendente. A pessoa tende a conferir a origem dos dados.",
     "integration": "Distribua responsabilidades para que dominância e conformidade contribuam sem concentrar toda a tarefa na pessoa.",
-    "development": "Trabalhe a negociação de prazos com as áreas envolvidas. Peça uma conclusão provisória com suas ressalvas.",
+    "development": "Trabalhe a negociação de prazos com as áreas envolvidas. Peça à pessoa uma conclusão provisória com as ressalvas dela.",
     "resultsPlan": "No início do ciclo, alinhe uma entrega observável. Ofereça uma meta desafiadora e verificável. Na semana seguinte, confira os marcos combinados.",
     "peoplePlan": "Durante o ciclo, dê retorno sobre uma interação concreta. Combine o ponto em que a análise é suficiente.",
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Solicite uma alternativa antes do fechamento. Ajuste o próximo acompanhamento."
@@ -90,7 +90,7 @@
     "managerAttention": "Antes de atribuir a dificuldade ao estilo, confira recursos, informação e carga. Observe quando a busca de certeza retarda a decisão.",
     "teamCommunication": "Nas passagens entre áreas, peça que a pessoa explicite o que ficou pendente. A pessoa tende a conferir a origem dos dados.",
     "integration": "Distribua responsabilidades para que influência e conformidade contribuam sem concentrar toda a tarefa na pessoa.",
-    "development": "Acompanhe o encerramento das frentes abertas. Peça uma conclusão provisória com suas ressalvas.",
+    "development": "Acompanhe o encerramento das frentes abertas. Peça à pessoa uma conclusão provisória com as ressalvas dela.",
     "resultsPlan": "No início do ciclo, alinhe uma entrega observável. Dê espaço para propor abordagens. Na semana seguinte, confira os marcos combinados.",
     "peoplePlan": "Durante o ciclo, dê retorno sobre uma interação concreta. Combine o ponto em que a análise é suficiente.",
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça a fonte dos argumentos relevantes. Ajuste o próximo acompanhamento."
@@ -138,7 +138,7 @@
     "managerAttention": "Antes de atribuir a dificuldade ao estilo, confira recursos, informação e carga. Observe quando a busca de certeza retarda a decisão.",
     "teamCommunication": "Nas passagens entre áreas, peça que a pessoa explicite o que ficou pendente. A pessoa tende a conferir a origem dos dados.",
     "integration": "Distribua responsabilidades para que estabilidade e conformidade contribuam sem concentrar toda a tarefa na pessoa.",
-    "development": "Ajude a distinguir apoio voluntário de obrigação. Peça uma conclusão provisória com suas ressalvas.",
+    "development": "Ajude a distinguir apoio voluntário de obrigação. Peça à pessoa uma conclusão provisória com as ressalvas dela.",
     "resultsPlan": "No início do ciclo, alinhe uma entrega observável. Promova cooperação entre responsáveis. Na semana seguinte, confira os marcos combinados.",
     "peoplePlan": "Durante o ciclo, dê retorno sobre uma interação concreta. Combine o ponto em que a análise é suficiente.",
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. O líder pode ajudar a pessoa a praticar escolhas simples com prazo definido. Ajuste o próximo acompanhamento."
@@ -157,10 +157,10 @@
     "development": "Introduza testes pequenos com risco controlado. Solicite uma alternativa antes do fechamento.",
     "resultsPlan": "No início do ciclo, alinhe uma entrega observável. Dê acesso às informações necessárias. Na semana seguinte, confira os marcos combinados.",
     "peoplePlan": "Durante o ciclo, dê retorno sobre uma interação concreta. Peça que exponha a razão da escolha ao grupo.",
-    "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça uma conclusão provisória com suas ressalvas. Ajuste o próximo acompanhamento."
+    "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça à pessoa uma conclusão provisória com as ressalvas dela. Ajuste o próximo acompanhamento."
   },
   "CI": {
-    "managementReading": "O conhecimento organizado tende a ganhar uma forma acessível ao interlocutor. Aproveite sua preparação para traduzir critérios, sem exigir o mesmo detalhe em toda conversa.",
+    "managementReading": "O conhecimento organizado tende a ganhar uma forma acessível ao interlocutor. O líder pode aproveitar o preparo da pessoa para esclarecer critérios, sem exigir o mesmo detalhe em toda conversa.",
     "receive": "Forneça critérios de aceitação e informações verificáveis. Diferencie o que é requisito do que ainda pode ser discutido.",
     "feedback": "Apresente a evidência e o critério não atendido. Separe falha relevante de preferência pessoal do avaliador.",
     "tension": "A pessoa gera confiança explicando com cuidado. Simplificar, por vezes, aproxima mais do que detalhar extensivamente.",
@@ -173,7 +173,7 @@
     "development": "Introduza testes pequenos com risco controlado. Peça a fonte dos argumentos relevantes.",
     "resultsPlan": "No início do ciclo, alinhe uma entrega observável. Dê acesso às informações necessárias. Na semana seguinte, confira os marcos combinados.",
     "peoplePlan": "Durante o ciclo, dê retorno sobre uma interação concreta. Solicite o registro do compromisso assumido.",
-    "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça uma conclusão provisória com suas ressalvas. Ajuste o próximo acompanhamento."
+    "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça à pessoa uma conclusão provisória com as ressalvas dela. Ajuste o próximo acompanhamento."
   },
   "CS": {
     "managementReading": "Análise e acompanhamento consistente costumam proteger a manutenção dos padrões. Defina quando uma revisão termina e como os conhecimentos serão compartilhados.",
@@ -189,6 +189,6 @@
     "development": "Introduza testes pequenos com risco controlado. O líder pode ajudar a pessoa a praticar escolhas simples com prazo definido.",
     "resultsPlan": "No início do ciclo, alinhe uma entrega observável. Dê acesso às informações necessárias. Na semana seguinte, confira os marcos combinados.",
     "peoplePlan": "Durante o ciclo, dê retorno sobre uma interação concreta. Convide a pessoa a apresentar uma discordância cedo.",
-    "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça uma conclusão provisória com suas ressalvas. Ajuste o próximo acompanhamento."
+    "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça à pessoa uma conclusão provisória com as ressalvas dela. Ajuste o próximo acompanhamento."
   }
 }

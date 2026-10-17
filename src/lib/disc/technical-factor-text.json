@@ -4,16 +4,16 @@
     "headline": "Iniciativa com direção",
     "summary": "Diante de problemas abertos, a pessoa costuma buscar autonomia para resolver. O líder pode canalizar essa iniciativa oferecendo um desafio com resultado verificável.",
     "strengths": [
-      "Inicia a resolução de obstáculos.",
-      "Torna as prioridades explícitas.",
-      "Decide em cenários incompletos.",
-      "Mantém atenção aos compromissos de entrega."
+      "A pessoa inicia a resolução de obstáculos.",
+      "A pessoa torna as prioridades explícitas.",
+      "A pessoa decide em cenários incompletos.",
+      "A pessoa mantém atenção aos compromissos de entrega."
     ],
     "characteristics": [
       "A pessoa costuma agir antes de obter consenso.",
-      "Prefere responsabilidade com liberdade de execução.",
-      "Questiona etapas sem utilidade aparente.",
-      "Pode responder bem a problemas exigentes."
+      "A pessoa prefere responsabilidade com liberdade de execução.",
+      "A pessoa questiona etapas sem utilidade aparente.",
+      "A pessoa pode responder bem a problemas exigentes."
     ],
     "motivators": [
       "Defina a alçada de decisão.",
@@ -28,8 +28,8 @@
     ],
     "habits": [
       "A pessoa tende a organizar a tarefa pelo objetivo.",
-      "Pode pedir conclusões rápidas em reuniões.",
-      "Costuma intervir ao perceber risco na entrega."
+      "A pessoa pode pedir conclusões rápidas em reuniões.",
+      "A pessoa costuma intervir ao perceber risco na entrega."
     ],
     "communication": "A pessoa pode expressar posições de modo direto e rápido. Observe se apresenta sua conclusão antes de conhecer as restrições do interlocutor.",
     "development": [
@@ -53,16 +53,16 @@
     "headline": "Expressão que aproxima",
     "summary": "A conversa e a leitura do ambiente social podem ajudar a pessoa a gerar participação. O líder pode aproveitar essa articulação em tarefas que exijam adesão, com acordos registrados.",
     "strengths": [
-      "Cria abertura entre interlocutores.",
-      "Apresenta propostas de modo acessível.",
-      "Ajuda a recuperar o ânimo do grupo.",
-      "Aproxima interesses para viabilizar uma entrega."
+      "A pessoa cria abertura entre interlocutores.",
+      "A pessoa apresenta propostas de modo acessível.",
+      "A pessoa ajuda a recuperar o ânimo do grupo.",
+      "A pessoa aproxima interesses para viabilizar uma entrega."
     ],
     "characteristics": [
       "A pessoa costuma elaborar ideias em interação.",
-      "Valoriza retorno sobre sua participação.",
-      "Adapta exemplos ao público.",
-      "Prefere tarefas com troca e envolvimento."
+      "A pessoa valoriza retorno sobre sua participação.",
+      "A pessoa adapta exemplos ao público.",
+      "A pessoa prefere tarefas com troca e envolvimento."
     ],
     "motivators": [
       "Ofereça interlocução durante o projeto.",
@@ -77,8 +77,8 @@
     ],
     "habits": [
       "A pessoa tende a destravar assuntos pelo diálogo.",
-      "Busca aliados para apresentar uma proposta.",
-      "Pode tornar os avanços visíveis ao grupo."
+      "A pessoa busca aliados para apresentar uma proposta.",
+      "A pessoa pode tornar os avanços visíveis ao grupo."
     ],
     "communication": "A pessoa costuma comunicar com expressividade e exemplos. Observe se a mensagem central permanece clara quando surgem novas ideias.",
     "development": [
@@ -100,18 +100,18 @@
   "S": {
     "title": "Estabilidade",
     "headline": "Continuidade com cuidado",
-    "summary": "Continuidade e cooperação costumam orientar a atuação da pessoa. O líder pode aproveitar a confiabilidade da pessoa em entregas sustentadas, esclarecendo mudanças e protegendo a capacidade de trabalho da pessoa.",
+    "summary": "Continuidade e cooperação costumam orientar a atuação da pessoa. O líder pode apoiar entregas sustentadas, esclarecer mudanças e proteger a capacidade de trabalho dela.",
     "strengths": [
-      "Sustenta rotinas de entrega.",
-      "Escuta questões ainda pouco claras.",
-      "Oferece apoio contínuo ao grupo.",
-      "Ajuda a mediar diferenças de ritmo."
+      "A pessoa sustenta rotinas de entrega.",
+      "A pessoa escuta questões ainda pouco claras.",
+      "A pessoa oferece apoio contínuo ao grupo.",
+      "A pessoa ajuda a mediar diferenças de ritmo."
     ],
     "characteristics": [
       "A pessoa prefere compreender a transição antes de executá-la.",
-      "Busca reduzir conflitos desnecessários.",
-      "Mantém o compromisso assumido.",
-      "Constrói confiança por convivência consistente."
+      "A pessoa busca reduzir conflitos desnecessários.",
+      "A pessoa mantém o compromisso assumido.",
+      "A pessoa constrói confiança por convivência consistente."
     ],
     "motivators": [
       "Esclareça o que será esperado.",
@@ -126,8 +126,8 @@
     ],
     "habits": [
       "A pessoa costuma apoiar colegas na rotina.",
-      "Preserva práticas que dão previsibilidade.",
-      "Observa o cenário antes de se manifestar."
+      "A pessoa preserva práticas que dão previsibilidade.",
+      "A pessoa observa o cenário antes de se manifestar."
     ],
     "communication": "A pessoa tende a escutar antes de se posicionar. Verifique se a ausência de objeção representa acordo ou dificuldade de expressar uma ressalva.",
     "development": [
@@ -151,16 +151,16 @@
     "headline": "Análise que dá segurança",
     "summary": "Evidências e padrões costumam dar fundamento às escolhas da pessoa. O líder pode aproveitar a análise da pessoa em problemas com risco técnico, delimitando o nível de precisão necessário.",
     "strengths": [
-      "Identifica inconsistências relevantes.",
-      "Organiza argumentos verificáveis.",
-      "Estrutura etapas de trabalho.",
-      "Antecipa riscos para a entrega."
+      "A pessoa identifica inconsistências relevantes.",
+      "A pessoa organiza argumentos verificáveis.",
+      "A pessoa estrutura etapas de trabalho.",
+      "A pessoa antecipa riscos para a entrega."
     ],
     "characteristics": [
       "A pessoa costuma esclarecer premissas.",
-      "Registra critérios de decisão.",
-      "Busca conhecer o padrão exigido.",
-      "Analisa antes de apresentar uma conclusão."
+      "A pessoa registra critérios de decisão.",
+      "A pessoa busca conhecer o padrão exigido.",
+      "A pessoa analisa antes de apresentar uma conclusão."
     ],
     "motivators": [
       "Defina critérios de aceitação.",
@@ -175,13 +175,13 @@
     ],
     "habits": [
       "A pessoa tende a conferir a origem dos dados.",
-      "Mantém registros para consulta.",
-      "Revisa os aspectos críticos da entrega."
+      "A pessoa mantém registros para consulta.",
+      "A pessoa revisa os aspectos críticos da entrega."
     ],
     "communication": "A pessoa tende a usar argumentos detalhados e ressalvas. Observe se a conclusão é compreensível para quem não domina o assunto.",
     "development": [
       "Combine o ponto em que a análise é suficiente.",
-      "Peça uma conclusão provisória com suas ressalvas.",
+      "Peça à pessoa uma conclusão provisória com as ressalvas dela.",
       "Introduza testes pequenos com risco controlado."
     ],
     "attention": [

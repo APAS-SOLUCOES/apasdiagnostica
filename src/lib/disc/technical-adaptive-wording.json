@@ -1,7 +1,7 @@
 [
   [
     "(.+?) descreve uma forma de funcionar em que (.+?) aparece de maneira (.+?), enquanto (.+?) oferece um recurso complementar\\. (.*?) No cotidiano,.*$",
-    "A pessoa reúne $2 de maneira $3 e $4 como apoio. $5 Use a síntese para combinar uma entrega, observar a execução e revisar o apoio necessário."
+    "A pessoa reúne $2 de maneira $3 e $4 como apoio. $5 O líder pode usar a síntese para alinhar uma entrega e revisar o apoio necessário."
   ],
   [
     "No trabalho, sua combinação tende a aparecer.*? (dominância|influência|estabilidade|conformidade) costuma entrar primeiro.*?O fator ([DISC]) acrescenta.*?\\. Isso significa.*$",
@@ -41,7 +41,7 @@
   ],
   [
     "Quando a pressão aumenta, a intensidade de ([DISC]) pode tornar esse padrão ainda mais visível\\.",
-    "Quando a exigência sobe, observe sinais de intensificação de $1 e ajuste a carga."
+    "Quando a exigência sobe, o líder pode observar a intensificação de $1 e ajustar a carga."
   ],
   [
     "O segundo fator, ([DISC]), pode oferecer um repertório complementar durante a transição\\.",
@@ -53,11 +53,11 @@
   ],
   [
     "Com (.*?) no (?:seu )?repertório, escolha uma situação por semana para ampliar deliberadamente o recurso de (.*?)\\.",
-    "O líder pode escolher uma tarefa em que a pessoa usa $1 e combine a prática de $2."
+    "O líder pode escolher uma tarefa em que a pessoa usa $1 e combinar a prática de $2."
   ],
   [
     "Com (.*?) no (?:seu )?repertório, observe quando esse recurso aparece naturalmente e registre uma situação em que você poderia usá-lo com mais intenção\\.",
-    "O líder pode observar quando a pessoa recorre a $1 e combine onde aplicá-la de forma intencional."
+    "O líder pode observar quando a pessoa recorre a $1 e combinar onde aplicá-la de forma intencional."
   ],
   [
     "A relação entre ([DISC]) e ([DISC]) indica uma oportunidade de equilíbrio: pratique um comportamento de (.*?) em uma situação em que (.*?) costuma aparecer primeiro\\.",
