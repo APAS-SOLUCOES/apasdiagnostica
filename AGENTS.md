@@ -14,3 +14,4 @@
 - Keep the active Premium renderer and its route-local editorial data adapter sourced from the same approved revision; this preserves editorial consistency without changing scoring or Technical reports.
 
 - Apply report-local literal editorial replacements only after the existing adaptive narrative selection; separate text-only factor and phrase dictionaries isolate Premium and Technical, preserve dynamic intensity/gap/adaptation wording and retain every shared source, score and selection rule.
+- Premium's perception section rewords only the already-selected distance phrase locally, so each section retains its purpose without changing adaptive selection; Technical renders existing experiments as semantic list items without CSS changes.

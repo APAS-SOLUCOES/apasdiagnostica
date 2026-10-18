@@ -99,7 +99,13 @@ function DetalhePage() {
             secao: "Como você pode ser percebido",
             titulo: "Como você pode ser percebido",
             subtitulo: "A impressão que você provoca nos outros",
-            intro: narrative.perceived.replace("Seu primeiro recurso tende a orientar a resposta; o segundo ajuda a ajustar o percurso.", "A forma como você inicia uma resposta pode marcar a impressão que deixa; abrir espaço à contribuição dos outros ajuda a calibrar esse impacto."),
+            intro: narrative.perceived
+              .replace("Os dois fatores estão lado a lado; você pode alternar o ponto de partida conforme a situação.", "Os outros podem perceber diferentes maneiras de você entrar na conversa, conforme o que a situação pede.")
+              .replace("Os dois fatores aparecem próximos e oferecem caminhos igualmente acessíveis a você.", "Sua participação pode reunir abordagens próximas; deixar clara sua intenção ajuda os outros a acompanhar essa alternância.")
+              .replace("Há uma direção um pouco mais frequente, com participação relevante do segundo recurso.", "Uma abordagem pode aparecer um pouco mais nas suas interações, sem deixar de lado outras formas de participar.")
+              .replace("Seu primeiro recurso tende a orientar a resposta; o segundo ajuda a ajustar o percurso.", "A forma como você inicia uma resposta pode marcar a impressão que deixa; abrir espaço à contribuição dos outros ajuda a calibrar esse impacto.")
+              .replace("A preferência principal fica mais nítida, sem eliminar a contribuição complementar.", "Seu modo mais habitual de participar pode ser facilmente reconhecido; mostrar disponibilidade para outra abordagem amplia o diálogo.")
+              .replace("A direção principal é especialmente definida; vale dar espaço intencional ao recurso complementar.", "Seu estilo pode deixar uma impressão especialmente nítida; acolher outros ritmos ajuda a evitar que essa presença limite a participação."),
             cards: [
               { titulo: "Nas relações", texto: narrative.situations?.relationships, cor: "vermelho" as const },
               { titulo: "Na comunicação", texto: editorial.perceivedCommunication, cor: "escuro" as const },
