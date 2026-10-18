@@ -1,6 +1,6 @@
 {
   "DI": {
-    "managementReading": "Reconhecer oportunidades e reunir apoio costuma abrir caminho para a ação. Ofereça um objetivo claro e espaço para propor como alcançá-lo.",
+    "managementReading": "Reconhecer oportunidades e reunir apoio costuma abrir caminho para a ação. Ofereça um objetivo claro e espaço para propor como alcançar o objetivo.",
     "receive": "Apresente o resultado esperado, as restrições essenciais e a alçada de decisão. Depois, peça à pessoa que proponha o caminho.",
     "feedback": "Retome um fato recente, o resultado e seu impacto. Peça que a pessoa proponha um ajuste sem discutir sua identidade.",
     "tension": "Nas relações profissionais, a intensidade pode ser interpretada como entusiasmo ou como pressa, dependendo do interlocutor. Recomenda-se calibrar ritmo conforme o perfil do público.",
@@ -32,7 +32,7 @@
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça a fonte dos argumentos relevantes. Ajuste o próximo acompanhamento."
   },
   "DS": {
-    "managementReading": "A direção escolhida tende a vir acompanhada de cuidado com a continuidade da entrega. Distribua responsabilidade e apoio para que a proteção do resultado não recaia toda sobre ela.",
+    "managementReading": "A direção escolhida tende a vir acompanhada de cuidado com a continuidade da entrega. Distribua responsabilidade e apoio para que a proteção do resultado não recaia toda sobre a pessoa.",
     "receive": "Apresente o resultado esperado, as restrições essenciais e a alçada de decisão. Depois, peça à pessoa que proponha o caminho.",
     "feedback": "Retome um fato recente, o resultado e seu impacto. Peça que a pessoa proponha um ajuste sem discutir sua identidade.",
     "tension": "A pessoa protege vínculos com constância, mesmo a custo de energia pessoal. A comunicação antecipada de limites evita desgaste relacional.",
@@ -58,13 +58,13 @@
     "managerAttention": "Antes de atribuir a dificuldade ao estilo, confira recursos, informação e carga. Observe quando a busca de certeza retarda a decisão.",
     "teamCommunication": "Nas passagens entre áreas, peça que a pessoa explicite o que ficou pendente. A pessoa tende a conferir a origem dos dados.",
     "integration": "Distribua responsabilidades para que dominância e conformidade contribuam sem concentrar toda a tarefa na pessoa.",
-    "development": "Trabalhe a negociação de prazos com as áreas envolvidas. Peça à pessoa uma conclusão provisória com as ressalvas dela.",
+    "development": "Trabalhe a negociação de prazos com as áreas envolvidas. Peça à pessoa uma conclusão provisória com as ressalvas da pessoa.",
     "resultsPlan": "No início do ciclo, alinhe uma entrega observável. Ofereça uma meta desafiadora e verificável. Na semana seguinte, confira os marcos combinados.",
     "peoplePlan": "Durante o ciclo, dê retorno sobre uma interação concreta. Combine o ponto em que a análise é suficiente.",
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Solicite uma alternativa antes do fechamento. Ajuste o próximo acompanhamento."
   },
   "IS": {
-    "managementReading": "O diálogo costuma gerar envolvimento, com atenção aos vínculos durante a execução. Aproveite essa aproximação para construir adesão, sem transferir a ela toda a responsabilidade pelo clima.",
+    "managementReading": "O diálogo costuma gerar envolvimento, com atenção aos vínculos durante a execução. Aproveite essa aproximação para construir adesão, sem transferir a a pessoa toda a responsabilidade pelo clima.",
     "receive": "Abra a conversa com o propósito e o impacto sobre as pessoas. Ao encerrar, peça à pessoa que registre os acordos.",
     "feedback": "Trate o episódio em conversa reservada e reconheça a intenção de contribuir. Verifique o entendimento do ajuste e como será acompanhado.",
     "tension": "A pessoa constrói vínculo com rapidez e naturalidade. Expressar discordância no momento adequado fortalece a confiança na relação.",
@@ -90,13 +90,13 @@
     "managerAttention": "Antes de atribuir a dificuldade ao estilo, confira recursos, informação e carga. Observe quando a busca de certeza retarda a decisão.",
     "teamCommunication": "Nas passagens entre áreas, peça que a pessoa explicite o que ficou pendente. A pessoa tende a conferir a origem dos dados.",
     "integration": "Distribua responsabilidades para que influência e conformidade contribuam sem concentrar toda a tarefa na pessoa.",
-    "development": "Acompanhe o encerramento das frentes abertas. Peça à pessoa uma conclusão provisória com as ressalvas dela.",
+    "development": "Acompanhe o encerramento das frentes abertas. Peça à pessoa uma conclusão provisória com as ressalvas da pessoa.",
     "resultsPlan": "No início do ciclo, alinhe uma entrega observável. Dê espaço para propor abordagens. Na semana seguinte, confira os marcos combinados.",
     "peoplePlan": "Durante o ciclo, dê retorno sobre uma interação concreta. Combine o ponto em que a análise é suficiente.",
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça a fonte dos argumentos relevantes. Ajuste o próximo acompanhamento."
   },
   "SD": {
-    "managementReading": "A constância na rotina pode dar lugar à firmeza quando um compromisso está em risco. Convide-a a explicitar posições antes que a urgência decida por ela.",
+    "managementReading": "A constância na rotina pode dar lugar à firmeza quando um compromisso está em risco. Convide a pessoa a explicitar posições antes que a urgência determine a posição da pessoa.",
     "receive": "Explique o contexto e o que será mantido. Dê tempo para a pessoa formular perguntas antes de assumir o compromisso.",
     "feedback": "Dê exemplos concretos e convide a pessoa a dizer como recebeu o pedido. Evite transformar uma ressalva em confronto.",
     "tension": "A pessoa sustenta vínculos com paciência. Comunicar incômodos cedo evita ruptura brusca posterior.",
@@ -138,7 +138,7 @@
     "managerAttention": "Antes de atribuir a dificuldade ao estilo, confira recursos, informação e carga. Observe quando a busca de certeza retarda a decisão.",
     "teamCommunication": "Nas passagens entre áreas, peça que a pessoa explicite o que ficou pendente. A pessoa tende a conferir a origem dos dados.",
     "integration": "Distribua responsabilidades para que estabilidade e conformidade contribuam sem concentrar toda a tarefa na pessoa.",
-    "development": "Ajude a distinguir apoio voluntário de obrigação. Peça à pessoa uma conclusão provisória com as ressalvas dela.",
+    "development": "Ajude a distinguir apoio voluntário de obrigação. Peça à pessoa uma conclusão provisória com as ressalvas da pessoa.",
     "resultsPlan": "No início do ciclo, alinhe uma entrega observável. Promova cooperação entre responsáveis. Na semana seguinte, confira os marcos combinados.",
     "peoplePlan": "Durante o ciclo, dê retorno sobre uma interação concreta. Combine o ponto em que a análise é suficiente.",
     "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. O líder pode ajudar a pessoa a praticar escolhas simples com prazo definido. Ajuste o próximo acompanhamento."
@@ -157,7 +157,7 @@
     "development": "Introduza testes pequenos com risco controlado. Solicite uma alternativa antes do fechamento.",
     "resultsPlan": "No início do ciclo, alinhe uma entrega observável. Dê acesso às informações necessárias. Na semana seguinte, confira os marcos combinados.",
     "peoplePlan": "Durante o ciclo, dê retorno sobre uma interação concreta. Peça que exponha a razão da escolha ao grupo.",
-    "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça à pessoa uma conclusão provisória com as ressalvas dela. Ajuste o próximo acompanhamento."
+    "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça à pessoa uma conclusão provisória com as ressalvas da pessoa. Ajuste o próximo acompanhamento."
   },
   "CI": {
     "managementReading": "O conhecimento organizado tende a ganhar uma forma acessível ao interlocutor. O líder pode aproveitar o preparo da pessoa para esclarecer critérios, sem exigir o mesmo detalhe em toda conversa.",
@@ -173,7 +173,7 @@
     "development": "Introduza testes pequenos com risco controlado. Peça a fonte dos argumentos relevantes.",
     "resultsPlan": "No início do ciclo, alinhe uma entrega observável. Dê acesso às informações necessárias. Na semana seguinte, confira os marcos combinados.",
     "peoplePlan": "Durante o ciclo, dê retorno sobre uma interação concreta. Solicite o registro do compromisso assumido.",
-    "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça à pessoa uma conclusão provisória com as ressalvas dela. Ajuste o próximo acompanhamento."
+    "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça à pessoa uma conclusão provisória com as ressalvas da pessoa. Ajuste o próximo acompanhamento."
   },
   "CS": {
     "managementReading": "Análise e acompanhamento consistente costumam proteger a manutenção dos padrões. Defina quando uma revisão termina e como os conhecimentos serão compartilhados.",
@@ -189,6 +189,6 @@
     "development": "Introduza testes pequenos com risco controlado. O líder pode ajudar a pessoa a praticar escolhas simples com prazo definido.",
     "resultsPlan": "No início do ciclo, alinhe uma entrega observável. Dê acesso às informações necessárias. Na semana seguinte, confira os marcos combinados.",
     "peoplePlan": "Durante o ciclo, dê retorno sobre uma interação concreta. Convide a pessoa a apresentar uma discordância cedo.",
-    "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça à pessoa uma conclusão provisória com as ressalvas dela. Ajuste o próximo acompanhamento."
+    "processPlan": "Ao fechar o ciclo de 30 dias, compare o combinado e o realizado. Peça à pessoa uma conclusão provisória com as ressalvas da pessoa. Ajuste o próximo acompanhamento."
   }
 }

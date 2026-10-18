@@ -3,6 +3,7 @@
 Evolução do projeto APAS DISC Profile para a plataforma **APAS DIAGNÓSTICA** (diagnósticos empresariais, comportamentais e de pessoas). O módulo DISC existente é preservado como instrumento da plataforma.
 
 ## Em andamento
+- [ ] Neutralizar pronomes fixos do Técnico em todas as fontes e perfis; rodar testes e validar dois PDFs CD (Premium 12/Técnico 10 A4), sem publicar.
 - [x] Aplicar oito ajustes editoriais globais Premium/Técnico do anexo: introdução genérica, resumo numérico rotulado, menos repetição, orientação explícita ao líder e experimentos em linhas; avaliação real autenticada e DI/ID/DS/IC/SC/CD simulados, 14 PDFs A4 12/10, 33 testes e prévia OK; arquivos protegidos intactos, sem publicação.
 - [x] Ajustar variedade editorial do Técnico e vivacidade do Premium em fontes textuais isoladas; DI real e ID/IC/SD/CI simulados conferidos nos dois relatórios, 33 testes e dez PDFs 12/10 A4 sem texto fora da folha; percentuais somente página 3, arquivos protegidos intactos, sem publicação.
 - [x] Reescrever a camada editorial isolada do Premium e Técnico para D/I/S/C e 12 combinações; fontes textuais separadas, seleção adaptativa e arquétipos preservados; DI real e DI/IS/CD/DS/SC simulados renderizados, PDFs A4 12/10 e percentuais somente página 3; sem publicação.
