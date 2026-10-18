@@ -1,6 +1,6 @@
 {
   "DI": {
-    "essence": "Reconhecer oportunidades e reunir apoio costuma abrir caminho para a ação. Ofereça um objetivo claro e espaço para propor como alcançá-lo.",
+    "essence": "Reconhecer oportunidades e reunir apoio costuma abrir caminho para a ação. Ofereça um objetivo claro e espaço para propor como alcançar o objetivo.",
     "best": [
       "A pessoa abre caminho em cenários travados.",
       "A pessoa comunica decisões com energia e convencimento.",
@@ -14,10 +14,10 @@
       "O interesse no acompanhamento cai após o impulso inicial."
     ],
     "perceived": "A intenção é gerar avanço e confiança. Em equipes com ritmo distinto, pode ser percebido como pressa ou falta de espaço para ponderação.",
-    "communication": "A clareza e a energia podem fortalecer a mensagem da pessoa. O líder pode ajudá-la a apresentar contexto e fechar acordos explícitos.",
-    "decision": "O diálogo pode ajudar a pessoa a testar a adesão à escolha. O líder pode ajudá-la a separar entusiasmo de evidência antes de assumir compromissos.",
+    "communication": "A clareza e a energia podem fortalecer a mensagem da pessoa. O líder pode ajudar a pessoa a apresentar contexto e fechar acordos explícitos.",
+    "decision": "O diálogo pode ajudar a pessoa a testar a adesão à escolha. O líder pode ajudar a pessoa a separar entusiasmo de evidência antes de assumir compromissos.",
     "leadership": "A pessoa define direção e eleva a energia do time. A liderança se fortalece quando expectativas e responsabilidades ficam explícitas por escrito.",
-    "team": "Ritmo e articulação podem ser contribuições da pessoa ao grupo. O líder pode ajudá-la a ouvir vozes reservadas e acompanhar a execução após o alinhamento.",
+    "team": "Ritmo e articulação podem ser contribuições da pessoa ao grupo. O líder pode ajudar a pessoa a ouvir vozes reservadas e acompanhar a execução após o alinhamento.",
     "pressure": "Sob pressão, a pessoa tende a aumentar velocidade e expressividade. Uma pausa para checar impacto e prioridade preserva a qualidade da decisão.",
     "change": "A mudança costuma ser recebida como oportunidade de ação imediata. O desafio reside em estruturar continuidade após o impulso inicial.",
     "experiments": [
@@ -49,9 +49,9 @@
     ],
     "perceived": "A intenção é inspirar e destravar processos. Pode ser percebida, por alguns interlocutores, como improviso ou dispersão de foco.",
     "communication": "O raciocínio da pessoa costuma tomar forma na conversa. O líder pode pedir uma mensagem objetiva e o registro dos combinados.",
-    "decision": "A oportunidade e a reação do ambiente podem orientar a escolha da pessoa. O líder pode definir com ela um critério e uma checagem antes do fechamento.",
+    "decision": "A oportunidade e a reação do ambiente podem orientar a escolha da pessoa. O líder pode definir com a pessoa um critério e uma checagem antes do fechamento.",
     "leadership": "A pessoa lidera por presença e disposição para iniciar. A consistência aumenta com acompanhamento de rotina e feedback específico.",
-    "team": "A pessoa pode aproximar interlocutores e dar movimento à equipe. O líder pode reconhecer com ela quem sustenta a execução nos bastidores.",
+    "team": "A pessoa pode aproximar interlocutores e dar movimento à equipe. O líder pode reconhecer com a pessoa quem sustenta a execução nos bastidores.",
     "pressure": "Sob pressão, a pessoa tende a intensificar comunicação e acelerar compromissos. Promova a redução de estímulos e ordenação de prioridades.",
     "change": "O potencial da mudança tende a ser comunicado de modo a gerar adesão inicial. Peça a tradução da visão em etapas com responsáveis definidos.",
     "experiments": [
@@ -68,7 +68,7 @@
     }
   },
   "DS": {
-    "essence": "A direção escolhida tende a vir acompanhada de cuidado com a continuidade da entrega. Distribua responsabilidade e apoio para que a proteção do resultado não recaia toda sobre ela.",
+    "essence": "A direção escolhida tende a vir acompanhada de cuidado com a continuidade da entrega. Distribua responsabilidade e apoio para que a proteção do resultado não recaia toda sobre a pessoa.",
     "best": [
       "A pessoa converte decisão em continuidade de execução.",
       "A pessoa protege compromissos sob desgaste.",
@@ -82,8 +82,8 @@
       "A pessoa mantém direção mesmo quando o contexto já mudou."
     ],
     "perceived": "A intenção é garantir segurança e avanço. Pode ser percebida, em alguns contextos, como controle ou resistência a revisões.",
-    "communication": "A pessoa costuma ser direta, sem buscar exposição constante. O líder pode ajudá-la a explicar os motivos antes da conclusão.",
-    "decision": "A pessoa tende a sustentar a direção com firmeza. O líder pode acordar com ela os sinais que justificam rever a decisão.",
+    "communication": "A pessoa costuma ser direta, sem buscar exposição constante. O líder pode ajudar a pessoa a explicar os motivos antes da conclusão.",
+    "decision": "A pessoa tende a sustentar a direção com firmeza. O líder pode acordar com a pessoa os sinais que justificam rever a decisão.",
     "leadership": "A pessoa combina cobrança e proteção da equipe. A liderança se fortalece com delegação de responsabilidades críticas.",
     "team": "A pessoa pode oferecer estabilidade e direção ao grupo. O líder pode esclarecer o espaço de decisão de cada integrante.",
     "pressure": "Sob pressão, a pessoa tende a endurecer posições ou absorver carga de trabalho. Organize a divisão de risco e solicitação antecipada de apoio.",
@@ -117,9 +117,9 @@
     ],
     "perceived": "A intenção é proteger resultado e qualidade. O mesmo rigor pode ser percebido como dureza ou pouco espaço para aprendizagem.",
     "communication": "A pessoa tende a comunicar com precisão e objetividade. O líder pode pedir que apresente a prioridade e o impacto sobre os envolvidos.",
-    "decision": "A pessoa pode reunir velocidade e análise seletiva. O líder pode definir com ela o nível de evidência suficiente para decidir.",
+    "decision": "A pessoa pode reunir velocidade e análise seletiva. O líder pode definir com a pessoa o nível de evidência suficiente para decidir.",
     "leadership": "A pessoa lidera por metas e padrões claramente definidos. Reconhecer avanços, além de apontar lacunas, amplia a autonomia da equipe.",
-    "team": "Foco e consistência técnica podem fortalecer a contribuição da pessoa. O líder pode ajudá-la a distinguir aprendizagem de descuido operacional.",
+    "team": "Foco e consistência técnica podem fortalecer a contribuição da pessoa. O líder pode ajudar a pessoa a distinguir aprendizagem de descuido operacional.",
     "pressure": "Sob pressão, cobrança e criticidade tendem a aumentar. Uma pausa para ordenar fatos e consequências reduz respostas excessivamente duras.",
     "change": "Ganhos objetivos e lógica consistente tendem a favorecer o apoio à mudança. Pilotos de curta duração oferecem evidência sem paralisar o avanço.",
     "experiments": [
@@ -136,7 +136,7 @@
     }
   },
   "IS": {
-    "essence": "O diálogo costuma gerar envolvimento, com atenção aos vínculos durante a execução. Aproveite essa aproximação para construir adesão, sem transferir a ela toda a responsabilidade pelo clima.",
+    "essence": "O diálogo costuma gerar envolvimento, com atenção aos vínculos durante a execução. Aproveite essa aproximação para construir adesão, sem transferir a a pessoa toda a responsabilidade pelo clima.",
     "best": [
       "A pessoa constrói confiança com naturalidade.",
       "A pessoa identifica o clima do grupo rapidamente.",
@@ -150,10 +150,10 @@
       "A pessoa prioriza clima acima de clareza."
     ],
     "perceived": "A intenção é incluir e apoiar a equipe. Em certas situações, pode ser percebida como dificuldade de confronto ou falta de prioridade explícita.",
-    "communication": "A pessoa costuma aproximar os interlocutores pelo diálogo e pela escuta. O líder pode ajudá-la a expressar expectativas e discordâncias com clareza.",
+    "communication": "A pessoa costuma aproximar os interlocutores pelo diálogo e pela escuta. O líder pode ajudar a pessoa a expressar expectativas e discordâncias com clareza.",
     "decision": "A pessoa costuma considerar primeiro o impacto sobre os outros. O líder pode alinhar prazos e critérios para que o consenso não adie a decisão.",
     "leadership": "A pessoa lidera por vínculo, participação e abertura para participar. A liderança se amplia quando o cuidado inclui cobrança e consequência.",
-    "team": "A pessoa costuma colaborar com disponibilidade. O líder pode proteger sua carga de trabalho para que o apoio não comprometa as entregas dela.",
+    "team": "A pessoa costuma colaborar com disponibilidade. O líder pode proteger sua carga de trabalho para que o apoio não comprometa as entregas da pessoa.",
     "pressure": "Sob pressão, a pessoa tende a buscar aprovação ou silenciar desconfortos. Conversas diretas e respeitosas reduzem o desgaste acumulado.",
     "change": "Compreensão do sentido e suporte à equipe costumam favorecer a adesão à mudança. A pessoa pode traduzir impacto e construir adesão gradual.",
     "experiments": [
@@ -184,10 +184,10 @@
       "A pessoa perde foco em detalhes de apresentação."
     ],
     "perceived": "A intenção é tornar a proposta clara e convincente. Dependendo do contexto, pode ser percebida como excesso de elaboração.",
-    "communication": "A pessoa pode unir presença e conteúdo técnico. O líder pode ajudá-la a começar pela mensagem central e ajustar os detalhes ao público.",
-    "decision": "A pessoa pode alternar leitura social e verificação técnica. O líder pode ajudá-la a explicitar critérios para não reabrir o mesmo tema.",
+    "communication": "A pessoa pode unir presença e conteúdo técnico. O líder pode ajudar a pessoa a começar pela mensagem central e ajustar os detalhes ao público.",
+    "decision": "A pessoa pode alternar leitura social e verificação técnica. O líder pode ajudar a pessoa a explicitar critérios para não reabrir o mesmo tema.",
     "leadership": "A pessoa lidera explicando, envolvendo e qualificando a equipe. Delegar sem prescrever cada detalhe favorece a autonomia.",
-    "team": "A pessoa pode conectar linguagens e perspectivas. O líder pode ajudá-la a transformar análise e explicação em decisões práticas.",
+    "team": "A pessoa pode conectar linguagens e perspectivas. O líder pode ajudar a pessoa a transformar análise e explicação em decisões práticas.",
     "pressure": "Sob pressão, a pessoa tende a falar mais ou aprofundar detalhes para recuperar segurança. Sintetizar fato, escolha e próximo passo reduz ruído.",
     "change": "A comunicação do sentido da mudança pode vir acompanhada da antecipação de dúvidas. Pilotos e ciclos de retorno equilibram adesão e precisão.",
     "experiments": [
@@ -204,7 +204,7 @@
     }
   },
   "SD": {
-    "essence": "A constância na rotina pode dar lugar à firmeza quando um compromisso está em risco. Convide-a a explicitar posições antes que a urgência decida por ela.",
+    "essence": "A constância na rotina pode dar lugar à firmeza quando um compromisso está em risco. Convide a pessoa a explicitar posições antes que a urgência determine a posição da pessoa.",
     "best": [
       "A pessoa mantém entregas em cenários exigentes.",
       "A pessoa age com firmeza quando necessário.",
@@ -218,10 +218,10 @@
       "A pessoa acumula pressão silenciosamente."
     ],
     "perceived": "A intenção é preservar estabilidade e resolver impasses. Quando limites aparecem tarde, pode-se perceber mudança brusca de paciência para firmeza.",
-    "communication": "A pessoa costuma observar antes de falar. O líder pode convidá-la a comunicar necessidades cedo, sem esperar a urgência.",
+    "communication": "A pessoa costuma observar antes de falar. O líder pode convidar a pessoa a comunicar necessidades cedo, sem esperar a urgência.",
     "decision": "A pessoa costuma amadurecer a escolha antes de agir com firmeza. O líder pode combinar um prazo que proteja a reflexão sem adiar a entrega.",
     "leadership": "A pessoa oferece segurança, consistência e firmeza prática à equipe. Compartilhar a direção antecipadamente amplia a participação do grupo.",
-    "team": "A equipe pode contar com a execução confiável da pessoa. O líder pode evitar que ela absorva tarefas atribuídas a outros integrantes.",
+    "team": "A equipe pode contar com a execução confiável da pessoa. O líder pode evitar que a pessoa absorva tarefas atribuídas a outros integrantes.",
     "pressure": "Sob pressão, a pessoa tende a suportar por longo período antes de reagir com dureza. Sinalizar capacidade e necessidade de apoio preserva relações.",
     "change": "Compreender o impacto e o caminho de execução costuma favorecer a adesão. A pessoa funciona como ponte valiosa entre decisão e implementação sustentável.",
     "experiments": [
@@ -252,8 +252,8 @@
       "A pessoa depende de harmonia para avançar."
     ],
     "perceived": "A intenção é apoiar e manter a união do grupo. Em decisões difíceis, pode ser percebida como hesitação ou falta de firmeza.",
-    "communication": "A pessoa costuma valorizar um diálogo seguro. O líder pode ajudá-la a formular pedidos com prazo e consequência, preservando o vínculo.",
-    "decision": "A pessoa costuma considerar o impacto coletivo antes de decidir. O líder pode definir com ela quem precisa ser consultado.",
+    "communication": "A pessoa costuma valorizar um diálogo seguro. O líder pode ajudar a pessoa a formular pedidos com prazo e consequência, preservando o vínculo.",
+    "decision": "A pessoa costuma considerar o impacto coletivo antes de decidir. O líder pode definir com a pessoa quem precisa ser consultado.",
     "leadership": "A pessoa lidera por confiança e exemplo pessoal. Comunicar expectativas antecipadamente evita frustração posterior.",
     "team": "A pessoa pode contribuir de forma agregadora e consistente. O líder pode combinar limites de carga e estimular reciprocidade.",
     "pressure": "Sob pressão, a pessoa tende a absorver tensão e minimizar o próprio desconforto. Nomear fatos e solicitar apoio reduz desgaste invisível.",
@@ -286,10 +286,10 @@
       "A pessoa busca segurança completa antes de experimentar."
     ],
     "perceived": "A intenção é proteger qualidade e estabilidade. Para ritmos mais rápidos, pode ser percebida como cautela excessiva ou demora.",
-    "communication": "A pessoa costuma apoiar a mensagem em fatos. O líder pode ajudá-la a apresentar a conclusão antes dos detalhes.",
+    "communication": "A pessoa costuma apoiar a mensagem em fatos. O líder pode ajudar a pessoa a apresentar a conclusão antes dos detalhes.",
     "decision": "A pessoa costuma organizar informações e impactos antes de escolher. O líder pode combinar um critério de suficiência para concluir.",
     "leadership": "A pessoa lidera por método, previsibilidade e coerência. Abrir espaço para experimentação mantém padrão sem limitar inovação.",
-    "team": "A pessoa pode oferecer memória e qualidade operacional ao grupo. O líder pode ajudá-la a tornar o raciocínio visível, sem que o silêncio pareça resistência.",
+    "team": "A pessoa pode oferecer memória e qualidade operacional ao grupo. O líder pode ajudar a pessoa a tornar o raciocínio visível, sem que o silêncio pareça resistência.",
     "pressure": "Sob pressão, a pessoa tende a aumentar conferências e retrair-se. Distinguir risco real de desconforto com incerteza ajuda a priorizar.",
     "change": "Planejamento, testes e boa comunicação costumam favorecer o apoio à mudança. A pessoa pode converter novidade em rotina sustentável.",
     "experiments": [
@@ -321,9 +321,9 @@
     ],
     "perceived": "A intenção é garantir solução sólida. O mesmo foco pode ser percebido como crítica ou pouca abertura para alternativas.",
     "communication": "A pessoa pode encontrar apoio em argumentos bem estruturados. O líder pode pedir que explique a intenção e o impacto da análise.",
-    "decision": "A análise aprofundada pode apoiar uma conclusão firme da pessoa. O líder pode ajudá-la a distinguir decisões reversíveis e riscos que exigem mais checagem.",
+    "decision": "A análise aprofundada pode apoiar uma conclusão firme da pessoa. O líder pode ajudar a pessoa a distinguir decisões reversíveis e riscos que exigem mais checagem.",
     "leadership": "A pessoa lidera por competência, padrão e clareza. Reconhecer processo e progresso, não apenas resultado final, amplia a confiança da equipe.",
-    "team": "O rigor da pessoa pode ajudar o grupo a resolver problemas. O líder pode envolvê-la na construção conjunta dos critérios.",
+    "team": "O rigor da pessoa pode ajudar o grupo a resolver problemas. O líder pode envolver a pessoa na construção conjunta dos critérios.",
     "pressure": "Sob pressão, exigência e controle tendem a aumentar. Priorizar riscos críticos e flexibilizar o restante protege foco e relação.",
     "change": "Fundamento e benefício demonstrável tendem a favorecer a adesão à mudança. Experimentos reversíveis reduzem necessidade de certeza antecipada.",
     "experiments": [
@@ -354,8 +354,8 @@
       "A pessoa oscila entre reserva e exposição intensa."
     ],
     "perceived": "A intenção é oferecer clareza e segurança. Dependendo do momento, pode ser percebida como excesso de detalhe.",
-    "communication": "A pessoa costuma preparar o conteúdo antes da conversa. O líder pode ajudá-la a abrir pela conclusão e selecionar os detalhes necessários.",
-    "decision": "A pessoa pode considerar evidências e reações do público na escolha. O líder pode ajudá-la a separar fatos, preferências e receios.",
+    "communication": "A pessoa costuma preparar o conteúdo antes da conversa. O líder pode ajudar a pessoa a abrir pela conclusão e selecionar os detalhes necessários.",
+    "decision": "A pessoa pode considerar evidências e reações do público na escolha. O líder pode ajudar a pessoa a separar fatos, preferências e receios.",
     "leadership": "A pessoa lidera por conhecimento e capacidade de explicação. Aceitar soluções alternativas que atendam critérios favorece autonomia.",
     "team": "A pessoa pode aproximar técnica e relacionamento. O líder pode combinar tempo de preparação individual e momentos de construção conjunta.",
     "pressure": "Sob pressão, a pessoa tende a revisar demais ou verbalizar para organizar o pensamento. Um roteiro curto protege tempo e clareza.",
@@ -388,10 +388,10 @@
       "A pessoa revisa além do impacto real."
     ],
     "perceived": "A intenção é cuidar da qualidade e evitar riscos. Em cenários velozes, pode ser percebida como reserva ou excesso de cautela.",
-    "communication": "A pessoa costuma ponderar as palavras e buscar precisão. O líder pode incentivá-la a compartilhar conclusões e dúvidas antes que o silêncio gere equívocos.",
+    "communication": "A pessoa costuma ponderar as palavras e buscar precisão. O líder pode incentivar a pessoa a compartilhar conclusões e dúvidas antes que o silêncio gere equívocos.",
     "decision": "A pessoa costuma comparar opções e consequências com cuidado. O líder pode alinhar prazo e critérios para que a análise chegue à conclusão.",
     "leadership": "A pessoa lidera por coerência, método e cuidado. Oferecer direção explícita em momentos ambíguos aumenta a segurança do grupo.",
-    "team": "A pessoa pode oferecer confiabilidade, escuta e memória técnica. O líder pode convidá-la a participar quando sua análise ajudar a orientar a equipe.",
+    "team": "A pessoa pode oferecer confiabilidade, escuta e memória técnica. O líder pode convidar a pessoa a participar quando sua análise ajudar a orientar a equipe.",
     "pressure": "Sob pressão, a pessoa tende a retrair-se, conferir mais ou manter rotinas conhecidas. Explicitar prioridades direciona energia ao que importa.",
     "change": "Transições planejadas e fundamentadas costumam ter maior receptividade. A pessoa pode ser essencial para converter mudança em processo confiável.",
     "experiments": [
@@ -399,7 +399,7 @@
       "O líder pode incentivar a pessoa a definir prazo e critério para fechar decisão.",
       "O líder pode incentivar a pessoa a testar mudança pequena sem redesenhar todo o processo."
     ],
-    "profilePortrait": "A pessoa pode contribuir como guardião de qualidade, sustentando padrão com paciência ao longo do tempo. A gestão deve reforçar o fechamento tempestivo de decisões.",
+    "profilePortrait": "A pessoa pode contribuir como referência de qualidade, sustentando padrão com paciência ao longo do tempo. A gestão deve reforçar o fechamento tempestivo de decisões.",
     "situations": {
       "work": "No trabalho, a pessoa sustenta qualidade de forma previsível e organiza conhecimento. Recomenda-se evitar adiamento de decisões por busca de segurança completa.",
       "relationships": "A pessoa constrói confiança pela constância e escuta atenta. Expressar preocupação cedo evita desgaste silencioso.",
