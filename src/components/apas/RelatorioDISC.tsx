@@ -227,9 +227,9 @@ function Numeros({ c }: { c: Ctx }) {
       </div>
       <div style={{ position: "absolute", right: 56, top: 150 }}><Rosca valores={d.adaptado} /></div>
       <div style={{ position: "absolute", left: 56, right: 56, top: 600, display: "flex", justifyContent: "space-between" }}>
-        <BlocoBarras titulo="Natural" desc="Como tende a agir quando há mais vontade." v={d.natural} cor={C.vermelho} />
-        <BlocoBarras titulo="Adaptado" desc="Como ajusta o comportamento às circunstâncias percebidas." v={d.adaptado} cor={C.laranja} />
-        <BlocoBarras titulo="Social" desc="Como acredita que precisa se apresentar no ambiente." v={d.social} cor={C.verde} />
+        <BlocoBarras titulo="Natural" desc="Como tende a agir quando está mais à vontade." v={d.natural} cor={C.vermelho} />
+        <BlocoBarras titulo="Adaptado" desc="Como ajusta o comportamento ao que percebe que o ambiente pede." v={d.adaptado} cor={C.laranja} />
+        <BlocoBarras titulo="Social" desc="Como acredita que precisa se apresentar ao ambiente." v={d.social} cor={C.verde} />
       </div>
       <div style={{ position: "absolute", left: 56, right: 56, top: 905, height: 190, background: C.preto, color: "#fff", borderLeft: `5px solid ${C.vermelho}`, borderRadius: 12, display: "flex", alignItems: "center", gap: 34, padding: "0 34px" }}>
         <div>
