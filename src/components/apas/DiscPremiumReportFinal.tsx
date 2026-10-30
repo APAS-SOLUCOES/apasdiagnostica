@@ -138,9 +138,9 @@ export function DiscPremiumReportFinal({ assessment, scores }: { assessment: Rep
     <Page number={3} eyebrow="03 · SEU PERFIL EM NÚMEROS" title="Seu perfil em números" subtitle="O que o seu resultado revela" icon={Gauge} assessment={assessment} date={date}>
       <p className="disc-profile-intro">O gráfico ao lado representa a distribuição dos seus comportamentos nos quatro fatores do DISC, indicando o seu perfil primário e secundário.</p>
       <div className="disc-profile-overview"><ProfileDonut values={scores.adapted.percent} combination={scores.combination} /><div className="disc-profile-grid">
-        <ProfileBars title="Natural" subtitle="Como tende a agir quando há mais vontade." values={scores.natural.percent} accent="red" icon={Target} />
-        <ProfileBars title="Adaptado" subtitle="Como ajusta o comportamento às circunstâncias percebidas." values={scores.adapted.percent} accent="orange" icon={Users} />
-        <ProfileBars title="Social" subtitle="Como acredita que precisa se apresentar no ambiente." values={scores.social.percent} accent="green" icon={MessageCircle} />
+        <ProfileBars title="Natural" subtitle="Como tende a agir quando está mais à vontade." values={scores.natural.percent} accent="red" icon={Target} />
+        <ProfileBars title="Adaptado" subtitle="Como ajusta o comportamento ao que percebe que o ambiente pede." values={scores.adapted.percent} accent="orange" icon={Users} />
+        <ProfileBars title="Social" subtitle="Como acredita que precisa se apresentar ao ambiente." values={scores.social.percent} accent="green" icon={MessageCircle} />
       </div></div>
       <div className="disc-index"><div><span>ÍNDICE DE ADAPTAÇÃO</span><strong>{String(scores.adaptationIndex).replace(".", ",")}</strong></div><p>{adaptationText}</p></div>
       <p className="disc-note"><Info aria-hidden="true" />Nenhuma perspectiva é melhor. Juntas, elas ajudam a compreender o repertório e o contexto. As barras e o gráfico representam visualmente os valores calculados para esta aplicação.</p>
