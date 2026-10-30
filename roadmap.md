@@ -49,3 +49,10 @@ Evolução do projeto APAS DISC Profile para a plataforma **APAS DIAGNÓSTICA** 
 - [ ] Criar documento técnico A4 separado, protegido e imprimível, sem dados proprietários ou respostas brutas
 - [ ] Inserir orientação de resposta antes do primeiro bloco DISC sem alterar o instrumento
 - [ ] Validar impressão A4 dos dois documentos, rotas protegidas, testes e build
+
+## Revisão editorial do Técnico (out/2026)
+- [ ] Técnico: nome do avaliado/omissão em vez de "a pessoa", fatores padronizados "Nome (X)", frases diretas, sem repetições, para todos os perfis
+- [ ] Técnico: nota da regra predominante/secundário, sinalização do Natural, ordem/descrições dos planos iguais ao app
+- [ ] Técnico: índice de adaptação em duas faixas (abaixo de 18 / 18 ou mais) com interpretação
+- [ ] Técnico: "Como ler este relatório", sumário com páginas reais, bloco do fator secundário, aviso LGPD/uso final
+- [ ] Manter nomes atuais das combinações nos dois relatórios (sem renomear); relatório individual intacto
