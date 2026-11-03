@@ -43,12 +43,13 @@ export function personalize(text: string, firstName: string) {
       const canOmit = previousAboutPerson && !/^(se|lhe|não|a|o)\s/i.test(rest);
       result = canOmit ? rest.charAt(0).toUpperCase() + rest.slice(1) : `${firstName} ${rest}`;
     }
+    const p = "pessoa(?: avaliada)?(?![\\p{L}])";
     result = result
-      .replace(/\bà pessoa(?: avaliada)?\b/g, `a ${firstName}`)
-      .replace(/\bda pessoa(?: avaliada)?\b/g, `de ${firstName}`)
-      .replace(/\bna pessoa(?: avaliada)?\b/g, `em ${firstName}`)
-      .replace(/\bpela pessoa(?: avaliada)?\b/g, `por ${firstName}`)
-      .replace(/\b[Aa] pessoa(?: avaliada)?\b/g, firstName);
+      .replace(new RegExp(`(?<![\\p{L}])à ${p}`, "gu"), `a ${firstName}`)
+      .replace(new RegExp(`(?<![\\p{L}])da ${p}`, "gu"), `de ${firstName}`)
+      .replace(new RegExp(`(?<![\\p{L}])na ${p}`, "gu"), `em ${firstName}`)
+      .replace(new RegExp(`(?<![\\p{L}])pela ${p}`, "gu"), `por ${firstName}`)
+      .replace(new RegExp(`(?<![\\p{L}])[Aa] ${p}`, "gu"), firstName);
     previousAboutPerson = startsWithPerson;
     return result;
   }).join(" ");
