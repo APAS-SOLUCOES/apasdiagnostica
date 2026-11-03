@@ -17,6 +17,7 @@ export function make(pr: D, se: D, pv: number, gap: number, idx: number, natural
 }
 const strip = (h: string) => h.replace(/<\/(p|div|h1|h2|h3|strong|section|header|footer)>/g, "\n").replace(/<[^>]+>/g, "").replace(/&quot;/g, '"').replace(/&#x27;/g, "'").replace(/&amp;/g, "&").replace(/\n{2,}/g, "\n");
 const out: string[] = [];
+if (import.meta.main) {
 const variants: Array<[number, number, number, boolean]> = [[29, 2, 8, false], [36, 6, 22, true], [44, 12, 12, false]];
 for (const p of DIMENSIONS) for (const s of DIMENSIONS) if (p !== s) for (const [pv, gap, idx, swap] of variants) {
   const html = renderToStaticMarkup(<DiscTechnicalReport assessment={{ id: "x", candidate_name: "Ana Paula Souza", status: "completed", created_at: "2026-10-05T12:00:00Z" }} scores={make(p as D, s as D, pv, gap, idx, swap)} />);
@@ -24,3 +25,4 @@ for (const p of DIMENSIONS) for (const s of DIMENSIONS) if (p !== s) for (const 
 }
 writeFileSync(process.argv[2] ?? "/tmp/tech-dump.txt", out.join("\n"));
 console.log("ok", out.length);
+}
