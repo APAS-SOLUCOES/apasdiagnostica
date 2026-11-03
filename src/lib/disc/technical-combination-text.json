@@ -10,7 +10,7 @@
     "excess": [
       "A pessoa avança antes de consolidar acordos.",
       "A pessoa abre mais frentes do que a capacidade de execução permite.",
-      "A objetividade é percebida como pressão pela equipe.",
+      "Parte da equipe percebe a objetividade como pressão.",
       "O interesse no acompanhamento cai após o impulso inicial."
     ],
     "perceived": "A intenção é gerar avanço e confiança. Em equipes com ritmo distinto, é percebido como pressa ou falta de espaço para ponderação.",
@@ -28,7 +28,7 @@
     "profilePortrait": "A pessoa combina iniciativa e comunicação, funcionando como catalisador de movimento em contextos de baixa definição. A gestão dessa combinação deve focar em consolidar estrutura e continuidade após o impulso inicial, convertendo energia em entrega sustentada.",
     "situations": {
       "work": "No ambiente de trabalho, a pessoa assume a dianteira diante de oportunidades e converte diálogo em decisão com agilidade. Recomenda-se consolidação de etapas antes de avançar para a próxima.",
-      "relationships": "Nas relações profissionais, a intensidade é interpretada como entusiasmo ou como pressa, dependendo do interlocutor. Recomenda-se calibrar ritmo conforme o perfil do público.",
+      "relationships": "Nas relações profissionais, a intensidade é lida como entusiasmo por alguns interlocutores e como pressa por outros. Ajuste o ritmo ao público.",
       "decisions": "Nas decisões, há tendência a confiar na leitura imediata do contexto. Recomenda-se checagem de fatos antes do fechamento de compromissos relevantes.",
       "leadership": "Na liderança, a pessoa inspira pela iniciativa e pela coragem de agir primeiro. O equilíbrio com escuta e acompanhamento constante consolida resultados de médio prazo."
     }
@@ -62,7 +62,7 @@
     "profilePortrait": "A pessoa combina conexão interpessoal e disposição para agir, funcionando como elemento de mobilização em equipes. A gestão deve priorizar estrutura mínima — passos, prazos, responsáveis — para sustentar o entusiasmo inicial.",
     "situations": {
       "work": "No ambiente profissional, a pessoa abre oportunidades pelo relacionamento e converter isso em iniciativa. Recomenda-se foco em fechamento das frentes abertas.",
-      "relationships": "A pessoa constrói vínculo com facilidade e utiliza essa proximidade para mobilizar. Recomenda-se cuidado para que a proximidade não funcione como pressão implícita.",
+      "relationships": "A pessoa constrói vínculo com facilidade e utiliza essa proximidade para mobilizar. Cuide para que a proximidade não funcione como pressão implícita.",
       "decisions": "As escolhas refletem o clima da conversa e a leitura de oportunidade do momento. Recomenda-se checagem factual antes da confirmação.",
       "leadership": "Na liderança, a pessoa inspira pela abertura de caminhos. O acompanhamento pós-entusiasmo converte a liderança em resultado sustentável."
     }
@@ -115,7 +115,7 @@
       "A pessoa centraliza decisões críticas.",
       "A pessoa trata divergências como falhas de raciocínio."
     ],
-    "perceived": "A intenção é proteger resultado e qualidade. O mesmo rigor é percebido como dureza ou pouco espaço para aprendizagem.",
+    "perceived": "A intenção é proteger resultado e qualidade. Para alguns, o mesmo rigor soa como dureza ou pouco espaço para aprendizagem.",
     "communication": "A pessoa comunica com precisão e objetividade. Peça que apresente a prioridade e o impacto sobre os envolvidos.",
     "decision": "A pessoa reúne velocidade e análise seletiva. Defina com a pessoa o nível de evidência suficiente para decidir.",
     "leadership": "A pessoa lidera por metas e padrões claramente definidos. Reconhecer avanços, além de apontar lacunas, amplia a autonomia da equipe.",
@@ -130,7 +130,7 @@
     "profilePortrait": "A pessoa combina rigor analítico e orientação para resultado, funcionando como referência técnica em decisões complexas. A gestão deve atentar para a forma de comunicar correções, de modo que o rigor seja percebido como suporte.",
     "situations": {
       "work": "No trabalho, a pessoa identifica riscos com antecedência e age com firmeza quando a base de evidência é suficiente. Recomenda-se evitar paralisia por busca de certeza total.",
-      "relationships": "A pessoa demonstra cuidado por meio de padrão elevado, o que é lido como distanciamento. Explicitar a intenção por trás da exigência aproxima a relação.",
+      "relationships": "A pessoa demonstra cuidado por meio de padrão elevado, o que alguns interlocutores leem como distanciamento. Explicitar a intenção por trás da exigência aproxima a relação.",
       "decisions": "A pessoa combina dado e orientação para ação. Separar reversível de irreversível acelera o fechamento sem comprometer segurança.",
       "leadership": "A pessoa estabelece padrão técnico elevado e direção clara. Reconhecer o processo, além do resultado final, amplia a confiança da equipe."
     }
@@ -198,7 +198,7 @@
     "profilePortrait": "A pessoa contribui como ponte entre conteúdo técnico e comunicação acessível. A gestão deve reforçar a confiança na primeira entrega, evitando reforço desnecessário.",
     "situations": {
       "work": "No trabalho, a pessoa destrava entendimento em temas complexos com eficiência. Recomenda-se encerrar a análise em prazo definido.",
-      "relationships": "A pessoa conecta pessoas por meio de boas explicações e presença qualificada. Recomenda-se evitar que a clareza vire controle da interpretação alheia.",
+      "relationships": "A pessoa conecta pessoas por meio de boas explicações e presença qualificada. Cuide para que a clareza não vire controle da interpretação alheia.",
       "decisions": "A pessoa combina leitura social com checagem técnica. Tornar o critério explícito acelera o fechamento da escolha.",
       "leadership": "A pessoa guia pela explicação qualificada do porquê de cada direção. Delegar com confiança amplia a autonomia da equipe."
     }
@@ -319,7 +319,7 @@
       "A pessoa centraliza temas complexos.",
       "A pessoa desconsidera aspectos relacionais da decisão."
     ],
-    "perceived": "A intenção é garantir solução sólida. O mesmo foco é percebido como crítica ou pouca abertura para alternativas.",
+    "perceived": "A intenção é garantir solução sólida. Para alguns, o mesmo foco soa como crítica ou pouca abertura para alternativas.",
     "communication": "A pessoa encontra apoio em argumentos bem estruturados. Peça que explique a intenção e o impacto da análise.",
     "decision": "A análise aprofundada apoia uma conclusão firme da pessoa. Ajude a pessoa a distinguir decisões reversíveis e riscos que exigem mais checagem.",
     "leadership": "A pessoa lidera por competência, padrão e clareza. Reconhecer processo e progresso, não apenas resultado final, amplia a confiança da equipe.",
@@ -334,7 +334,7 @@
     "profilePortrait": "A pessoa combina rigor analítico e capacidade decisória, funcionando como referência em problemas técnicos complexos. A gestão deve atentar à forma de comunicação de correções.",
     "situations": {
       "work": "No trabalho, a pessoa questiona premissas e entrega soluções consistentes. Recomenda-se evitar elevação de padrão além do necessário.",
-      "relationships": "A pessoa demonstra cuidado por meio de precisão, o que é lido como distância. Explicitar intenção aproxima a relação.",
+      "relationships": "A pessoa demonstra cuidado por meio de precisão, o que alguns interlocutores leem como distância. Explicitar intenção aproxima a relação.",
       "decisions": "A pessoa decide com profundidade e firmeza. Separar reversível de irreversível acelera o fechamento sem perder segurança.",
       "leadership": "A pessoa estabelece padrão técnico elevado. Reconhecer esforço do processo, não só resultado, fortalece a confiança da equipe."
     }

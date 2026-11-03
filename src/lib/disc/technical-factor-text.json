@@ -181,7 +181,7 @@
     "communication": "A pessoa usa argumentos detalhados e ressalvas. Observe se a conclusão é compreensível para quem não domina o assunto.",
     "development": [
       "Combine o ponto em que a análise é suficiente.",
-      "Peça à pessoa uma conclusão provisória com as ressalvas da pessoa.",
+      "Peça uma conclusão provisória que registre as dúvidas em aberto.",
       "Introduza testes pequenos com risco controlado."
     ],
     "attention": [
