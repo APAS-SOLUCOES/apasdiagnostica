@@ -1,12 +1,12 @@
 import { CalendarDays, CheckCircle2, Target, Users, MessageCircle, Compass, BarChart3 } from "lucide-react";
 import type { ReactNode } from "react";
 import type { ScoreResult } from "@/lib/disc/scoring";
-import { DIMENSIONS, DIMENSION_NAMES } from "@/lib/disc/instrument";
+import { DEFAULT_SCORING, DIMENSIONS, DIMENSION_NAMES, type Dimension } from "@/lib/disc/instrument";
 import DIMENSION_CONTENT from "@/lib/disc/technical-factor-text.json";
 import sectionText from "@/lib/disc/technical-section-text.json";
 import { COMBINATION_NARRATIVES } from "@/lib/disc/report-content";
 import { getTechnicalReportNarrative } from "@/lib/disc/report-narrative-presentation";
-import { TECHNICAL_PROFILE_CLOSING } from "@/lib/disc/technical-narrative-text";
+import { firstNameOf, standardizeFactors, technicalVoice } from "@/lib/disc/technical-voice";
 
 const apasLogoDark = "/apas-logo-dark.svg?v=approved-technical";
 const apasLogoWhite = "/apas-logo.svg?v=approved-technical";
@@ -110,14 +110,50 @@ function ProfileLabels({ scores }: { scores: ScoreResult }) {
   );
 }
 
+/** Same order and descriptions as the individual report's profile cards. */
+const PROFILE_PLANES = [
+  { key: "NATURAL", label: "Natural", description: "Como tende a agir quando está mais à vontade." },
+  { key: "ADAPTADO", label: "Adaptado", description: "Como ajusta o comportamento ao que percebe que o ambiente pede." },
+  { key: "SOCIAL", label: "Social", description: "Como acredita que precisa se apresentar ao ambiente." },
+] as const;
+
 function ProfileModeCards() {
   return (
     <div className="tech-mode-cards">
-      <div><strong>NATURAL</strong><p>Como a pessoa tende a responder espontaneamente.</p></div>
-      <div><strong>SOCIAL</strong><p>Como tende a responder às demandas percebidas do ambiente.</p></div>
-      <div><strong>ADAPTADO</strong><p>Como tende a ajustar seu comportamento às exigências atuais.</p></div>
+      {PROFILE_PLANES.map((plane) => <div key={plane.key}><strong>{plane.key}</strong><p>{plane.description}</p></div>)}
     </div>
   );
+}
+
+const factorLabel = (d: Dimension) => `${DIMENSION_NAMES[d]} (${d})`;
+const decimal = (n: number) => n.toFixed(1).replace(".", ",");
+
+const SUMMARY_SECTIONS: Array<[string, number]> = [
+  ["Introdução e Modelo DISC", 3],
+  ["Perfil Comportamental", 4],
+  ["Análise do Perfil", 5],
+  ["Comunicação", 6],
+  ["Liderança e Gestão", 7],
+  ["Trabalho em Equipe", 8],
+  ["Pressão, Mudanças e Desenvolvimento", 9],
+  ["Conclusão e Aplicação Gerencial", 10],
+];
+
+/** Explains the rule the scoring engine already applies; it does not recalculate anything. */
+function profileRuleText(scores: ScoreResult) {
+  if (scores.scoringVersion?.startsWith("apas-scoring-1.2")) {
+    return "O fator predominante e o secundário são os dois mais altos do plano Adaptado, que soma cada escolha “mais se parece comigo” (peso 2) e cada bloco em que o fator não foi marcado como “menos se parece comigo” (peso 1). Em empate, prevalece o fator com mais escolhas “mais se parece comigo” e, depois, o com menos escolhas “menos se parece comigo”.";
+  }
+  return `O fator predominante e o secundário são os dois mais altos do plano de referência definido na versão de pontuação ${scores.scoringVersion}.`;
+}
+
+function naturalSecondaryNote(scores: ScoreResult) {
+  const natural = scores.natural?.percent;
+  if (!natural) return "";
+  const ranking = [...DIMENSIONS].sort((a, b) => natural[b] - natural[a]);
+  const second = ranking[1];
+  if (!second || second === scores.secondary || natural[second] <= natural[scores.secondary]) return "";
+  return ` No plano Natural, a segunda posição é de ${factorLabel(second)}; no perfil final, o secundário é ${factorLabel(scores.secondary)} porque a regra considera também as escolhas afirmativas.`;
 }
 
 function Box({ title, children, tone = "dark" }: { title: string; children: ReactNode; tone?: "red" | "dark" | "gray" }) {
@@ -141,12 +177,18 @@ export function DiscTechnicalReport({
   const p = scores.predominant;
   const s = scores.secondary;
   const content = DIMENSION_CONTENT[p];
+  const secondaryContent = DIMENSION_CONTENT[s];
+  const firstName = firstNameOf(assessment.candidate_name);
+  const v = (text: string) => technicalVoice(text, firstName);
+  const who = firstName || "a pessoa avaliada";
   const sections = sectionText as Record<string, typeof sectionText.DI>;
   const editorial = sections[scores.combination] ?? sections[`${p}${s}`] ?? sectionText.DI;
 
-  const adaptationText = scores.adaptationAlert
-    ? "A distância entre Natural e Adaptado merece investigação contextual. Pode representar flexibilidade diante das demandas ou esforço de adaptação prolongado."
-    : "A diferença entre Natural e Adaptado não acionou alerta automático. Observe em quais ambientes a pessoa amplia, reduz ou alterna comportamentos.";
+  const alertLimit = decimal(DEFAULT_SCORING.adaptationAlert);
+  const adaptationBand = scores.adaptationAlert ? "alta" : "baixa";
+  const adaptationReading = scores.adaptationAlert
+    ? `Os planos Natural e Social estão distantes: ${who} ajusta bastante o comportamento ao que acredita que o ambiente espera. Converse sobre quais demandas exigem esse ajuste e se o esforço é sustentável no ritmo atual.`
+    : `Os planos Natural e Social estão próximos: o comportamento apresentado no trabalho se aproxima do modo espontâneo. Acompanhe em quais situações ${who} amplia ou reduz comportamentos.`;
 
   return (
     <article className="disc-technical-report tech-approved-report" aria-label={`Relatório Técnico DISC de ${assessment.candidate_name}`}>
@@ -154,25 +196,22 @@ export function DiscTechnicalReport({
 
       <ApprovedPage number={2} title="Sumário">
         <div className="tech-summary-approved">
-          {[
-            "Introdução e Modelo DISC",
-            "Perfil Comportamental",
-            "Análise do Perfil",
-            "Comunicação",
-            "Liderança e Gestão",
-            "Trabalho em Equipe",
-            "Pressão, Mudanças e Desenvolvimento",
-            "Conclusão e Aplicação Gerencial",
-          ].map((item, i) => (
-            <div key={item}><b>{String(i + 1).padStart(2, "0")}</b><span>{item}</span></div>
+          {SUMMARY_SECTIONS.map(([item, page]) => (
+            <div key={item}><b>{String(page).padStart(2, "0")}</b><span>{item}</span></div>
           ))}
         </div>
       </ApprovedPage>
 
       <ApprovedPage number={3} title="Introdução" subtitle="Uma leitura comportamental para ampliar a compreensão sobre pessoas e equipes.">
         <FactorCards />
+        <Box title="COMO LER ESTE RELATÓRIO">
+          <div role="list" aria-label="Como ler este relatório">
+            {PROFILE_PLANES.map((plane) => <div role="listitem" key={plane.key}>• <b>{plane.label}:</b> {plane.description.charAt(0).toLowerCase() + plane.description.slice(1)}</div>)}
+            <div role="listitem">• <b>Percentuais:</b> em cada plano, os quatro fatores somam 100%; 25% indica distribuição equilibrada, e quanto maior o percentual, mais presente o fator naquele plano.</div>
+          </div>
+        </Box>
         <Box title="PARA LÍDERES, GESTORES E EMPRESÁRIOS" tone="red">
-          A leitura oferece hipóteses para conduzir a pessoa no trabalho. Confronte-as com entregas, competências e contexto antes de decidir sobre responsabilidades ou desenvolvimento.
+          O relatório orienta comunicação, delegação, feedback e desenvolvimento no trabalho. Compare cada leitura com entregas, competências e contexto antes de decidir sobre responsabilidades.
         </Box>
       </ApprovedPage>
 
@@ -184,6 +223,7 @@ export function DiscTechnicalReport({
           </div>
           <ProfileModeCards />
         </div>
+        <Box title="COMO O PERFIL É DEFINIDO" tone="gray">{profileRuleText(scores)}{naturalSecondaryNote(scores)}</Box>
       </ApprovedPage>
 
       <ApprovedPage number={5} title="Análise do Perfil">
@@ -192,54 +232,70 @@ export function DiscTechnicalReport({
           <div><h3>{DIMENSION_NAMES[p]} — {content.headline}</h3><p>{adaptive.title.split(" · ")[0] ?? adaptive.title}</p></div>
         </div>
         <div className="tech-analysis-grid">
-          <Box title="PRINCIPAIS CARACTERÍSTICAS" tone="red">{content.characteristics.slice(0, 4).join(" ")}</Box>
-          <Box title="PONTOS FORTES">{narrative.best.slice(0, 3).join(" ")}</Box>
-          <Box title="PONTOS DE ATENÇÃO" tone="gray">{content.attention.slice(0, 3).join(" ")}</Box>
-          <Box title="LEITURA GERENCIAL" tone="red">{editorial.managementReading}</Box>
+          <Box title="PRINCIPAIS CARACTERÍSTICAS" tone="red">{v(content.characteristics.slice(0, 4).join(" "))}</Box>
+          <Box title="PONTOS FORTES">{v(narrative.best.slice(0, 3).join(" "))}</Box>
+          <Box title="PONTOS DE ATENÇÃO" tone="gray">{v(content.attention.slice(0, 3).join(" "))}</Box>
+          <Box title="LEITURA GERENCIAL" tone="red">{v(editorial.managementReading)}</Box>
+        </div>
+        <div className="tech-analysis-heading">
+          <span>{s}</span>
+          <div><h3>{DIMENSION_NAMES[s]} — {secondaryContent.headline}</h3><p>Fator secundário</p></div>
+        </div>
+        <div className="tech-analysis-grid">
+          <Box title="PRINCIPAIS CARACTERÍSTICAS" tone="red">{v(secondaryContent.characteristics.slice(0, 3).join(" "))}</Box>
+          <Box title="PONTOS FORTES">{v(secondaryContent.strengths.slice(0, 3).join(" "))}</Box>
+          <Box title="PONTOS DE ATENÇÃO" tone="gray">{v(secondaryContent.attention.slice(0, 3).join(" "))}</Box>
+          <Box title="LEITURA GERENCIAL" tone="red">{v(secondaryContent.motivators.slice(0, 2).join(" "))}</Box>
         </div>
       </ApprovedPage>
 
       <ApprovedPage number={6} title="Comunicação">
         <div className="tech-communication-approved">
-          <Box title="COMO TENDE A SE COMUNICAR" tone="red">{content.communication}</Box>
-          <Box title="COMO PODE RECEBER INFORMAÇÕES">{editorial.receive}</Box>
-          <Box title="PARA O LÍDER" tone="red">{narrative.communication}</Box>
-          <Box title="FEEDBACK">{editorial.feedback}</Box>
-          <Box title="POSSÍVEIS PONTOS DE TENSÃO" tone="gray">{editorial.tension}</Box>
+          <Box title="COMO SE COMUNICA" tone="red">{v(content.communication)}</Box>
+          <Box title="COMO PREFERE RECEBER INFORMAÇÕES">{v(editorial.receive)}</Box>
+          <Box title="PARA O LÍDER" tone="red">{v(narrative.communication)}</Box>
+          <Box title="FEEDBACK">{v(editorial.feedback)}</Box>
+          <Box title="POSSÍVEIS PONTOS DE TENSÃO" tone="gray">{v(editorial.tension)}</Box>
         </div>
       </ApprovedPage>
 
       <ApprovedPage number={7} title="Liderança e Gestão">
         <div className="tech-management-grid">
-          <Box title="COMO LIDERAR" tone="red">{narrative.leadership}</Box>
-          <Box title="DELEGAÇÃO">{editorial.delegation}</Box>
-          <Box title="COBRANÇA E FEEDBACK">{editorial.accountability}</Box>
-          <Box title="RECONHECIMENTO E DESENVOLVIMENTO">{editorial.recognition}</Box>
+          <Box title="COMO LIDERAR" tone="red">{v(narrative.leadership)}</Box>
+          <Box title="DELEGAÇÃO">{v(editorial.delegation)}</Box>
+          <Box title="COBRANÇA E FEEDBACK">{v(editorial.accountability)}</Box>
+          <Box title="RECONHECIMENTO E DESENVOLVIMENTO">{v(editorial.recognition)}</Box>
         </div>
-        <Box title="ATENÇÃO DO GESTOR" tone="red">{editorial.managerAttention}</Box>
+        <Box title="ATENÇÃO DO GESTOR" tone="red">{v(editorial.managerAttention)}</Box>
       </ApprovedPage>
 
       <ApprovedPage number={8} title="Trabalho em Equipe">
-        <Box title="COMO TENDE A CONTRIBUIR" tone="red">{narrative.team}</Box>
+        <Box title="COMO CONTRIBUI" tone="red">{v(narrative.team)}</Box>
         <div className="tech-team-grid">
-          <Box title="RITMO">{content.habits.slice(0, 2).join(" ")}</Box>
-          <Box title="COMUNICAÇÃO">{editorial.teamCommunication}</Box>
-          <Box title="DECISÃO">{narrative.decision}</Box>
-          <Box title="INTEGRAÇÃO">{editorial.integration}</Box>
+          <Box title="RITMO">{v(content.habits.slice(0, 2).join(" "))}</Box>
+          <Box title="COMUNICAÇÃO">{v(editorial.teamCommunication)}</Box>
+          <Box title="DECISÃO">{v(narrative.decision)}</Box>
+          <Box title="INTEGRAÇÃO">{v(editorial.integration)}</Box>
         </div>
       </ApprovedPage>
 
       <ApprovedPage number={9} title="Pressão, Mudanças e Desenvolvimento">
         <div className="tech-pressure-grid">
-          <Box title="SOB PRESSÃO" tone="red">{narrative.pressure}</Box>
-          <Box title="DIANTE DE MUDANÇAS">{narrative.change}</Box>
-          <Box title="ADAPTAÇÃO" tone="red">{adaptationText} Índice de adaptação: {scores.adaptationIndex.toFixed(1).replace(".", ",")}.</Box>
-          <Box title="DESENVOLVIMENTO">{editorial.development}</Box>
+          <Box title="SOB PRESSÃO" tone="red">{v(narrative.pressure)}</Box>
+          <Box title="DIANTE DE MUDANÇAS">{v(narrative.change)}</Box>
+          <Box title="ÍNDICE DE ADAPTAÇÃO" tone="red">
+            <b>{decimal(scores.adaptationIndex)} — faixa {adaptationBand}.</b> {adaptationReading}
+            <div role="list" aria-label="Escala do índice de adaptação">
+              <div role="listitem">{scores.adaptationAlert ? "○" : "●"} Baixo: abaixo de {alertLimit}, sem alerta automático.</div>
+              <div role="listitem">{scores.adaptationAlert ? "●" : "○"} Alto: {alertLimit} ou mais, com alerta de adaptação.</div>
+            </div>
+          </Box>
+          <Box title="DESENVOLVIMENTO">{v(editorial.development)}</Box>
         </div>
         <Box title="EXPERIMENTOS DE DESENVOLVIMENTO" tone="red">
           <div role="list" aria-label="Experimentos de desenvolvimento">
             {(adaptive.experiments?.slice(0, 3).length ? adaptive.experiments.slice(0, 3) : narrative.experiments.slice(0, 3)).map((experiment, index) => (
-              <div role="listitem" key={index}>• {experiment}</div>
+              <div role="listitem" key={index}>• {v(experiment)}</div>
             ))}
           </div>
         </Box>
@@ -247,15 +303,18 @@ export function DiscTechnicalReport({
 
       <ApprovedPage number={10} title="Conclusão e Aplicação Gerencial">
         <Box title="SÍNTESE DO PERFIL" tone="red">
-          {adaptive.profilePortrait ?? narrative.essence} Predominante {p}, secundário {s}, combinação {scores.combination}. {TECHNICAL_PROFILE_CLOSING}
+          {v(adaptive.profilePortrait ?? narrative.essence)} Combinação {scores.combination}: predominante {factorLabel(p)} e secundário {factorLabel(s)}.
         </Box>
         <div className="tech-conclusion-grid">
-          <Box title="RESULTADOS">{editorial.resultsPlan}</Box>
-          <Box title="PESSOAS">{editorial.peoplePlan}</Box>
-          <Box title="PROCESSOS">{editorial.processPlan}</Box>
+          <Box title="RESULTADOS">{v(editorial.resultsPlan)}</Box>
+          <Box title="PESSOAS">{v(editorial.peoplePlan)}</Box>
+          <Box title="PROCESSOS">{v(editorial.processPlan)}</Box>
         </div>
         <Box title="O QUE O GESTOR DEVE OBSERVAR" tone="red">
-          Comunicação • Delegação • Acompanhamento • Feedback • Desenvolvimento. Use a leitura como hipótese de trabalho e valide com comportamento observável, competências, experiência, desempenho e contexto.
+          Comunicação • Delegação • Acompanhamento • Feedback • Desenvolvimento. Acompanhe esses pontos nas conversas de gestão, comparando a leitura com entregas, competências, experiência e contexto.
+        </Box>
+        <Box title="CONFIDENCIALIDADE E USO" tone="gray">
+          Este relatório contém dados pessoais de {assessment.candidate_name}, tratados conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018). O acesso é restrito às pessoas envolvidas no processo de gestão e desenvolvimento, e o documento não deve ser compartilhado para outra finalidade. As leituras são hipóteses de trabalho, a confirmar com comportamento observável, entregas e contexto. O relatório não deve ser usado isoladamente para decisões de contratação, promoção ou demissão.
         </Box>
         <p className="tech-final-principle">PESSOAS TRANSFORMAM ORGANIZAÇÕES.</p>
       </ApprovedPage>
