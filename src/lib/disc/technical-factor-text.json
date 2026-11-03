@@ -2,7 +2,7 @@
   "D": {
     "title": "Dominância",
     "headline": "Iniciativa com direção",
-    "summary": "Diante de problemas abertos, a pessoa busca autonomia para resolver. Canalize essa iniciativa oferecendo um desafio com resultado verificável.",
+    "summary": "Pessoas com Dominância elevada buscam autonomia para resolver problemas abertos. Canalize essa iniciativa com um desafio de resultado verificável.",
     "strengths": [
       "A pessoa inicia a resolução de obstáculos.",
       "A pessoa torna as prioridades explícitas.",
@@ -31,7 +31,7 @@
       "A pessoa pede conclusões rápidas em reuniões.",
       "A pessoa intervém ao perceber risco na entrega."
     ],
-    "communication": "A pessoa expressa posições de modo direto e rápido. Observe se apresenta sua conclusão antes de conhecer as restrições do interlocutor.",
+    "communication": "A pessoa expressa posições de modo direto e rápido. Observe se apresenta a conclusão antes de conhecer as restrições do interlocutor.",
     "development": [
       "Peça que exponha a razão da escolha ao grupo.",
       "Solicite uma alternativa antes do fechamento.",
@@ -51,7 +51,7 @@
   "I": {
     "title": "Influência",
     "headline": "Expressão que aproxima",
-    "summary": "A conversa e a leitura do ambiente social ajudam a pessoa a gerar participação. Aproveite essa articulação em tarefas que exijam adesão, com acordos registrados.",
+    "summary": "Pessoas com Influência elevada geram participação pela conversa e pela leitura do ambiente social. Aproveite essa articulação em tarefas que exijam adesão, com acordos registrados.",
     "strengths": [
       "A pessoa cria abertura entre interlocutores.",
       "A pessoa apresenta propostas de modo acessível.",
@@ -100,7 +100,7 @@
   "S": {
     "title": "Estabilidade",
     "headline": "Continuidade com cuidado",
-    "summary": "Continuidade e cooperação orientam a atuação da pessoa. Apoie entregas sustentadas, esclarecer mudanças e proteger a capacidade de trabalho da pessoa.",
+    "summary": "Pessoas com Estabilidade elevada orientam a atuação por continuidade e cooperação. Apoie entregas sustentadas, esclareça mudanças com antecedência e proteja a capacidade de trabalho.",
     "strengths": [
       "A pessoa sustenta rotinas de entrega.",
       "A pessoa escuta questões ainda pouco claras.",
@@ -108,7 +108,7 @@
       "A pessoa ajuda a mediar diferenças de ritmo."
     ],
     "characteristics": [
-      "A pessoa prefere compreender a transição antes de executar a transição.",
+      "A pessoa prefere compreender a transição antes de executá-la.",
       "A pessoa busca reduzir conflitos desnecessários.",
       "A pessoa mantém o compromisso assumido.",
       "A pessoa constrói confiança por convivência consistente."
@@ -149,7 +149,7 @@
   "C": {
     "title": "Conformidade",
     "headline": "Análise que dá segurança",
-    "summary": "Evidências e padrões dão fundamento às escolhas da pessoa. Aproveite a análise da pessoa em problemas com risco técnico, delimitando o nível de precisão necessário.",
+    "summary": "Pessoas com Conformidade elevada fundamentam as escolhas em evidências e padrões. Aproveite essa análise em problemas com risco técnico, delimitando o nível de precisão necessário.",
     "strengths": [
       "A pessoa identifica inconsistências relevantes.",
       "A pessoa organiza argumentos verificáveis.",
@@ -181,7 +181,7 @@
     "communication": "A pessoa usa argumentos detalhados e ressalvas. Observe se a conclusão é compreensível para quem não domina o assunto.",
     "development": [
       "Combine o ponto em que a análise é suficiente.",
-      "Peça à pessoa uma conclusão provisória com as ressalvas da pessoa.",
+      "Peça uma conclusão provisória que registre as dúvidas em aberto.",
       "Introduza testes pequenos com risco controlado."
     ],
     "attention": [
