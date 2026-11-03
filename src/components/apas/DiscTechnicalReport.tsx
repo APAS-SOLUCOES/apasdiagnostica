@@ -229,9 +229,11 @@ export function DiscTechnicalReport({
             <ProfileLabels scores={scores} />
             <ProfileWheel scores={scores} />
           </div>
-          <ProfileModeCards />
+          <div>
+            <ProfileModeCards />
+            <Box title="COMO O PERFIL É DEFINIDO" tone="gray">{profileRuleText(scores)}{naturalSecondaryNote(scores)}</Box>
+          </div>
         </div>
-        <Box title="COMO O PERFIL É DEFINIDO" tone="gray">{profileRuleText(scores)}{naturalSecondaryNote(scores)}</Box>
       </ApprovedPage>
 
       <ApprovedPage number={5} title="Análise do Perfil">
