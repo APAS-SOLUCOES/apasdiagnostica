@@ -6,7 +6,7 @@ import DIMENSION_CONTENT from "@/lib/disc/technical-factor-text.json";
 import sectionText from "@/lib/disc/technical-section-text.json";
 import { COMBINATION_NARRATIVES } from "@/lib/disc/report-content";
 import { getTechnicalReportNarrative } from "@/lib/disc/report-narrative-presentation";
-import { firstNameOf, standardizeFactors, technicalVoice } from "@/lib/disc/technical-voice";
+import { firstNameOf, technicalVoice } from "@/lib/disc/technical-voice";
 
 const apasLogoDark = "/apas-logo-dark.svg?v=approved-technical";
 const apasLogoWhite = "/apas-logo.svg?v=approved-technical";
