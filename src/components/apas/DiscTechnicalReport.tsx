@@ -179,12 +179,20 @@ export function DiscTechnicalReport({
   const content = DIMENSION_CONTENT[p];
   const secondaryContent = DIMENSION_CONTENT[s];
   const firstName = firstNameOf(assessment.candidate_name);
-  const v = (text: string) => technicalVoice(text, firstName);
+  /** Drops a sentence already shown earlier in the report, keeping at least one sentence per block. */
+  const shown = new Set<string>();
+  const v = (text: string) => {
+    const sentences = text.split(/(?<=[.!?])\s+/).filter(Boolean);
+    const fresh = sentences.filter((sentence) => !shown.has(sentence.trim().toLowerCase()));
+    const kept = fresh.length ? fresh : sentences.slice(0, 1);
+    kept.forEach((sentence) => shown.add(sentence.trim().toLowerCase()));
+    return technicalVoice(kept.join(" "), firstName);
+  };
   const who = firstName || "a pessoa avaliada";
   const sections = sectionText as Record<string, typeof sectionText.DI>;
   const editorial = sections[scores.combination] ?? sections[`${p}${s}`] ?? sectionText.DI;
 
-  const alertLimit = decimal(DEFAULT_SCORING.adaptationAlert);
+  const alertLimit = String(DEFAULT_SCORING.adaptationAlert).replace(".", ",");
   const adaptationBand = scores.adaptationAlert ? "alta" : "baixa";
   const adaptationReading = scores.adaptationAlert
     ? `Os planos Natural e Social estão distantes: ${who} ajusta bastante o comportamento ao que acredita que o ambiente espera. Converse sobre quais demandas exigem esse ajuste e se o esforço é sustentável no ritmo atual.`
