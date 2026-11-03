@@ -34,7 +34,7 @@
     }
   },
   "ID": {
-    "essence": "O contato com os outros abre oportunidades e dar impulso à iniciativa. Direcione essa articulação para compromissos com responsáveis definidos.",
+    "essence": "O contato com os outros abre oportunidades e dá impulso à iniciativa. Direcione essa articulação para compromissos com responsáveis definidos.",
     "best": [
       "A pessoa gera adesão a propostas novas com agilidade.",
       "A pessoa dinamiza o ambiente de trabalho.",
@@ -51,8 +51,8 @@
     "communication": "O raciocínio da pessoa toma forma na conversa. Peça uma mensagem objetiva e o registro dos combinados.",
     "decision": "A oportunidade e a reação do ambiente orientam a escolha da pessoa. Defina com a pessoa um critério e uma checagem antes do fechamento.",
     "leadership": "A pessoa lidera por presença e disposição para iniciar. A consistência aumenta com acompanhamento de rotina e feedback específico.",
-    "team": "A pessoa aproxima interlocutores e dar movimento à equipe. Reconheça com a pessoa quem sustenta a execução nos bastidores.",
-    "pressure": "Sob pressão, a pessoa intensifica comunicação e acelerar compromissos. Promova a redução de estímulos e ordenação de prioridades.",
+    "team": "A pessoa aproxima interlocutores e dá movimento à equipe. Reconheça com a pessoa quem sustenta a execução nos bastidores.",
+    "pressure": "Sob pressão, a pessoa intensifica a comunicação e acelera compromissos. Promova a redução de estímulos e ordenação de prioridades.",
     "change": "O potencial da mudança é comunicado de modo a gerar adesão inicial. Peça a tradução da visão em etapas com responsáveis definidos.",
     "experiments": [
       "Incentive a pessoa a converter ideias em três próximos passos visíveis.",
@@ -82,11 +82,11 @@
       "A pessoa mantém direção mesmo quando o contexto já mudou."
     ],
     "perceived": "A intenção é garantir segurança e avanço. É percebida, em alguns contextos, como controle ou resistência a revisões.",
-    "communication": "A pessoa é direta, sem buscar exposição constante. Ajude a pessoa a explicar os motivos antes da conclusão.",
+    "communication": "A pessoa se comunica de forma direta, sem buscar exposição constante. Ajude a pessoa a explicar os motivos antes da conclusão.",
     "decision": "A pessoa sustenta a direção com firmeza. Acorde com a pessoa os sinais que justificam rever a decisão.",
     "leadership": "A pessoa combina cobrança e proteção da equipe. A liderança se fortalece com delegação de responsabilidades críticas.",
-    "team": "A pessoa oferece estabilidade e direção ao grupo. Esclareça o espaço de decisão de cada integrante.",
-    "pressure": "Sob pressão, a pessoa endurece posições ou absorver carga de trabalho. Organize a divisão de risco e solicitação antecipada de apoio.",
+    "team": "A pessoa oferece constância e direção ao grupo. Esclareça o espaço de decisão de cada integrante.",
+    "pressure": "Sob pressão, a pessoa endurece posições ou absorve carga de trabalho. Organize a divisão de risco e solicitação antecipada de apoio.",
     "change": "Propósito e viabilidade de execução claros favorecem a aceitação da mudança. Um plano de transição concilia velocidade e sustentação.",
     "experiments": [
       "Incentive a pessoa a definir sinais objetivos para revisão de decisões.",
@@ -152,10 +152,10 @@
     "perceived": "A intenção é incluir e apoiar a equipe. Em certas situações, é percebida como dificuldade de confronto ou falta de prioridade explícita.",
     "communication": "A pessoa aproxima os interlocutores pelo diálogo e pela escuta. Ajude a pessoa a expressar expectativas e discordâncias com clareza.",
     "decision": "A pessoa considera primeiro o impacto sobre os outros. Alinhe prazos e critérios para que o consenso não adie a decisão.",
-    "leadership": "A pessoa lidera por vínculo, participação e abertura para participar. A liderança se amplia quando o cuidado inclui cobrança e consequência.",
-    "team": "A pessoa colabora com disponibilidade. Proteja sua carga de trabalho para que o apoio não comprometa as entregas da pessoa.",
-    "pressure": "Sob pressão, a pessoa busca aprovação ou silenciar desconfortos. Conversas diretas e respeitosas reduzem o desgaste acumulado.",
-    "change": "Compreensão do sentido e suporte à equipe favorecem a adesão à mudança. A pessoa traduz impacto e construir adesão gradual.",
+    "leadership": "A pessoa lidera por vínculo, escuta e abertura à participação. A liderança se amplia quando o cuidado inclui cobrança e consequência.",
+    "team": "A pessoa colabora com disponibilidade. Proteja a carga de trabalho para que o apoio a outros não comprometa as entregas da pessoa.",
+    "pressure": "Sob pressão, a pessoa busca aprovação ou silencia desconfortos. Conversas diretas e respeitosas reduzem o desgaste acumulado.",
+    "change": "Compreensão do sentido e suporte à equipe favorecem a adesão à mudança. A pessoa traduz impacto e constrói adesão gradual.",
     "experiments": [
       "Incentive a pessoa a formular pedido explícito em vez de oferecer ajuda proativamente.",
       "Incentive a pessoa a registrar discordâncias e próximos passos.",
@@ -188,7 +188,7 @@
     "decision": "A pessoa alterna leitura social e verificação técnica. Ajude a pessoa a explicitar critérios para não reabrir o mesmo tema.",
     "leadership": "A pessoa lidera explicando, envolvendo e qualificando a equipe. Delegar sem prescrever cada detalhe favorece a autonomia.",
     "team": "A pessoa conecta linguagens e perspectivas. Ajude a pessoa a transformar análise e explicação em decisões práticas.",
-    "pressure": "Sob pressão, a pessoa fala mais ou aprofundar detalhes para recuperar segurança. Sintetizar fato, escolha e próximo passo reduz ruído.",
+    "pressure": "Sob pressão, a pessoa fala mais ou aprofunda detalhes para recuperar segurança. Sintetizar fato, escolha e próximo passo reduz ruído.",
     "change": "A comunicação do sentido da mudança vem acompanhada da antecipação de dúvidas. Pilotos e ciclos de retorno equilibram adesão e precisão.",
     "experiments": [
       "Incentive a pessoa a resumir propostas em uma frase antes dos detalhes.",
@@ -204,7 +204,7 @@
     }
   },
   "SD": {
-    "essence": "A constância na rotina dá lugar à firmeza quando um compromisso está em risco. Convide a pessoa a explicitar posições antes que a urgência determine a posição da pessoa.",
+    "essence": "A constância na rotina dá lugar à firmeza quando um compromisso está em risco. Convide a pessoa a explicitar posições antes que a urgência imponha uma decisão.",
     "best": [
       "A pessoa mantém entregas em cenários exigentes.",
       "A pessoa age com firmeza quando necessário.",
@@ -238,7 +238,7 @@
     }
   },
   "SI": {
-    "essence": "A manutenção dos vínculos favorece a cooperação no cotidiano. Faça pedidos explícitos e verificar se o cuidado com o grupo deixa espaço para as prioridades da pessoa.",
+    "essence": "A manutenção dos vínculos favorece a cooperação no cotidiano. Faça pedidos explícitos e verifique se o cuidado com o grupo deixa espaço para as prioridades da pessoa.",
     "best": [
       "A pessoa escuta e acolhe perspectivas diversas.",
       "A pessoa sustenta clima cooperativo.",
@@ -255,8 +255,8 @@
     "communication": "A pessoa valoriza um diálogo seguro. Ajude a pessoa a formular pedidos com prazo e consequência, preservando o vínculo.",
     "decision": "A pessoa considera o impacto coletivo antes de decidir. Defina com a pessoa quem precisa ser consultado.",
     "leadership": "A pessoa lidera por confiança e exemplo pessoal. Comunicar expectativas antecipadamente evita frustração posterior.",
-    "team": "A pessoa contribui de forma agregadora e consistente. Combine limites de carga e estimular reciprocidade.",
-    "pressure": "Sob pressão, a pessoa absorve tensão e minimizar o próprio desconforto. Nomear fatos e solicitar apoio reduz desgaste invisível.",
+    "team": "A pessoa contribui de forma agregadora e consistente. Combine limites de carga e estimule a reciprocidade.",
+    "pressure": "Sob pressão, a pessoa absorve tensão e minimiza o próprio desconforto. Nomear fatos e solicitar apoio reduz desgaste invisível.",
     "change": "A preparação da equipe e dos vínculos envolvidos facilita a transição. Experiências pequenas constroem confiança no novo.",
     "experiments": [
       "Incentive a pessoa a transformar expectativa silenciosa em pedido explícito.",
@@ -290,7 +290,7 @@
     "decision": "A pessoa organiza informações e impactos antes de escolher. Combine um critério de suficiência para concluir.",
     "leadership": "A pessoa lidera por método, previsibilidade e coerência. Abrir espaço para experimentação mantém padrão sem limitar inovação.",
     "team": "A pessoa oferece memória e qualidade operacional ao grupo. Ajude a pessoa a tornar o raciocínio visível, sem que o silêncio pareça resistência.",
-    "pressure": "Sob pressão, a pessoa aumenta conferências e retrair-se. Distinguir risco real de desconforto com incerteza ajuda a priorizar.",
+    "pressure": "Sob pressão, a pessoa aumenta as conferências e se retrai. Distinguir risco real de desconforto com incerteza ajuda a priorizar.",
     "change": "Planejamento, testes e boa comunicação favorecem o apoio à mudança. A pessoa converte novidade em rotina sustentável.",
     "experiments": [
       "Incentive a pessoa a definir mínimo seguro para iniciar.",
@@ -358,7 +358,7 @@
     "decision": "A pessoa considera evidências e reações do público na escolha. Ajude a pessoa a separar fatos, preferências e receios.",
     "leadership": "A pessoa lidera por conhecimento e capacidade de explicação. Aceitar soluções alternativas que atendam critérios favorece autonomia.",
     "team": "A pessoa aproxima técnica e relacionamento. Combine tempo de preparação individual e momentos de construção conjunta.",
-    "pressure": "Sob pressão, a pessoa revisa demais ou verbalizar para organizar o pensamento. Um roteiro curto protege tempo e clareza.",
+    "pressure": "Sob pressão, a pessoa revisa demais ou verbaliza para organizar o pensamento. Um roteiro curto protege tempo e clareza.",
     "change": "Razões compreensíveis e bem explicadas favorecem o apoio à mudança. A pessoa traduz razões, riscos e critérios para a equipe.",
     "experiments": [
       "Incentive a pessoa a apresentar conclusão nos primeiros trinta segundos.",
@@ -388,11 +388,11 @@
       "A pessoa revisa além do impacto real."
     ],
     "perceived": "A intenção é cuidar da qualidade e evitar riscos. Em cenários velozes, é percebida como reserva ou excesso de cautela.",
-    "communication": "A pessoa pondera as palavras e buscar precisão. Incentive a pessoa a compartilhar conclusões e dúvidas antes que o silêncio gere equívocos.",
+    "communication": "A pessoa pondera as palavras e busca precisão. Incentive a pessoa a compartilhar conclusões e dúvidas antes que o silêncio gere equívocos.",
     "decision": "A pessoa compara opções e consequências com cuidado. Alinhe prazo e critérios para que a análise chegue à conclusão.",
     "leadership": "A pessoa lidera por coerência, método e cuidado. Oferecer direção explícita em momentos ambíguos aumenta a segurança do grupo.",
     "team": "A pessoa oferece confiabilidade, escuta e memória técnica. Convide a pessoa a participar quando sua análise ajudar a orientar a equipe.",
-    "pressure": "Sob pressão, a pessoa retrai-se, conferir mais ou manter rotinas conhecidas. Explicitar prioridades direciona energia ao que importa.",
+    "pressure": "Sob pressão, a pessoa se retrai, confere mais ou mantém rotinas conhecidas. Explicitar prioridades direciona energia ao que importa.",
     "change": "Transições planejadas e fundamentadas têm maior receptividade. A pessoa é essencial para converter mudança em processo confiável.",
     "experiments": [
       "Incentive a pessoa a compartilhar preocupação antes de concluir a análise.",

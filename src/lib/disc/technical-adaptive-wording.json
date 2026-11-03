@@ -53,7 +53,7 @@
   ],
   [
     "Com (.*?) no (?:seu )?repertório, escolha uma situação por semana para ampliar deliberadamente o recurso de (.*?)\\.",
-    "Escolha uma tarefa em que a pessoa usa $1 e combinar a prática de $2."
+    "Escolha uma tarefa em que a pessoa usa $1 e combine a prática de $2."
   ],
   [
     "Com (.*?) no (?:seu )?repertório, observe quando esse recurso aparece naturalmente e registre uma situação em que você poderia usá-lo com mais intenção\\.",
