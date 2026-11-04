@@ -32,7 +32,7 @@ describe("Technical DISC report wording and guidance", () => {
 
   it("writes factor names as Name (letter) with capital initial", () => {
     expect(standardizeFactors("Distribua para que conformidade e dominância contribuam.")).toBe("Distribua para que Conformidade (C) e Dominância (D) contribuam.");
-    expect(standardizeFactors("Quando a exigência sobe, C se intensifica.")).toBe("Quando a exigência sobe, Conformidade (C) se intensifica.");
+    expect(standardizeFactors("Quando a exigência sobe, C se intensifica.")).toBe("Quando a exigência sobe, a Conformidade (C) se intensifica.");
   });
 
   it("places 18 or more in the high adaptation band and below 18 in the low band", () => {
