@@ -13,7 +13,7 @@
   ],
   [
     "Ao decidir, seu perfil mostra uma tendência a privilegiar (.*?) e complementar essa escolha com (.*?)\\. Em decisões simples,.*$",
-    "Nas escolhas, a pessoa parte de $1 e complementar com $2. Defina a alçada, as consultas obrigatórias e os sinais que justificam rever o caminho."
+    "Nas escolhas, a pessoa parte de $1 e complementa com $2. Defina a alçada, as consultas obrigatórias e os sinais que justificam rever o caminho."
   ],
   [
     "Na liderança, sua assinatura comportamental.*?Em situações diferentes, vale alternar conscientemente entre (.*?) e (.*?), principalmente.*$",
@@ -57,7 +57,7 @@
   ],
   [
     "Com (.*?) no (?:seu )?repertório, observe quando esse recurso aparece naturalmente e registre uma situação em que você poderia usá-lo com mais intenção\\.",
-    "Observe quando a pessoa recorre a $1 e combinar onde aplicar esse recurso de forma intencional."
+    "Observe quando a pessoa recorre a $1 e combine onde aplicar esse recurso de forma intencional."
   ],
   [
     "A relação entre ([DISC]) e ([DISC]) indica uma oportunidade de equilíbrio: pratique um comportamento de (.*?) em uma situação em que (.*?) costuma aparecer primeiro\\.",
