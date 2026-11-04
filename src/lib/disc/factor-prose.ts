@@ -26,6 +26,8 @@ export function writeFactorNames(text: string) {
     )
     .replace(/Seu repertório combina (\p{L}+) de maneira (.+?) e (\p{L}+) como apoio\./gu,
       (_m, first: string, how: string, second: string) => `Seu repertório combina ${capital(first)} de maneira ${how} e ${capital(second)} como apoio.`)
+    // "C+D" inside a sentence -> "Conformidade e Dominância"
+    .replace(new RegExp(`${BEFORE}([DISC])\\+${CODE}`, "gu"), (_m, a: string, b: string) => `${name(a)} e ${name(b)}`)
     // "entre C e D" -> "entre Conformidade e Dominância"
     .replace(new RegExp(`${BEFORE}(entre|Entre) ${CODE} e ${CODE}`, "gu"), (_m, word: string, a: string, b: string) => `${word} ${name(a)} e ${name(b)}`)
     // "recurso C" -> "recurso de Conformidade"

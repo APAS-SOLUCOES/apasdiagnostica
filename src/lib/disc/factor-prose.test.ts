@@ -17,8 +17,8 @@ describe("factor letters inside sentences", () => {
       .toBe("A Influência complementa a Dominância quando a tarefa pede outro tipo de contribuição.");
   });
 
-  it("leaves short labels such as C+D and codes in parentheses untouched", () => {
-    expect(writeFactorNames("C+D")).toBe("C+D");
+  it("names both factors of a pair and leaves codes in parentheses untouched", () => {
+    expect(writeFactorNames("Na combinação C+D, observe o ritmo.")).toBe("Na combinação Conformidade e Dominância, observe o ritmo.");
     expect(writeFactorNames("Conformidade (C)")).toBe("Conformidade (C)");
     expect(writeFactorNames("Os quatro fatores DISC")).toBe("Os quatro fatores DISC");
   });
