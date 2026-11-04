@@ -7,6 +7,7 @@ import premiumEditorial from "./premium-editorial-replacements.json";
 import technicalEditorial from "./technical-editorial-replacements.json";
 import premiumAdaptive from "./premium-adaptive-wording.json";
 import technicalAdaptive from "./technical-adaptive-wording.json";
+import { writeFactorNames } from "./factor-prose";
 
 /** Literal wording only, applied after the engine has made every adaptive selection. */
 function editorialText(value: string, pairs: string[][]) {
@@ -31,10 +32,10 @@ function presentNarrative(
     (result, [pattern, replacement]) => result.replace(new RegExp(pattern, "g"), replacement),
     editorialText(value, editorial),
   );
-  const text = (value: string) => adaptiveWording.reduce((result, pair) => {
+  const text = (value: string) => writeFactorNames(adaptiveWording.reduce((result, pair) => {
     const [pattern, replacement] = pair;
     return pattern === undefined || replacement === undefined ? result : result.replace(new RegExp(pattern, "g"), replacement);
-  }, numericText(value));
+  }, numericText(value)));
   return {
     ...narrative,
     essence: text(narrative.essence),

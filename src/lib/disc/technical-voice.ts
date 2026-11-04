@@ -2,6 +2,8 @@
  * Technical report presentation only: applied to already-selected text at render time.
  * It never changes scores, selections or the shared engine text.
  */
+import { writeFactorNames } from "./factor-prose";
+
 const FACTOR_BY_NAME: Record<string, { name: string; code: string }> = {
   dominância: { name: "Dominância", code: "D" },
   influência: { name: "Influência", code: "I" },
@@ -12,7 +14,7 @@ const NAME_BY_CODE: Record<string, string> = { D: "Dominância", I: "Influência
 
 /** Writes every factor as "Nome (X)", with capital initial, once per mention. */
 export function standardizeFactors(text: string) {
-  return text
+  return writeFactorNames(text)
     .replace(/(^|[^\p{L}])(dominância|influência|estabilidade|conformidade)(?![\p{L}])(?!\s*\()/giu, (_m, before: string, word: string) => {
       const factor = FACTOR_BY_NAME[word.toLowerCase()];
       return factor ? `${before}${factor.name} (${factor.code})` : `${before}${word}`;
