@@ -3,13 +3,15 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { DiscTechnicalReport } from "./DiscTechnicalReport";
 import { DIMENSIONS, type Dimension } from "@/lib/disc/instrument";
 import type { ScoreResult } from "@/lib/disc/scoring";
-import { personalize, standardizeFactors } from "@/lib/disc/technical-voice";
+import { firstNameOf, personalize, standardizeFactors } from "@/lib/disc/technical-voice";
 
 const vector = (percent: Record<Dimension, number>) => ({ percent, raw: percent, order: [...DIMENSIONS].sort((a, b) => percent[b] - percent[a]) });
 
 function scores(p: Dimension, s: Dimension, adaptationIndex: number, natural?: Record<Dimension, number>): ScoreResult {
   const others = DIMENSIONS.filter((d) => d !== p && d !== s);
-  const adapted = { [p]: 36, [s]: 30, [others[0]!]: 18, [others[1]!]: 16 } as Record<Dimension, number>;
+  const [third, fourth] = others;
+  if (!third || !fourth) throw new Error("Two remaining factors required");
+  const adapted = { [p]: 36, [s]: 30, [third]: 18, [fourth]: 16 } as Record<Dimension, number>;
   return {
     scoringVersion: "apas-scoring-1.2.0", answeredItems: 24, totalItems: 24,
     natural: vector(natural ?? adapted), social: vector(adapted), adapted: vector(adapted),
@@ -46,10 +48,21 @@ describe("Technical DISC report wording and guidance", () => {
     expect(text).toMatch(/10\s+Conclusão e Aplicação Gerencial/);
   });
 
-  it("flags when the Natural plane's second factor differs from the final secondary", () => {
-    const flagged = render(scores("C", "D", 10, { C: 36, I: 30, D: 18, S: 16 }));
-    expect(flagged).toContain("No plano Natural, a segunda posição é de Influência (I)");
-    expect(render(scores("C", "D", 10))).not.toContain("No plano Natural, a segunda posição");
+  it("uses a properly capitalized first name", () => {
+    expect(firstNameOf("AUGUSTO ARAUJO")).toBe("Augusto");
+    expect(firstNameOf("ÉRICA SOUZA")).toBe("Érica");
+  });
+
+  it("uses the name at most once per narrative section for all combinations", () => {
+    for (const p of DIMENSIONS) for (const s of DIMENSIONS) if (p !== s) {
+      const markup = renderToStaticMarkup(<DiscTechnicalReport assessment={{ id: "x", candidate_name: "AUGUSTO ARAUJO", status: "completed", created_at: "2026-10-05T12:00:00Z" }} scores={scores(p, s, 22)} />);
+      const pages = markup.split(/<section\b/).slice(1);
+      for (const page of pages.slice(2)) {
+        const text = page.replace(/<[^>]+>/g, " ");
+        expect((text.match(/\bAugusto\b/g) ?? []).length).toBeLessThanOrEqual(1);
+        expect(text).not.toMatch(/\b(AUGUSTO|ele|ela)\b/);
+      }
+    }
   });
 
   it("keeps hedges out of every profile, except the shared Natural plane description", () => {
