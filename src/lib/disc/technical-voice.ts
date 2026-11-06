@@ -25,38 +25,44 @@ export function standardizeFactors(text: string) {
 /** First name shown in place of the generic subject; empty when no usable name exists. */
 export function firstNameOf(fullName: string | null | undefined) {
   const first = (fullName ?? "").trim().split(/\s+/)[0] ?? "";
-  return /\p{L}{2,}/u.test(first) ? first : "";
+  return /\p{L}{2,}/u.test(first) ? first.toLocaleLowerCase("pt-BR").replace(/(^|[-'])\p{L}/gu, (letter) => letter.toLocaleUpperCase("pt-BR")) : "";
 }
 
-const SUBJECT = /^A pessoa(?: avaliada)?\s+/;
+export type TechnicalSubjectContext = { mentioned: boolean };
 
-/**
- * Replaces "a pessoa" by the first name. A sentence that repeats the subject of the previous
- * sentence starts directly with the verb, so the name is not repeated in consecutive sentences.
- */
-export function personalize(text: string, firstName: string) {
+/** One name mention per local section; later references use subject omission or neutral wording. */
+export function personalize(text: string, firstName: string, context: TechnicalSubjectContext = { mentioned: false }) {
   if (!firstName) return text;
-  let previousAboutPerson = false;
   return text.split(/(?<=[.!?])\s+/).map((sentence) => {
-    let result = sentence;
-    const startsWithPerson = SUBJECT.test(result);
-    if (startsWithPerson) {
-      const rest = result.replace(SUBJECT, "");
-      const canOmit = previousAboutPerson && !/^(se|lhe|não|a|o)\s/i.test(rest);
-      result = canOmit ? rest.charAt(0).toUpperCase() + rest.slice(1) : `${firstName} ${rest}`;
-    }
-    const p = "pessoa(?: avaliada)?(?![\\p{L}])";
-    result = result
-      .replace(new RegExp(`(?<![\\p{L}])à ${p}`, "gu"), `a ${firstName}`)
-      .replace(new RegExp(`(?<![\\p{L}])da ${p}`, "gu"), `de ${firstName}`)
-      .replace(new RegExp(`(?<![\\p{L}])na ${p}`, "gu"), `em ${firstName}`)
-      .replace(new RegExp(`(?<![\\p{L}])pela ${p}`, "gu"), `por ${firstName}`)
-      .replace(new RegExp(`(?<![\\p{L}])[Aa] ${p}`, "gu"), firstName);
-    previousAboutPerson = startsWithPerson;
-    return result;
+    const prepared = context.mentioned ? sentence
+      .replace(/\b(?:Ajude|Incentive) a pessoa(?: avaliada)? a /gu, "Oriente a ")
+      .replace(/\bConvide a pessoa(?: avaliada)? a /gu, "Proponha ")
+      .replace(/\bEnvolva a pessoa(?: avaliada)? na /gu, "Promova participação na ")
+      .replace(/\bpara a pessoa(?: avaliada)? /gu, "para ") : sentence;
+    const result = prepared.replace(/\ba a pessoa\b/gu, "à pessoa").replace(
+      /(?<![\p{L}])(?:[Aa] pessoa(?: avaliada)?|à pessoa(?: avaliada)?|da pessoa(?: avaliada)?|na pessoa(?: avaliada)?|pela pessoa(?: avaliada)?)(?![\p{L}])(?!\s+(?:mais|menos)\s)/gu,
+      (reference, offset: number, source: string) => {
+        if (!context.mentioned) {
+          context.mentioned = true;
+          if (reference.startsWith("da ")) return `de ${firstName}`;
+          if (reference.startsWith("na ")) return `em ${firstName}`;
+          if (reference.startsWith("pela ")) return `por ${firstName}`;
+          if (reference.startsWith("à ")) return `a ${firstName}`;
+          return firstName;
+        }
+        if (reference.startsWith("da ")) return "";
+        if (reference.startsWith("na ")) return "nesse perfil";
+        if (reference.startsWith("pela ")) return "pela atuação individual";
+        if (reference.startsWith("à ")) return "a quem respondeu";
+        const before = source.slice(0, offset);
+        if (!before.trim() || /(?:,\s*|\bque\s+)$/.test(before)) return "";
+        return "quem respondeu";
+      },
+    ).replace(/\s{2,}/g, " ").replace(/\s+([,.])/g, "$1").trim();
+    return result.charAt(0).toUpperCase() + result.slice(1);
   }).join(" ");
 }
 
-export function technicalVoice(text: string, firstName: string) {
-  return personalize(standardizeFactors(text), firstName);
+export function technicalVoice(text: string, firstName: string, context?: TechnicalSubjectContext) {
+  return personalize(standardizeFactors(text), firstName, context);
 }
