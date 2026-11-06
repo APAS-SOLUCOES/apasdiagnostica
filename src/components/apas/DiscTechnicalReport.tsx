@@ -119,7 +119,7 @@ const PROFILE_PLANES = [
 
 function ProfileModeCards() {
   return (
-    <div className="tech-mode-cards">
+    <div className="tech-mode-cards self-stretch">
       {PROFILE_PLANES.map((plane) => <div key={plane.key}><strong>{plane.key}</strong><p>{plane.description}</p></div>)}
     </div>
   );
