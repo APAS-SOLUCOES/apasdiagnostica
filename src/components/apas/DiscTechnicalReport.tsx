@@ -226,70 +226,70 @@ export function DiscTechnicalReport({
           <div><h3>{DIMENSION_NAMES[p]} — {content.headline}</h3><p>{adaptive.title.split(" · ")[0] ?? adaptive.title}</p></div>
         </div>
         <div className="tech-analysis-grid">
-          <Box title="PRINCIPAIS CARACTERÍSTICAS" tone="red">{v(content.characteristics.slice(0, 4).join(" "))}</Box>
-          <Box title="PONTOS FORTES">{v(narrative.best.slice(0, 3).join(" "))}</Box>
-          <Box title="PONTOS DE ATENÇÃO" tone="gray">{v(content.attention.slice(0, 3).join(" "))}</Box>
-          <Box title="LEITURA GERENCIAL" tone="red">{v(editorial.managementReading)}</Box>
+          <Box title="PRINCIPAIS CARACTERÍSTICAS" tone="red">{v5(content.characteristics.slice(0, 4).join(" "))}</Box>
+          <Box title="PONTOS FORTES">{v5(narrative.best.slice(0, 3).join(" "))}</Box>
+          <Box title="PONTOS DE ATENÇÃO" tone="gray">{v5(content.attention.slice(0, 3).join(" "))}</Box>
+          <Box title="LEITURA GERENCIAL" tone="red">{v5(editorial.managementReading)}</Box>
         </div>
         <div className="tech-analysis-heading">
           <span>{s}</span>
           <div><h3>{DIMENSION_NAMES[s]} — {secondaryContent.headline}</h3><p>Fator secundário</p></div>
         </div>
         <div className="tech-analysis-grid">
-          <Box title="PRINCIPAIS CARACTERÍSTICAS" tone="red">{v(secondaryContent.characteristics.slice(0, 3).join(" "))}</Box>
-          <Box title="PONTOS FORTES">{v(secondaryContent.strengths.slice(0, 3).join(" "))}</Box>
-          <Box title="PONTOS DE ATENÇÃO" tone="gray">{v(secondaryContent.attention.slice(0, 3).join(" "))}</Box>
-          <Box title="LEITURA GERENCIAL" tone="red">{v(secondaryContent.motivators.slice(0, 2).join(" "))}</Box>
+          <Box title="PRINCIPAIS CARACTERÍSTICAS" tone="red">{v5(secondaryContent.characteristics.slice(0, 3).join(" "))}</Box>
+          <Box title="PONTOS FORTES">{v5(secondaryContent.strengths.slice(0, 3).join(" "))}</Box>
+          <Box title="PONTOS DE ATENÇÃO" tone="gray">{v5(secondaryContent.attention.slice(0, 3).join(" "))}</Box>
+          <Box title="LEITURA GERENCIAL" tone="red">{v5(secondaryContent.motivators.slice(0, 2).join(" "))}</Box>
         </div>
       </ApprovedPage>
 
       <ApprovedPage number={6} title="Comunicação">
         <div className="tech-communication-approved">
-          <Box title="COMO SE COMUNICA" tone="red">{v(content.communication)}</Box>
-          <Box title="COMO PREFERE RECEBER INFORMAÇÕES">{v(editorial.receive)}</Box>
-          <Box title="PARA O LÍDER" tone="red">{v(narrative.communication)}</Box>
-          <Box title="FEEDBACK">{v(editorial.feedback)}</Box>
-          <Box title="POSSÍVEIS PONTOS DE TENSÃO" tone="gray">{v(editorial.tension)}</Box>
+          <Box title="COMO SE COMUNICA" tone="red">{v6(content.communication)}</Box>
+          <Box title="COMO PREFERE RECEBER INFORMAÇÕES">{v6(editorial.receive)}</Box>
+          <Box title="PARA O LÍDER" tone="red">{v6(narrative.communication)}</Box>
+          <Box title="FEEDBACK">{v6(editorial.feedback)}</Box>
+          <Box title="POSSÍVEIS PONTOS DE TENSÃO" tone="gray">{v6(editorial.tension)}</Box>
         </div>
       </ApprovedPage>
 
       <ApprovedPage number={7} title="Liderança e Gestão">
         <div className="tech-management-grid">
-          <Box title="COMO LIDERAR" tone="red">{v(narrative.leadership)}</Box>
-          <Box title="DELEGAÇÃO">{v(editorial.delegation)}</Box>
-          <Box title="COBRANÇA E FEEDBACK">{v(editorial.accountability)}</Box>
-          <Box title="RECONHECIMENTO E DESENVOLVIMENTO">{v(editorial.recognition)}</Box>
+          <Box title="COMO LIDERAR" tone="red">{v7(narrative.leadership)}</Box>
+          <Box title="DELEGAÇÃO">{v7(editorial.delegation)}</Box>
+          <Box title="COBRANÇA E FEEDBACK">{v7(editorial.accountability)}</Box>
+          <Box title="RECONHECIMENTO E DESENVOLVIMENTO">{v7(editorial.recognition)}</Box>
         </div>
-        <Box title="ATENÇÃO DO GESTOR" tone="red">{v(editorial.managerAttention)}</Box>
+        <Box title="ATENÇÃO DO GESTOR" tone="red">{v7(editorial.managerAttention)}</Box>
       </ApprovedPage>
 
       <ApprovedPage number={8} title="Trabalho em Equipe">
-        <Box title="COMO CONTRIBUI" tone="red">{v(narrative.team)}</Box>
+        <Box title="COMO CONTRIBUI" tone="red">{v8(narrative.team)}</Box>
         <div className="tech-team-grid">
-          <Box title="RITMO">{v(content.habits.slice(0, 2).join(" "))}</Box>
-          <Box title="COMUNICAÇÃO">{v(editorial.teamCommunication)}</Box>
-          <Box title="DECISÃO">{v(narrative.decision)}</Box>
-          <Box title="INTEGRAÇÃO">{v(editorial.integration)}</Box>
+          <Box title="RITMO">{v8(content.habits.slice(0, 2).join(" "))}</Box>
+          <Box title="COMUNICAÇÃO">{v8(editorial.teamCommunication)}</Box>
+          <Box title="DECISÃO">{v8(narrative.decision)}</Box>
+          <Box title="INTEGRAÇÃO">{v8(editorial.integration)}</Box>
         </div>
       </ApprovedPage>
 
       <ApprovedPage number={9} title="Pressão, Mudanças e Desenvolvimento">
         <div className="tech-pressure-grid">
-          <Box title="SOB PRESSÃO" tone="red">{v(narrative.pressure)}</Box>
-          <Box title="DIANTE DE MUDANÇAS">{v(narrative.change)}</Box>
+          <Box title="SOB PRESSÃO" tone="red">{v9(narrative.pressure)}</Box>
+          <Box title="DIANTE DE MUDANÇAS">{v9(narrative.change)}</Box>
           <Box title="ÍNDICE DE ADAPTAÇÃO" tone="red">
-            <b>{decimal(scores.adaptationIndex)} — faixa {adaptationBand}.</b> {adaptationReading}
+            <b>{decimal(scores.adaptationIndex)} — faixa {adaptationBand}.</b> {v9(adaptationReading)}
             <div role="list" aria-label="Escala do índice de adaptação">
               <div role="listitem">{scores.adaptationAlert ? "○" : "●"} Baixo: abaixo de {alertLimit}, sem alerta automático.</div>
               <div role="listitem">{scores.adaptationAlert ? "●" : "○"} Alto: {alertLimit} ou mais, com alerta de adaptação.</div>
             </div>
           </Box>
-          <Box title="DESENVOLVIMENTO">{v(editorial.development)}</Box>
+          <Box title="DESENVOLVIMENTO">{v9(editorial.development)}</Box>
         </div>
         <Box title="EXPERIMENTOS DE DESENVOLVIMENTO" tone="red">
           <div role="list" aria-label="Experimentos de desenvolvimento">
             {(adaptive.experiments?.slice(0, 3).length ? adaptive.experiments.slice(0, 3) : narrative.experiments.slice(0, 3)).map((experiment, index) => (
-              <div role="listitem" key={index}>• {v(experiment)}</div>
+              <div role="listitem" key={index}>• {v9(experiment)}</div>
             ))}
           </div>
         </Box>
@@ -297,18 +297,18 @@ export function DiscTechnicalReport({
 
       <ApprovedPage number={10} title="Conclusão e Aplicação Gerencial">
         <Box title="SÍNTESE DO PERFIL" tone="red">
-          {v(adaptive.profilePortrait ?? narrative.essence)} Combinação {scores.combination}: predominante {factorLabel(p)} e secundário {factorLabel(s)}.
+          {v10(adaptive.profilePortrait ?? narrative.essence)} Combinação {scores.combination}: predominante {factorLabel(p)} e secundário {factorLabel(s)}.
         </Box>
         <div className="tech-conclusion-grid">
-          <Box title="RESULTADOS">{v(editorial.resultsPlan)}</Box>
-          <Box title="PESSOAS">{v(editorial.peoplePlan)}</Box>
-          <Box title="PROCESSOS">{v(editorial.processPlan)}</Box>
+          <Box title="RESULTADOS">{v10(editorial.resultsPlan)}</Box>
+          <Box title="PESSOAS">{v10(editorial.peoplePlan)}</Box>
+          <Box title="PROCESSOS">{v10(editorial.processPlan)}</Box>
         </div>
         <Box title="O QUE O GESTOR DEVE OBSERVAR" tone="red">
           Comunicação • Delegação • Acompanhamento • Feedback • Desenvolvimento. Acompanhe esses pontos nas conversas de gestão, comparando a leitura com entregas, competências, experiência e contexto.
         </Box>
         <Box title="CONFIDENCIALIDADE E USO" tone="gray">
-          Este relatório contém dados pessoais de {assessment.candidate_name}, tratados conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018). O acesso é restrito às pessoas envolvidas no processo de gestão e desenvolvimento, e o documento não deve ser compartilhado para outra finalidade. As leituras são hipóteses de trabalho, a confirmar com comportamento observável, entregas e contexto. O relatório não deve ser usado isoladamente para decisões de contratação, promoção ou demissão.
+          Este relatório contém dados pessoais de {firstName || assessment.candidate_name}, tratados conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018). O acesso é restrito às pessoas envolvidas no processo de gestão e desenvolvimento, e o documento não deve ser compartilhado para outra finalidade. As leituras são hipóteses de trabalho, a confirmar com comportamento observável, entregas e contexto. O relatório não deve ser usado isoladamente para decisões de contratação, promoção ou demissão.
         </Box>
         <p className="tech-final-principle">PESSOAS TRANSFORMAM ORGANIZAÇÕES.</p>
       </ApprovedPage>

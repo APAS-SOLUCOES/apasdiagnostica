@@ -28,8 +28,6 @@ export function firstNameOf(fullName: string | null | undefined) {
   return /\p{L}{2,}/u.test(first) ? first.toLocaleLowerCase("pt-BR").replace(/(^|[-'])\p{L}/gu, (letter) => letter.toLocaleUpperCase("pt-BR")) : "";
 }
 
-const SUBJECT = /^A pessoa(?: avaliada)?\s+/;
-
 export type TechnicalSubjectContext = { mentioned: boolean };
 
 /** One name mention per local section; later references use subject omission or neutral wording. */
