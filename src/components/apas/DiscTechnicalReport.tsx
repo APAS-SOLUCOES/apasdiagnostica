@@ -6,7 +6,7 @@ import DIMENSION_CONTENT from "@/lib/disc/technical-factor-text.json";
 import sectionText from "@/lib/disc/technical-section-text.json";
 import { COMBINATION_NARRATIVES } from "@/lib/disc/report-content";
 import { getTechnicalReportNarrative } from "@/lib/disc/report-narrative-presentation";
-import { firstNameOf, technicalVoice } from "@/lib/disc/technical-voice";
+import { firstNameOf, technicalVoice, type TechnicalSubjectContext } from "@/lib/disc/technical-voice";
 
 const apasLogoDark = "/apas-logo-dark.svg?v=approved-technical";
 const apasLogoWhite = "/apas-logo.svg?v=approved-technical";
@@ -139,23 +139,6 @@ const SUMMARY_SECTIONS: Array<[string, number]> = [
   ["Conclusão e Aplicação Gerencial", 10],
 ];
 
-/** Explains the rule the scoring engine already applies; it does not recalculate anything. */
-function profileRuleText(scores: ScoreResult) {
-  if (scores.scoringVersion?.startsWith("apas-scoring-1.2")) {
-    return "O fator predominante e o secundário são os dois mais altos do plano Adaptado, que soma cada escolha “mais se parece comigo” (peso 2) e cada bloco em que o fator não foi marcado como “menos se parece comigo” (peso 1). Em empate, prevalece o fator com mais escolhas “mais se parece comigo” e, depois, o com menos escolhas “menos se parece comigo”.";
-  }
-  return `O fator predominante e o secundário são os dois mais altos do plano de referência definido na versão de pontuação ${scores.scoringVersion}.`;
-}
-
-function naturalSecondaryNote(scores: ScoreResult) {
-  const natural = scores.natural?.percent;
-  if (!natural) return "";
-  const ranking = [...DIMENSIONS].sort((a, b) => natural[b] - natural[a]);
-  const second = ranking[1];
-  if (!second || second === scores.secondary || natural[second] <= natural[scores.secondary]) return "";
-  return ` No plano Natural, a segunda posição é de ${factorLabel(second)}; no perfil final, o secundário é ${factorLabel(scores.secondary)} porque a regra considera também as escolhas afirmativas.`;
-}
-
 function Box({ title, children, tone = "dark" }: { title: string; children: ReactNode; tone?: "red" | "dark" | "gray" }) {
   return <div className={`tech-info-box tech-info-box-${tone}`}><strong>{title}</strong><div>{children}</div></div>;
 }
@@ -181,14 +164,18 @@ export function DiscTechnicalReport({
   const firstName = firstNameOf(assessment.candidate_name);
   /** Drops a sentence already shown earlier in the report, keeping at least one sentence per block. */
   const shown = new Set<string>();
-  const v = (text: string) => {
+  const subjects = new Map<number, TechnicalSubjectContext>();
+  const voiceFor = (page: number) => (text: string) => {
     const sentences = text.split(/(?<=[.!?])\s+/).filter(Boolean);
     const fresh = sentences.filter((sentence) => !shown.has(sentence.trim().toLowerCase()));
     const kept = fresh.length ? fresh : sentences.slice(0, 1);
     kept.forEach((sentence) => shown.add(sentence.trim().toLowerCase()));
-    return technicalVoice(kept.join(" "), firstName);
+    const context = subjects.get(page) ?? { mentioned: page === 10 };
+    subjects.set(page, context);
+    return technicalVoice(kept.join(" "), firstName, context);
   };
-  const who = firstName || "a pessoa avaliada";
+  const v5 = voiceFor(5), v6 = voiceFor(6), v7 = voiceFor(7), v8 = voiceFor(8), v9 = voiceFor(9), v10 = voiceFor(10);
+  const who = "a pessoa avaliada";
   const sections = sectionText as Record<string, typeof sectionText.DI>;
   const editorial = sections[scores.combination] ?? sections[`${p}${s}`] ?? sectionText.DI;
 
@@ -229,10 +216,7 @@ export function DiscTechnicalReport({
             <ProfileLabels scores={scores} />
             <ProfileWheel scores={scores} />
           </div>
-          <div>
-            <ProfileModeCards />
-            <Box title="COMO O PERFIL É DEFINIDO" tone="gray">{profileRuleText(scores)}{naturalSecondaryNote(scores)}</Box>
-          </div>
+          <ProfileModeCards />
         </div>
       </ApprovedPage>
 
