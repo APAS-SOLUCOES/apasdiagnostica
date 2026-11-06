@@ -34,7 +34,12 @@ export type TechnicalSubjectContext = { mentioned: boolean };
 export function personalize(text: string, firstName: string, context: TechnicalSubjectContext = { mentioned: false }) {
   if (!firstName) return text;
   return text.split(/(?<=[.!?])\s+/).map((sentence) => {
-    const result = sentence.replace(/\ba a pessoa\b/gu, "à pessoa").replace(
+    const prepared = context.mentioned ? sentence
+      .replace(/\b(?:Ajude|Incentive) a pessoa(?: avaliada)? a /gu, "Oriente a ")
+      .replace(/\bConvide a pessoa(?: avaliada)? a /gu, "Proponha ")
+      .replace(/\bEnvolva a pessoa(?: avaliada)? na /gu, "Promova participação na ")
+      .replace(/\bpara a pessoa(?: avaliada)? /gu, "para ") : sentence;
+    const result = prepared.replace(/\ba a pessoa\b/gu, "à pessoa").replace(
       /(?<![\p{L}])(?:[Aa] pessoa(?: avaliada)?|à pessoa(?: avaliada)?|da pessoa(?: avaliada)?|na pessoa(?: avaliada)?|pela pessoa(?: avaliada)?)(?![\p{L}])(?!\s+(?:mais|menos)\s)/gu,
       (reference, offset: number, source: string) => {
         if (!context.mentioned) {
