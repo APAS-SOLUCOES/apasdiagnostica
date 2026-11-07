@@ -57,3 +57,10 @@ Evolução do projeto APAS DISC Profile para a plataforma **APAS DIAGNÓSTICA** 
 - [x] Técnico: índice de adaptação em duas faixas (abaixo de 18 / 18 ou mais) com interpretação
 - [x] Técnico: "Como ler este relatório", sumário com páginas reais, bloco do fator secundário, aviso LGPD/uso final
 - [x] Manter nomes atuais das combinações nos dois relatórios (sem renomear); relatório individual intacto
+
+## Textos DISC por percentuais (plano aprovado 2026-11-07)
+- [x] Base: sinais do perfil (faixas, distâncias, ponto cego, planos, índice) e escolha determinística + testes
+- [ ] Lote 1: trechos D e I (Premium e Técnico) — aguarda aprovação do lote
+- [ ] Lote 2: trechos S e C
+- [ ] Lote 3: pares 1º→2º, planos, índice de adaptação, troca de liderança
+- [ ] Ligar compositor aos dois relatórios + teste lado a lado + PDFs 12/10
