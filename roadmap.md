@@ -64,3 +64,4 @@ Evolução do projeto APAS DISC Profile para a plataforma **APAS DIAGNÓSTICA** 
 - [ ] Lote 2: trechos S e C
 - [ ] Lote 3: pares 1º→2º, planos, índice de adaptação, troca de liderança
 - [ ] Ligar compositor aos dois relatórios + teste lado a lado + PDFs 12/10
+- [ ] Lote 1 em escrita: bibliotecas modulares D/I (Premium e Técnico) em src/lib/disc/modular + amostra lado a lado (Comunicação, Pressão; D 31% × 48%)

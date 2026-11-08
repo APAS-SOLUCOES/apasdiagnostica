@@ -1,0 +1,182 @@
+{
+  "factor": "I",
+  "report": "premium",
+  "levels": {
+    "1": {
+      "comportamento": [
+        "Sua Influência aparece muito pouco, e criar aproximação no trabalho exige intenção e apoio. Ao entrar em uma reunião, você talvez siga direto para a tarefa sem sinalizar abertura; combine com alguém de confiança uma breve apresentação e ensaie como iniciar o contato.",
+        "Com a Influência quase ausente, você mantém sua presença social bastante contida, sem precisar ocupar o centro das atenções. Em um encontro com outra área, peça a uma pessoa conhecida que faça a ponte e prepare uma pergunta simples para começar a conversa com segurança.",
+        "A expressão de entusiasmo ainda encontra pouco espaço no seu jeito de participar, mesmo quando você aprecia uma ideia. Ao receber uma proposta interessante, experimente dizer o que chamou sua atenção e peça apoio para transformar essa percepção em uma contribuição breve.",
+        "Na sua rotina, a conexão espontânea fica em segundo plano, e as pessoas nem sempre percebem sua disponibilidade para conversar. Ao chegar a uma atividade coletiva, escolha um cumprimento pessoal e uma pergunta sobre o trabalho para praticar aproximação sem forçar exposição."
+      ],
+      "comunicacao": [
+        "Para você, falar da tarefa parece mais acessível do que criar proximidade pela conversa, sinal de Influência muito baixa. Antes de pedir uma entrega por mensagem, escreva uma abertura cordial e peça a alguém de confiança que ajude a verificar se o tom convida ao diálogo.",
+        "Sua comunicação revela pouca expressividade, o que deixa interesse e entusiasmo menos visíveis para quem escuta. Ao apresentar uma atualização, ensaie com apoio uma frase sobre a importância do assunto e termine com uma pergunta que ofereça espaço real de participação.",
+        "Conversas voltadas a engajar exigem mais preparação quando sua Influência quase não aparece. Se precisar convidar colegas para uma iniciativa, construa com uma pessoa de apoio uma fala curta que explique o benefício compartilhado e pratique o convite antes da reunião.",
+        "Em situações de exposição, você dispõe de poucos recursos espontâneos de aproximação, sem que isso reduza o valor das suas ideias. Para explicar uma proposta ao grupo, leve um exemplo concreto por escrito e combine previamente com alguém uma pergunta que facilite sua entrada."
+      ],
+      "decisao": [
+        "Na condução de decisões, sua Influência muito baixa deixa a mobilização das pessoas pouco presente na abordagem. Ao propor uma escolha para a equipe, peça ajuda para identificar quem precisa ser ouvido e prepare um convite individual para conhecer dúvidas antes da definição.",
+        "Convencer pela conexão pessoal ainda demanda apoio no seu modo de liderar, mesmo quando a proposta faz sentido. Antes de defender uma prioridade em reunião, ensaie com alguém de confiança como apresentar o benefício coletivo e faça uma pergunta para verificar a compreensão.",
+        "Seu processo de decisão conta com pouca expressão de entusiasmo para aproximar as pessoas da escolha realizada. Ao distribuir uma atividade, prepare uma explicação breve sobre sua finalidade e solicite apoio para abrir uma conversa sobre como cada pessoa poderá contribuir.",
+        "Ao assumir uma orientação, você nem sempre torna visível o interesse em construir adesão, pois a Influência aparece de forma mínima. Depois de comunicar uma decisão, reserve um contato breve com quem executará a tarefa e use uma pergunta preparada para acolher dificuldades."
+      ],
+      "pressao": [
+        "Sob pressão, sua Influência muito baixa torna ainda mais difícil sinalizar abertura e buscar apoio pela conversa. Se um prazo apertar, procure uma pessoa de confiança e use uma mensagem preparada para explicar a dificuldade e pedir uma ajuda específica, sem esperar o problema crescer.",
+        "Em momentos tensos, você encontra pouco impulso para mobilizar outras pessoas por meio da proximidade. Diante de um atraso compartilhado, combine uma conversa curta com apoio de alguém conhecido e leve por escrito o que precisa ser resolvido e qual colaboração deseja solicitar.",
+        "Quando a cobrança aumenta, sua expressão social muito contida deixa os demais sem pistas sobre como se aproximar. Em uma reunião difícil, pratique antes uma frase que nomeie o desafio da tarefa e abra espaço para uma sugestão, contando com alguém para facilitar esse primeiro passo.",
+        "A pressão encontra uma Influência quase ausente, e pedir colaboração espontaneamente exige esforço adicional. Se surgir um impasse com outra área, escolha um contato acessível e prepare uma abordagem cordial com contexto e pedido claro, em vez de depender de aproximação improvisada."
+      ],
+      "mudanca": [
+        "Diante de mudanças, sua Influência muito baixa oferece poucos recursos espontâneos para criar conexões no novo cenário. Ao passar a trabalhar com outras pessoas, peça uma apresentação acompanhada e prepare uma pergunta sobre a rotina para iniciar um vínculo de maneira gradual.",
+        "A adaptação a novos contatos exige apoio quando a Influência aparece tão pouco no seu repertório. Na chegada de uma nova ferramenta, procure alguém disponível para trocar experiências e leve uma dúvida concreta como gancho para uma conversa breve e útil.",
+        "Seu entusiasmo com uma novidade nem sempre chega às outras pessoas, pois a expressão de Influência permanece mínima. Durante uma transição de projeto, ensaie com uma pessoa de confiança como compartilhar algo que considera promissor e faça essa contribuição em um espaço menor.",
+        "Em cenários novos, você encontra pouca facilidade para envolver pessoas pela aproximação informal. Se houver uma reorganização da equipe, peça ajuda para reconhecer os novos contatos e agende uma conversa curta com alguém, usando uma pauta simples para reduzir o peso da exposição."
+      ],
+      "equipe": [
+        "Na equipe, sua Influência quase ausente deixa a construção de vínculos dependente de convites e apoio. Durante uma atividade compartilhada, aproxime-se de uma pessoa acessível e prepare uma pergunta sobre a contribuição dela, criando uma oportunidade pequena de troca sem precisar animar o grupo.",
+        "Sua participação social bastante contida faz com que o grupo tenha poucas pistas de seu interesse em colaborar. Ao concluir uma tarefa conjunta, pratique um agradecimento específico e peça a alguém de confiança que ajude a encontrar um momento confortável para expressá-lo.",
+        "Criar conexão no grupo ainda exige treino deliberado, já que a Influência tem presença mínima no seu perfil. Em vez de buscar uma fala longa na reunião, combine previamente uma contribuição breve com quem facilita o encontro e use esse espaço para reconhecer uma ideia de outra pessoa.",
+        "O vínculo com colegas não se constrói com muita espontaneidade na sua atuação, e isso merece apoio, não cobrança por extroversão. Em uma parceria nova, proponha uma troca curta sobre expectativas e leve perguntas preparadas para conhecer como a outra pessoa prefere colaborar."
+      ],
+      "desenvolvimento": [
+        "Desenvolver sua Influência começa por criar segurança para contatos pequenos, sem exigir uma transformação de personalidade. Escolha uma conversa simples da rotina, ensaie a abertura com alguém de confiança e registre depois o que ajudou você a se aproximar com mais conforto.",
+        "Seu ponto de partida pede apoio próximo para ampliar expressão e conexão, pois a Influência aparece muito pouco. Antes da próxima reunião, prepare uma contribuição curta e combine com uma pessoa conhecida um sinal de entrada, avaliando depois o que tornou a experiência viável.",
+        "A habilidade de engajar precisa ser construída em passos acessíveis no seu momento atual de Influência. Para convidar alguém a colaborar em uma tarefa, escreva o benefício comum, pratique a fala com apoio e peça um retorno específico sobre a clareza e a cordialidade do convite.",
+        "Ampliar sua presença nas relações não significa assumir um papel expansivo que não combina com você. Comece reconhecendo uma contribuição concreta de alguém por mensagem e peça orientação sobre o tom, usando essa prática como treino gradual de expressão e reconhecimento."
+      ]
+    },
+    "2": {
+      "comportamento": [
+        "Sua Influência discreta aparece em aproximações pontuais, ainda sem sustentar uma presença social frequente. Ao começar uma atividade com outra área, escolha um contato conhecido, faça uma pergunta sobre o contexto e use essa troca como apoio para conhecer as demais pessoas.",
+        "Há espaço para conexão no seu jeito de agir, mas você ainda a manifesta com pouca frequência. Durante uma reunião de projeto, experimente compartilhar uma observação positiva sobre o trabalho e peça a alguém de confiança um retorno sobre como sua abertura foi recebida.",
+        "Com Influência discreta, você demonstra interesse pelas pessoas de forma sutil, que nem sempre é percebida pelo grupo. Ao colaborar em uma entrega, explicite o que aprecia na parceria e prepare uma pergunta de continuidade para manter o contato além do pedido imediato.",
+        "Seu entusiasmo surge com reserva e precisa de pequenos incentivos para ganhar expressão no cotidiano. Quando uma ideia despertar seu interesse, diga qual aspecto chamou sua atenção e combine com uma pessoa próxima uma oportunidade simples para compartilhar essa percepção com o grupo."
+      ],
+      "comunicacao": [
+        "Sua comunicação inclui alguma abertura, mas a Influência discreta ainda limita o uso da conversa para engajar. Antes de apresentar uma tarefa, acrescente uma frase sobre o benefício para quem participa e pratique com apoio uma pergunta que convide a pessoa a responder.",
+        "Ao falar com colegas, você expressa cordialidade de modo contido e nem sempre dá continuidade à aproximação. Depois de responder a uma dúvida por mensagem, inclua uma pergunta relacionada ao contexto da pessoa e observe se essa abertura facilita uma troca mais colaborativa.",
+        "A Influência discreta faz com que suas ideias cheguem com pouca demonstração de entusiasmo, mesmo quando há interesse genuíno. Para apresentar uma melhoria, prepare um exemplo do cotidiano e ensaie uma abertura que mostre por que ela importa para as pessoas envolvidas.",
+        "Nas conversas profissionais, criar conexão ainda exige alguma preparação da sua parte, especialmente fora dos contatos habituais. Antes de falar com outra área, peça uma referência a alguém conhecido e leve uma pergunta aberta para construir proximidade sem depender de improviso."
+      ],
+      "decisao": [
+        "Sua Influência discreta traz alguma atenção à adesão das pessoas, mas esse cuidado ainda fica pouco explícito ao decidir. Antes de propor uma prioridade, converse brevemente com alguém envolvido e prepare uma explicação do benefício coletivo para compartilhar com o restante da equipe.",
+        "Ao orientar o trabalho, você mobiliza pouco pela expressão de entusiasmo e precisa treinar esse recurso em situações simples. Na abertura de uma atividade, apresente o resultado esperado com um exemplo próximo da equipe e solicite a alguém de confiança um retorno sobre sua clareza.",
+        "A conexão pessoal tem participação discreta na maneira como você conduz escolhas, deixando espaço para ampliar a escuta. Ao definir uma mudança de rotina, convide uma pessoa afetada para contar sua perspectiva e use essa contribuição para preparar uma comunicação mais próxima.",
+        "Defender uma proposta pela conversa ainda exige esforço consciente no seu nível de Influência. Antes de uma decisão compartilhada, ensaie como relacionar a ideia a uma necessidade do grupo e leve uma pergunta que ajude a descobrir o que falta para as pessoas se envolverem."
+      ],
+      "pressao": [
+        "Sob cobrança, a Influência discreta fica menos disponível para manter aproximação e solicitar colaboração. Se uma entrega começar a atrasar, envie uma mensagem breve com contexto e pedido específico a alguém acessível, sem deixar que o desconforto adie a busca de apoio.",
+        "Em situações tensas, sua abertura social já contida precisa de um lembrete para não desaparecer da conversa. Durante um alinhamento difícil, prepare uma frase cordial para reconhecer a contribuição de quem participa e pergunte qual ajuda concreta permitiria avançar na tarefa.",
+        "A pressão reduz o espaço que você dedica a expressar interesse e manter as pessoas próximas. Ao receber uma cobrança de outra área, faça uma pausa breve e responda com reconhecimento da demanda e proposta de conversa, usando um roteiro simples se precisar de apoio.",
+        "Quando surgem imprevistos, sua Influência discreta oferece pouca mobilização espontânea pelo diálogo. Em vez de resolver um impasse sem troca, procure uma parceria conhecida, explique a necessidade com um exemplo e combine uma forma pequena e objetiva de colaboração."
+      ],
+      "mudanca": [
+        "Sua Influência discreta ajuda em contatos conhecidos, mas oferece pouco impulso para formar vínculos em ambientes novos. Ao integrar outro projeto, peça a alguém uma apresentação e prepare uma pergunta sobre o papel de cada pessoa para ampliar sua rede em passos confortáveis.",
+        "As novidades nem sempre despertam uma expressão visível de entusiasmo em você, embora exista interesse em participar. Durante a adoção de um processo, compartilhe uma utilidade que percebeu e peça a uma pessoa próxima ajuda para levar essa observação a uma conversa da equipe.",
+        "Na transição para uma rotina diferente, sua aproximação com as pessoas acontece de modo discreto e ainda precisa de incentivo. Escolha um contato do novo contexto, proponha uma troca breve sobre dificuldades práticas e prepare uma pergunta para tornar esse encontro mais acessível.",
+        "Com Influência discreta, você participa da mudança sem recorrer muito à conversa para envolver outras pessoas. Ao testar uma solução nova, convide alguém conhecido para experimentar junto e ensaie como explicar o benefício percebido antes de apresentar a experiência ao grupo."
+      ],
+      "equipe": [
+        "No convívio da equipe, sua Influência discreta favorece contatos pontuais, mas não garante que seu interesse fique evidente. Ao trabalhar em parceria, comente uma contribuição útil da outra pessoa e faça uma pergunta sobre o andamento, treinando uma aproximação simples e frequente.",
+        "Você encontra alguma abertura para trocar com colegas, embora participar socialmente ainda peça um incentivo. Antes de uma reunião de equipe, prepare uma observação sobre o trabalho compartilhado e combine com quem conduz um momento breve para colocá-la na conversa.",
+        "O reconhecimento que você sente pelo grupo aparece de maneira sutil, pois a Influência ainda tem presença discreta. Depois de uma entrega conjunta, escolha uma ajuda concreta recebida e agradeça diretamente a quem colaborou, sem depender de uma ocasião formal de celebração.",
+        "Sua integração cresce melhor em contatos menores do que em tentativas de animar toda a equipe neste momento. Em uma atividade coletiva, aproxime-se de uma parceria habitual e proponha conhecer a contribuição de alguém menos próximo, usando uma pergunta preparada como apoio."
+      ],
+      "desenvolvimento": [
+        "Ampliar a Influência discreta pede prática de aproximação em situações de baixo risco, não pressão para falar o tempo todo. Escolha uma interação habitual, prepare uma abertura cordial e peça a alguém de confiança um retorno sobre o quanto seu interesse ficou perceptível.",
+        "Seu desenvolvimento ganha força quando a expressão de entusiasmo deixa de depender apenas de momentos espontâneos. Ao gostar de uma proposta, pratique explicar o motivo em uma frase concreta e convide uma pessoa próxima a observar se sua fala ajuda a despertar participação.",
+        "A conexão já encontra pequenas passagens no seu repertório, e você consegue ampliá-las com apoio e repetição consciente. Use uma tarefa compartilhada para fazer uma pergunta aberta, escute sem antecipar a resposta e registre que tipo de abordagem deixou a conversa mais confortável.",
+        "Treinar o reconhecimento é uma forma acessível de dar mais presença à sua Influência sem assumir um estilo expansivo. Prepare um agradecimento ligado a uma ação real de alguém e compartilhe em um contato breve, pedindo orientação sobre o tom quando sentir necessidade."
+      ]
+    },
+    "3": {
+      "comportamento": [
+        "Sua Influência moderada-baixa permite alguma aproximação, embora a conexão ainda não ganhe espaço consistente na rotina. Ao iniciar uma reunião de trabalho, reserve uma abertura breve para ouvir o contexto de alguém e use essa informação para tornar sua contribuição mais próxima.",
+        "O entusiasmo aparece de forma seletiva no seu comportamento, sem ocupar o centro das interações profissionais. Quando uma proposta interessar a você, explicite o aspecto que considera promissor e convide uma pessoa do grupo a explorar uma aplicação prática ao seu lado.",
+        "Você demonstra abertura em certos contatos, mas a Influência moderada-baixa ainda deixa oportunidades de vínculo passarem despercebidas. Ao concluir uma conversa sobre tarefas, acrescente uma pergunta sobre a experiência da outra pessoa e pratique sustentar a troca com atenção.",
+        "Sua presença combina participação contida com momentos de conexão, que ainda precisam de intenção para se ampliar. Em uma atividade com colegas menos próximos, prepare um comentário sobre o objetivo comum e use esse ponto de encontro para iniciar uma conversa sem exposição excessiva."
+      ],
+      "comunicacao": [
+        "Na comunicação, sua Influência moderada-baixa dá espaço a alguma cordialidade, mas o convite à participação ainda merece treino. Ao explicar uma proposta, acrescente um exemplo próximo da realidade de quem escuta e termine perguntando como a ideia se encaixa na rotina dessa pessoa.",
+        "Sua fala transmite interesse de maneira contida, e nem sempre o grupo percebe o entusiasmo por trás do conteúdo. Antes de apresentar uma melhoria, prepare uma abertura que mostre por que ela importa e peça a alguém um retorno sobre a proximidade criada pela sua explicação.",
+        "Conversas com propósito definido são um caminho acessível para você ampliar a conexão, ainda moderada-baixa na Influência. Em um alinhamento entre áreas, reconheça uma necessidade do outro lado antes de expor a sua e pratique uma pergunta que aprofunde o entendimento mútuo.",
+        "Você dispõe de alguma facilidade para trocar ideias, mas ainda usa pouco esse recurso para envolver quem está mais distante. Ao enviar um convite para um projeto, personalize a abertura com uma contribuição da pessoa e explique por que gostaria de ouvir a perspectiva dela."
+      ],
+      "decisao": [
+        "Sua Influência moderada-baixa contribui pontualmente para gerar adesão, sem ser o principal recurso na condução de escolhas. Antes de fechar uma prioridade, ouça uma pessoa envolvida e prepare uma explicação que conecte a decisão ao benefício percebido por quem realizará o trabalho.",
+        "Ao liderar uma atividade, você demonstra algum interesse em aproximar as pessoas, mas ainda precisa tornar esse movimento mais intencional. Na distribuição de responsabilidades, pergunte o que desperta interesse em cada frente e use as respostas para construir convites mais claros.",
+        "A persuasão pela conexão já aparece no seu repertório, embora com alcance limitado neste nível de Influência. Para defender uma melhoria, prepare uma história curta de uma dificuldade real e convide o grupo a dizer se reconhece aquela situação antes de discutir a proposta.",
+        "Você oferece alguma abertura ao diálogo nas decisões, mas expressar entusiasmo pela direção escolhida ainda pede prática. Ao comunicar um encaminhamento, destaque um ganho relevante para a equipe e reserve espaço para perguntas, verificando se houve compreensão além da concordância inicial."
+      ],
+      "pressao": [
+        "Sob pressão, sua Influência moderada-baixa perde parte do espaço que já ocupa nas conversas cotidianas. Quando o prazo encurtar, faça um contato breve com quem compartilha a entrega, reconheça o esforço em curso e formule um pedido de colaboração que permita uma resposta concreta.",
+        "Em momentos de cobrança, você ainda precisa de intenção para preservar a proximidade com as pessoas envolvidas. Durante uma discussão sobre falhas, prepare uma abertura que reconheça a dificuldade coletiva e pergunte como cada parte consegue ajudar, sem transformar a conversa em busca de culpados.",
+        "Sua capacidade de engajar aparece de modo limitado diante de tensão, mesmo quando existe disposição para colaborar. Se surgir um conflito de prioridades, procure uma pessoa de cada frente e pratique resumir as necessidades ouvidas antes de propor um caminho comum de trabalho.",
+        "Quando a rotina aperta, a expressão de reconhecimento fica menos visível no seu nível moderado-baixo de Influência. Ao solicitar uma revisão urgente, mencione o valor da contribuição recebida e confirme a disponibilidade da pessoa, em vez de apoiar o pedido apenas na urgência."
+      ],
+      "mudanca": [
+        "Sua Influência moderada-baixa permite alguma troca sobre novidades, mas ainda não sustenta um movimento amplo de engajamento. Ao experimentar um processo diferente, convide uma parceria próxima para conversar sobre a experiência e prepare um relato simples para compartilhar o aprendizado com o grupo.",
+        "Diante de mudanças, você se aproxima melhor quando encontra um motivo concreto para conversar, sem depender de entusiasmo imediato. Na entrada de uma nova equipe, pergunte sobre um desafio compartilhado e proponha uma troca curta para conhecer as pessoas enquanto entende o trabalho.",
+        "O interesse por possibilidades novas aparece com expressão moderada-baixa, e as pessoas nem sempre percebem sua disposição. Se uma ferramenta trouxer um benefício real, mostre um uso que funcionou para você e convide alguém a testar, praticando um incentivo baseado na experiência.",
+        "Sua participação em transições ganha alcance quando você cria oportunidades pequenas de conexão, ainda pouco frequentes no cotidiano. Durante uma mudança de responsabilidades, marque uma conversa com a nova parceria e leve perguntas sobre expectativas e formas de manter o diálogo."
+      ],
+      "equipe": [
+        "Na equipe, sua Influência moderada-baixa favorece algumas trocas, mas a construção de vínculos ainda precisa de continuidade. Depois de uma colaboração produtiva, retome um aprendizado com a pessoa envolvida e proponha uma conversa breve sobre como melhorar a próxima entrega conjunta.",
+        "Você participa das relações do grupo com abertura seletiva, deixando parte do reconhecimento pouco expressa. Em uma reunião de acompanhamento, destaque uma contribuição específica de alguém e explique seu efeito no trabalho, praticando uma forma concreta de valorizar a parceria.",
+        "Sua conexão com colegas se desenvolve em situações conhecidas, enquanto contatos menos próximos ainda pedem iniciativa deliberada. Ao receber uma demanda de outra frente, pergunte sobre o contexto antes de responder e use a troca para conhecer melhor como aquela pessoa trabalha.",
+        "O entusiasmo compartilhado tem presença moderada-baixa na sua atuação em equipe, sem impedir contribuições valiosas ao convívio. Durante uma atividade coletiva, expresse o que considera positivo no avanço do grupo e convide uma pessoa mais reservada a contribuir, sem exigir exposição."
+      ],
+      "desenvolvimento": [
+        "Desenvolver sua Influência moderada-baixa envolve dar continuidade às conexões que você já consegue iniciar. Escolha uma parceria com quem houve boa troca, retome um ponto da conversa em outro momento e observe quais perguntas ajudam a criar proximidade sem transformar o contato em obrigação.",
+        "Seu próximo passo é tornar mais visível o interesse que hoje aparece de forma seletiva nas interações. Antes de uma apresentação, ensaie um exemplo que desperte identificação e peça um retorno específico sobre sua capacidade de convidar o público a participar, além de transmitir conteúdo.",
+        "A persuasão ainda moderada-baixa ganha prática quando você relaciona ideias a necessidades reais, em vez de buscar entusiasmo artificial. Escolha uma proposta simples, pergunte o que importa para quem será afetado e reformule o convite usando o que aprendeu nessa escuta.",
+        "Ampliar expressão e reconhecimento não exige abandonar o jeito contido com que você se relaciona. Ao encerrar uma tarefa conjunta, compartilhe um aprendizado positivo e reconheça uma ajuda recebida, acompanhando como esse gesto favorece a disposição para novas parcerias."
+      ]
+    },
+    "4": {
+      "comportamento": [
+        "Sua Influência equilibrada permite criar conexão e expressar entusiasmo sem precisar estar em evidência o tempo todo. Ao participar de uma reunião, use essa abertura para aproximar pessoas com perspectivas distintas e escolha conscientemente quando falar e quando dar espaço à escuta.",
+        "Você encontra um ponto de equilíbrio entre se aproximar das pessoas e manter uma presença social compatível com a situação. Em um encontro entre áreas, inicie a conversa pelo objetivo comum e observe quem ainda não participou antes de direcionar sua energia para animar o grupo.",
+        "O entusiasmo tem espaço na sua atuação sem definir todas as interações, característica de uma Influência equilibrada. Quando surgir uma ideia atraente, compartilhe o que desperta seu interesse e convide alguém a examinar as condições de aplicação antes de ampliar o incentivo.",
+        "Sua capacidade de criar proximidade aparece de forma equilibrada e ganha valor quando usada com intenção. Ao receber uma nova parceria no projeto, ajuste o tom ao ritmo da pessoa e combine uma forma de contato que favoreça vínculo sem pressupor familiaridade imediata."
+      ],
+      "comunicacao": [
+        "Sua comunicação dispõe de Influência equilibrada para unir clareza, proximidade e expressão de interesse. Ao apresentar uma proposta, use um exemplo que converse com a realidade do público e verifique a compreensão por meio de uma pergunta, sem confundir receptividade com adesão efetiva.",
+        "Você consegue dar vida às ideias sem depender de entusiasmo constante para sustentar a conversa. Em uma reunião com diferentes áreas, ajuste a linguagem ao contexto de cada participação e abra espaço para objeções, usando sua expressividade para facilitar entendimento, não encerrar o debate.",
+        "A Influência equilibrada ajuda você a criar um tom acolhedor e convidativo nas trocas profissionais. Ao tratar de um assunto delicado, reconheça a perspectiva de quem escuta e apresente o ponto central com precisão, escolhendo palavras próximas sem suavizar informações importantes.",
+        "Seu repertório de comunicação permite alternar explicação e conexão de acordo com o momento. Ao enviar uma mensagem sobre um projeto, personalize o convite com um benefício relevante e deixe explícita a resposta esperada, usando cordialidade para abrir diálogo e não gerar pressão social."
+      ],
+      "decisao": [
+        "Sua Influência equilibrada favorece a construção de adesão sem exigir que toda decisão seja conduzida pelo entusiasmo. Ao propor uma prioridade, conecte a escolha às necessidades da equipe e convide perguntas sobre limites, distinguindo apoio à ideia de compromisso com sua execução.",
+        "Na liderança, você dispõe de conexão e persuasão em medida equilibrada para aproximar as pessoas de um objetivo. Ao iniciar um projeto, explique o significado da entrega e ouça como cada pessoa entende sua contribuição, ajustando os convites à realidade em vez de prometer envolvimento automático.",
+        "Você consegue envolver o grupo nas escolhas sem precisar assumir o papel de motivar todas as pessoas o tempo inteiro. Durante uma decisão compartilhada, use uma pergunta aberta para reunir perspectivas e depois explicite os critérios do encaminhamento, preservando espaço para discordâncias.",
+        "A Influência equilibrada ajuda a apresentar caminhos de maneira convidativa, desde que a boa recepção não substitua a avaliação. Ao defender uma iniciativa, mostre um benefício concreto e peça que alguém examine as dificuldades, usando a conexão para qualificar a escolha e não acelerar o aceite."
+      ],
+      "pressao": [
+        "Sob pressão, sua Influência equilibrada oferece recursos de aproximação que ajudam a manter a conversa possível. Em uma entrega ameaçada, reconheça o esforço coletivo e faça um convite claro à colaboração, cuidando para que o tom positivo não esconda as dificuldades que precisam ser enfrentadas.",
+        "Você conta com uma expressão equilibrada de entusiasmo para apoiar o grupo em momentos tensos, sem precisar animar a qualquer custo. Ao conversar sobre um atraso, apresente a situação com franqueza e pergunte qual ajuda é viável, usando a proximidade para facilitar pedidos realistas.",
+        "A conexão é um recurso disponível no seu nível equilibrado de Influência, inclusive quando há cobrança por resultados. Se surgir atrito entre áreas, convide as partes a explicar suas necessidades e resuma os pontos comuns, evitando usar cordialidade como substituto para resolver a divergência.",
+        "Em momentos exigentes, você consegue recorrer ao diálogo para manter as pessoas envolvidas de forma equilibrada. Durante uma revisão urgente, agradeça contribuições específicas e confirme a capacidade de atendimento, escolhendo um incentivo que respeite limites em vez de ampliar promessas."
+      ],
+      "mudanca": [
+        "Sua Influência equilibrada ajuda a criar abertura para novidades sem exigir adesão entusiasmada de todas as pessoas. Ao apresentar um novo processo, compartilhe uma possibilidade concreta e convide dúvidas, usando a conexão para compreender resistências antes de estimular a participação.",
+        "Você dispõe de entusiasmo e aproximação em medida equilibrada para apoiar transições no trabalho. Durante a chegada de uma ferramenta, mostre uma experiência útil e peça relatos de quem encontrou dificuldades, ajustando sua mensagem para que o incentivo também reconheça o esforço de adaptação.",
+        "Em cenários novos, sua capacidade de estabelecer contato favorece a troca entre pessoas sem depender de familiaridade imediata. Ao entrar em outro projeto, procure entender o estilo de interação do grupo e combine espaços de conversa que acolham diferentes formas de participação.",
+        "A Influência equilibrada permite dar visibilidade às oportunidades de uma mudança com atenção às pessoas envolvidas. Quando houver uma reorganização, conecte colegas que precisam trocar informações e verifique se os encontros geraram entendimento, em vez de presumir que a aproximação bastou."
+      ],
+      "equipe": [
+        "Na equipe, sua Influência equilibrada favorece vínculo e reconhecimento sem exigir presença constante no centro das conversas. Ao celebrar uma entrega, destaque contribuições diversas e pergunte como o grupo prefere receber reconhecimento, ajustando o gesto para que seja significativo.",
+        "Você consegue aproximar colegas e compartilhar entusiasmo de modo equilibrado, respeitando momentos de maior recolhimento. Em uma atividade coletiva, convide diferentes perspectivas e deixe caminhos de participação por escrito, usando sua abertura para incluir sem pressionar ninguém a falar.",
+        "Sua participação social dispõe de recursos equilibrados para fortalecer a colaboração no cotidiano. Ao perceber pouca troca entre parcerias, proponha uma conversa sobre o objetivo comum e ajude a explicitar o que cada parte precisa, sem assumir que afinidade pessoal resolverá o trabalho.",
+        "A conexão que você cria no grupo ganha força quando o reconhecimento é específico e distribuído com atenção. Durante um acompanhamento de projeto, valorize tanto contribuições visíveis quanto apoios discretos e confira se todas as pessoas tiveram oportunidade de apresentar sua perspectiva."
+      ],
+      "desenvolvimento": [
+        "Desenvolver sua Influência equilibrada significa escolher com intenção onde conexão e entusiasmo realmente agregam valor. Antes de uma reunião, defina se sua contribuição será engajar, reconhecer ou abrir espaço para escuta e depois avalie o efeito dessa escolha na participação do grupo.",
+        "Seu crescimento passa menos por ampliar a exposição e mais por ajustar o uso da persuasão ao contexto. Ao defender uma proposta, peça um retorno sobre a liberdade que as pessoas sentiram para discordar e refine sua abordagem para que proximidade e questionamento convivam na conversa.",
+        "Com Influência equilibrada, você tem uma base útil de expressividade para praticar reconhecimento de maneira mais consciente. Escolha uma colaboração recente, descreva seu impacto com precisão e confirme qual forma de agradecimento faz sentido para a pessoa, sem presumir gosto por destaque público.",
+        "A qualidade das conexões merece tanta atenção quanto a facilidade de iniciá-las no seu nível equilibrado de Influência. Depois de aproximar pessoas em um projeto, acompanhe se a troca continuou útil e ajuste sua participação, oferecendo apoio sem ocupar um espaço que o grupo já consegue sustentar."
+      ]
+    }
+  }
+}

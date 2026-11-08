@@ -1,0 +1,182 @@
+{
+  "factor": "D",
+  "report": "technical",
+  "levels": {
+    "5": {
+      "comportamento": [
+        "A Dominância presente sustenta iniciativa dosada na execução. Assume entregas e remove obstáculos com abertura para ajustes. Delegue uma entrega com limites explícitos e observe em 30 dias a qualidade dos resultados na frente da execução.",
+        "Com Dominância presente, a firmeza favorece delegação confiável na execução. Organiza prioridades e questiona tarefas respeitando os acordos de trabalho. Combine critérios de sucesso para uma demanda e observe em 30 dias a clareza dos acordos na frente da execução.",
+        "A expressão presente de Dominância apoia autonomia equilibrada na execução. Sustenta o ritmo e cobra avanços com cobrança proporcional à demanda. Defina uma prioridade com qualidade acordada e observe em 30 dias a participação nas discussões na frente da execução.",
+        "Na Dominância presente, o direcionamento preserva moderação na execução. Busca responsabilidade e sinaliza entraves sem dispensar o alinhamento coletivo. Atribua uma frente com responsabilidades claras e observe em 30 dias a autonomia nas entregas na frente da execução."
+      ],
+      "comunicacao": [
+        "A Dominância presente sustenta iniciativa dosada nas trocas profissionais. Apresenta pedidos diretos nas reuniões com abertura para ajustes. Oriente a explicar o contexto antes de cobrar e observe em 30 dias a qualidade dos resultados na frente da comunicação.",
+        "Com Dominância presente, a firmeza favorece delegação confiável nas trocas profissionais. Expõe divergências nas conversas respeitando os acordos de trabalho. Reserve espaço para perguntas antes do fechamento e observe em 30 dias a clareza dos acordos na frente da comunicação.",
+        "A expressão presente de Dominância apoia autonomia equilibrada nas trocas profissionais. Sintetiza argumentos para o grupo com cobrança proporcional à demanda. Solicite registro dos acordos após a reunião e observe em 30 dias a participação nas discussões na frente da comunicação.",
+        "Na Dominância presente, o direcionamento preserva moderação nas trocas profissionais. Defende propostas perante outras áreas sem dispensar o alinhamento coletivo. Combine escuta de objeções antes da resposta e observe em 30 dias a autonomia nas entregas na frente da comunicação."
+      ],
+      "decisao": [
+        "A Dominância presente sustenta iniciativa dosada na liderança. Define caminhos para a operação com abertura para ajustes. Delegue escolhas reversíveis com critérios de risco e observe em 30 dias a qualidade dos resultados na frente das decisões.",
+        "Com Dominância presente, a firmeza favorece delegação confiável na liderança. Prioriza alternativas e mobiliza recursos respeitando os acordos de trabalho. Solicite análise dos impactos antes da aprovação e observe em 30 dias a clareza dos acordos na frente das decisões.",
+        "A expressão presente de Dominância apoia autonomia equilibrada na liderança. Enfrenta impasses nas escolhas com cobrança proporcional à demanda. Delimite alçadas antes de comprometer recursos e observe em 30 dias a participação nas discussões na frente das decisões.",
+        "Na Dominância presente, o direcionamento preserva moderação na liderança. Avalia ganhos e resolve pendências sem dispensar o alinhamento coletivo. Peça registro das premissas de cada escolha e observe em 30 dias a autonomia nas entregas na frente das decisões."
+      ],
+      "pressao": [
+        "A Dominância presente sustenta iniciativa dosada sob pressão. Acelera respostas diante de atrasos com abertura para ajustes. Defina prioridades para a contingência e observe em 30 dias a qualidade dos resultados na frente das urgências.",
+        "Com Dominância presente, a firmeza favorece delegação confiável sob pressão. Enfrenta cobranças sobre as metas respeitando os acordos de trabalho. Combine limites para demandas urgentes e observe em 30 dias a clareza dos acordos na frente das urgências.",
+        "A expressão presente de Dominância apoia autonomia equilibrada sob pressão. Intensifica o acompanhamento nas urgências com cobrança proporcional à demanda. Separe falhas de processo de descumprimento e observe em 30 dias a participação nas discussões na frente das urgências.",
+        "Na Dominância presente, o direcionamento preserva moderação sob pressão. Assume a condução dos imprevistos sem dispensar o alinhamento coletivo. Distribua responsabilidades durante a crise e observe em 30 dias a autonomia nas entregas na frente das urgências."
+      ],
+      "mudanca": [
+        "A Dominância presente sustenta iniciativa dosada nas transições. Impulsiona ajustes nos processos com abertura para ajustes. Delegue um teste com escopo delimitado e observe em 30 dias a qualidade dos resultados na frente das transições.",
+        "Com Dominância presente, a firmeza favorece delegação confiável nas transições. Questiona práticas pouco efetivas respeitando os acordos de trabalho. Solicite diagnóstico antes da implantação e observe em 30 dias a clareza dos acordos na frente das transições.",
+        "A expressão presente de Dominância apoia autonomia equilibrada nas transições. Mobiliza esforços para novas rotinas com cobrança proporcional à demanda. Defina responsáveis pela transição operacional e observe em 30 dias a participação nas discussões na frente das transições.",
+        "Na Dominância presente, o direcionamento preserva moderação nas transições. Busca resultados nas transições sem dispensar o alinhamento coletivo. Estabeleça validação com as áreas afetadas e observe em 30 dias a autonomia nas entregas na frente das transições."
+      ],
+      "equipe": [
+        "A Dominância presente sustenta iniciativa dosada na atuação coletiva. Distribui tarefas entre as funções com abertura para ajustes. Delegue a coordenação de uma atividade e observe em 30 dias a qualidade dos resultados na frente da equipe.",
+        "Com Dominância presente, a firmeza favorece delegação confiável na atuação coletiva. Cobra compromissos do grupo respeitando os acordos de trabalho. Combine critérios para acompanhar compromissos e observe em 30 dias a clareza dos acordos na frente da equipe.",
+        "A expressão presente de Dominância apoia autonomia equilibrada na atuação coletiva. Direciona esforços nas reuniões com cobrança proporcional à demanda. Abra espaço para contribuições menos ouvidas e observe em 30 dias a participação nas discussões na frente da equipe.",
+        "Na Dominância presente, o direcionamento preserva moderação na atuação coletiva. Enfrenta divergências entre áreas sem dispensar o alinhamento coletivo. Oriente a negociação das divergências técnicas e observe em 30 dias a autonomia nas entregas na frente da equipe."
+      ],
+      "desenvolvimento": [
+        "A Dominância presente sustenta iniciativa dosada no desenvolvimento profissional. Busca desafios de maior alcance com abertura para ajustes. Defina uma meta de delegação com autonomia e observe em 30 dias a qualidade dos resultados na frente do desenvolvimento.",
+        "Com Dominância presente, a firmeza favorece delegação confiável no desenvolvimento profissional. Valoriza feedback sobre resultados respeitando os acordos de trabalho. Combine um exercício de escuta nas reuniões e observe em 30 dias a clareza dos acordos na frente do desenvolvimento.",
+        "A expressão presente de Dominância apoia autonomia equilibrada no desenvolvimento profissional. Investe energia em superar obstáculos com cobrança proporcional à demanda. Proponha revisar uma escolha com a equipe e observe em 30 dias a participação nas discussões na frente do desenvolvimento.",
+        "Na Dominância presente, o direcionamento preserva moderação no desenvolvimento profissional. Procura ampliar responsabilidades sem dispensar o alinhamento coletivo. Estabeleça uma prática de negociação entre áreas e observe em 30 dias a autonomia nas entregas na frente do desenvolvimento."
+      ]
+    },
+    "6": {
+      "comportamento": [
+        "A Dominância marcante orienta a atuação com firmeza na execução. Assume entregas e remove obstáculos e orienta o ritmo coletivo. Delegue uma entrega com limites explícitos e revise em 30 dias a qualidade dos resultados no acompanhamento da execução.",
+        "Com Dominância marcante, a iniciativa direciona o trabalho na execução. Organiza prioridades e questiona tarefas e imprime direção às ações. Combine critérios de sucesso para uma demanda e revise em 30 dias a clareza dos acordos no acompanhamento da execução.",
+        "A expressão marcante de Dominância dá força à cobrança na execução. Sustenta o ritmo e cobra avanços e influencia as prioridades do grupo. Defina uma prioridade com qualidade acordada e revise em 30 dias a participação nas discussões no acompanhamento da execução.",
+        "Na Dominância marcante, os resultados orientam prioridades na execução. Busca responsabilidade e sinaliza entraves e coloca a entrega no centro da atuação. Atribua uma frente com responsabilidades claras e revise em 30 dias a autonomia nas entregas no acompanhamento da execução."
+      ],
+      "comunicacao": [
+        "A Dominância marcante orienta a atuação com firmeza nas trocas profissionais. Apresenta pedidos diretos nas reuniões e orienta o ritmo coletivo. Oriente a explicar o contexto antes de cobrar e revise em 30 dias a qualidade dos resultados no acompanhamento da comunicação.",
+        "Com Dominância marcante, a iniciativa direciona o trabalho nas trocas profissionais. Expõe divergências nas conversas e imprime direção às ações. Reserve espaço para perguntas antes do fechamento e revise em 30 dias a clareza dos acordos no acompanhamento da comunicação.",
+        "A expressão marcante de Dominância dá força à cobrança nas trocas profissionais. Sintetiza argumentos para o grupo e influencia as prioridades do grupo. Solicite registro dos acordos após a reunião e revise em 30 dias a participação nas discussões no acompanhamento da comunicação.",
+        "Na Dominância marcante, os resultados orientam prioridades nas trocas profissionais. Defende propostas perante outras áreas e coloca a entrega no centro da atuação. Combine escuta de objeções antes da resposta e revise em 30 dias a autonomia nas entregas no acompanhamento da comunicação."
+      ],
+      "decisao": [
+        "A Dominância marcante orienta a atuação com firmeza na liderança. Define caminhos para a operação e orienta o ritmo coletivo. Delegue escolhas reversíveis com critérios de risco e revise em 30 dias a qualidade dos resultados no acompanhamento das decisões.",
+        "Com Dominância marcante, a iniciativa direciona o trabalho na liderança. Prioriza alternativas e mobiliza recursos e imprime direção às ações. Solicite análise dos impactos antes da aprovação e revise em 30 dias a clareza dos acordos no acompanhamento das decisões.",
+        "A expressão marcante de Dominância dá força à cobrança na liderança. Enfrenta impasses nas escolhas e influencia as prioridades do grupo. Delimite alçadas antes de comprometer recursos e revise em 30 dias a participação nas discussões no acompanhamento das decisões.",
+        "Na Dominância marcante, os resultados orientam prioridades na liderança. Avalia ganhos e resolve pendências e coloca a entrega no centro da atuação. Peça registro das premissas de cada escolha e revise em 30 dias a autonomia nas entregas no acompanhamento das decisões."
+      ],
+      "pressao": [
+        "A Dominância marcante orienta a atuação com firmeza sob pressão. Acelera respostas diante de atrasos e orienta o ritmo coletivo. Defina prioridades para a contingência e revise em 30 dias a qualidade dos resultados no acompanhamento das urgências.",
+        "Com Dominância marcante, a iniciativa direciona o trabalho sob pressão. Enfrenta cobranças sobre as metas e imprime direção às ações. Combine limites para demandas urgentes e revise em 30 dias a clareza dos acordos no acompanhamento das urgências.",
+        "A expressão marcante de Dominância dá força à cobrança sob pressão. Intensifica o acompanhamento nas urgências e influencia as prioridades do grupo. Separe falhas de processo de descumprimento e revise em 30 dias a participação nas discussões no acompanhamento das urgências.",
+        "Na Dominância marcante, os resultados orientam prioridades sob pressão. Assume a condução dos imprevistos e coloca a entrega no centro da atuação. Distribua responsabilidades durante a crise e revise em 30 dias a autonomia nas entregas no acompanhamento das urgências."
+      ],
+      "mudanca": [
+        "A Dominância marcante orienta a atuação com firmeza nas transições. Impulsiona ajustes nos processos e orienta o ritmo coletivo. Delegue um teste com escopo delimitado e revise em 30 dias a qualidade dos resultados no acompanhamento das transições.",
+        "Com Dominância marcante, a iniciativa direciona o trabalho nas transições. Questiona práticas pouco efetivas e imprime direção às ações. Solicite diagnóstico antes da implantação e revise em 30 dias a clareza dos acordos no acompanhamento das transições.",
+        "A expressão marcante de Dominância dá força à cobrança nas transições. Mobiliza esforços para novas rotinas e influencia as prioridades do grupo. Defina responsáveis pela transição operacional e revise em 30 dias a participação nas discussões no acompanhamento das transições.",
+        "Na Dominância marcante, os resultados orientam prioridades nas transições. Busca resultados nas transições e coloca a entrega no centro da atuação. Estabeleça validação com as áreas afetadas e revise em 30 dias a autonomia nas entregas no acompanhamento das transições."
+      ],
+      "equipe": [
+        "A Dominância marcante orienta a atuação com firmeza na atuação coletiva. Distribui tarefas entre as funções e orienta o ritmo coletivo. Delegue a coordenação de uma atividade e revise em 30 dias a qualidade dos resultados no acompanhamento da equipe.",
+        "Com Dominância marcante, a iniciativa direciona o trabalho na atuação coletiva. Cobra compromissos do grupo e imprime direção às ações. Combine critérios para acompanhar compromissos e revise em 30 dias a clareza dos acordos no acompanhamento da equipe.",
+        "A expressão marcante de Dominância dá força à cobrança na atuação coletiva. Direciona esforços nas reuniões e influencia as prioridades do grupo. Abra espaço para contribuições menos ouvidas e revise em 30 dias a participação nas discussões no acompanhamento da equipe.",
+        "Na Dominância marcante, os resultados orientam prioridades na atuação coletiva. Enfrenta divergências entre áreas e coloca a entrega no centro da atuação. Oriente a negociação das divergências técnicas e revise em 30 dias a autonomia nas entregas no acompanhamento da equipe."
+      ],
+      "desenvolvimento": [
+        "A Dominância marcante orienta a atuação com firmeza no desenvolvimento profissional. Busca desafios de maior alcance e orienta o ritmo coletivo. Defina uma meta de delegação com autonomia e revise em 30 dias a qualidade dos resultados no acompanhamento do desenvolvimento.",
+        "Com Dominância marcante, a iniciativa direciona o trabalho no desenvolvimento profissional. Valoriza feedback sobre resultados e imprime direção às ações. Combine um exercício de escuta nas reuniões e revise em 30 dias a clareza dos acordos no acompanhamento do desenvolvimento.",
+        "A expressão marcante de Dominância dá força à cobrança no desenvolvimento profissional. Investe energia em superar obstáculos e influencia as prioridades do grupo. Proponha revisar uma escolha com a equipe e revise em 30 dias a participação nas discussões no acompanhamento do desenvolvimento.",
+        "Na Dominância marcante, os resultados orientam prioridades no desenvolvimento profissional. Procura ampliar responsabilidades e coloca a entrega no centro da atuação. Estabeleça uma prática de negociação entre áreas e revise em 30 dias a autonomia nas entregas no acompanhamento do desenvolvimento."
+      ]
+    },
+    "7": {
+      "comportamento": [
+        "A Dominância muito marcante exige atenção ao atropelo na execução. Assume entregas e remove obstáculos e encurta o espaço de discussão. Exija validação das prioridades e monitore em 30 dias a qualidade dos resultados nas práticas da execução.",
+        "Com Dominância muito marcante, cresce o risco de imposição na execução. Organiza prioridades e questiona tarefas e pressiona o grupo a acompanhar o ritmo. Restrinja interferências em tarefas delegadas e monitore em 30 dias a clareza dos acordos nas práticas da execução.",
+        "A expressão muito marcante de Dominância exige conter a baixa escuta na execução. Sustenta o ritmo e cobra avanços e antecipa encaminhamentos sem consulta. Condicione novas demandas à negociação de capacidade e monitore em 30 dias a participação nas discussões nas práticas da execução.",
+        "Na Dominância muito marcante, aumenta o risco de centralização na execução. Busca responsabilidade e sinaliza entraves e concentra a condução das atividades. Intervenha quando limites de atuação forem ultrapassados e monitore em 30 dias a autonomia nas entregas nas práticas da execução."
+      ],
+      "comunicacao": [
+        "A Dominância muito marcante exige atenção ao atropelo nas trocas profissionais. Apresenta pedidos diretos nas reuniões e encurta o espaço de discussão. Exija escuta das objeções antes do fechamento e monitore em 30 dias a qualidade dos resultados nas práticas da comunicação.",
+        "Com Dominância muito marcante, cresce o risco de imposição nas trocas profissionais. Expõe divergências nas conversas e pressiona o grupo a acompanhar o ritmo. Interrompa cobranças que silenciem contribuições e monitore em 30 dias a clareza dos acordos nas práticas da comunicação.",
+        "A expressão muito marcante de Dominância exige conter a baixa escuta nas trocas profissionais. Sintetiza argumentos para o grupo e antecipa encaminhamentos sem consulta. Solicite síntese dos argumentos contrários e monitore em 30 dias a participação nas discussões nas práticas da comunicação.",
+        "Na Dominância muito marcante, aumenta o risco de centralização nas trocas profissionais. Defende propostas perante outras áreas e concentra a condução das atividades. Estabeleça mediação para conversas de conflito e monitore em 30 dias a autonomia nas entregas nas práticas da comunicação."
+      ],
+      "decisao": [
+        "A Dominância muito marcante exige atenção ao atropelo na liderança. Define caminhos para a operação e encurta o espaço de discussão. Exija consulta documentada às áreas afetadas e monitore em 30 dias a qualidade dos resultados nas práticas das decisões.",
+        "Com Dominância muito marcante, cresce o risco de imposição na liderança. Prioriza alternativas e mobiliza recursos e pressiona o grupo a acompanhar o ritmo. Condicione compromissos à análise independente de risco e monitore em 30 dias a clareza dos acordos nas práticas das decisões.",
+        "A expressão muito marcante de Dominância exige conter a baixa escuta na liderança. Enfrenta impasses nas escolhas e antecipa encaminhamentos sem consulta. Suspenda escolhas que ultrapassem a alçada e monitore em 30 dias a participação nas discussões nas práticas das decisões.",
+        "Na Dominância muito marcante, aumenta o risco de centralização na liderança. Avalia ganhos e resolve pendências e concentra a condução das atividades. Defina critérios para reverter decisões inadequadas e monitore em 30 dias a autonomia nas entregas nas práticas das decisões."
+      ],
+      "pressao": [
+        "A Dominância muito marcante exige atenção ao atropelo sob pressão. Acelera respostas diante de atrasos e encurta o espaço de discussão. Estabeleça limites explícitos de cobrança e monitore em 30 dias a qualidade dos resultados nas práticas das urgências.",
+        "Com Dominância muito marcante, cresce o risco de imposição sob pressão. Enfrenta cobranças sobre as metas e pressiona o grupo a acompanhar o ritmo. Retire demandas concorrentes antes de aceitar urgências e monitore em 30 dias a clareza dos acordos nas práticas das urgências.",
+        "A expressão muito marcante de Dominância exige conter a baixa escuta sob pressão. Intensifica o acompanhamento nas urgências e antecipa encaminhamentos sem consulta. Intervenha nas abordagens impositivas e monitore em 30 dias a participação nas discussões nas práticas das urgências.",
+        "Na Dominância muito marcante, aumenta o risco de centralização sob pressão. Assume a condução dos imprevistos e concentra a condução das atividades. Distribua autoridade durante a contingência e monitore em 30 dias a autonomia nas entregas nas práticas das urgências."
+      ],
+      "mudanca": [
+        "A Dominância muito marcante exige atenção ao atropelo nas transições. Impulsiona ajustes nos processos e encurta o espaço de discussão. Exija teste com critérios de interrupção e monitore em 30 dias a qualidade dos resultados nas práticas das transições.",
+        "Com Dominância muito marcante, cresce o risco de imposição nas transições. Questiona práticas pouco efetivas e pressiona o grupo a acompanhar o ritmo. Retenha a expansão até validar capacidade e monitore em 30 dias a clareza dos acordos nas práticas das transições.",
+        "A expressão muito marcante de Dominância exige conter a baixa escuta nas transições. Mobiliza esforços para novas rotinas e antecipa encaminhamentos sem consulta. Condicione a implantação à revisão de riscos e monitore em 30 dias a participação nas discussões nas práticas das transições.",
+        "Na Dominância muito marcante, aumenta o risco de centralização nas transições. Busca resultados nas transições e concentra a condução das atividades. Suspenda avanços que ignorem dependências e monitore em 30 dias a autonomia nas entregas nas práticas das transições."
+      ],
+      "equipe": [
+        "A Dominância muito marcante exige atenção ao atropelo na atuação coletiva. Distribui tarefas entre as funções e encurta o espaço de discussão. Estabeleça alçadas de autonomia para as funções e monitore em 30 dias a qualidade dos resultados nas práticas da equipe.",
+        "Com Dominância muito marcante, cresce o risco de imposição na atuação coletiva. Cobra compromissos do grupo e pressiona o grupo a acompanhar o ritmo. Intervenha nas cobranças que intimidem o grupo e monitore em 30 dias a clareza dos acordos nas práticas da equipe.",
+        "A expressão muito marcante de Dominância exige conter a baixa escuta na atuação coletiva. Direciona esforços nas reuniões e antecipa encaminhamentos sem consulta. Transfira a facilitação das reuniões e monitore em 30 dias a participação nas discussões nas práticas da equipe.",
+        "Na Dominância muito marcante, aumenta o risco de centralização na atuação coletiva. Enfrenta divergências entre áreas e concentra a condução das atividades. Defina mediação para conflitos recorrentes e monitore em 30 dias a autonomia nas entregas nas práticas da equipe."
+      ],
+      "desenvolvimento": [
+        "A Dominância muito marcante exige atenção ao atropelo no desenvolvimento profissional. Busca desafios de maior alcance e encurta o espaço de discussão. Priorize reduzir a concentração de decisões e monitore em 30 dias a qualidade dos resultados nas práticas do desenvolvimento.",
+        "Com Dominância muito marcante, cresce o risco de imposição no desenvolvimento profissional. Valoriza feedback sobre resultados e pressiona o grupo a acompanhar o ritmo. Estabeleça feedback reservado sobre baixa escuta e monitore em 30 dias a clareza dos acordos nas práticas do desenvolvimento.",
+        "A expressão muito marcante de Dominância exige conter a baixa escuta no desenvolvimento profissional. Investe energia em superar obstáculos e antecipa encaminhamentos sem consulta. Exija revisão dos impactos de um conflito e monitore em 30 dias a participação nas discussões nas práticas do desenvolvimento.",
+        "Na Dominância muito marcante, aumenta o risco de centralização no desenvolvimento profissional. Procura ampliar responsabilidades e concentra a condução das atividades. Vincule novas responsabilidades à delegação efetiva e monitore em 30 dias a autonomia nas entregas nas práticas do desenvolvimento."
+      ]
+    },
+    "8": {
+      "comportamento": [
+        "A Dominância dominante exige contenção explícita do atropelo na execução. Assume entregas e remove obstáculos e encerra discussões sem validar impactos. Exija validação das prioridades e cobre evidências em 30 dias sobre a qualidade dos resultados na gestão da execução.",
+        "Com Dominância dominante, a imposição demanda limites firmes na execução. Organiza prioridades e questiona tarefas e restringe a autonomia das funções. Restrinja interferências em tarefas delegadas e cobre evidências em 30 dias sobre a clareza dos acordos na gestão da execução.",
+        "A expressão dominante de Dominância amplia o risco de conflito na execução. Sustenta o ritmo e cobra avanços e sobrepõe a própria direção às objeções. Condicione novas demandas à negociação de capacidade e cobre evidências em 30 dias sobre a participação nas discussões na gestão da execução.",
+        "Na Dominância dominante, a centralização exige intervenção na execução. Busca responsabilidade e sinaliza entraves e impõe o ritmo sem negociar capacidade. Intervenha quando limites de atuação forem ultrapassados e cobre evidências em 30 dias sobre a autonomia nas entregas na gestão da execução."
+      ],
+      "comunicacao": [
+        "A Dominância dominante exige contenção explícita do atropelo nas trocas profissionais. Apresenta pedidos diretos nas reuniões e encerra discussões sem validar impactos. Exija escuta das objeções antes do fechamento e cobre evidências em 30 dias sobre a qualidade dos resultados na gestão da comunicação.",
+        "Com Dominância dominante, a imposição demanda limites firmes nas trocas profissionais. Expõe divergências nas conversas e restringe a autonomia das funções. Interrompa cobranças que silenciem contribuições e cobre evidências em 30 dias sobre a clareza dos acordos na gestão da comunicação.",
+        "A expressão dominante de Dominância amplia o risco de conflito nas trocas profissionais. Sintetiza argumentos para o grupo e sobrepõe a própria direção às objeções. Solicite síntese dos argumentos contrários e cobre evidências em 30 dias sobre a participação nas discussões na gestão da comunicação.",
+        "Na Dominância dominante, a centralização exige intervenção nas trocas profissionais. Defende propostas perante outras áreas e impõe o ritmo sem negociar capacidade. Estabeleça mediação para conversas de conflito e cobre evidências em 30 dias sobre a autonomia nas entregas na gestão da comunicação."
+      ],
+      "decisao": [
+        "A Dominância dominante exige contenção explícita do atropelo na liderança. Define caminhos para a operação e encerra discussões sem validar impactos. Exija consulta documentada às áreas afetadas e cobre evidências em 30 dias sobre a qualidade dos resultados na gestão das decisões.",
+        "Com Dominância dominante, a imposição demanda limites firmes na liderança. Prioriza alternativas e mobiliza recursos e restringe a autonomia das funções. Condicione compromissos à análise independente de risco e cobre evidências em 30 dias sobre a clareza dos acordos na gestão das decisões.",
+        "A expressão dominante de Dominância amplia o risco de conflito na liderança. Enfrenta impasses nas escolhas e sobrepõe a própria direção às objeções. Suspenda escolhas que ultrapassem a alçada e cobre evidências em 30 dias sobre a participação nas discussões na gestão das decisões.",
+        "Na Dominância dominante, a centralização exige intervenção na liderança. Avalia ganhos e resolve pendências e impõe o ritmo sem negociar capacidade. Defina critérios para reverter decisões inadequadas e cobre evidências em 30 dias sobre a autonomia nas entregas na gestão das decisões."
+      ],
+      "pressao": [
+        "A Dominância dominante exige contenção explícita do atropelo sob pressão. Acelera respostas diante de atrasos e encerra discussões sem validar impactos. Estabeleça limites explícitos de cobrança e cobre evidências em 30 dias sobre a qualidade dos resultados na gestão das urgências.",
+        "Com Dominância dominante, a imposição demanda limites firmes sob pressão. Enfrenta cobranças sobre as metas e restringe a autonomia das funções. Retire demandas concorrentes antes de aceitar urgências e cobre evidências em 30 dias sobre a clareza dos acordos na gestão das urgências.",
+        "A expressão dominante de Dominância amplia o risco de conflito sob pressão. Intensifica o acompanhamento nas urgências e sobrepõe a própria direção às objeções. Intervenha nas abordagens impositivas e cobre evidências em 30 dias sobre a participação nas discussões na gestão das urgências.",
+        "Na Dominância dominante, a centralização exige intervenção sob pressão. Assume a condução dos imprevistos e impõe o ritmo sem negociar capacidade. Distribua autoridade durante a contingência e cobre evidências em 30 dias sobre a autonomia nas entregas na gestão das urgências."
+      ],
+      "mudanca": [
+        "A Dominância dominante exige contenção explícita do atropelo nas transições. Impulsiona ajustes nos processos e encerra discussões sem validar impactos. Exija teste com critérios de interrupção e cobre evidências em 30 dias sobre a qualidade dos resultados na gestão das transições.",
+        "Com Dominância dominante, a imposição demanda limites firmes nas transições. Questiona práticas pouco efetivas e restringe a autonomia das funções. Retenha a expansão até validar capacidade e cobre evidências em 30 dias sobre a clareza dos acordos na gestão das transições.",
+        "A expressão dominante de Dominância amplia o risco de conflito nas transições. Mobiliza esforços para novas rotinas e sobrepõe a própria direção às objeções. Condicione a implantação à revisão de riscos e cobre evidências em 30 dias sobre a participação nas discussões na gestão das transições.",
+        "Na Dominância dominante, a centralização exige intervenção nas transições. Busca resultados nas transições e impõe o ritmo sem negociar capacidade. Suspenda avanços que ignorem dependências e cobre evidências em 30 dias sobre a autonomia nas entregas na gestão das transições."
+      ],
+      "equipe": [
+        "A Dominância dominante exige contenção explícita do atropelo na atuação coletiva. Distribui tarefas entre as funções e encerra discussões sem validar impactos. Estabeleça alçadas de autonomia para as funções e cobre evidências em 30 dias sobre a qualidade dos resultados na gestão da equipe.",
+        "Com Dominância dominante, a imposição demanda limites firmes na atuação coletiva. Cobra compromissos do grupo e restringe a autonomia das funções. Intervenha nas cobranças que intimidem o grupo e cobre evidências em 30 dias sobre a clareza dos acordos na gestão da equipe.",
+        "A expressão dominante de Dominância amplia o risco de conflito na atuação coletiva. Direciona esforços nas reuniões e sobrepõe a própria direção às objeções. Transfira a facilitação das reuniões e cobre evidências em 30 dias sobre a participação nas discussões na gestão da equipe.",
+        "Na Dominância dominante, a centralização exige intervenção na atuação coletiva. Enfrenta divergências entre áreas e impõe o ritmo sem negociar capacidade. Defina mediação para conflitos recorrentes e cobre evidências em 30 dias sobre a autonomia nas entregas na gestão da equipe."
+      ],
+      "desenvolvimento": [
+        "A Dominância dominante exige contenção explícita do atropelo no desenvolvimento profissional. Busca desafios de maior alcance e encerra discussões sem validar impactos. Priorize reduzir a concentração de decisões e cobre evidências em 30 dias sobre a qualidade dos resultados na gestão do desenvolvimento.",
+        "Com Dominância dominante, a imposição demanda limites firmes no desenvolvimento profissional. Valoriza feedback sobre resultados e restringe a autonomia das funções. Estabeleça feedback reservado sobre baixa escuta e cobre evidências em 30 dias sobre a clareza dos acordos na gestão do desenvolvimento.",
+        "A expressão dominante de Dominância amplia o risco de conflito no desenvolvimento profissional. Investe energia em superar obstáculos e sobrepõe a própria direção às objeções. Exija revisão dos impactos de um conflito e cobre evidências em 30 dias sobre a participação nas discussões na gestão do desenvolvimento.",
+        "Na Dominância dominante, a centralização exige intervenção no desenvolvimento profissional. Procura ampliar responsabilidades e impõe o ritmo sem negociar capacidade. Vincule novas responsabilidades à delegação efetiva e cobre evidências em 30 dias sobre a autonomia nas entregas na gestão do desenvolvimento."
+      ]
+    }
+  }
+}
