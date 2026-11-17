@@ -1,0 +1,462 @@
+{
+  "factor": "D",
+  "report": "premium",
+  "status": "rascunho",
+  "diagnostics": {
+    "1-4": {
+      "position": 1,
+      "level": 4,
+      "label": "1º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Direção que pode ser compartilhada",
+          "leitura": "A Dominância está em equilíbrio com Influência, Estabilidade e Conformidade no seu jeito de trabalhar. Em uma reunião, você pode propor um encaminhamento sem precisar deixar a escuta e o cuidado com os detalhes de lado.",
+          "atencao": "Buscar espaço para todas as perspectivas pode deixar uma escolha simples em aberto por mais tempo que o necessário.",
+          "acao": "Quando já houver elementos suficientes, sugira um próximo passo e confirme se alguém vê um impedimento para começar.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Firmeza entre recursos igualmente presentes",
+          "leitura": "Você conta com a Dominância em uma composição sem predomínio entre os quatro fatores. Ao receber um feedback, pode defender seu ponto de vista e também considerar o que precisa ajustar.",
+          "atencao": "Tentar equilibrar todas as respostas pode dificultar que a outra pessoa reconheça sua posição.",
+          "acao": "Diga com clareza o que você acolhe e qual ponto deseja discutir melhor. Termine com um ajuste que consiga colocar em prática.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Uma escolha que cabe na conversa",
+          "leitura": "Com os quatro fatores empatados, a Dominância participa das suas escolhas sem conduzir sozinha. Ao negociar uma entrega, você pode combinar firmeza no que precisa com abertura para construir uma alternativa.",
+          "atencao": "Dar o mesmo espaço a todas as possibilidades pode tornar pouco visível o que é indispensável para você.",
+          "acao": "Antes da negociação, escolha o limite que precisa preservar e uma condição que pode flexibilizar.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Flexibilidade com um próximo passo",
+          "leitura": "A Dominância divide espaço igualmente com os demais fatores, oferecendo iniciativa junto de outras formas de responder. Quando uma prioridade muda, você pode avaliar o novo pedido e ajudar a definir por onde retomar o trabalho.",
+          "atencao": "Considerar muitos caminhos ao mesmo tempo pode atrasar a comunicação de uma escolha necessária.",
+          "acao": "Explique qual tarefa você propõe iniciar e o que ficará para depois. Confira com as pessoas envolvidas se essa troca atende à necessidade atual.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-5": {
+      "position": 1,
+      "level": 5,
+      "label": "1º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Iniciativa sem precisar endurecer",
+          "leitura": "A Dominância presente dá o tom das suas respostas, com espaço para outras maneiras de trabalhar. Em uma reunião sem conclusão, você tende a sugerir um caminho para que a conversa se transforme em ação.",
+          "atencao": "Sua proposta pode ser tomada como decisão final mesmo quando você pretendia apenas ajudar a avançar.",
+          "acao": "Apresente o encaminhamento como uma proposta e abra espaço para ajustes antes de confirmar o combinado.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Um limite dito com clareza",
+          "leitura": "Você tende a recorrer à Dominância para se posicionar, sem precisar fazer da firmeza uma resposta intensa o tempo todo. Ao negociar uma entrega, pode indicar o que considera viável e buscar um acordo que permita seguir.",
+          "atencao": "A disposição para resolver pode levar você a aceitar condições antes de conferir os recursos disponíveis.",
+          "acao": "Confira sua capacidade de entrega antes de confirmar o acordo. Se houver uma restrição, apresente-a junto de uma alternativa possível.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Clareza para conversar sobre ajustes",
+          "leitura": "A Dominância presente favorece sua iniciativa para tratar do que precisa mudar no trabalho. Ao dar um feedback, você pode ir ao ponto e propor uma correção sem transformar a conversa em confronto.",
+          "atencao": "A objetividade pode deixar pouco espaço para compreender como a outra pessoa chegou àquela situação.",
+          "acao": "Descreva o que observou e pergunte o que dificultou a entrega. Construa o ajuste a partir dessa resposta.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Escolher o que vem agora",
+          "leitura": "Você costuma encontrar na Dominância um impulso acessível para organizar o próximo movimento. Diante de uma mudança de prioridade, pode sugerir o que deve avançar e ajudar a equipe a sair da indecisão.",
+          "atencao": "A facilidade para apontar uma direção pode fazer você tratar como simples uma troca que afeta outras entregas.",
+          "acao": "Antes de anunciar o novo foco, confira quais compromissos serão afetados e combine o que pode esperar.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-6": {
+      "position": 1,
+      "level": 6,
+      "label": "1º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Iniciativa que dá direção",
+          "leitura": "A Dominância ocupa a frente do seu perfil com força marcante. Quando uma entrega perde ritmo, você procura definir o próximo passo e assumir uma decisão, em vez de prolongar a discussão.",
+          "atencao": "A vontade de destravar o trabalho pode encurtar a escuta de quem identificou uma dificuldade importante.",
+          "acao": "Antes de fechar o encaminhamento, peça uma objeção concreta à equipe. Depois, combine responsável e prazo.",
+          "status": "aprovada"
+        },
+        "2": {
+          "titulo": "Disposição para assumir a frente",
+          "leitura": "Com a Dominância marcante em primeiro lugar, tomar a iniciativa é um recurso importante para você. Em um projeto sem responsável claro, sua resposta é organizar prioridades e ocupar esse espaço.",
+          "atencao": "Assumir a frente repetidamente pode deixar com você decisões que outras pessoas já conseguiriam sustentar.",
+          "acao": "Escolha uma entrega para delegar por inteiro, deixando claros o resultado esperado e o momento de acompanhamento.",
+          "status": "aprovada"
+        },
+        "3": {
+          "titulo": "Firmeza que ajuda a ajustar",
+          "leitura": "A Dominância marcante favorece sua disposição para abordar o que precisa melhorar. Ao dar um feedback, você tende a nomear o problema e indicar uma mudança para que o trabalho siga adiante.",
+          "atencao": "A rapidez para apontar a solução pode limitar a participação de quem vai colocá-la em prática.",
+          "acao": "Depois de descrever a situação, pergunte qual ajuste a pessoa propõe. Definam juntos como reconhecer a melhora.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Convicção com abertura para acordo",
+          "leitura": "Você costuma recorrer à Dominância marcante para defender uma direção e buscar resultados. Numa negociação, pode apresentar sua proposta com firmeza e procurar uma resposta que permita avançar.",
+          "atencao": "A convicção no que você propõe pode dificultar a percepção de uma condição legítima da outra parte.",
+          "acao": "Pergunte qual necessidade sustenta a contraproposta antes de responder. Verifique se existe outro caminho para atender ao resultado que você busca.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-7": {
+      "position": 1,
+      "level": 7,
+      "label": "1º lugar — muito marcante",
+      "variants": {
+        "1": {
+          "titulo": "Energia para fazer avançar",
+          "leitura": "A Dominância muito marcante costuma orientar sua resposta com bastante iniciativa e firmeza. Quando um prazo fica ameaçado, você tende a acelerar decisões e mobilizar as pessoas para recuperar a entrega.",
+          "atencao": "A urgência que faz sentido para você pode virar uma cobrança difícil de sustentar para quem executa.",
+          "acao": "Pergunte o que realmente cabe no tempo disponível e retire um obstáculo antes de pedir mais velocidade.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Posição firme, acordo possível",
+          "leitura": "Você conta com uma Dominância muito marcante para defender caminhos e buscar definições no trabalho. Em uma negociação, tende a apresentar suas condições com convicção e insistir no que considera essencial.",
+          "atencao": "Sustentar sua proposta com muita força pode reduzir o espaço para uma solução que você ainda não considerou.",
+          "acao": "Peça à outra parte uma alternativa que preserve a necessidade central de ambos. Examine a proposta antes de reforçar sua condição inicial.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Conduzir também é abrir espaço",
+          "leitura": "A Dominância muito marcante dá força à sua vontade de transformar conversa em decisão. Numa reunião com muitas sugestões, você pode assumir o encaminhamento e imprimir um ritmo rápido ao grupo.",
+          "atencao": "Fechar o assunto cedo demais pode deixar de fora contribuições de quem precisa de mais tempo para elaborar.",
+          "acao": "Antes de concluir, convide quem ainda não falou a trazer uma ressalva. Ajuste o encaminhamento se aparecer uma dependência relevante.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Autonomia sem retomar o controle",
+          "leitura": "Sua Dominância muito marcante favorece uma condução ativa, com expectativas claras sobre o que precisa acontecer. Ao delegar uma tarefa importante, você pode definir o resultado e sentir vontade de interferir quando a execução segue outro caminho.",
+          "atencao": "Corrigir cada diferença de método pode retirar a autonomia que você pretendia oferecer.",
+          "acao": "Combine os limites da entrega e os pontos de acompanhamento. Fora desses limites, deixe a pessoa experimentar a própria solução.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-8": {
+      "position": 1,
+      "level": 8,
+      "label": "1º lugar — dominante",
+      "variants": {
+        "1": {
+          "titulo": "Direção com espaço para escuta",
+          "leitura": "A Dominância dominante em primeiro lugar dá grande peso à sua necessidade de agir e definir rumos. Diante de um atraso, você entra rapidamente na solução e procura encerrar o impasse.",
+          "atencao": "Sua certeza sobre o caminho pode fazer uma discordância útil parecer apenas resistência.",
+          "acao": "Antes de uma decisão difícil de reverter, peça que alguém apresente um risco e uma alternativa. Avalie ambos antes de responder.",
+          "status": "aprovada"
+        },
+        "2": {
+          "titulo": "Força para conduzir sem atropelar",
+          "leitura": "Quando a Dominância é dominante e lidera o perfil, sua força de condução ocupa muito espaço no trabalho. Em uma negociação travada, você pressiona por uma definição e estabelece o que considera aceitável.",
+          "atencao": "A pressão por resposta pode produzir concordância aparente, sem compromisso real com o combinado.",
+          "acao": "Ao concluir a negociação, peça que a outra parte explique o acordo com suas próprias palavras e indique uma dificuldade de execução.",
+          "status": "aprovada"
+        },
+        "3": {
+          "titulo": "Decidir sem fechar a conversa",
+          "leitura": "A Dominância dominante costuma levar você a ocupar bastante espaço na definição dos caminhos de trabalho. Em uma reunião, pode identificar uma saída e querer concluir antes que todas as pessoas tenham apresentado suas ressalvas.",
+          "atencao": "Sua firmeza pode fazer o grupo desistir de contribuir justamente quando um contraponto seria valioso.",
+          "acao": "Suspenda sua conclusão por um momento e peça uma avaliação contrária à sua proposta. Mostre o que dessa contribuição será considerado na decisão.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Franqueza que permite responder",
+          "leitura": "Você tende a usar a Dominância dominante com muita intensidade para corrigir o que considera fora do rumo. Ao dar um feedback, pode concentrar a conversa no ajuste imediato e esperar uma resposta rápida.",
+          "atencao": "O peso da sua cobrança pode levar a pessoa a se defender ou concordar sem compreender a mudança.",
+          "acao": "Descreva um comportamento específico e escute a leitura da outra pessoa sem interromper. Só então definam o ajuste e uma forma de acompanhá-lo.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-1": {
+      "position": 2,
+      "level": 1,
+      "label": "2º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Um pequeno espaço para se posicionar",
+          "leitura": "A Dominância quase ausente oferece pouco impulso para afirmar limites, mesmo sendo um apoio ao seu recurso mais habitual. Em uma reunião, você pode acompanhar as propostas sem dizer que uma delas dificulta seu trabalho.",
+          "atencao": "Seu silêncio pode ser entendido como disponibilidade para algo que você não consegue assumir.",
+          "acao": "Prepare uma frase curta sobre a dificuldade e use-a antes de encerrar a conversa. Se ajudar, ensaie com alguém de confiança.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Segurança para apresentar uma condição",
+          "leitura": "Você tende a contar mais com outra forma de condução do que com a Dominância, que aparece com intensidade muito baixa. Ao negociar uma demanda, pode precisar de apoio para dizer quais condições tornam a entrega possível.",
+          "atencao": "Deixar suas condições para depois pode criar um compromisso difícil de rever.",
+          "acao": "Anote o que precisa estar disponível para aceitar e leve esse registro à conversa. Peça companhia a alguém experiente nas primeiras negociações.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Treinar uma fala direta",
+          "leitura": "A Dominância quase ausente pede um esforço maior quando você precisa sustentar uma posição além da sua abordagem habitual. Ao receber um feedback com o qual não concorda inteiramente, pode ser difícil apresentar sua própria leitura.",
+          "atencao": "Guardar a discordância pode impedir um esclarecimento importante para seu desenvolvimento.",
+          "acao": "Escolha um ponto específico e prepare um exemplo que mostre sua perspectiva. Comece pedindo espaço para esclarecer esse trecho.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Apoio para rever um compromisso",
+          "leitura": "A Dominância participa pouco das suas respostas, e você pode buscar em outro recurso a segurança para agir. Quando um prazo se torna inviável, comunicar a necessidade de mudança pode exigir preparação.",
+          "atencao": "Tentar resolver tudo antes de avisar pode deixar menos alternativas para quem depende da entrega.",
+          "acao": "Registre o impedimento e uma previsão possível antes de conversar. Combine com alguém de confiança como apresentar esse limite sem precisar justificar cada detalhe.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-2": {
+      "position": 2,
+      "level": 2,
+      "label": "2º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Dar voz a uma necessidade",
+          "leitura": "A Dominância discreta acompanha sua forma principal de trabalhar com pouca força para impor limites. Quando uma prioridade muda, você pode precisar de um convite para dizer o que essa troca exige de você.",
+          "atencao": "Acomodar o novo pedido sem comentar o impacto pode sobrecarregar sua rotina.",
+          "acao": "Prepare uma pergunta sobre o que deixa de ser prioridade e faça-a antes de reorganizar suas tarefas.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Uma discordância que pode ser dita",
+          "leitura": "Você dispõe de uma Dominância discreta como apoio, sem que o confronto seja uma resposta pronta. Num conflito sobre a divisão do trabalho, pode preferir buscar entendimento antes de apresentar o que considera injusto.",
+          "atencao": "O desejo de preservar a conversa pode fazer sua necessidade desaparecer do acordo.",
+          "acao": "Ensaie uma frase que descreva a divisão atual e a mudança que você pede. Leve essa frase para uma conversa breve e reservada.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Participar com um encaminhamento",
+          "leitura": "A Dominância discreta oferece um apoio leve para tomar iniciativa junto do seu recurso mais frequente. Em uma reunião, você pode ter uma sugestão útil e ainda precisar de tempo para se sentir à vontade para apresentá-la.",
+          "atencao": "Esperar uma abertura perfeita pode fazer a conversa terminar sem sua contribuição.",
+          "acao": "Leve uma proposta simples por escrito e procure apresentá-la no começo do assunto. Pratique primeiro em uma reunião com pessoas próximas.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Clareza ao combinar uma entrega",
+          "leitura": "Sua Dominância aparece de maneira discreta, apoiando mais do que conduzindo suas interações. Ao delegar uma tarefa, você pode precisar de preparo para dizer com precisão o que espera receber.",
+          "atencao": "Suavizar demais o pedido pode deixar a outra pessoa sem referência sobre o resultado necessário.",
+          "acao": "Escreva o resultado esperado e um critério de conclusão antes de conversar. Use esse apoio para fazer um pedido direto, mantendo seu jeito de se relacionar.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-3": {
+      "position": 2,
+      "level": 3,
+      "label": "2º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Firmeza que ganha prática",
+          "leitura": "A Dominância moderada-baixa está disponível como apoio, mas você tende a iniciar as situações por outro caminho. Ao negociar um prazo, pode precisar organizar seus argumentos antes de sustentar uma condição.",
+          "atencao": "Preparar-se por tempo demais pode adiar um limite que já precisa ser conhecido.",
+          "acao": "Anote a condição mínima para entregar e uma alternativa viável. Treine apresentá-las em voz alta antes da negociação.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Uma decisão com apoio próximo",
+          "leitura": "Você conta com a Dominância moderada-baixa para complementar sua maneira mais habitual de agir. Ao delegar uma atividade, pode precisar de critérios claros para definir o que a outra pessoa pode decidir sozinha.",
+          "atencao": "Deixar essa margem implícita pode gerar pedidos de confirmação que poderiam ser evitados.",
+          "acao": "Escolha uma decisão simples que ficará com a pessoa e explique quando ela deve consultar você.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Sua percepção também orienta",
+          "leitura": "A Dominância moderada-baixa pode ajudar você a se posicionar, embora esse movimento peça alguma preparação. Numa conversa de feedback, você pode reconhecer o problema e ainda hesitar em pedir uma mudança concreta.",
+          "atencao": "Uma observação cuidadosa demais pode não deixar claro o comportamento que precisa mudar.",
+          "acao": "Prepare um exemplo e formule um pedido observável. Se sentir dificuldade, ensaie a conversa antes com alguém que possa ajudar.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Um limite antes da sobrecarga",
+          "leitura": "A Dominância moderada-baixa oferece firmeza de apoio, sem ser sua resposta mais espontânea diante de novas exigências. Quando a prioridade muda, você pode precisar de um momento para avaliar e comunicar o que não cabe manter.",
+          "atencao": "Aceitar a troca sem nomear suas consequências pode tornar invisível a necessidade de apoio.",
+          "acao": "Compare o novo pedido com seus compromissos e escolha o ponto que precisa renegociar. Comece por essa informação ao conversar com a pessoa responsável.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-4": {
+      "position": 2,
+      "level": 4,
+      "label": "2º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Posicionamento que complementa",
+          "leitura": "A Dominância equilibrada oferece firmeza para complementar a abordagem que costuma guiar você. Em uma reunião, pode ajudar a transformar uma discussão em um encaminhamento quando percebe que já há clareza suficiente.",
+          "atencao": "Aguardar que outra pessoa peça sua opinião pode deixar uma proposta útil sem espaço.",
+          "acao": "Quando identificar um caminho possível, apresente-o como sugestão e pergunte o que falta para colocá-lo em prática.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Um apoio para rever o combinado",
+          "leitura": "Você tem na Dominância equilibrada um recurso para sustentar limites junto da sua maneira principal de trabalhar. Diante de um prazo apertado, pode usar essa firmeza para explicar o que precisa ser ajustado.",
+          "atencao": "Tentar preservar o combinado a qualquer custo pode atrasar uma renegociação necessária.",
+          "acao": "Avise qual parte da entrega está em risco e ofereça uma escolha entre reduzir o escopo e rever a data.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Defender sem endurecer",
+          "leitura": "A Dominância equilibrada permite que você acrescente objetividade a uma conversa sem depender dela o tempo todo. Em um conflito de responsabilidades, pode apoiar sua abordagem habitual com uma definição clara do que cabe a cada pessoa.",
+          "atencao": "Suavizar a definição depois de apresentá-la pode devolver ao grupo a dúvida que você ajudou a resolver.",
+          "acao": "Confirme a divisão de responsabilidades ao final e convide cada pessoa a apontar uma dificuldade prática.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Uma proposta para o novo foco",
+          "leitura": "Sua Dominância equilibrada funciona como apoio para decidir quando a situação pede um posicionamento mais direto. Numa mudança de prioridade, você pode reunir o que ouviu e sugerir uma sequência viável para o trabalho.",
+          "atencao": "Deixar sua proposta apenas nas entrelinhas pode dificultar que os demais reconheçam o encaminhamento.",
+          "acao": "Diga qual sequência você recomenda e por quê. Confira o impacto com quem executa antes de ajustar o plano.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-5": {
+      "position": 2,
+      "level": 5,
+      "label": "2º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Firmeza como apoio",
+          "leitura": "A Dominância presente em segundo lugar oferece firmeza sem ser sua principal direção. Quando a forma habitual de conduzir não resolve um impasse, você recorre a uma posição mais direta para delimitar o que precisa acontecer.",
+          "atencao": "Esperar demais para usar esse recurso pode deixar um limite importante sem expressão.",
+          "acao": "Em uma demanda que compete com sua prioridade, explique o que consegue assumir e o que precisa ser renegociado antes de aceitar.",
+          "status": "aprovada"
+        },
+        "2": {
+          "titulo": "Iniciativa na hora necessária",
+          "leitura": "Em segundo lugar e com intensidade presente, a Dominância funciona como recurso de sustentação. Numa reunião, você pode acompanhar o caminho predominante e tomar a frente quando falta um encaminhamento concreto.",
+          "atencao": "Sua iniciativa pode aparecer somente depois que a indefinição já consumiu tempo.",
+          "acao": "Ao perceber uma conversa sem avanço, proponha uma decisão pequena e verificável, sem precisar assumir toda a condução.",
+          "status": "aprovada"
+        },
+        "3": {
+          "titulo": "Clareza para pedir uma mudança",
+          "leitura": "A Dominância presente acrescenta firmeza à maneira que você costuma usar para se relacionar no trabalho. Ao dar um feedback, pode apoiar sua escuta com um pedido direto sobre o que precisa mudar.",
+          "atencao": "Um pedido muito suavizado pode não transmitir a importância do ajuste para a entrega.",
+          "acao": "Diga qual comportamento você espera observar na próxima situação e confirme como a pessoa entendeu o pedido.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Autonomia com limites visíveis",
+          "leitura": "Você tem na Dominância presente um apoio para definir responsabilidades sem precisar conduzir cada detalhe. Ao delegar uma tarefa, pode usar esse recurso para esclarecer o que fica com a outra pessoa.",
+          "atencao": "Deixar a autonomia sem contornos pode gerar dúvidas e devolver decisões pequenas para você.",
+          "acao": "Combine o que a pessoa pode resolver sozinha e em qual situação deve chamar você. Deixe que ela escolha o caminho dentro desse espaço.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-6": {
+      "position": 2,
+      "level": 6,
+      "label": "2º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Firmeza para sustentar o caminho",
+          "leitura": "A Dominância marcante reforça sua forma principal de atuar com iniciativa e disposição para decidir. Em uma negociação, você pode começar buscando entendimento e sustentar uma condição clara quando chega a hora de fechar.",
+          "atencao": "Mudar de uma conversa aberta para uma condição firme sem aviso pode confundir a outra parte.",
+          "acao": "Explique o que você já conseguiu flexibilizar e qual limite precisa preservar antes de apresentar sua proposta final.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Um apoio ativo nas decisões",
+          "leitura": "Você conta com a Dominância marcante como um recurso forte ao lado da sua abordagem mais habitual. Em uma reunião, pode acompanhar a construção coletiva e assumir o encaminhamento quando percebe que falta direção.",
+          "atencao": "Tomar a frente para ajudar pode acabar retirando de outra pessoa uma decisão que ainda cabe a ela.",
+          "acao": "Antes de encaminhar, confirme quem responde pela escolha e ofereça uma proposta sem ocupar automaticamente esse lugar.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Cobrar com espaço para resposta",
+          "leitura": "A Dominância marcante acrescenta firmeza ao seu jeito de acompanhar o trabalho, mesmo sem abrir todas as interações. Ao dar um feedback, você pode acolher a explicação e depois pedir uma mudança com bastante clareza.",
+          "atencao": "A força do pedido pode fazer a pessoa concordar antes de avaliar o que consegue mudar.",
+          "acao": "Pergunte qual parte do ajuste ela consegue iniciar e que apoio será necessário. Use essa resposta para combinar o acompanhamento.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Reorganizar sem carregar tudo",
+          "leitura": "Sua Dominância marcante dá sustentação para agir quando a abordagem inicial não basta para mover o trabalho. Diante de uma mudança de prioridade, você pode assumir a organização das próximas ações com rapidez.",
+          "atencao": "Resolver a reorganização por conta própria pode concentrar em você responsabilidades que deveriam ser distribuídas.",
+          "acao": "Apresente a nova sequência e peça que cada responsável confirme sua parte. Reserve sua intervenção para as dependências que realmente exigem sua decisão.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-7": {
+      "position": 2,
+      "level": 7,
+      "label": "2º lugar — muito marcante",
+      "variants": {
+        "1": {
+          "titulo": "Dois recursos fortes na condução",
+          "leitura": "Embora esteja em segundo lugar, a Dominância muito marcante tem grande participação no seu modo de trabalhar. Você pode começar uma conversa pelo recurso do fator principal e, ao surgir um impasse, passar rapidamente a exigir uma definição.",
+          "atencao": "Essa mudança de intensidade pode surpreender quem não percebeu que a conversa havia chegado a um limite.",
+          "acao": "Sinalize a passagem: explique o impasse, diga qual decisão é necessária e escute a resposta antes de aumentar a pressão.",
+          "status": "aprovada"
+        },
+        "2": {
+          "titulo": "Firmeza que acompanha a direção",
+          "leitura": "A Dominância muito marcante não fica enfraquecida por ocupar a segunda posição. Mesmo quando outro fator abre a interação, você sustenta uma cobrança firme se o trabalho não avança.",
+          "atencao": "A força desse recurso pode transformar uma diferença de abordagem em disputa por controle.",
+          "acao": "Em um desacordo, separe o resultado indispensável do método que pode ser negociado. Preserve firmeza no primeiro e abertura no segundo.",
+          "status": "aprovada"
+        },
+        "3": {
+          "titulo": "Mudar o foco sem impor o ritmo",
+          "leitura": "A Dominância muito marcante soma bastante iniciativa à sua abordagem principal, mesmo quando não aparece primeiro. Numa mudança de prioridade, você pode assumir rapidamente a reorganização e esperar que os demais acompanhem.",
+          "atencao": "A velocidade da sua resposta pode esconder o custo da troca para quem precisa executar.",
+          "acao": "Antes de redistribuir as tarefas, peça que cada pessoa indique o compromisso afetado. Use essas informações para definir o que será interrompido.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Compartilhar a execução de verdade",
+          "leitura": "Você conta com uma Dominância muito marcante para sustentar resultados junto do recurso que mais orienta suas interações. Ao delegar, pode começar oferecendo liberdade e depois cobrar de forma intensa quando o andamento não corresponde à sua expectativa.",
+          "atencao": "Aumentar o controle sem retomar o combinado pode fazer a pessoa trabalhar para evitar sua reação, não para resolver a tarefa.",
+          "acao": "Retome os critérios de entrega antes de cobrar uma mudança de rota. Pergunte qual decisão a pessoa propõe e preserve o que estiver dentro da autonomia acordada.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-8": {
+      "position": 2,
+      "level": 8,
+      "label": "2º lugar — dominante",
+      "variants": {
+        "1": {
+          "titulo": "Força que também pede cuidado",
+          "leitura": "A Dominância dominante tem muita força no seu trabalho, mesmo quando outro recurso costuma abrir suas interações. Em uma negociação difícil, você pode passar da abordagem inicial a uma defesa muito incisiva das suas condições.",
+          "atencao": "Essa intensidade pode reduzir a liberdade da outra parte para dizer que o acordo não é viável.",
+          "acao": "Antes de insistir, pergunte o que impediria o cumprimento da proposta. Trate a resposta como informação para negociar, não como algo a vencer.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Cobrança com margem para verdade",
+          "leitura": "Você dispõe de uma Dominância dominante como apoio de alta intensidade, capaz de mudar bastante o tom da sua atuação. Quando um prazo fica ameaçado, pode sair da conversa inicial para uma cobrança forte por recuperação.",
+          "atencao": "A pressão repentina pode fazer as pessoas esconderem dificuldades para evitar uma reação sua.",
+          "acao": "Explique sua preocupação sem exigir uma promessa imediata. Peça uma previsão realista e combine como receber notícias de novos obstáculos.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Orientar sem tomar de volta",
+          "leitura": "Sua Dominância dominante participa intensamente das decisões, ainda que outra maneira de agir apareça primeiro. Ao delegar uma entrega, você pode oferecer espaço no início e depois intervir com força quando percebe distância do resultado esperado.",
+          "atencao": "Retomar a tarefa sem conversar pode desfazer a confiança e tornar a autonomia apenas aparente.",
+          "acao": "Mostre a diferença entre o combinado e o que foi entregue. Antes de assumir a execução, peça à pessoa um plano de correção com limites claros.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Discordância não precisa virar disputa",
+          "leitura": "A Dominância dominante dá muita força ao seu posicionamento, somando uma resposta incisiva à sua abordagem mais habitual. Num conflito sobre prioridades, você pode passar a defender sua escolha com uma pressão difícil de contornar.",
+          "atencao": "A busca por uma definição pode transformar uma divergência legítima em teste de lealdade à sua proposta.",
+          "acao": "Peça que a outra pessoa descreva o impacto da sua escolha e apresente o seu também. Procurem um critério comum antes de decidir qual prioridade será mantida.",
+          "status": "rascunho"
+        }
+      }
+    }
+  }
+}
