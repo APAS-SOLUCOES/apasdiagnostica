@@ -1,0 +1,357 @@
+{
+  "factor": "D",
+  "report": "technical",
+  "status": "rascunho",
+  "diagnostics": {
+    "3-1": {
+      "position": 3,
+      "level": 1,
+      "label": "3º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Reunião com clareza dos critérios",
+          "leitura": "A Dominância quase ausente em 3º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na clareza dos critérios. Em situação de reunião, a apresentação de uma ressalva pode exigir preparação específica quando a intensidade é quase ausente e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância quase ausente em 3º lugar, a decisão pode ser encerrada sem conhecer uma restrição se a clareza dos critérios não for verificada.",
+          "acao": "Para desenvolver a clareza dos critérios na Dominância quase ausente em 3º lugar, ofereça apoio e ensaie a apresentação de uma ressalva. Em 30 dias, observe a clareza dos critérios nas situações de reunião acompanhadas no contexto da Dominância quase ausente em 3º lugar.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback com autonomia combinada",
+          "leitura": "A Dominância quase ausente em 3º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na autonomia combinada. Em situação de feedback, a solicitação de uma correção pode exigir preparação específica quando a intensidade é quase ausente e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância quase ausente em 3º lugar, o ajuste esperado pode permanecer indefinido se a autonomia combinada não for verificada.",
+          "acao": "Para desenvolver a autonomia combinada na Dominância quase ausente em 3º lugar, ofereça apoio e ensaie a solicitação de uma correção. Em 30 dias, observe a autonomia combinada nas situações de feedback acompanhadas no contexto da Dominância quase ausente em 3º lugar.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Conflito com expressão dos limites",
+          "leitura": "A Dominância quase ausente em 3º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na expressão dos limites. Em situação de conflito, a defesa de uma necessidade operacional pode exigir preparação específica quando a intensidade é quase ausente e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância quase ausente em 3º lugar, uma condição importante pode ficar fora do acordo se a expressão dos limites não for verificada.",
+          "acao": "Para desenvolver a expressão dos limites na Dominância quase ausente em 3º lugar, ofereça apoio e ensaie a defesa de uma necessidade operacional. Em 30 dias, observe a expressão dos limites nas situações de conflito acompanhadas no contexto da Dominância quase ausente em 3º lugar.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Mudança de prioridade com responsabilidade pelo encaminhamento",
+          "leitura": "A Dominância quase ausente em 3º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na responsabilidade pelo encaminhamento. Em situação de mudança de prioridade, a definição do trabalho a interromper pode exigir preparação específica quando a intensidade é quase ausente e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância quase ausente em 3º lugar, a troca pode acumular compromissos incompatíveis se a responsabilidade pelo encaminhamento não for verificada.",
+          "acao": "Para desenvolver a responsabilidade pelo encaminhamento na Dominância quase ausente em 3º lugar, ofereça apoio e ensaie a definição do trabalho a interromper. Em 30 dias, observe a responsabilidade pelo encaminhamento nas situações de mudança de prioridade acompanhadas no contexto da Dominância quase ausente em 3º lugar.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-2": {
+      "position": 3,
+      "level": 2,
+      "label": "3º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Reunião com clareza dos critérios",
+          "leitura": "A Dominância discreta em 3º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na clareza dos critérios. Em situação de reunião, a apresentação de uma ressalva pode exigir preparação específica quando a intensidade é discreta e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância discreta em 3º lugar, a decisão pode ser encerrada sem conhecer uma restrição se a clareza dos critérios não for verificada.",
+          "acao": "Para desenvolver a clareza dos critérios na Dominância discreta em 3º lugar, ofereça apoio e ensaie a apresentação de uma ressalva. Em 30 dias, observe a clareza dos critérios nas situações de reunião acompanhadas no contexto da Dominância discreta em 3º lugar.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback com autonomia combinada",
+          "leitura": "A Dominância discreta em 3º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na autonomia combinada. Em situação de feedback, a solicitação de uma correção pode exigir preparação específica quando a intensidade é discreta e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância discreta em 3º lugar, o ajuste esperado pode permanecer indefinido se a autonomia combinada não for verificada.",
+          "acao": "Para desenvolver a autonomia combinada na Dominância discreta em 3º lugar, ofereça apoio e ensaie a solicitação de uma correção. Em 30 dias, observe a autonomia combinada nas situações de feedback acompanhadas no contexto da Dominância discreta em 3º lugar.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Conflito com expressão dos limites",
+          "leitura": "A Dominância discreta em 3º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na expressão dos limites. Em situação de conflito, a defesa de uma necessidade operacional pode exigir preparação específica quando a intensidade é discreta e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância discreta em 3º lugar, uma condição importante pode ficar fora do acordo se a expressão dos limites não for verificada.",
+          "acao": "Para desenvolver a expressão dos limites na Dominância discreta em 3º lugar, ofereça apoio e ensaie a defesa de uma necessidade operacional. Em 30 dias, observe a expressão dos limites nas situações de conflito acompanhadas no contexto da Dominância discreta em 3º lugar.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Mudança de prioridade com responsabilidade pelo encaminhamento",
+          "leitura": "A Dominância discreta em 3º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na responsabilidade pelo encaminhamento. Em situação de mudança de prioridade, a definição do trabalho a interromper pode exigir preparação específica quando a intensidade é discreta e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância discreta em 3º lugar, a troca pode acumular compromissos incompatíveis se a responsabilidade pelo encaminhamento não for verificada.",
+          "acao": "Para desenvolver a responsabilidade pelo encaminhamento na Dominância discreta em 3º lugar, ofereça apoio e ensaie a definição do trabalho a interromper. Em 30 dias, observe a responsabilidade pelo encaminhamento nas situações de mudança de prioridade acompanhadas no contexto da Dominância discreta em 3º lugar.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-3": {
+      "position": 3,
+      "level": 3,
+      "label": "3º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Apoio para explicitar limites",
+          "leitura": "A Dominância moderada-baixa no terceiro lugar tem participação reduzida diante dos dois fatores superiores. Na negociação de prazo, a discordância pode ser comunicada indiretamente, sem delimitar a capacidade de entrega.",
+          "atencao": "O gestor pode interpretar ausência de contestação como compromisso viável.",
+          "acao": "Solicite uma avaliação explícita de capacidade antes de fechar o prazo. Em 30 dias, observe se os impedimentos passaram a ser apresentados com alternativas.",
+          "status": "aprovada"
+        },
+        "2": {
+          "titulo": "Treino de iniciativa delimitada",
+          "leitura": "A combinação de terceira posição e intensidade moderada-baixa indica menor disponibilidade inicial para assumir a direção. Numa tarefa sem responsável, a atuação pode depender de uma atribuição mais explícita.",
+          "atencao": "Delegar uma situação inteiramente aberta pode prolongar a espera por definição.",
+          "acao": "Ofereça uma decisão pequena com autonomia clara. Amplie o escopo após verificar, em 30 dias, iniciativa e sustentação do encaminhamento.",
+          "status": "aprovada"
+        },
+        "3": {
+          "titulo": "Reunião com expressão dos limites",
+          "leitura": "A Dominância moderada-baixa em 3º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na expressão dos limites. Em situação de reunião, a apresentação de uma ressalva pode exigir preparação específica quando a intensidade é moderada-baixa e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância moderada-baixa em 3º lugar, a decisão pode ser encerrada sem conhecer uma restrição se a expressão dos limites não for verificada.",
+          "acao": "Para desenvolver a expressão dos limites na Dominância moderada-baixa em 3º lugar, ofereça apoio e ensaie a apresentação de uma ressalva. Em 30 dias, observe a expressão dos limites nas situações de reunião acompanhadas no contexto da Dominância moderada-baixa em 3º lugar.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Feedback com responsabilidade pelo encaminhamento",
+          "leitura": "A Dominância moderada-baixa em 3º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na responsabilidade pelo encaminhamento. Em situação de feedback, a solicitação de uma correção pode exigir preparação específica quando a intensidade é moderada-baixa e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância moderada-baixa em 3º lugar, o ajuste esperado pode permanecer indefinido se a responsabilidade pelo encaminhamento não for verificada.",
+          "acao": "Para desenvolver a responsabilidade pelo encaminhamento na Dominância moderada-baixa em 3º lugar, ofereça apoio e ensaie a solicitação de uma correção. Em 30 dias, observe a responsabilidade pelo encaminhamento nas situações de feedback acompanhadas no contexto da Dominância moderada-baixa em 3º lugar.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-4": {
+      "position": 3,
+      "level": 4,
+      "label": "3º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Reunião com clareza dos critérios",
+          "leitura": "A Dominância equilibrada em 3º lugar mantém recurso de direção disponível, cuja aplicação depende da clareza dos critérios. Em situação de reunião, a apresentação de uma ressalva pode exigir preparação específica quando a intensidade é equilibrada e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância equilibrada em 3º lugar, a decisão pode ser encerrada sem conhecer uma restrição se a clareza dos critérios não for verificada.",
+          "acao": "Para avaliar a clareza dos critérios na Dominância equilibrada em 3º lugar, delegue a apresentação de uma ressalva com critérios explícitos. Em 30 dias, observe a clareza dos critérios nas situações de reunião acompanhadas no contexto da Dominância equilibrada em 3º lugar.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback com autonomia combinada",
+          "leitura": "A Dominância equilibrada em 3º lugar mantém recurso de direção disponível, cuja aplicação depende da autonomia combinada. Em situação de feedback, a solicitação de uma correção pode exigir preparação específica quando a intensidade é equilibrada e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância equilibrada em 3º lugar, o ajuste esperado pode permanecer indefinido se a autonomia combinada não for verificada.",
+          "acao": "Para avaliar a autonomia combinada na Dominância equilibrada em 3º lugar, delegue a solicitação de uma correção com critérios explícitos. Em 30 dias, observe a autonomia combinada nas situações de feedback acompanhadas no contexto da Dominância equilibrada em 3º lugar.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Conflito com expressão dos limites",
+          "leitura": "A Dominância equilibrada em 3º lugar mantém recurso de direção disponível, cuja aplicação depende da expressão dos limites. Em situação de conflito, a defesa de uma necessidade operacional pode exigir preparação específica quando a intensidade é equilibrada e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância equilibrada em 3º lugar, uma condição importante pode ficar fora do acordo se a expressão dos limites não for verificada.",
+          "acao": "Para avaliar a expressão dos limites na Dominância equilibrada em 3º lugar, delegue a defesa de uma necessidade operacional com critérios explícitos. Em 30 dias, observe a expressão dos limites nas situações de conflito acompanhadas no contexto da Dominância equilibrada em 3º lugar.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Mudança de prioridade com responsabilidade pelo encaminhamento",
+          "leitura": "A Dominância equilibrada em 3º lugar mantém recurso de direção disponível, cuja aplicação depende da responsabilidade pelo encaminhamento. Em situação de mudança de prioridade, a definição do trabalho a interromper pode exigir preparação específica quando a intensidade é equilibrada e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância equilibrada em 3º lugar, a troca pode acumular compromissos incompatíveis se a responsabilidade pelo encaminhamento não for verificada.",
+          "acao": "Para avaliar a responsabilidade pelo encaminhamento na Dominância equilibrada em 3º lugar, delegue a definição do trabalho a interromper com critérios explícitos. Em 30 dias, observe a responsabilidade pelo encaminhamento nas situações de mudança de prioridade acompanhadas no contexto da Dominância equilibrada em 3º lugar.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-5": {
+      "position": 3,
+      "level": 5,
+      "label": "3º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Assertividade disponível em terceiro plano",
+          "leitura": "A terceira posição não deve ser confundida com baixa intensidade: a Dominância presente oferece recurso de posicionamento. Na revisão de uma entrega, há condição de defender limites, embora outros fatores orientem a abordagem inicial.",
+          "atencao": "Interpretar a posição como incapacidade de cobrar pode levar a uma delegação excessivamente tutelada.",
+          "acao": "Atribua uma negociação com critérios definidos. Em 30 dias, observe autonomia e comunicação antecipada dos limites.",
+          "status": "aprovada"
+        },
+        "2": {
+          "titulo": "Decisão com critérios de apoio",
+          "leitura": "A Dominância presente, atrás de dois fatores, participa como recurso acessível, não como direção principal. Em uma decisão operacional, a atuação ganha espaço quando há clareza sobre resultado e margem de autonomia.",
+          "atencao": "Cobrar protagonismo sem esclarecer essas condições pode gerar demora desnecessária.",
+          "acao": "Delegue uma escolha reversível e defina quando revisar o resultado. Acompanhe o tempo de decisão e a necessidade de confirmação durante 30 dias.",
+          "status": "aprovada"
+        },
+        "3": {
+          "titulo": "Conflito com expressão dos limites",
+          "leitura": "A Dominância presente em 3º lugar mantém recurso de direção disponível, cuja aplicação depende da expressão dos limites. Em situação de conflito, a defesa de uma necessidade operacional pode exigir preparação específica quando a intensidade é presente e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância presente em 3º lugar, uma condição importante pode ficar fora do acordo se a expressão dos limites não for verificada.",
+          "acao": "Para avaliar a expressão dos limites na Dominância presente em 3º lugar, delegue a defesa de uma necessidade operacional com critérios explícitos. Em 30 dias, observe a expressão dos limites nas situações de conflito acompanhadas no contexto da Dominância presente em 3º lugar.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Mudança de prioridade com responsabilidade pelo encaminhamento",
+          "leitura": "A Dominância presente em 3º lugar mantém recurso de direção disponível, cuja aplicação depende da responsabilidade pelo encaminhamento. Em situação de mudança de prioridade, a definição do trabalho a interromper pode exigir preparação específica quando a intensidade é presente e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância presente em 3º lugar, a troca pode acumular compromissos incompatíveis se a responsabilidade pelo encaminhamento não for verificada.",
+          "acao": "Para avaliar a responsabilidade pelo encaminhamento na Dominância presente em 3º lugar, delegue a definição do trabalho a interromper com critérios explícitos. Em 30 dias, observe a responsabilidade pelo encaminhamento nas situações de mudança de prioridade acompanhadas no contexto da Dominância presente em 3º lugar.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-6": {
+      "position": 3,
+      "level": 6,
+      "label": "3º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Reunião com clareza dos critérios",
+          "leitura": "A Dominância marcante em 3º lugar mantém recurso de direção disponível, cuja aplicação depende da clareza dos critérios. Em situação de reunião, a apresentação de uma ressalva pode exigir preparação específica quando a intensidade é marcante e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância marcante em 3º lugar, a decisão pode ser encerrada sem conhecer uma restrição se a clareza dos critérios não for verificada.",
+          "acao": "Para avaliar a clareza dos critérios na Dominância marcante em 3º lugar, delegue a apresentação de uma ressalva com critérios explícitos. Em 30 dias, observe a clareza dos critérios nas situações de reunião acompanhadas no contexto da Dominância marcante em 3º lugar.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback com autonomia combinada",
+          "leitura": "A Dominância marcante em 3º lugar mantém recurso de direção disponível, cuja aplicação depende da autonomia combinada. Em situação de feedback, a solicitação de uma correção pode exigir preparação específica quando a intensidade é marcante e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância marcante em 3º lugar, o ajuste esperado pode permanecer indefinido se a autonomia combinada não for verificada.",
+          "acao": "Para avaliar a autonomia combinada na Dominância marcante em 3º lugar, delegue a solicitação de uma correção com critérios explícitos. Em 30 dias, observe a autonomia combinada nas situações de feedback acompanhadas no contexto da Dominância marcante em 3º lugar.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Conflito com expressão dos limites",
+          "leitura": "A Dominância marcante em 3º lugar mantém recurso de direção disponível, cuja aplicação depende da expressão dos limites. Em situação de conflito, a defesa de uma necessidade operacional pode exigir preparação específica quando a intensidade é marcante e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância marcante em 3º lugar, uma condição importante pode ficar fora do acordo se a expressão dos limites não for verificada.",
+          "acao": "Para avaliar a expressão dos limites na Dominância marcante em 3º lugar, delegue a defesa de uma necessidade operacional com critérios explícitos. Em 30 dias, observe a expressão dos limites nas situações de conflito acompanhadas no contexto da Dominância marcante em 3º lugar.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Mudança de prioridade com responsabilidade pelo encaminhamento",
+          "leitura": "A Dominância marcante em 3º lugar mantém recurso de direção disponível, cuja aplicação depende da responsabilidade pelo encaminhamento. Em situação de mudança de prioridade, a definição do trabalho a interromper pode exigir preparação específica quando a intensidade é marcante e a posição relativa é a 3ª.",
+          "atencao": "Na gestão da Dominância marcante em 3º lugar, a troca pode acumular compromissos incompatíveis se a responsabilidade pelo encaminhamento não for verificada.",
+          "acao": "Para avaliar a responsabilidade pelo encaminhamento na Dominância marcante em 3º lugar, delegue a definição do trabalho a interromper com critérios explícitos. Em 30 dias, observe a responsabilidade pelo encaminhamento nas situações de mudança de prioridade acompanhadas no contexto da Dominância marcante em 3º lugar.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-1": {
+      "position": 4,
+      "level": 1,
+      "label": "4º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Proteção contra aceitação excessiva",
+          "leitura": "A Dominância quase ausente na quarta posição indica pouca mobilização espontânea para contestar demandas. Ao receber trabalho adicional, pode haver tentativa de acomodação sem negociação clara das prioridades.",
+          "atencao": "A aceitação verbal não comprova capacidade de entrega; há risco de sobrecarga pouco visível.",
+          "acao": "Faça uma revisão explícita da carga antes de acrescentar tarefas e ensaie a comunicação de limites. Em 30 dias, observe renegociações e atrasos.",
+          "status": "aprovada"
+        },
+        "2": {
+          "titulo": "Autonomia com suporte inicial",
+          "leitura": "Com a Dominância quase ausente e em último lugar, assumir decisões abertas exige apoio mais estruturado. Na ausência de orientação, a execução pode parar à espera de confirmação.",
+          "atencao": "Uma cobrança por iniciativa, desacompanhada de limites de autonomia, não oferece o treino necessário.",
+          "acao": "Defina uma decisão simples que dispensa consulta e acompanhe sua execução. Em 30 dias, amplie a autonomia conforme a segurança demonstrada.",
+          "status": "aprovada"
+        },
+        "3": {
+          "titulo": "Reunião com expressão dos limites",
+          "leitura": "A Dominância quase ausente em 4º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na expressão dos limites. Em situação de reunião, a apresentação de uma ressalva pode exigir preparação específica quando a intensidade é quase ausente e a posição relativa é a 4ª.",
+          "atencao": "Na gestão da Dominância quase ausente em 4º lugar, a decisão pode ser encerrada sem conhecer uma restrição se a expressão dos limites não for verificada.",
+          "acao": "Para desenvolver a expressão dos limites na Dominância quase ausente em 4º lugar, ofereça apoio e ensaie a apresentação de uma ressalva. Em 30 dias, observe a expressão dos limites nas situações de reunião acompanhadas no contexto da Dominância quase ausente em 4º lugar.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Feedback com responsabilidade pelo encaminhamento",
+          "leitura": "A Dominância quase ausente em 4º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na responsabilidade pelo encaminhamento. Em situação de feedback, a solicitação de uma correção pode exigir preparação específica quando a intensidade é quase ausente e a posição relativa é a 4ª.",
+          "atencao": "Na gestão da Dominância quase ausente em 4º lugar, o ajuste esperado pode permanecer indefinido se a responsabilidade pelo encaminhamento não for verificada.",
+          "acao": "Para desenvolver a responsabilidade pelo encaminhamento na Dominância quase ausente em 4º lugar, ofereça apoio e ensaie a solicitação de uma correção. Em 30 dias, observe a responsabilidade pelo encaminhamento nas situações de feedback acompanhadas no contexto da Dominância quase ausente em 4º lugar.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-2": {
+      "position": 4,
+      "level": 2,
+      "label": "4º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Posicionamento pontual a desenvolver",
+          "leitura": "A Dominância discreta na quarta posição oferece assertividade limitada a situações mais delimitadas. Com responsabilidade clara, há recurso para defender um encaminhamento; numa disputa de autoridade, essa participação perde espaço.",
+          "atencao": "Informações relevantes podem ficar fora da decisão por falta de expressão direta.",
+          "acao": "Convide a apresentação de evidências antes de concluir a reunião. Em 30 dias, observe contribuições espontâneas e sustentação de propostas.",
+          "status": "aprovada"
+        },
+        "2": {
+          "titulo": "Suporte para renegociar acordos",
+          "leitura": "A última posição, associada à intensidade discreta, indica menor prontidão para redefinir limites. Uma alteração de escopo pode ser absorvida sem esclarecimento imediato das condições de entrega.",
+          "atencao": "O gestor corre o risco de cobrar uma expectativa nova como se ela tivesse sido acordada.",
+          "acao": "Treine a renegociação com um caso real e esclareça a autonomia para propor ajustes. Durante 30 dias, acompanhe mudanças de escopo e acordos refeitos.",
+          "status": "aprovada"
+        },
+        "3": {
+          "titulo": "Conflito com expressão dos limites",
+          "leitura": "A Dominância discreta em 4º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na expressão dos limites. Em situação de conflito, a defesa de uma necessidade operacional pode exigir preparação específica quando a intensidade é discreta e a posição relativa é a 4ª.",
+          "atencao": "Na gestão da Dominância discreta em 4º lugar, uma condição importante pode ficar fora do acordo se a expressão dos limites não for verificada.",
+          "acao": "Para desenvolver a expressão dos limites na Dominância discreta em 4º lugar, ofereça apoio e ensaie a defesa de uma necessidade operacional. Em 30 dias, observe a expressão dos limites nas situações de conflito acompanhadas no contexto da Dominância discreta em 4º lugar.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Mudança de prioridade com responsabilidade pelo encaminhamento",
+          "leitura": "A Dominância discreta em 4º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na responsabilidade pelo encaminhamento. Em situação de mudança de prioridade, a definição do trabalho a interromper pode exigir preparação específica quando a intensidade é discreta e a posição relativa é a 4ª.",
+          "atencao": "Na gestão da Dominância discreta em 4º lugar, a troca pode acumular compromissos incompatíveis se a responsabilidade pelo encaminhamento não for verificada.",
+          "acao": "Para desenvolver a responsabilidade pelo encaminhamento na Dominância discreta em 4º lugar, ofereça apoio e ensaie a definição do trabalho a interromper. Em 30 dias, observe a responsabilidade pelo encaminhamento nas situações de mudança de prioridade acompanhadas no contexto da Dominância discreta em 4º lugar.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-3": {
+      "position": 4,
+      "level": 3,
+      "label": "4º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Reunião com clareza dos critérios",
+          "leitura": "A Dominância moderada-baixa em 4º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na clareza dos critérios. Em situação de reunião, a apresentação de uma ressalva pode exigir preparação específica quando a intensidade é moderada-baixa e a posição relativa é a 4ª.",
+          "atencao": "Na gestão da Dominância moderada-baixa em 4º lugar, a decisão pode ser encerrada sem conhecer uma restrição se a clareza dos critérios não for verificada.",
+          "acao": "Para desenvolver a clareza dos critérios na Dominância moderada-baixa em 4º lugar, ofereça apoio e ensaie a apresentação de uma ressalva. Em 30 dias, observe a clareza dos critérios nas situações de reunião acompanhadas no contexto da Dominância moderada-baixa em 4º lugar.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback com autonomia combinada",
+          "leitura": "A Dominância moderada-baixa em 4º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na autonomia combinada. Em situação de feedback, a solicitação de uma correção pode exigir preparação específica quando a intensidade é moderada-baixa e a posição relativa é a 4ª.",
+          "atencao": "Na gestão da Dominância moderada-baixa em 4º lugar, o ajuste esperado pode permanecer indefinido se a autonomia combinada não for verificada.",
+          "acao": "Para desenvolver a autonomia combinada na Dominância moderada-baixa em 4º lugar, ofereça apoio e ensaie a solicitação de uma correção. Em 30 dias, observe a autonomia combinada nas situações de feedback acompanhadas no contexto da Dominância moderada-baixa em 4º lugar.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Conflito com expressão dos limites",
+          "leitura": "A Dominância moderada-baixa em 4º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na expressão dos limites. Em situação de conflito, a defesa de uma necessidade operacional pode exigir preparação específica quando a intensidade é moderada-baixa e a posição relativa é a 4ª.",
+          "atencao": "Na gestão da Dominância moderada-baixa em 4º lugar, uma condição importante pode ficar fora do acordo se a expressão dos limites não for verificada.",
+          "acao": "Para desenvolver a expressão dos limites na Dominância moderada-baixa em 4º lugar, ofereça apoio e ensaie a defesa de uma necessidade operacional. Em 30 dias, observe a expressão dos limites nas situações de conflito acompanhadas no contexto da Dominância moderada-baixa em 4º lugar.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Mudança de prioridade com responsabilidade pelo encaminhamento",
+          "leitura": "A Dominância moderada-baixa em 4º lugar sugere menor mobilização inicial para conduzir, exigindo apoio na responsabilidade pelo encaminhamento. Em situação de mudança de prioridade, a definição do trabalho a interromper pode exigir preparação específica quando a intensidade é moderada-baixa e a posição relativa é a 4ª.",
+          "atencao": "Na gestão da Dominância moderada-baixa em 4º lugar, a troca pode acumular compromissos incompatíveis se a responsabilidade pelo encaminhamento não for verificada.",
+          "acao": "Para desenvolver a responsabilidade pelo encaminhamento na Dominância moderada-baixa em 4º lugar, ofereça apoio e ensaie a definição do trabalho a interromper. Em 30 dias, observe a responsabilidade pelo encaminhamento nas situações de mudança de prioridade acompanhadas no contexto da Dominância moderada-baixa em 4º lugar.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-4": {
+      "position": 4,
+      "level": 4,
+      "label": "4º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Reunião com clareza dos critérios",
+          "leitura": "Os quatro fatores têm valores iguais, e a quarta posição da Dominância equilibrada não indica menor capacidade quanto à clareza dos critérios. Em situação de reunião, a apresentação de uma ressalva pode exigir preparação específica quando a intensidade é equilibrada e a posição relativa é a 4ª.",
+          "atencao": "Na gestão da Dominância equilibrada em 4º lugar, a decisão pode ser encerrada sem conhecer uma restrição se a clareza dos critérios não for verificada.",
+          "acao": "Para avaliar a clareza dos critérios na Dominância equilibrada em 4º lugar, delegue a apresentação de uma ressalva com critérios explícitos. Em 30 dias, observe a clareza dos critérios nas situações de reunião acompanhadas no contexto da Dominância equilibrada em 4º lugar.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback com autonomia combinada",
+          "leitura": "Os quatro fatores têm valores iguais, e a quarta posição da Dominância equilibrada não indica menor capacidade quanto à autonomia combinada. Em situação de feedback, a solicitação de uma correção pode exigir preparação específica quando a intensidade é equilibrada e a posição relativa é a 4ª.",
+          "atencao": "Na gestão da Dominância equilibrada em 4º lugar, o ajuste esperado pode permanecer indefinido se a autonomia combinada não for verificada.",
+          "acao": "Para avaliar a autonomia combinada na Dominância equilibrada em 4º lugar, delegue a solicitação de uma correção com critérios explícitos. Em 30 dias, observe a autonomia combinada nas situações de feedback acompanhadas no contexto da Dominância equilibrada em 4º lugar.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Conflito com expressão dos limites",
+          "leitura": "Os quatro fatores têm valores iguais, e a quarta posição da Dominância equilibrada não indica menor capacidade quanto à expressão dos limites. Em situação de conflito, a defesa de uma necessidade operacional pode exigir preparação específica quando a intensidade é equilibrada e a posição relativa é a 4ª.",
+          "atencao": "Na gestão da Dominância equilibrada em 4º lugar, uma condição importante pode ficar fora do acordo se a expressão dos limites não for verificada.",
+          "acao": "Para avaliar a expressão dos limites na Dominância equilibrada em 4º lugar, delegue a defesa de uma necessidade operacional com critérios explícitos. Em 30 dias, observe a expressão dos limites nas situações de conflito acompanhadas no contexto da Dominância equilibrada em 4º lugar.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Mudança de prioridade com responsabilidade pelo encaminhamento",
+          "leitura": "Os quatro fatores têm valores iguais, e a quarta posição da Dominância equilibrada não indica menor capacidade quanto à responsabilidade pelo encaminhamento. Em situação de mudança de prioridade, a definição do trabalho a interromper pode exigir preparação específica quando a intensidade é equilibrada e a posição relativa é a 4ª.",
+          "atencao": "Na gestão da Dominância equilibrada em 4º lugar, a troca pode acumular compromissos incompatíveis se a responsabilidade pelo encaminhamento não for verificada.",
+          "acao": "Para avaliar a responsabilidade pelo encaminhamento na Dominância equilibrada em 4º lugar, delegue a definição do trabalho a interromper com critérios explícitos. Em 30 dias, observe a responsabilidade pelo encaminhamento nas situações de mudança de prioridade acompanhadas no contexto da Dominância equilibrada em 4º lugar.",
+          "status": "rascunho"
+        }
+      }
+    }
+  }
+}

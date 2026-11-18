@@ -1,0 +1,357 @@
+{
+  "factor": "D",
+  "report": "premium",
+  "status": "rascunho",
+  "diagnostics": {
+    "3-1": {
+      "position": 3,
+      "level": 1,
+      "label": "3º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Sua contribuição pode começar pequena",
+          "leitura": "A Dominância quase ausente na terceira posição traz pouco impulso para dirigir a conversa, enquanto dois outros recursos tendem a aparecer antes. Em uma reunião de planejamento, você pode precisar de um convite para apresentar o caminho que considera viável.",
+          "atencao": "Esperar uma pergunta direta pode deixar sua sugestão fora do encaminhamento.",
+          "acao": "Anote uma proposta antes do encontro e combine com alguém um momento para apresentá-la.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Um limite ensaiado com apoio",
+          "leitura": "Com intensidade quase ausente e em terceiro lugar, a Dominância pede treino para sustentar uma recusa. Diante de um prazo apertado, você pode procurar acomodar o pedido sem mostrar de imediato o que não cabe.",
+          "atencao": "O esforço para atender pode esconder uma restrição que a equipe precisa conhecer.",
+          "acao": "Ensaie com uma pessoa de confiança como explicar a restrição e leve uma opção de entrega menor para a conversa.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Preparação para uma conversa delicada",
+          "leitura": "Você tende a recorrer pouco à Dominância, quase ausente e atrás de dois fatores, para abordar uma dificuldade diretamente. Ao dar feedback sobre uma falha recorrente, pode precisar de apoio para transformar o incômodo em um pedido claro.",
+          "atencao": "Uma fala muito indireta pode não indicar qual comportamento precisa mudar.",
+          "acao": "Prepare um exemplo observado e um pedido específico com ajuda de alguém experiente. Comece por uma conversa de menor exposição.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Participar também da renegociação",
+          "leitura": "Na terceira posição e quase ausente, a Dominância oferece pouca prontidão para defender condições em uma negociação. Você pode ouvir as propostas de outra área e precisar de tempo para formular o que sua equipe consegue oferecer.",
+          "atencao": "Aceitar uma condição antes dessa preparação pode criar um compromisso difícil de cumprir.",
+          "acao": "Peça um intervalo para consultar a capacidade da equipe e escreva uma condição mínima com apoio de quem conhece a entrega.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-2": {
+      "position": 3,
+      "level": 2,
+      "label": "3º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Uma proposta sem disputar a liderança",
+          "leitura": "A Dominância discreta em terceiro lugar contribui pontualmente, depois de outras formas de lidar com o trabalho. Numa reunião que circula entre opções, você pode ter uma preferência e precisar de incentivo para colocá-la em palavras.",
+          "atencao": "Deixar sua preferência apenas sugerida pode dificultar que o grupo a considere.",
+          "acao": "Treine uma frase que reúna sua escolha e um motivo prático. Use esse apoio para participar antes do encerramento.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Dar nome ao que precisa mudar",
+          "leitura": "Com a Dominância discreta na terceira posição, a comunicação firme pode pedir preparação, embora esteja ao seu alcance em situações delimitadas. Ao receber uma entrega incompleta, você pode suavizar a devolutiva antes de explicar o ajuste necessário.",
+          "atencao": "O cuidado com a forma pode tornar pouco nítido o pedido de correção.",
+          "acao": "Escolha um ponto da entrega e ensaie como descrever o que falta, sem avaliar a pessoa.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Uma responsabilidade bem combinada",
+          "leitura": "Você conta com uma Dominância discreta, em terceiro lugar, que pode ganhar espaço com limites de atuação conhecidos. Ao delegar uma tarefa simples, talvez seja mais fácil ajudar na execução do que explicitar o que espera da outra pessoa.",
+          "atencao": "Fazer junto sem combinar responsabilidades pode manter com você parte do trabalho que pretendia distribuir.",
+          "acao": "Prepare um combinado com resultado esperado e momento de retorno. Peça ajuda para revisar esse combinado nas primeiras tentativas.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Seu critério diante de novas urgências",
+          "leitura": "A terceira posição da Dominância, com intensidade discreta, sugere uma firmeza pontual em vez de uma condução frequente. Quando a prioridade muda, você pode acompanhar o movimento antes de perguntar qual entrega deve ser interrompida.",
+          "atencao": "Seguir a nova urgência sem esclarecer a troca pode somar tarefas incompatíveis.",
+          "acao": "Leve a lista de atividades para a conversa e pratique a pergunta sobre o que deve sair primeiro.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-3": {
+      "position": 3,
+      "level": 3,
+      "label": "3º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Um posicionamento a fortalecer",
+          "leitura": "A Dominância moderada-baixa em terceiro lugar participa menos das suas respostas iniciais. Quando precisa contestar um prazo, você pode buscar outras formas de resolver a situação antes de afirmar diretamente seu limite.",
+          "atencao": "Uma objeção importante pode ficar implícita e ser interpretada como concordância.",
+          "acao": "Prepare uma frase com o impedimento e uma alternativa de prazo. Use-a no começo da conversa, sem esperar que o problema cresça.",
+          "status": "aprovada"
+        },
+        "2": {
+          "titulo": "Iniciativa em passos menores",
+          "leitura": "Na terceira posição e com intensidade moderada-baixa, a Dominância exige mais mobilização para tomar a frente. Em uma tarefa sem responsável, pode ser mais confortável aguardar uma definição do que propor uma divisão.",
+          "atencao": "A espera pode prolongar uma indefinição que você já tem condições de ajudar a resolver.",
+          "acao": "Assuma um encaminhamento pequeno, como propor quem confirma a prioridade, em vez de se cobrar a liderança do projeto inteiro.",
+          "status": "aprovada"
+        },
+        "3": {
+          "titulo": "Clareza ao devolver um ajuste",
+          "leitura": "A Dominância moderada-baixa, atrás de dois fatores, tende a precisar de um contexto seguro para aparecer com firmeza. Ao oferecer feedback, você pode explicar o cenário com cuidado e demorar a formular o pedido de mudança.",
+          "atencao": "Uma explicação extensa sem pedido explícito pode deixar a outra pessoa sem saber como agir.",
+          "acao": "Escreva o comportamento que deseja observar e ensaie o pedido com alguém de confiança antes da conversa.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Um passo para atravessar a divergência",
+          "leitura": "Você dispõe de Dominância moderada-baixa na terceira posição, com menor prontidão para intervir diretamente em um conflito. Entre colegas que discordam sobre uma tarefa, pode preferir compreender os lados antes de sugerir um acordo.",
+          "atencao": "A tentativa de compreender tudo pode adiar uma contribuição simples para o trabalho continuar.",
+          "acao": "Com apoio de quem acompanha a situação, prepare uma proposta limitada ao próximo passo, sem assumir a solução de todo o conflito.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-4": {
+      "position": 3,
+      "level": 4,
+      "label": "3º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Iniciativa que acompanha seus outros recursos",
+          "leitura": "A Dominância equilibrada na terceira posição oferece iniciativa sem ocupar o centro das suas respostas. Em uma reunião de projeto, você pode primeiro explorar as propostas e depois indicar uma escolha que ajude a avançar.",
+          "atencao": "Ouvir diferentes caminhos sem revelar sua preferência pode fazer sua contribuição parecer apenas consultiva.",
+          "acao": "Apresente a opção que você recomenda e explique qual necessidade ela atende naquele momento.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Firmeza para ajustar o combinado",
+          "leitura": "Em terceiro lugar e com intensidade equilibrada, a Dominância participa da sua forma de trabalhar sem ser a abordagem principal. Ao negociar um prazo, você pode considerar as necessidades da outra parte e ainda propor uma condição de entrega.",
+          "atencao": "Tentar acomodar todos os pedidos pode tornar pouco claro o limite que você pretende preservar.",
+          "acao": "Separe o que pode ajustar do que precisa manter e apresente essa distinção ao negociar.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Um pedido claro no feedback",
+          "leitura": "Você tem na Dominância equilibrada um recurso de posicionamento que aparece atrás de outros dois fatores. Numa conversa de feedback, pode combinar compreensão do contexto com um pedido direto sobre o trabalho.",
+          "atencao": "Deixar o pedido só para o encerramento pode reduzir o tempo disponível para construir uma solução.",
+          "acao": "Apresente o ajuste desejado logo após o exemplo e reserve espaço para ouvir como a pessoa pretende realizá-lo.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Autonomia acompanhada de direção",
+          "leitura": "A Dominância na terceira posição, em intensidade equilibrada, ajuda você a dar direção sem precisar assumir o comando de tudo. Ao delegar uma etapa, pode definir o resultado e deixar a outra pessoa participar da escolha do método.",
+          "atencao": "Manter indefinido quem resolve os obstáculos pode trazer de volta decisões que poderiam seguir com a pessoa responsável.",
+          "acao": "Combine quais dificuldades ela pode resolver sozinha e em quais situações deve procurar você.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-5": {
+      "position": 3,
+      "level": 5,
+      "label": "3º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Firmeza disponível, sem protagonismo",
+          "leitura": "A Dominância está em terceiro lugar, mas sua intensidade presente significa que ela não é um recurso fraco. Você pode preferir outras formas de condução e ainda assim defender um limite quando uma entrega começa a perder viabilidade.",
+          "atencao": "Usar a firmeza somente no limite da situação pode fazer seu posicionamento parecer inesperado.",
+          "acao": "Dê um primeiro sinal assim que identificar a dificuldade e retome o assunto com uma proposta concreta, antes de precisar endurecer.",
+          "status": "aprovada"
+        },
+        "2": {
+          "titulo": "Uma decisão que pode ganhar espaço",
+          "leitura": "Com a Dominância presente na terceira posição, decidir está ao seu alcance, embora não seja a primeira resposta. Num trabalho coletivo, você pode apoiar a construção do caminho e assumir uma definição quando os critérios ficam claros.",
+          "atencao": "Aguardar certeza completa pode adiar decisões pequenas e reversíveis.",
+          "acao": "Escolha uma decisão de baixo risco para tomar com as informações disponíveis. Combine uma revisão, em vez de esperar segurança total.",
+          "status": "aprovada"
+        },
+        "3": {
+          "titulo": "Negociar sem esperar o desgaste",
+          "leitura": "Mesmo atrás de dois fatores, sua Dominância presente oferece firmeza para defender condições de trabalho. Em uma negociação com outra área, você pode começar pela compreensão das demandas e depois sustentar o que sua equipe precisa.",
+          "atencao": "Deixar suas condições para depois de várias concessões pode tornar a conversa mais tensa do que precisava.",
+          "acao": "Coloque uma condição essencial na abertura e convide a outra área a apresentar a dela.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Escolher o que muda de lugar",
+          "leitura": "A intensidade presente da Dominância dá a você recurso para decidir, ainda que ela apareça na terceira posição. Diante de uma mudança de prioridade, você pode considerar o contexto e propor qual atividade deve ceder espaço.",
+          "atencao": "Apoiar a mudança sem explicitar essa escolha pode gerar expectativas de entregas simultâneas.",
+          "acao": "Apresente a troca que considera viável e confirme com os envolvidos o novo compromisso de cada entrega.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-6": {
+      "position": 3,
+      "level": 6,
+      "label": "3º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Força de decisão além da primeira resposta",
+          "leitura": "A Dominância marcante na terceira posição traz força para agir, mesmo com dois fatores mais presentes na sua maneira de trabalhar. Numa reunião sem encaminhamento, você pode começar ouvindo e depois intervir com uma proposta firme de decisão.",
+          "atencao": "A passagem da escuta para uma definição incisiva pode surpreender quem ainda está explorando possibilidades.",
+          "acao": "Avise que deseja encaminhar a escolha e apresente o critério que sustenta sua proposta antes de pedir uma definição.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Sustentar condições com abertura",
+          "leitura": "Você tem uma Dominância marcante que, embora em terceiro lugar, participa com força quando é mobilizada. Ao discutir um prazo inviável, pode sair de uma abordagem inicialmente flexível para uma defesa enfática das condições de entrega.",
+          "atencao": "A intensidade dessa defesa pode fazer uma alternativa parecer encerrada antes de ser examinada.",
+          "acao": "Explique qual restrição é concreta e pergunte se existe outra forma de atender à necessidade sem ultrapassá-la.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Cobrança firme, autonomia preservada",
+          "leitura": "Na terceira posição, a Dominância marcante funciona como um recurso forte de condução, não como sua resposta inicial mais frequente. Ao acompanhar uma tarefa delegada que saiu do rumo, você pode assumir uma postura bastante direta para recuperar o resultado.",
+          "atencao": "Entrar na solução com muita força pode retirar da pessoa responsável a oportunidade de corrigir a própria execução.",
+          "acao": "Descreva o desvio e peça um plano de correção antes de decidir se precisa intervir no método.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Energia para resolver sem ampliar o conflito",
+          "leitura": "Com intensidade marcante, sua Dominância tem força relevante mesmo aparecendo depois de dois outros fatores. Em um conflito sobre prioridades, você pode buscar entendimento no início e depois defender com vigor o caminho que considera necessário.",
+          "atencao": "Transformar a defesa do resultado em defesa da sua proposta pode estreitar as possibilidades de acordo.",
+          "acao": "Retome o objetivo comum e convide cada pessoa a sugerir uma saída que o preserve, incluindo você.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-1": {
+      "position": 4,
+      "level": 1,
+      "label": "4º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Apoio para dizer o necessário",
+          "leitura": "A Dominância quase ausente em quarto lugar oferece pouco impulso inicial para confronto e imposição de limites. Ao receber uma demanda adicional, você pode tentar acomodá-la antes de dizer que ela compromete o trabalho já assumido.",
+          "atencao": "A sobrecarga pode crescer sem que os demais percebam a necessidade de renegociar.",
+          "acao": "Antes de aceitar, consulte suas prioridades e use uma frase preparada para apresentar a escolha necessária. Peça apoio nas primeiras conversas.",
+          "status": "aprovada"
+        },
+        "2": {
+          "titulo": "Autonomia construída com segurança",
+          "leitura": "Na última posição e quase ausente, a Dominância não é seu recurso espontâneo para ocupar a frente. Numa decisão sem orientação, pode ser mais fácil buscar confirmação do que assumir o encaminhamento por conta própria.",
+          "atencao": "Depender de confirmação para cada passo pode reduzir sua autonomia mesmo em situações simples.",
+          "acao": "Combine uma pequena decisão que você pode tomar sem consulta e registre o resultado. Aumente essa margem gradualmente, com acompanhamento.",
+          "status": "aprovada"
+        },
+        "3": {
+          "titulo": "Um pedido possível de praticar",
+          "leitura": "A Dominância quase ausente na última posição torna a abordagem direta um recurso pouco espontâneo para você. Ao oferecer feedback a um colega, pode precisar de ajuda para dizer o que está dificultando o trabalho sem se perder em rodeios.",
+          "atencao": "Evitar o pedido de mudança pode manter uma dificuldade que seria possível tratar em conjunto.",
+          "acao": "Prepare a conversa com alguém de confiança e pratique um pedido sobre uma única situação concreta.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Sua voz também cabe no desacordo",
+          "leitura": "Você tende a mobilizar pouco a Dominância, quase ausente e em quarto lugar, para sustentar uma posição em situações de confronto. Durante um conflito sobre a distribuição de tarefas, pode ceder antes de conseguir explicar suas condições.",
+          "atencao": "Ceder sem examinar o impacto pode deixar uma divisão pesada demais para você.",
+          "acao": "Anote o que consegue assumir e peça a presença de alguém que ajude a organizar a conversa nas primeiras tentativas.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-2": {
+      "position": 4,
+      "level": 2,
+      "label": "4º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Firmeza em situações delimitadas",
+          "leitura": "A Dominância discreta em quarto lugar está disponível, mas ocupa pouco espaço diante dos demais recursos. Você pode sustentar uma posição quando a responsabilidade é clara e recuar quando a conversa envolve disputa de autoridade.",
+          "atencao": "Deixar a fala para quem se impõe mais pode retirar da decisão uma informação que só você tem.",
+          "acao": "Entre na conversa com um dado do seu trabalho e uma proposta objetiva. Não é preciso competir pelo comando para contribuir com firmeza.",
+          "status": "aprovada"
+        },
+        "2": {
+          "titulo": "Limites que merecem ser expressos",
+          "leitura": "Em último lugar e com intensidade discreta, a Dominância aparece de forma pontual. Você pode cumprir bem um acordo definido e encontrar mais dificuldade para renegociá-lo quando outra pessoa altera a expectativa.",
+          "atencao": "Manter o acordo original em silêncio não resolve a diferença entre o que foi combinado e o que passou a ser cobrado.",
+          "acao": "Retome o combinado, explique a mudança e proponha um ajuste. Faça isso numa conversa breve, sem acumular várias situações.",
+          "status": "aprovada"
+        },
+        "3": {
+          "titulo": "Condições claras para delegar",
+          "leitura": "A Dominância discreta na última posição oferece a você um apoio pontual para direcionar, com mais espaço para outros recursos. Ao delegar uma atividade, pode precisar preparar como comunicar o resultado esperado sem transformar o pedido em mera sugestão.",
+          "atencao": "Um pedido pouco definido pode fazer a outra pessoa entender a tarefa como opcional.",
+          "acao": "Escreva o resultado e a responsabilidade de cada um antes de conversar. Revise o combinado com alguém experiente se sentir dificuldade em sustentá-lo.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Treino para avaliar a troca",
+          "leitura": "Com a Dominância discreta em quarto lugar, questionar uma nova direção pode exigir um esforço consciente de você. Quando a prioridade muda no meio do dia, talvez seja mais fácil acompanhar do que pedir uma revisão do que já estava previsto.",
+          "atencao": "O custo da mudança pode ficar invisível se você não comunicar o que será afetado.",
+          "acao": "Use sua agenda como apoio para mostrar uma consequência da troca e pratique pedir a confirmação da nova ordem.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-3": {
+      "position": 4,
+      "level": 3,
+      "label": "4º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Uma participação que pode ser preparada",
+          "leitura": "A Dominância moderada-baixa em quarto lugar tem menos espaço que os outros recursos e pode pedir treino para aparecer. Em uma reunião de decisão, você pode precisar organizar sua ideia antes de sustentar uma recomendação.",
+          "atencao": "Esperar que a proposta esteja perfeita pode impedir que o grupo conheça uma alternativa útil.",
+          "acao": "Prepare uma recomendação curta e peça a uma pessoa parceira que ajude você a encontrar uma abertura para apresentá-la.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Aprender a pedir uma revisão",
+          "leitura": "Você conta com Dominância moderada-baixa na última posição, o que pode tornar a contestação menos espontânea. Ao negociar um prazo com outra área, pode ser mais confortável explicar o esforço necessário do que pedir uma data diferente.",
+          "atencao": "Descrever a dificuldade sem propor a revisão pode soar como aceitação do prazo.",
+          "acao": "Ensaie um pedido de nova data com uma justificativa concreta e procure apoio para conduzir as primeiras negociações.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Firmeza que começa em um ajuste",
+          "leitura": "Na quarta posição e em intensidade moderada-baixa, a Dominância pode ser desenvolvida em intervenções pequenas e bem preparadas. Ao dar feedback sobre um erro, você pode precisar de mais segurança para nomear a correção que espera.",
+          "atencao": "A outra pessoa pode acolher sua preocupação sem compreender o que precisa fazer de outro modo.",
+          "acao": "Escolha um ajuste observável e pratique como pedi-lo, usando o trabalho entregue como referência para a conversa.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Uma divergência que pode ser dita",
+          "leitura": "A Dominância moderada-baixa, em último lugar, tende a ser menos acessível que suas outras formas de responder. Num conflito sobre responsabilidades, você pode buscar conciliação antes de afirmar qual parte não corresponde ao seu papel.",
+          "atencao": "Proteger a conversa de qualquer desconforto pode manter uma distribuição de tarefas que precisa ser revista.",
+          "acao": "Consulte o acordo de responsabilidades e prepare uma pergunta sobre a divisão com ajuda de quem acompanha o trabalho.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-4": {
+      "position": 4,
+      "level": 4,
+      "label": "4º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Firmeza entre possibilidades equivalentes",
+          "leitura": "Quando os quatro fatores estão iguais, a Dominância equilibrada em quarto lugar não representa um recurso menor que os demais. Em uma reunião, você pode tanto propor uma direção quanto recorrer à escuta para construir o encaminhamento.",
+          "atencao": "Transitar entre abordagens sem explicitar sua proposta pode dificultar que as pessoas reconheçam o que você recomenda.",
+          "acao": "Diga qual caminho sugere para aquela situação e convide o grupo a examinar um possível impedimento.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Um limite em meio a outros recursos",
+          "leitura": "Com os quatro fatores iguais, você dispõe de Dominância equilibrada sem que a quarta posição indique menor intensidade. Ao renegociar um prazo, pode defender uma condição e também explorar alternativas com a outra pessoa.",
+          "atencao": "Dar atenção a várias necessidades sem destacar a sua pode deixar o acordo incompleto.",
+          "acao": "Nomeie a condição necessária para entregar e verifique quais ajustes permitem preservá-la.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Clareza sem abrir mão do cuidado",
+          "leitura": "Na igualdade entre os quatro fatores, a Dominância equilibrada participa tanto quanto os demais recursos, apesar de aparecer em quarto lugar. Num feedback, você pode formular um pedido direto e considerar como a pessoa recebe a mensagem.",
+          "atencao": "Alternar entre acolher e cobrar sem conectar essas intenções pode produzir uma orientação ambígua.",
+          "acao": "Explique o que precisa mudar e ofereça espaço para discutir o apoio necessário à mudança.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Uma prioridade escolhida em conjunto",
+          "leitura": "Se os quatro fatores estão iguais, sua Dominância equilibrada na quarta posição integra uma combinação sem fator predominante. Diante de uma mudança de prioridade, você pode usar a iniciativa junto da análise e da consideração pelos envolvidos.",
+          "atencao": "Manter todas as possibilidades abertas pode adiar o início da tarefa que passou a ser mais importante.",
+          "acao": "Proponha uma ordem para as entregas e confira com a equipe quais impactos precisam ser acomodados antes de começar.",
+          "status": "rascunho"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,462 @@
+{
+  "factor": "D",
+  "report": "technical",
+  "status": "rascunho",
+  "diagnostics": {
+    "1-4": {
+      "position": 1,
+      "level": 4,
+      "label": "1º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Decisão entre recursos equivalentes",
+          "leitura": "A Dominância equilibrada compõe um perfil com os quatro fatores iguais, sem direção comportamental predominante. Em reunião de planejamento, a iniciativa pode coexistir com escuta, continuidade e análise.",
+          "atencao": "A expectativa de condução automaticamente assertiva pode gerar uma atribuição inadequada de responsabilidades.",
+          "acao": "Delegue uma decisão de escopo restrito e explicite o critério de conclusão. Em 30 dias, observe como a definição se converte em execução.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Posicionamento sem predominância",
+          "leitura": "Com os quatro fatores iguais, a Dominância não se destaca dos demais recursos de atuação. Em uma conversa de feedback, pode haver alternância entre defender uma posição e examinar os argumentos recebidos.",
+          "atencao": "Interpretar essa alternância como falta de compromisso pode levar a cobranças pouco específicas.",
+          "acao": "Solicite a formulação de um ajuste concreto após o feedback e acompanhe sua aplicação durante 30 dias.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Limites em composição equilibrada",
+          "leitura": "A intensidade equilibrada da Dominância integra uma composição de quatro fatores iguais. Na negociação de prazo, a defesa da capacidade disponível pode dividir espaço com a busca de acordo e a análise das condições.",
+          "atencao": "A consideração de múltiplas perspectivas pode deixar o limite operacional sem explicitação.",
+          "acao": "Peça uma proposta que identifique capacidade, restrição e alternativa de entrega. Observe por 30 dias se os acordos passam a registrar esses limites.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Priorização sem fator prevalente",
+          "leitura": "A Dominância participa em igualdade com os outros três fatores neste arranjo equilibrado. Diante de uma mudança de prioridade, há possibilidade de combinar iniciativa com avaliação dos impactos sobre a continuidade do trabalho.",
+          "atencao": "Sem critérios de escolha, a flexibilidade pode ser interpretada como disponibilidade para absorver qualquer mudança.",
+          "acao": "Defina qual compromisso será suspenso antes de autorizar a nova demanda. Verifique em 30 dias a clareza das trocas de prioridade.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-5": {
+      "position": 1,
+      "level": 5,
+      "label": "1º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Direção com participação",
+          "leitura": "A Dominância presente ocupa a primeira posição e favorece iniciativa na organização do trabalho. Em uma reunião de alinhamento, pode sustentar uma proposta objetiva para encerrar uma indefinição.",
+          "atencao": "Uma sugestão apresentada com firmeza pode ser recebida como decisão sem consulta.",
+          "acao": "Peça a distinção explícita entre proposta e encaminhamento aprovado e observe, em 30 dias, a participação da equipe nas decisões.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Compromisso com limites verificáveis",
+          "leitura": "A primeira posição da Dominância presente indica acesso frequente à assertividade, sem intensidade elevada. Ao negociar um prazo, há condição de defender uma entrega viável e buscar definição.",
+          "atencao": "O impulso de resolver pode antecipar o compromisso à verificação de capacidade.",
+          "acao": "Exija uma checagem de recursos antes da confirmação e acompanhe por 30 dias a consistência dos prazos assumidos.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Objetividade no desenvolvimento",
+          "leitura": "A Dominância presente como primeiro recurso favorece a abordagem direta de desvios. Em feedback sobre qualidade, pode haver disposição para nomear o ajuste e propor sua execução.",
+          "atencao": "A orientação para corrigir pode reduzir a investigação das causas do desvio.",
+          "acao": "Oriente a formulação de uma pergunta sobre a causa antes da recomendação e observe em 30 dias a recorrência do problema.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Autonomia para ordenar demandas",
+          "leitura": "O primeiro lugar com intensidade presente oferece iniciativa sem tornar necessária uma condução impositiva. Quando a prioridade muda, a resposta pode incluir uma proposta de sequência para as entregas.",
+          "atencao": "A reorganização rápida pode desconsiderar compromissos já assumidos com outras áreas.",
+          "acao": "Delegue a revisão da sequência com consulta às áreas afetadas e confira em 30 dias se as dependências foram preservadas.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-6": {
+      "position": 1,
+      "level": 6,
+      "label": "1º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Condução ativa das entregas",
+          "leitura": "A Dominância marcante é o principal recurso de condução neste plano. Diante de uma tarefa parada, a resposta é estabelecer direção e cobrar encaminhamento, favorecendo a retomada da execução.",
+          "atencao": "A definição rápida do caminho pode anteceder a identificação de dependências relevantes.",
+          "acao": "Delegue uma entrega com autonomia delimitada e solicite a checagem dos impedimentos antes da decisão. Em 30 dias, observe execução e retrabalho.",
+          "status": "aprovada"
+        },
+        "2": {
+          "titulo": "Responsabilidade pela direção",
+          "leitura": "A primeira posição, acompanhada de intensidade marcante, favorece a ocupação de espaços de decisão. Em reuniões sem encaminhamento, há iniciativa para ordenar prioridades e atribuir responsabilidades.",
+          "atencao": "Centralizar o direcionamento reduz oportunidades de iniciativa dos demais integrantes.",
+          "acao": "No feedback, diferencie assumir responsabilidade de assumir todas as decisões. Acompanhe, durante 30 dias, quais encaminhamentos foram efetivamente delegados.",
+          "status": "aprovada"
+        },
+        "3": {
+          "titulo": "Correção com autoria compartilhada",
+          "leitura": "A Dominância marcante em primeiro lugar favorece intervenção direta sobre desvios de desempenho. Durante um feedback, a tendência é indicar o problema e buscar uma correção objetiva.",
+          "atencao": "Prescrever a solução antes de ouvir a análise do desvio pode limitar a responsabilização de quem executa.",
+          "acao": "Solicite que a proposta de ajuste seja construída por quem realizará a entrega. Observe durante 30 dias a execução sem novas instruções.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Defesa de condições com escuta",
+          "leitura": "A posição principal da Dominância marcante sustenta firmeza na defesa de condições de trabalho. Em negociação entre áreas, pode haver insistência em uma solução considerada necessária para avançar.",
+          "atencao": "A sustentação da proposta pode reduzir a exploração de alternativas igualmente viáveis.",
+          "acao": "Oriente a comparação de duas alternativas antes de fechar o acordo e avalie em 30 dias a estabilidade dos compromissos negociados.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-7": {
+      "position": 1,
+      "level": 7,
+      "label": "1º lugar — muito marcante",
+      "variants": {
+        "1": {
+          "titulo": "Urgência sob controle gerencial",
+          "leitura": "A Dominância muito marcante ocupa a frente e intensifica a busca por avanço. Quando um prazo fica ameaçado, pode haver aceleração de decisões e aumento imediato da cobrança.",
+          "atencao": "A pressão adicional pode agravar erros quando o obstáculo é capacidade e não empenho.",
+          "acao": "Condicione a aceleração à retirada de um impedimento concreto e observe em 30 dias a relação entre cobrança e retrabalho.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Firmeza com margem de composição",
+          "leitura": "A primeira posição com intensidade muito marcante favorece defesa persistente das próprias condições. Em uma negociação de recursos, a condução pode buscar uma definição rápida e pouco flexível.",
+          "atencao": "A insistência pode produzir concessões frágeis que não se sustentam na execução.",
+          "acao": "Peça uma alternativa apresentada pela outra área antes de autorizar o fechamento e acompanhe os acordos por 30 dias.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Ritmo decisório com contraditório",
+          "leitura": "A Dominância muito marcante como recurso principal imprime velocidade à condução coletiva. Em reunião de mudança de escopo, pode haver fechamento da decisão antes de todas as dependências serem expostas.",
+          "atencao": "O excesso de velocidade pode excluir alertas necessários à implantação.",
+          "acao": "Reserve uma rodada obrigatória de objeções antes da conclusão e verifique em 30 dias quais riscos foram incorporados ao plano.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Delegação protegida de interferências",
+          "leitura": "A força muito marcante da Dominância em primeiro lugar amplia a busca de controle sobre resultados. Ao delegar uma entrega crítica, pode surgir intervenção quando o método escolhido difere do esperado.",
+          "atencao": "A retomada frequente da execução pode tornar a autonomia apenas formal.",
+          "acao": "Delimite os gatilhos que autorizam intervenção e mantenha liberdade fora dessas condições. Registre durante 30 dias as retomadas de decisão e suas justificativas.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-8": {
+      "position": 1,
+      "level": 8,
+      "label": "1º lugar — dominante",
+      "variants": {
+        "1": {
+          "titulo": "Autonomia com contraponto",
+          "leitura": "A Dominância dominante na primeira posição concentra a condução em decisão, controle e avanço. Sob atraso, há intervenção direta para redefinir prioridades e acelerar a resposta.",
+          "atencao": "O risco de gestão é suprimir alertas da equipe ao tratar questionamentos como obstáculos à execução.",
+          "acao": "Estabeleça revisão obrigatória para decisões de alto impacto. Em 30 dias, verifique se os alertas recebidos foram examinados antes dos encaminhamentos.",
+          "status": "aprovada"
+        },
+        "2": {
+          "titulo": "Cobrança sem silenciamento",
+          "leitura": "A intensidade dominante, somada ao primeiro lugar, favorece forte imposição de ritmo. Na cobrança de uma entrega, a conversa se concentra em resultado, prazo e resolução imediata.",
+          "atencao": "Respostas de concordância podem esconder inviabilidade ou receio de contestar.",
+          "acao": "Dê feedback sobre uma situação concreta de pressão e institua um espaço de contraponto. Acompanhe a comunicação antecipada de problemas durante 30 dias.",
+          "status": "aprovada"
+        },
+        "3": {
+          "titulo": "Revisão de prioridades sem imposição unilateral",
+          "leitura": "A Dominância dominante no primeiro lugar dá peso elevado à definição e ao controle do rumo. Em uma mudança de prioridade, pode haver substituição imediata do plano sem consulta às áreas dependentes.",
+          "atencao": "Uma decisão unilateral pode transferir custos e inviabilizar compromissos ainda ativos.",
+          "acao": "Exija uma avaliação de impacto com as áreas envolvidas antes de efetivar a troca e monitore rupturas de compromisso em 30 dias.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Conflito sem concentração de autoridade",
+          "leitura": "A intensidade dominante na posição principal favorece sustentação intensa da própria direção. Em conflito sobre responsabilidades, pode haver tentativa de resolver a divergência concentrando a decisão.",
+          "atencao": "Encerrar o conflito por autoridade pode ocultar responsabilidades mal definidas.",
+          "acao": "Estabeleça mediação e registre responsabilidades antes de autorizar a solução. Em 30 dias, observe reincidência e liberdade para discordar.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-1": {
+      "position": 2,
+      "level": 1,
+      "label": "2º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Suporte inicial para recusar excessos",
+          "leitura": "A Dominância quase ausente em segundo lugar oferece pouco impulso para imposição direta de limites, apesar da posição relativa. Ao negociar uma demanda adicional, pode haver aceitação antes de explicitar a capacidade disponível.",
+          "atencao": "A falta de objeção pode ser tratada como confirmação de viabilidade.",
+          "acao": "Prepare um roteiro de recusa com alternativa e acompanhe as primeiras negociações. Em 30 dias, observe a comunicação de restrições antes do aceite.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Decisão pequena com acompanhamento",
+          "leitura": "A segunda posição não torna intensa a Dominância quase ausente. Em uma tarefa delegada sem critérios, pode ser necessário apoio para escolher um encaminhamento e sustentá-lo.",
+          "atencao": "Cobrar autonomia ampla sem preparação pode prolongar a busca de autorização.",
+          "acao": "Ofereça duas opções de baixo risco e defina a margem de escolha. Avalie em 30 dias a redução da necessidade de confirmação.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Ensaio de discordância em grupo",
+          "leitura": "A Dominância quase ausente participa pouco da afirmação direta, mesmo situada em segundo lugar. Numa reunião com proposta inviável, a restrição pode não ganhar expressão espontânea.",
+          "atencao": "O silêncio pode esconder uma informação necessária à decisão coletiva.",
+          "acao": "Antecipe a pauta e solicite uma ressalva preparada antes do encontro. Observe por 30 dias se as objeções passam a surgir durante a discussão.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Apoio para tratar divergências",
+          "leitura": "A intensidade quase ausente da Dominância indica baixa disponibilidade inicial para confronto direto. Em conflito de execução, pode haver necessidade de suporte para apresentar um limite sem abandonar a conversa.",
+          "atencao": "Exposição imediata a uma disputa de alta pressão pode aumentar o recuo.",
+          "acao": "Ensaie uma fala baseada em fato, impacto e pedido antes da conversa e acompanhe sua aplicação ao longo de 30 dias.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-2": {
+      "position": 2,
+      "level": 2,
+      "label": "2º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Assertividade em desenvolvimento",
+          "leitura": "A Dominância discreta em segundo lugar funciona como recurso pouco intenso de afirmação. Na negociação de prazo, a apresentação de uma restrição pode depender de incentivo explícito.",
+          "atencao": "A gestão pode superestimar a firmeza disponível com base apenas na posição do fator.",
+          "acao": "Treine uma contraproposta de prazo com justificativa objetiva e observe em 30 dias a antecedência dos alertas.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Autonomia com referência acessível",
+          "leitura": "A intensidade discreta limita o impulso de condução da Dominância secundária. Ao receber uma delegação, pode haver preferência por confirmar o caminho antes de iniciar.",
+          "atencao": "Instruções abertas demais podem gerar consultas sucessivas sobre escolhas simples.",
+          "acao": "Defina uma decisão autônoma e um canal de apoio sem aprovação prévia obrigatória. Acompanhe por 30 dias quais escolhas foram sustentadas.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Preparação para posicionamento em reunião",
+          "leitura": "A Dominância discreta na segunda posição oferece apoio limitado para disputar espaço de decisão. Em reunião interáreas, uma proposta pode ser apresentada somente após solicitação direta.",
+          "atencao": "Associar menor intervenção verbal à falta de contribuição pode restringir oportunidades de desenvolvimento.",
+          "acao": "Envie a questão antecipadamente e reserve um momento para apresentação da proposta. Verifique em 30 dias a clareza dos posicionamentos produzidos.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Feedback com prática de limites",
+          "leitura": "A participação discreta da Dominância favorece uso pontual de firmeza, não confronto contínuo. Em feedback sobre sobrecarga, pode haver dificuldade para transformar desconforto em pedido específico.",
+          "atencao": "A conversa pode terminar com reconhecimento do problema, mas sem renegociação das demandas.",
+          "acao": "Ajude a converter um episódio de sobrecarga em pedido observável e revise os efeitos em 30 dias.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-3": {
+      "position": 2,
+      "level": 3,
+      "label": "2º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Cobrança delimitada com treino",
+          "leitura": "A Dominância moderada-baixa em segundo lugar oferece assertividade de alcance limitado. Ao cobrar um prazo de outra área, pode haver hesitação em explicitar a consequência do atraso.",
+          "atencao": "Uma solicitação pouco definida pode ser entendida como pedido sem prioridade.",
+          "acao": "Ensaiem uma cobrança com data, dependência e pedido de confirmação. Observe em 30 dias se o retorno chega antes do vencimento.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Iniciativa progressiva na delegação",
+          "leitura": "A segunda posição com intensidade moderada-baixa não implica condução espontânea de situações abertas. Em uma entrega delegada, a iniciativa pode aumentar quando resultado e autoridade estão claros.",
+          "atencao": "A ambiguidade da atribuição pode ser confundida com falta de disposição.",
+          "acao": "Delegue uma escolha reversível com critério de sucesso e amplie o escopo após observar sua sustentação por 30 dias.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Divergência apoiada por evidências",
+          "leitura": "A Dominância moderada-baixa como apoio pode exigir preparação para confrontar uma decisão. Em reunião de mudança de prioridade, uma restrição tende a ganhar expressão quando sustentada por dados concretos.",
+          "atencao": "Aguardar certeza completa pode atrasar um alerta já relevante.",
+          "acao": "Solicite a apresentação de um risco e uma alternativa com os dados disponíveis e acompanhe a oportunidade dos alertas durante 30 dias.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Negociação de responsabilidades com suporte",
+          "leitura": "A intensidade moderada-baixa da Dominância secundária permite posicionamento, mas pode requerer mobilização adicional. Em conflito sobre divisão de tarefas, a defesa do próprio escopo pode aparecer de forma indireta.",
+          "atencao": "Responsabilidades indefinidas podem permanecer acumuladas sem contestação clara.",
+          "acao": "Ofereça um roteiro para explicitar atribuições e pedir um acordo registrado. Revise em 30 dias a distribuição efetiva do trabalho.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-4": {
+      "position": 2,
+      "level": 4,
+      "label": "2º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Apoio equilibrado à definição",
+          "leitura": "A Dominância equilibrada em segundo lugar contribui com firmeza sem constituir o recurso principal. Numa reunião de planejamento, pode apoiar a escolha de um encaminhamento quando a discussão perde foco.",
+          "atencao": "A iniciativa complementar pode ser confundida com disponibilidade para assumir toda a coordenação.",
+          "acao": "Delegue a conclusão de um item específico e observe em 30 dias a qualidade da decisão e do repasse.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Negociação com escopo reconhecido",
+          "leitura": "A segunda posição e a intensidade equilibrada indicam assertividade acessível como apoio. Na negociação de prazo, há recurso para delimitar condições sem fazer da pressão a abordagem central.",
+          "atencao": "Uma expectativa de enfrentamento constante pode exigir intensidade pouco compatível com esse recurso.",
+          "acao": "Atribua uma negociação rotineira com limites claros e avalie em 30 dias a sustentação das condições pactuadas.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Feedback orientado a compromissos",
+          "leitura": "A Dominância equilibrada na posição secundária pode sustentar objetividade junto de outras formas de interação. Em feedback sobre uma entrega, há condição de converter observações em um pedido concreto de ajuste.",
+          "atencao": "A busca de composição pode deixar implícito o que precisa mudar.",
+          "acao": "Solicite um compromisso verificável ao final da conversa e acompanhe sua realização durante 30 dias.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Priorização com autoridade delimitada",
+          "leitura": "A intensidade equilibrada da Dominância fornece suporte à tomada de posição sem comandar o conjunto. Quando a prioridade muda, pode ajudar a organizar a transição se a margem de decisão estiver definida.",
+          "atencao": "A falta de autoridade explícita pode levar a encaminhamentos que dependem de validação posterior.",
+          "acao": "Esclareça quais trocas podem ser decididas sem consulta e revise em 30 dias a necessidade de escalonamento.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-5": {
+      "position": 2,
+      "level": 5,
+      "label": "2º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Assertividade de sustentação",
+          "leitura": "A Dominância presente na segunda posição apoia o fator principal, oferecendo assertividade em impasses. Em uma demanda conflitante, esse recurso permite negociar prioridade sem exigir condução permanente.",
+          "atencao": "A cobrança tardia de limites pode ser confundida com aceitação inicial da demanda.",
+          "acao": "Delegue uma negociação de escopo com critérios claros. Em 30 dias, observe se os limites foram comunicados antes de comprometer a entrega.",
+          "status": "aprovada"
+        },
+        "2": {
+          "titulo": "Encaminhamento complementar",
+          "leitura": "A posição secundária e a intensidade presente indicam iniciativa disponível como complemento. Quando uma reunião perde objetividade, há recurso para propor um encaminhamento sem dominar toda a interação.",
+          "atencao": "Exigir protagonismo contínuo utiliza esse apoio como se fosse a principal direção do perfil.",
+          "acao": "Atribua decisões delimitadas, com começo e fim definidos. No acompanhamento de 30 dias, avalie a qualidade dos encaminhamentos, não o volume de intervenções.",
+          "status": "aprovada"
+        },
+        "3": {
+          "titulo": "Cobrança pontual de acordos",
+          "leitura": "A Dominância presente como segundo recurso permite sustentar exigências específicas. Na revisão de um prazo descumprido, pode apoiar a cobrança de um novo compromisso sem assumir toda a condução da equipe.",
+          "atencao": "Usar esse recurso apenas após a falha pode tornar a cobrança mais abrupta do que o necessário.",
+          "acao": "Combine um sinal antecipado de risco e observe durante 30 dias se a renegociação ocorre antes do atraso.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Posicionamento em conflitos de execução",
+          "leitura": "A intensidade presente da Dominância secundária oferece firmeza para defender condições operacionais. Em conflito sobre responsabilidades, pode contribuir para explicitar limites e propor uma divisão viável.",
+          "atencao": "A gestão pode deixar de delegar a conversa por presumir que só o recurso principal será utilizado.",
+          "acao": "Delegue a discussão de uma responsabilidade com critérios de acordo e avalie em 30 dias a clareza da solução obtida.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-6": {
+      "position": 2,
+      "level": 6,
+      "label": "2º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Apoio assertivo com limites de autoridade",
+          "leitura": "A Dominância marcante em segundo lugar tem participação relevante na sustentação de decisões. Em reunião de projeto, pode reforçar uma direção e cobrar responsabilidades definidas.",
+          "atencao": "A força da intervenção pode ser tomada como autoridade para alterar decisões de outras áreas.",
+          "acao": "Explicite o alcance da decisão delegada e observe em 30 dias se os encaminhamentos respeitam as alçadas.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Firmeza na negociação de capacidade",
+          "leitura": "A posição secundária não reduz a força marcante da Dominância. Ao negociar prazos, há recurso consistente para defender limites e exigir condições de execução.",
+          "atencao": "Uma defesa rígida da capacidade pode encerrar prematuramente a busca de alternativas.",
+          "acao": "Solicite uma opção de ajuste de escopo antes de recusar o prazo e acompanhe em 30 dias a viabilidade dos acordos.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Feedback direto sem prescrição excessiva",
+          "leitura": "A Dominância marcante como apoio favorece intervenções claras sobre desempenho. Em feedback corretivo, pode haver passagem rápida da análise para a definição do que deve ser feito.",
+          "atencao": "A solução imposta pode reduzir a participação de quem precisa mudar a prática.",
+          "acao": "Peça uma proposta de correção antes de validar o plano e verifique em 30 dias a autonomia na aplicação.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Transição de prioridades com consulta",
+          "leitura": "A intensidade marcante do segundo recurso permite mobilizar mudanças com firmeza. Diante de nova prioridade, a atuação pode pressionar pela reorganização imediata das tarefas.",
+          "atencao": "O impulso de avançar pode subestimar dependências do trabalho interrompido.",
+          "acao": "Exija a identificação das entregas afetadas antes de liberar a transição e monitore em 30 dias os impactos não previstos.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-7": {
+      "position": 2,
+      "level": 7,
+      "label": "2º lugar — muito marcante",
+      "variants": {
+        "1": {
+          "titulo": "Recurso secundário de alta força",
+          "leitura": "A Dominância muito marcante na segunda posição participa intensamente da condução, sem substituir o fator principal. Num impasse de projeto, a abordagem inicial pode dar lugar a uma cobrança incisiva por decisão.",
+          "atencao": "Uma mudança brusca de abordagem dificulta a leitura da equipe sobre o que está sendo exigido.",
+          "acao": "Oriente a explicitação dos critérios antes de intensificar a cobrança. Em 30 dias, observe clareza e reação da equipe nos momentos de impasse.",
+          "status": "aprovada"
+        },
+        "2": {
+          "titulo": "Firmeza elevada em apoio",
+          "leitura": "A intensidade muito marcante torna a Dominância um apoio forte, apesar da posição secundária. Ao defender uma entrega, há sustentação de limites e pressão por avanço mesmo quando outro fator organiza a interação.",
+          "atencao": "O risco é ampliar uma divergência de método para uma disputa de autoridade.",
+          "acao": "No feedback, trabalhe a distinção entre resultado obrigatório e caminho negociável. Acompanhe conflitos de execução e acordos preservados durante 30 dias.",
+          "status": "aprovada"
+        },
+        "3": {
+          "titulo": "Delegação sem captura do método",
+          "leitura": "A Dominância muito marcante em segundo lugar acrescenta forte necessidade de avanço à condução habitual. Ao delegar uma atividade relevante, pode haver cobrança incisiva quando a execução segue um caminho distinto do previsto.",
+          "atencao": "A intensidade do apoio pode retirar a liberdade de método inicialmente concedida.",
+          "acao": "Separe critérios de resultado de preferências de execução e observe durante 30 dias as intervenções fora do combinado.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Negociação sob pressão regulada",
+          "leitura": "A força muito marcante da Dominância secundária permite insistência elevada na defesa de condições. Em negociação de prazo, a pressão por aceite pode crescer quando a contraproposta parece atrasar a entrega.",
+          "atencao": "A concordância obtida sob insistência pode ocultar falta de capacidade operacional.",
+          "acao": "Condicione o fechamento à explicitação de recursos e restrições pela outra parte. Em 30 dias, verifique quais compromissos exigiram revisão por inviabilidade.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-8": {
+      "position": 2,
+      "level": 8,
+      "label": "2º lugar — dominante",
+      "variants": {
+        "1": {
+          "titulo": "Cobrança intensa com verificação de viabilidade",
+          "leitura": "A Dominância dominante em segundo lugar constitui um recurso de alta intensidade, mesmo sem ocupar a frente. Diante de atraso, pode ampliar fortemente a cobrança para assegurar uma definição.",
+          "atencao": "A pressão excessiva pode produzir promessas defensivas em vez de estimativas confiáveis.",
+          "acao": "Exija evidências de capacidade antes de aceitar a nova data e acompanhe por 30 dias a diferença entre compromisso e execução.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Negociação sem coerção",
+          "leitura": "A intensidade dominante da Dominância secundária dá grande força à defesa de interesses. Em uma negociação de escopo, pode haver insistência até obter adesão às condições propostas.",
+          "atencao": "A adesão obtida sem espaço real de recusa pode comprometer a cooperação posterior.",
+          "acao": "Institua uma rodada de restrições sem contestação imediata e observe em 30 dias a sustentação espontânea dos acordos.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Mudança de prioridade com contrapesos",
+          "leitura": "A Dominância dominante como segundo recurso amplia a capacidade de impor redirecionamentos. Quando surge uma demanda urgente, a condução pode migrar rapidamente para ordens de reorganização.",
+          "atencao": "O excesso de controle pode interromper compromissos críticos sem tornar os custos visíveis.",
+          "acao": "Submeta a troca de prioridade à revisão dos responsáveis afetados. Em 30 dias, examine cancelamentos, retomadas e perdas de continuidade.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Conflito tratado além da autoridade",
+          "leitura": "A segunda posição com intensidade dominante mantém elevada força de confronto e controle. Em conflito sobre método, pode haver tentativa de encerrar a divergência por exigência de obediência.",
+          "atencao": "A disputa pode deslocar a atenção do resultado para a preservação de autoridade.",
+          "acao": "Dê feedback sobre a distinção entre discordância técnica e descumprimento de acordo e estabeleça mediação para impasses recorrentes. Observe em 30 dias a qualidade das soluções e a abertura para questionamentos.",
+          "status": "rascunho"
+        }
+      }
+    }
+  }
+}
