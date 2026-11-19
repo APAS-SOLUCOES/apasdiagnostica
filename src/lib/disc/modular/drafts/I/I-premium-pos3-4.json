@@ -1,0 +1,357 @@
+{
+  "factor": "I",
+  "report": "premium",
+  "status": "rascunho",
+  "diagnostics": {
+    "3-1": {
+      "position": 3,
+      "level": 1,
+      "label": "3º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Sua voz pode encontrar uma entrada",
+          "leitura": "Com a Influência quase ausente na terceira posição, você pode precisar de apoio para iniciar trocas e tornar suas ideias conhecidas. Em uma reunião de equipe, um convite antecipado para comentar um assunto pode facilitar sua participação.",
+          "atencao": "Sem uma abertura combinada, uma contribuição sua pode permanecer apenas nas anotações.",
+          "acao": "Escolha uma ideia e ensaie como compartilhá-la com um colega de confiança. Combine uma participação breve no próximo encontro.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Reconhecer com palavras simples",
+          "leitura": "A Influência quase ausente, atrás de dois fatores, sugere pouca espontaneidade para expressar reconhecimento. Ao oferecer feedback, você pode perceber o esforço de alguém e precisar de preparo para dizer por que ele fez diferença.",
+          "atencao": "O reconhecimento guardado para você pode não chegar a quem contribuiu.",
+          "acao": "Peça ajuda para identificar uma contribuição concreta e pratique uma frase de agradecimento ligada a ela.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Um convite para acompanhar a entrega",
+          "leitura": "Na terceira posição, a Influência quase ausente pode pedir treino para mobilizar pessoas pela conversa. Diante de um prazo compartilhado, você pode informar a data sem explorar como aproximar os envolvidos da entrega.",
+          "atencao": "Transmitir o calendário não garante que as pessoas se sintam convidadas a colaborar.",
+          "acao": "Com apoio de alguém da equipe, prepare uma pergunta sobre como cada pessoa pode contribuir. Experimente essa abertura em uma conversa curta.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Uma ideia que merece ser ouvida",
+          "leitura": "Você tende a acionar pouco a Influência, quase ausente em terceiro lugar, para despertar interesse por uma proposta. Em uma apresentação interna, pode precisar de apoio para conectar o conteúdo às necessidades de quem escuta.",
+          "atencao": "Uma exposição sem ligação com o público pode esconder a utilidade do seu trabalho.",
+          "acao": "Ensaie com uma pessoa conhecida uma abertura que mostre a quem a proposta ajuda e de que maneira.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-2": {
+      "position": 3,
+      "level": 2,
+      "label": "3º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Contato que começa pelo cotidiano",
+          "leitura": "A Influência discreta em terceiro lugar pode aparecer em trocas breves, sem ser sua principal forma de aproximação. Em uma reunião com outra área, você pode precisar de um pouco de preparação para puxar conversa sobre um interesse de trabalho comum.",
+          "atencao": "Aguardar sempre a iniciativa alheia pode limitar oportunidades de conhecer seus parceiros.",
+          "acao": "Prepare uma pergunta sobre o projeto da outra área e pratique com alguém próximo antes do encontro.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Apreço que ajuda a aprender",
+          "leitura": "Com a Influência discreta na terceira posição, expressar apreço pode exigir intenção, mesmo quando você valoriza o trabalho recebido. Num feedback, você pode se concentrar no ajuste técnico e deixar pouco visível aquilo que gostaria de ver repetido.",
+          "atencao": "A pessoa pode sair sabendo o que corrigir, mas sem reconhecer suas próprias contribuições.",
+          "acao": "Treine uma devolutiva que associe um comportamento útil ao efeito que ele teve na equipe. Peça ajuda para encontrar um exemplo preciso.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Proximidade ao distribuir uma tarefa",
+          "leitura": "Você dispõe de Influência discreta, atrás de dois fatores, para criar conexão ao envolver alguém no trabalho. Ao delegar uma atividade, pode explicar a tarefa sem perguntar o que desperta interesse na pessoa que vai recebê-la.",
+          "atencao": "Uma distribuição impessoal pode deixar de aproveitar uma motivação que já existe.",
+          "acao": "Experimente perguntar qual parte da atividade a pessoa gostaria de desenvolver. Prepare essa conversa com apoio de quem conhece a equipe.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Um primeiro convite à adesão",
+          "leitura": "A terceira posição da Influência, com intensidade discreta, indica uma persuasão mais pontual do que espontânea. Numa negociação interna, você pode precisar de treino para traduzir sua proposta em benefícios relevantes para a outra área.",
+          "atencao": "Listar vantagens apenas para o seu setor pode tornar o convite pouco atraente.",
+          "acao": "Escolha uma necessidade do interlocutor e ensaie como sua proposta pode atendê-la, sem prometer além do possível.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-3": {
+      "position": 3,
+      "level": 3,
+      "label": "3º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Comunicar a mudança com proximidade",
+          "leitura": "A Influência moderada-baixa na terceira posição pode precisar de preparação para gerar envolvimento. Quando uma prioridade muda, você pode explicar a nova sequência de tarefas sem abrir espaço para as reações da equipe.",
+          "atencao": "Uma mensagem apenas informativa pode deixar dúvidas sobre o sentido da mudança.",
+          "acao": "Prepare uma explicação breve do motivo e uma pergunta sobre o impacto nas pessoas. Se ajudar, teste essa abertura com um colega.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Uma ponte para retomar a conversa",
+          "leitura": "Com a Influência moderada-baixa atrás de dois fatores, reconstruir a disposição para conversar pode exigir um esforço consciente. Em um conflito entre áreas, você pode compreender o problema e precisar de apoio para convidar os envolvidos a uma troca menos defensiva.",
+          "atencao": "Concentrar a conversa somente nas falhas pode reduzir a abertura para buscar interesses comuns.",
+          "acao": "Peça orientação para formular uma pergunta sobre o que ambos desejam preservar na parceria e use-a para iniciar o diálogo.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Interesse construído na apresentação",
+          "leitura": "Você conta com Influência moderada-baixa em terceiro lugar, que pode se fortalecer por meio de ensaios de comunicação. Ao apresentar um projeto, pode dominar o conteúdo e ainda precisar praticar como despertar curiosidade pelo tema.",
+          "atencao": "Detalhes apresentados antes do propósito podem afastar quem ainda não conhece o assunto.",
+          "acao": "Ensaie uma abertura com um exemplo do cotidiano do público. Solicite a alguém uma devolutiva sobre o que despertou interesse.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Um reconhecimento que chega à equipe",
+          "leitura": "Na terceira posição e com intensidade moderada-baixa, a Influência pode aparecer com mais facilidade quando você prepara sua participação. Em uma reunião de encerramento, você pode lembrar das colaborações recebidas e hesitar em reconhecê-las diante do grupo.",
+          "atencao": "Um agradecimento genérico pode não mostrar quais atitudes favoreceram o resultado.",
+          "acao": "Anote uma colaboração observável e pratique como agradecer sem exageros. Use esse roteiro como apoio, não como uma fala obrigatória.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-4": {
+      "position": 3,
+      "level": 4,
+      "label": "3º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Conversa a serviço da participação",
+          "leitura": "A Influência equilibrada na terceira posição oferece recursos de comunicação sem ser sua resposta mais imediata. Numa reunião de planejamento, você pode recorrer à conversa para aproximar participantes que ainda não compartilharam suas ideias.",
+          "atencao": "Uma troca agradável pode terminar sem que contribuições menos espontâneas tenham espaço.",
+          "acao": "Convide quem ainda não falou a comentar um ponto específico e acolha também quem preferir contribuir depois.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Reconhecimento com espaço para ajuste",
+          "leitura": "Com a Influência equilibrada atrás de dois fatores, você pode usar a proximidade para favorecer uma troca franca. Ao dar feedback, pode reconhecer uma contribuição e conversar sobre o que precisa evoluir sem perder o vínculo.",
+          "atencao": "Elogios amplos demais podem tornar menos compreensível o comportamento que você valoriza.",
+          "acao": "Associe o reconhecimento a um exemplo recente e pergunte como a pessoa percebe a própria contribuição.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Engajamento diante do calendário",
+          "leitura": "Você tem na Influência equilibrada, em terceiro lugar, um apoio para mobilizar colaboração quando a situação pede. Diante de um prazo exigente, pode explicar a importância da entrega e ouvir o que ajudaria a equipe a participar.",
+          "atencao": "O incentivo pode perder credibilidade se as dificuldades práticas não entrarem na conversa.",
+          "acao": "Conecte o propósito da entrega a uma necessidade real da equipe e verifique qual apoio torna a participação viável.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Benefícios que fazem sentido para ambos",
+          "leitura": "Na terceira posição, a Influência equilibrada permite recorrer à persuasão sem fazer dela o centro de toda interação. Durante uma negociação, você pode explorar interesses da outra parte para apresentar uma proposta mais relevante.",
+          "atencao": "Uma boa conexão pessoal não confirma, por si só, que os benefícios foram compreendidos.",
+          "acao": "Peça ao interlocutor que indique qual benefício tem mais valor para sua área e ajuste a explicação a essa resposta.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-5": {
+      "position": 3,
+      "level": 5,
+      "label": "3º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Entusiasmo que amplia as vozes",
+          "leitura": "A Influência presente na terceira posição pode trazer entusiasmo perceptível, mesmo com dois fatores aparecendo antes. Em uma reunião de projeto, você pode animar a troca e ajudar colegas a enxergar possibilidades na proposta.",
+          "atencao": "Seu envolvimento pode ocupar o tempo de quem precisa de mais espaço para elaborar uma contribuição.",
+          "acao": "Depois de apresentar uma possibilidade, faça uma pausa e convide uma leitura diferente da sua.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback que fortalece a parceria",
+          "leitura": "Com a Influência presente em terceiro lugar, o reconhecimento pode ser um recurso acessível para cultivar relações de trabalho. Numa conversa de feedback, você pode destacar avanços de um colega e estimular sua disposição para continuar aprendendo.",
+          "atencao": "A vontade de encorajar pode levar você a suavizar um ponto que merece conversa mais cuidadosa.",
+          "acao": "Reconheça um avanço específico e trate o ajuste como um tema próprio, verificando como cada mensagem foi recebida.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Conexão para envolver quem recebe a tarefa",
+          "leitura": "Você dispõe de Influência presente, atrás de dois fatores, para aproximar pessoas de um objetivo compartilhado. Ao delegar uma atividade, pode despertar interesse mostrando a contribuição daquela entrega para o trabalho coletivo.",
+          "atencao": "Um convite empolgante pode deixar em segundo plano as dúvidas de quem está assumindo a atividade.",
+          "acao": "Pergunte o que desperta interesse e o que gera receio na tarefa. Use as respostas para combinar o apoio necessário.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Uma apresentação que convida à troca",
+          "leitura": "A terceira posição da Influência não apaga sua intensidade presente nem sua disponibilidade para comunicar ideias. Em uma apresentação a clientes internos, você pode usar exemplos envolventes e adaptar a linguagem às reações do público.",
+          "atencao": "Buscar uma reação positiva imediata pode fazer você dar menos atenção a sinais de dúvida.",
+          "acao": "Reserve uma pausa para perguntar o que ainda não parece convincente e acolha a resposta antes de complementar a proposta.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-6": {
+      "position": 3,
+      "level": 6,
+      "label": "3º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Energia social com espaço para escuta",
+          "leitura": "A Influência marcante em terceiro lugar indica forte disponibilidade para mobilizar pela comunicação, ainda que dois fatores estejam à frente. Numa reunião de lançamento, você pode transmitir entusiasmo e estimular conexões entre pessoas de áreas diferentes.",
+          "atencao": "A intensidade da sua participação pode dificultar que uma reserva apareça espontaneamente.",
+          "acao": "Alterne seus convites à participação com momentos de escuta sem comentários imediatos. Pergunte que preocupação ainda não entrou na conversa.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Persuasão acompanhada de verificação",
+          "leitura": "Com a Influência marcante na terceira posição, você pode envolver interlocutores com facilidade sem que esse seja seu primeiro recurso em toda situação. Em uma negociação, pode construir proximidade e tornar os benefícios da parceria especialmente atraentes.",
+          "atencao": "Uma reação calorosa pode parecer aceitação antes que as condições tenham sido examinadas.",
+          "acao": "Diferencie interesse de compromisso e peça que a outra parte explicite quais condições ainda precisa avaliar.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Entusiasmo que acolhe a transição",
+          "leitura": "Você conta com Influência marcante, atrás de dois fatores, para comunicar possibilidades e mobilizar relacionamentos. Quando há mudança de prioridade, pode ajudar a equipe a encontrar sentido no novo caminho e recuperar o ânimo.",
+          "atencao": "Uma narrativa muito positiva pode fazer as pessoas esconderem frustrações legítimas com o trabalho interrompido.",
+          "acao": "Reconheça o esforço já investido antes de apresentar as novas possibilidades. Convide a equipe a dizer o que precisa elaborar nessa transição.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Aproximação sem encobrir diferenças",
+          "leitura": "Na terceira posição, a Influência marcante mantém um potencial expressivo de aproximação e persuasão. Em um conflito entre colegas, você pode usar a conversa para recuperar a disposição de trabalhar em parceria.",
+          "atencao": "Restabelecer um clima cordial pode dar a impressão de que a divergência de conteúdo também foi resolvida.",
+          "acao": "Após reabrir o diálogo, peça que cada pessoa descreva o ponto em que ainda discorda e confirme o que permanece pendente.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-1": {
+      "position": 4,
+      "level": 1,
+      "label": "4º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Uma participação apoiada na preparação",
+          "leitura": "A Influência quase ausente em quarto lugar tende a ser menos acionada do que seus outros recursos de trabalho. Em uma reunião com pessoas novas, você pode precisar de acolhimento e ensaio para iniciar uma troca sobre suas atividades.",
+          "atencao": "Ter pouco espaço para se apresentar pode dificultar que o grupo saiba quando procurar você.",
+          "acao": "Prepare com alguém de confiança uma apresentação curta sobre como você pode colaborar. Combine uma abertura com quem conduz o encontro.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Agradecimento que pode ser aprendido",
+          "leitura": "Com a Influência quase ausente na quarta posição, demonstrar reconhecimento verbal pode pedir apoio mais próximo. Ao dar feedback a um colega, você pode notar uma contribuição importante sem encontrar de imediato uma forma confortável de valorizá-la.",
+          "atencao": "Uma contribuição não mencionada pode parecer despercebida, mesmo quando você a considera relevante.",
+          "acao": "Peça ajuda para transformar sua observação em um agradecimento simples e pratique em uma conversa individual.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Comunicação para pedir colaboração",
+          "leitura": "Você pode recorrer muito pouco à Influência, quase ausente e em quarto lugar, para envolver outras pessoas numa entrega. Quando um prazo depende de parceiros, talvez precise de treino para fazer um convite à colaboração além de informar a necessidade.",
+          "atencao": "A outra pessoa pode compreender a urgência sem perceber como participar da solução.",
+          "acao": "Ensaie um pedido que explique por que a ajuda dela importa. Procure apoio para escolher uma forma de contato confortável para ambos.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Um caminho seguro para expor ideias",
+          "leitura": "Na quarta posição e quase ausente, a Influência pode exigir preparação acompanhada para tornar uma mensagem envolvente. Em uma apresentação de resultados, você pode precisar de ajuda para selecionar exemplos próximos da realidade do público.",
+          "atencao": "Uma sequência de informações sem contexto pode dificultar que as pessoas percebam a relevância da entrega.",
+          "acao": "Revise a abertura com alguém que conheça os ouvintes e treine uma explicação curta sobre a utilidade dos resultados.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-2": {
+      "position": 4,
+      "level": 2,
+      "label": "4º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Um vínculo por vez",
+          "leitura": "A Influência discreta em quarto lugar sugere que criar proximidade pela conversa pode não ser seu caminho inicial. Numa reunião entre equipes, você pode participar melhor depois de uma troca breve com alguém que já conhece.",
+          "atencao": "Ficar restrito aos contatos habituais pode reduzir o acesso a outras perspectivas de trabalho.",
+          "acao": "Peça a um colega que apresente você a uma pessoa de outra área e prepare uma pergunta sobre a atuação dela.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Reconhecimento em tom confortável",
+          "leitura": "Com a Influência discreta na quarta posição, valorizar alguém em palavras pode se tornar mais acessível com prática gradual. Durante um feedback, você pode preferir uma mensagem objetiva e precisar de apoio para incluir o efeito positivo de uma atitude.",
+          "atencao": "Uma devolutiva apenas descritiva pode não comunicar que você aprecia aquela colaboração.",
+          "acao": "Treine como dizer o que facilitou seu trabalho e por que isso foi útil. Comece em uma conversa com alguém de maior proximidade.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Interesse compartilhado na negociação",
+          "leitura": "Você tem na Influência discreta, em quarto lugar, um recurso que pode desenvolver para apresentar propostas com maior conexão. Ao negociar apoio de outra equipe, pode precisar de preparo para relacionar seu pedido às necessidades dela.",
+          "atencao": "Explicar somente o que você precisa pode deixar o interlocutor sem um motivo claro para se envolver.",
+          "acao": "Converse antes com alguém que conheça essa equipe e identifique um benefício plausível para incluir no convite.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Acolhimento ao encaminhar uma tarefa",
+          "leitura": "A quarta posição da Influência, com intensidade discreta, pode tornar menos espontânea a conversa sobre motivação. Ao delegar uma tarefa, você pode detalhar a atividade sem explorar como a pessoa se sente ao recebê-la.",
+          "atencao": "Dúvidas ou desinteresse podem ficar ocultos quando a conversa trata apenas da execução.",
+          "acao": "Prepare duas perguntas sobre interesse e necessidade de apoio. Pratique ouvi-las sem ter de responder imediatamente a tudo.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-3": {
+      "position": 4,
+      "level": 3,
+      "label": "4º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Explicar o sentido da nova prioridade",
+          "leitura": "A Influência moderada-baixa em quarto lugar pode pedir mobilização consciente para promover adesão pela comunicação. Diante de uma mudança de prioridade, você pode atualizar as tarefas antes de conversar sobre o que torna o novo foco relevante.",
+          "atencao": "A equipe pode seguir a orientação sem compreender a contribuição esperada de seu trabalho.",
+          "acao": "Com ajuda de um parceiro, prepare uma mensagem que conecte a mudança a uma necessidade concreta e abra espaço para perguntas.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Reabrir contato com cuidado",
+          "leitura": "Com a Influência moderada-baixa na quarta posição, aproximar pessoas após um atrito pode exigir preparação e suporte. Em um conflito de trabalho, você pode precisar de treino para iniciar uma conversa que recupere a disposição de escutar.",
+          "atencao": "Esperar que o desconforto desapareça sozinho pode manter o contato limitado ao indispensável.",
+          "acao": "Ensaie com alguém experiente uma abertura que reconheça o desconforto e convide a ouvir a experiência do outro.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Conteúdo que encontra seu público",
+          "leitura": "Você dispõe de Influência moderada-baixa, em quarto lugar, para desenvolver uma comunicação mais conectada a quem escuta. Numa apresentação de melhoria, pode precisar de prática para transformar informações conhecidas em exemplos que despertem interesse.",
+          "atencao": "Uma explicação correta pode não mostrar ao público por que vale a pena conhecer a proposta.",
+          "acao": "Selecione uma situação vivida pelos ouvintes e teste com um colega como ela ajuda a explicar a melhoria.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Uma contribuição que ganha voz",
+          "leitura": "Na quarta posição, a Influência moderada-baixa tende a participar menos espontaneamente das suas interações. Em uma reunião de avaliação, você pode reconhecer internamente a ajuda dos colegas e precisar de incentivo para compartilhar essa percepção.",
+          "atencao": "A equipe pode perder uma oportunidade de aprender quais formas de colaboração foram valiosas.",
+          "acao": "Prepare um relato breve sobre uma ajuda recebida e seu efeito no trabalho. Conte com uma pessoa de confiança para ensaiar essa participação.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-4": {
+      "position": 4,
+      "level": 4,
+      "label": "4º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Comunicação entre recursos equivalentes",
+          "leitura": "Com os quatro fatores iguais, a Influência equilibrada em quarto lugar não fica abaixo dos demais recursos. Em uma reunião, você pode usar a comunicação para estimular a participação e escolher outras abordagens conforme a necessidade do grupo.",
+          "atencao": "Mudar de abordagem sem indicar o propósito da conversa pode confundir quem espera um convite à troca.",
+          "acao": "Explique se aquele momento é para levantar ideias ou esclarecer uma proposta e ajuste sua participação ao propósito combinado.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Reconhecimento em uma combinação equilibrada",
+          "leitura": "Quando os quatro fatores estão iguais, você dispõe de Influência equilibrada sem que a quarta posição signifique menor acesso a ela. Ao oferecer feedback, pode recorrer ao reconhecimento e ao relacionamento em conjunto com outras formas de apoiar o desenvolvimento.",
+          "atencao": "Pressupor que o vínculo já comunica sua valorização pode deixar uma contribuição importante sem reconhecimento explícito.",
+          "acao": "Diga qual atitude você aprecia e investigue como a pessoa gostaria de continuar desenvolvendo essa contribuição.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Relacionamento para explorar possibilidades",
+          "leitura": "Na igualdade entre os quatro fatores, a Influência equilibrada participa da sua atuação tanto quanto os outros recursos, apesar da quarta posição. Em uma negociação, você pode construir conexão e explorar benefícios compartilhados sem depender apenas da persuasão.",
+          "atencao": "Uma conversa cordial pode ocultar diferenças sobre o que cada parte considera vantajoso.",
+          "acao": "Pergunte o que tornaria a parceria relevante para o interlocutor e apresente também o valor que você procura construir.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Envolvimento ao comunicar a mudança",
+          "leitura": "Se os quatro fatores estão iguais, sua Influência equilibrada na quarta posição integra um conjunto sem predominância entre eles. Ao comunicar uma mudança de prioridade, você pode mobilizar entusiasmo e relacionamento ao lado de outras maneiras de lidar com a situação.",
+          "atencao": "Valorizar a nova oportunidade sem ouvir as reações pode deixar o envolvimento da equipe apenas aparente.",
+          "acao": "Convide as pessoas a compartilhar expectativas e preocupações antes de elaborar uma mensagem de incentivo conectada ao que você ouviu.",
+          "status": "rascunho"
+        }
+      }
+    }
+  }
+}
