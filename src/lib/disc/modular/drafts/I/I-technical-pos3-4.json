@@ -1,0 +1,357 @@
+{
+  "factor": "I",
+  "report": "technical",
+  "status": "rascunho",
+  "diagnostics": {
+    "3-1": {
+      "position": 3,
+      "level": 1,
+      "label": "3º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Participação preparada em reunião",
+          "leitura": "A Influência quase ausente em terceira posição sugere pouca mobilização espontânea para ampliar a participação em reuniões. A contribuição pode surgir apenas após convite direto, mesmo quando existe informação útil para o grupo.",
+          "atencao": "Confundir pouca fala com compreensão integral pode ocultar dúvidas relevantes para a execução.",
+          "acao": "Ofereça apoio com pauta antecipada e treine uma intervenção curta sobre o impacto da decisão. Em 30 dias, observe se houve perguntas espontâneas nas reuniões acompanhadas.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Reconhecimento com referência concreta",
+          "leitura": "Na terceira posição, a Influência quase ausente indica que a expressão verbal de reconhecimento pode demandar estímulo específico. No feedback, a valorização de uma colaboração pode permanecer implícita e pouco perceptível para a equipe.",
+          "atencao": "Cobrar maior expressividade sem ensinar alternativas pode converter uma necessidade de comunicação em julgamento pessoal.",
+          "acao": "Modele um elogio baseado em contribuição observável e ensaie sua comunicação em conversa reservada. Em 30 dias, verifique se o reconhecimento ficou compreensível para quem o recebeu.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Contato para alinhar a entrega",
+          "leitura": "Com intensidade quase ausente e terceira posição, a Influência sugere baixa procura espontânea por interlocução para pactuar prazos. Diante de um prazo, pode haver espera por solicitação antes de conversar com as áreas envolvidas.",
+          "atencao": "A ausência de interlocução antecipada pode produzir expectativas diferentes sobre a mesma entrega.",
+          "acao": "Disponibilize apoio para mapear interlocutores e treine uma mensagem de alinhamento do prazo. Em 30 dias, confira se as confirmações foram obtidas antes do vencimento.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Ponte inicial no desacordo",
+          "leitura": "A terceira posição da Influência quase ausente aponta para menor uso inicial de recursos relacionais em conflitos. Em um conflito entre colegas, a tentativa de aproximação pode não ocorrer sem mediação inicial.",
+          "atencao": "Exigir conciliação imediata pode aumentar o afastamento e reduzir a circulação de informações.",
+          "acao": "Conduza uma primeira conversa conjunta e ensaie perguntas neutras para compreender os interesses em jogo. Em 30 dias, observe se surgiram contatos diretos para esclarecer mal-entendidos.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-2": {
+      "position": 3,
+      "level": 2,
+      "label": "3º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Delegação com canal acessível",
+          "leitura": "A Influência discreta em terceira posição sugere comunicação social seletiva ao receber uma delegação. Ao receber uma tarefa compartilhada, pode haver concentração na execução com poucas consultas aos parceiros.",
+          "atencao": "Delegar uma interface ampla sem apoio pode deixar necessidades de colaboração sem comunicação.",
+          "acao": "Defina um contato de referência e pratique uma solicitação objetiva de ajuda antes do início da tarefa. Em 30 dias, observe se as consultas ocorreram nos pontos combinados.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Persuasão em pequenos passos",
+          "leitura": "Em negociações, a Influência discreta na terceira posição pode se traduzir em persuasão pouco expansiva. Na negociação com uma área parceira, os benefícios da proposta podem ser expostos sem explorar o interesse do interlocutor.",
+          "atencao": "Uma proposta tecnicamente consistente pode perder adesão se não houver espaço para perguntas.",
+          "acao": "Ofereça apoio na preparação e treine a ligação entre um benefício e uma necessidade da outra área. Em 30 dias, avalie se as objeções passaram a orientar a conversa.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Aviso acompanhado de escuta",
+          "leitura": "Com Influência discreta em terceiro lugar, a mobilização de contatos para comunicar mudanças tende a exigir incentivo. Na mudança de prioridade, a informação pode circular de forma breve, com pouca checagem de receptividade.",
+          "atencao": "Encaminhar apenas um aviso pode deixar dúvidas relacionais que atrasam a cooperação.",
+          "acao": "Prepare em conjunto uma explicação curta e ensaie uma pergunta para ouvir a reação dos envolvidos. Em 30 dias, verifique se as pessoas afetadas conseguiram explicar a mudança recebida.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Apresentação com interação ensaiada",
+          "leitura": "A terceira posição da Influência discreta sugere exposição contida em apresentações, sem indicar falta de domínio técnico. Durante uma apresentação, pode haver preferência por seguir o material sem convidar a audiência a participar.",
+          "atencao": "Avaliar a competência apenas pela desenvoltura pode desconsiderar a qualidade do conteúdo apresentado.",
+          "acao": "Ofereça treino com um grupo pequeno e combine uma pausa para perguntas. Em 30 dias, observe se a interação ajudou a esclarecer o tema sem exigir exposição excessiva.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-3": {
+      "position": 3,
+      "level": 3,
+      "label": "3º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Convite para contribuir ao debate",
+          "leitura": "A Influência moderada-baixa em terceira posição sugere participação comunicativa mais acessível em grupos conhecidos. Em reunião com participantes novos, a contribuição pode ganhar clareza após uma pergunta direcionada.",
+          "atencao": "A liderança pode ouvir apenas as vozes mais expansivas e perder uma percepção complementar.",
+          "acao": "Antecipe o tema e ofereça ensaio breve da contribuição antes do encontro ampliado. Em 30 dias, observe se a participação passou a incluir perguntas aos demais participantes.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback que torna o apreço visível",
+          "leitura": "Na troca de feedback, a Influência moderada-baixa em terceiro lugar pode favorecer reconhecimento pontual em vez de manifestações frequentes. Ao comentar uma entrega, o reconhecimento pode aparecer em poucas palavras, sem explicitar o efeito positivo para o time.",
+          "atencao": "Uma cobrança detalhada acompanhada de valorização vaga pode desequilibrar a mensagem recebida.",
+          "acao": "Apoie a preparação do feedback com um exemplo de contribuição e treine a descrição de seu impacto. Em 30 dias, confira se houve maior clareza sobre o comportamento valorizado.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Alinhamento verbal de expectativas",
+          "leitura": "A terceira posição com Influência moderada-baixa sugere alguma disponibilidade para conversar sobre expectativas de entrega. Na discussão de prazo com um parceiro conhecido, pode haver abertura para conversar, mas pouca exploração das expectativas implícitas.",
+          "atencao": "A cordialidade pode ser tomada como alinhamento suficiente sobre o momento da entrega.",
+          "acao": "Forneça um roteiro de perguntas e pratique a confirmação do entendimento ao final da conversa. Em 30 dias, acompanhe se diminuíram os desencontros atribuídos à comunicação do prazo.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Reaproximação com suporte inicial",
+          "leitura": "Com Influência moderada-baixa na terceira posição, a aproximação entre partes em conflito pode depender de abertura do contexto. Em conflito entre áreas, a disposição para ouvir pode surgir depois de uma mediação breve da liderança.",
+          "atencao": "Atribuir a recomposição do vínculo sem preparação pode manter a conversa restrita a recados formais.",
+          "acao": "Ofereça apoio para abrir o diálogo e ensaie uma pergunta sobre a necessidade da outra área. Em 30 dias, observe se houve retomada de trocas úteis sem intermediação constante.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-4": {
+      "position": 3,
+      "level": 4,
+      "label": "3º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Delegação com articulação suficiente",
+          "leitura": "A Influência equilibrada em terceira posição sugere disponibilidade para articular pessoas sem tornar a interação o único recurso de trabalho. Em uma atividade entre áreas, pode haver iniciativa para apresentar os envolvidos e manter o fluxo de conversas.",
+          "atencao": "A facilidade de contato não garante que a mensagem sobre responsabilidades tenha sido compreendida.",
+          "acao": "Delegue a articulação e peça confirmação do entendimento pelos parceiros. Em 30 dias, observe se as trocas produziram encaminhamentos compreendidos por todos.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Proposta ajustada ao interlocutor",
+          "leitura": "Na negociação, a Influência equilibrada em terceiro lugar pode apoiar a construção de receptividade à proposta. Ao negociar recursos, a argumentação pode combinar benefícios compartilhados e escuta das reações.",
+          "atencao": "A receptividade durante a conversa pode ser confundida com concordância sobre todas as condições.",
+          "acao": "Solicite a síntese das objeções e cobre registro das condições aceitas. Em 30 dias, verifique se a adesão verbal correspondeu aos compromissos documentados.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Mudança explicada com abertura",
+          "leitura": "A terceira posição com Influência equilibrada indica recursos de comunicação utilizáveis na mobilização para mudanças. Na alteração de prioridade, pode haver comunicação convidativa sem necessidade de entusiasmo contínuo.",
+          "atencao": "Uma explicação bem recebida pode encobrir impactos que ainda não foram discutidos com a equipe.",
+          "acao": "Oriente a apresentação do motivo da mudança e reserve espaço para ouvir repercussões. Em 30 dias, observe se as dúvidas levantadas receberam retorno claro.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Apresentação próxima e verificável",
+          "leitura": "Com Influência equilibrada na terceira posição, a apresentação pode combinar proximidade com exposição organizada. Ao apresentar uma proposta, a adaptação da linguagem pode facilitar a compreensão de públicos diferentes.",
+          "atencao": "A aprovação do estilo pode desviar a avaliação da consistência dos argumentos.",
+          "acao": "Dê feedback separado sobre clareza da exposição e sustentação da proposta. Em 30 dias, confira se as perguntas da audiência foram respondidas com evidências pertinentes.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-5": {
+      "position": 3,
+      "level": 5,
+      "label": "3º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Reunião com participação distribuída",
+          "leitura": "A Influência presente em terceira posição sugere facilidade de interação relevante, mesmo sem ocupar as primeiras posições do perfil. Durante uma discussão coletiva, pode haver iniciativa para conectar contribuições e sustentar o interesse do grupo.",
+          "atencao": "O envolvimento na própria fala pode reduzir o espaço para contribuições menos expansivas.",
+          "acao": "Delegue a facilitação com a orientação de convidar perspectivas ainda não ouvidas. Em 30 dias, observe se a conversa incorporou contribuições além das habituais.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Reconhecimento sem diluir o ajuste",
+          "leitura": "Na terceira posição, a Influência presente pode ampliar a frequência de reconhecimento e a abertura para conversas de feedback. Em feedback de desempenho, a valorização do vínculo pode tornar a conversa acolhedora e receptiva.",
+          "atencao": "O cuidado em manter uma reação positiva pode suavizar excessivamente a correção necessária.",
+          "acao": "Peça que o reconhecimento seja específico e que o ajuste esperado seja enunciado separadamente. Em 30 dias, verifique se a pessoa que recebeu o feedback compreendeu o próximo passo.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Entusiasmo com confirmação do prazo",
+          "leitura": "Com intensidade presente no terceiro lugar, a Influência pode favorecer entusiasmo ao comunicar compromissos de entrega. Ao divulgar uma entrega, a mensagem otimista pode estimular participação e disponibilidade de parceiros.",
+          "atencao": "A adesão produzida pelo entusiasmo pode antecipar promessas ainda não confirmadas com os envolvidos.",
+          "acao": "Antes de anunciar a data, cobre confirmação das condições com quem executará o trabalho. Em 30 dias, compare as mensagens de compromisso com os alinhamentos efetivamente realizados.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Relacionamento a serviço do desacordo",
+          "leitura": "A Influência presente em terceiro lugar sugere investimento no relacionamento como recurso para tratar divergências. No conflito, a busca de pontos em comum pode facilitar a retomada da conversa entre as partes.",
+          "atencao": "Preservar o clima pode ganhar prioridade sobre explicitar uma divergência que continua ativa.",
+          "acao": "Oriente a escuta dos interesses e solicite a formulação clara do ponto ainda não resolvido. Em 30 dias, observe se a cordialidade passou a acompanhar acordos efetivos.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-6": {
+      "position": 3,
+      "level": 6,
+      "label": "3º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Rede de contatos com escopo definido",
+          "leitura": "A Influência marcante em terceira posição sugere forte disponibilidade comunicativa, ainda que outros fatores tenham maior posição relativa. Na delegação de uma atividade transversal, pode haver rápida mobilização de contatos e convites para colaborar.",
+          "atencao": "A ampliação das interações pode gerar expectativas além do escopo delegado.",
+          "acao": "Defina quais convites podem ser feitos e cobre uma síntese dos compromissos comunicados. Em 30 dias, observe se a rede mobilizada contribuiu para a entrega prevista.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Persuasão submetida à checagem",
+          "leitura": "Em negociação, a Influência marcante no terceiro lugar pode intensificar a persuasão e a criação de proximidade. Em uma negociação, a narrativa envolvente pode acelerar a disposição inicial para aceitar a proposta.",
+          "atencao": "O impacto persuasivo pode reduzir o exame de condições que limitam o acordo.",
+          "acao": "Exija uma rodada de perguntas críticas antes de validar o fechamento. Em 30 dias, confira se as condições menos atraentes também foram compreendidas pelas partes.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Mobilização sem promessa prematura",
+          "leitura": "A terceira posição da Influência marcante pode coexistir com entusiasmo elevado ao anunciar novas prioridades. Ao anunciar mudança de prioridade, a energia da comunicação pode gerar adesão rápida à nova direção.",
+          "atencao": "A mensagem entusiasmada pode criar expectativa de benefícios ainda incertos.",
+          "acao": "Peça distinção explícita entre ganhos previstos e resultados já confirmados. Em 30 dias, avalie se os comunicados mantiveram credibilidade após os primeiros obstáculos.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Expressividade com espaço para evidências",
+          "leitura": "Com Influência marcante na terceira posição, apresentações podem mobilizar atenção por expressividade e interação frequente. Na apresentação a gestores, exemplos e histórias podem tornar a proposta memorável e estimular perguntas.",
+          "atencao": "A força da exposição pode favorecer aprovação sem análise suficiente das premissas.",
+          "acao": "Combine tempo para demonstração dos dados e dê feedback sobre a precisão das respostas. Em 30 dias, observe se o interesse despertado se converteu em compreensão dos limites da proposta.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-1": {
+      "position": 4,
+      "level": 1,
+      "label": "4º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Entrada protegida na conversa coletiva",
+          "leitura": "A Influência quase ausente em quarta posição sugere que a participação social em reunião não constitui recurso inicial preferencial. Em reunião ampla, informações relevantes podem não ser compartilhadas sem preparação e convite individualizado.",
+          "atencao": "Interpretar silêncio como desinteresse pode excluir contribuições e deteriorar o vínculo com a liderança.",
+          "acao": "Ofereça apoio para preparar uma pergunta e treine sua formulação antes da reunião. Em 30 dias, observe se o convite direcionado facilitou a troca de informações.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Apreço comunicado de modo simples",
+          "leitura": "Na quarta posição, a Influência quase ausente pode limitar a manifestação espontânea de apreço durante o feedback. No feedback a um parceiro, o valor atribuído à colaboração pode não aparecer na mensagem transmitida.",
+          "atencao": "A falta de reconhecimento explícito pode ser percebida como indiferença, embora não permita concluir ausência de apreço.",
+          "acao": "Apresente modelos breves de reconhecimento e pratique a escolha de um exemplo verdadeiro. Em 30 dias, verifique se o parceiro identificou qual contribuição foi valorizada.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Prazo com aproximação assistida",
+          "leitura": "A quarta posição com intensidade quase ausente sugere pouca iniciativa de contato para alinhar expectativas sobre prazos. Ao prever uma entrega, o contato para conhecer as expectativas do solicitante pode depender de orientação direta.",
+          "atencao": "A cobrança de iniciativa social sem suporte pode manter o desalinhamento e ampliar a tensão.",
+          "acao": "Acompanhe o primeiro contato e ensaie uma pergunta sobre o uso esperado da entrega. Em 30 dias, observe se novas solicitações passaram a incluir essa confirmação.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Conversa mediada para recompor o vínculo",
+          "leitura": "Com Influência quase ausente no quarto lugar, a aproximação informal pode ser pouco utilizada diante de conflitos. Durante um conflito, pode haver preferência por mensagens estritamente operacionais em vez de aproximação relacional.",
+          "atencao": "A distância na comunicação pode ser interpretada como recusa de cooperação e prolongar o desgaste.",
+          "acao": "Disponibilize mediação e treine uma abertura que reconheça a necessidade de colaboração. Em 30 dias, confira se as trocas voltaram a ocorrer sem escalada de tensão.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-2": {
+      "position": 4,
+      "level": 2,
+      "label": "4º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Delegar sem exigir expansividade",
+          "leitura": "A Influência discreta em quarta posição sugere preferência relativa por receber a delegação com pouca elaboração social. Ao assumir uma tarefa em parceria, a comunicação pode se limitar aos contatos indispensáveis para começar.",
+          "atencao": "Confundir reserva com autonomia plena pode deixar dúvidas sobre como solicitar colaboração.",
+          "acao": "Indique canais de apoio e ensaie uma mensagem para envolver o parceiro no início do trabalho. Em 30 dias, observe se pedidos de contribuição ocorreram antes de surgir bloqueio.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Afinidade construída por perguntas",
+          "leitura": "Em quarto lugar, a Influência discreta pode tornar menos frequente a exploração de afinidades durante negociações. Na negociação de uma condição de serviço, pode haver pouca exploração do que torna a proposta atraente para a outra parte.",
+          "atencao": "Insistir apenas na repetição dos argumentos pode enfraquecer o relacionamento sem melhorar a adesão.",
+          "acao": "Prepare perguntas sobre interesses e ofereça treino de escuta antes da conversa comercial. Em 30 dias, verifique se as propostas passaram a responder às prioridades ouvidas.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Mudança comunicada sem encenação",
+          "leitura": "A quarta posição da Influência discreta sugere que comunicar mudanças com entusiasmo pode exigir preparação adicional. Ao explicar uma nova prioridade, a mensagem pode ser sóbria e conter poucos sinais expressivos de entusiasmo.",
+          "atencao": "Exigir animação como evidência de compromisso pode desviar a atenção da compreensão da mudança.",
+          "acao": "Apoie a construção de uma explicação autêntica e treine como convidar dúvidas. Em 30 dias, avalie se o grupo entendeu o motivo da alteração sem depender de uma fala expansiva.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Audiência incluída gradualmente",
+          "leitura": "Com Influência discreta na quarta posição, a interação com a audiência pode ocorrer de maneira econômica. Em uma apresentação de resultados, pode haver pouca iniciativa para verificar a reação de quem acompanha.",
+          "atencao": "A ausência de perguntas durante a exposição pode ser interpretada como entendimento completo.",
+          "acao": "Ofereça ensaio com perguntas simuladas e combine uma checagem de compreensão ao final. Em 30 dias, observe se as respostas da audiência passaram a orientar esclarecimentos.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-3": {
+      "position": 4,
+      "level": 3,
+      "label": "4º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Participação orientada por pauta",
+          "leitura": "A Influência moderada-baixa em quarta posição sugere contribuição comunicativa pontual, sobretudo quando há convite claro à participação. Em uma reunião recorrente, a disposição para comentar pode aumentar quando o tema e o espaço de fala estão definidos.",
+          "atencao": "Esperar participação inteiramente espontânea pode restringir a circulação de percepções úteis.",
+          "acao": "Envie uma questão preparatória e apoie o treino de uma contribuição ligada à experiência recente. Em 30 dias, confira se a fala gerou diálogo com outros integrantes.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback com vínculo e precisão",
+          "leitura": "Na quarta posição, a Influência moderada-baixa pode sustentar feedback cordial sem grande expansão expressiva. Ao devolver uma avaliação, pode haver comunicação respeitosa, mas reconhecimento pouco desenvolvido.",
+          "atencao": "A economia de palavras pode deixar incerto se o esforço foi percebido pela gestão.",
+          "acao": "Ajude a relacionar uma entrega ao benefício produzido e pratique essa devolutiva em linguagem simples. Em 30 dias, observe se o reconhecimento ficou mais específico nas conversas acompanhadas.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Expectativa confirmada com o parceiro",
+          "leitura": "Com Influência moderada-baixa no quarto lugar, a conversa sobre prazos pode se concentrar na informação necessária. Na combinação de um prazo, a conversa pode encerrar após a transmissão da data, sem explorar a reação do solicitante.",
+          "atencao": "A informação correta sobre a data pode coexistir com expectativa diferente sobre sua viabilidade.",
+          "acao": "Ofereça apoio para formular uma pergunta de confirmação e ensaie a escuta da resposta. Em 30 dias, verifique se ressalvas do parceiro passaram a ser registradas antes do compromisso.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Colaboração retomada por aproximações",
+          "leitura": "A quarta posição da Influência moderada-baixa sugere uso seletivo do relacionamento para recompor a colaboração. Após um conflito, contatos pontuais podem ser suficientes para reiniciar trocas, sem imediata proximidade pessoal.",
+          "atencao": "Cobrar reconciliação expansiva pode desconsiderar avanços concretos na qualidade da comunicação.",
+          "acao": "Apoie uma conversa breve sobre como retomar a colaboração e treine uma forma de reconhecer a contribuição da outra parte. Em 30 dias, observe se houve continuidade dos contatos úteis.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-4": {
+      "position": 4,
+      "level": 4,
+      "label": "4º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Articulação calibrada pela tarefa",
+          "leitura": "A Influência equilibrada em quarta posição admite empate de intensidade, sem que a ordem isolada indique baixa capacidade de comunicação. Na delegação compartilhada, pode haver comunicação suficiente para aproximar parceiros sem centralizar todas as interações.",
+          "atencao": "Tratar a quarta posição como incapacidade relacional pode levar a controle desnecessário dos contatos.",
+          "acao": "Delegue a interlocução com critérios claros de retorno à liderança. Em 30 dias, observe se os parceiros mantiveram entendimento comum sobre a contribuição esperada.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Negociação com adesão examinada",
+          "leitura": "Na quarta posição com intensidade equilibrada, a Influência pode compartilhar intensidade com outros fatores e apoiar negociações por aproximação. Ao discutir uma proposta, a aproximação pode apoiar o entendimento dos interesses sem substituir a avaliação das condições.",
+          "atencao": "A classificação relativa pode levar a subestimar recursos de persuasão demonstrados na conversa.",
+          "acao": "Dê autonomia para explorar interesses e cobre confirmação explícita dos pontos acordados. Em 30 dias, verifique se os argumentos usados refletiram as necessidades identificadas.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Prioridade explicada e discutida",
+          "leitura": "A Influência equilibrada no quarto lugar permite considerar empate, preservando recursos para comunicar mudanças com envolvimento. Na comunicação de uma mudança, pode haver abertura para envolver o grupo e acolher reações diferentes.",
+          "atencao": "A boa receptividade inicial não assegura que as dúvidas sobre a nova direção tenham sido resolvidas.",
+          "acao": "Solicite que a explicação inclua espaço de escuta e retorno sobre questões pendentes. Em 30 dias, acompanhe se a equipe consegue relacionar a prioridade ao propósito comunicado.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Apresentação com retorno da audiência",
+          "leitura": "Com intensidade equilibrada e quarta posição, a Influência pode estar empatada com outros fatores e contribuir para apresentações acessíveis. Ao expor resultados, a comunicação pode alternar explicação e diálogo conforme os sinais do público.",
+          "atencao": "Presumir baixa expressividade pela posição pode reduzir oportunidades adequadas de exposição profissional.",
+          "acao": "Ofereça espaço para apresentar e dê feedback sobre a conexão entre mensagem e necessidade do público. Em 30 dias, observe se as perguntas recebidas ajudaram a aprimorar a exposição seguinte.",
+          "status": "rascunho"
+        }
+      }
+    }
+  }
+}

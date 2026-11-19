@@ -1,0 +1,462 @@
+{
+  "factor": "I",
+  "report": "premium",
+  "status": "rascunho",
+  "diagnostics": {
+    "1-4": {
+      "position": 1,
+      "level": 4,
+      "label": "1º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Conexão com espaço para outros recursos",
+          "leitura": "A Influência está em equilíbrio com os outros três fatores, sem que um deles predomine nas suas respostas. Em uma reunião de projeto, você pode aproximar as pessoas pela conversa e também acolher momentos de análise e silêncio.",
+          "atencao": "Procurar uma conversa agradável para todos pode deixar uma dúvida importante sem nome.",
+          "acao": "Convide cada participante a indicar uma dúvida e reúna as respostas antes de buscar uma conclusão.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Reconhecimento na medida da conversa",
+          "leitura": "Você dispõe da Influência com a mesma intensidade dos demais fatores, combinando expressão e outras formas de participação. Ao oferecer feedback, pode reconhecer uma contribuição e conversar sobre uma melhoria sem depender apenas do incentivo.",
+          "atencao": "Um elogio muito amplo pode não mostrar à pessoa qual contribuição você realmente valorizou.",
+          "acao": "Associe o reconhecimento a uma atitude observável e explique o efeito dela no trabalho.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Relacionamento e critério no acordo",
+          "leitura": "Com os quatro fatores iguais, a Influência oferece conexão sem ser seu único caminho para construir entendimento. Em uma negociação com um fornecedor, você pode cultivar proximidade e examinar as condições propostas.",
+          "atencao": "A boa sintonia da conversa não garante que as duas partes tenham entendido o mesmo compromisso.",
+          "acao": "Peça que cada parte descreva o que entendeu sobre a entrega antes de registrar o acordo.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Entusiasmo que convive com reflexão",
+          "leitura": "A Influência compartilha igualmente o espaço com os demais fatores no seu modo de trabalhar. Durante uma mudança de prioridade, você pode transmitir ânimo e ainda reservar tempo para compreender as implicações da nova demanda.",
+          "atencao": "Tentar manter o clima positivo pode tornar menos visível uma preocupação legítima da equipe.",
+          "acao": "Pergunte o que anima e o que preocupa as pessoas nessa mudança, acolhendo as duas respostas sem corrigir o tom.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-5": {
+      "position": 1,
+      "level": 5,
+      "label": "1º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Uma conversa que convida",
+          "leitura": "A Influência presente favorece sua comunicação e a aproximação com quem trabalha com você. Em uma reunião de planejamento, você tende a compartilhar ideias de modo acessível e estimular a participação do grupo.",
+          "atencao": "Seu convite pode alcançar mais facilmente quem já costuma falar do que quem prefere elaborar em silêncio.",
+          "acao": "Envie a pergunta principal antes do encontro e ofereça também um canal escrito para contribuições.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Incentivo que ajuda a aprender",
+          "leitura": "Você tende a usar o relacionamento e o reconhecimento como caminhos frequentes para colaborar. Ao dar feedback sobre uma entrega, pode destacar avanços de um jeito que facilita a conversa sobre desenvolvimento.",
+          "atencao": "A vontade de encorajar pode suavizar tanto uma orientação que o ajuste fique pouco claro.",
+          "acao": "Depois do reconhecimento, nomeie uma mudança concreta e confira como a pessoa pretende experimentá-la.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Persuasão com base compartilhada",
+          "leitura": "A Influência presente ajuda você a tornar propostas atraentes e estabelecer contato com seu público. Em uma apresentação de projeto, você pode usar exemplos próximos da rotina para despertar interesse.",
+          "atencao": "Uma história envolvente pode não responder à dúvida prática de quem precisa aprovar o projeto.",
+          "acao": "Acrescente à narrativa uma evidência verificável e reserve uma pausa para perguntas sobre viabilidade.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Proximidade para combinar responsabilidades",
+          "leitura": "Você costuma encontrar na comunicação um recurso para gerar adesão ao trabalho. Ao delegar uma atividade, pode explicar sua importância e demonstrar confiança em quem vai realizá-la.",
+          "atencao": "O incentivo pode ser interpretado como liberdade maior do que a atividade permite.",
+          "acao": "Converse sobre o resultado esperado e peça à pessoa que descreva como pretende começar.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-6": {
+      "position": 1,
+      "level": 6,
+      "label": "1º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Presença que movimenta a troca",
+          "leitura": "A Influência marcante dá bastante expressão à sua maneira de participar e criar vínculos. Numa reunião entre áreas, você tende a conectar pessoas e dar vida à discussão com exemplos e comentários.",
+          "atencao": "O volume de intervenções pode reduzir o tempo de quem traz uma perspectiva menos espontânea.",
+          "acao": "Faça sua contribuição inicial e deixe duas pessoas se manifestarem antes de voltar à conversa.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Ânimo acompanhado de realidade",
+          "leitura": "Você recorre com facilidade ao entusiasmo para envolver as pessoas em torno de uma entrega. Quando um prazo aperta, pode transmitir confiança e recuperar a disposição da equipe para colaborar.",
+          "atencao": "Sua mensagem otimista pode soar como garantia de que todos conseguirão entregar sem dificuldade.",
+          "acao": "Pergunte qual parte do trabalho está em risco e ajuste sua mensagem ao que a equipe consegue sustentar.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Uma ponte entre versões diferentes",
+          "leitura": "A Influência marcante favorece sua disposição para conversar e preservar relacionamentos. Em um conflito entre colegas, você pode buscar pontos de aproximação e incentivar a retomada do diálogo.",
+          "atencao": "A pressa em recuperar a cordialidade pode encobrir o motivo concreto da divergência.",
+          "acao": "Peça que cada pessoa explique o impacto do problema antes de sugerir qualquer reconciliação.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Ideias que encontram interlocutores",
+          "leitura": "Você costuma mobilizar interesse por meio de uma comunicação expressiva e próxima. Ao apresentar uma proposta a um cliente, pode perceber reações e adaptar os exemplos para manter a conexão.",
+          "atencao": "Adaptar a fala a cada reação pode diluir uma informação que precisa permanecer estável.",
+          "acao": "Defina previamente a mensagem central e diferencie os exemplos flexíveis das condições que não mudam.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-7": {
+      "position": 1,
+      "level": 7,
+      "label": "1º lugar — muito marcante",
+      "variants": {
+        "1": {
+          "titulo": "Entusiasmo com espaço de escuta",
+          "leitura": "A Influência muito marcante torna sua presença comunicativa especialmente visível no trabalho. Em uma reunião de criação, você pode lançar muitas ideias e contagiar o grupo com possibilidades.",
+          "atencao": "A sequência de sugestões pode ocupar o espaço necessário para avaliar e desenvolver as ideias alheias.",
+          "acao": "Limite sua abertura a uma proposta e faça uma pergunta genuína antes de acrescentar outra.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Acolher a crítica sem perder a conexão",
+          "leitura": "Você tende a investir bastante na troca e no reconhecimento que recebe das pessoas. Ao ouvir um feedback sobre sua comunicação, pode procurar sinais de aprovação enquanto explica suas intenções.",
+          "atencao": "Buscar recuperar a boa impressão rapidamente pode desviar a conversa do comportamento apontado.",
+          "acao": "Ouça o exemplo até o fim e resuma o impacto relatado antes de contextualizar sua intenção.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Promessas que cabem no entusiasmo",
+          "leitura": "A Influência muito marcante fortalece sua capacidade de gerar interesse e aproximar interlocutores. Em uma negociação comercial, você pode criar confiança rapidamente e apresentar possibilidades com grande animação.",
+          "atencao": "O desejo de manter o interesse pode levar você a sugerir benefícios ainda não confirmados.",
+          "acao": "Separe em voz alta o que está disponível do que depende de validação e só confirme o segundo ponto após consultar os responsáveis.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Vínculo que não apaga a divergência",
+          "leitura": "Sua comunicação calorosa tende a ter bastante força na maneira como você lida com as pessoas. Diante de um conflito sobre responsabilidades, você pode tentar restaurar a proximidade com humor e conversa.",
+          "atencao": "Uma tentativa de descontrair pode ser recebida como pouca consideração pelo incômodo de alguém.",
+          "acao": "Reconheça o desconforto sem brincar e convide cada envolvido a explicitar a responsabilidade que precisa esclarecer.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-8": {
+      "position": 1,
+      "level": 8,
+      "label": "1º lugar — dominante",
+      "variants": {
+        "1": {
+          "titulo": "Expressão intensa, participação distribuída",
+          "leitura": "A Influência dominante faz da comunicação e da mobilização social recursos muito intensos no seu trabalho. Durante uma reunião de alinhamento, você pode sustentar boa parte da conversa e manter o grupo animado com sua presença.",
+          "atencao": "O excesso de fala pode produzir concordância aparente sem revelar o que as outras pessoas realmente pensam.",
+          "acao": "Combine rodadas curtas de contribuição e fale por último na discussão da proposta principal.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Valor profissional além dos aplausos",
+          "leitura": "Com a Influência dominante, a resposta do público pode ter grande peso na sua experiência de comunicação. Em uma apresentação à liderança, você pode investir muita energia em envolver a plateia e observar suas reações.",
+          "atencao": "Uma recepção contida pode parecer rejeição e estimular explicações cada vez mais longas.",
+          "acao": "Defina o resultado que a apresentação precisa gerar e peça uma avaliação objetiva sobre clareza e utilidade ao final.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Mobilização sem garantias excessivas",
+          "leitura": "Você tende a usar o entusiasmo de forma muito intensa para aproximar pessoas de um objetivo. Quando uma entrega corre risco de atraso, pode multiplicar mensagens de incentivo e transmitir que tudo dará certo.",
+          "atencao": "A insistência no otimismo pode dificultar que alguém comunique uma limitação real.",
+          "acao": "Suspenda as garantias e abra uma conversa específica sobre impedimentos, acolhendo notícias difíceis antes de propor incentivos.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Persuadir sem ultrapassar o possível",
+          "leitura": "A Influência dominante pode dar enorme força ao seu desejo de conquistar adesão e manter o interesse dos interlocutores. Em uma negociação de parceria, você tende a explorar afinidades e ampliar as possibilidades da proposta com muita expressividade.",
+          "atencao": "O esforço para encantar pode criar expectativas que a operação não consegue atender.",
+          "acao": "Submeta qualquer nova condição à verificação de viabilidade e registre por escrito apenas os compromissos já confirmados.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-1": {
+      "position": 2,
+      "level": 1,
+      "label": "2º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Um começo seguro para participar",
+          "leitura": "A Influência quase ausente oferece pouco apoio espontâneo à sua comunicação relacional, mesmo quando outras formas de atuação estão mais acessíveis. Em uma reunião de equipe, você pode ter algo útil a acrescentar e ainda precisar de bastante preparo para compartilhar.",
+          "atencao": "Uma contribuição guardada pode fazer com que colegas desconheçam o que você tem a oferecer.",
+          "acao": "Escreva uma observação curta antes do encontro e combine com alguém de confiança um momento para apresentá-la.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Apoio para tornar sua mensagem próxima",
+          "leitura": "Você pode contar pouco com a Influência para dar expressividade às ideias, preferindo outras maneiras de trabalhar. Numa apresentação de resultados, talvez seja mais confortável mostrar os dados do que criar uma conexão com o público.",
+          "atencao": "Sem uma ligação com a rotina de quem escuta, uma informação relevante pode parecer distante.",
+          "acao": "Ensaie com uma pessoa conhecida uma abertura que explique por que aqueles resultados importam para a equipe.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Reconhecimento em palavras simples",
+          "leitura": "A Influência quase ausente pode tornar pouco natural expressar apreço, sem indicar falta de consideração pelas pessoas. Ao oferecer feedback a um colega, você pode comentar o trabalho sem verbalizar a contribuição que valorizou.",
+          "atencao": "Quem recebe apenas observações sobre a tarefa pode não perceber que seu esforço foi reconhecido.",
+          "acao": "Prepare uma frase sobre uma contribuição específica e pratique dizê-la de forma direta, sem exigir de si um tom expansivo.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Uma ponte pequena para o diálogo",
+          "leitura": "Você tende a buscar outros recursos antes da Influência quando precisa lidar com uma situação delicada. Em um conflito de projeto, iniciar uma conversa de aproximação pode exigir apoio e preparação adicional.",
+          "atencao": "Esperar sentir desenvoltura para conversar pode prolongar o afastamento entre as pessoas.",
+          "acao": "Peça ajuda para organizar uma abertura respeitosa e proponha uma conversa breve sobre um único ponto do desacordo.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-2": {
+      "position": 2,
+      "level": 2,
+      "label": "2º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Participação preparada, sem espetáculo",
+          "leitura": "A Influência discreta aparece como um apoio limitado à sua forma mais habitual de trabalhar. Em uma reunião com pessoas novas, você pode preferir observar antes de puxar conversa ou compartilhar uma ideia.",
+          "atencao": "A espera por um convite explícito pode reduzir suas oportunidades de construir contato.",
+          "acao": "Prepare uma pergunta sobre o trabalho de outra pessoa e use-a como primeiro passo de participação.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Visibilidade construída aos poucos",
+          "leitura": "Você tende a demonstrar entusiasmo com reserva, contando com uma Influência discreta nas interações. Ao entregar uma atividade antes do prazo, pode comunicar a conclusão sem mostrar o benefício que ela trouxe ao time.",
+          "atencao": "A utilidade da sua contribuição pode passar despercebida quando o relato se limita ao término da tarefa.",
+          "acao": "Acrescente à atualização um efeito concreto da entrega e treine essa síntese em uma conversa individual.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Um convite claro para colaborar",
+          "leitura": "A Influência discreta pode ajudar pontualmente no relacionamento, mas iniciar mobilização talvez não seja tão espontâneo para você. Ao delegar uma atividade, pode explicar o procedimento sem conversar muito sobre o sentido da participação.",
+          "atencao": "Uma orientação correta pode não despertar envolvimento quando a pessoa não entende sua contribuição.",
+          "acao": "Inclua uma frase sobre a importância da tarefa e pergunte que parte desperta mais interesse ou dúvida.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Preparação para apresentar valor",
+          "leitura": "Você dispõe de uma Influência discreta para dar atratividade àquilo que propõe. Em uma negociação interna por recursos, pode explicar a necessidade com cuidado e explorar pouco os benefícios para a outra área.",
+          "atencao": "Seu pedido pode parecer restrito ao próprio setor se a conexão com o trabalho do interlocutor não ficar clara.",
+          "acao": "Liste um benefício compartilhado e ensaie como apresentá-lo com alguém que conheça as duas áreas.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-3": {
+      "position": 2,
+      "level": 3,
+      "label": "2º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Uma contribuição que ganha voz",
+          "leitura": "A Influência moderada-baixa oferece algum apoio à comunicação, embora você possa preferir formas menos expostas de participar. Em uma reunião de revisão, pode compartilhar sua avaliação com mais facilidade quando já teve tempo para organizar a fala.",
+          "atencao": "Deixar toda contribuição para o fim pode tornar sua perspectiva menos aproveitável na discussão.",
+          "acao": "Escolha um ponto para apresentar na primeira parte do encontro e leve uma anotação como apoio.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Apreço com mais nitidez",
+          "leitura": "Você pode recorrer à Influência moderada-baixa para aproximar pessoas sem precisar de grande expressividade. Ao dar feedback, tende a encontrar mais facilidade em reconhecer um resultado do que em demonstrar entusiasmo por ele.",
+          "atencao": "Um reconhecimento genérico ou muito breve pode não comunicar o valor que você percebeu.",
+          "acao": "Descreva uma atitude que ajudou o trabalho e diga à pessoa por que ela fez diferença.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Uma história curta como apoio",
+          "leitura": "A Influência moderada-baixa permite alguma adaptação da mensagem ao público, ainda que isso peça intenção. Numa apresentação técnica, você pode explicar o conteúdo com segurança e precisar de preparo para torná-lo mais próximo da audiência.",
+          "atencao": "A sequência de informações pode exigir esforço demais de quem não conhece o assunto.",
+          "acao": "Treine um exemplo cotidiano que ilustre a ideia principal e peça a um colega que conte o que entendeu.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Contato antes do novo pedido",
+          "leitura": "Você conta com a Influência moderada-baixa como um recurso de aproximação que pode ser desenvolvido aos poucos. Diante de uma mudança de prioridade, pode comunicar a nova tarefa sem explorar muito a reação das pessoas.",
+          "atencao": "A ausência de perguntas sobre a mudança pode ser confundida com aceitação tranquila.",
+          "acao": "Reserve uma conversa breve para ouvir como a equipe recebeu o pedido e pratique acolher a resposta antes de explicar os motivos.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-4": {
+      "position": 2,
+      "level": 4,
+      "label": "2º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Comunicação disponível, sem forçar",
+          "leitura": "A Influência equilibrada oferece um apoio acessível à sua maneira principal de atuar. Em uma reunião com outra área, você pode estabelecer contato e explicar seu ponto sem precisar manter uma postura expansiva o tempo todo.",
+          "atencao": "Uma troca cordial pode terminar sem que as dúvidas menos confortáveis tenham aparecido.",
+          "acao": "Pergunte qual parte da proposta ainda merece esclarecimento e espere a resposta sem preencher a pausa.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Incentivo junto da orientação",
+          "leitura": "Você conta com uma Influência equilibrada para tornar suas interações mais próximas quando necessário. Ao delegar uma tarefa, pode demonstrar confiança e conversar sobre o significado daquela contribuição.",
+          "atencao": "Presumir que a boa relação já garante entendimento pode deixar expectativas implícitas.",
+          "acao": "Convide a pessoa a explicar a entrega com as próprias palavras e esclareça o que ainda estiver aberto.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Interesse pelo que o outro precisa",
+          "leitura": "A Influência equilibrada pode apoiar sua capacidade de adaptar a comunicação sem se tornar sua única referência. Em uma negociação de escopo, você pode explorar interesses comuns e apresentar os benefícios de uma alternativa.",
+          "atencao": "Valorizar a afinidade pode fazer uma objeção concreta parecer apenas falta de convencimento.",
+          "acao": "Pergunte qual condição impede o aceite e avalie essa informação antes de reformular seus argumentos.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Acolhimento com assunto definido",
+          "leitura": "Você pode usar a Influência equilibrada para manter proximidade ao tratar de temas difíceis. Num conflito sobre a distribuição de trabalho, tende a ter algum recurso para conversar sem romper o relacionamento.",
+          "atencao": "Cuidar do tom não substitui esclarecer o que provocou o incômodo.",
+          "acao": "Nomeie a situação que precisa ser discutida e ofereça espaço para a outra pessoa descrever como foi afetada.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-5": {
+      "position": 2,
+      "level": 5,
+      "label": "2º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Interesse que facilita a aproximação",
+          "leitura": "A Influência presente complementa sua atuação com disponibilidade para conversar e criar vínculos. Em uma reunião de integração, você pode conectar experiências de colegas e ajudar pessoas recém-chegadas a participar.",
+          "atencao": "Ao tentar incluir alguém, você pode acabar falando por essa pessoa.",
+          "acao": "Faça um convite aberto à participação e deixe que a pessoa escolha o que deseja compartilhar.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Reconhecimento que orienta a continuidade",
+          "leitura": "Você tem na Influência presente um apoio para encorajar e tornar a comunicação mais receptiva. Ao dar feedback após uma entrega, pode demonstrar satisfação e reforçar a contribuição do colega.",
+          "atencao": "O elogio pode gerar boa sensação sem indicar o comportamento que merece continuidade.",
+          "acao": "Relacione sua apreciação a uma escolha concreta feita pela pessoa e pergunte como ela pode repeti-la em outro contexto.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Mensagem que aproxima conteúdo e público",
+          "leitura": "A Influência presente acrescenta expressividade à maneira como você apresenta suas ideias. Em uma apresentação de melhoria, pode traduzir informações em exemplos que despertam interesse dos ouvintes.",
+          "atencao": "A adaptação ao público pode deixar uma limitação da proposta com menos destaque do que precisa.",
+          "acao": "Mostre o benefício junto da principal restrição e convide o público a comentar ambos.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Ânimo para reorganizar a rota",
+          "leitura": "Você costuma contar com a Influência presente para apoiar a cooperação quando a rotina muda. Numa troca de prioridade, pode conversar com os envolvidos e ajudar a construir disposição para o novo trabalho.",
+          "atencao": "O desejo de manter as pessoas motivadas pode fazer você minimizar a frustração com o que foi interrompido.",
+          "acao": "Reconheça o esforço já realizado e pergunte o que precisa ser preservado antes de incentivar a próxima etapa.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-6": {
+      "position": 2,
+      "level": 6,
+      "label": "2º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Conexões que fortalecem o trabalho",
+          "leitura": "A Influência marcante amplia sua capacidade de criar contato, mesmo quando outro recurso orienta primeiro sua atuação. Em uma reunião entre equipes, você pode aproximar interesses e trazer energia para a troca.",
+          "atencao": "Sua facilidade de contato pode concentrar a conversa nas pessoas com quem a sintonia aparece mais rápido.",
+          "acao": "Convide alguém com quem você interage menos a comentar uma necessidade da própria área.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Persuasão com condições visíveis",
+          "leitura": "Você dispõe de uma Influência marcante para tornar suas propostas envolventes e cultivar relações profissionais. Numa negociação de serviço, pode associar benefícios a uma conversa próxima e receptiva.",
+          "atencao": "A fluidez do diálogo pode levar você a interpretar interesse como aceite.",
+          "acao": "Pergunte o que ainda falta para a decisão e confirme separadamente cada condição discutida.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Confiança que acompanha a autonomia",
+          "leitura": "A Influência marcante ajuda você a transmitir confiança e despertar envolvimento nas pessoas. Ao delegar uma frente de projeto, pode entusiasmar o colega com as possibilidades de contribuição.",
+          "atencao": "Uma fala muito animada pode dificultar que a pessoa admita insegurança sobre a tarefa.",
+          "acao": "Dê permissão explícita para trazer dificuldades e pergunte qual apoio seria útil no começo.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Incentivo sem esconder obstáculos",
+          "leitura": "Você pode recorrer com força à Influência para manter as pessoas conectadas a uma entrega. Quando o prazo se aproxima, tende a usar mensagens positivas e contato frequente para sustentar a colaboração.",
+          "atencao": "A repetição de estímulos pode ocupar o lugar da escuta sobre o que impede o avanço.",
+          "acao": "Troque uma mensagem motivacional por uma pergunta sobre bloqueios e ajude a encaminhar a resposta recebida.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-7": {
+      "position": 2,
+      "level": 7,
+      "label": "2º lugar — muito marcante",
+      "variants": {
+        "1": {
+          "titulo": "Participar sem ocupar toda a conversa",
+          "leitura": "A Influência muito marcante acrescenta grande intensidade comunicativa ao seu jeito de trabalhar. Em uma reunião de solução de problemas, você pode elaborar ideias em voz alta e atrair rapidamente a atenção dos colegas.",
+          "atencao": "Seu raciocínio falado pode ser entendido como proposta pronta e interromper a elaboração do grupo.",
+          "acao": "Avise quando estiver apenas explorando uma hipótese e peça outras leituras antes de desenvolvê-la.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Escuta protegida da busca de aprovação",
+          "leitura": "Você pode dar bastante importância ao vínculo e à resposta que recebe, com a Influência muito marcante como apoio à sua atuação. Ao receber feedback, tende a querer conversar amplamente e preservar uma imagem positiva na relação.",
+          "atencao": "Explicações sucessivas podem parecer uma tentativa de convencer a pessoa a retirar a crítica.",
+          "acao": "Faça uma pergunta para compreender o exemplo e anote o ajuste que deseja testar antes de responder às avaliações.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Energia sem inflar a proposta",
+          "leitura": "A Influência muito marcante torna seu entusiasmo um recurso poderoso para despertar interesse. Durante uma apresentação de projeto, você pode envolver a audiência com histórias, possibilidades e forte presença.",
+          "atencao": "O brilho da apresentação pode elevar as expectativas para além do que foi validado.",
+          "acao": "Identifique explicitamente quais resultados são hipóteses e mostre o que já tem sustentação concreta.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Proximidade com respeito ao desconforto",
+          "leitura": "Você tende a mobilizar bastante sua comunicação para manter relacionamentos ativos no trabalho. Em um conflito com outra área, pode buscar contatos frequentes e argumentos conciliadores para recuperar a boa relação.",
+          "atencao": "Insistir na aproximação pode pressionar quem ainda precisa de tempo para formular o incômodo.",
+          "acao": "Pergunte quando e por qual canal a outra pessoa prefere retomar o assunto, respeitando o intervalo combinado.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-8": {
+      "position": 2,
+      "level": 8,
+      "label": "2º lugar — dominante",
+      "variants": {
+        "1": {
+          "titulo": "Uma pausa para a voz do outro",
+          "leitura": "A Influência dominante pode aparecer com enorme intensidade na comunicação, ainda que outra tendência conduza sua atuação. Em uma reunião de acompanhamento, você pode ampliar explicações e histórias para manter todos envolvidos.",
+          "atencao": "O esforço contínuo para prender a atenção pode cansar o grupo e esconder perguntas não feitas.",
+          "acao": "Reduza sua exposição a uma mensagem central e abra uma rodada em que você apenas escute e registre dúvidas.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Reconhecimento sem depender da reação",
+          "leitura": "Você pode investir energia muito alta em gerar conexão e receber retorno, com a Influência dominante nas interações. Ao apresentar resultados, tende a observar a receptividade da audiência e buscar sinais de valorização do seu trabalho.",
+          "atencao": "Uma reação pouco expressiva pode provocar insistência em demonstrar mérito em vez de verificar a compreensão.",
+          "acao": "Separe o valor da sua contribuição da reação imediata e solicite comentários específicos sobre a utilidade do conteúdo.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Encanto submetido à viabilidade",
+          "leitura": "A Influência dominante intensifica sua disposição para persuadir e conquistar adesão às propostas. Em uma negociação com cliente, você pode explorar muitas possibilidades para preservar o interesse e a proximidade.",
+          "atencao": "A necessidade de manter o entusiasmo da conversa pode favorecer concessões que você não tem como assegurar.",
+          "acao": "Interrompa a confirmação de condições novas até obter validação interna e comunique com transparência o que segue em análise.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Entusiasmo com espaço para recusa",
+          "leitura": "Você tende a expressar incentivo e confiança com intensidade muito alta quando mobiliza outras pessoas. Ao delegar uma entrega desafiadora, pode destacar tanto a oportunidade que a conversa ganha um tom de celebração antecipada.",
+          "atencao": "A pessoa pode sentir que admitir falta de tempo ou preparo decepcionará você.",
+          "acao": "Pergunte diretamente o que poderia tornar a entrega inviável e acolha uma recusa antes de discutir alternativas de participação.",
+          "status": "rascunho"
+        }
+      }
+    }
+  }
+}
