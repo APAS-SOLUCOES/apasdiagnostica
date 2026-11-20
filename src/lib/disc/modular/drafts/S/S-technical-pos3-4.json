@@ -1,0 +1,357 @@
+{
+  "factor": "S",
+  "report": "technical",
+  "status": "rascunho",
+  "diagnostics": {
+    "3-1": {
+      "position": 3,
+      "level": 1,
+      "label": "3º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Pausa apoiada na reunião",
+          "leitura": "A Estabilidade quase ausente na terceira posição sugere pouca sustentação espontânea de um ritmo paciente de escuta. Em reunião de acompanhamento, pode haver avanço para o próximo assunto antes da conclusão dos relatos.",
+          "atencao": "Cobrar atenção prolongada sem orientar a prática pode aumentar interrupções e deixar impedimentos sem exame.",
+          "acao": "Ofereça apoio com uma pauta curta e treine a espera até o encerramento de cada relato. Em 30 dias, observe se os impedimentos foram ouvidos antes dos encaminhamentos.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback com tempo de elaboração",
+          "leitura": "Na terceira posição, a Estabilidade quase ausente pode indicar reduzida disposição inicial para acompanhar o tempo de assimilação de orientações. Durante um feedback corretivo, a conversa pode mudar de tema antes de conferir como a orientação foi recebida.",
+          "atencao": "A rapidez da cobrança pode ser confundida com clareza e impedir a identificação de dúvidas.",
+          "acao": "Apoie a preparação de uma conversa com pausas e ensaie uma pergunta de compreensão após cada orientação. Em 30 dias, verifique se os ajustes combinados foram entendidos sem sucessivas reformulações.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Cadência inicial para cumprir prazos",
+          "leitura": "Com Estabilidade quase ausente em terceiro lugar, a manutenção de uma sequência regular de trabalho pode exigir suporte externo. Em uma entrega semanal, o esforço pode se concentrar no encerramento do prazo em vez de seguir etapas estáveis.",
+          "atencao": "Exigir constância apenas no vencimento dificulta corrigir oscilações durante a execução.",
+          "acao": "Forneça apoio para dividir a entrega e treine o registro diário do avanço. Em 30 dias, confira se as etapas passaram a ser concluídas em intervalos mais regulares.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Escuta assistida no desacordo",
+          "leitura": "A terceira posição com Estabilidade quase ausente sugere pouca paciência inicial para acompanhar versões divergentes. Em um conflito sobre distribuição de tarefas, pode haver tentativa de encerrar a discussão antes de compreender as necessidades da equipe.",
+          "atencao": "Pressionar por conciliação rápida pode ocultar dificuldades que reaparecem na execução.",
+          "acao": "Faça a mediação inicial e treine a reformulação do pedido de cada parte antes de propor soluções. Em 30 dias, observe se os acordos passaram a contemplar as dificuldades relatadas.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-2": {
+      "position": 3,
+      "level": 2,
+      "label": "3º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Rotina delegada com suporte",
+          "leitura": "A Estabilidade discreta na terceira posição sugere sustentação limitada de rotinas sem reforço do contexto. Ao receber a responsabilidade por um acompanhamento recorrente, pode haver alternância entre períodos de atenção e intervalos sem retorno.",
+          "atencao": "Delegar continuidade sem pontos de apoio pode deixar a equipe sem referência para pedir ajuda.",
+          "acao": "Disponibilize um calendário simples e treine uma checagem breve com os responsáveis pelas entregas. Em 30 dias, observe se os retornos ocorreram na cadência acordada.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Paciência treinada na negociação",
+          "leitura": "Na terceira posição, a Estabilidade discreta pode reduzir a tolerância a negociações que exigem várias rodadas de escuta. Ao pactuar uma escala, pode surgir pressa para fechar a proposta sem explorar restrições de disponibilidade.",
+          "atencao": "Acordos rápidos podem transferir dificuldades de cobertura para a equipe executora.",
+          "acao": "Ofereça apoio para organizar as restrições e ensaie perguntas antes de apresentar a solução. Em 30 dias, verifique se os acordos de escala exigiram menos correções por condições não ouvidas.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Transição acompanhada de prioridades",
+          "leitura": "Com intensidade discreta em terceiro lugar, a Estabilidade pode oferecer pouca proteção espontânea à continuidade quando a prioridade muda. Uma solicitação urgente pode deslocar atividades em curso sem preparação suficiente de quem depende delas.",
+          "atencao": "A sucessão de trocas sem passagem definida pode ampliar a imprevisibilidade do trabalho coletivo.",
+          "acao": "Apoie o planejamento da transição e treine o aviso sobre o que será interrompido e retomado. Em 30 dias, acompanhe se as dependências receberam informação antes da troca de foco.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Acolhimento com roteiro de continuidade",
+          "leitura": "A Estabilidade discreta em terceira posição pode indicar apoio pontual, ainda pouco regular, na integração de um colega. Após a apresentação inicial, o acompanhamento das dúvidas pode depender de novas solicitações.",
+          "atencao": "Presumir adaptação após o primeiro contato pode deixar dificuldades básicas sem assistência.",
+          "acao": "Ofereça um roteiro de acolhimento e pratique uma pergunta diária sobre obstáculos da rotina. Em 30 dias, confira se as dúvidas receberam acompanhamento até a resolução.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-3": {
+      "position": 3,
+      "level": 3,
+      "label": "3º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Escuta sustentada por pauta",
+          "leitura": "A Estabilidade moderada-baixa na terceira posição sugere alguma disponibilidade para ouvir, com menor sustentação em conversas demoradas. Em uma reunião operacional, a paciência pode diminuir quando vários participantes descrevem dificuldades semelhantes.",
+          "atencao": "Interromper relatos por aparente repetição pode eliminar diferenças relevantes entre os problemas.",
+          "acao": "Apoie a organização de blocos de escuta e treine uma síntese antes de encerrar cada bloco. Em 30 dias, observe se as sínteses preservaram os obstáculos específicos de cada frente.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Acompanhamento após a orientação",
+          "leitura": "Na terceira posição, a Estabilidade moderada-baixa pode favorecer apoio inicial sem assegurar continuidade suficiente. Depois de um feedback sobre retrabalho, pode haver orientação adequada, mas poucas retomadas para acompanhar a prática.",
+          "atencao": "Cobrar mudança apenas na avaliação seguinte pode deixar dificuldades de aprendizagem acumuladas.",
+          "acao": "Forneça apoio para marcar revisões curtas e ensaie perguntas sobre a aplicação da orientação. Em 30 dias, verifique se as revisões permitiram corrigir dificuldades antes de nova entrega.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Regularidade apoiada em marcos",
+          "leitura": "Com Estabilidade moderada-baixa em terceiro lugar, a constância pode depender da visibilidade das etapas de trabalho. Em um prazo de várias semanas, o ritmo tende a ser mais regular quando os marcos intermediários estão explícitos.",
+          "atencao": "Supor que o prazo final basta para organizar a execução pode favorecer retomadas tardias.",
+          "acao": "Ajude a distribuir os marcos e treine a comunicação de pequenos desvios de ritmo. Em 30 dias, confira se os sinais de atraso chegaram enquanto ainda havia margem de ajuste.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Disponibilidade para ouvir divergências",
+          "leitura": "A terceira posição da Estabilidade moderada-baixa sugere paciência acessível, porém sensível à duração dos desacordos. Num conflito de atendimento, pode haver escuta inicial seguida de pressa para encerrar a discussão.",
+          "atencao": "O encerramento prematuro pode manter ressentimentos que prejudicam o apoio entre turnos.",
+          "acao": "Ofereça suporte para delimitar a conversa e treine a confirmação das necessidades antes do acordo. Em 30 dias, observe se o apoio entre turnos se manteve após a mediação.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-4": {
+      "position": 3,
+      "level": 4,
+      "label": "3º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Continuidade na responsabilidade delegada",
+          "leitura": "A Estabilidade equilibrada em terceira posição sugere capacidade de manter uma cadência de apoio sem depender de rotina inteiramente fixa. Na delegação de uma atividade recorrente, pode haver acompanhamento regular com espaço para ajustes de execução.",
+          "atencao": "Transformar disponibilidade em obrigação de cobrir toda ausência pode concentrar trabalho além da capacidade.",
+          "acao": "Delegue a continuidade com limites de cobertura e cobre aviso antecipado sobre sobrecarga. Em 30 dias, observe se a cadência foi mantida sem acúmulo de substituições.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Negociação com tempo proporcional",
+          "leitura": "Na terceira posição, a Estabilidade equilibrada pode favorecer escuta paciente sem prolongar indefinidamente a negociação. Ao combinar um calendário entre áreas, pode haver consideração das rotinas existentes junto à busca de um prazo viável.",
+          "atencao": "Respeitar o ritmo das áreas não deve ocultar incompatibilidades entre demanda e capacidade.",
+          "acao": "Peça a explicitação das restrições e cobre uma data para concluir a pactuação. Em 30 dias, verifique se o calendário permaneceu viável diante da carga real.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Mudança com passagem organizada",
+          "leitura": "Com Estabilidade equilibrada no terceiro lugar, a preferência por previsibilidade pode coexistir com ajustes de prioridade. Diante de uma nova demanda, tende a haver interesse em organizar a passagem antes de abandonar o trabalho anterior.",
+          "atencao": "Confundir preparação com atraso pode levar a liderança a suprimir cuidados necessários à transição.",
+          "acao": "Comunique a razão da mudança e pactue quais atividades precisam de passagem documentada. Em 30 dias, acompanhe se a transição preservou compromissos essenciais sem impedir o novo foco.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Integração com apoio sustentável",
+          "leitura": "A Estabilidade equilibrada em terceira posição pode apoiar uma integração gradual e atenta às dúvidas de rotina. No acolhimento de um colega, a ajuda tende a combinar presença regular e incentivo à autonomia.",
+          "atencao": "Manter ajuda sem critério de retirada pode prolongar dependência em tarefas já aprendidas.",
+          "acao": "Defina momentos de apoio e dê feedback sobre quando orientar em vez de executar pelo colega. Em 30 dias, confira se aumentou a autonomia nas tarefas acompanhadas.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-5": {
+      "position": 3,
+      "level": 5,
+      "label": "3º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Reunião com cadência protetora",
+          "leitura": "A Estabilidade presente na terceira posição sugere valorização consistente de escuta e continuidade nos encontros da equipe. Em uma reunião de rotina, pode haver cuidado em ouvir dificuldades antes de alterar combinações estabelecidas.",
+          "atencao": "A preservação do espaço de fala pode alongar o encontro e adiar decisões necessárias.",
+          "acao": "Mantenha a rodada de escuta e cobre o fechamento dos encaminhamentos no tempo previsto. Em 30 dias, observe se a reunião acolheu dificuldades sem postergar decisões recorrentes.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback acolhedor e exigente",
+          "leitura": "Na terceira posição, a Estabilidade presente pode favorecer paciência para acompanhar mudanças de comportamento. Em um feedback sobre queda de qualidade, o apoio tende a incluir disponibilidade para retomar dúvidas durante a execução.",
+          "atencao": "O cuidado com o vínculo pode suavizar demais a cobrança e deixar o padrão esperado ambíguo.",
+          "acao": "Reconheça a disponibilidade para ajudar e solicite a formulação direta do ajuste necessário. Em 30 dias, verifique se o suporte resultou em mudança observável no padrão de entrega.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Prazo protegido pela constância",
+          "leitura": "Com Estabilidade presente em terceiro lugar, a execução tende a valorizar ritmo regular e manutenção de compromissos. Ao conduzir uma entrega longa, pode haver preferência por preservar a sequência planejada mesmo diante de pedidos adicionais.",
+          "atencao": "Defender o cronograma sem reavaliar impactos pode transformar previsibilidade em rigidez operacional.",
+          "acao": "Cobre atualização da capacidade a cada nova demanda e pactue critérios para revisar o plano. Em 30 dias, confira se o ritmo permaneceu sustentável após os ajustes autorizados.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Conciliação sem ocultar diferenças",
+          "leitura": "A terceira posição com Estabilidade presente sugere disposição consistente para preservar cooperação em situações de tensão. Em um conflito sobre cobertura de ausências, pode haver esforço para acomodar necessidades e manter a convivência.",
+          "atencao": "Evitar desconforto a qualquer custo pode distribuir concessões de forma desigual.",
+          "acao": "Peça que as necessidades sejam ouvidas e cobre critérios explícitos para repartir a cobertura. Em 30 dias, observe se o acordo foi cumprido sem concentrar concessões nos mesmos integrantes.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-6": {
+      "position": 3,
+      "level": 6,
+      "label": "3º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Delegação sem dependência permanente",
+          "leitura": "A Estabilidade marcante na terceira posição sugere forte investimento na continuidade e no amparo à equipe. Ao assumir uma rotina delegada, pode haver disponibilidade persistente para ajudar mesmo quando já seria possível transferir parte do acompanhamento.",
+          "atencao": "Apoio excessivamente centralizado pode criar dependência e dificultar a redistribuição de responsabilidades.",
+          "acao": "Delegue também a formação de substitutos e cobre limites para intervenções diretas. Em 30 dias, verifique se a rotina funcionou durante ausências sem recorrer ao mesmo ponto de apoio.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Negociação além da zona conhecida",
+          "leitura": "Na terceira posição, a Estabilidade marcante pode acentuar a preferência por acordos previsíveis e relações duradouras. Em uma renegociação de serviço, pode haver resistência a condições novas que alterem o funcionamento habitual.",
+          "atencao": "Preservar o arranjo conhecido sem comparar alternativas pode manter custos operacionais evitáveis.",
+          "acao": "Solicite uma comparação entre continuidade e mudança, com tempo definido para ouvir as partes. Em 30 dias, observe se a decisão considerou alternativas sem se limitar à manutenção do costume.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Repriorização com ruptura delimitada",
+          "leitura": "Com Estabilidade marcante em terceiro lugar, mudanças bruscas podem provocar forte necessidade de recuperar previsibilidade. Ao suspender um projeto em andamento, pode haver insistência em concluir etapas antigas antes de iniciar a nova prioridade.",
+          "atencao": "Exigir adaptação instantânea pode intensificar a resistência e atrasar a reorganização necessária.",
+          "acao": "Explique o que permanece estável e delimite um período curto para encerrar pendências indispensáveis. Em 30 dias, acompanhe se o esforço migrou para a prioridade vigente após a transição combinada.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Acolhimento que libera autonomia",
+          "leitura": "A terceira posição da Estabilidade marcante sugere elevada constância no suporte durante a adaptação de novos integrantes. Na integração de um colega, pode haver acompanhamento próximo e prolongado para evitar desconfortos da aprendizagem.",
+          "atencao": "Proteger de toda dificuldade pode reduzir oportunidades de experimentar e aprender com segurança.",
+          "acao": "Estabeleça tarefas de prática independente e dê feedback sobre a retirada gradual do suporte. Em 30 dias, confira se o colega passou a resolver situações usuais antes de solicitar ajuda.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-1": {
+      "position": 4,
+      "level": 1,
+      "label": "4º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Escuta inicial com amparo",
+          "leitura": "A Estabilidade quase ausente na quarta posição sugere baixa prioridade espontânea para sustentar um ritmo paciente de interação. Em reunião de planejamento, pode haver dificuldade para aguardar a exposição das limitações de cada participante.",
+          "atencao": "Interpretar impaciência como recusa deliberada de cooperação pode gerar cobrança pouco instrutiva.",
+          "acao": "Ofereça apoio para ordenar as falas e treine o registro de uma limitação antes de responder. Em 30 dias, observe se as propostas passaram a incorporar condições trazidas pela equipe.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback dividido em etapas",
+          "leitura": "Na quarta posição, a Estabilidade quase ausente pode sinalizar pouca constância espontânea no acompanhamento de uma orientação. Num feedback de adaptação à função, pode haver expectativa de ajuste imediato após uma única conversa.",
+          "atencao": "Cobrar assimilação instantânea pode aumentar insegurança e esconder necessidades de treino.",
+          "acao": "Disponibilize apoio prático e ensaie a divisão da orientação em passos verificáveis. Em 30 dias, verifique se cada passo recebeu acompanhamento antes da exigência seguinte.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Ritmo diário em aprendizagem",
+          "leitura": "Com Estabilidade quase ausente em quarto lugar, a repetição de pequenas rotinas pode demandar estrutura de apoio. Em uma entrega com conferências diárias, pode haver oscilação na frequência dessas verificações.",
+          "atencao": "Usar apenas cobranças acumuladas pode deixar falhas de continuidade sem correção oportuna.",
+          "acao": "Apoie a criação de lembretes e treine uma conferência curta no mesmo momento do expediente. Em 30 dias, confira se a rotina se manteve também nos dias de maior demanda.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Tolerância assistida à tensão",
+          "leitura": "A quarta posição com Estabilidade quase ausente sugere baixa sustentação inicial de escuta paciente sob tensão. Num conflito sobre troca de turno, pode haver tentativa de resolver pela interrupção da conversa.",
+          "atencao": "A pressa em encerrar o atrito pode deixar necessidades de cobertura sem resposta.",
+          "acao": "Ofereça mediação e pratique a escuta de uma solicitação completa antes de avaliar alternativas. Em 30 dias, observe se os envolvidos conseguiram explicitar necessidades sem interrupções recorrentes.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-2": {
+      "position": 4,
+      "level": 2,
+      "label": "4º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Apoio recorrente na tarefa delegada",
+          "leitura": "A Estabilidade discreta em quarta posição pode indicar baixa regularidade espontânea no suporte a atividades compartilhadas. Ao receber uma delegação de acompanhamento, pode haver resposta a pedidos pontuais sem uma cadência de presença definida.",
+          "atencao": "Cobrar disponibilidade contínua sem delimitar momentos de suporte pode gerar expectativa inviável.",
+          "acao": "Forneça apoio para combinar janelas de atendimento e treine o retorno às pendências registradas. Em 30 dias, verifique se as solicitações receberam continuidade dentro dessas janelas.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Negociação com pausas úteis",
+          "leitura": "Na quarta posição, a Estabilidade discreta sugere paciência limitada para acomodar ritmos distintos de decisão. Em negociação de um novo fluxo, pode haver pressão por concordância antes de ouvir dificuldades de adaptação.",
+          "atencao": "Ignorar o tempo necessário para avaliar impactos pode produzir adesão apenas aparente.",
+          "acao": "Apoie a preparação de perguntas sobre a rotina e ensaie uma pausa para reunir as respostas. Em 30 dias, observe se os ajustes negociados contemplaram obstáculos de adaptação identificados.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Prioridade nova com continuidade mínima",
+          "leitura": "Com Estabilidade discreta no quarto lugar, a mudança de prioridade pode ocorrer com pouca preservação das referências de trabalho. Um pedido emergencial pode levar à suspensão de acompanhamentos sem combinar quando serão retomados.",
+          "atencao": "A interrupção silenciosa de rotinas pode deixar demandas da equipe sem responsável acessível.",
+          "acao": "Ajude a identificar acompanhamentos essenciais e treine a comunicação de uma cobertura temporária. Em 30 dias, confira se as demandas mantiveram uma referência durante as trocas de prioridade.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Integração além do primeiro dia",
+          "leitura": "A quarta posição da Estabilidade discreta pode favorecer ajuda eventual sem continuidade consolidada na integração. Na chegada de um colega, a disponibilidade inicial pode não se repetir durante as primeiras dificuldades práticas.",
+          "atencao": "A falta de retomadas pode ser percebida como ausência de apoio mesmo após uma recepção cordial.",
+          "acao": "Ofereça um plano curto de acompanhamento e pratique a revisão de uma dificuldade por encontro. Em 30 dias, acompanhe se as dúvidas iniciais tiveram resolução e retorno confirmados.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-3": {
+      "position": 4,
+      "level": 3,
+      "label": "4º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Paciência com relatos extensos",
+          "leitura": "A Estabilidade moderada-baixa na quarta posição sugere recursos de escuta que podem precisar de sustentação em situações prolongadas. Em reunião de análise de problemas, o interesse pelo relato pode diminuir antes da exploração das causas.",
+          "atencao": "Acelerar a passagem para soluções pode deixar obstáculos recorrentes sem compreensão suficiente.",
+          "acao": "Ofereça apoio para limitar o tema e treine uma pergunta de aprofundamento antes de propor saídas. Em 30 dias, observe se as soluções passaram a responder às causas relatadas.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback com retomada combinada",
+          "leitura": "Na quarta posição, a Estabilidade moderada-baixa pode indicar acompanhamento mais acessível quando existe uma rotina explícita. Após um feedback sobre organização, a disposição para apoiar pode ser maior em encontros previamente agendados.",
+          "atencao": "Depender apenas de pedidos de ajuda pode atrasar a percepção de dificuldades persistentes.",
+          "acao": "Apoie a marcação de retornos breves e ensaie a revisão de um exemplo real em cada conversa. Em 30 dias, verifique se houve continuidade entre a orientação e a prática examinada.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Constância construída no prazo",
+          "leitura": "Com intensidade moderada-baixa em quarto lugar, a Estabilidade pode sustentar parte da rotina, mas perder regularidade diante de interrupções. Em uma entrega mensal, demandas paralelas podem quebrar a sequência de pequenas etapas planejadas.",
+          "atencao": "Reagir a cada interrupção sem regra de retomada pode ampliar variações no ritmo de execução.",
+          "acao": "Ajude a reservar períodos de continuidade e treine o registro do próximo passo antes de interromper. Em 30 dias, confira se as retomadas ocorreram sem reiniciar a organização do trabalho.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Conflito com escuta delimitada",
+          "leitura": "A Estabilidade moderada-baixa na quarta posição pode permitir acolhimento inicial, com menor tolerância à repetição de queixas. Em um conflito sobre uso de recursos, a escuta pode se encurtar quando as partes retomam pontos anteriores.",
+          "atencao": "Tratar toda repetição como insistência improdutiva pode ocultar necessidades ainda não atendidas.",
+          "acao": "Dê apoio para separar pedidos de repetições e treine a confirmação do ponto ainda pendente. Em 30 dias, observe se os acordos responderam aos pedidos que permaneciam sem solução.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-4": {
+      "position": 4,
+      "level": 4,
+      "label": "4º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Continuidade compatível com autonomia",
+          "leitura": "A Estabilidade equilibrada na quarta posição admite empate de intensidade e não implica ausência de constância. Ao delegar uma rotina de suporte, pode haver acompanhamento previsível sem necessidade de manter todas as decisões centralizadas.",
+          "atencao": "Usar apenas a posição para restringir responsabilidades pode desperdiçar capacidade de sustentar a equipe.",
+          "acao": "Delegue a rotina com critérios de escalonamento e cobre a preservação dos retornos combinados. Em 30 dias, verifique se o suporte permaneceu regular com decisões distribuídas.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Pactuação paciente com fechamento",
+          "leitura": "Na quarta posição com intensidade equilibrada, a Estabilidade pode estar empatada com outros fatores e contribuir para negociações pacientes. Ao ajustar responsabilidades entre áreas, pode haver escuta das necessidades e disposição para estabelecer uma rotina viável.",
+          "atencao": "A busca de acomodação pode deixar indefinida a responsabilidade por concluir o acordo.",
+          "acao": "Defina quem consolida a pactuação e solicite registro das condições de continuidade. Em 30 dias, observe se as responsabilidades acordadas se traduziram em colaboração regular.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Adaptação com referências preservadas",
+          "leitura": "A Estabilidade equilibrada no quarto lugar permite empate de intensidade, preservando recursos para organizar transições. Na mudança de prioridade, pode haver aceitação do novo direcionamento quando as referências de continuidade ficam claras.",
+          "atencao": "Tomar pedidos de previsibilidade como oposição pode levar a mudanças com preparação insuficiente.",
+          "acao": "Explique os motivos da troca e cobre um plano enxuto para preservar apoios essenciais. Em 30 dias, acompanhe se a equipe adotou a nova direção sem perder as referências de suporte.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Integração gradual com independência",
+          "leitura": "Com intensidade equilibrada e quarta posição, a Estabilidade pode compartilhar intensidade com outros fatores sem perder capacidade de apoio constante. Na integração de um colega, pode haver paciência para acompanhar a aprendizagem e ajustar a frequência de ajuda.",
+          "atencao": "Subestimar essa disponibilidade pela classificação relativa pode reduzir o suporte oferecido na adaptação.",
+          "acao": "Atribua o acompanhamento com momentos de revisão e peça feedback sobre a autonomia adquirida. Em 30 dias, confira se a ajuda diminuiu conforme aumentou a segurança nas atividades usuais.",
+          "status": "rascunho"
+        }
+      }
+    }
+  }
+}

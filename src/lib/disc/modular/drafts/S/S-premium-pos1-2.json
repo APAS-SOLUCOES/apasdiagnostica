@@ -1,0 +1,462 @@
+{
+  "factor": "S",
+  "report": "premium",
+  "status": "rascunho",
+  "diagnostics": {
+    "1-4": {
+      "position": 1,
+      "level": 4,
+      "label": "1º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Continuidade com liberdade de ajuste",
+          "leitura": "A Estabilidade divide igualmente espaço com os outros três fatores nas suas respostas. Em uma reunião de rotina, você pode sustentar a escuta e propor uma alteração no andamento.",
+          "atencao": "Manter a pauta conhecida pode deixar uma necessidade nova sem discussão.",
+          "acao": "Reserve um momento para perguntar qual parte da rotina merece revisão.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Cuidado que comporta franqueza",
+          "leitura": "Você apresenta Estabilidade em empate com os demais fatores, sem predomínio entre eles. Ao oferecer feedback, pode combinar paciência para ouvir com clareza sobre o ajuste necessário.",
+          "atencao": "Acolher a reação da pessoa não exige retirar uma orientação importante.",
+          "acao": "Descreva a situação observada e dê tempo para a pessoa explicar sua perspectiva.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Acordos com margem de movimento",
+          "leitura": "A Estabilidade aparece na mesma intensidade dos outros fatores no seu perfil. Em uma negociação de entregas, você pode valorizar condições previsíveis sem descartar alternativas.",
+          "atencao": "Um acordo familiar nem sempre responde às condições atuais do trabalho.",
+          "acao": "Compare a proposta habitual com uma alternativa antes de confirmar as condições.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Base firme para mudar o percurso",
+          "leitura": "Você conta com a Estabilidade em equilíbrio igual ao dos demais fatores. Diante de uma mudança de prioridade, pode preservar referências úteis e reorganizar a sequência de tarefas.",
+          "atencao": "Tentar conservar todos os combinados pode tornar a transição mais trabalhosa.",
+          "acao": "Identifique um combinado que precisa continuar e outro que pode ser substituído.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-5": {
+      "position": 1,
+      "level": 5,
+      "label": "1º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Escuta que sustenta o encontro",
+          "leitura": "A Estabilidade presente favorece seu cuidado com o ritmo coletivo. Em uma reunião de acompanhamento, você tende a ouvir com calma antes de encaminhar os próximos passos.",
+          "atencao": "Esperar todas as dúvidas desaparecerem pode alongar uma decisão simples.",
+          "acao": "Combine um horário para encerrar a escuta e registrar o encaminhamento.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Constância na entrega combinada",
+          "leitura": "Você tende a encontrar segurança na continuidade do trabalho. Ao acompanhar um prazo semanal, pode manter uma cadência que ajuda colegas a organizar suas próprias etapas.",
+          "atencao": "Uma cadência confortável pode precisar de ajuste quando surge uma dependência externa.",
+          "acao": "Confira com quem recebe sua entrega se a sequência atual ainda atende à necessidade.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Apoio para quem está chegando",
+          "leitura": "A Estabilidade presente favorece sua disponibilidade para apoiar a equipe. Na integração de um colega, você pode explicar a rotina com paciência e oferecer referências práticas.",
+          "atencao": "Ajudar sempre do mesmo modo pode não atender ao jeito de aprender da pessoa.",
+          "acao": "Pergunte qual etapa ainda gera insegurança e acompanhe uma tentativa feita por ela.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Delegar com acompanhamento sereno",
+          "leitura": "Você costuma valorizar relações de trabalho confiáveis e compromissos sustentáveis. Ao delegar uma atividade, pode oferecer continuidade de apoio sem exigir respostas imediatas.",
+          "atencao": "Deixar o acompanhamento totalmente aberto pode dificultar o pedido de ajuda.",
+          "acao": "Defina com a pessoa um momento de retorno e o tipo de dificuldade que merece contato antecipado.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-6": {
+      "position": 1,
+      "level": 6,
+      "label": "1º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Paciência com direção",
+          "leitura": "A Estabilidade marcante dá força à sua escuta paciente. Em uma reunião entre áreas, você pode ajudar o grupo a atravessar dúvidas sem atropelar participantes.",
+          "atencao": "Prolongar a escuta pode adiar uma escolha que já tem informações suficientes.",
+          "acao": "Separe dúvidas impeditivas de questões que podem ser acompanhadas depois da decisão.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Cuidado ao corrigir a rota",
+          "leitura": "Você tende a proteger a continuidade dos vínculos ao orientar alguém. Em um feedback de desempenho, pode explicar o ajuste com tranquilidade e disponibilidade para acompanhar.",
+          "atencao": "O receio de desestabilizar a pessoa pode tornar a cobrança pouco explícita.",
+          "acao": "Nomeie o comportamento esperado e combine quando vocês observarão os primeiros sinais de mudança.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Apoio sem absorver o desacordo",
+          "leitura": "A Estabilidade marcante favorece sua busca por convivência cooperativa. Em um conflito de responsabilidades, você pode escutar as partes e reduzir a tensão da conversa.",
+          "atencao": "Assumir tarefas para encerrar o atrito pode manter a divisão injusta.",
+          "acao": "Peça que cada envolvido indique sua responsabilidade antes de oferecer ajuda adicional.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Transição com referências claras",
+          "leitura": "Você costuma preferir mudanças que permitam compreender o caminho. Quando uma prioridade é alterada, pode ajudar a equipe a reorganizar a rotina com menor ruptura.",
+          "atencao": "A busca por uma transição tranquila pode atrasar um primeiro passo necessário.",
+          "acao": "Escolha uma adaptação que possa começar agora e marque a revisão das dúvidas restantes.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-7": {
+      "position": 1,
+      "level": 7,
+      "label": "1º lugar — muito marcante",
+      "variants": {
+        "1": {
+          "titulo": "Escuta sem imobilizar a decisão",
+          "leitura": "A Estabilidade muito marcante amplia sua preferência por um ritmo sereno e conhecido. Em uma reunião decisória, você pode continuar acolhendo ponderações mesmo após surgir um caminho viável.",
+          "atencao": "Esperar conforto generalizado pode transformar cuidado em adiamento.",
+          "acao": "Estabeleça um limite para novas ponderações e aceite decidir com desconfortos explicitados.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Cadência que admite urgência",
+          "leitura": "Você tende a investir bastante na manutenção de uma rotina confiável. Diante de um prazo antecipado, pode procurar preservar a sequência habitual para não desorganizar a equipe.",
+          "atencao": "Defender toda a sequência pode reduzir o tempo disponível para o essencial.",
+          "acao": "Suspenda uma etapa não crítica e pactue uma cadência temporária até a entrega.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Delegação que deixa crescer",
+          "leitura": "A Estabilidade muito marcante pode tornar seu apoio especialmente contínuo. Ao delegar uma tarefa nova, você pode permanecer disponível e acompanhar cada dificuldade com paciência.",
+          "atencao": "A presença constante pode impedir que a pessoa experimente resolver pequenos obstáculos.",
+          "acao": "Retire uma checagem intermediária e combine apenas quais riscos exigem sua intervenção.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Familiaridade além do necessário",
+          "leitura": "Você tende a valorizar fortemente relações previsíveis e compromissos duradouros. Em uma negociação de contrato, pode preferir manter condições conhecidas para preservar a parceria.",
+          "atencao": "Evitar desconforto na relação pode levar à manutenção de condições desfavoráveis.",
+          "acao": "Defina o limite aceitável antes da conversa e apresente uma condição que precisa ser revista.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-8": {
+      "position": 1,
+      "level": 8,
+      "label": "1º lugar — dominante",
+      "variants": {
+        "1": {
+          "titulo": "Segurança sem exigir unanimidade",
+          "leitura": "A Estabilidade dominante pode colocar a preservação do ambiente conhecido no centro das suas escolhas. Em uma reunião sobre um novo processo, você pode insistir em mais rodadas de escuta antes de autorizar o teste.",
+          "atencao": "Exigir que todos se sintam seguros pode bloquear uma experiência reversível.",
+          "acao": "Autorize um teste delimitado com critérios de interrupção, mesmo que ainda existam ressalvas.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Cuidar sem amortecer o recado",
+          "leitura": "Você pode dedicar enorme energia a evitar abalos nas relações de trabalho. Ao dar um feedback difícil, tende a proteger a pessoa do desconforto e prolongar a preparação da conversa.",
+          "atencao": "Suavizar repetidamente o problema pode impedir que ela compreenda a gravidade da situação.",
+          "acao": "Apresente o ponto central logo no início e ofereça apoio sem diminuir a exigência do ajuste.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Paz que não silencia limites",
+          "leitura": "A Estabilidade dominante pode intensificar sua necessidade de preservar a harmonia cotidiana. Em um conflito entre colegas, você pode aceitar sobrecarga para evitar uma ruptura na convivência.",
+          "atencao": "Sustentar a paz às suas custas pode esconder um problema recorrente de responsabilidade.",
+          "acao": "Recuse uma tarefa que não lhe cabe e solicite uma definição explícita de responsáveis.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Mudança sem esperar familiaridade",
+          "leitura": "Você tende a se apoiar intensamente em rotinas e referências já consolidadas. Diante de uma mudança urgente de prioridade, pode tentar manter o plano anterior até compreender todos os efeitos.",
+          "atencao": "Esperar previsibilidade completa pode inviabilizar a resposta necessária.",
+          "acao": "Interrompa a atividade que perdeu prioridade e execute uma primeira etapa reversível do novo plano.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-1": {
+      "position": 2,
+      "level": 1,
+      "label": "2º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Uma pausa apoiada para ouvir",
+          "leitura": "A Estabilidade quase ausente pode oferecer pouco apoio espontâneo à manutenção de uma escuta paciente. Em uma reunião, você talvez sinta dificuldade para acompanhar falas mais demoradas até o fim.",
+          "atencao": "Interromper cedo pode fazer você responder a uma questão diferente da apresentada.",
+          "acao": "Peça a um colega de confiança que sinalize interrupções e pratique esperar a conclusão de uma fala.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Pequenos marcos de continuidade",
+          "leitura": "Você pode precisar de suporte para sustentar uma cadência repetitiva de trabalho. Ao cumprir um prazo com várias etapas semelhantes, talvez alterne de tarefa antes de concluir o trecho planejado.",
+          "atencao": "A troca frequente pode deixar pendências pouco visíveis para a equipe.",
+          "acao": "Monte com alguém um roteiro curto e treine concluir uma etapa antes de iniciar outra.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Aprender a permanecer na conversa",
+          "leitura": "A Estabilidade quase ausente pode tornar trabalhoso acompanhar o tempo de adaptação de outra pessoa. Na integração de um colega, você pode passar adiante antes de ele conseguir experimentar a rotina.",
+          "atencao": "Uma explicação rápida pode deixar dúvidas que a pessoa ainda não sabe formular.",
+          "acao": "Use um roteiro de acolhimento e peça apoio para acompanhar a primeira execução junto com ela.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Escuta treinada no desacordo",
+          "leitura": "Você tende a recorrer pouco à paciência sustentada quando o trabalho fica tenso. Durante um conflito, pode buscar um desfecho antes de compreender o incômodo de cada envolvido.",
+          "atencao": "Encerrar o assunto depressa pode preservar a causa do atrito.",
+          "acao": "Convide alguém para mediar e pratique resumir uma queixa antes de apresentar sua resposta.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-2": {
+      "position": 2,
+      "level": 2,
+      "label": "2º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Um intervalo antes da resposta",
+          "leitura": "A Estabilidade discreta pode deixar a escuta mais dependente de intenção consciente. Em uma reunião de alinhamento, você pode querer avançar enquanto alguém ainda organiza o raciocínio.",
+          "atencao": "A diferença de ritmo pode ser entendida como falta de interesse.",
+          "acao": "Anote sua ideia e espere a pessoa concluir antes de pedir esclarecimentos.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Acompanhamento que começa pequeno",
+          "leitura": "Você pode precisar construir deliberadamente a continuidade do apoio. Depois de um feedback, talvez concentre a atenção em novas demandas e deixe o acompanhamento para depois.",
+          "atencao": "Sem retorno, a pessoa pode não saber se o ajuste está no caminho esperado.",
+          "acao": "Agende uma conversa breve de acompanhamento e use uma pergunta preparada sobre a dificuldade encontrada.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Treino de presença ao delegar",
+          "leitura": "A Estabilidade discreta pode tornar menos espontâneo sustentar apoio após a orientação inicial. Ao delegar uma tarefa, você pode esperar adaptação mais rápida do que a pessoa consegue realizar.",
+          "atencao": "A ausência de um ponto de apoio pode fazer uma dúvida pequena virar atraso.",
+          "acao": "Combine uma primeira checagem curta e pratique ouvir a dificuldade sem tomar a tarefa de volta.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Previsibilidade construída em conjunto",
+          "leitura": "Você tende a dar pouco espaço à manutenção de referências quando precisa ajustar o trabalho. Em uma mudança de prioridade, pode trocar o encaminhamento sem preparar quem depende da sequência anterior.",
+          "atencao": "Colegas podem continuar investindo esforço em uma atividade que já deixou de ser necessária.",
+          "acao": "Use uma lista simples para avisar o que para, o que continua e quem precisa receber a atualização.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-3": {
+      "position": 2,
+      "level": 3,
+      "label": "2º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Escuta que ganha duração",
+          "leitura": "A Estabilidade moderada-baixa pode precisar de reforço em conversas mais longas. Em uma reunião de planejamento, você pode acompanhar o início e perder a paciência com detalhes posteriores.",
+          "atencao": "Um detalhe ouvido pela metade pode afetar seu entendimento do combinado.",
+          "acao": "Treine registrar a dependência principal de cada fala antes de avaliar sua proposta.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Ritmo sustentado por marcos",
+          "leitura": "Você dispõe de alguma constância, mas pode precisar de referências para mantê-la. Diante de um prazo extenso, pode alternar períodos de dedicação com intervalos sem avanço.",
+          "atencao": "A irregularidade pode concentrar esforço demais perto da entrega.",
+          "acao": "Divida o trabalho em marcos curtos e peça a um parceiro que acompanhe o primeiro ciclo.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Tempo para aprender junto",
+          "leitura": "A Estabilidade moderada-baixa pode tornar variável sua paciência com a repetição. Na integração de um colega, você pode explicar bem uma vez e estranhar a necessidade de retomar o assunto.",
+          "atencao": "Tratar a repetição como desatenção pode inibir novas perguntas.",
+          "acao": "Prepare uma referência consultável e pratique revisar um passo sem pressupor que a dúvida é falta de esforço.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Negociar também o percurso",
+          "leitura": "Você pode recorrer à continuidade apenas em parte ao construir compromissos. Em uma negociação entre equipes, tende a discutir a entrega sem detalhar como o apoio será mantido.",
+          "atencao": "Um acordo sem acompanhamento pode perder consistência depois da conversa inicial.",
+          "acao": "Inclua um ponto de contato no acordo e treine verificar uma dependência antes do próximo marco.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-4": {
+      "position": 2,
+      "level": 4,
+      "label": "2º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Um ritmo que pode ser escolhido",
+          "leitura": "A Estabilidade equilibrada funciona como um recurso de apoio ao seu modo principal de atuar. Em uma reunião operacional, você pode acompanhar o ritmo das pessoas sem deixar de contribuir para o andamento.",
+          "atencao": "Ajustar-se ao grupo automaticamente pode esconder sua necessidade de mais tempo.",
+          "acao": "Diga qual ponto precisa amadurecer e proponha quando retomá-lo.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Acolhimento com encaminhamento",
+          "leitura": "Você dispõe de paciência para apoiar conversas que exigem cuidado. Ao receber um feedback, pode ouvir a observação e organizar uma resposta sem precipitação.",
+          "atencao": "A serenidade aparente pode deixar sua dúvida fora da conversa.",
+          "acao": "Explique qual parte da orientação compreendeu e pergunte sobre um aspecto ainda pouco claro.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Continuidade no compromisso possível",
+          "leitura": "A Estabilidade equilibrada pode ajudar você a dar regularidade ao que assume. Ao administrar um prazo compartilhado, tende a buscar uma sequência de entregas viável para a equipe.",
+          "atencao": "Uma alteração pequena pode passar despercebida e afetar a etapa seguinte.",
+          "acao": "Atualize a pessoa responsável pela próxima etapa assim que identificar uma mudança na sequência.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Apoio com responsabilidade definida",
+          "leitura": "Você pode usar a constância como suporte à cooperação cotidiana. Ao delegar uma atividade, tende a manter abertura para dúvidas e respeitar a execução da outra pessoa.",
+          "atencao": "Estar disponível não garante que esteja claro quando pedir ajuda.",
+          "acao": "Combine uma situação concreta que deve gerar contato e deixe as demais decisões com quem executa.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-5": {
+      "position": 2,
+      "level": 5,
+      "label": "2º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Presença que dá continuidade",
+          "leitura": "A Estabilidade presente complementa sua atuação com escuta e regularidade. Em uma reunião recorrente, você pode recuperar pendências e ajudar o grupo a manter os combinados.",
+          "atencao": "Retomar sempre o histórico pode ocupar o tempo destinado a decisões novas.",
+          "acao": "Apresente apenas a pendência que altera o próximo passo e encaminhe o restante por escrito.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Paciência para atravessar diferenças",
+          "leitura": "Você tende a oferecer um apoio estável nas relações profissionais. Em um conflito de agenda, pode ouvir as necessidades de cada colega antes de buscar uma solução.",
+          "atencao": "Procurar acomodar todos pode deixar sua própria capacidade fora do acordo.",
+          "acao": "Inclua sua disponibilidade entre as condições consideradas antes de propor uma distribuição.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Aprender com uma base confiável",
+          "leitura": "A Estabilidade presente favorece sua disposição para acompanhar a adaptação de alguém. Na integração de um colega, você pode tornar a rotina mais compreensível com orientações consistentes.",
+          "atencao": "Repassar seu próprio percurso pode limitar a descoberta de uma alternativa útil.",
+          "acao": "Peça que a pessoa sugira uma melhoria após experimentar o procedimento atual.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Previsibilidade que pode ser revista",
+          "leitura": "Você costuma encontrar na continuidade um suporte para cumprir acordos. Em uma negociação de atendimento, pode valorizar horários e condições que sejam sustentáveis na rotina.",
+          "atencao": "Defender o formato habitual pode restringir opções viáveis para a outra parte.",
+          "acao": "Ofereça uma alternativa de organização que preserve a capacidade de cumprir o combinado.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-6": {
+      "position": 2,
+      "level": 6,
+      "label": "2º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Constância com prioridade visível",
+          "leitura": "A Estabilidade marcante reforça sua dedicação a manter o trabalho em andamento. Quando um prazo fica apertado, você pode sustentar a rotina e oferecer apoio para evitar desorganização.",
+          "atencao": "Manter todas as atividades pode consumir o espaço necessário para a entrega urgente.",
+          "acao": "Escolha com a equipe qual rotina será reduzida até o encerramento dessa demanda.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Apoiar sem poupar o ajuste",
+          "leitura": "Você tende a usar bastante a paciência para preservar relações de confiança. Ao oferecer feedback sobre um erro recorrente, pode retomar a orientação e se disponibilizar para ajudar.",
+          "atencao": "Repetir o apoio sem mudar o combinado pode prolongar a mesma dificuldade.",
+          "acao": "Estabeleça um novo marco de acompanhamento e explicite o que precisa estar diferente nessa data.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Delegar sem permanecer no centro",
+          "leitura": "A Estabilidade marcante pode reforçar sua presença no acompanhamento de tarefas. Ao delegar uma entrega conhecida, você pode manter os mesmos pontos de controle usados quando a executava.",
+          "atencao": "Reproduzir seu acompanhamento habitual pode restringir a autonomia de quem assumiu.",
+          "acao": "Pergunte quais verificações ainda são úteis e elimine uma que a pessoa já consegue conduzir sozinha.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Adaptação com começo definido",
+          "leitura": "Você tende a valorizar bastante a preparação antes de alterar uma rotina. Em uma mudança de prioridade, pode organizar explicações e buscar referências para apoiar os colegas.",
+          "atencao": "Preparar a equipe indefinidamente pode atrasar o uso das novas orientações.",
+          "acao": "Defina a primeira atividade que já seguirá a nova prioridade e apoie a adaptação durante a execução.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-7": {
+      "position": 2,
+      "level": 7,
+      "label": "2º lugar — muito marcante",
+      "variants": {
+        "1": {
+          "titulo": "Ponderação que chega a uma escolha",
+          "leitura": "A Estabilidade muito marcante pode intensificar sua preferência por decisões sem ruptura. Em uma reunião de revisão, você pode retomar preocupações já discutidas para evitar que alguém fique desconfortável.",
+          "atencao": "Reabrir os mesmos pontos pode impedir que o grupo experimente a solução escolhida.",
+          "acao": "Registre a preocupação remanescente como item de revisão e sustente o início do teste.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Acolher sem assumir tudo",
+          "leitura": "Você pode investir muita energia em preservar uma convivência tranquila. Durante um conflito por distribuição de tarefas, tende a oferecer ajuda antes de exigir uma divisão mais clara.",
+          "atencao": "Sua disponibilidade pode permitir que a sobrecarga continue sem negociação.",
+          "acao": "Pare de absorver novas pendências e peça que o grupo redistribua as responsabilidades existentes.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Integração que constrói independência",
+          "leitura": "A Estabilidade muito marcante torna seu apoio uma referência importante para quem chega. Na integração de um colega, você pode acompanhar tantas etapas que a pessoa passa a consultar você para tudo.",
+          "atencao": "A proteção prolongada pode atrasar a confiança necessária para agir sem sua presença.",
+          "acao": "Escolha uma atividade que a pessoa conduzirá integralmente e avalie o resultado apenas ao final.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Parceria com condições renovadas",
+          "leitura": "Você tende a atribuir grande valor à continuidade dos acordos profissionais. Em uma negociação com uma área parceira, pode evitar rever um arranjo antigo para não abalar a confiança.",
+          "atencao": "Manter condições ultrapassadas pode alimentar um desgaste silencioso.",
+          "acao": "Leve um impacto concreto do arranjo atual e solicite uma mudança explícita no próximo ciclo.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-8": {
+      "position": 2,
+      "level": 8,
+      "label": "2º lugar — dominante",
+      "variants": {
+        "1": {
+          "titulo": "Rotina a serviço da entrega",
+          "leitura": "A Estabilidade dominante pode tornar muito intensa sua necessidade de manter um percurso conhecido. Diante de um prazo crítico, você pode resistir a reorganizar etapas mesmo quando o plano perdeu viabilidade.",
+          "atencao": "Preservar o método a qualquer custo pode comprometer o compromisso que ele deveria apoiar.",
+          "acao": "Abandone uma etapa dispensável e valide com o responsável a nova sequência mínima de entrega.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Franqueza que também protege",
+          "leitura": "Você pode colocar a preservação dos vínculos acima da expressão de uma necessidade difícil. Ao receber feedback injusto, tende a aceitar o desconforto em silêncio para não desestabilizar a relação.",
+          "atencao": "Concordar sem esclarecer os fatos pode consolidar uma expectativa inadequada sobre seu trabalho.",
+          "acao": "Apresente um fato que precisa ser considerado e peça a revisão do ponto específico de discordância.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Responsabilidade sem dependência",
+          "leitura": "A Estabilidade dominante pode intensificar sua tendência a manter tudo sob um acompanhamento familiar. Ao delegar um processo importante, você pode continuar verificando cada etapa para assegurar continuidade.",
+          "atencao": "O controle constante pode impedir a transferência real da responsabilidade.",
+          "acao": "Entregue à pessoa uma decisão que você costuma reter e limite o acompanhamento ao resultado pactuado.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Desapegar de um plano conhecido",
+          "leitura": "Você tende a buscar forte previsibilidade mesmo em situações que exigem adaptação imediata. Numa mudança de prioridade, pode concentrar energia em recuperar o plano antigo em vez de iniciar o novo.",
+          "atencao": "A resistência à ruptura pode ampliar a insegurança de quem aguarda sua orientação.",
+          "acao": "Comunique qual rotina terminou e estabeleça uma referência provisória para orientar o trabalho de hoje.",
+          "status": "rascunho"
+        }
+      }
+    }
+  }
+}
