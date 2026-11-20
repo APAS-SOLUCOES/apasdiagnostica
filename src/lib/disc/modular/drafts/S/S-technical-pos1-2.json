@@ -1,0 +1,462 @@
+{
+  "factor": "S",
+  "report": "technical",
+  "status": "rascunho",
+  "diagnostics": {
+    "1-4": {
+      "position": 1,
+      "level": 4,
+      "label": "1º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Delegação com continuidade principal — equilibrada",
+          "leitura": "No contexto de delegação, a Estabilidade equilibrada participa do empate entre os quatro fatores, sem preferência comportamental exclusiva. Com essa intensidade em posição principal, a continuidade da execução recorrente pode ser ajustada às exigências da situação.",
+          "atencao": "Na gestão de delegação com Estabilidade equilibrada em posição principal, o risco está em impor previsibilidade onde o contexto pede ajuste.",
+          "acao": "Para orientar delegação com esse recurso principal em intensidade equilibrada, ajuste a cadência às necessidades concretas e adote limites de autonomia e critérios de passagem. Observe em 30 dias a sustentação da responsabilidade recebida no contexto de delegação, verificando se o suporte principal em intensidade equilibrada precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Negociação com continuidade principal — equilibrada",
+          "leitura": "No contexto de negociação, a Estabilidade equilibrada participa do empate entre os quatro fatores, sem preferência comportamental exclusiva. Com essa intensidade em posição principal, a busca de compromissos previsíveis pode ser ajustada às exigências da situação.",
+          "atencao": "Na gestão de negociação com Estabilidade equilibrada em posição principal, o risco está em impor previsibilidade onde o contexto pede ajuste.",
+          "acao": "Para orientar negociação com esse recurso principal em intensidade equilibrada, ajuste a cadência às necessidades concretas e adote condições explícitas para revisar o combinado. Observe em 30 dias a viabilidade dos compromissos assumidos no contexto de negociação, verificando se o suporte principal em intensidade equilibrada precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Mudança de prioridade com continuidade principal — equilibrada",
+          "leitura": "No contexto de mudança de prioridade, a Estabilidade equilibrada participa do empate entre os quatro fatores, sem preferência comportamental exclusiva. Com essa intensidade em posição principal, a preparação para alterar a rotina pode ser ajustada às exigências da situação.",
+          "atencao": "Na gestão de mudança de prioridade com Estabilidade equilibrada em posição principal, o risco está em impor previsibilidade onde o contexto pede ajuste.",
+          "acao": "Para orientar mudança de prioridade com esse recurso principal em intensidade equilibrada, ajuste a cadência às necessidades concretas e adote uma sequência de transição com interrupções definidas. Observe em 30 dias a adoção da nova sequência de trabalho no contexto de mudança de prioridade, verificando se o suporte principal em intensidade equilibrada precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Integração de colega com continuidade principal — equilibrada",
+          "leitura": "No contexto de integração de colega, a Estabilidade equilibrada participa do empate entre os quatro fatores, sem preferência comportamental exclusiva. Com essa intensidade em posição principal, o suporte paciente à aprendizagem pode ser ajustada às exigências da situação.",
+          "atencao": "Na gestão de integração de colega com Estabilidade equilibrada em posição principal, o risco está em impor previsibilidade onde o contexto pede ajuste.",
+          "acao": "Para orientar integração de colega com esse recurso principal em intensidade equilibrada, ajuste a cadência às necessidades concretas e adote um roteiro com retirada gradual de acompanhamento. Observe em 30 dias a conquista de autonomia na rotina no contexto de integração de colega, verificando se o suporte principal em intensidade equilibrada precisa de ajuste.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-5": {
+      "position": 1,
+      "level": 5,
+      "label": "1º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Reunião com continuidade principal — presente",
+          "leitura": "No contexto de reunião, a Estabilidade presente constitui um recurso principal de ritmo, paciência e continuidade. Com essa intensidade em posição principal, a escuta antes dos encaminhamentos tende a favorecer o andamento regular.",
+          "atencao": "Na gestão de reunião com Estabilidade presente em posição principal, o risco está em ampliar responsabilidades de apoio sem discutir capacidade.",
+          "acao": "Para orientar reunião com esse recurso principal em intensidade presente, delegue a continuidade com espaço para comunicar limites e adote uma pauta com espaço para ouvir e decidir. Observe em 30 dias a participação acompanhada de decisões no contexto de reunião, verificando se o suporte principal em intensidade presente precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback com continuidade principal — presente",
+          "leitura": "No contexto de feedback, a Estabilidade presente constitui um recurso principal de ritmo, paciência e continuidade. Com essa intensidade em posição principal, a recepção paciente das orientações tende a favorecer o andamento regular.",
+          "atencao": "Na gestão de feedback com Estabilidade presente em posição principal, o risco está em ampliar responsabilidades de apoio sem discutir capacidade.",
+          "acao": "Para orientar feedback com esse recurso principal em intensidade presente, delegue a continuidade com espaço para comunicar limites e adote um acordo que diferencie concordância e compreensão. Observe em 30 dias a aplicação do ajuste solicitado no contexto de feedback, verificando se o suporte principal em intensidade presente precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Prazo com continuidade principal — presente",
+          "leitura": "No contexto de prazo, a Estabilidade presente constitui um recurso principal de ritmo, paciência e continuidade. Com essa intensidade em posição principal, a manutenção de uma cadência regular tende a favorecer o andamento regular.",
+          "atencao": "Na gestão de prazo com Estabilidade presente em posição principal, o risco está em ampliar responsabilidades de apoio sem discutir capacidade.",
+          "acao": "Para orientar prazo com esse recurso principal em intensidade presente, delegue a continuidade com espaço para comunicar limites e adote marcos de entrega e avisos de impedimento. Observe em 30 dias a continuidade entre as entregas no contexto de prazo, verificando se o suporte principal em intensidade presente precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Conflito com continuidade principal — presente",
+          "leitura": "No contexto de conflito, a Estabilidade presente constitui um recurso principal de ritmo, paciência e continuidade. Com essa intensidade em posição principal, o apoio à retomada do diálogo tende a favorecer o andamento regular.",
+          "atencao": "Na gestão de conflito com Estabilidade presente em posição principal, o risco está em ampliar responsabilidades de apoio sem discutir capacidade.",
+          "acao": "Para orientar conflito com esse recurso principal em intensidade presente, delegue a continuidade com espaço para comunicar limites e adote um registro da divergência e da solução acordada. Observe em 30 dias a resolução efetiva do desacordo no contexto de conflito, verificando se o suporte principal em intensidade presente precisa de ajuste.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-6": {
+      "position": 1,
+      "level": 6,
+      "label": "1º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Delegação com continuidade principal — marcante",
+          "leitura": "No contexto de delegação, a Estabilidade marcante constitui um recurso principal de ritmo, paciência e continuidade. Com essa intensidade em posição principal, a continuidade da execução recorrente tende a favorecer a preservação do fluxo conhecido.",
+          "atencao": "Na gestão de delegação com Estabilidade marcante em posição principal, o risco está em preservar a cadência mesmo quando os desvios exigem revisão.",
+          "acao": "Para orientar delegação com esse recurso principal em intensidade marcante, cobre revisão do fluxo quando surgirem desvios e adote limites de autonomia e critérios de passagem. Observe em 30 dias a sustentação da responsabilidade recebida no contexto de delegação, verificando se o suporte principal em intensidade marcante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Negociação com continuidade principal — marcante",
+          "leitura": "No contexto de negociação, a Estabilidade marcante constitui um recurso principal de ritmo, paciência e continuidade. Com essa intensidade em posição principal, a busca de compromissos previsíveis tende a favorecer a preservação do fluxo conhecido.",
+          "atencao": "Na gestão de negociação com Estabilidade marcante em posição principal, o risco está em preservar a cadência mesmo quando os desvios exigem revisão.",
+          "acao": "Para orientar negociação com esse recurso principal em intensidade marcante, cobre revisão do fluxo quando surgirem desvios e adote condições explícitas para revisar o combinado. Observe em 30 dias a viabilidade dos compromissos assumidos no contexto de negociação, verificando se o suporte principal em intensidade marcante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Mudança de prioridade com continuidade principal — marcante",
+          "leitura": "No contexto de mudança de prioridade, a Estabilidade marcante constitui um recurso principal de ritmo, paciência e continuidade. Com essa intensidade em posição principal, a preparação para alterar a rotina tende a favorecer a preservação do fluxo conhecido.",
+          "atencao": "Na gestão de mudança de prioridade com Estabilidade marcante em posição principal, o risco está em preservar a cadência mesmo quando os desvios exigem revisão.",
+          "acao": "Para orientar mudança de prioridade com esse recurso principal em intensidade marcante, cobre revisão do fluxo quando surgirem desvios e adote uma sequência de transição com interrupções definidas. Observe em 30 dias a adoção da nova sequência de trabalho no contexto de mudança de prioridade, verificando se o suporte principal em intensidade marcante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Integração de colega com continuidade principal — marcante",
+          "leitura": "No contexto de integração de colega, a Estabilidade marcante constitui um recurso principal de ritmo, paciência e continuidade. Com essa intensidade em posição principal, o suporte paciente à aprendizagem tende a favorecer a preservação do fluxo conhecido.",
+          "atencao": "Na gestão de integração de colega com Estabilidade marcante em posição principal, o risco está em preservar a cadência mesmo quando os desvios exigem revisão.",
+          "acao": "Para orientar integração de colega com esse recurso principal em intensidade marcante, cobre revisão do fluxo quando surgirem desvios e adote um roteiro com retirada gradual de acompanhamento. Observe em 30 dias a conquista de autonomia na rotina no contexto de integração de colega, verificando se o suporte principal em intensidade marcante precisa de ajuste.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-7": {
+      "position": 1,
+      "level": 7,
+      "label": "1º lugar — muito marcante",
+      "variants": {
+        "1": {
+          "titulo": "Reunião com continuidade principal — muito marcante",
+          "leitura": "No contexto de reunião, a Estabilidade muito marcante constitui um recurso principal de ritmo, paciência e continuidade. Com essa intensidade em posição principal, a escuta antes dos encaminhamentos pode demandar preparação cuidadosa antes de alterações.",
+          "atencao": "Na gestão de reunião com Estabilidade muito marcante em posição principal, o risco está em adiar decisões necessárias para evitar desconforto com alterações.",
+          "acao": "Para orientar reunião com esse recurso principal em intensidade muito marcante, determine marcos de adaptação e prepare as alterações e adote uma pauta com espaço para ouvir e decidir. Observe em 30 dias a participação acompanhada de decisões no contexto de reunião, verificando se o suporte principal em intensidade muito marcante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback com continuidade principal — muito marcante",
+          "leitura": "No contexto de feedback, a Estabilidade muito marcante constitui um recurso principal de ritmo, paciência e continuidade. Com essa intensidade em posição principal, a recepção paciente das orientações pode demandar preparação cuidadosa antes de alterações.",
+          "atencao": "Na gestão de feedback com Estabilidade muito marcante em posição principal, o risco está em adiar decisões necessárias para evitar desconforto com alterações.",
+          "acao": "Para orientar feedback com esse recurso principal em intensidade muito marcante, determine marcos de adaptação e prepare as alterações e adote um acordo que diferencie concordância e compreensão. Observe em 30 dias a aplicação do ajuste solicitado no contexto de feedback, verificando se o suporte principal em intensidade muito marcante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Prazo com continuidade principal — muito marcante",
+          "leitura": "No contexto de prazo, a Estabilidade muito marcante constitui um recurso principal de ritmo, paciência e continuidade. Com essa intensidade em posição principal, a manutenção de uma cadência regular pode demandar preparação cuidadosa antes de alterações.",
+          "atencao": "Na gestão de prazo com Estabilidade muito marcante em posição principal, o risco está em adiar decisões necessárias para evitar desconforto com alterações.",
+          "acao": "Para orientar prazo com esse recurso principal em intensidade muito marcante, determine marcos de adaptação e prepare as alterações e adote marcos de entrega e avisos de impedimento. Observe em 30 dias a continuidade entre as entregas no contexto de prazo, verificando se o suporte principal em intensidade muito marcante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Conflito com continuidade principal — muito marcante",
+          "leitura": "No contexto de conflito, a Estabilidade muito marcante constitui um recurso principal de ritmo, paciência e continuidade. Com essa intensidade em posição principal, o apoio à retomada do diálogo pode demandar preparação cuidadosa antes de alterações.",
+          "atencao": "Na gestão de conflito com Estabilidade muito marcante em posição principal, o risco está em adiar decisões necessárias para evitar desconforto com alterações.",
+          "acao": "Para orientar conflito com esse recurso principal em intensidade muito marcante, determine marcos de adaptação e prepare as alterações e adote um registro da divergência e da solução acordada. Observe em 30 dias a resolução efetiva do desacordo no contexto de conflito, verificando se o suporte principal em intensidade muito marcante precisa de ajuste.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-8": {
+      "position": 1,
+      "level": 8,
+      "label": "1º lugar — dominante",
+      "variants": {
+        "1": {
+          "titulo": "Delegação com continuidade principal — dominante",
+          "leitura": "No contexto de delegação, a Estabilidade dominante constitui um recurso principal de ritmo, paciência e continuidade. Com essa intensidade em posição principal, a continuidade da execução recorrente pode tornar a interrupção do padrão conhecido especialmente exigente.",
+          "atencao": "Na gestão de delegação com Estabilidade dominante em posição principal, o risco está em aceitar a manutenção do procedimento apesar de uma necessidade clara de mudança.",
+          "acao": "Para orientar delegação com esse recurso principal em intensidade dominante, fixe um limite para manter a rotina anterior e acompanhe a transição e adote limites de autonomia e critérios de passagem. Observe em 30 dias a sustentação da responsabilidade recebida no contexto de delegação, verificando se o suporte principal em intensidade dominante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Negociação com continuidade principal — dominante",
+          "leitura": "No contexto de negociação, a Estabilidade dominante constitui um recurso principal de ritmo, paciência e continuidade. Com essa intensidade em posição principal, a busca de compromissos previsíveis pode tornar a interrupção do padrão conhecido especialmente exigente.",
+          "atencao": "Na gestão de negociação com Estabilidade dominante em posição principal, o risco está em aceitar a manutenção do procedimento apesar de uma necessidade clara de mudança.",
+          "acao": "Para orientar negociação com esse recurso principal em intensidade dominante, fixe um limite para manter a rotina anterior e acompanhe a transição e adote condições explícitas para revisar o combinado. Observe em 30 dias a viabilidade dos compromissos assumidos no contexto de negociação, verificando se o suporte principal em intensidade dominante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Mudança de prioridade com continuidade principal — dominante",
+          "leitura": "No contexto de mudança de prioridade, a Estabilidade dominante constitui um recurso principal de ritmo, paciência e continuidade. Com essa intensidade em posição principal, a preparação para alterar a rotina pode tornar a interrupção do padrão conhecido especialmente exigente.",
+          "atencao": "Na gestão de mudança de prioridade com Estabilidade dominante em posição principal, o risco está em aceitar a manutenção do procedimento apesar de uma necessidade clara de mudança.",
+          "acao": "Para orientar mudança de prioridade com esse recurso principal em intensidade dominante, fixe um limite para manter a rotina anterior e acompanhe a transição e adote uma sequência de transição com interrupções definidas. Observe em 30 dias a adoção da nova sequência de trabalho no contexto de mudança de prioridade, verificando se o suporte principal em intensidade dominante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Integração de colega com continuidade principal — dominante",
+          "leitura": "No contexto de integração de colega, a Estabilidade dominante constitui um recurso principal de ritmo, paciência e continuidade. Com essa intensidade em posição principal, o suporte paciente à aprendizagem pode tornar a interrupção do padrão conhecido especialmente exigente.",
+          "atencao": "Na gestão de integração de colega com Estabilidade dominante em posição principal, o risco está em aceitar a manutenção do procedimento apesar de uma necessidade clara de mudança.",
+          "acao": "Para orientar integração de colega com esse recurso principal em intensidade dominante, fixe um limite para manter a rotina anterior e acompanhe a transição e adote um roteiro com retirada gradual de acompanhamento. Observe em 30 dias a conquista de autonomia na rotina no contexto de integração de colega, verificando se o suporte principal em intensidade dominante precisa de ajuste.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-1": {
+      "position": 2,
+      "level": 1,
+      "label": "2º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Delegação com continuidade de apoio — quase ausente",
+          "leitura": "No contexto de delegação, a Estabilidade quase ausente constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a continuidade da execução recorrente pode exigir suporte explícito para ganhar continuidade.",
+          "atencao": "Na gestão de delegação com Estabilidade quase ausente em posição secundária, o risco está em presumir paciência e constância sem verificar a execução.",
+          "acao": "Para orientar delegação com esse recurso secundário em intensidade quase ausente, ofereça apoio frequente para estabelecer continuidade e adote limites de autonomia e critérios de passagem. Observe em 30 dias a sustentação da responsabilidade recebida no contexto de delegação, verificando se o suporte secundário em intensidade quase ausente precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Negociação com continuidade de apoio — quase ausente",
+          "leitura": "No contexto de negociação, a Estabilidade quase ausente constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a busca de compromissos previsíveis pode exigir suporte explícito para ganhar continuidade.",
+          "atencao": "Na gestão de negociação com Estabilidade quase ausente em posição secundária, o risco está em presumir paciência e constância sem verificar a execução.",
+          "acao": "Para orientar negociação com esse recurso secundário em intensidade quase ausente, ofereça apoio frequente para estabelecer continuidade e adote condições explícitas para revisar o combinado. Observe em 30 dias a viabilidade dos compromissos assumidos no contexto de negociação, verificando se o suporte secundário em intensidade quase ausente precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Mudança de prioridade com continuidade de apoio — quase ausente",
+          "leitura": "No contexto de mudança de prioridade, a Estabilidade quase ausente constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a preparação para alterar a rotina pode exigir suporte explícito para ganhar continuidade.",
+          "atencao": "Na gestão de mudança de prioridade com Estabilidade quase ausente em posição secundária, o risco está em presumir paciência e constância sem verificar a execução.",
+          "acao": "Para orientar mudança de prioridade com esse recurso secundário em intensidade quase ausente, ofereça apoio frequente para estabelecer continuidade e adote uma sequência de transição com interrupções definidas. Observe em 30 dias a adoção da nova sequência de trabalho no contexto de mudança de prioridade, verificando se o suporte secundário em intensidade quase ausente precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Integração de colega com continuidade de apoio — quase ausente",
+          "leitura": "No contexto de integração de colega, a Estabilidade quase ausente constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, o suporte paciente à aprendizagem pode exigir suporte explícito para ganhar continuidade.",
+          "atencao": "Na gestão de integração de colega com Estabilidade quase ausente em posição secundária, o risco está em presumir paciência e constância sem verificar a execução.",
+          "acao": "Para orientar integração de colega com esse recurso secundário em intensidade quase ausente, ofereça apoio frequente para estabelecer continuidade e adote um roteiro com retirada gradual de acompanhamento. Observe em 30 dias a conquista de autonomia na rotina no contexto de integração de colega, verificando se o suporte secundário em intensidade quase ausente precisa de ajuste.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-2": {
+      "position": 2,
+      "level": 2,
+      "label": "2º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Reunião com continuidade de apoio — discreta",
+          "leitura": "No contexto de reunião, a Estabilidade discreta constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a escuta antes dos encaminhamentos pode aparecer de maneira pontual.",
+          "atencao": "Na gestão de reunião com Estabilidade discreta em posição secundária, o risco está em deixar o apoio à rotina depender apenas da iniciativa individual.",
+          "acao": "Para orientar reunião com esse recurso secundário em intensidade discreta, combine uma rotina breve de acompanhamento e adote uma pauta com espaço para ouvir e decidir. Observe em 30 dias a participação acompanhada de decisões no contexto de reunião, verificando se o suporte secundário em intensidade discreta precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback com continuidade de apoio — discreta",
+          "leitura": "No contexto de feedback, a Estabilidade discreta constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a recepção paciente das orientações pode aparecer de maneira pontual.",
+          "atencao": "Na gestão de feedback com Estabilidade discreta em posição secundária, o risco está em deixar o apoio à rotina depender apenas da iniciativa individual.",
+          "acao": "Para orientar feedback com esse recurso secundário em intensidade discreta, combine uma rotina breve de acompanhamento e adote um acordo que diferencie concordância e compreensão. Observe em 30 dias a aplicação do ajuste solicitado no contexto de feedback, verificando se o suporte secundário em intensidade discreta precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Prazo com continuidade de apoio — discreta",
+          "leitura": "No contexto de prazo, a Estabilidade discreta constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a manutenção de uma cadência regular pode aparecer de maneira pontual.",
+          "atencao": "Na gestão de prazo com Estabilidade discreta em posição secundária, o risco está em deixar o apoio à rotina depender apenas da iniciativa individual.",
+          "acao": "Para orientar prazo com esse recurso secundário em intensidade discreta, combine uma rotina breve de acompanhamento e adote marcos de entrega e avisos de impedimento. Observe em 30 dias a continuidade entre as entregas no contexto de prazo, verificando se o suporte secundário em intensidade discreta precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Conflito com continuidade de apoio — discreta",
+          "leitura": "No contexto de conflito, a Estabilidade discreta constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, o apoio à retomada do diálogo pode aparecer de maneira pontual.",
+          "atencao": "Na gestão de conflito com Estabilidade discreta em posição secundária, o risco está em deixar o apoio à rotina depender apenas da iniciativa individual.",
+          "acao": "Para orientar conflito com esse recurso secundário em intensidade discreta, combine uma rotina breve de acompanhamento e adote um registro da divergência e da solução acordada. Observe em 30 dias a resolução efetiva do desacordo no contexto de conflito, verificando se o suporte secundário em intensidade discreta precisa de ajuste.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-3": {
+      "position": 2,
+      "level": 3,
+      "label": "2º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Delegação com continuidade de apoio — moderada-baixa",
+          "leitura": "No contexto de delegação, a Estabilidade moderada-baixa constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a continuidade da execução recorrente pode oscilar conforme a carga de trabalho.",
+          "atencao": "Na gestão de delegação com Estabilidade moderada-baixa em posição secundária, o risco está em confundir disponibilidade pontual com sustentação contínua.",
+          "acao": "Para orientar delegação com esse recurso secundário em intensidade moderada-baixa, crie pontos de checagem sem presumir constância espontânea e adote limites de autonomia e critérios de passagem. Observe em 30 dias a sustentação da responsabilidade recebida no contexto de delegação, verificando se o suporte secundário em intensidade moderada-baixa precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Negociação com continuidade de apoio — moderada-baixa",
+          "leitura": "No contexto de negociação, a Estabilidade moderada-baixa constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a busca de compromissos previsíveis pode oscilar conforme a carga de trabalho.",
+          "atencao": "Na gestão de negociação com Estabilidade moderada-baixa em posição secundária, o risco está em confundir disponibilidade pontual com sustentação contínua.",
+          "acao": "Para orientar negociação com esse recurso secundário em intensidade moderada-baixa, crie pontos de checagem sem presumir constância espontânea e adote condições explícitas para revisar o combinado. Observe em 30 dias a viabilidade dos compromissos assumidos no contexto de negociação, verificando se o suporte secundário em intensidade moderada-baixa precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Mudança de prioridade com continuidade de apoio — moderada-baixa",
+          "leitura": "No contexto de mudança de prioridade, a Estabilidade moderada-baixa constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a preparação para alterar a rotina pode oscilar conforme a carga de trabalho.",
+          "atencao": "Na gestão de mudança de prioridade com Estabilidade moderada-baixa em posição secundária, o risco está em confundir disponibilidade pontual com sustentação contínua.",
+          "acao": "Para orientar mudança de prioridade com esse recurso secundário em intensidade moderada-baixa, crie pontos de checagem sem presumir constância espontânea e adote uma sequência de transição com interrupções definidas. Observe em 30 dias a adoção da nova sequência de trabalho no contexto de mudança de prioridade, verificando se o suporte secundário em intensidade moderada-baixa precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Integração de colega com continuidade de apoio — moderada-baixa",
+          "leitura": "No contexto de integração de colega, a Estabilidade moderada-baixa constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, o suporte paciente à aprendizagem pode oscilar conforme a carga de trabalho.",
+          "atencao": "Na gestão de integração de colega com Estabilidade moderada-baixa em posição secundária, o risco está em confundir disponibilidade pontual com sustentação contínua.",
+          "acao": "Para orientar integração de colega com esse recurso secundário em intensidade moderada-baixa, crie pontos de checagem sem presumir constância espontânea e adote um roteiro com retirada gradual de acompanhamento. Observe em 30 dias a conquista de autonomia na rotina no contexto de integração de colega, verificando se o suporte secundário em intensidade moderada-baixa precisa de ajuste.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-4": {
+      "position": 2,
+      "level": 4,
+      "label": "2º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Reunião com continuidade de apoio — equilibrada",
+          "leitura": "No contexto de reunião, a Estabilidade equilibrada constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a escuta antes dos encaminhamentos pode ser ajustada às exigências da situação.",
+          "atencao": "Na gestão de reunião com Estabilidade equilibrada em posição secundária, o risco está em impor previsibilidade onde o contexto pede ajuste.",
+          "acao": "Para orientar reunião com esse recurso secundário em intensidade equilibrada, ajuste a cadência às necessidades concretas e adote uma pauta com espaço para ouvir e decidir. Observe em 30 dias a participação acompanhada de decisões no contexto de reunião, verificando se o suporte secundário em intensidade equilibrada precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback com continuidade de apoio — equilibrada",
+          "leitura": "No contexto de feedback, a Estabilidade equilibrada constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a recepção paciente das orientações pode ser ajustada às exigências da situação.",
+          "atencao": "Na gestão de feedback com Estabilidade equilibrada em posição secundária, o risco está em impor previsibilidade onde o contexto pede ajuste.",
+          "acao": "Para orientar feedback com esse recurso secundário em intensidade equilibrada, ajuste a cadência às necessidades concretas e adote um acordo que diferencie concordância e compreensão. Observe em 30 dias a aplicação do ajuste solicitado no contexto de feedback, verificando se o suporte secundário em intensidade equilibrada precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Prazo com continuidade de apoio — equilibrada",
+          "leitura": "No contexto de prazo, a Estabilidade equilibrada constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a manutenção de uma cadência regular pode ser ajustada às exigências da situação.",
+          "atencao": "Na gestão de prazo com Estabilidade equilibrada em posição secundária, o risco está em impor previsibilidade onde o contexto pede ajuste.",
+          "acao": "Para orientar prazo com esse recurso secundário em intensidade equilibrada, ajuste a cadência às necessidades concretas e adote marcos de entrega e avisos de impedimento. Observe em 30 dias a continuidade entre as entregas no contexto de prazo, verificando se o suporte secundário em intensidade equilibrada precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Conflito com continuidade de apoio — equilibrada",
+          "leitura": "No contexto de conflito, a Estabilidade equilibrada constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, o apoio à retomada do diálogo pode ser ajustada às exigências da situação.",
+          "atencao": "Na gestão de conflito com Estabilidade equilibrada em posição secundária, o risco está em impor previsibilidade onde o contexto pede ajuste.",
+          "acao": "Para orientar conflito com esse recurso secundário em intensidade equilibrada, ajuste a cadência às necessidades concretas e adote um registro da divergência e da solução acordada. Observe em 30 dias a resolução efetiva do desacordo no contexto de conflito, verificando se o suporte secundário em intensidade equilibrada precisa de ajuste.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-5": {
+      "position": 2,
+      "level": 5,
+      "label": "2º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Delegação com continuidade de apoio — presente",
+          "leitura": "No contexto de delegação, a Estabilidade presente constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a continuidade da execução recorrente tende a favorecer o andamento regular.",
+          "atencao": "Na gestão de delegação com Estabilidade presente em posição secundária, o risco está em ampliar responsabilidades de apoio sem discutir capacidade.",
+          "acao": "Para orientar delegação com esse recurso secundário em intensidade presente, delegue a continuidade com espaço para comunicar limites e adote limites de autonomia e critérios de passagem. Observe em 30 dias a sustentação da responsabilidade recebida no contexto de delegação, verificando se o suporte secundário em intensidade presente precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Negociação com continuidade de apoio — presente",
+          "leitura": "No contexto de negociação, a Estabilidade presente constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a busca de compromissos previsíveis tende a favorecer o andamento regular.",
+          "atencao": "Na gestão de negociação com Estabilidade presente em posição secundária, o risco está em ampliar responsabilidades de apoio sem discutir capacidade.",
+          "acao": "Para orientar negociação com esse recurso secundário em intensidade presente, delegue a continuidade com espaço para comunicar limites e adote condições explícitas para revisar o combinado. Observe em 30 dias a viabilidade dos compromissos assumidos no contexto de negociação, verificando se o suporte secundário em intensidade presente precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Mudança de prioridade com continuidade de apoio — presente",
+          "leitura": "No contexto de mudança de prioridade, a Estabilidade presente constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a preparação para alterar a rotina tende a favorecer o andamento regular.",
+          "atencao": "Na gestão de mudança de prioridade com Estabilidade presente em posição secundária, o risco está em ampliar responsabilidades de apoio sem discutir capacidade.",
+          "acao": "Para orientar mudança de prioridade com esse recurso secundário em intensidade presente, delegue a continuidade com espaço para comunicar limites e adote uma sequência de transição com interrupções definidas. Observe em 30 dias a adoção da nova sequência de trabalho no contexto de mudança de prioridade, verificando se o suporte secundário em intensidade presente precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Integração de colega com continuidade de apoio — presente",
+          "leitura": "No contexto de integração de colega, a Estabilidade presente constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, o suporte paciente à aprendizagem tende a favorecer o andamento regular.",
+          "atencao": "Na gestão de integração de colega com Estabilidade presente em posição secundária, o risco está em ampliar responsabilidades de apoio sem discutir capacidade.",
+          "acao": "Para orientar integração de colega com esse recurso secundário em intensidade presente, delegue a continuidade com espaço para comunicar limites e adote um roteiro com retirada gradual de acompanhamento. Observe em 30 dias a conquista de autonomia na rotina no contexto de integração de colega, verificando se o suporte secundário em intensidade presente precisa de ajuste.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-6": {
+      "position": 2,
+      "level": 6,
+      "label": "2º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Reunião com continuidade de apoio — marcante",
+          "leitura": "No contexto de reunião, a Estabilidade marcante constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a escuta antes dos encaminhamentos tende a favorecer a preservação do fluxo conhecido.",
+          "atencao": "Na gestão de reunião com Estabilidade marcante em posição secundária, o risco está em preservar a cadência mesmo quando os desvios exigem revisão.",
+          "acao": "Para orientar reunião com esse recurso secundário em intensidade marcante, cobre revisão do fluxo quando surgirem desvios e adote uma pauta com espaço para ouvir e decidir. Observe em 30 dias a participação acompanhada de decisões no contexto de reunião, verificando se o suporte secundário em intensidade marcante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback com continuidade de apoio — marcante",
+          "leitura": "No contexto de feedback, a Estabilidade marcante constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a recepção paciente das orientações tende a favorecer a preservação do fluxo conhecido.",
+          "atencao": "Na gestão de feedback com Estabilidade marcante em posição secundária, o risco está em preservar a cadência mesmo quando os desvios exigem revisão.",
+          "acao": "Para orientar feedback com esse recurso secundário em intensidade marcante, cobre revisão do fluxo quando surgirem desvios e adote um acordo que diferencie concordância e compreensão. Observe em 30 dias a aplicação do ajuste solicitado no contexto de feedback, verificando se o suporte secundário em intensidade marcante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Prazo com continuidade de apoio — marcante",
+          "leitura": "No contexto de prazo, a Estabilidade marcante constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a manutenção de uma cadência regular tende a favorecer a preservação do fluxo conhecido.",
+          "atencao": "Na gestão de prazo com Estabilidade marcante em posição secundária, o risco está em preservar a cadência mesmo quando os desvios exigem revisão.",
+          "acao": "Para orientar prazo com esse recurso secundário em intensidade marcante, cobre revisão do fluxo quando surgirem desvios e adote marcos de entrega e avisos de impedimento. Observe em 30 dias a continuidade entre as entregas no contexto de prazo, verificando se o suporte secundário em intensidade marcante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Conflito com continuidade de apoio — marcante",
+          "leitura": "No contexto de conflito, a Estabilidade marcante constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, o apoio à retomada do diálogo tende a favorecer a preservação do fluxo conhecido.",
+          "atencao": "Na gestão de conflito com Estabilidade marcante em posição secundária, o risco está em preservar a cadência mesmo quando os desvios exigem revisão.",
+          "acao": "Para orientar conflito com esse recurso secundário em intensidade marcante, cobre revisão do fluxo quando surgirem desvios e adote um registro da divergência e da solução acordada. Observe em 30 dias a resolução efetiva do desacordo no contexto de conflito, verificando se o suporte secundário em intensidade marcante precisa de ajuste.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-7": {
+      "position": 2,
+      "level": 7,
+      "label": "2º lugar — muito marcante",
+      "variants": {
+        "1": {
+          "titulo": "Delegação com continuidade de apoio — muito marcante",
+          "leitura": "No contexto de delegação, a Estabilidade muito marcante constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a continuidade da execução recorrente pode demandar preparação cuidadosa antes de alterações.",
+          "atencao": "Na gestão de delegação com Estabilidade muito marcante em posição secundária, o risco está em adiar decisões necessárias para evitar desconforto com alterações.",
+          "acao": "Para orientar delegação com esse recurso secundário em intensidade muito marcante, determine marcos de adaptação e prepare as alterações e adote limites de autonomia e critérios de passagem. Observe em 30 dias a sustentação da responsabilidade recebida no contexto de delegação, verificando se o suporte secundário em intensidade muito marcante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Negociação com continuidade de apoio — muito marcante",
+          "leitura": "No contexto de negociação, a Estabilidade muito marcante constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a busca de compromissos previsíveis pode demandar preparação cuidadosa antes de alterações.",
+          "atencao": "Na gestão de negociação com Estabilidade muito marcante em posição secundária, o risco está em adiar decisões necessárias para evitar desconforto com alterações.",
+          "acao": "Para orientar negociação com esse recurso secundário em intensidade muito marcante, determine marcos de adaptação e prepare as alterações e adote condições explícitas para revisar o combinado. Observe em 30 dias a viabilidade dos compromissos assumidos no contexto de negociação, verificando se o suporte secundário em intensidade muito marcante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Mudança de prioridade com continuidade de apoio — muito marcante",
+          "leitura": "No contexto de mudança de prioridade, a Estabilidade muito marcante constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a preparação para alterar a rotina pode demandar preparação cuidadosa antes de alterações.",
+          "atencao": "Na gestão de mudança de prioridade com Estabilidade muito marcante em posição secundária, o risco está em adiar decisões necessárias para evitar desconforto com alterações.",
+          "acao": "Para orientar mudança de prioridade com esse recurso secundário em intensidade muito marcante, determine marcos de adaptação e prepare as alterações e adote uma sequência de transição com interrupções definidas. Observe em 30 dias a adoção da nova sequência de trabalho no contexto de mudança de prioridade, verificando se o suporte secundário em intensidade muito marcante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Integração de colega com continuidade de apoio — muito marcante",
+          "leitura": "No contexto de integração de colega, a Estabilidade muito marcante constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, o suporte paciente à aprendizagem pode demandar preparação cuidadosa antes de alterações.",
+          "atencao": "Na gestão de integração de colega com Estabilidade muito marcante em posição secundária, o risco está em adiar decisões necessárias para evitar desconforto com alterações.",
+          "acao": "Para orientar integração de colega com esse recurso secundário em intensidade muito marcante, determine marcos de adaptação e prepare as alterações e adote um roteiro com retirada gradual de acompanhamento. Observe em 30 dias a conquista de autonomia na rotina no contexto de integração de colega, verificando se o suporte secundário em intensidade muito marcante precisa de ajuste.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-8": {
+      "position": 2,
+      "level": 8,
+      "label": "2º lugar — dominante",
+      "variants": {
+        "1": {
+          "titulo": "Reunião com continuidade de apoio — dominante",
+          "leitura": "No contexto de reunião, a Estabilidade dominante constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a escuta antes dos encaminhamentos pode tornar a interrupção do padrão conhecido especialmente exigente.",
+          "atencao": "Na gestão de reunião com Estabilidade dominante em posição secundária, o risco está em aceitar a manutenção do procedimento apesar de uma necessidade clara de mudança.",
+          "acao": "Para orientar reunião com esse recurso secundário em intensidade dominante, fixe um limite para manter a rotina anterior e acompanhe a transição e adote uma pauta com espaço para ouvir e decidir. Observe em 30 dias a participação acompanhada de decisões no contexto de reunião, verificando se o suporte secundário em intensidade dominante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback com continuidade de apoio — dominante",
+          "leitura": "No contexto de feedback, a Estabilidade dominante constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a recepção paciente das orientações pode tornar a interrupção do padrão conhecido especialmente exigente.",
+          "atencao": "Na gestão de feedback com Estabilidade dominante em posição secundária, o risco está em aceitar a manutenção do procedimento apesar de uma necessidade clara de mudança.",
+          "acao": "Para orientar feedback com esse recurso secundário em intensidade dominante, fixe um limite para manter a rotina anterior e acompanhe a transição e adote um acordo que diferencie concordância e compreensão. Observe em 30 dias a aplicação do ajuste solicitado no contexto de feedback, verificando se o suporte secundário em intensidade dominante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Prazo com continuidade de apoio — dominante",
+          "leitura": "No contexto de prazo, a Estabilidade dominante constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, a manutenção de uma cadência regular pode tornar a interrupção do padrão conhecido especialmente exigente.",
+          "atencao": "Na gestão de prazo com Estabilidade dominante em posição secundária, o risco está em aceitar a manutenção do procedimento apesar de uma necessidade clara de mudança.",
+          "acao": "Para orientar prazo com esse recurso secundário em intensidade dominante, fixe um limite para manter a rotina anterior e acompanhe a transição e adote marcos de entrega e avisos de impedimento. Observe em 30 dias a continuidade entre as entregas no contexto de prazo, verificando se o suporte secundário em intensidade dominante precisa de ajuste.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Conflito com continuidade de apoio — dominante",
+          "leitura": "No contexto de conflito, a Estabilidade dominante constitui um recurso secundário de ritmo, paciência e continuidade. Com essa intensidade em posição secundária, o apoio à retomada do diálogo pode tornar a interrupção do padrão conhecido especialmente exigente.",
+          "atencao": "Na gestão de conflito com Estabilidade dominante em posição secundária, o risco está em aceitar a manutenção do procedimento apesar de uma necessidade clara de mudança.",
+          "acao": "Para orientar conflito com esse recurso secundário em intensidade dominante, fixe um limite para manter a rotina anterior e acompanhe a transição e adote um registro da divergência e da solução acordada. Observe em 30 dias a resolução efetiva do desacordo no contexto de conflito, verificando se o suporte secundário em intensidade dominante precisa de ajuste.",
+          "status": "rascunho"
+        }
+      }
+    }
+  }
+}
