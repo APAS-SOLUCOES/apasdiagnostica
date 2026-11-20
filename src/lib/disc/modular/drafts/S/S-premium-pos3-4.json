@@ -1,0 +1,357 @@
+{
+  "factor": "S",
+  "report": "premium",
+  "status": "rascunho",
+  "diagnostics": {
+    "3-1": {
+      "position": 3,
+      "level": 1,
+      "label": "3º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Uma pausa para acompanhar",
+          "leitura": "Com a Estabilidade quase ausente na terceira posição, você pode precisar de apoio para sustentar uma escuta paciente. Em uma reunião de alinhamento, talvez avance para a solução antes que um colega termine de explicar a dificuldade.",
+          "atencao": "A pressa em responder pode deixar uma necessidade importante sem acolhimento.",
+          "acao": "Combine com alguém de confiança um treino de escuta até o fim da fala. Antes de responder, confirme o que entendeu.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Continuidade que pode ser aprendida",
+          "leitura": "A Estabilidade quase ausente em terceiro lugar sugere que manter uma cadência de acompanhamento pode exigir treino. Ao receber uma tarefa com prazo longo, você pode alternar arrancadas intensas e períodos sem retomada.",
+          "atencao": "Sem pontos de apoio, o esforço pode se concentrar perto demais da entrega.",
+          "acao": "Peça ajuda para dividir a atividade em etapas curtas e pratique uma checagem regular do avanço.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Acolhimento em pequenos passos",
+          "leitura": "Você pode recorrer pouco à Estabilidade, quase ausente atrás de dois fatores, para oferecer presença continuada. Na integração de um colega, talvez explique a rotina uma vez e precise de apoio para acompanhar as dúvidas dos dias seguintes.",
+          "atencao": "Uma orientação inicial pode não bastar para quem ainda está conhecendo o trabalho.",
+          "acao": "Com orientação de alguém experiente, ensaie uma pergunta de acompanhamento e reserve um retorno breve com o novo colega.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Tempo para elaborar a devolutiva",
+          "leitura": "Na terceira posição, a Estabilidade quase ausente pode pedir prática para permanecer disponível diante de uma reação difícil. Durante um feedback, você pode querer encerrar o assunto enquanto a outra pessoa ainda procura palavras.",
+          "atencao": "Fechar a conversa cedo pode interromper a compreensão do que foi recebido.",
+          "acao": "Treine com um parceiro uma pausa após a devolutiva. Use uma pergunta simples para verificar se a pessoa precisa de mais tempo.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-2": {
+      "position": 3,
+      "level": 2,
+      "label": "3º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Ritmo que inclui outras vozes",
+          "leitura": "Com a Estabilidade discreta em terceiro lugar, acompanhar o tempo de elaboração dos outros pode exigir intenção. Em uma reunião de decisões, você pode mudar de assunto enquanto alguém ainda organiza uma contribuição.",
+          "atencao": "A transição rápida pode fazer a equipe perder uma informação relevante.",
+          "acao": "Peça a um colega que ajude você a perceber essas transições e pratique uma checagem antes de passar ao próximo tema.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Apoio depois de delegar",
+          "leitura": "A Estabilidade discreta na terceira posição pode aparecer como disponibilidade pontual, ainda sem uma rotina de suporte. Ao delegar uma atividade nova, você pode oferecer ajuda no início e esquecer de combinar quando retomará o contato.",
+          "atencao": "Quem recebeu a tarefa pode adiar dúvidas por não saber quando procurar você.",
+          "acao": "Prepare com apoio de uma liderança um acordo de acompanhamento e experimente mantê-lo durante uma entrega.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Uma transição menos abrupta",
+          "leitura": "Você conta com Estabilidade discreta, atrás de dois fatores, para organizar a continuidade em meio a alterações. Quando uma prioridade muda, pode iniciar a nova demanda sem reservar tempo para fechar ou repassar o trabalho anterior.",
+          "atencao": "Pendências sem encaminhamento podem dificultar a retomada da equipe.",
+          "acao": "Com ajuda de um parceiro, treine um registro breve do que fica pausado, de quem assume e do próximo ponto de revisão.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Escuta antes de reagir",
+          "leitura": "Na terceira posição e em intensidade discreta, a Estabilidade pode precisar de treino para sustentar serenidade nas divergências. Em um conflito sobre responsabilidades, você pode responder à primeira crítica antes de compreender a sequência dos acontecimentos.",
+          "atencao": "Uma resposta imediata pode ampliar a tensão que você gostaria de resolver.",
+          "acao": "Ensaie com alguém uma pergunta de esclarecimento e use uma pausa curta para ouvir a resposta inteira.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-3": {
+      "position": 3,
+      "level": 3,
+      "label": "3º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Regularidade ao longo do prazo",
+          "leitura": "A Estabilidade moderada-baixa em terceiro lugar pode precisar de apoio para transformar disposição em constância. Em um projeto com várias entregas, você pode manter o ritmo inicial e perder a cadência nas etapas repetitivas.",
+          "atencao": "Oscilações no acompanhamento podem tornar menos previsível o trabalho de quem depende de você.",
+          "acao": "Escolha um marco recorrente com um colega e treine uma revisão curta do andamento, ajustando o intervalo ao esforço real.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Paciência para construir um acordo",
+          "leitura": "Com a Estabilidade moderada-baixa na terceira posição, você pode precisar praticar a tolerância ao tempo de negociação. Ao discutir um acordo entre áreas, talvez queira concluir antes de ouvir as limitações operacionais do outro lado.",
+          "atencao": "Um acerto apressado pode esconder condições que depois dificultam o cumprimento.",
+          "acao": "Peça orientação para preparar perguntas sobre a rotina envolvida e pratique escutar essas respostas antes de fechar o combinado.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Presença que vai além da recepção",
+          "leitura": "Você dispõe de Estabilidade moderada-baixa, atrás de dois fatores, para apoiar a adaptação de outras pessoas. Na integração de uma colega, pode acolhê-la no primeiro dia e precisar de um lembrete para acompanhar sua evolução.",
+          "atencao": "A ausência de retornos pode deixar pequenas inseguranças se acumularem.",
+          "acao": "Com apoio de quem conduz a integração, organize encontros curtos e treine perguntas sobre as dificuldades da rotina.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Uma escuta que suporta o desconforto",
+          "leitura": "A terceira posição da Estabilidade, em intensidade moderada-baixa, pode pedir preparo para acompanhar reações sem acelerar a conversa. Durante um feedback delicado, você pode entender o problema e ainda sentir vontade de passar logo ao plano de melhoria.",
+          "atencao": "Pular a elaboração da pessoa pode reduzir a clareza sobre o que ela realmente compreendeu.",
+          "acao": "Ensaie uma devolutiva com alguém de confiança e pratique resumir a resposta recebida antes de propor próximos passos.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-4": {
+      "position": 3,
+      "level": 4,
+      "label": "3º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Cadência com margem de ajuste",
+          "leitura": "A Estabilidade equilibrada em terceiro lugar pode ajudar você a sustentar continuidade sem comandar todas as suas escolhas. Diante de um prazo compartilhado, você pode organizar etapas regulares e rever o ritmo quando aparece uma dependência nova.",
+          "atencao": "Manter a cadência não deve esconder a necessidade de renegociar uma etapa inviável.",
+          "acao": "Revise os pontos de acompanhamento com a equipe e explicite o que pode mudar sem comprometer a entrega.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Disponibilidade com contorno",
+          "leitura": "Com a Estabilidade equilibrada na terceira posição, você pode oferecer apoio paciente quando a situação pede. Ao delegar uma tarefa, pode combinar retornos que dão segurança sem acompanhar cada movimento da pessoa.",
+          "atencao": "O cuidado pode ocupar espaço demais se você assumir dúvidas que o outro já consegue resolver.",
+          "acao": "Acorde os momentos de ajuda e pergunte quais decisões a pessoa pode tomar com autonomia.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Escutar e encaminhar a diferença",
+          "leitura": "Você tem na Estabilidade equilibrada, atrás de dois fatores, um recurso para desacelerar tensões. Em um conflito entre colegas, pode ouvir as versões com calma e ajudar a recuperar uma sequência compreensível dos fatos.",
+          "atencao": "A busca de tranquilidade pode adiar uma conversa necessária sobre responsabilidades.",
+          "acao": "Após ouvir os envolvidos, proponha um acordo concreto e defina quando vocês verificarão seu cumprimento.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Mudança com pontos de referência",
+          "leitura": "Na terceira posição, a Estabilidade equilibrada pode favorecer transições cuidadosas sem exigir que tudo permaneça igual. Quando uma prioridade é revista, você pode preservar referências úteis para que a equipe reorganize a rotina.",
+          "atencao": "Tentar manter todos os hábitos pode dificultar o espaço necessário para a nova demanda.",
+          "acao": "Diferencie o que precisa continuar do que pode ser interrompido e comunique a sequência de transição.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-5": {
+      "position": 3,
+      "level": 5,
+      "label": "3º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Constância que sustenta a equipe",
+          "leitura": "A Estabilidade presente em terceiro lugar pode oferecer uma base consistente, mesmo sem ser seu primeiro recurso. Em uma reunião de acompanhamento, você pode retomar acordos anteriores e ajudar a equipe a manter uma cadência confiável.",
+          "atencao": "Repetir o mesmo formato pode deixar de atender a uma etapa que passou a exigir respostas diferentes.",
+          "acao": "Pergunte quais acompanhamentos ainda ajudam e ajuste a frequência sem perder os compromissos essenciais.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Paciência para desenvolver autonomia",
+          "leitura": "Com a Estabilidade presente na terceira posição, você tende a dispor de paciência para apoiar a aprendizagem. Ao delegar uma atividade recorrente, pode acompanhar as primeiras tentativas sem exigir domínio imediato.",
+          "atencao": "Sua disponibilidade pode virar dependência se toda dificuldade retornar para você.",
+          "acao": "Combine uma progressão de autonomia e convide a pessoa a apresentar uma tentativa de solução antes de pedir sua intervenção.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Firmeza serena nos combinados",
+          "leitura": "Você pode acionar a Estabilidade presente, atrás de dois fatores, para dar continuidade às relações de trabalho. Em uma negociação com um parceiro habitual, pode valorizar condições previsíveis e compromissos sustentáveis para ambos.",
+          "atencao": "Preservar a relação pode tornar desconfortável rever um acordo que deixou de funcionar.",
+          "acao": "Apresente o impacto concreto da condição atual e proponha uma revisão com tempo definido para adaptação.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Acolher sem congelar a rotina",
+          "leitura": "A Estabilidade presente em terceiro lugar pode favorecer uma presença tranquilizadora em períodos de adaptação. Na integração de um colega, você pode explicar os hábitos da equipe e se manter disponível para dúvidas sucessivas.",
+          "atencao": "Ensinar a rotina como única possibilidade pode desestimular contribuições de quem está chegando.",
+          "acao": "Ofereça referências para o começo e reserve um momento para ouvir o que o novo colega percebeu que poderia melhorar.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-6": {
+      "position": 3,
+      "level": 6,
+      "label": "3º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Uma base forte de continuidade",
+          "leitura": "A Estabilidade marcante na terceira posição indica um recurso intenso de constância, ainda que outros fatores venham antes na ordem. Sob um prazo exigente, você pode sustentar um ritmo regular e ajudar colegas a não dispersarem esforços.",
+          "atencao": "A insistência na cadência conhecida pode atrasar a percepção de que o plano precisa mudar.",
+          "acao": "Estabeleça sinais concretos para revisar a execução e redistribua as etapas quando esses sinais aparecerem.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Apoio sem carregar tudo",
+          "leitura": "Com a Estabilidade marcante em terceiro lugar, você pode investir bastante em oferecer suporte paciente à equipe. Depois de um feedback difícil, pode permanecer disponível para acompanhar a recuperação da confiança de um colega.",
+          "atencao": "Cuidar da continuidade do outro pode levar você a absorver responsabilidades que não são suas.",
+          "acao": "Defina qual apoio você pode oferecer e preserve a responsabilidade da pessoa pelas ações combinadas.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Segurança para atravessar alterações",
+          "leitura": "Você conta com Estabilidade marcante, atrás de dois fatores, para preservar referências e vínculos. Diante de uma mudança repentina de prioridade, pode buscar entender as consequências antes de abandonar uma rotina que vinha funcionando.",
+          "atencao": "A necessidade de segurança pode prolongar a resistência mesmo quando a mudança já precisa começar.",
+          "acao": "Nomeie o que precisa ser protegido e proponha uma primeira etapa reversível para testar o novo caminho.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Calma com espaço para discordar",
+          "leitura": "Na terceira posição, a Estabilidade marcante pode dar força à sua paciência diante de tensões prolongadas. Em um conflito sobre a divisão do trabalho, você pode sustentar a escuta e tentar preservar a cooperação entre os envolvidos.",
+          "atencao": "Proteger a harmonia a qualquer custo pode manter uma distribuição injusta por tempo demais.",
+          "acao": "Expresse com serenidade o limite que precisa ser respeitado e transforme a conversa em um novo acordo de responsabilidades.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-1": {
+      "position": 4,
+      "level": 1,
+      "label": "4º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Primeiros apoios para a constância",
+          "leitura": "Com a Estabilidade quase ausente na quarta posição, sustentar uma rotina de acompanhamento pode exigir apoio próximo. Em uma entrega com prazo extenso, você pode se envolver com urgências e deixar a atividade principal sem continuidade.",
+          "atencao": "A falta de retomadas pode tornar difícil perceber o atraso enquanto ainda há margem de ajuste.",
+          "acao": "Peça a alguém que ajude a definir uma etapa pequena e treine retomá-la em um horário combinado.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Um treino de presença na conversa",
+          "leitura": "A Estabilidade quase ausente em quarto lugar sugere pouca disponibilidade espontânea para acompanhar o ritmo emocional de uma troca. Durante um feedback, você pode querer resolver a questão antes que a pessoa consiga explicar como recebeu a mensagem.",
+          "atencao": "A tentativa de encerrar rapidamente pode deixar o entendimento incompleto.",
+          "acao": "Pratique uma conversa simulada com apoio de alguém experiente e reserve uma pergunta para ouvir a reação sem interromper.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Ajuda para acompanhar quem chega",
+          "leitura": "Você pode precisar de suporte para acionar a Estabilidade, quase ausente na quarta posição, em cuidados continuados. Na integração de um colega, talvez concentre as orientações no primeiro encontro e não retome como está sendo a adaptação.",
+          "atencao": "Dúvidas cotidianas podem permanecer invisíveis quando não existe um retorno previsto.",
+          "acao": "Combine com um parceiro da equipe um pequeno roteiro de acompanhamento e treine usá-lo nos primeiros dias de integração.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Pequenas referências na transição",
+          "leitura": "Na quarta posição, a Estabilidade quase ausente pode pedir aprendizagem para manter continuidade durante mudanças. Quando uma prioridade é substituída, você pode trocar de frente sem registrar o que precisará ser retomado depois.",
+          "atencao": "A mudança sem passagem organizada pode gerar retrabalho para outras pessoas.",
+          "acao": "Com auxílio de um colega, pratique uma passagem que indique o ponto de parada e a próxima ação necessária.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-2": {
+      "position": 4,
+      "level": 2,
+      "label": "4º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Escuta com um ponto de apoio",
+          "leitura": "A Estabilidade discreta em quarto lugar pode exigir preparação para acompanhar falas mais demoradas. Em uma reunião de planejamento, você pode começar a organizar sua resposta antes de ouvir as condições trazidas por outra área.",
+          "atencao": "Uma parte decisiva da informação pode se perder enquanto você prepara o que vai dizer.",
+          "acao": "Treine anotar uma dúvida por vez e peça apoio para verificar se seu resumo contempla o que foi apresentado.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Um retorno que dá referência",
+          "leitura": "Com a Estabilidade discreta na quarta posição, o suporte regular pode depender de um acordo explícito. Ao delegar uma demanda, você pode se colocar à disposição sem definir quando vai conferir se o trabalho encontrou obstáculos.",
+          "atencao": "Uma oferta genérica de ajuda pode não dar segurança a quem está aprendendo.",
+          "acao": "Peça orientação para escolher um ponto de retorno e pratique cumpri-lo sem assumir a execução da tarefa.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Paciência para ouvir restrições",
+          "leitura": "Você dispõe de Estabilidade discreta, em quarto lugar, para sustentar o tempo de construção de um acordo. Numa negociação de prazo, pode aceitar a primeira solução antes de explorar as limitações de execução de cada parte.",
+          "atencao": "Um acordo rápido pode exigir revisões evitáveis quando as rotinas envolvidas aparecem.",
+          "acao": "Prepare as perguntas com alguém de confiança e treine ouvir as restrições antes de sugerir uma data.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Uma pausa que favorece o entendimento",
+          "leitura": "A quarta posição da Estabilidade, com intensidade discreta, pode pedir treino para permanecer na conversa quando surge tensão. Em um conflito sobre prioridades, você pode alternar entre responder depressa e sair do assunto.",
+          "atencao": "A falta de continuidade no diálogo pode deixar as expectativas de cada pessoa indefinidas.",
+          "acao": "Ensaie com apoio uma sequência curta de escuta, confirmação do problema e definição de um próximo passo.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-3": {
+      "position": 4,
+      "level": 3,
+      "label": "4º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Repetição com propósito visível",
+          "leitura": "Com a Estabilidade moderada-baixa em quarto lugar, manter práticas repetidas pode exigir uma estrutura de apoio. Durante um projeto longo, você pode cumprir as etapas mais novas e ter dificuldade para sustentar as verificações rotineiras.",
+          "atencao": "Abandonar as verificações pode reduzir a previsibilidade de uma entrega que depende de continuidade.",
+          "acao": "Com um colega, escolha uma verificação realmente útil e pratique sua repetição antes de ampliar a rotina.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Tempo para acolher uma reação",
+          "leitura": "A Estabilidade moderada-baixa na quarta posição pode precisar de treino para apoiar conversas que não se resolvem de imediato. Ao oferecer feedback a alguém inseguro, você pode explicar o ajuste e subestimar o tempo necessário para a pessoa elaborar a resposta.",
+          "atencao": "Uma orientação compreensível para você pode ainda não estar assimilada pelo interlocutor.",
+          "acao": "Peça ajuda para ensaiar uma devolutiva com pausas e pratique perguntar o que a pessoa entendeu antes de concluir.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Continuidade no começo da parceria",
+          "leitura": "Você pode desenvolver o uso da Estabilidade moderada-baixa, em quarto lugar, por meio de acompanhamentos simples. Na integração de uma colega de outra área, talvez apresente os processos e precise de apoio para perceber dificuldades que surgem depois.",
+          "atencao": "A ausência de checagens pode permitir que uma dúvida pequena vire um obstáculo recorrente.",
+          "acao": "Construa com quem coordena a integração uma sequência breve de retornos e treine escutar sem antecipar todas as respostas.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Organização para mudar de rota",
+          "leitura": "Na quarta posição e em intensidade moderada-baixa, a Estabilidade pode exigir atenção para preservar referências durante uma transição. Diante de uma mudança de prioridade, você pode aderir ao novo pedido e deixar pouco claro o destino das tarefas anteriores.",
+          "atencao": "A equipe pode continuar trabalhando com expectativas que já não correspondem à nova sequência.",
+          "acao": "Com apoio do responsável pela demanda, treine comunicar o que continua, o que pausa e quando haverá nova avaliação.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-4": {
+      "position": 4,
+      "level": 4,
+      "label": "4º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Continuidade como recurso complementar",
+          "leitura": "A Estabilidade equilibrada em quarto lugar pode apoiar sua organização, ainda que outros recursos apareçam primeiro. Em uma reunião de acompanhamento, você pode ajudar a retomar acordos e ajustar a cadência às necessidades atuais.",
+          "atencao": "Seguir o combinado sem observar o contexto pode manter uma rotina que já perdeu utilidade.",
+          "acao": "Verifique com a equipe quais referências precisam permanecer e quais acompanhamentos podem ser simplificados.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Paciência disponível para orientar",
+          "leitura": "Com a Estabilidade equilibrada na quarta posição, você pode recorrer à paciência para dar sustentação a uma aprendizagem. Ao delegar uma tarefa pouco familiar, pode oferecer retornos previsíveis sem precisar conduzir toda a execução.",
+          "atencao": "Apoiar em excesso pode dificultar que a pessoa reconheça a própria capacidade de decidir.",
+          "acao": "Defina limites claros para o suporte e deixe explícito em quais situações a pessoa pode seguir sem consultar você.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Calma que não apaga diferenças",
+          "leitura": "A Estabilidade equilibrada em quarto lugar pode oferecer a você uma escuta cuidadosa como recurso complementar. Em um conflito entre parceiros de trabalho, pode ajudar a organizar as falas sem exigir uma solução imediata.",
+          "atencao": "A serenidade da conversa não significa que as divergências tenham sido resolvidas.",
+          "acao": "Identifique o ponto que ainda separa as partes e combine uma ação verificável para enfrentá-lo.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Referências compartilhadas na mudança",
+          "leitura": "Quando a quarta posição equilibrada da Estabilidade resulta de empate, você pode encontrar nela um apoio que divide espaço com outros recursos. Em uma mudança de prioridade, pode combinar abertura ao novo com a preservação de referências úteis à equipe.",
+          "atencao": "O empate não garante que você recorrerá à constância em todas as situações de pressão.",
+          "acao": "Observe quais referências ajudam de fato a transição e combine um momento para rever o novo ritmo de trabalho.",
+          "status": "rascunho"
+        }
+      }
+    }
+  }
+}
