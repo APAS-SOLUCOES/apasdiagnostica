@@ -1,0 +1,462 @@
+{
+  "factor": "I",
+  "report": "technical",
+  "status": "rascunho",
+  "diagnostics": {
+    "1-4": {
+      "position": 1,
+      "level": 4,
+      "label": "1º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Comunicação em composição equilibrada",
+          "leitura": "A Influência equilibrada integra um empate entre os quatro fatores, sem preferência comportamental predominante. Em reunião de equipe, a exposição de ideias pode combinar abertura ao diálogo e atenção aos demais requisitos da pauta.",
+          "atencao": "Presumir facilidade constante para mobilizar o grupo pode levar à delegação de uma representação sem preparo.",
+          "acao": "Delegue uma síntese de reunião com roteiro e espaço para perguntas. Observe em 30 dias a clareza dos encaminhamentos comunicados.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Reconhecimento sem preferência exclusiva",
+          "leitura": "No primeiro lugar compartilhado pelos quatro fatores, a Influência equilibrada não define isoladamente a forma de interação. Durante o feedback, a receptividade ao reconhecimento pode coexistir com interesse por evidências e orientações práticas.",
+          "atencao": "Usar apenas elogios pode deixar a expectativa de desenvolvimento pouco compreensível.",
+          "acao": "Associe reconhecimento a uma contribuição observável e peça a descrição do próximo ajuste. Confira em 30 dias a compreensão do acordo de desenvolvimento.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Relacionamento entre recursos equivalentes",
+          "leitura": "O empate dos quatro fatores situa a Influência equilibrada como um recurso entre outros de igual expressão. Na negociação com outra área, a aproximação relacional pode participar da conversa sem necessariamente orientar o acordo.",
+          "atencao": "A gestão pode superestimar a capacidade de persuasão ao atribuir uma negociação sensível sem apoio.",
+          "acao": "Prepare argumentos e condições de concessão antes da conversa entre áreas. Acompanhe por 30 dias como o vínculo e os critérios de acordo são utilizados.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Mobilização sem destaque relativo",
+          "leitura": "A Influência equilibrada aparece na primeira posição em igualdade com os demais fatores. Diante de uma mudança de prioridade, o entusiasmo pode ser uma das formas de comunicar a transição, sem constituir resposta obrigatória.",
+          "atencao": "Cobrar animação visível como sinal de adesão pode distorcer a avaliação do comprometimento.",
+          "acao": "Peça uma mensagem que esclareça o motivo da mudança e acolha dúvidas. Verifique durante 30 dias a compreensão da equipe, sem usar expressividade como medida de adesão.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-5": {
+      "position": 1,
+      "level": 5,
+      "label": "1º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Participação que aproxima",
+          "leitura": "A Influência presente ocupa a primeira posição e favorece a comunicação como via de aproximação. Em reuniões de projeto, pode facilitar a troca de ideias e o convite à participação.",
+          "atencao": "A conversa produtiva pode ser confundida com alinhamento concluído antes da confirmação dos entendimentos.",
+          "acao": "Delegue a abertura de uma reunião e cobre uma síntese validada pelo grupo. Observe por 30 dias se os participantes compreendem o que ficou combinado.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback com valorização concreta",
+          "leitura": "Como recurso principal em intensidade presente, a Influência favorece o uso de reconhecimento na interação. Em uma conversa de feedback, pode ajudar a iniciar o diálogo por contribuições que merecem continuidade.",
+          "atencao": "O cuidado com o vínculo pode suavizar demais a descrição do comportamento a ajustar.",
+          "acao": "Ofereça feedback que una valorização específica e descrição direta da mudança esperada. Em 30 dias, verifique se o ajuste foi compreendido sem perder a abertura ao diálogo.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Persuasão apoiada em informação",
+          "leitura": "A primeira posição da Influência presente sugere disponibilidade para apresentar benefícios e aproximar interesses. Ao negociar um prazo, a comunicação pode ajudar a explicar a utilidade de uma proposta.",
+          "atencao": "Uma justificativa convincente pode receber concordância antes de a viabilidade ser examinada.",
+          "acao": "Solicite que a proposta de prazo inclua dependências antes de autorizar sua comunicação. Acompanhe em 30 dias se os compromissos divulgados correspondem às condições de entrega.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Entusiasmo na apresentação",
+          "leitura": "A Influência presente como principal recurso pode favorecer uma exposição acessível e envolvente. Em apresentação de melhoria, o entusiasmo tende a ajudar na conexão entre a proposta e o interesse do público.",
+          "atencao": "A boa recepção da apresentação pode ser tomada como aprovação de uma implantação ainda não discutida.",
+          "acao": "Delegue a apresentação e peça uma pergunta final sobre reservas e condições de adoção. Observe durante 30 dias quais manifestações de interesse se convertem em participação efetiva.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-6": {
+      "position": 1,
+      "level": 6,
+      "label": "1º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Articulação com espaço para outras vozes",
+          "leitura": "A Influência marcante em primeiro lugar favorece a mobilização por contato e troca verbal. Em reunião de integração, pode ampliar conexões entre participantes de áreas diferentes.",
+          "atencao": "A ocupação frequente da conversa pode restringir contribuições de quem precisa de mais tempo para formular ideias.",
+          "acao": "Atribua a facilitação com a exigência de recolher contribuições antes da síntese. Avalie em 30 dias a diversidade de vozes registrada nas discussões.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Reconhecimento com critério de entrega",
+          "leitura": "A posição principal da Influência marcante valoriza o retorno social nas relações de trabalho. Na delegação de uma atividade visível, a oportunidade de reconhecimento pode favorecer o engajamento inicial.",
+          "atencao": "A visibilidade da tarefa pode receber mais investimento que etapas pouco expostas, mas necessárias à conclusão.",
+          "acao": "Delegue a atividade vinculando o reconhecimento também aos bastidores da execução. Observe em 30 dias a regularidade das etapas que não geram exposição pública.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Conexão sem diluir divergências",
+          "leitura": "A Influência marcante como primeiro recurso pode facilitar aproximações em situações de tensão. Em conflito entre colegas, a busca de um ambiente receptivo pode favorecer a retomada da conversa.",
+          "atencao": "Restabelecer cordialidade sem tratar a divergência pode manter o problema operacional ativo.",
+          "acao": "Peça que a mediação registre o ponto de desacordo e um compromisso verificável de cada parte. Confira por 30 dias se a aproximação produz mudanças na interação de trabalho.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Narrativa de mudança com continuidade",
+          "leitura": "Com intensidade marcante e primeira posição, a Influência tende a favorecer mensagens mobilizadoras. Ao comunicar uma nova prioridade, pode dar destaque aos ganhos esperados e estimular interesse.",
+          "atencao": "O entusiasmo com a novidade pode deixar pouco visíveis as dúvidas sobre a transição.",
+          "acao": "Oriente a comunicação a incluir espaço para perguntas e um retorno após a implantação. Em 30 dias, compare as dúvidas iniciais com as respostas efetivamente oferecidas.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-7": {
+      "position": 1,
+      "level": 7,
+      "label": "1º lugar — muito marcante",
+      "variants": {
+        "1": {
+          "titulo": "Persuasão com verificação independente",
+          "leitura": "A Influência muito marcante em primeiro lugar amplia o uso de argumentos relacionais e entusiasmo para obter adesão. Em negociação de parceria, a qualidade do contato pode acelerar a aceitação da proposta.",
+          "atencao": "A adesão produzida na conversa pode encobrir condições ainda não verificadas pelas partes.",
+          "acao": "Condicione o fechamento a uma revisão escrita das premissas por quem executará o acordo. Observe durante 30 dias a diferença entre aceitação verbal e compromisso sustentado.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Expressividade com síntese obrigatória",
+          "leitura": "A primeira posição da Influência muito marcante favorece exposições expansivas e envolvimento do público. Em apresentação de resultados, histórias e exemplos podem ocupar espaço relevante na mensagem.",
+          "atencao": "O envolvimento da audiência pode dificultar a percepção de lacunas nos dados apresentados.",
+          "acao": "Exija uma síntese com evidências, limites e pedido de decisão antes da apresentação. Confira em 30 dias se as decisões tomadas correspondem ao conteúdo documentado.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Vínculo preservado com franqueza",
+          "leitura": "A Influência muito marcante como recurso principal pode intensificar a busca por receptividade nas conversas. Durante feedback corretivo, a valorização da relação pode estimular explicações conciliadoras.",
+          "atencao": "A necessidade de manter uma resposta favorável pode reduzir a nitidez da cobrança.",
+          "acao": "Dê o feedback em ambiente reservado e peça a reformulação explícita do comportamento esperado. Acompanhe em 30 dias a execução do ajuste, distinguindo cordialidade de mudança concreta.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Mobilização sem promessa excessiva",
+          "leitura": "A expressão muito marcante da Influência em primeiro lugar pode gerar forte disposição para animar iniciativas coletivas. Na delegação de um evento interno, a rede de contatos pode favorecer convites e adesões rápidas.",
+          "atencao": "O desejo de envolver muitas pessoas pode ampliar promessas além dos recursos autorizados.",
+          "acao": "Estabeleça um limite de compromissos externos e uma checagem antes de cada convite adicional. Verifique por 30 dias se a mobilização respeita o escopo delegado.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-8": {
+      "position": 1,
+      "level": 8,
+      "label": "1º lugar — dominante",
+      "variants": {
+        "1": {
+          "titulo": "Espaço coletivo protegido",
+          "leitura": "A Influência dominante ocupa a primeira posição e indica expressão muito intensa da comunicação e da busca de interação. Em reunião estratégica, a capacidade de envolver o grupo pode concentrar a atenção em uma única narrativa.",
+          "atencao": "A concordância pública pode refletir o efeito da persuasão, sem representar análise independente.",
+          "acao": "Adote coleta individual de posições antes do debate e distribua o tempo de fala. Observe em 30 dias se surgem avaliações diferentes da narrativa inicialmente apresentada.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Promessas submetidas a validação",
+          "leitura": "A primeira posição com Influência dominante pode tornar a persuasão um recurso amplamente utilizado para construir acordos. Em negociação comercial, o entusiasmo com a relação pode aumentar a disposição para anunciar possibilidades.",
+          "atencao": "Compromissos comunicados sem validação podem expor a equipe a expectativas impossíveis de atender.",
+          "acao": "Exija aprovação técnica das condições antes de qualquer promessa e registre as exceções recusadas. Durante 30 dias, confronte cada compromisso anunciado com a capacidade confirmada.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Reconhecimento sem dependência de plateia",
+          "leitura": "A Influência dominante como principal recurso pode atribuir grande relevância à resposta social recebida. No feedback sobre uma apresentação, o reconhecimento do público pode ganhar mais peso que a consistência da mensagem.",
+          "atencao": "Avaliar desempenho pela repercussão pode reforçar exposição sem melhoria de conteúdo.",
+          "acao": "Separe no feedback os critérios de comunicação, precisão e utilidade para a decisão. Verifique em 30 dias a incorporação de ajustes mesmo quando não houver reconhecimento público imediato.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Mediação com proteção ao dissenso",
+          "leitura": "A intensidade dominante da Influência em primeiro lugar pode favorecer forte investimento em aproximar pessoas e recuperar adesão. Em conflito sobre uma mudança, a argumentação envolvente pode buscar um desfecho consensual rápido.",
+          "atencao": "A pressão relacional por concordância pode silenciar objeções legítimas.",
+          "acao": "Disponibilize um canal reservado para objeções e só encerre a mediação após responder aos pontos registrados. Observe por 30 dias se as discordâncias reaparecem fora dos espaços formais.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-1": {
+      "position": 2,
+      "level": 1,
+      "label": "2º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Participação sem exigência de exposição",
+          "leitura": "A Influência quase ausente na segunda posição indica expressão muito reduzida dos recursos de mobilização social neste arranjo. Em reunião, a participação pode depender mais de uma solicitação específica que de iniciativa para envolver o grupo.",
+          "atencao": "Confundir pouca manifestação com falta de contribuição pode excluir informações importantes.",
+          "acao": "Envie a pauta antecipadamente e solicite uma contribuição delimitada. Observe em 30 dias o conteúdo oferecido, sem exigir maior tempo de fala como prova de participação.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback sem apelo à aprovação",
+          "leitura": "Na segunda posição, a Influência quase ausente sugere baixa utilização de reconhecimento social como recurso de interação. Em feedback, elogios genéricos podem fornecer pouca orientação sobre o que manter.",
+          "atencao": "Insistir em estímulos de visibilidade pode deslocar a conversa das necessidades reais de desenvolvimento.",
+          "acao": "Use exemplos observáveis e pergunte qual apoio facilita o ajuste. Acompanhe por 30 dias a utilidade das orientações, em vez da demonstração de entusiasmo.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Comunicação de prazo com apoio",
+          "leitura": "A Influência quase ausente como segundo recurso pode oferecer pouco suporte espontâneo à persuasão. Ao comunicar um atraso, a explicação pode se limitar ao fato sem explorar o impacto sobre o interlocutor.",
+          "atencao": "A ausência de contextualização pode ser interpretada como desconsideração pelo compromisso compartilhado.",
+          "acao": "Forneça um roteiro com impacto, alternativa e solicitação de retorno. Confira durante 30 dias se as comunicações de prazo permitem reorganização pela área afetada.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Delegação sem papel de animador",
+          "leitura": "O segundo lugar da Influência quase ausente não indica facilidade espontânea para mobilizar por relacionamento. Na delegação de uma atividade conjunta, os contatos necessários podem demandar preparação explícita.",
+          "atencao": "Atribuir informalmente a articulação de várias pessoas pode criar dependências sem acompanhamento.",
+          "acao": "Delimite os interlocutores e combine um primeiro contato acompanhado. Observe em 30 dias quais interações passam a ocorrer sem intermediação da liderança.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-2": {
+      "position": 2,
+      "level": 2,
+      "label": "2º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Intervenções curtas com propósito",
+          "leitura": "A Influência discreta em segundo lugar oferece um apoio limitado à expressão social. Em reunião de acompanhamento, pode haver comunicação breve quando o tema está bem delimitado.",
+          "atencao": "Esperar intervenções espontâneas frequentes pode deixar contribuições fora da discussão.",
+          "acao": "Reserve uma pergunta objetiva sobre um tema previamente informado. Verifique em 30 dias se esse espaço torna as contribuições disponíveis para o grupo.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Reconhecimento ajustado à preferência",
+          "leitura": "A segunda posição com Influência discreta sugere uso contido dos recursos de aproximação. Em feedback de desempenho, o reconhecimento pode ser mais útil quando relacionado a um resultado específico.",
+          "atencao": "Exposição pública não combinada pode tornar o reconhecimento desconfortável ou pouco relevante.",
+          "acao": "Pergunte qual formato de retorno é útil e reconheça uma contribuição identificável. Observe durante 30 dias a abertura para discutir avanços e dificuldades nesse formato.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Negociação com argumentos preparados",
+          "leitura": "Como recurso secundário discreto, a Influência pode apoiar contatos sem sustentar uma persuasão extensa. Em negociação de prazo, uma proposta previamente organizada pode facilitar a conversa.",
+          "atencao": "A gestão pode atribuir resistência à interação quando falta apenas preparo para argumentar.",
+          "acao": "Prepare uma justificativa e uma alternativa antes de delegar a negociação. Acompanhe em 30 dias a capacidade de explicar condições e recolher a resposta da outra área.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Mudança comunicada em etapas",
+          "leitura": "A Influência discreta na segunda posição pode favorecer uma comunicação de menor exposição. Diante de mudança de prioridade, contatos breves podem ser mais acessíveis que uma mobilização coletiva imediata.",
+          "atencao": "Uma mensagem curta demais pode não oferecer espaço para que dúvidas sejam conhecidas.",
+          "acao": "Delegue a comunicação a um pequeno grupo com duas perguntas de checagem. Observe por 30 dias se as dúvidas chegam à liderança antes de comprometer a transição.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-3": {
+      "position": 2,
+      "level": 3,
+      "label": "2º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Contribuição com convite direcionado",
+          "leitura": "A Influência moderada-baixa ocupa a segunda posição e pode apoiar a comunicação em contextos definidos. Em reunião de solução de problemas, um convite direcionado pode facilitar a apresentação de sugestões.",
+          "atencao": "Depender exclusivamente de iniciativa verbal pode reduzir o aproveitamento de ideias disponíveis.",
+          "acao": "Solicite uma sugestão preparada e dê espaço para esclarecimentos do grupo. Confira em 30 dias se a participação passa a exigir menos convites específicos.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Feedback com diálogo estruturado",
+          "leitura": "Em segundo lugar, a Influência moderada-baixa pode oferecer abertura pontual à troca interpessoal. Durante feedback de desenvolvimento, perguntas concretas podem ajudar a expressar percepções sobre o trabalho.",
+          "atencao": "Perguntas amplas sobre satisfação podem não revelar as dificuldades que precisam de apoio.",
+          "acao": "Peça um exemplo de interação que facilitou a entrega e outro que dificultou. Observe durante 30 dias se os ajustes combinados melhoram essas situações.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Apresentação com suporte de conteúdo",
+          "leitura": "A Influência moderada-baixa como segundo recurso pode sustentar uma exposição preparada sem grande investimento em mobilização. Em apresentação de proposta, exemplos próximos da rotina podem ajudar na conexão com o público.",
+          "atencao": "Cobrar uma performance expansiva pode desviar a preparação da clareza necessária à mensagem.",
+          "acao": "Delegue uma apresentação curta com um exemplo de aplicação e abertura para perguntas. Avalie em 30 dias a compreensão obtida, não a quantidade de entusiasmo demonstrado.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Conversa de conflito com enquadramento",
+          "leitura": "O segundo lugar com Influência moderada-baixa sugere disponibilidade contida para aproximar perspectivas. Em conflito de interface, a conversa pode ser facilitada por um objetivo relacional explícito.",
+          "atencao": "Sem enquadramento, a interação pode se restringir à transmissão de posições já estabelecidas.",
+          "acao": "Defina como objetivo compreender uma necessidade da outra parte antes de responder. Verifique por 30 dias se as conversas geram pedidos mais claros entre as áreas.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-4": {
+      "position": 2,
+      "level": 4,
+      "label": "2º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Interação proporcional à pauta",
+          "leitura": "A Influência equilibrada na segunda posição pode complementar a condução do trabalho com diálogo. Em reunião de planejamento, há possibilidade de contribuir para a participação sem tornar a interação o centro da atividade.",
+          "atencao": "A liderança pode deixar indefinido quem deve transformar a conversa em mensagem compartilhada.",
+          "acao": "Delegue a comunicação dos acordos e peça confirmação de entendimento aos envolvidos. Observe em 30 dias a consistência das informações recebidas por diferentes participantes.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Valorização vinculada ao ajuste",
+          "leitura": "Como segundo recurso equilibrado, a Influência pode apoiar uma troca receptiva de feedback. O reconhecimento de uma contribuição pode facilitar a discussão de um ponto de desenvolvimento.",
+          "atencao": "A receptividade da conversa não garante que o comportamento esperado tenha ficado claro.",
+          "acao": "Peça um exemplo de como o ajuste aparecerá na próxima entrega. Acompanhe durante 30 dias a correspondência entre o exemplo acordado e a prática observada.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Relacionamento a serviço do acordo",
+          "leitura": "A segunda posição da Influência equilibrada pode favorecer aproximação suficiente para explorar interesses. Em negociação de recursos, o diálogo pode ajudar a compreender o que a outra área precisa preservar.",
+          "atencao": "O clima colaborativo pode levar a pressupor reciprocidade sem explicitar responsabilidades.",
+          "acao": "Solicite um resumo dos interesses atendidos e das obrigações de cada parte. Confira em 30 dias se o relacionamento facilita o cumprimento do que foi registrado.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Entusiasmo com orientação de transição",
+          "leitura": "A Influência equilibrada como recurso secundário pode apoiar uma comunicação acessível de mudanças. Ao explicar uma alteração de prioridade, pode combinar benefícios esperados e abertura a perguntas.",
+          "atencao": "Uma explicação bem recebida pode ocultar interpretações diferentes sobre o novo foco.",
+          "acao": "Peça aos destinatários que descrevam o que muda na própria rotina. Observe por 30 dias se as mensagens de reforço respondem às diferenças de entendimento encontradas.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-5": {
+      "position": 2,
+      "level": 5,
+      "label": "2º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Rede de contatos com retorno",
+          "leitura": "A Influência presente na segunda posição disponibiliza comunicação e relacionamento como apoio recorrente. Ao receber a delegação de uma consulta entre áreas, pode facilitar o acesso a interlocutores relevantes.",
+          "atencao": "A circulação de conversas pode não produzir informação utilizável se faltar uma pergunta comum.",
+          "acao": "Defina o objetivo da consulta e cobre uma devolutiva por interlocutor. Em 30 dias, verifique se os contatos geram respostas úteis para a entrega delegada.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Apresentação com adesão verificável",
+          "leitura": "Na segunda posição, a Influência presente pode ampliar a capacidade de tornar uma proposta interessante. Em apresentação de projeto, a linguagem acessível pode aproximar o público do conteúdo.",
+          "atencao": "Sinais de interesse podem ser interpretados como disposição para assumir responsabilidades.",
+          "acao": "Encerre a apresentação solicitando a confirmação das contribuições possíveis. Observe durante 30 dias quais adesões se traduzem em apoio concreto ao projeto.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Feedback que sustenta vínculo e cobrança",
+          "leitura": "A Influência presente como segundo recurso pode ajudar a manter abertura em conversas de desempenho. Em feedback sobre uma entrega incompleta, o contato próximo pode favorecer a exposição das dificuldades.",
+          "atencao": "A relação positiva pode tornar a cobrança menos específica do que a situação exige.",
+          "acao": "Reconheça a transparência e cobre a descrição do que falta concluir, com data de retorno. Acompanhe por 30 dias se a abertura ao diálogo vem acompanhada de entregas completas.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Divergência tratada sem personalização",
+          "leitura": "O segundo lugar da Influência presente pode contribuir para reduzir distâncias entre pessoas. Em conflito sobre um prazo, a conversa pode ajudar a separar a necessidade da área do incômodo pessoal.",
+          "atencao": "A busca por preservar a relação pode adiar a explicitação de uma condição inviável.",
+          "acao": "Oriente a exposição do impacto do prazo sem atribuir intenções à outra parte. Confira em 30 dias se as divergências passam a gerar alternativas em vez de conversas paralelas.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-6": {
+      "position": 2,
+      "level": 6,
+      "label": "2º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Participação articulada com foco",
+          "leitura": "A Influência marcante em segundo lugar pode ampliar a capacidade de conectar contribuições de diferentes pessoas. Em reunião de melhoria, a troca verbal tende a ser um apoio expressivo à construção de propostas.",
+          "atencao": "A multiplicação de associações pode ampliar a discussão sem esclarecer quais ideias serão aproveitadas.",
+          "acao": "Delegue a articulação do debate com registro das propostas selecionadas e das pendências. Observe em 30 dias se o envolvimento coletivo resulta em encaminhamentos compreendidos.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Reconhecimento distribuído com evidências",
+          "leitura": "Como recurso secundário marcante, a Influência pode dar relevância à valorização das contribuições. Em feedback de equipe, exemplos positivos podem estimular participação e proximidade.",
+          "atencao": "Reconhecer principalmente as contribuições mais visíveis pode deixar trabalhos de apoio sem valorização.",
+          "acao": "Cobre exemplos de colaboração pouco exposta ao preparar o reconhecimento coletivo. Verifique durante 30 dias se a valorização alcança diferentes tipos de contribuição.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Negociação relacional com registro",
+          "leitura": "A segunda posição com Influência marcante favorece o uso do relacionamento para aproximar interesses. Em negociação de uma entrega conjunta, a facilidade de contato pode ajudar a destravar a conversa.",
+          "atencao": "A confiança construída pode substituir indevidamente a explicitação de condições importantes.",
+          "acao": "Peça confirmação escrita das condições após a conversa informal. Acompanhe em 30 dias se os registros evitam interpretações divergentes durante a execução conjunta.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Mudança mobilizada sem dispersão",
+          "leitura": "A Influência marcante como segundo recurso pode intensificar o entusiasmo ao divulgar uma nova direção. Na mudança de prioridade, a mensagem pode despertar interesse e estimular sugestões adicionais.",
+          "atencao": "A mobilização pode abrir iniciativas paralelas que desviam energia da transição necessária.",
+          "acao": "Estabeleça o que será comunicado agora e mantenha novas sugestões em uma lista para avaliação posterior. Observe por 30 dias se o entusiasmo permanece concentrado na prioridade autorizada.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-7": {
+      "position": 2,
+      "level": 7,
+      "label": "2º lugar — muito marcante",
+      "variants": {
+        "1": {
+          "titulo": "Apresentação submetida a perguntas difíceis",
+          "leitura": "A Influência muito marcante na segunda posição pode reforçar intensamente a capacidade de engajar uma audiência. Em apresentação de investimento, uma narrativa atraente pode gerar adesão rápida.",
+          "atencao": "A força da exposição pode reduzir o exame das premissas por parte do público.",
+          "acao": "Inclua uma revisão crítica por alguém que não participou da preparação e apresente as limitações junto dos benefícios. Confira em 30 dias quais dúvidas relevantes foram resolvidas antes da aprovação.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Delegação com fronteira de representação",
+          "leitura": "Na segunda posição, a Influência muito marcante pode ampliar o alcance dos contatos e a disposição para representar propostas. Ao delegar articulação externa, a comunicação pode abrir oportunidades além da demanda original.",
+          "atencao": "A expansão das conversas pode criar expectativas de autorização que não foi concedida.",
+          "acao": "Defina por escrito quais mensagens podem ser transmitidas e quais condições exigem consulta. Observe durante 30 dias se os interlocutores distinguem exploração de compromisso formal.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Correção de desempenho além da aceitação",
+          "leitura": "A Influência muito marcante como segundo recurso pode tornar a qualidade do vínculo especialmente relevante no feedback. Uma conversa acolhedora pode produzir concordância imediata com a orientação recebida.",
+          "atencao": "A concordância relacional pode ser confundida com apropriação do ajuste necessário.",
+          "acao": "Peça a demonstração do ajuste em uma entrega próxima e forneça retorno sobre a execução. Verifique em 30 dias se a melhoria permanece sem depender de estímulo social contínuo.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Mediação sem conciliação prematura",
+          "leitura": "O segundo lugar com Influência muito marcante pode favorecer forte investimento em recompor relacionamentos. Em conflito sobre responsabilidades, o esforço de aproximação pode acelerar uma manifestação de boa vontade.",
+          "atencao": "A recomposição do clima pode encerrar a conversa antes da definição das responsabilidades contestadas.",
+          "acao": "Mantenha o conflito em acompanhamento até que as atribuições estejam confirmadas por ambas as partes. Observe por 30 dias se a cordialidade é acompanhada de cooperação nas interfaces acordadas.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-8": {
+      "position": 2,
+      "level": 8,
+      "label": "2º lugar — dominante",
+      "variants": {
+        "1": {
+          "titulo": "Adesão coletiva com contraditório formal",
+          "leitura": "A Influência dominante em segundo lugar mantém intensidade muito elevada, embora não ocupe a posição principal. Em reunião de decisão, a comunicação persuasiva pode mobilizar o grupo em torno de uma proposta rapidamente.",
+          "atencao": "A posição secundária pode levar a gestão a subestimar o efeito dessa persuasão sobre a liberdade de discordar.",
+          "acao": "Recolha objeções por escrito antes da rodada de defesa da proposta e responda a cada ponto. Em 30 dias, avalie se os registros mostram análise crítica além de manifestações de apoio.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Prazo protegido de entusiasmo expansivo",
+          "leitura": "A segunda posição da Influência dominante pode acrescentar forte entusiasmo à construção de compromissos. Na negociação de prazo com cliente interno, a disposição para manter uma relação positiva pode favorecer promessas abrangentes.",
+          "atencao": "O desejo de preservar a receptividade pode ampliar o compromisso sem revisão das restrições de execução.",
+          "acao": "Vede a confirmação de prazos sem validação de capacidade e peça alternativas comunicáveis quando houver restrição. Observe durante 30 dias se a boa relação é sustentada por expectativas realistas.",
+          "status": "rascunho"
+        },
+        "3": {
+          "titulo": "Reconhecimento subordinado a critérios claros",
+          "leitura": "Como recurso secundário em intensidade dominante, a Influência pode ampliar a importância da visibilidade e da resposta do público. Na delegação de uma apresentação institucional, o potencial de reconhecimento pode mobilizar investimento expressivo.",
+          "atencao": "O retorno social favorável pode encobrir informações imprecisas ou contribuições não creditadas.",
+          "acao": "Aprove conteúdo e créditos antes da exposição e avalie o resultado por precisão e compreensão do público. Verifique em 30 dias se as correções recebem a mesma atenção dedicada à visibilidade.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Comunicação de mudança com limite de narrativa",
+          "leitura": "A Influência dominante como segundo recurso pode tornar a comunicação de mudanças altamente mobilizadora. Ao divulgar uma nova prioridade, benefícios e possibilidades podem ganhar grande destaque na mensagem.",
+          "atencao": "Uma narrativa excessivamente favorável pode inibir dúvidas e criar expectativas que a transição não comporta.",
+          "acao": "Exija a inclusão de perdas, incertezas e canais de questionamento na comunicação oficial. Acompanhe por 30 dias se as respostas dadas preservam coerência com as condições reais da mudança.",
+          "status": "rascunho"
+        }
+      }
+    }
+  }
+}
