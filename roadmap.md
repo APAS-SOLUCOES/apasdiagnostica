@@ -59,6 +59,7 @@ Evolução do projeto APAS DISC Profile para a plataforma **APAS DIAGNÓSTICA** 
 - [x] Manter nomes atuais das combinações nos dois relatórios (sem renomear); relatório individual intacto
 
 ## Textos DISC por percentuais (plano aprovado 2026-11-07)
+- [ ] Conformidade: salvar variações 3–4 dos 23 diagnósticos em Premium/Técnico como rascunhos, verificar cobertura e preservar 1–2 aprovadas sem reescrita.
 - [x] Base: sinais do perfil (faixas, distâncias, ponto cego, planos, índice) e escolha determinística + testes
 - [ ] Lote 1: trechos D e I (Premium e Técnico) — aguarda aprovação do lote
 - [ ] Lote 2: trechos S e C

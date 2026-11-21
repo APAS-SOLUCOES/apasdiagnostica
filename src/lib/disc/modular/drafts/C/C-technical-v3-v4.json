@@ -1,0 +1,491 @@
+{
+  "factor": "C",
+  "report": "technical",
+  "status": "rascunho",
+  "approved_variants_1_2": "not_available_in_project_or_retrieved_history",
+  "diagnostics": {
+    "1-4": {
+      "position": 1,
+      "level": 4,
+      "label": "1º lugar — equilibrada",
+      "variants": {
+        "3": {
+          "titulo": "Referência objetiva no desacordo",
+          "leitura": "A Conformidade equilibrada participa da avaliação sem concentrar todas as respostas. Em um conflito sobre aceite, o exame dos requisitos oferece um terreno concreto para discutir a divergência.",
+          "atencao": "Usar o procedimento como argumento final deixa de fora necessidades que não foram previstas na documentação.",
+          "acao": "Solicite às áreas um caso verificável e estabeleça o critério que resolverá a divergência.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Qualidade com responsabilidade distribuída",
+          "leitura": "A análise de padrões convive com outras formas de responder ao trabalho. Na delegação de uma conferência, a Conformidade equilibrada sustenta o cuidado com o resultado sem exigir controle de cada etapa.",
+          "atencao": "Uma responsabilidade descrita apenas como conferir tudo não esclarece onde termina a revisão.",
+          "acao": "Delimite o objeto da conferência e peça o registro das exceções encontradas.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-5": {
+      "position": 1,
+      "level": 5,
+      "label": "1º lugar — presente",
+      "variants": {
+        "3": {
+          "titulo": "Evidências para orientar a conversa",
+          "leitura": "A Conformidade presente conduz a atenção aos critérios de execução. Durante um feedback sobre retrabalho, a revisão de exemplos concretos permite distinguir falha de padrão de diferença de preferência.",
+          "atencao": "Acumular observações pequenas desvia a conversa do problema que realmente compromete a entrega.",
+          "acao": "Apresente a evidência de maior impacto e defina qual mudança será acompanhada no próximo ciclo.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Replanejamento com requisitos preservados",
+          "leitura": "A preocupação com qualidade ocupa papel central, com Conformidade presente. Diante de uma mudança de prioridade, a análise dos requisitos ajuda a identificar o que não deve ser abandonado.",
+          "atencao": "Reaproveitar automaticamente todas as exigências anteriores mantém controles que perderam utilidade.",
+          "acao": "Revise os requisitos com a equipe e confirme quais continuam necessários para o novo objetivo.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-6": {
+      "position": 1,
+      "level": 6,
+      "label": "1º lugar — marcante",
+      "variants": {
+        "3": {
+          "titulo": "Delegação sustentada por critérios de aceite",
+          "leitura": "A Conformidade marcante organiza a busca por execução consistente. Ao distribuir uma análise, a definição de critérios de aceite recebe atenção especial e reduz a ambiguidade do pedido.",
+          "atencao": "O acompanhamento de cada escolha operacional limita a responsabilidade de quem recebeu a tarefa.",
+          "acao": "Acorde os critérios de aceite e concentre as intervenções nas divergências que os afetem.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Dados relevantes na negociação",
+          "leitura": "A exigência de fundamentação orienta o comportamento, com Conformidade marcante. Em uma negociação comercial, a conferência de premissas e condições antecede a aceitação da proposta.",
+          "atencao": "Solicitar informações de baixa utilidade alonga a negociação sem reduzir o risco principal.",
+          "acao": "Defina quais evidências mudariam a decisão e peça apenas o que falta para verificá-las.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-7": {
+      "position": 1,
+      "level": 7,
+      "label": "1º lugar — muito marcante",
+      "variants": {
+        "3": {
+          "titulo": "Rigor no encerramento da entrega",
+          "leitura": "A Conformidade muito marcante sustenta verificações minuciosas e adesão a padrões. Sob prazo apertado, a liberação do trabalho exige demonstração consistente de que os requisitos foram atendidos.",
+          "atencao": "O mesmo nível de conferência para todos os itens consome tempo destinado às falhas críticas.",
+          "acao": "Estabeleça verificações diferentes conforme o impacto do erro e autorize o encerramento dos itens de baixo risco.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Divergência de padrão sem julgamento pessoal",
+          "leitura": "A defesa de critérios técnicos recebe grande investimento, com Conformidade muito marcante. Em um conflito sobre procedimento, a argumentação se apoia na regra e nas consequências de não segui-la.",
+          "atencao": "Tratar uma interpretação alternativa como descuido dificulta a investigação da causa real.",
+          "acao": "Compare as interpretações com um caso de trabalho e documente a decisão sem atribuir intenção aos envolvidos.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-8": {
+      "position": 1,
+      "level": 8,
+      "label": "1º lugar — dominante",
+      "variants": {
+        "3": {
+          "titulo": "Prioridade nova com controle proporcional",
+          "leitura": "A Conformidade dominante concentra o investimento em precisão, regras e comprovação. Uma alteração urgente de prioridade provoca exame aprofundado dos impactos antes da reorganização do trabalho.",
+          "atencao": "Exigir documentação definitiva para uma decisão reversível transforma cautela em obstáculo operacional.",
+          "acao": "Distinga decisões reversíveis das irreversíveis e defina a evidência mínima para cada grupo.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Feedback com hierarquia de correções",
+          "leitura": "O rigor analítico tem intensidade dominante e ocupa o centro da atuação. Em um feedback de qualidade, a identificação detalhada de desvios fornece elementos para corrigir a execução.",
+          "atencao": "Dar o mesmo peso a acabamento e falha estrutural torna a orientação difícil de aplicar.",
+          "acao": "Ordene as correções por impacto no uso da entrega e acompanhe primeiro a solução do desvio estrutural.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-1": {
+      "position": 2,
+      "level": 1,
+      "label": "2º lugar — quase ausente",
+      "variants": {
+        "3": {
+          "titulo": "Delegação com referência de qualidade",
+          "leitura": "A Conformidade quase ausente exerce apoio limitado ao fator principal. Ao delegar uma tarefa, a orientação privilegia a realização e deixa os critérios de qualidade pouco desenvolvidos.",
+          "atencao": "O responsável executa com referências próprias quando o pedido não define o que será aceito.",
+          "acao": "Forneça um modelo aprovado e confirme a compreensão do requisito essencial antes de iniciar.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Feedback baseado em ocorrência",
+          "leitura": "Há baixo investimento espontâneo em conferência, apesar da posição secundária da Conformidade. Durante um feedback, a avaliação se apoia na impressão geral antes de examinar registros do trabalho.",
+          "atencao": "Uma impressão ampla não oferece base suficiente para atribuir uma falha de execução.",
+          "acao": "Reúna uma ocorrência observável e use seu resultado para orientar a correção específica.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-2": {
+      "position": 2,
+      "level": 2,
+      "label": "2º lugar — discreta",
+      "variants": {
+        "3": {
+          "titulo": "Condições explícitas na contratação",
+          "leitura": "A Conformidade discreta complementa a orientação predominante com checagens pontuais. Em uma negociação de serviço, o interesse pelo resultado recebe mais atenção que a documentação das condições.",
+          "atencao": "A ausência de condições escritas amplia a margem de interpretação durante a execução.",
+          "acao": "Registre os requisitos mínimos da contratação e obtenha confirmação antes de autorizar o serviço.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Repriorização com restrição identificada",
+          "leitura": "O exame de regras funciona como recurso secundário de baixa intensidade. Diante de uma mudança de prioridade, a Conformidade discreta não concentra o esforço de reorganização.",
+          "atencao": "A troca de foco sem identificar restrições compromete obrigações que não desapareceram com a mudança.",
+          "acao": "Pergunte qual exigência permanece inegociável e verifique sua inclusão no novo plano.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-3": {
+      "position": 2,
+      "level": 3,
+      "label": "2º lugar — moderada-baixa",
+      "variants": {
+        "3": {
+          "titulo": "Checagem curta antes da liberação",
+          "leitura": "A Conformidade moderada-baixa acrescenta revisão seletiva à orientação predominante. Perto de um prazo, a conferência se concentra nos pontos mais visíveis do resultado.",
+          "atencao": "Aspectos menos aparentes permanecem sem verificação mesmo quando condicionam o uso da entrega.",
+          "acao": "Introduza uma checagem final de compatibilidade com o uso previsto e registre o resultado.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Requisito verificável na compra",
+          "leitura": "A análise complementa a decisão sem comandá-la, com Conformidade moderada-baixa. Em uma negociação de compra, o exame das especificações ocorre quando aparece uma dúvida concreta.",
+          "atencao": "Comparar ofertas sem uma referência estável favorece escolhas apoiadas em detalhes de apresentação.",
+          "acao": "Defina o requisito funcional prioritário e solicite a demonstração do mesmo item a cada fornecedor.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-4": {
+      "position": 2,
+      "level": 4,
+      "label": "2º lugar — equilibrada",
+      "variants": {
+        "3": {
+          "titulo": "Autonomia acompanhada por evidência",
+          "leitura": "A Conformidade equilibrada apoia a direção principal com referências de qualidade. Na delegação de uma atividade, o padrão esperado recebe explicação suficiente para orientar a execução.",
+          "atencao": "Explicar o padrão sem acordar sua demonstração dificulta saber se foi realmente atendido.",
+          "acao": "Defina qual evidência será apresentada na entrega e mantenha liberdade sobre o modo de produzi-la.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Feedback ancorado no padrão acordado",
+          "leitura": "O cuidado com precisão participa de forma equilibrada como recurso secundário. Durante um feedback, a Conformidade ajuda a distinguir resultado entregue e requisito solicitado.",
+          "atencao": "Alterar o padrão durante a conversa torna a avaliação imprevisível para quem executou.",
+          "acao": "Recupere o requisito estabelecido no início da tarefa e trate novas exigências como próximos acordos.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-5": {
+      "position": 2,
+      "level": 5,
+      "label": "2º lugar — presente",
+      "variants": {
+        "3": {
+          "titulo": "Mudança de processo com premissas revistas",
+          "leitura": "A Conformidade presente fornece sustentação analítica ao fator predominante. Ao alterar um processo, o exame de premissas permite avaliar a coerência da nova sequência.",
+          "atencao": "Validar a sequência sem conferir as entradas mantém o novo processo dependente de dados inadequados.",
+          "acao": "Verifique a origem das informações utilizadas e corrija a entrada antes de exigir novo desempenho.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Critério técnico para resolver o impasse",
+          "leitura": "A análise ocupa posição de apoio relevante, com Conformidade presente. Em um conflito sobre responsabilidade por uma falha, a consulta aos registros contribui para localizar o ponto de ruptura.",
+          "atencao": "Procurar apenas quem errou impede examinar a condição que permitiu a falha.",
+          "acao": "Reconstrua o percurso da entrega e atribua uma medida de prevenção ao responsável pela etapa vulnerável.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-6": {
+      "position": 2,
+      "level": 6,
+      "label": "2º lugar — marcante",
+      "variants": {
+        "3": {
+          "titulo": "Negociação com premissas confrontadas",
+          "leitura": "A Conformidade marcante dá suporte consistente à orientação predominante. Em uma negociação de parceria, as condições apresentadas são confrontadas com dados e compromissos anteriores.",
+          "atencao": "A contestação de detalhes sem prioridade dificulta reconhecer quais condições realmente impedem o acordo.",
+          "acao": "Organize as divergências por consequência e negocie primeiro a condição que altera a viabilidade da parceria.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Prazo com ponto de encerramento",
+          "leitura": "O fator principal recebe apoio de uma Conformidade marcante e criteriosa. No fechamento de uma entrega, a conferência permanece ativa para garantir consistência antes da liberação.",
+          "atencao": "Sem um ponto de encerramento, a revisão continua mesmo depois de satisfeitos os critérios relevantes.",
+          "acao": "Estabeleça o aceite antes da última revisão e encerre a tarefa quando as evidências o confirmarem.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-7": {
+      "position": 2,
+      "level": 7,
+      "label": "2º lugar — muito marcante",
+      "variants": {
+        "3": {
+          "titulo": "Delegação com profundidade adequada",
+          "leitura": "A Conformidade muito marcante oferece apoio intenso ao fator principal. Na distribuição de uma tarefa técnica, a orientação detalha critérios, referências e formas de conferir o resultado.",
+          "atencao": "O excesso de instruções dificulta identificar o que é obrigatório e o que é apenas recomendação.",
+          "acao": "Diferencie requisitos obrigatórios de referências opcionais e confira a compreensão dessa distinção.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Feedback técnico com foco aplicável",
+          "leitura": "O investimento elevado em análise sustenta a orientação predominante. Durante um feedback de qualidade, a Conformidade muito marcante favorece a identificação de várias inconsistências na mesma entrega.",
+          "atencao": "Uma lista de desvios sem relação causal gera correções fragmentadas e novo retrabalho.",
+          "acao": "Selecione a causa que explica o maior conjunto de desvios e acompanhe sua correção antes das demais.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-8": {
+      "position": 2,
+      "level": 8,
+      "label": "2º lugar — dominante",
+      "variants": {
+        "3": {
+          "titulo": "Nova prioridade com limite de investigação",
+          "leitura": "A Conformidade dominante sustenta intensamente a orientação principal com exame de dados e regras. Em uma mudança de prioridade, a análise das consequências antecede a aceitação do novo compromisso.",
+          "atencao": "O aprofundamento sem limite definido impede a equipe de reconhecer quando já existe base para agir.",
+          "acao": "Delimite a pergunta que precisa ser respondida e estabeleça a decisão a tomar quando a evidência chegar.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Controvérsia resolvida por evidência suficiente",
+          "leitura": "A necessidade de fundamentação permanece elevada, apesar da posição secundária da Conformidade dominante. Em um conflito técnico, a defesa do padrão recebe análise extensa de inconsistências e riscos.",
+          "atencao": "Exigir evidência adicional depois de resolvida a questão mantém a controvérsia aberta sem benefício operacional.",
+          "acao": "Acorde previamente a prova que encerrará o impasse e registre o aceite quando ela for apresentada.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-1": {
+      "position": 3,
+      "level": 1,
+      "label": "3º lugar — quase ausente",
+      "variants": {
+        "3": {
+          "titulo": "Compra com requisito mínimo definido",
+          "leitura": "A Conformidade quase ausente tem participação periférica na avaliação do trabalho. Em uma negociação de compra, a discussão avança sem exame espontâneo das especificações.",
+          "atencao": "O item contratado não atende à necessidade quando a escolha se apoia apenas na disponibilidade da oferta.",
+          "acao": "Disponibilize uma especificação mínima e exija sua confirmação antes de aprovar a compra.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Prazo com prevenção de falha crítica",
+          "leitura": "A análise de detalhes recebe pouco investimento, com Conformidade quase ausente em posição de menor influência. Ao cumprir um prazo, a atenção se dirige ao envio mais que à verificação.",
+          "atencao": "A conclusão aparente da tarefa não demonstra que o resultado poderá ser utilizado.",
+          "acao": "Insira uma conferência do risco crítico no fluxo e peça seu registro antes da liberação.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-2": {
+      "position": 3,
+      "level": 2,
+      "label": "3º lugar — discreta",
+      "variants": {
+        "3": {
+          "titulo": "Delegação com limite de interpretação",
+          "leitura": "A Conformidade discreta participa de forma acessória na organização do trabalho. Ao delegar uma atividade, o pedido não aprofunda naturalmente padrões e condições de aceite.",
+          "atencao": "Uma instrução breve permite interpretações incompatíveis sobre o resultado esperado.",
+          "acao": "Acrescente ao pedido o critério de recusa e confirme como o responsável o verificará.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Feedback com evidência localizada",
+          "leitura": "O cuidado analítico tem intensidade discreta e não está entre os principais recursos. Durante um feedback, o exame minucioso não constitui a primeira resposta à orientação recebida.",
+          "atencao": "Uma recomendação abstrata não fornece referência suficiente para mudar a execução.",
+          "acao": "Mostre a ocorrência que motivou a orientação e acompanhe sua correção na próxima entrega semelhante.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-3": {
+      "position": 3,
+      "level": 3,
+      "label": "3º lugar — moderada-baixa",
+      "variants": {
+        "3": {
+          "titulo": "Mudança com referência atualizada",
+          "leitura": "A Conformidade moderada-baixa acrescenta checagens ocasionais aos fatores de maior influência. Na troca de prioridade, a revisão dos padrões não recebe aprofundamento espontâneo.",
+          "atencao": "Um modelo antigo permanece em uso quando a equipe muda o objetivo sem atualizar a referência.",
+          "acao": "Apresente o modelo adequado à nova tarefa e retire de circulação a referência que deixou de valer.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Impasse resolvido pela exigência relevante",
+          "leitura": "A análise funciona como apoio seletivo, com Conformidade moderada-baixa em posição menos central. Em um conflito de qualidade, a consulta ao requisito ocorre conforme a dúvida se torna concreta.",
+          "atencao": "A comparação de preferências pessoais não resolve a diferença sobre a obrigação de entrega.",
+          "acao": "Identifique a exigência que está em discussão e avalie o resultado exclusivamente por esse critério.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-4": {
+      "position": 3,
+      "level": 4,
+      "label": "3º lugar — equilibrada",
+      "variants": {
+        "3": {
+          "titulo": "Negociação apoiada por dados pertinentes",
+          "leitura": "A Conformidade equilibrada atua como recurso complementar à orientação principal. Em uma negociação de condições, o exame de dados ajuda a verificar a consistência da proposta.",
+          "atencao": "Dados corretos de outro contexto produzem uma comparação inadequada para a decisão atual.",
+          "acao": "Confirme a pertinência das referências apresentadas e peça evidência ligada ao serviço que será contratado.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Prazo com revisão orientada ao uso",
+          "leitura": "A precisão tem participação equilibrada, embora não esteja entre os recursos mais centrais. Na preparação de uma entrega, a Conformidade favorece checagens quando o requisito está definido.",
+          "atencao": "Uma revisão voltada apenas à forma não identifica limitações que impedem o uso do resultado.",
+          "acao": "Solicite uma verificação prática da entrega e registre o impedimento encontrado antes do encerramento.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-5": {
+      "position": 3,
+      "level": 5,
+      "label": "3º lugar — presente",
+      "variants": {
+        "3": {
+          "titulo": "Delegação com validação proporcional",
+          "leitura": "A Conformidade presente oferece suporte analítico aos fatores de maior influência. Ao delegar uma tarefa, a atenção aos requisitos ajuda a estabelecer referências consistentes para a execução.",
+          "atencao": "Solicitar comprovação de todas as etapas amplia o controle sem demonstrar necessariamente melhor resultado.",
+          "acao": "Concentre a validação na etapa em que uma falha comprometeria o restante do trabalho.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Feedback com causa demonstrável",
+          "leitura": "A análise participa de modo relevante, embora em posição complementar. Durante um feedback, a Conformidade presente favorece o exame da relação entre requisito, execução e resultado.",
+          "atencao": "Uma causa suposta conduz a uma orientação precisa na forma, mas inadequada ao problema real.",
+          "acao": "Confronte a explicação com o registro da tarefa antes de estabelecer a medida corretiva.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-6": {
+      "position": 3,
+      "level": 6,
+      "label": "3º lugar — marcante",
+      "variants": {
+        "3": {
+          "titulo": "Mudança com critérios de validade",
+          "leitura": "A Conformidade marcante reforça os fatores principais com análise e respeito a padrões. Em uma mudança de processo, a conferência de condições contribui para verificar se a nova proposta é consistente.",
+          "atencao": "Um teste com condições diferentes das reais produz confiança indevida no novo processo.",
+          "acao": "Defina um caso representativo de execução e avalie a mudança pelos requisitos que ele exige.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Conflito técnico com encerramento definido",
+          "leitura": "O cuidado analítico permanece intenso mesmo na posição complementar da Conformidade marcante. Em um conflito entre interpretações, a comparação de registros oferece argumentos para esclarecer a diferença.",
+          "atencao": "Retomar evidências já aceitas mantém a discussão ativa depois de resolvida a questão central.",
+          "acao": "Registre a interpretação acordada e estabeleça em que nova circunstância ela deverá ser revista.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-1": {
+      "position": 4,
+      "level": 1,
+      "label": "4º lugar — quase ausente",
+      "variants": {
+        "3": {
+          "titulo": "Negociação com salvaguarda simples",
+          "leitura": "A Conformidade quase ausente não sustenta espontaneamente a avaliação detalhada de condições. Em uma negociação, o exame de regras fica atrás das demais prioridades de resposta.",
+          "atencao": "Uma obrigação contratual permanece desconhecida quando a proposta é aceita sem conferência mínima.",
+          "acao": "Adote uma verificação obrigatória das responsabilidades antes de autorizar o compromisso.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Prazo com conferência incorporada",
+          "leitura": "A atenção a padrões recebe investimento mínimo e ocupa o último plano. Sob prazo, a Conformidade quase ausente não fornece revisão espontânea suficiente para demonstrar a qualidade da entrega.",
+          "atencao": "A velocidade de envio mascara uma falha de uso quando nenhum critério foi conferido.",
+          "acao": "Vincule a liberação a uma prova simples de funcionamento e indique quem fará a checagem.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-2": {
+      "position": 4,
+      "level": 2,
+      "label": "4º lugar — discreta",
+      "variants": {
+        "3": {
+          "titulo": "Delegação com padrão acessível",
+          "leitura": "A Conformidade discreta tem participação reduzida e ocupa o recurso menos acionado. Na delegação, a descrição do objetivo recebe mais investimento que a formalização dos critérios.",
+          "atencao": "A referência de qualidade não orienta o trabalho quando fica disponível apenas para quem fez o pedido.",
+          "acao": "Entregue o padrão junto com a tarefa e confirme que o responsável sabe consultá-lo.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Feedback orientado à verificação",
+          "leitura": "O exame de detalhes não está entre os recursos prioritários, com Conformidade discreta em último plano. Durante um feedback, a compreensão geral precede a investigação do requisito não atendido.",
+          "atencao": "Uma correção baseada na impressão da conversa permanece difícil de verificar depois.",
+          "acao": "Estabeleça uma evidência concreta da mudança esperada e confira sua presença na entrega seguinte.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-3": {
+      "position": 4,
+      "level": 3,
+      "label": "4º lugar — moderada-baixa",
+      "variants": {
+        "3": {
+          "titulo": "Prioridade revista com requisito confirmado",
+          "leitura": "A Conformidade moderada-baixa tem papel acessório na reorganização do trabalho. Ao mudar a prioridade, o exame de requisitos aparece de maneira seletiva e não conduz o planejamento.",
+          "atencao": "Um cuidado necessário se perde quando não é incluído explicitamente na nova tarefa.",
+          "acao": "Identifique o requisito que atravessa a mudança e atribua sua verificação a um responsável.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Desacordo com referência demonstrada",
+          "leitura": "A análise recebe investimento limitado e ocupa o último plano, com Conformidade moderada-baixa. Em um conflito sobre qualidade, a conferência se desenvolve quando a exigência é apresentada de forma concreta.",
+          "atencao": "Uma regra citada sem demonstrar seu efeito não esclarece o problema para quem executou.",
+          "acao": "Mostre como o desvio afeta a utilização da entrega e combine a correção desse efeito.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-4": {
+      "position": 4,
+      "level": 4,
+      "label": "4º lugar — equilibrada",
+      "variants": {
+        "3": {
+          "titulo": "Negociação com qualidade especificada",
+          "leitura": "A Conformidade equilibrada permanece disponível em posição de menor acionamento. Em uma negociação de serviço, o exame de requisitos complementa as outras prioridades e ajuda a definir o aceite.",
+          "atencao": "Uma especificação correta perde efeito quando não fica vinculada ao compromisso assumido.",
+          "acao": "Anexe o critério de qualidade ao acordo e determine como seu atendimento será comprovado.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Prazo com conferência pertinente",
+          "leitura": "O cuidado analítico tem intensidade equilibrada, ainda que ocupe o último plano entre os recursos. Na entrega sob prazo, a Conformidade sustenta revisão quando sua finalidade está clara.",
+          "atencao": "Aplicar uma lista genérica de verificações consome tempo com itens que não protegem esse resultado.",
+          "acao": "Selecione as checagens ligadas à finalidade da tarefa e registre somente as exceções que exigem tratamento.",
+          "status": "rascunho"
+        }
+      }
+    }
+  }
+}

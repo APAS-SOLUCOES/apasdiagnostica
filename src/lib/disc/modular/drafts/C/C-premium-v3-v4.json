@@ -1,0 +1,491 @@
+{
+  "factor": "C",
+  "report": "premium",
+  "status": "rascunho",
+  "approved_variants_1_2": "not_available_in_project_or_retrieved_history",
+  "diagnostics": {
+    "1-4": {
+      "position": 1,
+      "level": 4,
+      "label": "1º lugar — equilibrada",
+      "variants": {
+        "3": {
+          "titulo": "Critérios sem perder o contexto",
+          "leitura": "A Conformidade equilibrada oferece uma referência de qualidade sem ocupar todo o seu modo de trabalhar. Ao negociar uma entrega, você pode examinar os requisitos e considerar as condições de quem irá executá-la.",
+          "atencao": "Aceitar uma condição razoável na conversa não garante que o resultado esperado esteja definido.",
+          "acao": "Registre um exemplo de entrega aceitável antes de fechar o acordo.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Revisão com espaço para alternativas",
+          "leitura": "Você encontra na Conformidade equilibrada um apoio para observar detalhes e ponderar opções. Quando uma prioridade muda, pode conferir o que precisa ser preservado sem exigir que o plano anterior permaneça inteiro.",
+          "atencao": "Um detalhe herdado do planejamento antigo pode consumir esforço sem proteger a nova entrega.",
+          "acao": "Escolha quais verificações continuam relevantes depois da mudança e retire as demais da lista.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-5": {
+      "position": 1,
+      "level": 5,
+      "label": "1º lugar — presente",
+      "variants": {
+        "3": {
+          "titulo": "Uma promessa que pode ser conferida",
+          "leitura": "A Conformidade presente orienta sua busca por informações antes de assumir compromissos. Em uma negociação com fornecedor, você pode perguntar pelas especificações e pela forma de demonstrar a qualidade prometida.",
+          "atencao": "Uma proposta detalhada pode parecer confiável mesmo sem evidência de execução.",
+          "acao": "Solicite uma amostra do serviço e compare o resultado com o requisito mais importante.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Precisão ao passar a tarefa",
+          "leitura": "Você dá espaço relevante à Conformidade quando organiza o trabalho. Ao delegar uma atividade, pode explicar os cuidados que considera indispensáveis e tornar o padrão esperado mais visível.",
+          "atencao": "Explicar cada movimento pode restringir soluções que atenderiam à mesma qualidade.",
+          "acao": "Separe o resultado obrigatório do método que a outra pessoa pode escolher.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-6": {
+      "position": 1,
+      "level": 6,
+      "label": "1º lugar — marcante",
+      "variants": {
+        "3": {
+          "titulo": "Resolver o conflito pelo que é verificável",
+          "leitura": "A Conformidade marcante dá força à sua necessidade de clareza e precisão. Em um conflito entre áreas, você pode buscar registros para entender onde as versões deixam de coincidir.",
+          "atencao": "Ter um registro correto não significa compreender todas as dificuldades vividas por quem executa.",
+          "acao": "Ouça uma explicação de cada área antes de propor um critério comum para resolver o impasse.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Prazo com qualidade suficiente",
+          "leitura": "Você coloca o cuidado analítico no centro do trabalho, com Conformidade marcante. Perto de um prazo, pode voltar aos detalhes para evitar que uma falha atravesse a entrega.",
+          "atencao": "Revisar pontos já confirmados pode diminuir o tempo disponível para corrigir o que ainda importa.",
+          "acao": "Classifique as pendências por consequência e encerre a revisão dos itens já aprovados.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-7": {
+      "position": 1,
+      "level": 7,
+      "label": "1º lugar — muito marcante",
+      "variants": {
+        "3": {
+          "titulo": "Mudar sem perder a rastreabilidade",
+          "leitura": "A Conformidade muito marcante concentra sua atenção na coerência do trabalho. Quando um processo muda, você pode querer saber quais regras foram revistas e como a qualidade será demonstrada.",
+          "atencao": "Esperar uma definição para todas as exceções pode impedir uma experiência pequena e controlada.",
+          "acao": "Teste a nova rotina em um caso delimitado e anote quais dúvidas realmente surgem na execução.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Correção que indica o próximo passo",
+          "leitura": "Você dedica bastante energia à precisão, com Conformidade muito marcante. Ao dar feedback sobre uma entrega, pode apontar inconsistências que passariam despercebidas a outros colegas.",
+          "atencao": "Uma sequência extensa de correções pode fazer a pessoa perder de vista o ajuste prioritário.",
+          "acao": "Comece pelo erro com maior consequência e mostre como conferir a correção sem depender de você.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-8": {
+      "position": 1,
+      "level": 8,
+      "label": "1º lugar — dominante",
+      "variants": {
+        "3": {
+          "titulo": "Acordos que resistem à conferência",
+          "leitura": "A Conformidade dominante ocupa grande espaço na sua forma de responder ao trabalho. Ao negociar uma contratação, você pode examinar cláusulas, referências e possíveis inconsistências antes de confiar na proposta.",
+          "atencao": "A busca por proteção integral pode prolongar uma escolha mesmo quando os riscos relevantes já estão cobertos.",
+          "acao": "Liste os riscos que ainda impedem o acordo e estabeleça qual evidência encerrará cada dúvida.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Delegar sem refazer o trabalho",
+          "leitura": "Você investe intensamente na exatidão, com Conformidade dominante. Ao delegar uma revisão, pode sentir necessidade de conferir novamente a análise para assegurar o padrão que espera.",
+          "atencao": "Refazer a conferência completa mantém você no centro da execução e enfraquece a confiança no responsável.",
+          "acao": "Peça uma demonstração dos critérios utilizados e revise apenas as exceções apontadas.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-1": {
+      "position": 2,
+      "level": 1,
+      "label": "2º lugar — quase ausente",
+      "variants": {
+        "3": {
+          "titulo": "Um requisito antes de aceitar",
+          "leitura": "A Conformidade quase ausente oferece pouco apoio ao seu jeito de trabalhar, mesmo aparecendo depois do fator principal. Em uma negociação rápida, você pode seguir pela oportunidade percebida sem explorar as condições de qualidade.",
+          "atencao": "Um requisito que ninguém perguntou pode surgir como impedimento depois do compromisso assumido.",
+          "acao": "Antes de aceitar, descubra qual condição faria a entrega ser recusada.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Mudança com uma checagem essencial",
+          "leitura": "Você recorre pouco à análise de padrões, com Conformidade quase ausente. Quando uma prioridade muda, pode acompanhar o novo caminho sem reservar tempo para verificar exigências que permanecem válidas.",
+          "atencao": "A agilidade de reorganização pode deixar uma obrigação importante fora do planejamento.",
+          "acao": "Confira o requisito obrigatório da nova tarefa e inclua sua verificação no primeiro passo.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-2": {
+      "position": 2,
+      "level": 2,
+      "label": "2º lugar — discreta",
+      "variants": {
+        "3": {
+          "titulo": "Detalhe útil no prazo curto",
+          "leitura": "A Conformidade discreta ajuda de forma limitada o fator que mais orienta você. Ao concluir uma tarefa com prazo curto, pode confiar no conjunto e examinar apenas os detalhes que chamam atenção.",
+          "atencao": "Uma inconsistência pequena na aparência pode ter consequência grande para quem recebe o trabalho.",
+          "acao": "Escolha o ponto cujo erro teria maior efeito e confira-o antes de enviar.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Discordar com uma referência comum",
+          "leitura": "Você usa a Conformidade discreta como apoio, sem fazer da conferência sua principal ferramenta. Em um conflito sobre qualidade, pode defender o resultado pela percepção de que a tarefa cumpriu sua finalidade.",
+          "atencao": "O que parece adequado para você pode não atender ao padrão acordado com outra área.",
+          "acao": "Busque o critério combinado e compare com ele a parte da entrega que gerou discordância.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-3": {
+      "position": 2,
+      "level": 3,
+      "label": "2º lugar — moderada-baixa",
+      "variants": {
+        "3": {
+          "titulo": "Precisão na passagem de responsabilidade",
+          "leitura": "A Conformidade moderada-baixa oferece um apoio pontual ao seu fator principal. Ao delegar uma tarefa, você pode mencionar o padrão geral e deixar o detalhamento para quem vai executar.",
+          "atencao": "O cuidado que parece óbvio para você pode não estar claro para a outra pessoa.",
+          "acao": "Explique uma condição concreta de qualidade e peça que a pessoa mostre como pretende verificá-la.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Feedback além da impressão inicial",
+          "leitura": "Você conta com alguma disposição para conferir, com Conformidade moderada-baixa em apoio à orientação principal. Ao receber feedback, pode entender a mensagem geral antes de investigar o detalhe que motivou a observação.",
+          "atencao": "Aceitar ou rejeitar a crítica de imediato pode deixar a causa da divergência sem exame.",
+          "acao": "Solicite um exemplo da falha apontada e confronte-o com o requisito da tarefa.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-4": {
+      "position": 2,
+      "level": 4,
+      "label": "2º lugar — equilibrada",
+      "variants": {
+        "3": {
+          "titulo": "Revisar o necessário quando o foco muda",
+          "leitura": "A Conformidade equilibrada complementa seu fator principal com cuidado analítico. Diante de uma mudança de prioridade, você pode verificar as implicações sem abandonar o impulso de reorganizar o trabalho.",
+          "atencao": "Conferir apenas o que foi alterado pode deixar uma dependência antiga sem responsável.",
+          "acao": "Revise a dependência mais importante do novo plano e confirme quem responderá por ela.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Um desacordo que cabe nos fatos",
+          "leitura": "Você encontra na Conformidade equilibrada um apoio para fundamentar sua posição. Em um conflito entre colegas, pode recorrer ao que foi combinado para esclarecer a parte técnica do problema.",
+          "atencao": "Um combinado correto pode estar incompleto para a situação que agora precisa ser resolvida.",
+          "acao": "Compare o acordo original com o caso atual e proponha o ajuste que falta.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-5": {
+      "position": 2,
+      "level": 5,
+      "label": "2º lugar — presente",
+      "variants": {
+        "3": {
+          "titulo": "Negociar com uma pergunta decisiva",
+          "leitura": "A Conformidade presente reforça sua orientação principal com interesse por dados úteis. Em uma negociação de orçamento, você pode pedir detalhes para entender o que a proposta realmente inclui.",
+          "atencao": "Um documento completo pode esconder uma premissa que altera o custo final.",
+          "acao": "Pergunte qual condição mudaria o preço e peça que essa resposta conste do acordo.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Revisão que acompanha o prazo",
+          "leitura": "Você combina a direção principal com Conformidade presente e atenção ao padrão da entrega. Quando o prazo se aproxima, pode reservar uma conferência para encontrar inconsistências antes do envio.",
+          "atencao": "Deixar toda a revisão para o encerramento reduz a oportunidade de corrigir a origem do erro.",
+          "acao": "Antecipe a verificação do item mais complexo e reserve o final para confirmar a correção.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-6": {
+      "position": 2,
+      "level": 6,
+      "label": "2º lugar — marcante",
+      "variants": {
+        "3": {
+          "titulo": "Delegar a análise, não só a tarefa",
+          "leitura": "A Conformidade marcante dá consistência ao seu fator principal. Ao delegar uma análise, você pode investir na explicação dos critérios e esperar uma justificativa cuidadosa para a conclusão.",
+          "atencao": "Pedir uma justificativa extensa para toda escolha pode transformar um trabalho simples em documentação excessiva.",
+          "acao": "Indique quais conclusões precisam de evidência e quais podem seguir o procedimento habitual.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Feedback que separa causa e efeito",
+          "leitura": "Você combina a direção predominante com forte atenção aos detalhes, expressa pela Conformidade marcante. Em um feedback sobre erro, pode investigar as condições que produziram o resultado antes de propor a correção.",
+          "atencao": "Investigar por muito tempo pode deixar a medida imediata sem encaminhamento.",
+          "acao": "Defina primeiro como conter a falha e depois reserve um momento para esclarecer sua causa.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-7": {
+      "position": 2,
+      "level": 7,
+      "label": "2º lugar — muito marcante",
+      "variants": {
+        "3": {
+          "titulo": "Mudança examinada sem imobilizar o trabalho",
+          "leitura": "A Conformidade muito marcante acompanha sua orientação principal com elevado cuidado analítico. Quando uma prioridade muda, você pode querer revisar dependências e regras antes de aceitar o novo plano.",
+          "atencao": "Buscar todas as respostas de início pode atrasar uma adaptação que permitiria aprender com segurança.",
+          "acao": "Escolha uma etapa reversível para começar e registre quais informações serão recolhidas durante sua execução.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Discutir a regra sem fechar a conversa",
+          "leitura": "Você acrescenta grande rigor à direção principal, com Conformidade muito marcante. Em um conflito de procedimentos, pode defender a consistência do padrão e questionar exceções pouco fundamentadas.",
+          "atencao": "Uma exceção mal explicada não é necessariamente uma tentativa de ignorar a qualidade.",
+          "acao": "Peça a necessidade concreta por trás da exceção e procure uma forma de atendê-la sem perder o requisito essencial.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-8": {
+      "position": 2,
+      "level": 8,
+      "label": "2º lugar — dominante",
+      "variants": {
+        "3": {
+          "titulo": "Uma negociação sem exigir certeza total",
+          "leitura": "A Conformidade dominante ocupa grande espaço, ainda que outro fator lidere sua orientação. Ao negociar um projeto, você pode buscar documentação extensa para sustentar o compromisso com segurança.",
+          "atencao": "A espera por garantias absolutas pode afastar um acordo cujos riscos seriam administráveis.",
+          "acao": "Defina quais riscos aceitaria acompanhar e quais exigem proteção antes da assinatura.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Prazo que comporta decisão",
+          "leitura": "Você alia a direção principal a uma Conformidade dominante e forte necessidade de comprovação. Sob prazo, pode intensificar a revisão para não entregar algo que considere tecnicamente incompleto.",
+          "atencao": "A distinção entre falha impeditiva e melhoria desejável pode se perder no esforço de aperfeiçoar.",
+          "acao": "Identifique a pendência que inviabiliza o uso e leve os aperfeiçoamentos restantes para uma próxima versão.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-1": {
+      "position": 3,
+      "level": 1,
+      "label": "3º lugar — quase ausente",
+      "variants": {
+        "3": {
+          "titulo": "Uma regra que merece sua atenção",
+          "leitura": "A Conformidade quase ausente fica em segundo plano na sua forma de trabalhar. Ao delegar uma tarefa, você pode concentrar o pedido na realização e não explorar as exigências de execução.",
+          "atencao": "Uma obrigação pouco visível pode passar despercebida quando a tarefa é descrita apenas pelo objetivo.",
+          "acao": "Localize a regra obrigatória da atividade e inclua-a no pedido com um exemplo concreto.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Feedback com um detalhe verificável",
+          "leitura": "Você investe pouco em conferência espontânea, com Conformidade quase ausente atrás dos fatores mais presentes. Ao receber feedback de qualidade, pode se orientar pelo efeito geral da mensagem.",
+          "atencao": "Uma orientação genérica pode levar você a corrigir a parte errada da entrega.",
+          "acao": "Peça que indiquem o trecho que não atende ao requisito e confira sua correção nesse mesmo ponto.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-2": {
+      "position": 3,
+      "level": 2,
+      "label": "3º lugar — discreta",
+      "variants": {
+        "3": {
+          "titulo": "Nova prioridade com informação útil",
+          "leitura": "A Conformidade discreta tem participação limitada entre seus recursos de trabalho. Quando a prioridade muda, você pode seguir o novo objetivo antes de examinar todas as condições envolvidas.",
+          "atencao": "Uma informação desatualizada pode orientar um esforço bem-intencionado para o lugar errado.",
+          "acao": "Confirme a fonte do dado mais importante para a nova tarefa antes de reorganizar a execução.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Esclarecer o desacordo com um exemplo",
+          "leitura": "Você usa pouco a conferência como primeiro recurso, com Conformidade discreta atrás dos fatores mais presentes. Em um conflito sobre entrega, pode considerar que o trabalho está adequado pela impressão de conjunto.",
+          "atencao": "A discussão permanece subjetiva quando ninguém mostra o requisito que não foi atendido.",
+          "acao": "Peça um exemplo de resultado aceitável e compare-o com a parte questionada.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-3": {
+      "position": 3,
+      "level": 3,
+      "label": "3º lugar — moderada-baixa",
+      "variants": {
+        "3": {
+          "titulo": "Condições concretas para negociar",
+          "leitura": "A Conformidade moderada-baixa entra como apoio eventual aos seus recursos principais. Em uma negociação de trabalho, você pode examinar uma condição quando ela desperta dúvida, sem revisar a proposta inteira.",
+          "atencao": "A cláusula que parece menos interessante pode alterar sua responsabilidade depois do acordo.",
+          "acao": "Confira quem responde pelo resultado quando ocorre uma falha e peça clareza antes de confirmar.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Prazo com conferência seletiva",
+          "leitura": "Você reserva algum cuidado para detalhes, com Conformidade moderada-baixa em posição de apoio. Perto de um prazo, pode revisar a entrega quando percebe um sinal de inconsistência.",
+          "atencao": "A ausência de sinal visível não garante que o dado utilizado esteja correto.",
+          "acao": "Verifique a informação que sustenta a conclusão principal, mesmo quando o restante parece coerente.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-4": {
+      "position": 3,
+      "level": 4,
+      "label": "3º lugar — equilibrada",
+      "variants": {
+        "3": {
+          "titulo": "Delegar com uma medida de qualidade",
+          "leitura": "A Conformidade equilibrada amplia seus recursos sem ocupar a direção principal. Ao delegar uma tarefa, você pode recorrer a um critério objetivo para explicar o resultado que espera.",
+          "atencao": "Uma medida conveniente pode avaliar facilidade de conferência em vez de qualidade real.",
+          "acao": "Escolha uma medida ligada ao uso da entrega e explique por que ela importa.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Feedback que permite conferir a mudança",
+          "leitura": "Você conta com Conformidade equilibrada como suporte aos fatores mais presentes. Ao receber feedback, pode olhar para um exemplo e entender qual detalhe precisa ser ajustado.",
+          "atencao": "Mudar apenas o exemplo mostrado pode deixar a mesma falha em outras partes do trabalho.",
+          "acao": "Procure onde a causa também aparece e confira a correção em um caso diferente.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-5": {
+      "position": 3,
+      "level": 5,
+      "label": "3º lugar — presente",
+      "variants": {
+        "3": {
+          "titulo": "Mudar conferindo o que sustenta o plano",
+          "leitura": "A Conformidade presente continua relevante, mesmo atrás dos fatores que mais orientam você. Quando uma prioridade muda, pode procurar informações que ajudem a preservar a qualidade da nova execução.",
+          "atencao": "Uma previsão bem apresentada pode ser recebida como fato sem que sua origem tenha sido conferida.",
+          "acao": "Pergunte de onde veio a previsão utilizada e ajuste o plano se a referência não for confiável.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Uma regra a serviço da solução",
+          "leitura": "Você tem cuidado analítico disponível, com Conformidade presente em papel complementar. Em um conflito sobre procedimento, pode consultar o padrão para entender a origem da diferença.",
+          "atencao": "A regra pode explicar o desvio sem oferecer uma solução para a dificuldade atual.",
+          "acao": "Use o padrão para identificar o risco e proponha uma correção que resolva a situação concreta.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-6": {
+      "position": 3,
+      "level": 6,
+      "label": "3º lugar — marcante",
+      "variants": {
+        "3": {
+          "titulo": "Negociar sem transformar cuidado em demora",
+          "leitura": "A Conformidade marcante acrescenta análise cuidadosa aos seus recursos principais. Em uma negociação, você pode investigar detalhes relevantes mesmo quando outra motivação conduz a conversa.",
+          "atencao": "Continuar examinando condições já esclarecidas pode deixar o outro lado sem saber o que falta para decidir.",
+          "acao": "Explicite a dúvida ainda aberta e diga qual informação permitirá concluir o acordo.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Prazo protegido pela ordem da revisão",
+          "leitura": "Você dispõe de forte atenção à precisão, com Conformidade marcante em posição complementar. Ao fechar uma entrega, pode perceber inconsistências que exigem revisão mesmo depois do trabalho principal concluído.",
+          "atencao": "Corrigir o acabamento primeiro pode consumir o tempo necessário para uma falha que prejudica a utilização.",
+          "acao": "Comece pela inconsistência que afeta o uso e deixe ajustes de apresentação para depois.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-1": {
+      "position": 4,
+      "level": 1,
+      "label": "4º lugar — quase ausente",
+      "variants": {
+        "3": {
+          "titulo": "Qualidade que não precisa ficar invisível",
+          "leitura": "A Conformidade quase ausente é o recurso menos acionado no seu trabalho. Ao delegar uma atividade, você pode esperar que os cuidados necessários sejam reconhecidos por quem irá executá-la.",
+          "atencao": "Confiar no cuidado de outra pessoa não substitui a definição da exigência que precisa ser cumprida.",
+          "acao": "Informe o requisito que não pode faltar e peça confirmação de que foi entendido.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Uma observação que aponta o ajuste",
+          "leitura": "Você dá pouco espaço à análise de padrões, com Conformidade quase ausente em último plano. Durante um feedback, pode captar a insatisfação antes de localizar a falha concreta.",
+          "atencao": "Responder ao desconforto da conversa não resolve o requisito que deixou de ser atendido.",
+          "acao": "Peça para ver a diferença entre o resultado entregue e o resultado solicitado.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-2": {
+      "position": 4,
+      "level": 2,
+      "label": "4º lugar — discreta",
+      "variants": {
+        "3": {
+          "titulo": "Mudança com uma referência segura",
+          "leitura": "A Conformidade discreta é menos acionada que seus outros recursos. Diante de uma mudança de prioridade, você pode reorganizar a atividade antes de confirmar se as orientações ainda estão atualizadas.",
+          "atencao": "Uma instrução antiga pode parecer útil por estar disponível, mesmo sem servir ao novo objetivo.",
+          "acao": "Busque a orientação vigente com quem responde pelo processo e use essa referência para começar.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "O detalhe que esclarece a discordância",
+          "leitura": "Você recorre pouco ao exame de critérios, com Conformidade discreta em último plano. Em um conflito sobre entrega, pode discutir o resultado geral sem investigar a condição específica de aceite.",
+          "atencao": "Sem conhecer a exigência contestada, a conversa vira defesa de percepções diferentes.",
+          "acao": "Identifique o item questionado e confira o acordo que estabeleceu sua obrigação.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-3": {
+      "position": 4,
+      "level": 3,
+      "label": "4º lugar — moderada-baixa",
+      "variants": {
+        "3": {
+          "titulo": "Negociar conferindo a condição essencial",
+          "leitura": "A Conformidade moderada-baixa aparece como seu recurso menos frequente, mas oferece alguma atenção a requisitos. Ao negociar uma entrega, você pode examinar o detalhe que parece ligado ao resultado desejado.",
+          "atencao": "A condição mais visível pode não ser a que define se o compromisso é viável.",
+          "acao": "Pergunte qual exigência impediria a execução e confirme como ela será atendida.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Prazo com atenção ao dado de origem",
+          "leitura": "Você dispõe de cuidado analítico pontual, com Conformidade moderada-baixa atrás dos demais fatores. Perto do prazo, pode conferir a apresentação sem aprofundar a informação que sustenta a entrega.",
+          "atencao": "Um resultado bem organizado pode carregar um erro que começou antes da revisão final.",
+          "acao": "Volte ao dado de origem da conclusão e confirme sua validade antes do envio.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-4": {
+      "position": 4,
+      "level": 4,
+      "label": "4º lugar — equilibrada",
+      "variants": {
+        "3": {
+          "titulo": "Delegar com qualidade compartilhada",
+          "leitura": "A Conformidade equilibrada está disponível, mesmo sendo menos acionada que os demais fatores. Ao delegar uma tarefa, você pode usar um padrão como apoio para explicar a qualidade esperada.",
+          "atencao": "Uma referência útil pode se tornar rígida quando é tratada como o único caminho de execução.",
+          "acao": "Apresente o resultado que a referência protege e permita outra solução que cumpra essa mesma exigência.",
+          "status": "rascunho"
+        },
+        "4": {
+          "titulo": "Feedback que amplia o cuidado",
+          "leitura": "Você conta com atenção equilibrada à precisão, embora a Conformidade não seja seu recurso principal. Ao receber feedback, pode investigar um detalhe que ajuda a melhorar a entrega.",
+          "atencao": "Concentrar o ajuste na falha indicada pode deixar o aprendizado restrito àquele episódio.",
+          "acao": "Transforme o cuidado identificado em uma pergunta de conferência para a próxima tarefa.",
+          "status": "rascunho"
+        }
+      }
+    }
+  }
+}
