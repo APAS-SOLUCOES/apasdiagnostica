@@ -22,6 +22,8 @@ export const Route = createFileRoute("/_authenticated/avaliacoes/nova")({
         content: "Cadastre o avaliado e gere o link exclusivo da avaliação comportamental APAS.",
       },
       { property: "og:title", content: "Nova avaliação — APAS DISC Profile" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       {
         property: "og:description",
         content: "Cadastre o avaliado e gere um link exclusivo de resposta.",

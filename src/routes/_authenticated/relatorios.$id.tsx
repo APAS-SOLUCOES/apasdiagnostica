@@ -16,6 +16,7 @@ export const Route = createFileRoute("/_authenticated/relatorios/$id")({
       { property: "og:title", content: "Relatório premium — APAS DIAGNÓSTICA" },
       { property: "og:description", content: "Leitura organizacional validada por analista APAS, pronta para entrega." },
       { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: RelatorioPremium,

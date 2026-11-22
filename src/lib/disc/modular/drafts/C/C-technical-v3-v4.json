@@ -272,7 +272,7 @@
           "titulo": "Controvérsia resolvida por evidência suficiente",
           "leitura": "A necessidade de fundamentação permanece elevada, apesar da posição secundária da Conformidade dominante. Em um conflito técnico, a defesa do padrão recebe análise extensa de inconsistências e riscos.",
           "atencao": "Exigir evidência adicional depois de resolvida a questão mantém a controvérsia aberta sem benefício operacional.",
-          "acao": "Acorde previamente a prova que encerrará o impasse e registre o aceite quando ela for apresentada.",
+          "acao": "Acorde previamente a prova que encerrará o impasse e registre o aceite após sua apresentação.",
           "status": "rascunho"
         }
       }
@@ -391,14 +391,14 @@
           "titulo": "Mudança com critérios de validade",
           "leitura": "A Conformidade marcante reforça os fatores principais com análise e respeito a padrões. Em uma mudança de processo, a conferência de condições contribui para verificar se a nova proposta é consistente.",
           "atencao": "Um teste com condições diferentes das reais produz confiança indevida no novo processo.",
-          "acao": "Defina um caso representativo de execução e avalie a mudança pelos requisitos que ele exige.",
+          "acao": "Defina um caso representativo de execução e avalie a mudança pelos requisitos desse cenário.",
           "status": "rascunho"
         },
         "4": {
           "titulo": "Conflito técnico com encerramento definido",
           "leitura": "O cuidado analítico permanece intenso mesmo na posição complementar da Conformidade marcante. Em um conflito entre interpretações, a comparação de registros oferece argumentos para esclarecer a diferença.",
           "atencao": "Retomar evidências já aceitas mantém a discussão ativa depois de resolvida a questão central.",
-          "acao": "Registre a interpretação acordada e estabeleça em que nova circunstância ela deverá ser revista.",
+          "acao": "Registre a interpretação acordada e estabeleça a circunstância que justificará sua revisão.",
           "status": "rascunho"
         }
       }

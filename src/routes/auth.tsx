@@ -19,6 +19,8 @@ export const Route = createFileRoute("/auth")({
           "Área administrativa da APAS Soluções para criar e acompanhar avaliações comportamentais DISC.",
       },
       { property: "og:title", content: "Acesso do Coach — APAS DISC Profile" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       {
         property: "og:description",
         content: "Entre na área administrativa da plataforma APAS DISC Profile.",
