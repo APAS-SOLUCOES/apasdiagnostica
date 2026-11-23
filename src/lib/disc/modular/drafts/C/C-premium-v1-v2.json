@@ -1,0 +1,491 @@
+{
+  "factor": "C",
+  "report": "premium",
+  "status": "rascunho",
+  "origin": "variações 1 e 2 redigidas neste lote a pedido do usuário",
+  "diagnostics": {
+    "1-4": {
+      "position": 1,
+      "level": 4,
+      "label": "1º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Análise que cabe na reunião",
+          "leitura": "A Conformidade equilibrada é o traço que mais orienta seu jeito de trabalhar. Em uma reunião de planejamento, você costuma trazer perguntas que ajudam o grupo a enxergar riscos sem travar a conversa.",
+          "atencao": "Perguntas demais no momento errado podem soar como desconfiança da proposta.",
+          "acao": "Agrupe suas dúvidas e apresente-as depois que a ideia principal for exposta.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Relatório claro e confiável",
+          "leitura": "Seu modo de agir parte primeiro do cuidado com a precisão, sustentado por uma Conformidade equilibrada. Ao escrever um relatório, você equilibra a clareza da mensagem com a conferência dos dados que a sustentam.",
+          "atencao": "Explicar todos os detalhes pode esconder a conclusão que o leitor precisa.",
+          "acao": "Comece o texto pela conclusão e deixe os detalhes em um anexo.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-5": {
+      "position": 1,
+      "level": 5,
+      "label": "1º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "O cliente que pede segurança",
+          "leitura": "A Conformidade presente é o traço que mais orienta seu jeito de trabalhar. Ao atender um cliente exigente, você busca informações concretas antes de prometer uma solução.",
+          "atencao": "O cliente pode interpretar a cautela como falta de interesse.",
+          "acao": "Diga ao cliente o que você vai conferir e quando terá a resposta.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Indicadores com leitura atenta",
+          "leitura": "Seu modo de agir parte primeiro do cuidado com a precisão, sustentado por uma Conformidade presente. Ao analisar indicadores, você procura entender o que explica a variação antes de tirar conclusões.",
+          "atencao": "Buscar a causa exata pode adiar uma correção simples.",
+          "acao": "Defina um prazo para a análise e proponha uma ação provisória enquanto ela ocorre.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-6": {
+      "position": 1,
+      "level": 6,
+      "label": "1º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Reunião que chega a uma decisão",
+          "leitura": "A Conformidade marcante é o traço que mais orienta seu jeito de trabalhar. Em reuniões, você tende a examinar cada proposta em profundidade antes de concordar.",
+          "atencao": "O grupo pode sentir que a decisão nunca está pronta para ser tomada.",
+          "acao": "Antes da reunião, defina qual informação seria suficiente para você aprovar.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Relatório pronto, não perfeito",
+          "leitura": "Seu modo de agir parte primeiro do cuidado com a precisão, sustentado por uma Conformidade marcante. Ao produzir um relatório, você revisa cada parágrafo e cada número várias vezes.",
+          "atencao": "As revisões repetidas podem atrasar a entrega sem melhorar a qualidade percebida.",
+          "acao": "Limite o relatório a duas revisões e peça a opinião de um colega na segunda.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-7": {
+      "position": 1,
+      "level": 7,
+      "label": "1º lugar — muito marcante",
+      "variants": {
+        "1": {
+          "titulo": "Precisão que tranquiliza o cliente",
+          "leitura": "A Conformidade muito marcante é o traço que mais orienta seu jeito de trabalhar. No contato com clientes, você responde com informações exatas e prefere não prometer o que ainda não verificou.",
+          "atencao": "Respostas muito técnicas podem parecer frias para quem espera acolhimento.",
+          "acao": "Comece a resposta reconhecendo a preocupação do cliente antes de explicar os detalhes.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Indicadores sem paralisia",
+          "leitura": "Seu modo de agir parte primeiro do cuidado com a precisão, sustentado por uma Conformidade muito marcante. Ao acompanhar indicadores, você quer entender cada oscilação antes de propor qualquer ação.",
+          "atencao": "Esperar a explicação completa pode deixar um problema crescer.",
+          "acao": "Durante trinta dias, registre uma ação possível para cada variação relevante, mesmo sem a causa final.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-8": {
+      "position": 1,
+      "level": 8,
+      "label": "1º lugar — dominante",
+      "variants": {
+        "1": {
+          "titulo": "Regras que fazem sentido",
+          "leitura": "A Conformidade dominante é o traço que mais orienta seu jeito de trabalhar. Quando surge uma exceção a um procedimento, você tende a defender o padrão estabelecido.",
+          "atencao": "Algumas exceções revelam que a regra precisa ser atualizada.",
+          "acao": "Ao encontrar uma exceção, registre-a e avalie se ela se repete antes de rejeitá-la.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Planejamento que admite ajustes",
+          "leitura": "Seu modo de agir parte primeiro do cuidado com a precisão, sustentado por uma Conformidade dominante. No planejamento de projetos, você detalha cronogramas, responsáveis e riscos com grande cuidado.",
+          "atencao": "O plano minucioso pode gerar frustração quando a realidade exige mudanças.",
+          "acao": "Defina pontos de revisão no cronograma em que ajustes já são esperados.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-1": {
+      "position": 2,
+      "level": 1,
+      "label": "2º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Um relatório que pede segunda leitura",
+          "leitura": "Logo atrás do seu fator principal, a Conformidade quase ausente acrescenta um olhar atento ao modo de fazer. Ao finalizar um relatório, você tende a enviá-lo assim que a mensagem principal está clara, sem voltar aos números.",
+          "atencao": "Um valor trocado pode enfraquecer a confiança no trabalho inteiro.",
+          "acao": "Antes de enviar, releia somente os números e as datas do documento.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Reunião com uma pergunta de verificação",
+          "leitura": "Como segundo traço do seu perfil, a Conformidade quase ausente influencia a forma como você confere o que recebe. Em uma reunião de decisão, você costuma aceitar a proposta que parece boa sem perguntar de onde vieram as informações.",
+          "atencao": "Decisões aprovadas sem origem conhecida podem precisar ser desfeitas mais tarde.",
+          "acao": "Leve para a próxima reunião uma pergunta sobre a fonte dos dados apresentados.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-2": {
+      "position": 2,
+      "level": 2,
+      "label": "2º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "O cliente percebe o detalhe",
+          "leitura": "Logo atrás do seu fator principal, a Conformidade discreta acrescenta um olhar atento ao modo de fazer. No atendimento a um cliente, você prioriza resolver a conversa e pode deixar o registro do combinado para depois.",
+          "atencao": "Sem registro, o cliente pode receber uma resposta diferente na próxima vez.",
+          "acao": "Ao encerrar cada atendimento, anote em uma linha o que foi prometido.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Uma lista curta antes de começar",
+          "leitura": "Como segundo traço do seu perfil, a Conformidade discreta influencia a forma como você confere o que recebe. Ao iniciar um projeto, você prefere entrar em ação e descobrir as exigências pelo caminho.",
+          "atencao": "Requisitos descobertos tarde costumam custar mais tempo do que uma conversa inicial.",
+          "acao": "Escreva três condições que o resultado precisa cumprir antes do primeiro passo.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-3": {
+      "position": 2,
+      "level": 3,
+      "label": "2º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Planilha conferida por amostra",
+          "leitura": "Logo atrás do seu fator principal, a Conformidade moderada-baixa acrescenta um olhar atento ao modo de fazer. Quando trabalha com uma planilha, você confia nas fórmulas que já funcionaram uma vez.",
+          "atencao": "Uma fórmula copiada para o lugar errado pode passar despercebida por semanas.",
+          "acao": "Escolha cinco linhas ao acaso e confira o resultado manualmente.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "O manual que ninguém leu",
+          "leitura": "Como segundo traço do seu perfil, a Conformidade moderada-baixa influencia a forma como você confere o que recebe. Diante de um novo sistema, você aprende testando e raramente consulta as orientações oficiais.",
+          "atencao": "Atalhos improvisados podem gerar erros que outras pessoas precisarão corrigir.",
+          "acao": "Leia a seção do manual referente à tarefa que você mais executa.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-4": {
+      "position": 2,
+      "level": 4,
+      "label": "2º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Um sistema novo aprendido com método",
+          "leitura": "Logo atrás do seu fator principal, a Conformidade equilibrada acrescenta um olhar atento ao modo de fazer. Na implantação de uma ferramenta, você prefere entender as regras de uso antes de adotá-la de vez.",
+          "atencao": "Colegas mais rápidos podem se impacientar com a espera.",
+          "acao": "Compartilhe com a equipe um resumo das regras que você levantou.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Orçamento com margem de segurança",
+          "leitura": "Como segundo traço do seu perfil, a Conformidade equilibrada influencia a forma como você confere o que recebe. Ao montar um orçamento, você revisa os valores principais e reserva uma margem para imprevistos.",
+          "atencao": "Margens amplas demais podem tornar a proposta menos competitiva.",
+          "acao": "Justifique cada margem com um risco concreto que ela pretende cobrir.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-5": {
+      "position": 2,
+      "level": 5,
+      "label": "2º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Padrão que ajuda quem chega",
+          "leitura": "Logo atrás do seu fator principal, a Conformidade presente acrescenta um olhar atento ao modo de fazer. Ao receber uma pessoa nova na equipe, você valoriza explicar como as tarefas devem ser feitas.",
+          "atencao": "Muitas regras de uma vez podem deixar a pessoa insegura para começar.",
+          "acao": "Apresente primeiro as três regras mais importantes e as demais ao longo do mês.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Apresentação bem fundamentada",
+          "leitura": "Como segundo traço do seu perfil, a Conformidade presente influencia a forma como você confere o que recebe. Ao preparar uma apresentação, você seleciona dados confiáveis para dar peso aos seus argumentos.",
+          "atencao": "Excesso de números pode cansar a plateia.",
+          "acao": "Escolha um dado central por slide e deixe os demais para perguntas.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-6": {
+      "position": 2,
+      "level": 6,
+      "label": "2º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Ferramenta nova sem medo de errar",
+          "leitura": "Logo atrás do seu fator principal, a Conformidade marcante acrescenta um olhar atento ao modo de fazer. Diante de um sistema novo, você prefere estudar todas as funções antes de usá-lo em tarefas reais.",
+          "atencao": "O estudo prolongado pode atrasar a adaptação da equipe.",
+          "acao": "Use a ferramenta em uma tarefa simples logo na primeira semana.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Orçamento fechado com segurança",
+          "leitura": "Como segundo traço do seu perfil, a Conformidade marcante influencia a forma como você confere o que recebe. Ao preparar um orçamento, você confere cada item até ter certeza de que nada ficou de fora.",
+          "atencao": "O excesso de conferência pode fazer você perder a janela de aprovação.",
+          "acao": "Defina uma data de fechamento e trate ajustes posteriores como revisão.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-7": {
+      "position": 2,
+      "level": 7,
+      "label": "2º lugar — muito marcante",
+      "variants": {
+        "1": {
+          "titulo": "Ensinar o padrão com leveza",
+          "leitura": "Logo atrás do seu fator principal, a Conformidade muito marcante acrescenta um olhar atento ao modo de fazer. Ao orientar colegas, você explica com riqueza de detalhes como o trabalho deve ser feito.",
+          "atencao": "A pessoa pode sentir que qualquer desvio será visto como erro.",
+          "acao": "Diga claramente quais pontos são obrigatórios e quais podem ser adaptados.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Apresentação com foco",
+          "leitura": "Como segundo traço do seu perfil, a Conformidade muito marcante influencia a forma como você confere o que recebe. Na preparação de uma apresentação, você reúne muitos dados para não deixar nenhuma pergunta sem resposta.",
+          "atencao": "O volume de informação pode diluir a mensagem principal.",
+          "acao": "Escreva em uma frase o que a plateia precisa lembrar e corte o que não a sustenta.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-8": {
+      "position": 2,
+      "level": 8,
+      "label": "2º lugar — dominante",
+      "variants": {
+        "1": {
+          "titulo": "Comparar sem adiar a escolha",
+          "leitura": "Logo atrás do seu fator principal, a Conformidade dominante acrescenta um olhar atento ao modo de fazer. Na escolha de um fornecedor, você analisa propostas em profundidade e busca referências adicionais.",
+          "atencao": "A busca por segurança total pode atrasar uma compra necessária.",
+          "acao": "Estabeleça quantas referências bastam e decida assim que as tiver.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Documentação útil para todos",
+          "leitura": "Como segundo traço do seu perfil, a Conformidade dominante influencia a forma como você confere o que recebe. Ao registrar processos, você descreve cada passo com precisão para evitar interpretações diferentes.",
+          "atencao": "Documentos extensos podem afastar quem precisa consultá-los rapidamente.",
+          "acao": "Crie uma versão de uma página com os passos essenciais.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-1": {
+      "position": 3,
+      "level": 1,
+      "label": "3º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Apresentação com números conferidos",
+          "leitura": "Em terceiro lugar no seu perfil, a Conformidade quase ausente aparece como um recurso de apoio. Ao preparar uma apresentação, você investe na mensagem e pode usar números que lembra de memória.",
+          "atencao": "Um dado impreciso diante da plateia chama mais atenção do que o argumento.",
+          "acao": "Confirme cada número dos slides com a fonte original na véspera.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Orçamento sem surpresas",
+          "leitura": "A Conformidade quase ausente ocupa um lugar intermediário entre seus traços e entra em cena em momentos específicos. Na elaboração de um orçamento, você estima pelo conjunto e deixa os itens pequenos sem detalhamento.",
+          "atencao": "Pequenos custos esquecidos se somam e alteram o resultado final.",
+          "acao": "Liste os itens menores separadamente e revise o total depois disso.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-2": {
+      "position": 3,
+      "level": 2,
+      "label": "3º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Indicadores que contam a história",
+          "leitura": "Em terceiro lugar no seu perfil, a Conformidade discreta aparece como um recurso de apoio. Ao acompanhar resultados, você se orienta mais pela sensação de progresso do que pelos indicadores.",
+          "atencao": "A impressão de que tudo vai bem pode esconder um atraso que já começou.",
+          "acao": "Durante trinta dias, consulte um indicador fixo toda semana e anote a tendência.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Contrato lido até o fim",
+          "leitura": "A Conformidade discreta ocupa um lugar intermediário entre seus traços e entra em cena em momentos específicos. Ao receber um documento para assinar, você lê os pontos principais e confia no restante.",
+          "atencao": "Cláusulas secundárias podem criar obrigações que você não esperava.",
+          "acao": "Separe dez minutos para ler as condições de prazo e cancelamento.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-3": {
+      "position": 3,
+      "level": 3,
+      "label": "3º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "O processo que protege a equipe",
+          "leitura": "Em terceiro lugar no seu perfil, a Conformidade moderada-baixa aparece como um recurso de apoio. Quando um procedimento parece burocrático, você tende a pular etapas para ganhar tempo.",
+          "atencao": "Etapas puladas podem deixar colegas sem a informação de que precisam.",
+          "acao": "Pergunte a quem criou o procedimento qual risco cada etapa evita.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Treinar com um exemplo correto",
+          "leitura": "A Conformidade moderada-baixa ocupa um lugar intermediário entre seus traços e entra em cena em momentos específicos. Ao orientar alguém novo, você explica o objetivo e deixa o padrão de qualidade subentendido.",
+          "atencao": "A pessoa pode entregar algo diferente do esperado sem saber por quê.",
+          "acao": "Mostre um exemplo de trabalho bem feito no início da orientação.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-4": {
+      "position": 3,
+      "level": 4,
+      "label": "3º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Processo revisado com critério",
+          "leitura": "Em terceiro lugar no seu perfil, a Conformidade equilibrada aparece como um recurso de apoio. Quando um processo apresenta falhas, você investiga em que etapa o padrão deixou de ser seguido.",
+          "atencao": "Focar na etapa falha pode esconder um problema de desenho do processo.",
+          "acao": "Converse com quem executa e pergunte se a regra faz sentido na prática.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Compra comparada",
+          "leitura": "A Conformidade equilibrada ocupa um lugar intermediário entre seus traços e entra em cena em momentos específicos. Ao escolher um fornecedor, você compara propostas com critérios definidos antes da decisão.",
+          "atencao": "A comparação pode se estender se novos critérios surgirem no meio do caminho.",
+          "acao": "Feche a lista de critérios antes de abrir as propostas.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-5": {
+      "position": 3,
+      "level": 5,
+      "label": "3º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Documentar o essencial",
+          "leitura": "Em terceiro lugar no seu perfil, a Conformidade presente aparece como um recurso de apoio. Ao fim de um projeto, você registra aprendizados e decisões para consultas futuras.",
+          "atencao": "Documentos longos tendem a não ser lidos por quem precisa deles.",
+          "acao": "Resuma cada aprendizado em uma frase e uma recomendação.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Auditoria preparada com calma",
+          "leitura": "A Conformidade presente ocupa um lugar intermediário entre seus traços e entra em cena em momentos específicos. Diante de uma auditoria, você organiza comprovações com antecedência e confere se estão completas.",
+          "atencao": "A preparação pode tomar tempo de entregas que também têm prazo.",
+          "acao": "Reserve um horário fixo por semana para a organização, durante trinta dias.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-6": {
+      "position": 3,
+      "level": 6,
+      "label": "3º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Revisão que também reconhece",
+          "leitura": "Em terceiro lugar no seu perfil, a Conformidade marcante aparece como um recurso de apoio. Ao revisar o trabalho da equipe, você costuma encontrar inconsistências que passam despercebidas aos outros.",
+          "atencao": "Apontar muitos pontos de uma vez pode desmotivar quem fez o trabalho.",
+          "acao": "Comente primeiro os dois pontos de maior impacto e reconheça o que está correto.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Testes com fim definido",
+          "leitura": "A Conformidade marcante ocupa um lugar intermediário entre seus traços e entra em cena em momentos específicos. Antes de liberar uma entrega, você testa vários cenários para ter certeza de que nada falhará.",
+          "atencao": "Buscar a ausência total de risco pode impedir que a entrega gere valor.",
+          "acao": "Defina com antecedência quais testes são suficientes para liberar o trabalho.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-1": {
+      "position": 4,
+      "level": 1,
+      "label": "4º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "E-mail revisado antes do envio",
+          "leitura": "A Conformidade quase ausente é o traço que você aciona por último. Ao responder mensagens importantes, você escreve rápido e envia sem reler.",
+          "atencao": "Um anexo esquecido ou um nome errado pode gerar retrabalho e constrangimento.",
+          "acao": "Adote uma pausa breve para reler destinatários e anexos antes de enviar.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Pesquisa antes da escolha",
+          "leitura": "Entre seus recursos, a Conformidade quase ausente é o menos usado no dia a dia. Na compra de um material ou serviço, você tende a escolher a primeira opção que atende ao básico.",
+          "atencao": "Sem comparação, uma alternativa mais adequada pode ficar de fora.",
+          "acao": "Compare pelo menos duas opções usando os mesmos critérios.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-2": {
+      "position": 4,
+      "level": 2,
+      "label": "4º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Registro que evita retrabalho",
+          "leitura": "A Conformidade discreta é o traço que você aciona por último. Ao concluir uma etapa do trabalho, você segue para a próxima sem documentar o que foi feito.",
+          "atencao": "Quem continuar a tarefa pode repetir passos ou desfazer decisões.",
+          "acao": "Mantenha por trinta dias um registro curto ao fim de cada etapa concluída.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Auditoria sem susto",
+          "leitura": "Entre seus recursos, a Conformidade discreta é o menos usado no dia a dia. Quando uma auditoria se aproxima, você costuma reunir os documentos apenas no último momento.",
+          "atencao": "A pressa final aumenta a chance de faltar uma comprovação importante.",
+          "acao": "Guarde os comprovantes em uma pasta única assim que cada tarefa termina.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-3": {
+      "position": 4,
+      "level": 3,
+      "label": "4º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Um teste a mais antes de entregar",
+          "leitura": "A Conformidade moderada-baixa é o traço que você aciona por último. Ao entregar uma solução, você confia que funciona porque deu certo na primeira tentativa.",
+          "atencao": "Situações menos comuns podem revelar falhas depois da entrega.",
+          "acao": "Teste a solução em um caso diferente daquele que você usou para criá-la.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Agenda com informações completas",
+          "leitura": "Entre seus recursos, a Conformidade moderada-baixa é o menos usado no dia a dia. Ao marcar compromissos com outras áreas, você combina o essencial e deixa os detalhes para a conversa.",
+          "atencao": "Participantes sem contexto chegam despreparados e a reunião rende menos.",
+          "acao": "Inclua no convite o objetivo e o material que cada pessoa deve trazer.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-4": {
+      "position": 4,
+      "level": 4,
+      "label": "4º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Testar o que o usuário vai viver",
+          "leitura": "A Conformidade equilibrada é o traço que você aciona por último. Antes de entregar uma solução, você testa alguns cenários para confirmar que ela funciona.",
+          "atencao": "Testar casos improváveis pode atrasar o uso de algo já adequado.",
+          "acao": "Priorize os testes pelos cenários que o usuário realmente vai enfrentar.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Planejamento com etapas claras",
+          "leitura": "Entre seus recursos, a Conformidade equilibrada é o menos usado no dia a dia. Ao planejar o mês, você define etapas e verifica se os recursos estão disponíveis.",
+          "atencao": "Um plano detalhado demais pode ficar rígido quando algo inesperado acontece.",
+          "acao": "Deixe um espaço livre no planejamento para ajustes semanais.",
+          "status": "rascunho"
+        }
+      }
+    }
+  }
+}

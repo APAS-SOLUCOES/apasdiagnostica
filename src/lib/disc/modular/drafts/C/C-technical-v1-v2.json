@@ -1,0 +1,491 @@
+{
+  "factor": "C",
+  "report": "technical",
+  "status": "rascunho",
+  "origin": "variações 1 e 2 redigidas neste lote a pedido do usuário",
+  "diagnostics": {
+    "1-4": {
+      "position": 1,
+      "level": 4,
+      "label": "1º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Questionamento oportuno no planejamento",
+          "leitura": "A Conformidade equilibrada ocupa a primeira posição e define o padrão principal de resposta ao trabalho. Em reuniões de planejamento, a contribuição se dá por perguntas que evidenciam riscos sem bloquear a discussão.",
+          "atencao": "Questionamentos no momento inadequado podem ser lidos como resistência à proposta.",
+          "acao": "Consolidar as dúvidas e apresentá-las após a exposição completa da proposta.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Conclusão antes do detalhe",
+          "leitura": "O comportamento tem como eixo a verificação de critérios, com Conformidade equilibrada na liderança do perfil. Na redação de relatórios, há equilíbrio entre clareza da mensagem e verificação dos dados de suporte.",
+          "atencao": "O detalhamento extenso pode ocultar a conclusão relevante para o leitor.",
+          "acao": "Estruturar o relatório com a conclusão no início e o detalhamento em anexo.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-5": {
+      "position": 1,
+      "level": 5,
+      "label": "1º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Cautela comunicada ao cliente",
+          "leitura": "A Conformidade presente ocupa a primeira posição e define o padrão principal de resposta ao trabalho. Diante de clientes exigentes, informações concretas são buscadas antes de qualquer compromisso.",
+          "atencao": "A cautela pode ser interpretada pelo cliente como baixo engajamento.",
+          "acao": "Informar ao cliente o que será verificado e o prazo de retorno.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Análise de causa com prazo",
+          "leitura": "O comportamento tem como eixo a verificação de critérios, com Conformidade presente na liderança do perfil. Na análise de indicadores, a compreensão das causas da variação antecede as conclusões.",
+          "atencao": "A busca da causa exata pode postergar correções simples.",
+          "acao": "Fixar prazo para a análise e adotar medida provisória durante o período.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-6": {
+      "position": 1,
+      "level": 6,
+      "label": "1º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Critério de suficiência em reuniões",
+          "leitura": "A Conformidade marcante ocupa a primeira posição e define o padrão principal de resposta ao trabalho. Em reuniões, cada proposta tende a ser examinada em profundidade antes de qualquer concordância.",
+          "atencao": "O grupo pode perceber a decisão como permanentemente adiada.",
+          "acao": "Definir antes da reunião qual informação é suficiente para aprovação.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Limite de revisões em relatórios",
+          "leitura": "O comportamento tem como eixo a verificação de critérios, com Conformidade marcante na liderança do perfil. Na produção de relatórios, parágrafos e números passam por várias revisões sucessivas.",
+          "atencao": "Revisões repetidas atrasam a entrega sem ganho perceptível de qualidade.",
+          "acao": "Limitar a duas revisões, sendo a segunda feita com apoio de um par.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-7": {
+      "position": 1,
+      "level": 7,
+      "label": "1º lugar — muito marcante",
+      "variants": {
+        "1": {
+          "titulo": "Precisão com acolhimento ao cliente",
+          "leitura": "A Conformidade muito marcante ocupa a primeira posição e define o padrão principal de resposta ao trabalho. No relacionamento com clientes, as respostas são exatas e evitam compromissos ainda não verificados.",
+          "atencao": "Respostas excessivamente técnicas podem soar distantes para o cliente.",
+          "acao": "Iniciar as respostas reconhecendo a demanda do cliente antes dos detalhes técnicos.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Ação provisória diante de oscilações",
+          "leitura": "O comportamento tem como eixo a verificação de critérios, com Conformidade muito marcante na liderança do perfil. No acompanhamento de indicadores, cada oscilação tende a exigir explicação completa antes de qualquer ação.",
+          "atencao": "A espera pela explicação integral permite que desvios se ampliem.",
+          "acao": "Registrar por trinta dias uma ação possível para cada variação relevante, mesmo sem causa definida.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "1-8": {
+      "position": 1,
+      "level": 8,
+      "label": "1º lugar — dominante",
+      "variants": {
+        "1": {
+          "titulo": "Exceções como sinal de revisão",
+          "leitura": "A Conformidade dominante ocupa a primeira posição e define o padrão principal de resposta ao trabalho. Diante de exceções a procedimentos, há tendência a defender o padrão estabelecido.",
+          "atencao": "Exceções recorrentes podem indicar necessidade de atualização da regra.",
+          "acao": "Registrar exceções e avaliar sua recorrência antes de rejeitá-las.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Cronograma com pontos de revisão",
+          "leitura": "O comportamento tem como eixo a verificação de critérios, com Conformidade dominante na liderança do perfil. No planejamento de projetos, cronogramas, responsáveis e riscos são detalhados com rigor elevado.",
+          "atencao": "Planos minuciosos geram frustração quando a realidade exige mudanças.",
+          "acao": "Inserir no cronograma marcos formais de revisão em que ajustes são previstos.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-1": {
+      "position": 2,
+      "level": 1,
+      "label": "2º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Revisão numérica antes do envio",
+          "leitura": "A Conformidade quase ausente, na segunda posição, complementa o fator predominante com controle de qualidade. Na finalização de relatórios, o envio tende a ocorrer assim que a mensagem central está definida, sem conferência dos números.",
+          "atencao": "Um valor incorreto compromete a credibilidade do documento inteiro.",
+          "acao": "Incluir uma conferência exclusiva de números e datas antes de cada envio.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Origem dos dados em decisões",
+          "leitura": "Na segunda posição, a Conformidade quase ausente modula a execução por meio da conferência de padrões. Em reuniões de decisão, propostas plausíveis costumam ser aceitas sem questionamento sobre a origem das informações.",
+          "atencao": "Decisões baseadas em dados não verificados elevam o risco de revisão posterior.",
+          "acao": "Estabelecer como prática uma pergunta sobre a fonte dos dados em cada pauta decisória.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-2": {
+      "position": 2,
+      "level": 2,
+      "label": "2º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Registro dos compromissos com clientes",
+          "leitura": "A Conformidade discreta, na segunda posição, complementa o fator predominante com controle de qualidade. No atendimento, a prioridade recai sobre a resolução imediata, e o registro do que foi acordado tende a ficar pendente.",
+          "atencao": "A ausência de registro gera respostas inconsistentes em contatos futuros.",
+          "acao": "Registrar ao término de cada atendimento o compromisso assumido e o prazo.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Requisitos definidos na partida",
+          "leitura": "Na segunda posição, a Conformidade discreta modula a execução por meio da conferência de padrões. No início de projetos, a execução costuma começar antes da definição clara dos requisitos.",
+          "atencao": "Requisitos identificados tardiamente aumentam custo e retrabalho.",
+          "acao": "Formalizar três critérios de aceite antes da primeira etapa de execução.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-3": {
+      "position": 2,
+      "level": 3,
+      "label": "2º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Amostragem em planilhas",
+          "leitura": "A Conformidade moderada-baixa, na segunda posição, complementa o fator predominante com controle de qualidade. Em planilhas e controles, há tendência a confiar em fórmulas já utilizadas sem nova validação.",
+          "atencao": "Erros de fórmula replicados podem permanecer ocultos por longos períodos.",
+          "acao": "Validar manualmente uma amostra de linhas sempre que a planilha for atualizada.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Uso orientado de sistemas",
+          "leitura": "Na segunda posição, a Conformidade moderada-baixa modula a execução por meio da conferência de padrões. Na adoção de sistemas, o aprendizado ocorre por tentativa, com pouca consulta às orientações oficiais.",
+          "atencao": "Procedimentos improvisados geram inconsistências que outros usuários precisam corrigir.",
+          "acao": "Consultar a documentação oficial da rotina de maior frequência de uso.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-4": {
+      "position": 2,
+      "level": 4,
+      "label": "2º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Regras de uso na implantação",
+          "leitura": "A Conformidade equilibrada, na segunda posição, complementa o fator predominante com controle de qualidade. Na implantação de ferramentas, há preferência por compreender as regras de uso antes da adoção plena.",
+          "atencao": "A espera pode gerar impaciência em integrantes de ritmo mais acelerado.",
+          "acao": "Disponibilizar à equipe um resumo das regras levantadas.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Margem justificada por risco",
+          "leitura": "Na segunda posição, a Conformidade equilibrada modula a execução por meio da conferência de padrões. Na montagem de orçamentos, os valores principais são revisados e uma margem para imprevistos é reservada.",
+          "atencao": "Margens excessivas reduzem a competitividade da proposta.",
+          "acao": "Vincular cada margem a um risco identificado e documentado.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-5": {
+      "position": 2,
+      "level": 5,
+      "label": "2º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Integração com regras priorizadas",
+          "leitura": "A Conformidade presente, na segunda posição, complementa o fator predominante com controle de qualidade. Na integração de novos membros, a explicação dos métodos de trabalho recebe valor elevado.",
+          "atencao": "O volume de regras iniciais pode gerar insegurança para iniciar as atividades.",
+          "acao": "Priorizar as três regras críticas e distribuir as demais ao longo do primeiro mês.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Dados seletivos na exposição",
+          "leitura": "Na segunda posição, a Conformidade presente modula a execução por meio da conferência de padrões. Na preparação de apresentações, dados confiáveis são selecionados para sustentar os argumentos.",
+          "atencao": "O excesso de números reduz a atenção do público.",
+          "acao": "Limitar a um dado central por tela e reservar os demais para perguntas.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-6": {
+      "position": 2,
+      "level": 6,
+      "label": "2º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Adoção prática de ferramentas",
+          "leitura": "A Conformidade marcante, na segunda posição, complementa o fator predominante com controle de qualidade. Na chegada de sistemas novos, há preferência por estudar todas as funções antes do uso em tarefas reais.",
+          "atencao": "O estudo prolongado retarda a adaptação da equipe.",
+          "acao": "Aplicar a ferramenta em uma tarefa simples já na primeira semana.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Data de fechamento do orçamento",
+          "leitura": "Na segunda posição, a Conformidade marcante modula a execução por meio da conferência de padrões. Na preparação de orçamentos, cada item é conferido até a certeza de completude.",
+          "atencao": "A conferência excessiva pode comprometer a janela de aprovação.",
+          "acao": "Fixar data de fechamento e tratar ajustes posteriores como revisão formal.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-7": {
+      "position": 2,
+      "level": 7,
+      "label": "2º lugar — muito marcante",
+      "variants": {
+        "1": {
+          "titulo": "Obrigatório e adaptável na orientação",
+          "leitura": "A Conformidade muito marcante, na segunda posição, complementa o fator predominante com controle de qualidade. Na orientação de colegas, os métodos de trabalho são explicados com alto nível de detalhe.",
+          "atencao": "Pode se formar a percepção de que qualquer desvio será tratado como erro.",
+          "acao": "Distinguir explicitamente os pontos obrigatórios dos que admitem adaptação.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Mensagem central em apresentações",
+          "leitura": "Na segunda posição, a Conformidade muito marcante modula a execução por meio da conferência de padrões. Na preparação de apresentações, grande volume de dados é reunido para antecipar qualquer questionamento.",
+          "atencao": "O volume de informação dilui a mensagem principal.",
+          "acao": "Definir a mensagem central em uma frase e excluir o que não a sustenta.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "2-8": {
+      "position": 2,
+      "level": 8,
+      "label": "2º lugar — dominante",
+      "variants": {
+        "1": {
+          "titulo": "Suficiência de referências",
+          "leitura": "A Conformidade dominante, na segunda posição, complementa o fator predominante com controle de qualidade. Na escolha de fornecedores, as propostas são analisadas em profundidade, com busca de referências adicionais.",
+          "atencao": "A busca por segurança total pode atrasar aquisições necessárias.",
+          "acao": "Estabelecer previamente o número suficiente de referências e decidir ao atingi-lo.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Documentação em dois níveis",
+          "leitura": "Na segunda posição, a Conformidade dominante modula a execução por meio da conferência de padrões. Na documentação de processos, cada passo é descrito com precisão para eliminar interpretações divergentes.",
+          "atencao": "Documentos extensos dificultam consultas rápidas.",
+          "acao": "Produzir uma versão de uma página com os passos essenciais.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-1": {
+      "position": 3,
+      "level": 1,
+      "label": "3º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Dados conferidos em apresentações",
+          "leitura": "A Conformidade quase ausente, na terceira posição, atua como recurso complementar. Na preparação de apresentações, a ênfase recai na narrativa, e números podem ser citados de memória.",
+          "atencao": "Imprecisões diante do público reduzem a força do argumento.",
+          "acao": "Confrontar cada número da apresentação com a fonte primária antes da exposição.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Detalhamento de custos menores",
+          "leitura": "Com Conformidade quase ausente em posição intermediária, a análise de critérios é acionada de forma situacional. Na elaboração de orçamentos, a estimativa costuma ser global, sem detalhamento de itens de menor valor.",
+          "atencao": "Custos pequenos omitidos acumulam desvios relevantes no total.",
+          "acao": "Discriminar os itens de menor valor e recalcular o total a partir deles.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-2": {
+      "position": 3,
+      "level": 2,
+      "label": "3º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Gestão orientada por indicadores",
+          "leitura": "A Conformidade discreta, na terceira posição, atua como recurso complementar. O acompanhamento de resultados tende a se apoiar na percepção de avanço, mais do que em indicadores.",
+          "atencao": "A percepção favorável pode encobrir desvios já em curso.",
+          "acao": "Definir um indicador de referência e registrar sua evolução semanal por trinta dias.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Leitura integral de documentos formais",
+          "leitura": "Com Conformidade discreta em posição intermediária, a análise de critérios é acionada de forma situacional. Em documentos para assinatura, a leitura costuma se limitar aos pontos principais.",
+          "atencao": "Cláusulas secundárias podem gerar obrigações não previstas.",
+          "acao": "Revisar obrigatoriamente as condições de prazo, multa e rescisão antes de assinar.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-3": {
+      "position": 3,
+      "level": 3,
+      "label": "3º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Função de cada etapa do procedimento",
+          "leitura": "A Conformidade moderada-baixa, na terceira posição, atua como recurso complementar. Procedimentos percebidos como burocráticos tendem a ter etapas suprimidas para ganho de tempo.",
+          "atencao": "Etapas suprimidas podem interromper o fluxo de informação para outras áreas.",
+          "acao": "Mapear com o responsável pelo procedimento qual risco cada etapa controla.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Padrão de referência na integração",
+          "leitura": "Com Conformidade moderada-baixa em posição intermediária, a análise de critérios é acionada de forma situacional. Na orientação de novos integrantes, o objetivo é explicado e o padrão de qualidade fica implícito.",
+          "atencao": "A falta de referência explícita produz entregas fora do esperado.",
+          "acao": "Apresentar um modelo de entrega aprovada no início de cada orientação.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-4": {
+      "position": 3,
+      "level": 4,
+      "label": "3º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Desenho do processo em revisão",
+          "leitura": "A Conformidade equilibrada, na terceira posição, atua como recurso complementar. Diante de falhas de processo, a investigação busca a etapa em que o padrão deixou de ser seguido.",
+          "atencao": "O foco na etapa pode encobrir falhas de desenho do próprio processo.",
+          "acao": "Validar com os executores a aplicabilidade prática da regra em revisão.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Critérios fechados antes das propostas",
+          "leitura": "Com Conformidade equilibrada em posição intermediária, a análise de critérios é acionada de forma situacional. Na seleção de fornecedores, as propostas são comparadas com critérios definidos previamente.",
+          "atencao": "A inclusão de novos critérios durante a análise prolonga a decisão.",
+          "acao": "Encerrar a lista de critérios antes da abertura das propostas.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-5": {
+      "position": 3,
+      "level": 5,
+      "label": "3º lugar — presente",
+      "variants": {
+        "1": {
+          "titulo": "Lições registradas de forma sintética",
+          "leitura": "A Conformidade presente, na terceira posição, atua como recurso complementar. No encerramento de projetos, aprendizados e decisões são registrados para consulta futura.",
+          "atencao": "Registros extensos tendem a não ser consultados.",
+          "acao": "Sintetizar cada aprendizado em uma constatação e uma recomendação.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Preparação de auditoria em cadência",
+          "leitura": "Com Conformidade presente em posição intermediária, a análise de critérios é acionada de forma situacional. Diante de auditorias, as comprovações são organizadas com antecedência e verificadas quanto à completude.",
+          "atencao": "A preparação pode competir com entregas de mesmo prazo.",
+          "acao": "Reservar um horário semanal fixo para a organização durante trinta dias.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "3-6": {
+      "position": 3,
+      "level": 6,
+      "label": "3º lugar — marcante",
+      "variants": {
+        "1": {
+          "titulo": "Devolutiva de revisão priorizada",
+          "leitura": "A Conformidade marcante, na terceira posição, atua como recurso complementar. Na revisão do trabalho da equipe, inconsistências pouco visíveis para os demais são identificadas com frequência.",
+          "atencao": "O apontamento simultâneo de muitos itens pode reduzir o engajamento de quem executou.",
+          "acao": "Priorizar os dois pontos de maior impacto e reconhecer explicitamente os acertos.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Critério de liberação definido",
+          "leitura": "Com Conformidade marcante em posição intermediária, a análise de critérios é acionada de forma situacional. Antes da liberação de entregas, diversos cenários são testados para eliminar falhas.",
+          "atencao": "A busca por risco zero pode impedir a geração de valor da entrega.",
+          "acao": "Definir previamente o conjunto de testes suficiente para liberação.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-1": {
+      "position": 4,
+      "level": 1,
+      "label": "4º lugar — quase ausente",
+      "variants": {
+        "1": {
+          "titulo": "Conferência de comunicações críticas",
+          "leitura": "A Conformidade quase ausente, na quarta posição, é o fator menos acionado do perfil. Comunicações relevantes costumam ser redigidas e enviadas sem releitura.",
+          "atencao": "Falhas de destinatário ou anexo geram retrabalho e exposição desnecessária.",
+          "acao": "Adotar a verificação de destinatários e anexos como etapa fixa antes do envio.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Comparação mínima de alternativas",
+          "leitura": "O exame de regras e padrões tem a menor participação no perfil, com Conformidade quase ausente. Em aquisições, a tendência é escolher a primeira opção que atende ao requisito básico.",
+          "atencao": "Sem comparação estruturada, alternativas de melhor relação custo-benefício são ignoradas.",
+          "acao": "Comparar ao menos duas propostas sob os mesmos critérios antes de decidir.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-2": {
+      "position": 4,
+      "level": 2,
+      "label": "4º lugar — discreta",
+      "variants": {
+        "1": {
+          "titulo": "Registro de etapas concluídas",
+          "leitura": "A Conformidade discreta, na quarta posição, é o fator menos acionado do perfil. Ao concluir etapas, a passagem para a seguinte ocorre sem documentação do que foi realizado.",
+          "atencao": "A continuidade por outras pessoas fica sujeita a repetições e reversões.",
+          "acao": "Manter por trinta dias um registro sucinto ao final de cada etapa.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Comprovações organizadas continuamente",
+          "leitura": "O exame de regras e padrões tem a menor participação no perfil, com Conformidade discreta. Em períodos de auditoria, a reunião de documentos tende a ocorrer apenas na véspera.",
+          "atencao": "A organização tardia aumenta a probabilidade de lacunas de comprovação.",
+          "acao": "Arquivar cada comprovante em repositório único no momento da conclusão da tarefa.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-3": {
+      "position": 4,
+      "level": 3,
+      "label": "4º lugar — moderada-baixa",
+      "variants": {
+        "1": {
+          "titulo": "Validação em casos distintos",
+          "leitura": "A Conformidade moderada-baixa, na quarta posição, é o fator menos acionado do perfil. Soluções tendem a ser consideradas prontas após um único teste bem-sucedido.",
+          "atencao": "Cenários menos frequentes podem expor falhas após a entrega.",
+          "acao": "Validar a solução em pelo menos um caso diferente do utilizado no desenvolvimento.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Contexto prévio em convites",
+          "leitura": "O exame de regras e padrões tem a menor participação no perfil, com Conformidade moderada-baixa. Na convocação de reuniões entre áreas, apenas o essencial é combinado, e o contexto fica para o encontro.",
+          "atencao": "Participantes sem preparação reduzem a produtividade da reunião.",
+          "acao": "Incluir no convite o objetivo, a decisão esperada e o material necessário.",
+          "status": "rascunho"
+        }
+      }
+    },
+    "4-4": {
+      "position": 4,
+      "level": 4,
+      "label": "4º lugar — equilibrada",
+      "variants": {
+        "1": {
+          "titulo": "Testes priorizados por uso real",
+          "leitura": "A Conformidade equilibrada, na quarta posição, é o fator menos acionado do perfil. Antes de entregas, alguns cenários são testados para confirmar o funcionamento.",
+          "atencao": "Testes de casos improváveis podem atrasar a disponibilização de solução adequada.",
+          "acao": "Priorizar os testes pelos cenários de uso mais frequentes.",
+          "status": "rascunho"
+        },
+        "2": {
+          "titulo": "Plano com espaço para ajuste",
+          "leitura": "O exame de regras e padrões tem a menor participação no perfil, com Conformidade equilibrada. No planejamento mensal, etapas são definidas e a disponibilidade de recursos é verificada.",
+          "atencao": "Planos excessivamente detalhados perdem flexibilidade diante de imprevistos.",
+          "acao": "Reservar capacidade no plano para ajustes semanais.",
+          "status": "rascunho"
+        }
+      }
+    }
+  }
+}
