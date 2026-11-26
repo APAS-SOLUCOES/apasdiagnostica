@@ -45,14 +45,14 @@
       "variants": {
         "1": {
           "titulo": "Rotina delegada com suporte",
-          "leitura": "A Estabilidade discreta na terceira posição sugere sustentação limitada de rotinas sem reforço do contexto. Ao receber a responsabilidade por um acompanhamento recorrente, pode haver alternância entre períodos de atenção e intervalos sem retorno.",
+          "leitura": "A sustentação de rotinas tende a ser limitada sem reforço do contexto, com Estabilidade discreta em terceiro lugar. Ao receber a responsabilidade por um acompanhamento recorrente, pode haver alternância entre períodos de atenção e intervalos sem retorno.",
           "atencao": "Delegar continuidade sem pontos de apoio pode deixar a equipe sem referência para pedir ajuda.",
           "acao": "Disponibilize um calendário simples e treine uma checagem breve com os responsáveis pelas entregas. Em 30 dias, observe se os retornos ocorreram na cadência acordada.",
           "status": "rascunho"
         },
         "2": {
           "titulo": "Paciência treinada na negociação",
-          "leitura": "Na terceira posição, a Estabilidade discreta pode reduzir a tolerância a negociações que exigem várias rodadas de escuta. Ao pactuar uma escala, pode surgir pressa para fechar a proposta sem explorar restrições de disponibilidade.",
+          "leitura": "A tolerância a negociações com várias rodadas de escuta pode ser reduzida, com Estabilidade discreta. Ao pactuar uma escala, pode surgir pressa para fechar a proposta sem explorar restrições de disponibilidade.",
           "atencao": "Acordos rápidos podem transferir dificuldades de cobertura para a equipe executora.",
           "acao": "Ofereça apoio para organizar as restrições e ensaie perguntas antes de apresentar a solução. Em 30 dias, verifique se os acordos de escala exigiram menos correções por condições não ouvidas.",
           "status": "rascunho"
@@ -80,14 +80,14 @@
       "variants": {
         "1": {
           "titulo": "Escuta sustentada por pauta",
-          "leitura": "A Estabilidade moderada-baixa na terceira posição sugere alguma disponibilidade para ouvir, com menor sustentação em conversas demoradas. Em uma reunião operacional, a paciência pode diminuir quando vários participantes descrevem dificuldades semelhantes.",
+          "leitura": "Há alguma disponibilidade para ouvir, com menor sustentação em conversas demoradas, associada à Estabilidade moderada-baixa. Em uma reunião operacional, a paciência pode diminuir quando vários participantes descrevem dificuldades semelhantes.",
           "atencao": "Interromper relatos por aparente repetição pode eliminar diferenças relevantes entre os problemas.",
           "acao": "Apoie a organização de blocos de escuta e treine uma síntese antes de encerrar cada bloco. Em 30 dias, observe se as sínteses preservaram os obstáculos específicos de cada frente.",
           "status": "rascunho"
         },
         "2": {
           "titulo": "Acompanhamento após a orientação",
-          "leitura": "Na terceira posição, a Estabilidade moderada-baixa pode favorecer apoio inicial sem assegurar continuidade suficiente. Depois de um feedback sobre retrabalho, pode haver orientação adequada, mas poucas retomadas para acompanhar a prática.",
+          "leitura": "A Estabilidade moderada-baixa pode favorecer apoio inicial sem assegurar continuidade suficiente. Depois de um feedback sobre retrabalho, pode haver orientação adequada, mas poucas retomadas para acompanhar a prática.",
           "atencao": "Cobrar mudança apenas na avaliação seguinte pode deixar dificuldades de aprendizagem acumuladas.",
           "acao": "Forneça apoio para marcar revisões curtas e ensaie perguntas sobre a aplicação da orientação. Em 30 dias, verifique se as revisões permitiram corrigir dificuldades antes de nova entrega.",
           "status": "rascunho"
@@ -122,7 +122,7 @@
         },
         "2": {
           "titulo": "Negociação com tempo proporcional",
-          "leitura": "Na terceira posição, a Estabilidade equilibrada pode favorecer escuta paciente sem prolongar indefinidamente a negociação. Ao combinar um calendário entre áreas, pode haver consideração das rotinas existentes junto à busca de um prazo viável.",
+          "leitura": "Escuta paciente sem prolongar indefinidamente a negociação é uma possibilidade associada à Estabilidade equilibrada. Ao combinar um calendário entre áreas, pode haver consideração das rotinas existentes junto à busca de um prazo viável.",
           "atencao": "Respeitar o ritmo das áreas não deve ocultar incompatibilidades entre demanda e capacidade.",
           "acao": "Peça a explicitação das restrições e cobre uma data para concluir a pactuação. Em 30 dias, verifique se o calendário permaneceu viável diante da carga real.",
           "status": "rascunho"
@@ -150,14 +150,14 @@
       "variants": {
         "1": {
           "titulo": "Reunião com cadência protetora",
-          "leitura": "A Estabilidade presente na terceira posição sugere valorização consistente de escuta e continuidade nos encontros da equipe. Em uma reunião de rotina, pode haver cuidado em ouvir dificuldades antes de alterar combinações estabelecidas.",
+          "leitura": "Escuta e continuidade recebem valorização consistente nos encontros da equipe, com a Estabilidade presente. Em uma reunião de rotina, pode haver cuidado em ouvir dificuldades antes de alterar combinações estabelecidas.",
           "atencao": "A preservação do espaço de fala pode alongar o encontro e adiar decisões necessárias.",
           "acao": "Mantenha a rodada de escuta e cobre o fechamento dos encaminhamentos no tempo previsto. Em 30 dias, observe se a reunião acolheu dificuldades sem postergar decisões recorrentes.",
           "status": "rascunho"
         },
         "2": {
           "titulo": "Feedback acolhedor e exigente",
-          "leitura": "Na terceira posição, a Estabilidade presente pode favorecer paciência para acompanhar mudanças de comportamento. Em um feedback sobre queda de qualidade, o apoio tende a incluir disponibilidade para retomar dúvidas durante a execução.",
+          "leitura": "Com a Estabilidade presente, a paciência para acompanhar mudanças de comportamento tende a estar disponível. Em um feedback sobre queda de qualidade, o apoio tende a incluir disponibilidade para retomar dúvidas durante a execução.",
           "atencao": "O cuidado com o vínculo pode suavizar demais a cobrança e deixar o padrão esperado ambíguo.",
           "acao": "Reconheça a disponibilidade para ajudar e solicite a formulação direta do ajuste necessário. Em 30 dias, verifique se o suporte resultou em mudança observável no padrão de entrega.",
           "status": "rascunho"
@@ -185,14 +185,14 @@
       "variants": {
         "1": {
           "titulo": "Delegação sem dependência permanente",
-          "leitura": "A Estabilidade marcante na terceira posição sugere forte investimento na continuidade e no amparo à equipe. Ao assumir uma rotina delegada, pode haver disponibilidade persistente para ajudar mesmo quando já seria possível transferir parte do acompanhamento.",
+          "leitura": "Mesmo atrás de dois fatores, a Estabilidade marcante indica forte investimento na continuidade e no amparo à equipe. Ao assumir uma rotina delegada, pode haver disponibilidade persistente para ajudar mesmo quando já seria possível transferir parte do acompanhamento.",
           "atencao": "Apoio excessivamente centralizado pode criar dependência e dificultar a redistribuição de responsabilidades.",
           "acao": "Delegue também a formação de substitutos e cobre limites para intervenções diretas. Em 30 dias, verifique se a rotina funcionou durante ausências sem recorrer ao mesmo ponto de apoio.",
           "status": "rascunho"
         },
         "2": {
           "titulo": "Negociação além da zona conhecida",
-          "leitura": "Na terceira posição, a Estabilidade marcante pode acentuar a preferência por acordos previsíveis e relações duradouras. Em uma renegociação de serviço, pode haver resistência a condições novas que alterem o funcionamento habitual.",
+          "leitura": "A preferência por acordos previsíveis e relações duradouras pode se acentuar com a Estabilidade marcante. Em uma renegociação de serviço, pode haver resistência a condições novas que alterem o funcionamento habitual.",
           "atencao": "Preservar o arranjo conhecido sem comparar alternativas pode manter custos operacionais evitáveis.",
           "acao": "Solicite uma comparação entre continuidade e mudança, com tempo definido para ouvir as partes. Em 30 dias, observe se a decisão considerou alternativas sem se limitar à manutenção do costume.",
           "status": "rascunho"
@@ -290,14 +290,14 @@
       "variants": {
         "1": {
           "titulo": "Paciência com relatos extensos",
-          "leitura": "A Estabilidade moderada-baixa na quarta posição sugere recursos de escuta que podem precisar de sustentação em situações prolongadas. Em reunião de análise de problemas, o interesse pelo relato pode diminuir antes da exploração das causas.",
+          "leitura": "Os recursos de escuta podem precisar de sustentação em situações prolongadas, com Estabilidade moderada-baixa no último lugar. Em reunião de análise de problemas, o interesse pelo relato pode diminuir antes da exploração das causas.",
           "atencao": "Acelerar a passagem para soluções pode deixar obstáculos recorrentes sem compreensão suficiente.",
           "acao": "Ofereça apoio para limitar o tema e treine uma pergunta de aprofundamento antes de propor saídas. Em 30 dias, observe se as soluções passaram a responder às causas relatadas.",
           "status": "rascunho"
         },
         "2": {
           "titulo": "Feedback com retomada combinada",
-          "leitura": "Na quarta posição, a Estabilidade moderada-baixa pode indicar acompanhamento mais acessível quando existe uma rotina explícita. Após um feedback sobre organização, a disposição para apoiar pode ser maior em encontros previamente agendados.",
+          "leitura": "O acompanhamento tende a ser mais acessível quando existe uma rotina explícita, com a Estabilidade moderada-baixa. Após um feedback sobre organização, a disposição para apoiar pode ser maior em encontros previamente agendados.",
           "atencao": "Depender apenas de pedidos de ajuda pode atrasar a percepção de dificuldades persistentes.",
           "acao": "Apoie a marcação de retornos breves e ensaie a revisão de um exemplo real em cada conversa. Em 30 dias, verifique se houve continuidade entre a orientação e a prática examinada.",
           "status": "rascunho"

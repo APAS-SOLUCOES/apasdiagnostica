@@ -11,14 +11,14 @@
       "variants": {
         "3": {
           "titulo": "Critérios sem perder o contexto",
-          "leitura": "A Conformidade equilibrada oferece uma referência de qualidade sem ocupar todo o seu modo de trabalhar. Ao negociar uma entrega, você pode examinar os requisitos e considerar as condições de quem irá executá-la.",
+          "leitura": "A Conformidade equilibrada traz uma referência de qualidade em proporção parecida com a dos seus outros traços. Ao negociar uma entrega, você pode examinar os requisitos e considerar as condições de quem irá executá-la.",
           "atencao": "Aceitar uma condição razoável na conversa não garante que o resultado esperado esteja definido.",
           "acao": "Registre um exemplo de entrega aceitável antes de fechar o acordo.",
           "status": "rascunho"
         },
         "4": {
           "titulo": "Revisão com espaço para alternativas",
-          "leitura": "Você encontra na Conformidade equilibrada um apoio para observar detalhes e ponderar opções. Quando uma prioridade muda, pode conferir o que precisa ser preservado sem exigir que o plano anterior permaneça inteiro.",
+          "leitura": "Nenhum traço se sobressai no seu perfil, e a Conformidade equilibrada é um apoio para observar detalhes e ponderar opções. Quando uma prioridade muda, pode conferir o que precisa ser preservado sem exigir que o plano anterior permaneça inteiro.",
           "atencao": "Um detalhe herdado do planejamento antigo pode consumir esforço sem proteger a nova entrega.",
           "acao": "Escolha quais verificações continuam relevantes depois da mudança e retire as demais da lista.",
           "status": "rascunho"
@@ -116,7 +116,7 @@
       "variants": {
         "3": {
           "titulo": "Um requisito antes de aceitar",
-          "leitura": "A Conformidade quase ausente oferece pouco apoio ao seu jeito de trabalhar, mesmo aparecendo depois do fator principal. Em uma negociação rápida, você pode seguir pela oportunidade percebida sem explorar as condições de qualidade.",
+          "leitura": "A Conformidade quase ausente tende a oferecer pouco apoio ao seu jeito de trabalhar, mesmo aparecendo depois do fator principal. Em uma negociação rápida, você pode seguir pela oportunidade percebida sem explorar as condições de qualidade.",
           "atencao": "Um requisito que ninguém perguntou pode surgir como impedimento depois do compromisso assumido.",
           "acao": "Antes de aceitar, descubra qual condição faria a entrega ser recusada.",
           "status": "rascunho"

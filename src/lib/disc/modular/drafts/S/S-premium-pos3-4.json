@@ -115,14 +115,14 @@
       "variants": {
         "1": {
           "titulo": "Cadência com margem de ajuste",
-          "leitura": "A Estabilidade equilibrada em terceiro lugar pode ajudar você a sustentar continuidade sem comandar todas as suas escolhas. Diante de um prazo compartilhado, você pode organizar etapas regulares e rever o ritmo quando aparece uma dependência nova.",
+          "leitura": "Sem comandar todas as suas escolhas, a Estabilidade equilibrada em terceiro lugar pode ajudar você a sustentar continuidade. Diante de um prazo compartilhado, você pode organizar etapas regulares e rever o ritmo quando aparece uma dependência nova.",
           "atencao": "Manter a cadência não deve esconder a necessidade de renegociar uma etapa inviável.",
           "acao": "Revise os pontos de acompanhamento com a equipe e explicite o que pode mudar sem comprometer a entrega.",
           "status": "rascunho"
         },
         "2": {
           "titulo": "Disponibilidade com contorno",
-          "leitura": "Com a Estabilidade equilibrada na terceira posição, você pode oferecer apoio paciente quando a situação pede. Ao delegar uma tarefa, pode combinar retornos que dão segurança sem acompanhar cada movimento da pessoa.",
+          "leitura": "O apoio paciente fica ao seu alcance quando a situação pede, graças a uma Estabilidade equilibrada. Ao delegar uma tarefa, pode combinar retornos que dão segurança sem acompanhar cada movimento da pessoa.",
           "atencao": "O cuidado pode ocupar espaço demais se você assumir dúvidas que o outro já consegue resolver.",
           "acao": "Acorde os momentos de ajuda e pergunte quais decisões a pessoa pode tomar com autonomia.",
           "status": "rascunho"
@@ -150,14 +150,14 @@
       "variants": {
         "1": {
           "titulo": "Constância que sustenta a equipe",
-          "leitura": "A Estabilidade presente em terceiro lugar pode oferecer uma base consistente, mesmo sem ser seu primeiro recurso. Em uma reunião de acompanhamento, você pode retomar acordos anteriores e ajudar a equipe a manter uma cadência confiável.",
+          "leitura": "Mesmo sem ser seu primeiro recurso, a Estabilidade presente costuma oferecer uma base consistente. Em uma reunião de acompanhamento, você pode retomar acordos anteriores e ajudar a equipe a manter uma cadência confiável.",
           "atencao": "Repetir o mesmo formato pode deixar de atender a uma etapa que passou a exigir respostas diferentes.",
           "acao": "Pergunte quais acompanhamentos ainda ajudam e ajuste a frequência sem perder os compromissos essenciais.",
           "status": "rascunho"
         },
         "2": {
           "titulo": "Paciência para desenvolver autonomia",
-          "leitura": "Com a Estabilidade presente na terceira posição, você tende a dispor de paciência para apoiar a aprendizagem. Ao delegar uma atividade recorrente, pode acompanhar as primeiras tentativas sem exigir domínio imediato.",
+          "leitura": "Você tende a dispor de paciência para apoiar a aprendizagem, com a Estabilidade presente atrás de dois outros traços. Ao delegar uma atividade recorrente, pode acompanhar as primeiras tentativas sem exigir domínio imediato.",
           "atencao": "Sua disponibilidade pode virar dependência se toda dificuldade retornar para você.",
           "acao": "Combine uma progressão de autonomia e convide a pessoa a apresentar uma tentativa de solução antes de pedir sua intervenção.",
           "status": "rascunho"
@@ -332,7 +332,7 @@
         },
         "2": {
           "titulo": "Paciência disponível para orientar",
-          "leitura": "Com a Estabilidade equilibrada na quarta posição, você pode recorrer à paciência para dar sustentação a uma aprendizagem. Ao delegar uma tarefa pouco familiar, pode oferecer retornos previsíveis sem precisar conduzir toda a execução.",
+          "leitura": "Mesmo em último lugar, a Estabilidade equilibrada permite recorrer à paciência para dar sustentação a uma aprendizagem. Ao delegar uma tarefa pouco familiar, pode oferecer retornos previsíveis sem precisar conduzir toda a execução.",
           "atencao": "Apoiar em excesso pode dificultar que a pessoa reconheça a própria capacidade de decidir.",
           "acao": "Defina limites claros para o suporte e deixe explícito em quais situações a pessoa pode seguir sem consultar você.",
           "status": "rascunho"

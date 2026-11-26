@@ -10,28 +10,28 @@
       "variants": {
         "1": {
           "titulo": "Direção que pode ser compartilhada",
-          "leitura": "A Dominância está em equilíbrio com Influência, Estabilidade e Conformidade no seu jeito de trabalhar. Em uma reunião, você pode propor um encaminhamento sem precisar deixar a escuta e o cuidado com os detalhes de lado.",
+          "leitura": "A Dominância aparece em proporção parecida com a de Influência, Estabilidade e Conformidade no seu jeito de trabalhar. Em uma reunião, você pode propor um encaminhamento sem precisar deixar a escuta e o cuidado com os detalhes de lado.",
           "atencao": "Buscar espaço para todas as perspectivas pode deixar uma escolha simples em aberto por mais tempo que o necessário.",
           "acao": "Quando já houver elementos suficientes, sugira um próximo passo e confirme se alguém vê um impedimento para começar.",
           "status": "rascunho"
         },
         "2": {
           "titulo": "Firmeza entre recursos igualmente presentes",
-          "leitura": "Você conta com a Dominância em uma composição sem predomínio entre os quatro fatores. Ao receber um feedback, pode defender seu ponto de vista e também considerar o que precisa ajustar.",
+          "leitura": "Seus quatro fatores estão muito próximos, e o primeiro lugar da Dominância não significa que ela se sobressaia. Ao receber um feedback, pode defender seu ponto de vista e também considerar o que precisa ajustar.",
           "atencao": "Tentar equilibrar todas as respostas pode dificultar que a outra pessoa reconheça sua posição.",
           "acao": "Diga com clareza o que você acolhe e qual ponto deseja discutir melhor. Termine com um ajuste que consiga colocar em prática.",
           "status": "rascunho"
         },
         "3": {
           "titulo": "Uma escolha que cabe na conversa",
-          "leitura": "Com os quatro fatores empatados, a Dominância participa das suas escolhas sem conduzir sozinha. Ao negociar uma entrega, você pode combinar firmeza no que precisa com abertura para construir uma alternativa.",
+          "leitura": "Iniciativa, comunicação, constância e cuidado caminham juntos no seu perfil, sem que a Dominância conduza sozinha. Ao negociar uma entrega, você pode combinar firmeza no que precisa com abertura para construir uma alternativa.",
           "atencao": "Dar o mesmo espaço a todas as possibilidades pode tornar pouco visível o que é indispensável para você.",
           "acao": "Antes da negociação, escolha o limite que precisa preservar e uma condição que pode flexibilizar.",
           "status": "rascunho"
         },
         "4": {
           "titulo": "Flexibilidade com um próximo passo",
-          "leitura": "A Dominância divide espaço igualmente com os demais fatores, oferecendo iniciativa junto de outras formas de responder. Quando uma prioridade muda, você pode avaliar o novo pedido e ajudar a definir por onde retomar o trabalho.",
+          "leitura": "A Dominância compartilha espaço de forma equilibrada com os demais fatores, oferecendo iniciativa ao lado de outras formas de responder. Quando uma prioridade muda, você pode avaliar o novo pedido e ajudar a definir por onde retomar o trabalho.",
           "atencao": "Considerar muitos caminhos ao mesmo tempo pode atrasar a comunicação de uma escolha necessária.",
           "acao": "Explique qual tarefa você propõe iniciar e o que ficará para depois. Confira com as pessoas envolvidas se essa troca atende à necessidade atual.",
           "status": "rascunho"
@@ -437,7 +437,7 @@
         },
         "2": {
           "titulo": "Cobrança com margem para verdade",
-          "leitura": "Você dispõe de uma Dominância dominante como apoio de alta intensidade, capaz de mudar bastante o tom da sua atuação. Quando um prazo fica ameaçado, pode sair da conversa inicial para uma cobrança forte por recuperação.",
+          "leitura": "Logo atrás do fator principal, uma Dominância dominante pode mudar bastante o tom da sua atuação. Quando um prazo fica ameaçado, pode sair da conversa inicial para uma cobrança forte por recuperação.",
           "atencao": "A pressão repentina pode fazer as pessoas esconderem dificuldades para evitar uma reação sua.",
           "acao": "Explique sua preocupação sem exigir uma promessa imediata. Peça uma previsão realista e combine como receber notícias de novos obstáculos.",
           "status": "rascunho"

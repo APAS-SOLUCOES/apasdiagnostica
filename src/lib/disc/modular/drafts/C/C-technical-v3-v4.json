@@ -11,14 +11,14 @@
       "variants": {
         "3": {
           "titulo": "Referência objetiva no desacordo",
-          "leitura": "A Conformidade equilibrada participa da avaliação sem concentrar todas as respostas. Em um conflito sobre aceite, o exame dos requisitos oferece um terreno concreto para discutir a divergência.",
+          "leitura": "A Conformidade equilibrada participa da avaliação em proporção próxima à dos demais fatores, sem concentrar as respostas. Em um conflito sobre aceite, o exame dos requisitos oferece um terreno concreto para discutir a divergência.",
           "atencao": "Usar o procedimento como argumento final deixa de fora necessidades que não foram previstas na documentação.",
           "acao": "Solicite às áreas um caso verificável e estabeleça o critério que resolverá a divergência.",
           "status": "rascunho"
         },
         "4": {
           "titulo": "Qualidade com responsabilidade distribuída",
-          "leitura": "A análise de padrões convive com outras formas de responder ao trabalho. Na delegação de uma conferência, a Conformidade equilibrada sustenta o cuidado com o resultado sem exigir controle de cada etapa.",
+          "leitura": "A análise de padrões convive em equilíbrio com as outras formas de responder ao trabalho, sem predominância de um fator. Na delegação de uma conferência, a Conformidade equilibrada sustenta o cuidado com o resultado sem exigir controle de cada etapa.",
           "atencao": "Uma responsabilidade descrita apenas como conferir tudo não esclarece onde termina a revisão.",
           "acao": "Delimite o objeto da conferência e peça o registro das exceções encontradas.",
           "status": "rascunho"
@@ -137,14 +137,14 @@
       "variants": {
         "3": {
           "titulo": "Condições explícitas na contratação",
-          "leitura": "A Conformidade discreta complementa a orientação predominante com checagens pontuais. Em uma negociação de serviço, o interesse pelo resultado recebe mais atenção que a documentação das condições.",
+          "leitura": "A Conformidade discreta pode acrescentar checagens pontuais à orientação do fator principal. Em uma negociação de serviço, o interesse pelo resultado recebe mais atenção que a documentação das condições.",
           "atencao": "A ausência de condições escritas amplia a margem de interpretação durante a execução.",
           "acao": "Registre os requisitos mínimos da contratação e obtenha confirmação antes de autorizar o serviço.",
           "status": "rascunho"
         },
         "4": {
           "titulo": "Repriorização com restrição identificada",
-          "leitura": "O exame de regras funciona como recurso secundário de baixa intensidade. Diante de uma mudança de prioridade, a Conformidade discreta não concentra o esforço de reorganização.",
+          "leitura": "O exame de regras tende a funcionar como recurso secundário de pouco peso. Diante de uma mudança de prioridade, a Conformidade discreta não concentra o esforço de reorganização.",
           "atencao": "A troca de foco sem identificar restrições compromete obrigações que não desapareceram com a mudança.",
           "acao": "Pergunte qual exigência permanece inegociável e verifique sua inclusão no novo plano.",
           "status": "rascunho"
@@ -312,7 +312,7 @@
         },
         "4": {
           "titulo": "Feedback com evidência localizada",
-          "leitura": "O cuidado analítico tem intensidade discreta e não está entre os principais recursos. Durante um feedback, o exame minucioso não constitui a primeira resposta à orientação recebida.",
+          "leitura": "O cuidado analítico tende a aparecer de forma discreta e costuma depender do contexto. Durante um feedback, o exame minucioso não constitui a primeira resposta à orientação recebida.",
           "atencao": "Uma recomendação abstrata não fornece referência suficiente para mudar a execução.",
           "acao": "Mostre a ocorrência que motivou a orientação e acompanhe sua correção na próxima entrega semelhante.",
           "status": "rascunho"
@@ -410,7 +410,7 @@
       "variants": {
         "3": {
           "titulo": "Negociação com salvaguarda simples",
-          "leitura": "A Conformidade quase ausente não sustenta espontaneamente a avaliação detalhada de condições. Em uma negociação, o exame de regras fica atrás das demais prioridades de resposta.",
+          "leitura": "A Conformidade quase ausente tende a dar pouco suporte espontâneo à avaliação detalhada de condições. Em uma negociação, o exame de regras fica atrás das demais prioridades de resposta.",
           "atencao": "Uma obrigação contratual permanece desconhecida quando a proposta é aceita sem conferência mínima.",
           "acao": "Adote uma verificação obrigatória das responsabilidades antes de autorizar o compromisso.",
           "status": "rascunho"
